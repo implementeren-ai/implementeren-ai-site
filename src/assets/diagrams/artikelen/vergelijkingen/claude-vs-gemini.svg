@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Claude en Gemini als twee overlappende cirkels: Claude is een los abonnement voor lange documenten en automatiseren, Gemini zit in Workspace, Gmail en Meet; in de overlap staan Docs, Sheets en Slides, waar Claude in bèta ook werkt" font-family="Inter, system-ui, sans-serif" fill="#23261D">
+<defs><filter id="cvg-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+<clipPath id="cvg-c"><ellipse cx="400" cy="340" rx="300" ry="215"/></clipPath></defs>
+<rect width="1200" height="600" fill="#F4F1E8"/>
+<rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">WAAR ZE WERKEN</text>
+<ellipse cx="400" cy="340" rx="300" ry="215" fill="#E9EBDC" stroke="#565A4C" stroke-width="3"/>
+<ellipse cx="800" cy="340" rx="300" ry="215" fill="#FFFFFF" fill-opacity=".6" stroke="#565A4C" stroke-width="3"/>
+<ellipse cx="800" cy="340" rx="300" ry="215" fill="#B4C13E" fill-opacity=".45" clip-path="url(#cvg-c)"/>
+<text font-style="italic" x="300" y="222" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="48" font-weight="500">Claude</text>
+<text font-style="italic" x="900" y="222" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="48" font-weight="500">Gemini</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="136" y="250" width="40" height="30" rx="5"/><path d="M136 260 h40 M144 272 h10"/></g><text x="190" y="279" font-size="32">los abonnement</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M140 316 h22 l10 10 v34 h-32 z"/><path d="M147 334 h18 M147 344 h18"/></g><text x="190" y="349" font-size="32">lange documenten</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="156" cy="408" r="12"/><path d="M156 388 v-4 M156 428 v4 M136 408 h-4 M176 408 h4 M142 394 l-3 -3 M170 422 l3 3 M170 394 l3 -3 M142 422 l-3 3"/></g><text x="190" y="419" font-size="32">automatiseren</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="788" y="250" width="16" height="16" rx="3"/><rect x="810" y="250" width="16" height="16" rx="3"/><rect x="788" y="272" width="16" height="16" rx="3"/><rect x="810" y="272" width="16" height="16" rx="3"/></g><text x="846" y="279" font-size="32">in Workspace</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="786" y="320" width="42" height="30" rx="5"/><path d="M788 324 l14 12 h10 l14 -12"/></g><text x="846" y="349" font-size="32">Gmail</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="784" y="394" width="30" height="28" rx="5"/><path d="M816 402 l12 -6 v24 l-12 -6 z"/></g><text x="846" y="419" font-size="32">Meet</text>
+<text x="600" y="300" text-anchor="middle" font-size="32" font-weight="600">Docs</text>
+<text x="600" y="342" text-anchor="middle" font-size="32" font-weight="600">Sheets</text>
+<text x="600" y="384" text-anchor="middle" font-size="32" font-weight="600">Slides</text>
+<text x="600" y="424" text-anchor="middle" font-size="26" fill="#565A4C">bèta</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 1 nov 2026</text>
+<rect width="1200" height="600" filter="url(#cvg-g)"/></svg>

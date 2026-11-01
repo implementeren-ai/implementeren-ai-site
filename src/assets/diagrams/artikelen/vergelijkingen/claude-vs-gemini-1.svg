@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Twee routes van Claude naar Google Workspace: via connectors naar Gmail, Agenda en Drive, die een Owner eerst aanzet, en via de add-on in bèta naar Docs, Sheets en Slides, die een Google-beheerder uitrolt; Gemini is in Workspace ingebouwd" data-bijschrift="Claude komt via connectors in Gmail, Agenda en Drive, en via de add-on (bèta) in Docs, Sheets en Slides. Gemini is in Workspace ingebouwd. Stand 1 november 2026." font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="cvg1-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+<marker id="cvg1-a" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#23261D"/></marker>
+</defs><rect width="1200" height="600" fill="#F4F1E8"/><rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">TWEE ROUTES NAAR WORKSPACE</text>
+<rect x="64" y="236" width="200" height="120" rx="16" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<text font-style="italic" x="164" y="312" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="48" font-weight="500">Claude</text>
+<rect x="600" y="120" width="536" height="400" rx="20" fill="#E9EBDC" stroke="#565A4C" stroke-width="3"/>
+<text x="626" y="172" font-size="32" font-weight="600">Google Workspace</text>
+<g fill="#FFFFFF" stroke="#CFCDBE" stroke-width="3"><rect x="626" y="200" width="150" height="64" rx="10"/><rect x="790" y="200" width="150" height="64" rx="10"/><rect x="954" y="200" width="150" height="64" rx="10"/><rect x="626" y="300" width="150" height="64" rx="10"/><rect x="790" y="300" width="150" height="64" rx="10"/><rect x="954" y="300" width="150" height="64" rx="10"/></g>
+<g font-size="32" text-anchor="middle"><text x="701" y="243">Gmail</text><text x="865" y="243">Agenda</text><text x="1029" y="243">Drive</text><text x="701" y="343">Docs</text><text x="865" y="343">Sheets</text><text x="1029" y="343">Slides</text></g>
+<rect x="626" y="400" width="478" height="80" rx="12" fill="#B4C13E" fill-opacity=".55"/>
+<text x="652" y="452" font-size="34" font-weight="600">Gemini</text><text x="784" y="451" font-size="26">ingebouwd</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M268 270 C 400 270, 450 232, 612 232" marker-end="url(#cvg1-a)"/><path d="M268 322 C 400 322, 450 332, 612 332" marker-end="url(#cvg1-a)"/></g>
+<text x="290" y="214" font-size="32" font-weight="600">connectors</text>
+<g><rect x="290" y="134" width="56" height="30" rx="15" fill="none" stroke="#23261D" stroke-width="4"/><circle cx="331" cy="149" r="9" fill="#23261D"/></g><text x="360" y="158" font-size="26" fill="#565A4C">Owner zet aan</text>
+<text x="290" y="398" font-size="32" font-weight="600">add-on</text><text x="410" y="397" font-size="26" fill="#565A4C">bèta</text>
+<g><rect x="290" y="424" width="56" height="30" rx="15" fill="none" stroke="#23261D" stroke-width="4"/><circle cx="331" cy="439" r="9" fill="#23261D"/></g><text x="360" y="448" font-size="26" fill="#565A4C">Google-beheerder</text><text x="360" y="482" font-size="26" fill="#565A4C">rolt uit</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 1 nov 2026</text>
+<rect width="1200" height="600" filter="url(#cvg1-g)"/></svg>
