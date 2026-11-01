@@ -8,7 +8,7 @@ targetKeywords:
   - claude of gemini
   - claude vs chatgpt vs gemini
   - gemini zakelijk
-wordCountTarget: 1785
+wordCountTarget: 1848
 priority: 3
 tier: 1
 cases:
@@ -75,6 +75,9 @@ bronnen:
   - titel: "Claude Help Center: what certifications has Anthropic obtained? (zonder datum)"
     url: "https://support.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained"
     geraadpleegd: "1 november 2026"
+  - titel: "Anthropic Privacy Center: where are your servers located? (zakelijke producten, 15 juni 2026)"
+    url: "https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers"
+    geraadpleegd: "1 november 2026"
   - titel: "Claude-documentatie: data residency"
     url: "https://platform.claude.com/docs/en/manage-claude/data-residency"
     geraadpleegd: "1 november 2026"
@@ -90,7 +93,7 @@ bronnen:
   - titel: "Google Workspace, abonnementen en prijzen (Nederlandstalige pagina)"
     url: "https://workspace.google.com/pricing?hl=nl"
     geraadpleegd: "1 november 2026"
-  - titel: "Google Workspace, Generative AI in Google Workspace Privacy Hub (laatst bijgewerkt 26 oktober 2026)"
+  - titel: "Google Workspace, Generative AI in Google Workspace Privacy Hub (bijgewerkt 6 oktober 2026, voettekst 26 oktober 2026)"
     url: "https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub"
     geraadpleegd: "1 november 2026"
   - titel: "Autoriteit Persoonsgegevens, Let op: gebruik AI-chatbot kan leiden tot datalekken (6 augustus 2024)"
@@ -105,11 +108,11 @@ faq:
   - question: "Kan ik Claude gebruiken als we Google Workspace hebben?"
     answer: "Ja. Claude heeft connectors voor Gmail, Google Agenda en Google Drive. Sinds 6 oktober 2026 is er ook een add-on voor Google Docs, Sheets en Slides, in bèta op alle betaalde plannen. Op Team en Enterprise zet een Owner de connectors eerst aan voor de organisatie. Een Google-superbeheerder kan de add-on voor iedereen of per groep installeren."
   - question: "Wat kost Gemini zakelijk?"
-    answer: "Gemini zit in de abonnementen van Google Workspace, dus je betaalt het via de Workspace-prijs per gebruiker. In Business Starter werkt Gemini onder meer in Gmail, Vids en de Gemini-app. Vanaf Business Standard werkt het ook in Documenten, Spreadsheets, Presentaties en Meet. Wij noemen geen europrijs, omdat de prijspagina ons bedragen in Britse ponden toonde. Kijk daar zelf wat jouw abonnement kost."
+    answer: "Gemini zit in de abonnementen van Google Workspace, dus je betaalt het via de Workspace-prijs per gebruiker. In Business Starter werkt Gemini onder meer in Gmail, Vids en de Gemini-app. Vanaf Business Standard werkt het ook in Documenten, Spreadsheets, Presentaties en Meet. De prijs per gebruiker staat op de prijspagina van Google. Wij noemen geen bedrag, omdat Google tijdelijke kortingen geeft."
   - question: "Traint Google of Anthropic op onze bedrijfsdata?"
     answer: "In de zakelijke varianten standaard niet. Anthropic traint op Claude Team en Enterprise standaard niet op je content. Google gebruikt Workspace-data niet voor training zonder voorafgaande toestemming of instructie. Bij de privé-abonnementen Free, Pro en Max van Claude beslist de gebruiker dat zelf in de privacyinstellingen. Gebruik voor klantwerk daarom een zakelijk account."
   - question: "Wat is het verschil tussen Claude, ChatGPT en Gemini?"
-    answer: "Gemini is de AI-assistent van Google en zit in Google Workspace. Wij kiezen Claude voor lange documenten, analyse en automatiseren. Een overzicht van Claude, ChatGPT, Copilot en Gemini naast elkaar staat op onze pagina over welke AI past bij het MKB. Het verschil met ChatGPT lees je in onze vergelijking Claude vs ChatGPT."
+    answer: "Gemini komt van Google en zit in de abonnementen van Google Workspace. Wij kiezen Claude voor lange documenten, analyse en automatiseren. Een overzicht van Claude, ChatGPT, Copilot en Gemini naast elkaar staat op onze pagina over welke AI past bij het MKB. Het verschil met ChatGPT lees je in onze vergelijking Claude vs ChatGPT."
 ---
 
 Je team werkt al in Google Workspace en Gemini zit in het abonnement. Waarom zou je dan nog Claude nemen? Dat is voor de meeste MKB-bedrijven de vraag achter Claude vs Gemini. Het antwoord hangt af van het werk dat je wilt versnellen, en van wat je beheerder wil regelen.
@@ -118,7 +121,7 @@ Eerst onze eigen positie. Implementeren.ai werkt met één tool, Claude, en is [
 
 ## Wat is het verschil tussen Claude en Gemini?
 
-Gemini is de AI-assistent van Google. Voor een bedrijf zit Gemini in de abonnementen van Google Workspace, en per abonnement verschilt hoeveel. Volgens [de prijspagina van Google Workspace](https://workspace.google.com/pricing?hl=nl) heeft Business Starter Gemini onder meer in Gmail, Google Vids en de Gemini-app. In Documenten, Spreadsheets, Presentaties, Drive, Meet en Chat zit Gemini pas vanaf Business Standard. Google zet daar ook "de krachtigste AI-modellen van Google voor complexe taken" bij.
+Gemini komt van Google. Een bedrijf krijgt het mee in de abonnementen van Google Workspace, en per abonnement verschilt hoeveel. Volgens [de prijspagina van Google Workspace](https://workspace.google.com/pricing?hl=nl) heeft Business Starter Gemini onder meer in Gmail, Google Vids en de Gemini-app. In Documenten, Spreadsheets, Presentaties, Drive, Meet en Chat zit Gemini pas vanaf Business Standard. Google zet daar ook "de krachtigste AI-modellen van Google voor complexe taken" bij.
 
 Claude is de AI-assistent van Anthropic. Je neemt het als [los abonnement bij Anthropic](https://claude.com/pricing), en via koppelingen werkt Claude ook met software van anderen, zoals Gmail en Google Drive. Voor bedrijven is er [het Team-abonnement van Claude](https://support.claude.com/en/articles/9266767-what-is-the-team-plan). Dat vraagt minimaal twee leden en gaat tot 150 seats.
 
@@ -134,7 +137,7 @@ Tabel: Claude en Gemini voor een MKB-team naast elkaar, stand 1 november 2026.
 | In Docs, Sheets en Slides | Add-on in bèta sinds 6 oktober 2026, op alle betaalde plannen | Ingebouwd vanaf Business Standard |
 | Training op bedrijfsdata | Standaard niet ("None by default") | Niet zonder voorafgaande toestemming |
 | Verwerkersafspraken | DPA hoort bij de Commercial Terms | Cloud Data Processing Addendum |
-| Gegevensregio | API: opslag nu alleen in de VS; voor Team staat dat niet in die documentatie | Verschilt per Workspace-abonnement; bij Enterprise heten ze Enterprise-gegevensregio's |
+| Gegevensregio | Opslag in de VS (zakelijke producten); verwerking standaard wereldwijd, op de API ook alleen in de VS | Verschilt per Workspace-abonnement; bij Enterprise heten ze Enterprise-gegevensregio's |
 
 Bedragen exclusief btw. Werkt je team al in Google Workspace, dan betaal je Gemini al mee en komt Claude erbij als tweede abonnement. De vraag is dus voor welke collega's dat extra abonnement zich terugverdient.
 
@@ -160,29 +163,33 @@ Wij hebben de add-on voor Google Workspace nog bij geen klant uitgerold. Wat hie
 
 ## Gemini zakelijk en Claude Team: wat kost het?
 
-Voor een team op Google Workspace zit Gemini in de prijs per gebruiker van het Workspace-abonnement. Een europrijs noemen we hier niet. De Nederlandstalige prijspagina van Google toonde ons op 1 november 2026 alleen bedragen in Britse ponden. Kijk daarom zelf op die pagina wat jouw abonnement in euro kost.
+Voor een team op Google Workspace zit Gemini in de prijs per gebruiker van het Workspace-abonnement. De bedragen staan op [de prijspagina van Google Workspace](https://workspace.google.com/pricing?hl=nl). Wij nemen hier geen bedrag over, omdat Google tijdelijke kortingen geeft en de prijs per periode verschilt.
 
 Claude betaal je apart. [Volgens de prijspagina van Claude](https://claude.com/pricing) kost een Standard-seat op Team $20 per gebruiker per maand bij jaarbetaling, of $25 bij maandbetaling. Met de ECB-koers van 30 oktober 2026 (1 euro is 1,1172 dollar) is dat ongeveer €17,90 en €22,38. Een Premium-seat kost $100 of $125 (ongeveer €89,51 of €111,89) en geeft vijf keer zoveel gebruik als een Standard-seat. Alle bedragen zijn exclusief btw.
 
 Een rekenvoorbeeld: een team van tien mensen werkt op Business Standard en houdt Gemini voor iedereen. Drie collega's met veel schrijf- en analysewerk krijgen er Claude Team Standard bij. Dat kost 3 × $20 = $60 per maand bij jaarbetaling, ongeveer €53,71. Let op: Team vraagt minimaal twee leden, dus voor één collega alleen kan Team niet. Hoe de plannen verschillen, lees je bij [Claude Pro, Team of Enterprise vergelijken](/prijs/pro-vs-team-vs-enterprise).
 
+<!-- figuur:2 -->
+
 ## Wat gebeurt er met je bedrijfsdata bij Claude en Gemini?
 
-In de zakelijke variant trainen beide aanbieders standaard niet op je data. [Het privacycentrum van Anthropic](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training) zegt dat Anthropic input en output van zakelijke producten standaard niet voor training gebruikt, tenzij je zelf feedback instuurt. Ook data uit de connectors voor Gmail, Drive en Agenda gebruikt Anthropic niet voor training. Input en output van de add-on verwijdert Anthropic binnen 30 dagen, met uitzonderingen die het helpartikel noemt.
+In de zakelijke variant trainen beide aanbieders standaard niet op je data. [Het privacycentrum van Anthropic](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training) zegt dat Anthropic input en output van zakelijke producten standaard niet voor training gebruikt, tenzij je zelf feedback instuurt. Ook data uit de connectors voor Gmail, Drive en Agenda gebruikt Anthropic niet voor training. Input en output van de add-on verwijdert Anthropic binnen 30 dagen, op een paar uitzonderingen na, volgens [het helpartikel over Claude in Docs, Sheets en Slides](https://support.claude.com/en/articles/16951679-use-claude-in-google-docs-sheets-and-slides). De add-on neemt eigen bewaartermijnen van je organisatie niet over, en zero data retention is voor de add-on nu niet beschikbaar.
 
 De [verwerkersovereenkomst van Anthropic](/compliance/anthropic-dpa) hoort bij [de zakelijke voorwaarden van Anthropic](https://www.anthropic.com/legal/commercial-terms). Daarin staat: "Anthropic may not train models on Customer Content from Services."
 
 Google schrijft in [de privacyhub voor generatieve AI in Workspace](https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub) dat Workspace klantdata niet voor training gebruikt zonder voorafgaande toestemming of instructie. Volgens dezelfde pagina beoordelen mensen je inhoud niet buiten je domein zonder toestemming, en valt de verwerking onder de Cloud Data Processing Addendum.
 
-Pas wel op met privé-accounts van Claude. Bij Free, Pro en Max beslist de gebruiker zelf in de privacyinstellingen of chats voor training gebruikt mogen worden, [volgens het privacycentrum voor consumenten](https://privacy.claude.com/en/articles/10023555-how-do-you-use-personal-data-in-model-training). Staat dat aan, dan [bewaart Anthropic die data tot 5 jaar](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data). Zet klantwerk daarom op Team.
+Pas wel op met privé-accounts van Claude. Bij Free, Pro en Max beslist de gebruiker zelf in de privacyinstellingen of chats voor training gebruikt mogen worden, [volgens het privacycentrum voor consumenten](https://privacy.claude.com/en/articles/10023555-how-do-you-use-personal-data-in-model-training). Staat dat aan, dan [bewaart Anthropic die data tot 5 jaar, ontdaan van identificerende gegevens](https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data). Zet klantwerk daarom op Team.
 
-Waar je data staat, is minder duidelijk. Voor de API zegt [de documentatie over dataresidentie](https://platform.claude.com/docs/en/manage-claude/data-residency) dat opslag nu alleen in de VS ("us") kan. Die pagina gaat over de API en zegt niets over Team. In de helpartikelen over Team en de connectors die wij lazen, vonden we geen opslagregio. Bij Google verschillen de mogelijkheden voor gegevensregio's per Workspace-abonnement, en bij Enterprise heten ze Enterprise-gegevensregio's. Vraag bij Google na wat voor jouw abonnement geldt. Meer hierover lees je bij [Claude-data in de EU houden](/compliance/eu-hosting).
+Dan de vraag waar je data staat. Volgens [het privacycentrum van Anthropic over serverlocaties](https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers) slaat Anthropic data van zijn zakelijke producten op in de VS. Standaard kan Anthropic het verkeer naar landen in de VS, Europa, Azië en Australië sturen. Die pagina noemt Claude Enterprise en de API als voorbeeld; Team staat er niet apart in. [De documentatie over dataresidentie](https://platform.claude.com/docs/en/manage-claude/data-residency) bevestigt dat "us" de enige opslagregio op de API is. Op de API kun je de verwerking ook beperken tot alleen de VS. Meer hierover lees je bij [Claude-data in de EU houden](/compliance/eu-hosting).
+
+Bij Google verschillen de mogelijkheden voor gegevensregio's per Workspace-abonnement, en bij Enterprise heten ze Enterprise-gegevensregio's. Vraag bij Google na wat voor jouw abonnement geldt.
 
 Voor zijn zakelijke producten heeft Anthropic [onder meer ISO 27001:2022, ISO/IEC 42001:2023 en SOC 2 Type I en II](https://support.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained). Google noemt voor Gemini onder meer SOC 1/2/3, ISO/IEC 27001 en 42001.
 
 De Autoriteit Persoonsgegevens [kreeg meldingen van datalekken](https://www.autoriteitpersoonsgegevens.nl/actueel/let-op-gebruik-ai-chatbot-kan-leiden-tot-datalekken) doordat medewerkers persoonsgegevens in AI-chatbots invoerden. De AP vraagt organisaties duidelijk te maken "welke gegevens zij wel en niet mogen invoeren". Lees ook [is Claude veilig voor bedrijfsdata](/compliance/is-claude-veilig).
 
-## Wanneer kies je Gemini, wanneer Claude, en wanneer allebei?
+## Claude vs Gemini: wanneer kies je welke, en wanneer allebei?
 
 Leeft je team in Gmail, Docs en Meet en zoek je vooral kleine versnellingen, zoals een mail samenvatten of een eerste opzet in Documenten? Begin dan met Gemini. Vanaf Business Standard zit het al in je abonnement, en je hoeft niets nieuws in te richten.
 
