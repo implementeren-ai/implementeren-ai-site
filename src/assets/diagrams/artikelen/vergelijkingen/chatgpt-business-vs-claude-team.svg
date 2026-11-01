@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Claude Team en ChatGPT Business als twee overlappende cirkels: beide kosten 20 dollar per standaardplek bij jaarbetaling en trainen standaard niet op je data; Claude Team gaat tot 150 plekken en laat de eigenaar de hele organisatie exporteren, ChatGPT Business gaat tot 200 plekken en laat je een opslagregio kiezen, nog in uitrol" font-family="Inter, system-ui, sans-serif" fill="#23261D">
+<defs><filter id="cbt-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+<clipPath id="cbt-c"><ellipse cx="430" cy="370" rx="290" ry="200"/></clipPath></defs>
+<rect width="1200" height="600" fill="#F4F1E8"/>
+<rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">ZELFDE PRIJS, ANDERE GRENZEN</text>
+<ellipse cx="430" cy="370" rx="290" ry="200" fill="#E9EBDC" stroke="#565A4C" stroke-width="3"/>
+<ellipse cx="770" cy="370" rx="290" ry="200" fill="#FFFFFF" fill-opacity=".6" stroke="#565A4C" stroke-width="3"/>
+<ellipse cx="770" cy="370" rx="290" ry="200" fill="#B4C13E" fill-opacity=".45" clip-path="url(#cbt-c)"/>
+<text font-style="italic" x="300" y="150" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="48" font-weight="500">Claude Team</text>
+<text font-style="italic" x="880" y="150" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="48" font-weight="500">ChatGPT Business</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="212" cy="276" r="9"/><path d="M196 306 a16 16 0 0 1 32 0"/><circle cx="236" cy="280" r="7"/><path d="M232 296 a13 13 0 0 1 18 10"/></g>
+<text x="264" y="303" font-size="32" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-1">150</text><text x="324" y="303" font-size="32">plekken</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="196" y="352" width="48" height="14" rx="3"/><path d="M200 366 v26 h40 v-26"/><path d="M212 378 h16"/></g>
+<text x="264" y="381" font-size="32">export</text>
+<text x="264" y="415" font-size="26" fill="#565A4C">hele organisatie</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="776" cy="276" r="9"/><path d="M760 306 a16 16 0 0 1 32 0"/><circle cx="800" cy="280" r="7"/><path d="M796 296 a13 13 0 0 1 18 10"/></g>
+<text x="828" y="303" font-size="32" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-1">200</text><text x="900" y="303" font-size="32">plekken</text>
+<g fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="784" cy="372" r="20"/><ellipse cx="784" cy="372" rx="8" ry="20"/><path d="M764 372 h40"/></g>
+<text x="828" y="381" font-size="32">opslagregio</text>
+<text x="828" y="415" font-size="26" fill="#565A4C">nog in uitrol</text>
+<text x="600" y="318" text-anchor="middle" font-size="56" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-weight="600" letter-spacing="-1" fill="#3D5220">$20</text>
+<text x="600" y="370" text-anchor="middle" font-size="32" fill="#3D5220">per plek</text>
+<text x="600" y="430" text-anchor="middle" font-size="26" fill="#23261D">geen training</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 31 okt 2026</text>
+<rect width="1200" height="600" filter="url(#cbt-g)"/></svg>
