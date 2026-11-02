@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Jouw bedrijf is verwerkingsverantwoordelijke en sluit een verwerkersovereenkomst (DPA) met de leverancier, die verwerker is. De leverancier geeft dezelfde plichten door aan zijn sub-verwerkers." font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="wdpa-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+</defs><rect width="1200" height="600" fill="#F4F1E8"/><rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">WIE IS WIE IN EEN VERWERKERSOVEREENKOMST</text>
+<g>
+<line x1="336" y1="390" x2="510" y2="390" stroke="#3D5220" stroke-width="7" stroke-linecap="round"/>
+<line x1="760" y1="390" x2="870" y2="390" stroke="#565A4C" stroke-width="4" stroke-linecap="round"/>
+<rect x="56" y="310" width="280" height="160" rx="16" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<rect x="510" y="310" width="250" height="160" rx="16" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<rect x="886" y="296" width="280" height="160" rx="16" fill="#E9EBDC" stroke="#23261D" stroke-width="4"/>
+<rect x="870" y="310" width="280" height="160" rx="16" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<rect x="374" y="326" width="100" height="128" rx="10" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<g stroke-width="8" stroke-linecap="round"><line x1="394" y1="354" x2="454" y2="354" stroke="#B4C13E"/><line x1="394" y1="380" x2="450" y2="380" stroke="#E1DED2"/><line x1="394" y1="404" x2="454" y2="404" stroke="#E1DED2"/><line x1="394" y1="428" x2="440" y2="428" stroke="#E1DED2"/></g>
+<rect x="790" y="350" width="56" height="80" rx="8" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<g stroke-width="6" stroke-linecap="round"><line x1="804" y1="370" x2="832" y2="370" stroke="#E1DED2"/><line x1="804" y1="388" x2="830" y2="388" stroke="#E1DED2"/><line x1="804" y1="406" x2="826" y2="406" stroke="#E1DED2"/></g>
+</g>
+<text x="424" y="244" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-style="italic" font-weight="500" font-size="56" fill="#3D5220">DPA</text>
+<text x="424" y="286" text-anchor="middle" font-size="26" fill="#565A4C">verwerkersovereenkomst</text>
+<text x="818" y="286" text-anchor="middle" font-size="26" fill="#565A4C">dezelfde plichten</text>
+<text x="196" y="374" text-anchor="middle" font-size="34" font-weight="600">jouw bedrijf</text>
+<text x="196" y="414" text-anchor="middle" font-size="26" fill="#565A4C">verwerkings-</text>
+<text x="196" y="446" text-anchor="middle" font-size="26" fill="#565A4C">verantwoordelijke</text>
+<text x="635" y="382" text-anchor="middle" font-size="34" font-weight="600">leverancier</text>
+<text x="635" y="424" text-anchor="middle" font-size="26" fill="#565A4C">verwerker</text>
+<text x="1010" y="394" text-anchor="middle" font-size="32" font-weight="600">sub-verwerkers</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 2 nov 2026</text>
+<rect width="1200" height="600" filter="url(#wdpa-g)"/></svg>
