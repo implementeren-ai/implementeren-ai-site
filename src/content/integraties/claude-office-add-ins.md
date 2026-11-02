@@ -8,7 +8,7 @@ targetKeywords:
   - claude word
   - claude outlook
   - claude in outlook
-wordCountTarget: 1871
+wordCountTarget: 1791
 priority: 2
 tier: 1
 cases:
@@ -117,9 +117,9 @@ softwareName: "Microsoft 365"
 softwareUrl: "https://www.microsoft.com/nl-nl/microsoft-365"
 ---
 
-Sinds 7 mei 2026 kun je Claude in Word, Excel en PowerPoint gebruiken als zijpaneel naast je document. Claude in Outlook kwam dezelfde dag uit als publieke bèta, schrijft Anthropic in [de aankondiging van de Office-add-ins](https://claude.com/resources/articles/collaborate-with-claude-across-excel-powerpoint-word-and-outlook). Je werkt dan in het bestand of de mail die open staat.
+Sinds 7 mei 2026 zijn de Claude-add-ins voor Word, Excel en PowerPoint algemeen beschikbaar, als zijpaneel naast je document. Claude in Outlook kwam dezelfde dag uit als publieke bèta, schrijft Anthropic in [de aankondiging van de Office-add-ins](https://claude.com/resources/articles/collaborate-with-claude-across-excel-powerpoint-word-and-outlook).
 
-Dit artikel gaat over die add-ins: wat je nodig hebt, hoe je ze installeert en uitrolt, en wat er met je mail gebeurt. De Microsoft 365-connector, waarmee je vanuit Claude zelf in je mail zoekt, is een andere route. Alles is op 2 november 2026 gecontroleerd bij Anthropic en Microsoft. Zie ook [andere koppelingen met Claude](/integraties).
+De Microsoft 365-connector, waarmee je vanuit Claude zelf in je mail zoekt, is een andere route. Alles is op 2 november 2026 gecontroleerd bij Anthropic en Microsoft. Zie ook [andere koppelingen met Claude](/integraties).
 
 ## Wat zijn de Claude-add-ins voor Word en Outlook?
 
@@ -137,12 +137,12 @@ In Outlook sorteert de add-in je ongelezen mail op wat jouw actie vraagt. Concep
 
 Tabel: De vier Claude-add-ins voor Microsoft 365, stand 2 november 2026.
 
-| Add-in | Status | Listing in AppSource | Werkt in | Werkt niet in |
-|---|---|---|---|---|
-| Word | algemeen beschikbaar | Claude for Microsoft 365 | Word op het web; Windows met Microsoft 365, versie 2205 (build 15202.10000) of hoger; Mac 16.61 of hoger | Word 2016 en 2019 (losse licentie), iPad, Android, .doc-bestanden |
-| [Excel](https://claude.com/docs/office-agents/excel) | algemeen beschikbaar | Claude for Microsoft 365 | Excel op het web; Windows met Microsoft 365, build 16.0.13127.20296 of hoger; Mac 16.46 of hoger | Excel 2016 en 2019 (losse licentie), iPad, Android |
-| [PowerPoint](https://claude.com/docs/office-agents/powerpoint) | algemeen beschikbaar | Claude for Microsoft 365 | PowerPoint op het web; Windows met Microsoft 365, build 16.0.13127.20296 of hoger; Mac 16.46 of hoger | PowerPoint 2016 en 2019 (losse licentie), iPad, Android |
-| Outlook | bèta | Claude for Outlook | Outlook op het web; nieuwe en klassieke Outlook op Windows met Microsoft 365; Outlook op Mac met Microsoft 365 | Outlook 2016 en 2019 (losse licentie), iOS, Android, Exchange on-premises |
+| Add-in | Status | Werkt in | Werkt niet in |
+|---|---|---|---|
+| Word | algemeen beschikbaar | web; Windows met Microsoft 365, versie 2205 (build 15202.10000) of hoger; Mac 16.61 of hoger | 2016 en 2019 (losse licentie), iPad, Android, .doc-bestanden |
+| [Excel](https://claude.com/docs/office-agents/excel) | algemeen beschikbaar | web; Windows met Microsoft 365, build 16.0.13127.20296 of hoger; Mac 16.46 of hoger | 2016 en 2019 (losse licentie), iPad, Android |
+| PowerPoint | algemeen beschikbaar | web; Windows met Microsoft 365, build 16.0.13127.20296 of hoger; Mac 16.46 of hoger | 2016 en 2019 (losse licentie), iPad, Android |
+| Outlook | bèta | web; nieuwe en klassieke Outlook op Windows met Microsoft 365; Mac met Microsoft 365 | 2016 en 2019 (losse licentie), iOS, Android, Exchange on-premises |
 
 ## Wat heb je nodig: welk abonnement en welke Office-versie?
 
@@ -150,7 +150,7 @@ Je hebt Claude Pro, Max, Team of Enterprise nodig. Op Free werken de add-ins nie
 
 Pro kost $20 per maand, of $17 bij jaarbetaling. Team kost $25 per seat per maand, of $20 bij jaarbetaling, voor 2 tot 150 mensen, exclusief btw. Met de ECB-koers van 30 oktober 2026 (1 euro is 1,1172 dollar) is $20 ongeveer €17,90 en $25 ongeveer €22,38. Zie [Claude Pro, Team of Enterprise vergelijken](/prijs/pro-vs-team-vs-enterprise).
 
-Op Windows werken de add-ins alleen met een Microsoft 365-abonnement, en Outlook vraagt dat ook op de Mac. Office 2016 of 2019 met een losse licentie werkt niet. Outlook vraagt Exchange Online, dus een eigen Exchange-server (on-premises) valt af.
+Op Windows heb je een Microsoft 365-abonnement nodig, voor Outlook ook op de Mac. Outlook vraagt Exchange Online: een eigen Exchange-server valt af.
 
 ## Hoe installeer je Claude in Word?
 
@@ -158,7 +158,7 @@ Op Windows werken de add-ins alleen met een Microsoft 365-abonnement, en Outlook
 2. Open Word en activeer de add-in. Op Windows via het tabblad **Start** (Home) > **Invoegtoepassingen** (Add-ins), op de Mac via **Extra** (Tools) > **Invoegtoepassingen** (Add-ins).
 3. Log in met je Claude-account.
 
-Omdat het één listing is, staat Claude daarna ook in Excel en PowerPoint. Vind je de add-in niet in de winkel, dan heeft je beheerder de Office Store waarschijnlijk dichtgezet.
+Omdat het één listing is, staat Claude daarna ook in Excel en PowerPoint.
 
 ## Hoe zet je Claude in Outlook aan?
 
@@ -171,14 +171,14 @@ Heeft je beheerder nog geen toestemming gegeven, dan zie je "Need admin approval
 
 ## Hoe rolt een beheerder de add-ins uit voor het hele team?
 
-Dit doe je in het Microsoft 365-beheercentrum. De stappen komen uit de handleidingen van Anthropic en [de uitrolgids van Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide).
+Dit doe je in het Microsoft 365-beheercentrum, volgens de handleidingen van Anthropic en [de uitrolgids van Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide).
 
-1. Ga naar **Settings** > **Org settings** > **User owned apps and services** en zet **Let users access the Office Store** aan.
-2. Ga naar **Instellingen** > **Geïntegreerde apps** > **Invoegtoepassingen** (Settings > Integrated apps > Add-ins).
+1. Ga naar **Settings** > **Org settings** > **User owned apps and services** (Instellingen > Organisatie-instellingen > Apps en services die eigendom zijn van de gebruiker) en zet **Let users access the Office Store** (Gebruikers toegang geven tot de Office Store) aan.
+2. Ga naar **Settings** > **Integrated apps** > **Add-ins** (Instellingen > Geïntegreerde apps > Invoegtoepassingen).
 3. Zoek in AppSource naar Claude for Microsoft 365, en daarna naar Claude for Outlook.
-4. Wijs de add-ins toe. Microsoft raadt groepen aan en een uitrol in fases: eerst jezelf (Just me) of een kleine testgroep, daarna de rest. Test Outlook eerst op één mailbox, zie onze ervaring onderaan.
-5. Alleen voor Outlook: een Global Administrator opent de toestemmingslink uit de Outlook-handleiding en accepteert de Microsoft Graph-rechten `Mail.ReadWrite`, `Calendars.Read`, `User.Read` en `offline_access`. Dat is eenmalig voor de hele tenant en werkt direct.
-6. Wacht af: volgens Anthropic duurt de uitrol tot 24 uur, en volgens Microsoft kan het 24 tot 72 uur duren voordat add-ins in het lint staan.
+4. Wijs de add-ins toe. Microsoft raadt groepen aan en een uitrol in fases: eerst **Just me** (Alleen ik) of een kleine testgroep, daarna de rest. Test Outlook eerst op één mailbox.
+5. Alleen voor Outlook: een Global Administrator opent de toestemmingslink uit [de Outlook-handleiding](https://claude.com/docs/office-agents/outlook#grant-microsoft-graph-consent) en accepteert de Microsoft Graph-rechten `Mail.ReadWrite`, `Calendars.Read`, `User.Read` en `offline_access`. Dat is eenmalig voor de hele tenant. Deze toestemming staat los van de toewijzing in stap 4 en werkt direct.
+6. Wacht af: Anthropic noemt tot 24 uur, Microsoft 24 tot 72 uur voordat add-ins in het lint staan.
 
 <!-- figuur:1 -->
 
@@ -192,17 +192,19 @@ Op Team en Enterprise zet een owner [werken over apps heen](https://claude.com/d
 
 ## Wat gebeurt er met je documenten en mail?
 
-Log je in met een Claude-account, dan gaan je gesprekken naar Anthropic, met alles wat Claude uit je document, mail of agenda leest. Anthropic verwijdert invoer en uitvoer binnen 30 dagen. Uitzonderingen zijn tot 2 jaar bij een overtreding van het gebruiksbeleid en 5 jaar voor feedback met duim omhoog of omlaag. Zie [het bewaarbeleid van Anthropic voor organisaties](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data).
+Log je in met een Claude-account, dan gaan je gesprekken naar Anthropic, met alles wat Claude uit je document, mail of agenda leest. Volgens de handleidingen van de add-ins verwijdert Anthropic invoer en uitvoer binnen 30 dagen. Uitzonderingen zijn tot 2 jaar bij een overtreding van het gebruiksbeleid en 5 jaar voor feedback met duim omhoog of omlaag. Zie [het bewaarbeleid van Anthropic voor organisaties](https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data).
 
-Op je apparaat staan de 50 recentste gesprekken per gebruiker en per Office-app, zonder synchronisatie. Wis je die geschiedenis, dan blijft volgens de handleidingen wat Anthropic al heeft gewoon staan. Geüploade bestanden verlopen sinds 15 september 2026 na 28 dagen. Zie [opslag en bewaartermijnen](https://claude.com/docs/office-agents/data-storage).
+Op je apparaat staan de 50 recentste gesprekken per gebruiker en per Office-app, zonder synchronisatie. Wis je die geschiedenis, dan blijft volgens de handleidingen wat Anthropic al heeft staan. Geüploade bestanden verlopen sinds 15 september 2026 na 28 dagen. Accepteert Anthropic voor jouw organisatie geen vervaldatum, dan uploadt de add-in het bestand zonder vervaldatum. Zie [opslag en bewaartermijnen](https://claude.com/docs/office-agents/data-storage).
 
-In Outlook blijft het Graph-token in je browser en gaat het niet naar Anthropic. De add-in vraagt geen recht om mail te versturen (`Mail.Send`): jij klikt op Verzenden. Voor de toon van concepten stuurt de add-in volgens dezelfde pagina over opslag recente verzonden mail naar het model, met het adres van de eerste ontvanger.
+In Outlook blijft het Graph-token in je browser en gaat het niet naar Anthropic. De add-in vraagt geen recht om mail te versturen (`Mail.Send`): jij klikt op Verzenden. Voor de toon van concepten stuurt de add-in volgens de opslagpagina recente verzonden mail naar het model, met het adres van de eerste ontvanger.
 
 <!-- figuur:2 -->
 
-De add-ins nemen eigen bewaarinstellingen niet over en staan niet in de audit logs van Enterprise. Met de Compliance API op Enterprise zie je de sessies wel. Op Pro, Max en Team is er volgens de Outlook-handleiding geen auditexport.
+Volgens de handleidingen nemen de add-ins eigen bewaarinstellingen niet over en staan niet in de audit logs van Enterprise. Met de Compliance API op Enterprise zie je de sessies wel. Op Pro, Max en Team is er geen auditexport.
 
-Op Team en Enterprise gelden [de Commercial Terms](https://www.anthropic.com/legal/commercial-terms): Anthropic mag niet trainen op klantcontent. Pro en Max vallen onder [de consumentenvoorwaarden](https://www.anthropic.com/news/updates-to-our-consumer-terms), zie de [verwerkersovereenkomst met Anthropic](/compliance/anthropic-dpa).
+Op Team en Enterprise gelden [de Commercial Terms](https://www.anthropic.com/legal/commercial-terms): Anthropic mag niet trainen op klantcontent. Zie ook de [verwerkersovereenkomst met Anthropic](/compliance/anthropic-dpa).
+
+Pro en Max vallen onder de consumentenvoorwaarden. Daar mag Anthropic [je gesprekken gebruiken om modellen te trainen](https://www.anthropic.com/news/updates-to-our-consumer-terms) als die instelling in je privacy-instellingen aan staat. Dan bewaart Anthropic ze tot 5 jaar in plaats van 30 dagen. De handleidingen van de add-ins noemen die instelling niet. Zet die instelling uit voordat je de add-in met klantdocumenten of mail gebruikt, of kies Team.
 
 De handleidingen noemen geen regio. Op het eigen platform van Anthropic staat data in de VS, zie [Claude-data in de EU houden](/compliance/eu-hosting). Voor verwerking in Europa kunnen de add-ins via Amazon Bedrock of Google Vertex AI lopen, zonder Claude-accounts. Werken over apps heen en dicteren vallen dan weg. Zie [de handleiding voor andere platforms](https://claude.com/docs/office-agents/third-party-platforms).
 
@@ -212,22 +214,21 @@ Spreek vooraf af welke mailboxen en documenten in Claude mogen. De Autoriteit Pe
 
 ## Waarom zie je Claude niet in Word of Outlook?
 
-- Je Office-versie is te oud, of het is Office 2016 of 2019 met een losse licentie.
+- Je Office-versie is te oud of heeft een losse licentie (2016, 2019).
 - De Office Store staat uit: de beheerder rolt dan uit met het manifest.
 - De uitrol is nog bezig. Reken op 24 tot 72 uur.
 - In Outlook is de knop verborgen: zet hem aan via Acties aanpassen.
 - Je ziet "Need admin approval": de Graph-toestemming ontbreekt.
-- De beheerder gebruikt PIM (tracking-ID 11126536).
-- Na de Windows-updates 2608 en 2609 (september en oktober 2026) zijn geschiedenis en skills weg. Ze staan nog op je computer, dus wis de add-incache niet en sla skills op in je Claude-account. Anthropic werkt met Microsoft aan een oplossing.
+- Na de Windows-updates 2608 en 2609 (september en oktober 2026) zijn geschiedenis en skills weg. Ze staan nog op je computer: wis de add-incache niet.
 
 ## Add-in of connector: welke route past bij jouw team?
 
-Met de add-in werk je in het bestand of de mail die open staat, en de add-in verstuurt nooit zelf iets. Met [de Microsoft 365-connector](https://support.claude.com/en/articles/12542951-set-up-the-microsoft-365-connector) zoek je vanuit Claude in mail, agenda, SharePoint, OneDrive en Teams. Die werkt op alle plannen, ook Free, en kan na toestemming van de beheerder ook mail versturen. De derde route is Copilot met Claude-modellen, binnen Microsofts eigen product.
+Met de add-in werk je in het bestand of de mail die open staat, en de add-in verstuurt nooit zelf iets. Met [de Microsoft 365-connector](https://support.claude.com/en/articles/12542951-set-up-the-microsoft-365-connector) zoek je vanuit Claude in mail, agenda, SharePoint, OneDrive en Teams. Die werkt op alle plannen, ook Free, en kan na toestemming van de beheerder ook mail versturen.
 
-**Onze ervaring.** We hebben de Office-add-ins nog bij geen klant uitgerold. Wel zagen we eind oktober 2026 dat ongelezen mails op gelezen sprongen in een eigen script dat elk uur conceptantwoorden in Outlook maakte. We testten het op één ongelezen mail en keken in vier stappen naar de leesstatus. Lezen veranderde niets, het conceptantwoord maken wel. Een eerdere zoektocht in de code, op 7 oktober, had dat gemist. Nu zet het script de mail daarna terug op ongelezen, getest met antwoorden en allen antwoorden.
+**Onze ervaring.** We hebben de Office-add-ins nog bij geen klant uitgerold. Wel zagen we eind oktober 2026 dat ongelezen mails op gelezen sprongen in een eigen script dat elk uur conceptantwoorden in Outlook maakte. Een test op één ongelezen mail liet zien: lezen veranderde niets, het conceptantwoord maken wel. Nu zet het script de mail daarna terug op ongelezen.
 
-Dat was onze eigen koppeling, niet de add-in van Anthropic. Of de add-in hetzelfde doet, hebben we niet getest. Die maakt wel ook concepten, met het recht `Mail.ReadWrite`. Test daarom eerst op één mailbox met een ongelezen mail.
+Dat was onze eigen koppeling, niet de add-in van Anthropic. Of de add-in hetzelfde doet, hebben we niet getest. De add-in maakt ook concepten en heeft daarvoor het recht `Mail.ReadWrite`. Test daarom eerst op één mailbox met een ongelezen mail.
 
 Bij [de sales-agent die concepten klaarzet](/cases/sdr-sales-agent) trok ons team dezelfde grens: elke ochtend 25 concepten, en het salesteam keurt elke mail goed voordat hij weggaat. Die agent draait op de Graph API, zonder add-in.
 
-Wil je de add-ins met je team uitrollen en afspraken maken over mail en documenten, kijk dan naar [Claude in 30 dagen inrichten](/claude-in-30-dagen).
+Wil je de add-ins met je team uitrollen, kijk dan naar [Claude in 30 dagen inrichten](/claude-in-30-dagen).
