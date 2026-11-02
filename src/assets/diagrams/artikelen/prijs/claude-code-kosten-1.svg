@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Staafdiagram van wat Claude Code voor 5 ontwikkelaars per maand kost: 5 standaard seats 100 dollar bij jaarbetaling of 125 dollar bij maandbetaling, 3 standaard en 2 premium seats 260 dollar, 5 premium seats 500 dollar, en via de Console 750 tot 1.250 dollar volgens het gemiddelde van Anthropic" data-bijschrift="Wat Claude Code voor 5 ontwikkelaars per maand kost, in dollar exclusief belasting. De Console-rij is het gemiddelde van Anthropic, geen offerte. Stand 2 november 2026." font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="cck1-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+<pattern id="cck1-h" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="14" stroke="#A8433B" stroke-width="3" opacity=".45"/></pattern>
+</defs><rect width="1200" height="700" fill="#F4F1E8"/><rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">5 ONTWIKKELAARS · PER MAAND · USD · EXCL. BELASTING</text>
+<text x="64" y="174" font-size="34" font-weight="600">5 standaard</text><text x="64" y="210" font-size="26" fill="#565A4C">jaarbetaling</text>
+<rect x="346" y="140" width="56" height="64" rx="10" fill="#CFCDBE"/>
+<text x="420" y="187" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-size="44" font-weight="600" letter-spacing="-1">$100</text>
+<text x="64" y="274" font-size="34" font-weight="600">5 standaard</text><text x="64" y="310" font-size="26" fill="#565A4C">maandbetaling</text>
+<rect x="346" y="240" width="70" height="64" rx="10" fill="#CFCDBE"/>
+<text x="434" y="287" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-size="44" font-weight="600" letter-spacing="-1">$125</text>
+<text x="64" y="374" font-size="34" font-weight="600">3 standaard</text><text x="64" y="410" font-size="26" fill="#565A4C">plus 2 premium</text>
+<rect x="346" y="340" width="146" height="64" rx="10" fill="#3D5220"/>
+<text x="510" y="387" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-size="44" font-weight="600" letter-spacing="-1" fill="#3D5220">$260</text>
+<text x="64" y="474" font-size="34" font-weight="600">5 premium</text><text x="64" y="510" font-size="26" fill="#565A4C">jaarbetaling</text>
+<rect x="346" y="440" width="280" height="64" rx="10" fill="#CFCDBE"/>
+<text x="644" y="487" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-size="44" font-weight="600" letter-spacing="-1">$500</text>
+<text x="64" y="574" font-size="34" font-weight="600">Console</text><text x="64" y="610" font-size="26" fill="#565A4C">via de API</text>
+<rect x="346" y="540" width="420" height="64" rx="10" fill="#CFCDBE"/>
+<rect x="766" y="540" width="280" height="64" rx="10" fill="url(#cck1-h)" stroke="#A8433B" stroke-width="3" stroke-dasharray="8 8"/>
+<text x="366" y="587" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-size="44" font-weight="600" letter-spacing="-1">$750–1.250</text>
+<line x1="346" y1="120" x2="346" y2="624" stroke="#23261D" stroke-width="3"/>
+<text x="1136" y="666" text-anchor="end" font-size="26" fill="#64685A">gemiddelde van Anthropic, geen offerte · stand 2 nov 2026</text>
+<rect width="1200" height="700" filter="url(#cck1-g)"/></svg>
