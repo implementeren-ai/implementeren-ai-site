@@ -8,7 +8,7 @@ targetKeywords:
   - wat is dpa
   - dpa betekenis
   - verwerkersovereenkomst
-wordCountTarget: 1615
+wordCountTarget: 1599
 priority: 1
 tier: 7
 cases:
@@ -38,7 +38,7 @@ updatedDate: null
 changelogLine: null
 reviewedBy: null
 reviewedDate: null
-kortAntwoord: "Een DPA (Data Processing Agreement) is een verwerkersovereenkomst: het contract dat artikel 28 van de AVG verplicht maakt zodra een leverancier persoonsgegevens namens jouw bedrijf verwerkt. Jij bent dan verwerkingsverantwoordelijke en de leverancier is verwerker. Het contract moet schriftelijk zijn, maar elektronisch mag ook. Bij Anthropic zit de DPA automatisch in de zakelijke voorwaarden."
+kortAntwoord: "Een DPA (Data Processing Agreement) is de Engelse naam voor een verwerkersovereenkomst. Artikel 28 van de AVG eist dat contract zodra een leverancier persoonsgegevens in jouw opdracht verwerkt. Jij bent dan verwerkingsverantwoordelijke en de leverancier is verwerker. Het contract moet schriftelijk zijn, maar elektronisch mag ook. Bij Anthropic zit de DPA automatisch in de zakelijke voorwaarden."
 bronnen:
   - titel: "AVG (Verordening (EU) 2016/679), volledige tekst op de site van de Autoriteit Persoonsgegevens: artikel 4, 28, 30 en 83"
     url: "https://www.autoriteitpersoonsgegevens.nl/algemene-verordening-gegevensbescherming-avg"
@@ -75,9 +75,6 @@ bronnen:
     geraadpleegd: "2026-11-02"
   - titel: "Anthropic Privacy Center, Where are your servers located? (15 juni 2026)"
     url: "https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers"
-    geraadpleegd: "2026-11-02"
-  - titel: "Anthropic Privacy Center, What certifications has Anthropic obtained? (zonder datum, 'Updated this week')"
-    url: "https://privacy.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained"
     geraadpleegd: "2026-11-02"
   - titel: "Claude, Plans & Pricing (claude.com)"
     url: "https://claude.com/pricing"
@@ -131,7 +128,7 @@ De AVG werkt met twee rollen. Jouw bedrijf is verwerkingsverantwoordelijke als h
 
 De AP geeft in [haar uitleg over verantwoordelijke en verwerker](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/verantwoordelijke-en-verwerker) twee gewone voorbeelden: je besteedt de boekhouding uit, of je gebruikt een clouddienst die persoonsgegevens opslaat. Niet elke leverancier is verwerker. Gebruikt een partij de gegevens voor eigen doelen, dan is die zelf verwerkingsverantwoordelijke. Met zo'n partij sluit je dan geen DPA.
 
-Een voorbeeld staat op [de pagina van de AP over de verwerkersovereenkomst](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/verwerkersovereenkomst). Een logistiek dienstverlener die namen en adressen nodig heeft om te bezorgen, is geen verwerker. Ook wat in het contract staat, beslist niet alles. "De feitelijke situatie is leidend", schrijft de AP. Bepaal jij waarvoor en hoe de gegevens worden verwerkt, dan ben jij verwerkingsverantwoordelijke, ook als het contract iets anders zegt.
+Een voorbeeld staat op [de pagina van de AP over de verwerkersovereenkomst](https://www.autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/verwerkersovereenkomst). Een logistiek dienstverlener die namen en adressen nodig heeft om te bezorgen, is geen verwerker. De rolverdeling hangt af van wat er in de praktijk gebeurt. "De feitelijke situatie is leidend", schrijft de AP. Bepaal jij waarvoor en hoe de gegevens worden verwerkt, dan ben jij verwerkingsverantwoordelijke, ook als het contract iets anders zegt.
 
 Zo bepaal je of je een verwerkersovereenkomst nodig hebt:
 
@@ -159,7 +156,7 @@ Tabel: Wat artikel 28 lid 3 AVG vraagt, met een voorbeeld uit de Anthropic DPA, 
 | Wissen of teruggeven na afloop (g) | Ook kopieën | Binnen 30 dagen na het einde van de overeenkomst (H.1) |
 | Informatie en audits (h) | Meewerken aan audits | Jaarlijkse externe audit, rapporten op verzoek (F.1); eigen audit onder voorwaarden (F.2) |
 
-Wat de Anthropic DPA verder regelt en voor welke abonnementen hij geldt, staat op onze pagina over de [Anthropic DPA](/compliance/anthropic-dpa). Welke certificaten Anthropic noemt, zoals SOC 2 en ISO 27001, lees je in [het Privacy Center over certificeringen](https://privacy.claude.com/en/articles/10015870-what-certifications-has-anthropic-obtained).
+Wat de Anthropic DPA verder regelt en voor welke abonnementen hij geldt, staat op onze pagina over de [Anthropic DPA](/compliance/anthropic-dpa).
 
 De AP geeft een praktische tip: maak de afspraken zo concreet mogelijk en herzie ze regelmatig. Neem je later meer diensten af, of lever je meer persoonsgegevens aan, dan moeten de afspraken meegroeien.
 
