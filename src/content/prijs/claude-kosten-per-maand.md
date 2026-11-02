@@ -7,7 +7,7 @@ targetKeywords:
   - claude kosten per maand
   - claude abonnement kosten
   - wat kost claude per maand
-wordCountTarget: 1587
+wordCountTarget: 1630
 priority: 1
 tier: 1
 cases:
@@ -39,7 +39,7 @@ reviewedBy: null
 reviewedDate: null
 disclaimer: fiscaal
 hasCalculator: false
-kortAntwoord: "Claude kosten per maand hangen voor een bedrijf vooral af van het aantal seats. Een standaard Team-seat kost $25 per gebruiker per maand, of $20 bij jaarbetaling. Vijf medewerkers betalen zo $100 tot $125 per maand, vijftien $300 tot $375 en vijftig $1.000 tot $1.250, exclusief btw. Premium seats en verbruik bij Enterprise komen daarbovenop."
+kortAntwoord: "Wat Claude per maand kost, hangt voor een bedrijf vooral af van het aantal seats. Een standaard Team-seat kost $25 per gebruiker per maand, of $20 bij jaarbetaling. Vijf medewerkers betalen zo $100 tot $125 per maand, vijftien $300 tot $375 en vijftig $1.000 tot $1.250, exclusief btw. Premium seats en verbruik bij Enterprise komen daarbovenop."
 bronnen:
   - titel: "Claude, Plans & Pricing (claude.com)"
     url: "https://claude.com/pricing"
@@ -89,6 +89,9 @@ bronnen:
   - titel: "Ondernemersplein (KVK, RVO, Belastingdienst): diensten importeren uit een EU-land"
     url: "https://ondernemersplein.overheid.nl/internationaal-ondernemen/importeren/diensten-importeren-uit-een-eu-land/"
     geraadpleegd: "2026-11-02"
+  - titel: "Ondernemersplein (KVK, RVO, Belastingdienst): diensten afnemen uit een land buiten de EU"
+    url: "https://ondernemersplein.overheid.nl/internationaal-ondernemen/importeren/diensten-importeren-uit-een-land-buiten-de-eu/"
+    geraadpleegd: "2026-11-02"
   - titel: "Europese Centrale Bank, euro-referentiekoersen (koers van 30 oktober 2026: 1 euro = 1,1172 dollar)"
     url: "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml"
     geraadpleegd: "2026-11-02"
@@ -98,7 +101,7 @@ faq:
   - question: "Wat kost Claude per maand in euro?"
     answer: "Anthropic toont op de prijspagina dollars. Volgens het helpartikel over Pro zie je de prijs in je eigen valuta waar dat wordt ondersteund. Voor prijzen in de app verwijst Anthropic naar je app store. Een standaard Team-seat kost volgens de prijspagina $25 per maand of $20 bij jaarbetaling. Met de ECB-koers van 30 oktober 2026 is dat ongeveer €22,38 of €17,90, exclusief btw."
   - question: "Zijn de prijzen van Claude inclusief btw?"
-    answer: "Nee. Op de prijspagina staat dat de prijzen exclusief belasting zijn, en je factuuradres bepaalt welke belasting erbij komt. Volgens Ondernemersplein verlegt een dienstverlener uit een ander EU-land de btw meestal naar een zakelijke afnemer. Je trekt die btw dan af als voorbelasting. Kijk op je eigen factuur hoe het bij jou gaat."
+    answer: "Nee. Op de prijspagina staat dat de prijzen exclusief belasting zijn, en je factuuradres bepaalt welke belasting erbij komt. Volgens Ondernemersplein verlegt een buitenlandse dienstverlener de btw meestal naar een zakelijke afnemer. Dat staat er zowel voor diensten uit een ander EU-land als voor diensten van buiten de EU. Je trekt die btw dan af als voorbelasting. Kijk op je eigen factuur hoe het bij jou gaat."
   - question: "Wat gebeurt er met de kosten als een medewerker vertrekt?"
     answer: "Iemand uit de organisatie halen verlaagt de rekening niet. De seat komt vrij voor een collega. Pas als je het aantal seats verlaagt, daalt het bedrag. Dat gaat in bij de volgende verlenging, zonder terugbetaling naar rato. Bij jaarbetaling kan dat dus bijna een jaar duren."
   - question: "Wat kost Claude Code per maand?"
@@ -109,7 +112,7 @@ Wat kost Claude per maand als je het hele team erop zet? Hieronder staan de Clau
 
 Anthropic rekent in dollars. De euro-bedragen zijn omgerekend met de koers van de Europese Centrale Bank op 30 oktober 2026: 1 euro is 1,1172 dollar. Alle bedragen zijn exclusief btw. De voorbeelden zijn rekenwerk op de lijstprijzen en helpartikelen van Anthropic, gecontroleerd op 2 november 2026. Wij hebben hiervoor geen verbruik bij klanten gemeten.
 
-## Waaruit bestaan je Claude kosten per maand?
+## Waaruit bestaan je Claude-kosten per maand?
 
 Je maandbedrag heeft een vast deel en een deel dat kan schommelen. Alle plannen naast elkaar vind je bij [alle Claude-prijzen op een rij](/prijs).
 
@@ -123,7 +126,7 @@ Je maandbedrag heeft een vast deel en een deel dat kan schommelen. Alle plannen 
 
 ## Wat kost Claude per maand voor 5, 15 en 50 medewerkers?
 
-De seatprijzen in de tabel komen van [de prijspagina](https://claude.com/pricing), de API-credits uit [het helpartikel over de API-credits](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans). Per team staan er twee varianten in. In variant A krijgt iedereen een standaard seat. In variant B werkt een klein deel van het team de hele dag met Claude, bijvoorbeeld met Claude Code of lange taken in Claude Cowork, en krijgt die groep een premium seat. Dat zijn aannames om mee te rekenen, geen advies over hoeveel premium seats jouw team nodig heeft.
+De seatprijzen in de tabel komen van [de prijspagina](https://claude.com/pricing), de API-credits uit [het helpartikel over de API-credits](https://support.claude.com/en/articles/17154008-monthly-api-credits-for-max-ultra-and-team-plans). Per team staan er twee varianten in, en bij 50 medewerkers een derde met Enterprise. In variant A krijgt iedereen een standaard seat. In variant B werkt een klein deel van het team de hele dag met Claude, bijvoorbeeld met Claude Code of lange taken in Claude Cowork, en krijgt die groep een premium seat. Dat zijn aannames om mee te rekenen, geen advies over hoeveel premium seats jouw team nodig heeft.
 
 Tabel: Claude kosten per maand voor 5, 15 en 50 medewerkers, exclusief btw, stand 2 november 2026 (ECB-koers 30 oktober 2026: 1 euro = 1,1172 dollar).
 
@@ -137,15 +140,17 @@ Tabel: Claude kosten per maand voor 5, 15 en 50 medewerkers, exclusief btw, stan
 | 50 medewerkers, B | 45 standaard + 5 premium (Team) | $1.750 | $1.400 | ± €1.253,13 | $500 (plafond) |
 | 50 medewerkers, C | 50 Enterprise-seats | kan niet, alleen per jaar | $1.000 plus verbruik | ± €895,09 plus verbruik | geen |
 
-**5 medewerkers.** Team kan vanaf 2 seats. Bij maandbetaling kost variant A ongeveer €111,89. Vijf losse [Pro-abonnementen](https://support.claude.com/en/articles/8325606-what-is-the-pro-plan) kosten samen $100 per maand, maar Claude Pro is volgens Anthropic bedoeld voor individuele consumenten. Op Team gebruikt Anthropic je invoer en uitvoer standaard niet om modellen te trainen, volgens [het privacycentrum van Anthropic](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training). Over de [verwerkersovereenkomst van Anthropic](/compliance/anthropic-dpa) en de afweging tussen de plannen lees je meer in [Claude Pro, Team of Enterprise kiezen](/prijs/pro-vs-team-vs-enterprise).
+**5 medewerkers.** Team kan vanaf 2 seats. Bij maandbetaling kost variant A ongeveer €111,89. Vijf losse [Pro-abonnementen](https://support.claude.com/en/articles/8325606-what-is-the-pro-plan) kosten samen $100 per maand, maar Claude Pro is volgens Anthropic bedoeld voor individuele consumenten. Op Team gebruikt Anthropic je invoer en uitvoer standaard niet om modellen te trainen, volgens [het privacycentrum van Anthropic](https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training). Wat de [verwerkersovereenkomst van Anthropic](/compliance/anthropic-dpa) inhoudt, lees je op een aparte pagina. De afweging tussen de plannen staat in [Claude Pro, Team of Enterprise kiezen](/prijs/pro-vs-team-vs-enterprise).
 
 **15 medewerkers.** Met drie premium seats stijgt het bedrag bij maandbetaling van $375 naar $675, ongeveer €604,19. De API-credits zouden in variant B op $540 uitkomen, het plafond ligt op $500.
 
-**50 medewerkers.** Bij vijftig mensen heb je de keus, want Team gaat tot 150 seats en Enterprise begint bij 20. De Enterprise-seat kost $20 per maand en betaal je per jaar, net als de jaarprijs van een standaard Team-seat. Bij Enterprise komt al het gebruik er los bij, en hoeveel dat wordt, staat in geen prijslijst.
+**50 medewerkers.** Bij vijftig mensen heb je de keus, want Team gaat tot 150 seats en Enterprise begint bij 20. De Enterprise-seat kost $20 per maand en betaal je per jaar, net als de jaarprijs van een standaard Team-seat. Bij Enterprise komt al het gebruik er los bij, en hoeveel dat wordt, staat in geen prijslijst. Volgens [de prijspagina](https://claude.com/pricing) voegt Enterprise vooral beheer- en compliancefuncties toe, zoals auditlogs en een Compliance API. Of je die nodig hebt, lees je in [Claude Pro, Team of Enterprise kiezen](/prijs/pro-vs-team-vs-enterprise).
 
 Anthropic geeft één houvast, alleen voor Claude Code. In [de documentatie over Claude Code-kosten](https://code.claude.com/docs/en/costs) staat dat de kosten in enterprise-omgevingen gemiddeld rond $13 per ontwikkelaar per actieve dag liggen, en $150 tot $250 per ontwikkelaar per maand. Voor 90% van de gebruikers blijft het onder $30 per actieve dag. Een rekenvoorbeeld, als aanname: werken 5 van de 50 mensen dagelijks met Claude Code, dan komt er volgens dat gemiddelde $750 tot $1.250 per maand bij.
 
 [De verbruiksgids voor Enterprise](https://support.claude.com/en/articles/14782391-claude-enterprise-consumption-guide) noemt voor chat en Cowork geen bedragen per gebruiker. De gids noemt chat "lower intensity" en Claude Code en Cowork "higher intensity". De gids raadt aan voorzichtig te beginnen met limieten en zware functies in golven uit te rollen. De Claude Code-documentatie adviseert eerst een kleine pilotgroep te laten meten.
+
+<!-- figuur:2 -->
 
 ## Maandelijks of jaarlijks betalen: wat scheelt het per maand?
 
@@ -159,7 +164,7 @@ Weet je nog niet hoeveel collega's Claude echt gaan gebruiken? Begin dan per maa
 
 ## Claude abonnement kosten: wat komt er nog bovenop?
 
-Naast de Claude abonnement kosten kunnen er nog vier posten bijkomen, plus eenmalige kosten.
+Naast de seats kunnen er nog vijf posten bijkomen. De laatste is eenmalig.
 
 1. **Usage credits.** Volgens [het helpartikel over usage credits](https://support.claude.com/en/articles/12005970-manage-usage-credits-for-team-and-seat-based-enterprise-plans) betaal je die tegen standaard API-tarieven. Op Team koop je ze vooraf in, als je wilt met automatisch bijvullen. De eigenaar zet een maandlimiet voor de organisatie en per gebruiker. Bereikt iemand de limiet, dan stopt het gebruik tot de volgende periode, al kan het de limiet net overschrijden. Zet daarom eerst een limiet voor de organisatie en zet daarna pas usage credits aan. Lees ook [hoe de gebruikslimieten en usage credits werken](/prijs/credits-en-limieten). Het tarief hangt af van [welk Claude-model je kiest](/nieuws/welk-claude-model-mkb).
 2. **De API voor koppelingen.** Bouw je Claude in je eigen software of processen, dan is dat een apart budget per gebruik. Daar zijn de meegeleverde API-credits van Team voor bedoeld, en de kosten reken je uit met de [API-kostencalculator](/tools/claude-api-kosten-calculator).
@@ -167,7 +172,7 @@ Naast de Claude abonnement kosten kunnen er nog vier posten bijkomen, plus eenma
 4. **Btw.** Op de prijspagina staat: "Prices shown don't include applicable tax." Je factuuradres bepaalt welke belasting erbij komt, volgens [het helpartikel over je factuuradres](https://support.claude.com/en/articles/12997130-understanding-your-billing-address-and-tax-calculation). Je btw-nummer vul je in bij je betaalgegevens. Een wijziging geldt alleen voor volgende facturen, staat in [het helpartikel over het btw-nummer](https://support.claude.com/en/articles/9927624-add-or-update-your-team-plan-s-tax-or-vat-id). Kijk op je factuur of de btw is verlegd.
 5. **Implementatie, eenmalig.** Wil je hulp bij de invoering, dan begint dat bij ons met een Readiness Scan vanaf €1.500. De rollout van vier weken kost vanaf €7.500 exclusief btw. Samen begint het bij €9.000. Zie [wat een implementatie kost](/claude-implementatie).
 
-## Hoe reken je je eigen Claude kosten per maand uit?
+## Hoe reken je je eigen Claude-kosten per maand uit?
 
 1. Tel wie Claude echt gaat gebruiken, want je betaalt per seat. Team vraagt minimaal 2 seats en gaat tot 150, Enterprise vraagt er minimaal 20.
 2. Bepaal wie er de hele dag mee werkt. Die collega's krijgen een premium seat met 6,25 keer de ruimte van Pro, de rest een standaard seat.
