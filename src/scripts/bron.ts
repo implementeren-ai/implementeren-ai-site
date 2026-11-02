@@ -9,13 +9,17 @@
 // toestemming voor analyse (src/scripts/consent.ts). Alles in try/catch: dit mag een pagina
 // of formulier nooit breken.
 
-import { analyseToegestaan, CONSENT_EVENT, type Toestemming } from './consent';
+import { analyseToegestaan, CONSENT_EVENT } from './consent';
 
 const SLEUTEL = 'czk-bron';
+// Versie 2: paden en aantal alleen met toestemming. Records zonder deze versie komen van
+// voor de toestemmingsbanner; lees() haalt daar de paden uit.
+const VERSIE = 2;
 const MAX_PADEN = 10;
 const KLIK_IDS = ['gclid', 'msclkid', 'fbclid', 'li_fat_id'] as const;
 
 interface Bron {
+  v: number;
   referrer: string;
   landing: string;
   utm: Record<string, string>;
@@ -96,6 +100,7 @@ function leesKlik(): Record<string, boolean> {
 
 function nieuweBron(): Bron {
   return {
+    v: VERSIE,
     referrer: leesReferrer(),
     landing: leesLanding(),
     utm: leesUtm(),
@@ -120,7 +125,15 @@ function schrijf(bron: Bron) {
 function lees(): Bron | null {
   try {
     const ruw = sessionStorage.getItem(SLEUTEL);
-    return ruw ? (JSON.parse(ruw) as Bron) : null;
+    if (!ruw) return null;
+    const bron = JSON.parse(ruw) as Bron;
+    if (!bron || typeof bron !== 'object') return null;
+    // Oud record (zonder versie): paden zijn zonder toestemming verzameld, dus weg ermee.
+    if (bron.v !== VERSIE) {
+      vergeetPaden(bron);
+      bron.v = VERSIE;
+    }
+    return bron;
   } catch {
     return null;
   }
@@ -145,11 +158,12 @@ function vergeetPaden(bron: Bron) {
   delete bron.aantal;
 }
 
-// Nieuwe keuze in de banner werkt meteen: intrekken wist de paden, toestaan telt deze pagina.
-function volgToestemming(e: Event) {
+// Nieuwe keuze in de banner (of in een ander tabblad) werkt meteen: intrekken wist de
+// paden, toestaan telt deze pagina. De opgeslagen keuze beslist, niet de event-inhoud.
+function volgToestemming() {
   try {
     const bron = lees() || nieuweBron();
-    if ((e as CustomEvent<Toestemming>).detail?.analytics === true) {
+    if (analyseToegestaan()) {
       if (!bron.paden?.length) telPageview(bron);
     } else {
       vergeetPaden(bron);
