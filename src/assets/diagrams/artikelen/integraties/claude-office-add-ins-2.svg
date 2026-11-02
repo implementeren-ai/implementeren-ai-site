@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Waar je gesprekken staan als je met een Claude-account inlogt: op je apparaat de 50 recentste gesprekken per app en bij Outlook het Graph-token, bij Anthropic het gesprek met wat Claude las, verwijderd binnen 30 dagen, en geüploade bijlagen na 28 dagen. Een aparte route via Amazon Bedrock of Google Vertex AI kan in een EU-regio draaien, zonder Claude-account." data-bijschrift="Waar je gesprekken staan bij inloggen met een Claude-account, en de aparte route via Bedrock of Vertex AI. Stand 2 november 2026." font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="coa2-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+<marker id="coa2-ai" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#23261D"/></marker>
+<marker id="coa2-am" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#565A4C"/></marker>
+</defs><rect width="1200" height="600" fill="#F4F1E8"/><rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">WAAR JE GESPREKKEN STAAN</text>
+<g>
+<rect x="64" y="130" width="400" height="250" rx="24" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<rect x="736" y="130" width="400" height="250" rx="24" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<path d="M476 255 L 724 255" fill="none" stroke="#23261D" stroke-width="5" stroke-linecap="round" marker-end="url(#coa2-ai)"/>
+<g fill="#B4C13E"><circle cx="100" cy="250" r="8"/><circle cx="100" cy="300" r="8"/><circle cx="772" cy="250" r="8"/><circle cx="772" cy="300" r="8"/></g>
+<path d="M264 392 L 264 474 L 444 474" fill="none" stroke="#565A4C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 12" marker-end="url(#coa2-am)"/>
+<rect x="460" y="432" width="440" height="84" rx="18" fill="#E9EBDC" stroke="#565A4C" stroke-width="3" stroke-dasharray="10 8"/>
+</g>
+<text x="96" y="194" font-size="34" font-weight="600">jouw apparaat</text>
+<text x="122" y="259" font-size="26">50 gesprekken per app</text>
+<text x="122" y="309" font-size="26" fill="#3D5220" font-weight="600">Graph-token (Outlook)</text>
+<text x="768" y="194" font-size="34" font-weight="600">Anthropic</text>
+<text x="794" y="259" font-size="26">weg binnen 30 dagen</text>
+<text x="794" y="309" font-size="26">bijlagen na 28 dagen</text>
+<text x="600" y="232" text-anchor="middle" font-size="26" fill="#565A4C">gesprek</text>
+<text x="680" y="485" text-anchor="middle" font-size="30" font-weight="600">Bedrock of Vertex AI · EU</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 2 nov 2026</text>
+<rect width="1200" height="600" filter="url(#coa2-g)"/></svg>

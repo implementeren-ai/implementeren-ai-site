@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Een Word-document en een Outlook-mail, elk met een smal Claude-paneel ernaast: in Word komen wijzigingen binnen als bijgehouden wijzigingen, in Outlook blijft het concept onverzonden tot jij op Verzenden klikt" font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="coa-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+</defs><rect width="1200" height="600" fill="#F4F1E8"/><rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">CLAUDE IN WORD EN OUTLOOK · JIJ HOUDT DE LAATSTE KLIK</text>
+<g>
+<rect x="150" y="120" width="240" height="280" rx="12" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<g stroke-width="9" stroke-linecap="round"><line x1="180" y1="164" x2="320" y2="164" stroke="#E1DED2"/><line x1="180" y1="199" x2="350" y2="199" stroke="#E1DED2"/><line x1="180" y1="234" x2="300" y2="234" stroke="#CFCDBE"/><line x1="180" y1="269" x2="340" y2="269" stroke="#B4C13E"/><line x1="180" y1="304" x2="350" y2="304" stroke="#E1DED2"/><line x1="180" y1="339" x2="290" y2="339" stroke="#E1DED2"/></g>
+<line x1="172" y1="234" x2="308" y2="234" stroke="#565A4C" stroke-width="4" stroke-linecap="round"/>
+<rect x="402" y="120" width="112" height="280" rx="12" fill="#E9EBDC" stroke="#23261D" stroke-width="4"/>
+<rect x="418" y="144" width="80" height="44" rx="10" fill="#FFFFFF" stroke="#CFCDBE" stroke-width="3"/>
+<rect x="418" y="204" width="80" height="70" rx="10" fill="#FFFFFF" stroke="#CFCDBE" stroke-width="3"/>
+<g stroke="#E1DED2" stroke-width="7" stroke-linecap="round"><line x1="432" y1="166" x2="482" y2="166"/><line x1="432" y1="226" x2="484" y2="226"/><line x1="432" y1="250" x2="470" y2="250"/></g>
+<rect x="418" y="352" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#23261D" stroke-width="3"/>
+<rect x="690" y="160" width="250" height="200" rx="12" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<path d="M694 166 L815 254 L936 166" fill="none" stroke="#23261D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g stroke="#E1DED2" stroke-width="9" stroke-linecap="round"><line x1="722" y1="302" x2="860" y2="302"/><line x1="722" y1="330" x2="830" y2="330"/></g>
+<rect x="952" y="120" width="112" height="280" rx="12" fill="#E9EBDC" stroke="#23261D" stroke-width="4"/>
+<rect x="968" y="144" width="80" height="44" rx="10" fill="#FFFFFF" stroke="#CFCDBE" stroke-width="3"/>
+<rect x="968" y="204" width="80" height="70" rx="10" fill="#FFFFFF" stroke="#CFCDBE" stroke-width="3"/>
+<g stroke="#E1DED2" stroke-width="7" stroke-linecap="round"><line x1="982" y1="166" x2="1032" y2="166"/><line x1="982" y1="226" x2="1034" y2="226"/><line x1="982" y1="250" x2="1020" y2="250"/></g>
+<rect x="968" y="352" width="80" height="28" rx="14" fill="#FFFFFF" stroke="#23261D" stroke-width="3"/>
+</g>
+<text x="332" y="458" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-style="italic" font-weight="500" font-size="60">Word</text>
+<text x="332" y="516" text-anchor="middle" font-size="32" font-weight="600">wijzigingen bijgehouden</text>
+<text x="877" y="458" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-style="italic" font-weight="500" font-size="60">Outlook</text>
+<text x="877" y="516" text-anchor="middle" font-size="32" font-weight="600" fill="#3D5220">concept onverzonden</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 2 nov 2026</text>
+<rect width="1200" height="600" filter="url(#coa-g)"/></svg>
