@@ -1,7 +1,7 @@
 ---
 // Merkregel: nooit "officieel", "partner" of "specialist" in relatie tot Anthropic of Claude; zie docs/seo-improvement/specs/D-trust-legal-entity.md (D-11).
-// Redesign v2 (27 okt): tekst
-// letterlijk gelijk aan 1b, alleen vormgeving en sectievolgorde gewijzigd.
+// Redesign v2 (27 okt): vormgeving en sectievolgorde. Tekst 2 nov: accent van Claude naar
+// AI implementeren (akkoord Sweder); title, beschrijving en H1 bewust gelijk ("claude zakelijk").
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
 import camielWater from '../assets/team/camiel-water.jpg';
@@ -20,7 +20,7 @@ const diensten = (await getCollection('diensten'))
 const stapLabels = ['Stap één', 'Stap twee', 'Stap drie'];
 
 const zorgen = [
-  { cat: 'Veiligheid', q: 'Bang dat Claude dingen sloopt', a: "Claude draait in een afgesloten omgeving. Je ziet elke wijziging voordat die doorgaat en je kunt alles terugdraaien. Geen verrassingen." },
+  { cat: 'Veiligheid', q: 'Bang dat AI dingen sloopt', a: "Claude draait in een afgesloten omgeving. Je ziet elke wijziging voordat die doorgaat en je kunt alles terugdraaien. Geen verrassingen." },
   { cat: 'Compliance', q: 'Hoe zit het met AVG?', a: "Claude for Work traint niet op je data en heeft SSO en een verwerkersovereenkomst. Je data wordt opgeslagen in de Verenigde Staten. Moet alles in de EU blijven, dan kan dat via AWS Bedrock of Google Vertex AI. We leggen het in gewoon Nederlands uit, zonder juridisch geneuzel. En mogen klantnamen en persoonsgegevens Anthropic helemaal niet bereiken? Dan pseudonimiseren we je data op je eigen systemen voordat die naar Claude gaat, en zetten we de echte namen pas terug als het antwoord binnen is. Dat richten we voor je in." },
   { cat: 'Ontslagen', q: 'Moet ik mensen ontslaan?', a: "Nee. Het hele punt is 10x je huidige team, niet een kleiner team. Niemand eruit, iedereen wordt beter in z'n werk." },
   { cat: 'Complexiteit', q: 'Te technisch voor mijn team', a: "We leggen het uit zodat iedereen het snapt, ook zonder AI-ervaring. We werken met jouw echte documenten en processen, geen neppe voorbeelden. Twee tot vier mensen uit je team worden champion en dragen de kennis verder." },
@@ -73,9 +73,9 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
     <section class="v2-hero">
       <div class="v2-gloed" aria-hidden="true"></div>
       <div class="v2-hero-tekst">
-        <p class="v2-pil"><img src={auteurs.camiel.foto} alt="" width="28" height="28" />Jouw team × AI</p>
+        <p class="v2-pil"><img src={auteurs.camiel.foto} alt="" width="28" height="28" />AI implementeren · met Claude</p>
         <h1>Claude zakelijk inzetten in jouw <span class="v2-accent">MKB</span></h1>
-        <p class="v2-hero-lead">Wij richten Claude in bij je bedrijf en blijven tot je team er zelf mee werkt.</p>
+        <p class="v2-hero-lead">Wij implementeren AI in je bedrijf, met Claude als gereedschap, en blijven tot je team er zelf mee werkt.</p>
         <div class="v2-knoppen">
           <a href="/ai-enablement-scan" class="v2-knop v2-knop-olijf">Doe de gratis AI-check <span aria-hidden="true">&rarr;</span></a>
           <a href="/claude-readiness-scan" class="v2-knop v2-knop-licht">Bekijk de Readiness Scan</a>
@@ -125,7 +125,7 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
     <section class="v2-wrap v2-stappen">
       <div class="v2-stappen-intro">
         <h2>Drie manieren om te beginnen</h2>
-        <p class="v2-zacht">Eerst een audit, dan rollout, dan retainer. Elke stap staat los. Je gaat pas door als de vorige stap z'n geld waard was.</p>
+        <p class="v2-zacht">Zo implementeren we AI: eerst een audit, dan de rollout, dan de retainer. Elke stap staat los. Je gaat pas door als de vorige stap z'n geld waard was.</p>
         <p class="v2-stappen-noot"><strong>Audit</strong> <span aria-hidden="true">&rarr;</span> <strong>Rollout</strong> <span aria-hidden="true">&rarr;</span> <strong>Retainer</strong> &nbsp;·&nbsp; elke stap staat los, doorgaan is altijd jouw keuze</p>
         <p class="v2-stappen-noot">Hoe de stappen op elkaar aansluiten en wat het samen kost, lees je bij <a href="/claude-implementatie">Claude-implementatie</a>. Wie het werk doet, staat bij <a href="/claude-consultant">Claude-consultant</a>.</p>
       </div>
@@ -207,7 +207,7 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
     <section class="v2-wrap v2-wie">
       <div>
         <p class="v2-label">Wie zijn wij</p>
-        <p class="v2-citaat"><span class="v2-onthul">Geen bureau dat een rapport aflevert. Een team dat Claude bij je installeert en blijft tot het werkt.</span></p>
+        <p class="v2-citaat"><span class="v2-onthul">Geen bureau dat een rapport aflevert. Een team dat AI bij je implementeert en blijft tot het werkt.</span></p>
         <div class="v2-persoon">
           <img src={auteurs.camiel.foto} alt="" width="56" height="56" loading="lazy" />
           <p>
@@ -313,10 +313,10 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
     <!-- 9. Slot-band -->
     <section class="v2-slot">
       <div class="v2-slot-band">
-        <h2>Nieuwsgierig of Claude bij je bedrijf <span class="v2-accent">past</span>?</h2>
+        <h2>Nieuwsgierig of AI bij je bedrijf <span class="v2-accent">past</span>?</h2>
         <p>Doe de gratis AI-check. Je spreekt direct met de mensen die het werk doen, geen salesteam ertussen.</p>
         <div class="v2-slot-invoer">
-          <span class="v2-invoer-tekst" aria-hidden="true"><span data-typ="Past Claude bij ons kantoor">Past Claude bij ons kantoor</span><span class="v2-caret"></span></span>
+          <span class="v2-invoer-tekst" aria-hidden="true"><span data-typ="Past AI bij ons kantoor">Past AI bij ons kantoor</span><span class="v2-caret"></span></span>
           <a href="/ai-enablement-scan" class="v2-knop v2-knop-donker">Doe de gratis AI-check</a>
         </div>
       </div>
