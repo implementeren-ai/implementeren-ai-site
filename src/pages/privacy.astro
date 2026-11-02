@@ -14,12 +14,13 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Privacyverklaring', ur
     <Broodkruimel items={breadcrumbs} />
     <p class="mt-7 v2-chip">Privacy</p>
     <h1 class="mt-6 v2-artikel-h1">Privacyverklaring</h1>
-    <p class="mt-4 text-sm text-inkt-zacht">Laatst bijgewerkt: 22 oktober 2026</p>
+    <p class="mt-4 text-sm text-inkt-zacht">Laatst bijgewerkt: 2 november 2026</p>
 
     <div class="mt-8 prose prose-stone max-w-none v2-prose">
       <p>
         Deze verklaring gaat over implementeren.ai.
         Kort samengevat: we zetten geen cookies, we bouwen geen bezoekersprofielen, en de enige persoonsgegevens die we ontvangen zijn de gegevens die je zelf invult of mailt.
+        Welke pagina's je bekeek sturen we alleen mee als je daar zelf toestemming voor geeft.
       </p>
 
       <h2>Wie is verantwoordelijk</h2>
@@ -48,7 +49,8 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Privacyverklaring', ur
       <p>
         We willen weten via welk kanaal aanvragen binnenkomen, bijvoorbeeld via een zoekmachine, LinkedIn of een AI-assistent.
         Daarvoor bewaart je browser tijdens je bezoek een klein pakketje in sessionStorage, onder de naam czk-bron.
-        Daarin staat: de verwijzende site (alleen domein en pad; zoektermen alleen bij een zoekmachine), de pagina waarop je binnenkwam, eventuele utm-campagnecodes uit de link, of de link een advertentie-klikcode bevatte (alleen ja of nee, nooit de code zelf), het tijdstip van je eerste pageview, en de laatste paden die je op deze site bekeek, met een teller.
+        Daarin staat: de verwijzende site (alleen domein en pad; zoektermen alleen bij een zoekmachine), de pagina waarop je binnenkwam, eventuele utm-campagnecodes uit de link, of de link een advertentie-klikcode bevatte (alleen ja of nee, nooit de code zelf) en het tijdstip van je eerste pageview.
+        Alleen als je toestemming geeft voor het meesturen van bekeken pagina's (zie hieronder) komen daar de laatste paden bij die je op deze site bekeek, met een teller.
       </p>
       <p>
         Dit pakketje blijft in jouw browser, in dat ene tabblad, en verdwijnt zodra je het tabblad sluit.
@@ -78,10 +80,24 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Privacyverklaring', ur
         Wij ontvangen de afspraak en je ingevulde gegevens in onze agenda.
       </p>
 
-      <h2>Geen cookies, geen banner</h2>
+      <h2>Wat je browser bewaart en je privacy-keuze</h2>
       <p>
         Deze site zet geen cookies, ook geen analytische of advertentiecookies.
-        Daarom zie je hier geen cookiebanner: er valt niets te accepteren of te weigeren.
+        Zonder het je te vragen bewaart je browser alleen twee dingen.
+        Je privacy-keuze staat in localStorage onder de naam iai-consent: of je toestemming gaf en wanneer, zodat we het niet bij elk bezoek opnieuw vragen.
+        Na 12 maanden vragen we het opnieuw.
+        Daarnaast staat in sessionStorage het herkomstpakketje czk-bron dat hierboven staat beschreven.
+        Die kanaalmeting valt onder de uitzondering voor analytische gegevens met weinig of geen gevolgen voor je privacy (artikel 11.7a lid 3 van de Telecommunicatiewet), en daar is geen toestemming voor nodig.
+      </p>
+      <p>
+        Er is één optionele categorie: analyse, oftewel bekeken pagina's meesturen.
+        Geef je daar toestemming voor, dan houdt je browser tijdens je bezoek bij welke pagina's je op deze site bekeek, en gaat die lijst mee als je de AI-check verstuurt.
+        Deze categorie staat standaard uit.
+        Kies je niets, sluit je de melding of klik je hem weg, dan blijft hij uit.
+      </p>
+      <p>
+        Je kunt je keuze altijd wijzigen of intrekken via de knop Privacy-instellingen onderaan elke pagina.
+        Trek je je toestemming in, dan wist je browser meteen de lijst met bekeken pagina's.
       </p>
 
       <h2>Hoe lang we gegevens bewaren</h2>
@@ -89,6 +105,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Privacyverklaring', ur
         Inzendingen van de AI-check en e-mailcorrespondentie bewaren we tot 24 maanden na het laatste contact, daarna verwijderen we ze.
         Worden we het eens over een opdracht, dan bewaren we de gegevens die bij de administratie horen, zoals offertes en facturen, 7 jaar vanwege de wettelijke fiscale bewaarplicht.
         De herkomstgegevens in je browser verdwijnen vanzelf zodra je het tabblad sluit.
+        Je privacy-keuze blijft 12 maanden in je browser staan, of tot je hem wist.
       </p>
 
       <h2>Jouw rechten</h2>
