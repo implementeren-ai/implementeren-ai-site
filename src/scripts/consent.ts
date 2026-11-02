@@ -9,7 +9,8 @@
 //   window.iaiConsent.open() -> opent de instellingen
 //   window 'iai-consent-change' (CustomEvent, detail { analytics }) bij elke nieuwe keuze.
 // Een toekomstig script mag pas laden als analytics === true, en moet stoppen bij een
-// event met analytics === false.
+// event met analytics === false. Een keuze in een ander tabblad komt via het
+// storage-event ook als iai-consent-change binnen.
 
 export const CONSENT_SLEUTEL = 'iai-consent';
 export const CONSENT_EVENT = 'iai-consent-change';
@@ -75,4 +76,17 @@ export function bewaarToestemming(analytics: boolean): Toestemming {
     // Een luisteraar die gooit mag de keuze niet ongedaan maken.
   }
   return staat;
+}
+
+// Keuze gewijzigd of gewist in een ander tabblad: hier hetzelfde event afvuren, zodat
+// bron.ts de paden wist en een open banner bijwerkt. Ontbreekt de keuze, dan geldt geen
+// toestemming.
+try {
+  window.addEventListener('storage', (e) => {
+    if (e.key !== CONSENT_SLEUTEL && e.key !== null) return;
+    const staat = leesToestemming() ?? { analytics: false };
+    window.dispatchEvent(new CustomEvent<Toestemming>(CONSENT_EVENT, { detail: staat }));
+  });
+} catch {
+  // Geen window (bijvoorbeeld tijdens de build): niets te volgen.
 }

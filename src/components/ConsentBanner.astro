@@ -1,7 +1,8 @@
 ---
 // Toestemmingsbanner (AVG/ePrivacy). Niet-modaal: geen overlay, geen scroll-lock, geen
 // focus-trap. Staat standaard op hidden, dus zonder JS verschijnt hij niet en draait er
-// niets optioneels. De logica staat in src/scripts/consent.ts; de footerknop
+// niets optioneels. Sluiten (kruisje of Escape) verbergt hem alleen voor deze pageview en
+// slaat niets op: analyse blijft uit en de vraag komt op de volgende pagina terug. De logica staat in src/scripts/consent.ts; de footerknop
 // "Privacy-instellingen" (data-consent-open) opent de instellingen opnieuw.
 ---
 <aside id="iai-consent" class="iai-consent" aria-label="Privacy-keuze" hidden>
@@ -34,6 +35,8 @@
     <button type="button" class="iai-consent-knop" data-consent="opslaan" id="iai-consent-opslaan" hidden>Keuze opslaan</button>
     <button type="button" class="iai-consent-link" id="iai-consent-toggle" aria-expanded="false" aria-controls="iai-consent-instellingen">Instellingen</button>
   </div>
+  {/* Sluitknop staat achteraan in de DOM, zodat de keuzeknoppen eerst aan de beurt zijn; visueel rechtsboven. */}
+  <button type="button" class="iai-consent-sluit" id="iai-consent-sluit" aria-label="Melding sluiten"><span aria-hidden="true">×</span></button>
 </aside>
 
 <style>
@@ -70,12 +73,33 @@
   }
   .iai-consent-titel {
     margin: 0 0 6px;
+    padding-right: 36px;
     font-family: var(--font-serif);
     font-size: 17px;
     font-weight: 600;
     letter-spacing: -0.01em;
   }
-  .iai-consent-titel:focus { outline: none; }
+  /* Focus na openen via de footer: subtiel, maar zichtbaar. */
+  .iai-consent-titel:focus { outline: 2px solid var(--color-accent); outline-offset: 3px; border-radius: 4px; }
+  .iai-consent-sluit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: none;
+    color: var(--color-inkt-zacht);
+    font: inherit;
+    font-size: 22px;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .iai-consent-sluit:hover { background: var(--color-papier); color: var(--color-inkt); }
   .iai-consent-tekst { margin: 0; color: var(--color-inkt-zacht); }
   .iai-consent a { color: var(--color-accent-diep); text-decoration: underline; text-underline-offset: 2px; }
   .iai-consent a:hover { color: var(--color-accent-donkerst); }
@@ -103,10 +127,13 @@
   .iai-consent-categorie p { margin: 2px 0 0; font-size: 14px; color: var(--color-inkt-zacht); }
   .iai-consent-altijd { font-weight: 400; color: var(--color-inkt-zacht); }
 
-  .iai-consent-knoppen { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  /* De twee keuzeknoppen zijn bewust gelijk van vorm en gewicht. */
+  /* De twee keuzeknoppen zijn bewust gelijk van vorm, breedte en gewicht: naast elkaar in
+     twee gelijke kolommen, of op smalle schermen allebei over de volle breedte. */
+  .iai-consent-knoppen { margin-top: 16px; display: grid; grid-template-columns: 1fr; gap: 8px; }
+  @media (min-width: 420px) {
+    .iai-consent-knoppen { grid-template-columns: 1fr 1fr; }
+  }
   .iai-consent-knop {
-    flex: 1 1 10rem;
     min-height: 44px;
     padding: 0 18px;
     border: 1px solid var(--color-inkt);
@@ -121,6 +148,8 @@
   .iai-consent-knop[hidden] { display: none; }
   .iai-consent-knop:hover { background: #000; }
   .iai-consent-link {
+    grid-column: 1 / -1;
+    justify-self: start;
     min-height: 44px;
     padding: 0 6px;
     border: 0;
@@ -135,6 +164,7 @@
   .iai-consent-link:hover { color: var(--color-inkt); }
   .iai-consent-knop:focus-visible,
   .iai-consent-link:focus-visible,
+  .iai-consent-sluit:focus-visible,
   .iai-consent a:focus-visible { outline: 2px solid var(--color-inkt); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) {
     .iai-consent-knop { transition: none; }
@@ -142,7 +172,7 @@
 </style>
 
 <script>
-  import { bewaarToestemming, leesToestemming, type Toestemming } from '../scripts/consent';
+  import { bewaarToestemming, CONSENT_EVENT, leesToestemming, type Toestemming } from '../scripts/consent';
 
   const banner = document.getElementById('iai-consent');
   const instellingen = document.getElementById('iai-consent-instellingen');
@@ -153,6 +183,8 @@
   const analyse = document.getElementById('iai-consent-analyse') as HTMLInputElement | null;
   // Waar de focus heen gaat na een keuze, als de banner via de footerknop werd geopend.
   let terugNaar: HTMLElement | null = null;
+  // True als de banner bewust is geopend (footer of API), false als hij vanzelf verscheen.
+  let handmatig = false;
 
   function toonInstellingen(open: boolean) {
     if (!instellingen || !toggle) return;
@@ -165,15 +197,18 @@
     if (open && analyse) analyse.checked = leesToestemming()?.analytics === true;
   }
 
-  function open(metInstellingen: boolean) {
+  function open(metInstellingen: boolean, bewust: boolean) {
     if (!banner) return;
+    handmatig = bewust;
     banner.hidden = false;
     toonInstellingen(metInstellingen);
   }
 
+  // Ook gebruikt voor het kruisje en Escape: verbergen zonder iets op te slaan.
   function sluit() {
     if (!banner) return;
     banner.hidden = true;
+    handmatig = false;
     toonInstellingen(false);
     if (terugNaar && document.contains(terugNaar)) terugNaar.focus();
     terugNaar = null;
@@ -193,6 +228,24 @@
     else if (soort === 'opslaan') kies(analyse?.checked === true);
   });
 
+  document.getElementById('iai-consent-sluit')?.addEventListener('click', sluit);
+
+  // Escape sluit de melding als de focus erin staat of nergens in het bijzonder.
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !banner || banner.hidden) return;
+    const actief = document.activeElement;
+    if (!actief || actief === document.body || banner.contains(actief)) sluit();
+  });
+
+  // Keuze gewijzigd, ook in een ander tabblad: het vinkje volgen, en een vanzelf
+  // verschenen banner verbergen zodra er een keuze is.
+  window.addEventListener(CONSENT_EVENT, () => {
+    if (!banner || banner.hidden) return;
+    const keuze = leesToestemming();
+    if (analyse) analyse.checked = keuze?.analytics === true;
+    if (keuze && !handmatig) sluit();
+  });
+
   toggle?.addEventListener('click', () => {
     toonInstellingen(toggle.getAttribute('aria-expanded') !== 'true');
   });
@@ -203,7 +256,7 @@
     knop.hidden = false;
     knop.addEventListener('click', () => {
       terugNaar = knop;
-      open(true);
+      open(true, true);
       titel?.focus();
     });
   });
@@ -212,12 +265,12 @@
   const api = {
     get: (): Toestemming | null => leesToestemming(),
     open: () => {
-      open(true);
+      open(true, true);
       titel?.focus();
     },
   };
   (window as unknown as { iaiConsent: typeof api }).iaiConsent = api;
 
   // Nog geen (geldige) keuze: eerste laag tonen. Er wordt niets aangenomen.
-  if (leesToestemming() === null) open(false);
+  if (leesToestemming() === null) open(false, false);
 </script>
