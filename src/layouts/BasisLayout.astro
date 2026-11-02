@@ -8,6 +8,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { moetNoindex } from '../data/indexering.mjs';
 import BronMeting from '../components/BronMeting.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
 import interLatin400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
 import instrumentLatin from '@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2?url';
 
@@ -70,6 +71,7 @@ const geenIndex = noindex ?? moetNoindex(pad);
       <slot />
     </main>
     {toonFooter && <Footer />}
+    <ConsentBanner />
     <BronMeting />
     {/* Cloudflare Web Analytics. Het oude project kreeg dit automatisch geïnjecteerd, dit project
         niet; zonder deze tag levert claudezakelijk-tracking (cf_analytics.py) geen bezoekcijfers. */}

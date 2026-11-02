@@ -92,6 +92,10 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 .v2-voet strong { color: #fff; font-weight: 600; margin-bottom: 4px; }
 .v2 .v2-voet-link { color: rgba(244, 241, 232, .7); text-decoration: none; transition: color .2s; }
 .v2 .v2-voet-link:hover { color: var(--color-v2-olijf-fel); }
+/* Footerknop "Privacy-instellingen" (ConsentBanner): oogt als de links ernaast. */
+.v2 .v2-voet-knop { padding: 0; border: 0; background: none; font: inherit; cursor: pointer; }
+.v2 .v2-voet-knop[hidden] { display: none; }
+.v2 .v2-voet-knop:focus-visible { outline: 2px solid var(--color-v2-olijf-fel); outline-offset: 2px; }
 .v2 .v2-logo-licht { color: #fff; font-size: 22px; }
 .v2 .v2-logo-licht span { color: var(--color-v2-olijf-fel); }
 .v2-voet-onder { border-top: 1px solid rgba(244, 241, 232, .12); padding-block: 18px; font-size: 13px; }
