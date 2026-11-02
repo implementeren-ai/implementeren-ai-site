@@ -58,6 +58,16 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 .v2 .v2-logo span { color: var(--color-v2-olijf); }
 /* Beeldmerk (src/assets/logo/logo-mark.svg) voor het woordmerk, op de maat van de letters. */
 .v2-logo-merk { display: inline-block; width: 1.3em; height: 1.3em; margin-right: .4em; vertical-align: -0.3em; border-radius: .3em; }
+/* Bij hover of focus op het logo bewegen de twee lage balken als een equalizer; de i staat stil, de punt wipt mee. */
+.v2-logo-merk :is(.merk-b1, .merk-b2) { transform-box: fill-box; transform-origin: 50% 100%; }
+.v2-logo:is(:hover, :focus-visible) .v2-logo-merk :is(.merk-b1, .merk-b2) { animation: v2-merk-eq 1.8s ease-in-out infinite; }
+.v2-logo:is(:hover, :focus-visible) .v2-logo-merk .merk-b2 { animation-delay: .25s; }
+.v2-logo:is(:hover, :focus-visible) .v2-logo-merk .merk-punt { animation: v2-merk-hop 1.8s ease-in-out .5s infinite; }
+@keyframes v2-merk-eq { 0%, 100% { transform: scaleY(1); } 30% { transform: scaleY(.45); } 60% { transform: scaleY(1.15); } }
+@keyframes v2-merk-hop { 0%, 100% { transform: none; } 40% { transform: translateY(-2px); } }
+@media (prefers-reduced-motion: reduce) { .v2-logo .v2-logo-merk * { animation: none !important; } }
+/* De tegel heeft dezelfde kleur als de voet; een dunne lichte rand houdt hem zichtbaar. */
+.v2-voet .v2-logo-merk { box-shadow: 0 0 0 1px rgba(244, 241, 232, .22); }
 .v2-kop ul { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
 .v2 .v2-kop ul a:not(.v2-knop) { color: var(--color-v2-inkt-2); text-decoration: none; }
 .v2 .v2-kop ul a:not(.v2-knop):hover, .v2 .v2-kop ul a[aria-current="page"] { color: var(--color-v2-inkt); }

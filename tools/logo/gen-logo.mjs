@@ -2,8 +2,9 @@
 // Genereert het beeldmerk van Implementeren.ai en alles wat ervan afgeleid is.
 // Gebruik: node tools/logo/gen-logo.mjs   (vanuit de repo-root; uitvoer daarna committen)
 //
-// Het merk: een kleine letter "i" in crème op een olijfgroene tegel, met de punt als vierkant
-// in fel olijf, dezelfde kleur als ".ai" in het woordmerk op donker. Alles is pad, geen <text>,
+// Het merk (K1, gekozen door Sweder 2 nov 2026): drie oplopende balken op een donkere tegel,
+// de hoogste is een "i" in crème met de punt als vierkant in fel olijf, dezelfde kleur als ".ai"
+// in het woordmerk op donker. De twee lage balken staan voor de stappen ervoor. Alles is pad, geen <text>,
 // zodat het zonder fonts rendert. Kleuren zijn de v2-tokens uit src/styles/global.css.
 // Het woordmerk en de tagline komen als paden uit tekst.json, gemaakt door tekstpaden.py.
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
@@ -15,19 +16,26 @@ const KLEUR = {
   inkt2: '#565A4C', // --color-v2-inkt-2
   olijf: '#3D5220', // --color-v2-olijf
   olijfFel: '#B4C13E', // --color-v2-olijf-fel
+  balk1: '#55623A', // donkere trede, alleen in het merk
+  balk2: '#8E9A5C', // middelste trede, alleen in het merk
 };
 
-// Raster van 32. Even maten, zodat het merk op 16px op hele pixels valt.
-const PUNT = 'M12 4h8v8h-8z';
-const STAM = 'M12 14h8v14h-8z';
+// Raster van 32: balken van 6 breed met 2 ertussen, onderkant op 28.
+// Met de classes laat de header de balken bewegen (v2.css, .v2-logo-merk); elders doen ze niets.
+const BALKEN = [
+  { x: 5, y: 20, h: 8, kleur: KLEUR.balk1, klasse: 'merk-b1' },
+  { x: 13, y: 15, h: 13, kleur: KLEUR.balk2, klasse: 'merk-b2' },
+  { x: 21, y: 11, h: 17, kleur: KLEUR.creme, klasse: 'merk-i' },
+  { x: 21, y: 3, h: 6, kleur: KLEUR.olijfFel, klasse: 'merk-punt' },
+];
 const tekens = (schaal = 1) => {
   const t = schaal === 1 ? '' : ` transform="translate(16 16) scale(${schaal}) translate(-16 -16)"`;
-  return `<g${t}><path fill="${KLEUR.olijfFel}" d="${PUNT}"/><path fill="${KLEUR.creme}" d="${STAM}"/></g>`;
+  return `<g${t}>${BALKEN.map((b) => `<rect class="${b.klasse}" x="${b.x}" y="${b.y}" width="6" height="${b.h}" rx="1" fill="${b.kleur}"/>`).join('')}</g>`;
 };
 // rx 8 = afgeronde tegel; rx 0 = volle vlakken voor iOS en maskable (het OS rondt zelf af).
 const merkSvg = ({ rx = 8, schaal = 1, maat } = {}) =>
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"${maat ? ` width="${maat}" height="${maat}"` : ''}>`
-  + `<rect width="32" height="32" rx="${rx}" fill="${KLEUR.olijf}"/>${tekens(schaal)}</svg>\n`;
+  + `<rect width="32" height="32" rx="${rx}" fill="${KLEUR.inkt}"/>${tekens(schaal)}</svg>\n`;
 
 const tekst = JSON.parse(readFileSync(new URL('./tekst.json', import.meta.url), 'utf8'));
 const { woordmerk, tagline, capEm } = tekst;
@@ -39,7 +47,7 @@ function lockupDelen({ x = 0, y = 0, tegel = 40, px = 28, kleurNaam = KLEUR.inkt
   const basis = y + tegel / 2 + (capEm * px) / 2;
   const tx = x + tegel + tegel * 0.3;
   const breedte = tegel * 1.3 + woordmerk.breedte * s;
-  const svg = `<g transform="translate(${x} ${y}) scale(${tegel / 32})"><rect width="32" height="32" rx="8" fill="${KLEUR.olijf}"/>${tekens()}</g>`
+  const svg = `<g transform="translate(${x} ${y}) scale(${tegel / 32})"><rect width="32" height="32" rx="8" fill="${KLEUR.inkt}"/>${tekens()}</g>`
     + `<g transform="translate(${tx.toFixed(2)} ${basis.toFixed(2)}) scale(${s})">`
     + `<path fill="${kleurNaam}" d="${woordmerk.merk}"/><path fill="${kleurStaart}" d="${woordmerk.staart}"/></g>`;
   return { svg, breedte };
@@ -73,7 +81,7 @@ writeFileSync('src/assets/logo/logo.svg', lockupSvg);
 
 writeFileSync('public/apple-touch-icon.png', await png(merkSvg({ rx: 0 }), 180));
 for (const px of [96, 192, 512]) writeFileSync(`public/brand/icon-${px}.png`, await png(merkSvg(), px));
-// Maskable: volle achtergrond, merk op 80% zodat de "i" ruim binnen de veilige cirkel (80%) valt.
+// Maskable: volle achtergrond, merk op 80% zodat de balken ruim binnen de veilige cirkel (80%) vallen.
 writeFileSync('public/brand/maskable-512.png', await png(merkSvg({ rx: 0, schaal: 0.8 }), 512));
 
 // favicon.ico met PNG-afbeeldingen (16, 32, 48), voor Google en oude browsers.
