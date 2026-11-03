@@ -385,11 +385,22 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Gratis AI-check', url:
     if (!laatsteInzending) return;
     tipsKnop.disabled = true;
     if (tipsStatus) tipsStatus.textContent = 'Versturen…';
-    const uitkomst = await stuurNaarWeb3Forms({
+    // Bronvelden opnieuw lezen: de privacy-keuze kan sinds de eerste inzending veranderd
+    // zijn. Zonder toestemming voor analyse gaat de paginalijst niet (opnieuw) mee.
+    let bron: Record<string, string> = {};
+    try {
+      bron = bronVelden();
+    } catch {
+      bron = { bron_kanaal: 'onbekend' };
+    }
+    const tipsPayload: Record<string, unknown> = {
       ...laatsteInzending,
+      ...bron,
       tips_per_mail: 'ja',
       subject: `AI-check: tips gevraagd door ${laatsteInzending.bedrijf || 'onbekend bedrijf'}`,
-    });
+    };
+    if (!('bron_paginas_deze_sessie' in bron)) delete tipsPayload.bron_paginas_deze_sessie;
+    const uitkomst = await stuurNaarWeb3Forms(tipsPayload);
     if (tipsStatus) {
       tipsStatus.textContent = uitkomst.ok
         ? 'Genoteerd. Je krijgt de tips op het adres dat je invulde.'

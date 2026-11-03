@@ -2,22 +2,32 @@
 // De eerste lead (22 oktober 2026) kwam binnen zonder enige bron. Dit script legt bij de
 // eerste pageview van een sessie de herkomst vast en houdt de laatste paden bij.
 //
-// Privacy-keuze: alleen sessionStorage. Geen cookies, geen localStorage, niets dat de
-// sessie overleeft, geen klik-ID-waarden (alleen of ze er waren). Daarom geen
-// toestemmingsbanner nodig. Alles in try/catch: dit mag een pagina of formulier nooit breken.
+// Privacy-keuze: alleen sessionStorage. Geen cookies, niets dat de sessie overleeft, geen
+// klik-ID-waarden (alleen of ze er waren). De kanaalvelden vallen onder de
+// analytics-uitzondering van art. 11.7a lid 3 Tw. De lijst met bekeken pagina's (paden,
+// aantal) koppelt surfgedrag aan een lead en wordt alleen bijgehouden en meegestuurd na
+// toestemming voor analyse (src/scripts/consent.ts). Alles in try/catch: dit mag een pagina
+// of formulier nooit breken.
+
+import { analyseToegestaan, CONSENT_EVENT } from './consent';
 
 const SLEUTEL = 'czk-bron';
+// Versie 2: paden en aantal alleen met toestemming. Records zonder deze versie komen van
+// voor de toestemmingsbanner; lees() haalt daar de paden uit.
+const VERSIE = 2;
 const MAX_PADEN = 10;
 const KLIK_IDS = ['gclid', 'msclkid', 'fbclid', 'li_fat_id'] as const;
 
 interface Bron {
+  v: number;
   referrer: string;
   landing: string;
   utm: Record<string, string>;
   klik: Record<string, boolean>;
   ts: string;
-  paden: string[];
-  aantal: number;
+  // Alleen met toestemming voor analyse.
+  paden?: string[];
+  aantal?: number;
 }
 
 // Zoekmachines: hun referrer-query mag mee (meestal stuurt alleen Bing of DuckDuckGo er een).
@@ -90,44 +100,77 @@ function leesKlik(): Record<string, boolean> {
 
 function nieuweBron(): Bron {
   return {
+    v: VERSIE,
     referrer: leesReferrer(),
     landing: leesLanding(),
     utm: leesUtm(),
     klik: leesKlik(),
     ts: new Date().toISOString(),
-    paden: [location.pathname],
-    aantal: 1,
   };
+}
+
+// Voegt de huidige pageview toe aan paden en teller. Alleen aanroepen met toestemming.
+function telPageview(bron: Bron) {
+  const paden = Array.isArray(bron.paden) ? bron.paden : [];
+  // Een herlaadbeurt telt mee als pageview, maar zet het pad niet dubbel in de lijst.
+  if (paden[paden.length - 1] !== location.pathname) paden.push(location.pathname);
+  bron.paden = paden.slice(-MAX_PADEN);
+  bron.aantal = (Number(bron.aantal) || 0) + 1;
+}
+
+function schrijf(bron: Bron) {
+  sessionStorage.setItem(SLEUTEL, JSON.stringify(bron));
 }
 
 function lees(): Bron | null {
   try {
     const ruw = sessionStorage.getItem(SLEUTEL);
-    return ruw ? (JSON.parse(ruw) as Bron) : null;
+    if (!ruw) return null;
+    const bron = JSON.parse(ruw) as Bron;
+    if (!bron || typeof bron !== 'object') return null;
+    // Oud record (zonder versie): paden zijn zonder toestemming verzameld, dus weg ermee.
+    if (bron.v !== VERSIE) {
+      vergeetPaden(bron);
+      bron.v = VERSIE;
+    }
+    return bron;
   } catch {
     return null;
   }
 }
 
 // Draait op elke openbare pageview (BasisLayout). Eerste pageview van de sessie legt de
-// herkomst vast; daarna worden alleen pad en teller bijgewerkt.
+// herkomst vast. Met toestemming voor analyse worden ook pad en teller bijgewerkt.
 export function legBronVast() {
   try {
-    const bestaand = lees();
-    let bron: Bron;
-    if (!bestaand) {
-      bron = nieuweBron();
-    } else {
-      bron = bestaand;
-      const paden = Array.isArray(bron.paden) ? bron.paden : [];
-      // Een herlaadbeurt telt mee als pageview, maar zet het pad niet dubbel in de lijst.
-      if (paden[paden.length - 1] !== location.pathname) paden.push(location.pathname);
-      bron.paden = paden.slice(-MAX_PADEN);
-      bron.aantal = (Number(bron.aantal) || 0) + 1;
-    }
-    sessionStorage.setItem(SLEUTEL, JSON.stringify(bron));
+    const bron = lees() || nieuweBron();
+    if (analyseToegestaan()) telPageview(bron);
+    else vergeetPaden(bron);
+    schrijf(bron);
   } catch {
     // sessionStorage geblokkeerd of vol: bronVelden() valt terug op document.referrer.
+  }
+  window.addEventListener(CONSENT_EVENT, volgToestemming);
+}
+
+function vergeetPaden(bron: Bron) {
+  delete bron.paden;
+  delete bron.aantal;
+}
+
+// Nieuwe keuze in de banner (of in een ander tabblad) werkt meteen: intrekken wist de
+// paden, toestaan telt deze pagina. De opgeslagen keuze beslist, niet de event-inhoud.
+function volgToestemming() {
+  try {
+    const bron = lees() || nieuweBron();
+    if (analyseToegestaan()) {
+      if (!bron.paden?.length) telPageview(bron);
+    } else {
+      vergeetPaden(bron);
+    }
+    schrijf(bron);
+  } catch {
+    // Zie legBronVast.
   }
 }
 
@@ -186,17 +229,21 @@ export function bronVelden(): Record<string, string> {
     const bron = lees() || nieuweBron();
     const utm = Object.entries(bron.utm || {}).map(([k, v]) => `${k}=${v}`).join(', ');
     const klik = KLIK_IDS.map((id) => `${id}: ${bron.klik?.[id] ? 'ja' : 'nee'}`).join(', ');
-    const paden = Array.isArray(bron.paden) ? bron.paden : [];
-    return {
+    const velden: Record<string, string> = {
       bron_kanaal: bepaalKanaal(bron),
       bron_referrer: bron.referrer || '(geen)',
       bron_landingspagina: bron.landing || '(onbekend)',
       bron_utm: utm || '(geen)',
       bron_klik_id: klik,
-      bron_paginas_deze_sessie: `${Number(bron.aantal) || paden.length} pageviews: ${paden.join(' > ')}`,
       bron_eerste_bezoek: bron.ts || '',
       apparaat: window.innerWidth < 768 ? 'mobile' : 'desktop',
     };
+    // Bekeken pagina's alleen met toestemming voor analyse; anders ontbreekt het veld helemaal.
+    const paden = Array.isArray(bron.paden) ? bron.paden : [];
+    if (analyseToegestaan() && paden.length) {
+      velden.bron_paginas_deze_sessie = `${Number(bron.aantal) || paden.length} pageviews: ${paden.join(' > ')}`;
+    }
+    return velden;
   } catch {
     return { bron_kanaal: 'onbekend' };
   }
