@@ -6,7 +6,7 @@ export const site = {
   onafhankelijkheidLang:
     'Implementeren.ai is een onafhankelijk Nederlands adviesbureau. We zijn geen onderdeel, partner of vertegenwoordiger van Anthropic, het bedrijf dat Claude maakt. Anthropic sponsort ons niet en heeft deze site niet goedgekeurd. Wij adviseren over Claude en richten het in bij bedrijven. De licenties koop je rechtstreeks bij Anthropic. Claude en Anthropic zijn handelsmerken van Anthropic, PBC.',
   wieZijnWij:
-    'Implementeren.ai is een onafhankelijk Nederlands adviesbureau dat Claude van Anthropic inricht bij MKB-bedrijven van 10 tot 200 medewerkers. Lead consultant is Camiel Wits. Vaste prijzen: de Readiness Scan kost vanaf €1.500. Implementeren.ai is een handelsnaam van Wits SustAInable Solutions B.V. (KvK 99455390).',
+    'Implementeren.ai is een onafhankelijk Nederlands adviesbureau dat Claude van Anthropic inricht bij MKB-bedrijven van 10 tot 200 medewerkers. Lead AI consultant is Camiel Wits. Vaste prijzen: de Readiness Scan kost vanaf €1.500. Implementeren.ai is een handelsnaam van Wits SustAInable Solutions B.V. (KvK 99455390).',
   // Domein ook in astro.config.mjs — houd synchroon
   url: 'https://implementeren.ai',
   taal: 'nl-NL',
