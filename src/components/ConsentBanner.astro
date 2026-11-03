@@ -30,7 +30,7 @@
   </div>
 
   <div class="iai-consent-knoppen">
-    <button type="button" class="iai-consent-knop" data-consent="minimaal">Alleen noodzakelijk</button>
+    <button type="button" class="iai-consent-knop iai-consent-knop--voorkeur" data-consent="minimaal">Alleen noodzakelijk</button>
     <button type="button" class="iai-consent-knop" data-consent="alles" id="iai-consent-alles">Alles toestaan</button>
     <button type="button" class="iai-consent-knop" data-consent="opslaan" id="iai-consent-opslaan" hidden>Keuze opslaan</button>
     <button type="button" class="iai-consent-link" id="iai-consent-toggle" aria-expanded="false" aria-controls="iai-consent-instellingen">Instellingen</button>
@@ -139,15 +139,22 @@
     padding: 0 18px;
     border: 1px solid var(--color-inkt);
     border-radius: 999px;
-    background: var(--color-inkt);
-    color: var(--color-papier);
+    background: #fff;
+    color: var(--color-inkt);
     font: inherit;
     font-weight: 600;
     cursor: pointer;
     transition: background-color .2s;
   }
   .iai-consent-knop[hidden] { display: none; }
-  .iai-consent-knop:hover { background: #000; }
+  .iai-consent-knop:hover { background: var(--color-papier); }
+  /* De vriendelijke keuze valt het meest op: olijf, zoals de hoofdknop van de site. */
+  .iai-consent-knop--voorkeur {
+    border-color: var(--color-accent-diep);
+    background: var(--color-accent-diep);
+    color: var(--color-papier);
+  }
+  .iai-consent-knop--voorkeur:hover { background: var(--color-accent-donkerst); }
   .iai-consent-link {
     grid-column: 1 / -1;
     justify-self: start;
