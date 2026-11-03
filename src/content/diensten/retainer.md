@@ -1,7 +1,7 @@
 ---
 titel: Claude Compagnon
 ondertitel: Retainer
-prijs: "Vanaf €1.500 per maand"
+prijs: "Vanaf €2.500 per maand"
 duur: Minimaal 3 maanden, daarna maandelijks opzegbaar
 volgorde: 3
 samenvatting: Doorlopende begeleiding na de rollout. Een workshop per maand, twee uur beschikbaarheid via Slack of Teams, uitbreiding van de promptbibliotheek en een kwartaalreview.
