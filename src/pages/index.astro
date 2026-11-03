@@ -17,8 +17,6 @@ const diensten = (await getCollection('diensten'))
   .filter((d) => d.data.opnemenOpHome)
   .sort((a, b) => a.data.volgorde - b.data.volgorde);
 
-const stapLabels = ['Stap één', 'Stap twee', 'Stap drie'];
-
 const zorgen = [
   { cat: 'Veiligheid', q: 'Bang dat AI dingen sloopt', a: "Claude draait in een afgesloten omgeving. Je ziet elke wijziging voordat die doorgaat en je kunt alles terugdraaien. Geen verrassingen." },
   { cat: 'Compliance', q: 'Hoe zit het met AVG?', a: "Claude for Work traint niet op je data en heeft SSO en een verwerkersovereenkomst. Je data wordt opgeslagen in de Verenigde Staten. Moet alles in de EU blijven, dan kan dat via AWS Bedrock of Google Vertex AI. We leggen het in gewoon Nederlands uit, zonder juridisch geneuzel. En mogen klantnamen en persoonsgegevens Anthropic helemaal niet bereiken? Dan pseudonimiseren we je data op je eigen systemen voordat die naar Claude gaat, en zetten we de echte namen pas terug als het antwoord binnen is. Dat richten we voor je in." },
@@ -75,10 +73,10 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
       <div class="v2-hero-tekst">
         <p class="v2-pil"><img src="/team/camiel-portret-avatar.jpg" alt="" width="28" height="28" />AI implementeren · met Claude</p>
         <h1>Claude zakelijk inzetten in jouw <span class="v2-accent">MKB</span></h1>
-        <p class="v2-hero-lead">Wij implementeren AI in je bedrijf, met Claude als gereedschap, en blijven tot je team er zelf mee werkt.</p>
+        <p class="v2-hero-lead">Een vaste AI-compagnon voor je team, met elke maand een workshop en Camiel binnen handbereik in Slack of Teams. Vanaf €2.500 per maand, vaste prijs.</p>
         <div class="v2-knoppen">
           <a href="/ai-enablement-scan" class="v2-knop v2-knop-olijf">Doe de gratis AI-check <span aria-hidden="true">&rarr;</span></a>
-          <a href="/claude-readiness-scan" class="v2-knop v2-knop-licht">Bekijk de Readiness Scan</a>
+          <a href="/claude-compagnon" class="v2-knop v2-knop-licht">Bekijk de Claude Compagnon</a>
         </div>
         <p class="v2-hero-noot">Doe de gratis AI-check en kijk of AI-coaching past bij je bedrijf. Zo ja, dan volgt een gratis intro-gesprek.</p>
       </div>
@@ -121,35 +119,44 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
       </div>
     </section>
 
-    <!-- 3. Drie manieren: links vast, rechts stapelkaarten -->
+    <!-- 3. Compagnon eerst: links vast, rechts stapelkaarten (grote donkere kaart = Compagnon) -->
     <section class="v2-wrap v2-stappen">
       <div class="v2-stappen-intro">
-        <h2>Drie manieren om te beginnen</h2>
-        <p class="v2-zacht">Zo implementeren we AI: eerst een audit, dan de rollout, dan de retainer. Elke stap staat los. Je gaat pas door als de vorige stap z'n geld waard was.</p>
-        <p class="v2-stappen-noot"><strong>Audit</strong> <span aria-hidden="true">&rarr;</span> <strong>Rollout</strong> <span aria-hidden="true">&rarr;</span> <strong>Retainer</strong> &nbsp;·&nbsp; elke stap staat los, doorgaan is altijd jouw keuze</p>
+        <h2>Een vaste AI-compagnon voor je team</h2>
+        <p class="v2-zacht">Claude blijft gebruikt worden, ook na de eerste training. Elke maand een workshop en een stap verder, met Camiel binnen handbereik in Slack of Teams.</p>
+        <p class="v2-stappen-noot">Liever klein beginnen? Start dan met de Readiness Scan of de rollout. Elke stap staat los, doorgaan is altijd jouw keuze.</p>
         <p class="v2-stappen-noot">Hoe de stappen op elkaar aansluiten en wat het samen kost, lees je bij <a href="/claude-implementatie">Claude-implementatie</a>. Wie het werk doet, staat bij <a href="/claude-consultant">Claude-consultant</a>.</p>
       </div>
       <div class="v2-kaarten">
-        {diensten.map((d, i) => {
+        {diensten.map((d) => {
           // "Vanaf €1.500 per maand" → groot "€1.500" + klein "per maand, vanaf".
           const kaal = d.data.prijs.replace(/^Vanaf\s+/i, '');
           const perMaand = /per maand/i.test(kaal);
           const bedrag = kaal.replace(/\s*per maand/i, '');
+          const labels: Record<string, string> = {
+            retainer: 'Doorlopend · retainer',
+            'readiness-scan': 'Startpunt · audit',
+            rollout: 'Startpunt · rollout',
+          };
           return (
-            <article class:list={['v2-kaart', i === 2 && 'v2-kaart-donker']}>
+            <article class:list={['v2-kaart', d.id === 'retainer' && 'v2-kaart-donker']}>
               <div class="v2-kaart-tekst">
-                <p class="v2-kaart-stap">{stapLabels[i]}: {d.data.ondertitel.toLowerCase()}{i === 1 && <span class="v2-meest">Meest gekozen</span>}</p>
+                <p class="v2-kaart-stap">{labels[d.id]}{d.id === 'retainer' && <span class="v2-meest">Aanbevolen</span>}</p>
                 <h3>{d.data.titel}</h3>
                 <p class="v2-kaart-prijs"><strong>{bedrag}</strong> {perMaand ? 'per maand, vanaf' : 'eenmalig, vanaf'}</p>
+                {d.id === 'retainer' && (
+                  <p class="v2-kaart-anker">€2.500 per maand is ongeveer wat 55 gewerkte uren van een gemiddelde medewerker je als werkgever kosten (CBS, loonkosten 2024).</p>
+                )}
                 <ul>
                   {d.data.punten.map((punt) => (
                     <li><span aria-hidden="true">&#10003;</span><span>{punt}</span></li>
                   ))}
                 </ul>
+                {d.data.actie && <p class="v2-kaart-actie">{d.data.actie}</p>}
                 <a href={d.data.pad} class="v2-kaart-link">Lees details</a>
               </div>
               <div class="v2-kaart-beeld" aria-hidden="true">
-                {i === 0 && (
+                {d.id === 'readiness-scan' && (
                   <div class="v2-rapport">
                     <p class="v2-rapport-kop">Readiness Scan</p>
                     <div class="v2-balk">1 <i style="width: 88%"></i></div>
@@ -158,12 +165,12 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
                     <div class="v2-balk">4 <i style="width: 36%"></i></div>
                   </div>
                 )}
-                {i === 1 && (
+                {d.id === 'rollout' && (
                   <div class="v2-weken">
                     {weken.map(([w, t]) => <div class="v2-week"><b>{w}</b>{t}</div>)}
                   </div>
                 )}
-                {i === 2 && (
+                {d.id === 'retainer' && (
                   <div class="v2-gesprek">
                     <div class="v2-bubbel"><small>Medewerker</small>Kan Claude ook onze inkoopfacturen controleren?</div>
                     <div class="v2-bubbel v2-bubbel-ons"><small>Camiel · {site.naam}</small>Ja. We zetten er deze week een vaste prompt voor in de bibliotheek.</div>

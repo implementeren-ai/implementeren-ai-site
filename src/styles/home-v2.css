@@ -216,6 +216,15 @@ html.js .v2-taken div:nth-child(4) { animation-delay: .75s; }
   .v2-slot-invoer .v2-knop { justify-content: center; }
 }
 
+/* ---------- Compagnon-kaart: waarde-anker en actieregel ---------- */
+.v2-kaart-anker { margin: 0; font-size: 14px; line-height: 1.5; color: var(--color-v2-inkt-2); }
+.v2-kaart-donker .v2-kaart-anker { color: #D9DCCB; }
+.v2-kaart-actie {
+  margin: 10px 0 0; padding: 10px 14px; border-radius: 12px;
+  background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt);
+  font-size: 14px; font-weight: 600; line-height: 1.45;
+}
+
 /* ---------- Mobiel ---------- */
 @media (max-width: 768px) {
   .v2-taken { grid-template-columns: 1fr; }

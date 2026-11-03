@@ -3,7 +3,7 @@ titel: Claude Readiness Scan
 ondertitel: Audit
 prijs: "Vanaf €1.500"
 duur: 1 dag op locatie, 1 week async, 1 uur readout
-volgorde: 1
+volgorde: 2
 samenvatting: Een scan van je organisatie op Claude-geschiktheid. Na een week krijg je een rapport in het Nederlands met tien tot vijftien pagina's, gerangschikte use cases en een concrete offerte voor de rollout.
 punten:
   - "Scan van je organisatie op Claude-geschiktheid"

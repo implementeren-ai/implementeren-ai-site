@@ -10,7 +10,7 @@ import { dienstNode, dienstId } from '../lib/schema';
 const dienst = await getEntry('diensten', 'retainer');
 if (!dienst) throw new Error('Diensten-entry retainer ontbreekt');
 const { Content, headings } = await render(dienst);
-const beschrijving = 'Claude-begeleiding na de rollout: een workshop per maand, twee uur beschikbaar via Slack of Teams, een groeiende promptbibliotheek en een kwartaalreview.';
+const beschrijving = 'Doorlopende Claude-begeleiding op vaste prijs: een workshop per maand, twee uur beschikbaar via Slack of Teams, een groeiende promptbibliotheek en een kwartaalreview. Starten kan direct, ook zonder rollout.';
 const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Claude Compagnon', url: dienst.data.pad }];
 ---
 <BasisLayout
@@ -28,7 +28,11 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Claude Compagnon', url
       breadcrumbs={breadcrumbs}
       label={dienst.data.ondertitel}
       h1={dienst.data.h1 ?? dienst.data.titel}
-      feiten={[{ term: 'Prijs', waarde: dienst.data.prijs }, { term: 'Termijn', waarde: dienst.data.duur }]}
+      feiten={[
+        { term: 'Prijs', waarde: dienst.data.prijs },
+        { term: 'Termijn', waarde: dienst.data.duur },
+        ...(dienst.data.actie ? [{ term: 'Aanbod', waarde: dienst.data.actie }] : []),
+      ]}
     >
       <DienstBeeld slot="beeld" soort="compagnon" />
     </DienstKop>
@@ -44,9 +48,9 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Claude Compagnon', url
     </div>
   </article>
   <CtaBlok
-    kop="Wil je doorlopende begeleiding?"
-    tekst="De retainer start na een geslaagde rollout. Nog geen rollout gedaan? Begin bij de Readiness Scan."
-    link="/claude-readiness-scan"
-    linkTekst="Begin bij de Readiness Scan"
+    kop="Weten of de Compagnon bij je team past?"
+    tekst="Starten kan direct, een rollout vooraf is geen voorwaarde. Doe de gratis AI-check en je weet binnen twee minuten of het zin heeft."
+    link="/ai-enablement-scan"
+    linkTekst="Doe de gratis AI-check"
   />
 </BasisLayout>
