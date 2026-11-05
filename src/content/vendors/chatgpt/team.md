@@ -56,6 +56,9 @@ bronnen:
   - titel: 'OpenAI Help Center, Migrating your personal workspace to ChatGPT Business or Enterprise'
     url: https://help.openai.com/en/articles/8801890-migrating-your-personal-workspace-to-chatgpt-business-or-enterprise
     geraadpleegd: 5 november 2026
+  - titel: 'OpenAI, Privacy voor bedrijven bij OpenAI'
+    url: https://openai.com/nl-NL/enterprise-privacy/
+    geraadpleegd: 5 november 2026
 faq:
   - question: Bestaat ChatGPT Team nog?
     answer: 'Ja, onder de naam ChatGPT Business. OpenAI heeft Team op 29 augustus 2025 hernoemd. Bestaande Team-werkruimtes werden Business-werkruimtes, zonder nieuwe werkruimte, migratie of nieuw abonnement. Volgens OpenAI veranderde de naamswijziging zelf niets aan functies, prijs of limieten.'
@@ -66,7 +69,7 @@ faq:
   - question: Wat gebeurt er met de chats van een medewerker die al Plus had?
     answer: 'Die kiest zelf of zijn persoonlijke werkruimte apart blijft of wordt samengevoegd met Business. Bij samenvoegen gaan ondersteunde gesprekken, bestanden, eigen GPT''s en projecten mee, wordt het Plus-abonnement opgezegd en het ongebruikte deel terugbetaald (behalve bij een abonnement via de App Store of Google Play). Terugdraaien kan niet.'
   - question: Kunnen beheerders de chats van medewerkers lezen?
-    answer: 'Niet standaard. Elke gebruiker heeft een eigen chatgeschiedenis en kiest zelf wat hij deelt. Gebruiksstatistieken en uitgavenbeheer geven geen toegang tot gesprekken. Een eigenaar kan wel de data van een lid exporteren als de optie Export data beschikbaar is.'
+    answer: 'Ja. Volgens de privacypagina van OpenAI kunnen werkruimtebeheerders in Business de gesprekken van gebruikers in de werkruimte bekijken, openen, exporteren en verwijderen. Gebruiksstatistieken en uitgavenbeheer tonen geen gesprekken. Vertel je medewerkers vooraf dat beheerders die toegang hebben.'
   - question: Krijg ik geld terug als ik plekken schrap?
     answer: 'In de regel niet voor de lopende periode. Een vermindering van plekken gaat in bij het begin van de volgende factuurperiode. Wie je uit de werkruimte verwijdert, maakt alleen een plek vrij; het aantal betaalde plekken blijft gelijk tot je het zelf verlaagt.'
 ---
@@ -124,7 +127,7 @@ Over MFA is OpenAI duidelijk: je kunt het niet afdwingen op werkruimteniveau. El
 
 ### Stap 5: data, delen, GPT's en apps
 
-OpenAI traint niet op de data van je werkruimte, en elke gebruiker heeft een eigen chatgeschiedenis. Beheerders zien die gesprekken niet standaard, ook niet via de gebruiksstatistieken. Een gedeelde link werkt alleen binnen je eigen werkruimte. Gedeelde links helemaal uitzetten kan in Business niet; dat is een Enterprise-functie.
+OpenAI traint niet op de data van je werkruimte, en elke gebruiker heeft een eigen chatgeschiedenis. Beheerders kunnen die gesprekken volgens OpenAI wel bekijken, exporteren en verwijderen, dus zet dat in je afspraken met medewerkers. Een gedeelde link werkt alleen binnen je eigen werkruimte. Gedeelde links helemaal uitzetten kan in Business niet; dat is een Enterprise-functie.
 
 Volgens het rollenoverzicht van OpenAI beheert alleen de eigenaar de GPT-instellingen, en beheren eigenaren en admins de apps. Leg daarnaast op papier vast welke gegevens erin mogen. Werk je met persoonsgegevens, loop dan ook het [DPIA-stappenplan](/compliance/dpia-stappenplan) door.
 
