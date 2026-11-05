@@ -33,6 +33,9 @@ soort: howto
 claudeSibling: /vergelijken/claude-vs-copilot
 kortAntwoord: 'Een goede Copilot training leert je team vier dingen: prompten met een doel, context, bron en verwachting, Copilot gebruiken in Word, Excel, Outlook en Teams, weten welke bestanden Copilot kan zien, en elk antwoord controleren. Microsoft biedt gratis leerpaden op Microsoft Learn en adoptiemateriaal zoals de Copilot Success Kit en de Prompt Gallery, allemaal in het Engels. Of de training werkt, meet je met het Copilot-gebruiksrapport in het Microsoft 365-beheercentrum. Stand 5 november 2026.'
 bronnen:
+  - titel: 'Microsoft Ondersteuning, Chatten met Copilot in Outlook'
+    url: https://support.microsoft.com/nl-nl/outlook/copilot-outlook/chat-with-copilot-in-outlook
+    geraadpleegd: 5 november 2026
   - titel: 'Microsoft Support, Aan de slag met het schrijven van prompts in Microsoft Copilot'
     url: https://support.microsoft.com/nl-nl/topic/meer-informatie-over-copilot-prompts-f6c3b467-f07c-4db1-ae54-ffac96184dd5
     geraadpleegd: 5 november 2026
@@ -101,7 +104,7 @@ Een goede training gaat over het werk van je mensen, niet over de knoppen. Vier 
 - **Word:** een eerste versie maken op basis van bestaande documenten en die daarna herschrijven.
 - **Excel:** vragen stellen over een tabel, formules laten voorstellen en een grafiek laten maken.
 
-**3. Wat Copilot wel en niet kan zien.** Dit is het onderdeel dat het vaakst ontbreekt. Volgens Microsoft toont Copilot alleen gegevens waar een gebruiker minstens leesrechten op heeft. Staat een SharePoint-map te ruim open, dan kan die inhoud dus in een antwoord opduiken. Leer je team ook het verschil tussen de twee versies: Copilot Chat zonder betaalde licentie werkt met het web en met wat je zelf plakt, uploadt of open hebt in Outlook of Teams. De betaalde licentie zoekt zelf in je mail, agenda, vergaderingen en bestanden.
+**3. Wat Copilot wel en niet kan zien.** Dit is het onderdeel dat het vaakst ontbreekt. Volgens Microsoft toont Copilot alleen gegevens waar een gebruiker minstens leesrechten op heeft. Staat een SharePoint-map te ruim open, dan kan die inhoud dus in een antwoord opduiken. Leer je team ook het verschil tussen de twee versies: Copilot Chat zonder betaalde licentie werkt met het web en met wat je zelf plakt, uploadt of open hebt, en beantwoordt in Outlook beperkte vragen over je Postvak IN en agenda. De betaalde licentie zoekt zelf in je mail, agenda, vergaderingen, chats en bestanden.
 
 **4. Controleren en gegevenshygiëne.** Microsoft schrijft zelf dat antwoorden niet gegarandeerd kloppen en dat gebruikers ze moeten nakijken voordat ze iets doorsturen. Spreek af welke klant- en persoonsgegevens erin mogen. Laat mensen letten op het label "Work" en het groene schildje, zodat ze weten dat ze in de zakelijke versie werken en niet in de privéversie. Een risicobeoordeling vooraf maak je met het [DPIA-stappenplan](/compliance/dpia-stappenplan).
 
