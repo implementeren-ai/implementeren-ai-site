@@ -73,7 +73,7 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
       <div class="v2-hero-tekst">
         <p class="v2-pil"><img src="/team/camiel-portret-avatar.jpg" alt="" width="28" height="28" />AI implementeren · met Claude</p>
         <h1>Claude zakelijk inzetten in jouw <span class="v2-accent">MKB</span></h1>
-        <p class="v2-hero-lead">Een vaste AI-compagnon voor je team, met elke maand een workshop en Camiel binnen handbereik in Slack of Teams. Vanaf €2.500 per maand, vaste prijs.</p>
+        <p class="v2-hero-lead">Een vaste AI-compagnon voor je team, met onbeperkt toegang tot Camiel via Teams en twee sessies per maand. Vanaf €2.500 per maand, vaste prijs.</p>
         <div class="v2-knoppen">
           <a href="/ai-enablement-scan" class="v2-knop v2-knop-olijf">Doe de gratis AI-check <span aria-hidden="true">&rarr;</span></a>
           <a href="/claude-compagnon" class="v2-knop v2-knop-licht">Bekijk de Claude Compagnon</a>
@@ -119,12 +119,12 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
       </div>
     </section>
 
-    <!-- 3. Compagnon eerst: links vast, rechts stapelkaarten (grote donkere kaart = Compagnon) -->
+    <!-- 3. Het pad: scan, Claude in 30 dagen, abonnement. Links vast, rechts stapelkaarten (donkere kaart = abonnement) -->
     <section class="v2-wrap v2-stappen">
       <div class="v2-stappen-intro">
-        <h2>Een vaste AI-compagnon voor je team</h2>
-        <p class="v2-zacht">Claude blijft gebruikt worden, ook na de eerste training. Elke maand een workshop en een stap verder, met Camiel binnen handbereik in Slack of Teams.</p>
-        <p class="v2-stappen-noot">Liever klein beginnen? Start dan met de Readiness Scan of de rollout. Elke stap staat los, doorgaan is altijd jouw keuze.</p>
+        <h2>Van scan naar vaste AI-compagnon</h2>
+        <p class="v2-zacht">Eerst een scan, zodat je weet wat Claude oplevert. Dan komen we op kantoor en staat Claude er binnen 30 dagen. Daarna blijft Camiel beschikbaar met een abonnement.</p>
+        <p class="v2-stappen-noot">Elke stap staat los, doorgaan is altijd jouw keuze.</p>
         <p class="v2-stappen-noot">Hoe de stappen op elkaar aansluiten en wat het samen kost, lees je bij <a href="/claude-implementatie">Claude-implementatie</a>. Wie het werk doet, staat bij <a href="/claude-consultant">Claude-consultant</a>.</p>
       </div>
       <div class="v2-kaarten">
@@ -134,25 +134,24 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
           const perMaand = /per maand/i.test(kaal);
           const bedrag = kaal.replace(/\s*per maand/i, '');
           const labels: Record<string, string> = {
-            retainer: 'Doorlopend · retainer',
-            'readiness-scan': 'Startpunt · audit',
-            rollout: 'Startpunt · rollout',
+            retainer: 'Stap drie · abonnement',
+            'readiness-scan': 'Stap één · scan',
+            rollout: 'Stap twee · op kantoor',
           };
           return (
             <article class:list={['v2-kaart', d.id === 'retainer' && 'v2-kaart-donker']}>
               <div class="v2-kaart-tekst">
-                <p class="v2-kaart-stap">{labels[d.id]}{d.id === 'retainer' && <span class="v2-meest">Aanbevolen</span>}</p>
+                <p class="v2-kaart-stap">{labels[d.id]}</p>
                 <h3>{d.data.titel}</h3>
                 <p class="v2-kaart-prijs"><strong>{bedrag}</strong> {perMaand ? 'per maand, vanaf' : 'eenmalig, vanaf'}</p>
                 {d.id === 'retainer' && (
-                  <p class="v2-kaart-anker">€2.500 per maand is ongeveer wat 55 gewerkte uren van een gemiddelde medewerker je als werkgever kosten (CBS, loonkosten 2024).</p>
+                  <p class="v2-kaart-anker">Minder dan je goedkoopste fulltime medewerker: het minimumloon bij 40 uur is al €2.598 bruto per maand, nog zonder werkgeverslasten.</p>
                 )}
                 <ul>
                   {d.data.punten.map((punt) => (
                     <li><span aria-hidden="true">&#10003;</span><span>{punt}</span></li>
                   ))}
                 </ul>
-                {d.data.actie && <p class="v2-kaart-actie">{d.data.actie}</p>}
                 <a href={d.data.pad} class="v2-kaart-link">Lees details</a>
               </div>
               <div class="v2-kaart-beeld" aria-hidden="true">

@@ -3,13 +3,12 @@ titel: Claude Compagnon
 ondertitel: Retainer
 prijs: "Vanaf €2.500 per maand"
 duur: Minimaal 3 maanden, daarna maandelijks opzegbaar
-volgorde: 1
+volgorde: 3
 samenvatting: Doorlopende AI-begeleiding voor je team, op vaste prijs. Een workshop per maand, twee uur beschikbaarheid via Slack of Teams, uitbreiding van de promptbibliotheek en een kwartaalreview. Starten kan direct, ook zonder rollout.
 punten:
-  - "Camiel binnen handbereik via Slack of Teams"
-  - "Een workshop per maand"
-  - "Promptbibliotheek-uitbreiding + kwartaalreview"
-  - "Start direct, een rollout vooraf hoeft niet"
+  - "Onbeperkt toegang tot Camiel via Teams-chat"
+  - "Twee sessies per maand met Camiel"
+  - "Na drie maanden maandelijks opzegbaar"
 actie: "Start je voor zes maanden, dan zit de Readiness Scan (€1.500) erbij."
 pad: /claude-compagnon
 titleTag: "Claude Compagnon: doorlopende AI-begeleiding"

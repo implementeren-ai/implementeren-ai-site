@@ -3,7 +3,7 @@ titel: Claude in 30 dagen
 ondertitel: Rollout
 prijs: "Vanaf €7.500 excl. btw"
 duur: 4 weken, ongeveer 2 dagen per week
-volgorde: 3
+volgorde: 2
 samenvatting: Vier weken waarin Claude echt landt in je organisatie. Kickoff-workshop, champions-programma, een promptbibliotheek op maat en drie verdiepende sessies.
 punten:
   - "Vier weken waarin Claude echt landt"

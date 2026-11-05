@@ -21,7 +21,7 @@ const diensten = defineCollection({
     titleTag: z.string().optional(),
     h1: z.string().optional(),
     // Optionele aanbiedingsregel (bv. "Start je voor zes maanden, dan zit de Readiness
-    // Scan erbij"). Rendert op de homepage-kaart en als feit op de dienstpagina;
+    // Scan erbij"). Rendert als feit op de dienstpagina;
     // zonder dit veld verschijnt er niets.
     actie: z.string().optional(),
   }),
