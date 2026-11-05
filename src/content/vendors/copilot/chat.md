@@ -31,8 +31,11 @@ publishDate: 2026-11-05
 vendor: copilot
 soort: howto
 claudeSibling: /vergelijken/claude-vs-copilot
-kortAntwoord: 'Microsoft 365 Copilot Chat, nu Microsoft Copilot Chat, zit zonder extra kosten in geschikte Microsoft 365-abonnementen. Log je in met je werkaccount, dan vallen je prompts en antwoorden onder de zakelijke gegevensbescherming van Microsoft en worden ze niet gebruikt om modellen te trainen. Copilot Chat werkt met het web en met wat je zelf aanlevert, maar zoekt niet zelf in je mail, agenda en SharePoint. Daarvoor, en voor Copilot in Word, Excel en PowerPoint, heb je de betaalde licentie nodig. Stand 5 november 2026.'
+kortAntwoord: 'Microsoft 365 Copilot Chat, nu Microsoft Copilot Chat, zit zonder extra kosten in geschikte Microsoft 365-abonnementen. Log je in met je werkaccount, dan vallen je prompts en antwoorden onder de zakelijke gegevensbescherming van Microsoft en worden ze niet gebruikt om modellen te trainen. Copilot Chat werkt met het web en met wat je zelf aanlevert, en in Outlook met beperkte vragen over je Postvak IN en agenda. Zelf zoeken in al je bedrijfsgegevens, zoals SharePoint en chats, doet het niet. Daarvoor, en voor Copilot in Word, Excel en PowerPoint, heb je de betaalde licentie nodig. Stand 5 november 2026.'
 bronnen:
+  - titel: 'Microsoft Ondersteuning, Chatten met Copilot in Outlook'
+    url: https://support.microsoft.com/nl-nl/outlook/copilot-outlook/chat-with-copilot-in-outlook
+    geraadpleegd: 5 november 2026
   - titel: 'Microsoft Learn, What is Microsoft Copilot? (vergelijking Copilot Chat en betaalde licentie)'
     url: https://learn.microsoft.com/en-us/copilot/plan/copilot-overview
     geraadpleegd: 5 november 2026
@@ -67,7 +70,7 @@ faq:
   - question: Is Microsoft 365 Copilot Chat gratis?
     answer: 'Ja, voor gebruikers met een geschikt Microsoft 365-abonnement en een werkaccount in Microsoft Entra ID. Je betaalt alleen als je agents gebruikt die bij gedeelde bedrijfsgegevens komen, zoals SharePoint. Die worden per gebruik afgerekend in Copilot Credits, en dat staat standaard uit.'
   - question: Wat is het verschil tussen Copilot Chat en Microsoft 365 Copilot?
-    answer: 'Copilot Chat werkt met webinformatie en met wat je zelf aanlevert: geplakte tekst, een geüpload bestand of de mail of chat die je in Outlook of Teams open hebt. De betaalde licentie zoekt zelf in je mail, agenda, vergaderingen en bestanden via Microsoft Graph en zet Copilot volledig in Word, Excel, PowerPoint en OneNote.'
+    answer: 'Copilot Chat werkt met webinformatie en met wat je zelf aanlevert: geplakte tekst, een geüpload bestand of de mail of chat die je in Outlook of Teams open hebt. In Outlook kun je daarnaast vragen stellen over je Postvak IN, agenda en vergaderingen, in beperkte vorm. De betaalde licentie zoekt zelf in je mail, agenda, vergaderingen en bestanden via Microsoft Graph en zet Copilot volledig in Word, Excel, PowerPoint en OneNote.'
   - question: Traint Microsoft op wat ik in Copilot Chat typ?
     answer: 'Niet als je met je werkaccount bent ingelogd. Microsoft schrijft dat prompts en antwoorden dan niet worden gebruikt om de foundation-modellen te trainen. Voor de consumentenversie met een persoonlijk Microsoft-account gebruikt Microsoft gesprekken wel voor AI-training, met een opt-out.'
   - question: Hoe zie ik of ik in de zakelijke versie zit?
@@ -109,7 +112,7 @@ Het account waarmee je inlogt, bepaalt welke afspraken gelden. Dat is voor de AV
 
 Een kanttekening: zoekopdrachten naar Bing vallen niet onder de DPA. Microsoft stuurt ze zonder gebruikers- en tenant-ID naar Bing en treedt daar op als zelfstandige verwerkingsverantwoordelijke. De EU-datagrens geldt niet voor die webzoekopdrachten. Wil je dat niet, dan kan een beheerder webzoeken uitzetten.
 
-**Met een persoonlijk Microsoft-account** gelden die afspraken niet. In de privacy-FAQ voor de consumentenversie schrijft Microsoft dat het Copilot-gesprekken gebruikt voor AI-training, met een opt-out. Gebruikers met een organisatieaccount zijn daarvan uitgezonderd.
+**Met een persoonlijk Microsoft-account** gelden die afspraken niet. In de privacy-FAQ voor de consumentenversie schrijft Microsoft dat het Copilot-gesprekken gebruikt voor AI-training, met een opt-out. Gebruikers met een organisatieaccount zijn daarvan uitgezonderd, net als Copilot in de Microsoft 365-apps met een Personal- of Family-abonnement.
 
 Je herkent de zakelijke versie aan het label "Work" onder je profiel, een groen schildje voor gegevensbescherming en een andere achtergrondkleur. Leer je medewerkers daarop letten. Wie klantwerk in de privéversie doet, valt buiten je zakelijke afspraken. Een beheerder kan inloggen met persoonlijke accounts beperken via Tenant Restrictions v2 in Microsoft Entra. Microsoft raadt af om copilot.cloud.microsoft zelf te blokkeren, omdat je dan ook de zakelijke versie raakt.
 
@@ -117,18 +120,18 @@ Werk je met persoonsgegevens, doe dan vooraf een risicobeoordeling. Het [DPIA-st
 
 ## Wat Copilot Chat niet doet en de betaalde licentie wel
 
-Hier zit het grootste misverstand. Copilot Chat zoekt niet zelf in je bedrijfsgegevens. Volgens Microsoft Learn heeft de gratis versie geen toegang tot Microsoft Graph, de laag die je mail, agenda, vergaderingen, chats en bestanden ontsluit.
+Copilot Chat zoekt niet zelf in al je bedrijfsgegevens. Volgens Microsoft Learn heeft de gratis versie geen toegang tot Microsoft Graph, de laag die je mail, agenda, vergaderingen, chats en bestanden ontsluit.
 
 | | Copilot Chat (gratis) | Betaalde Copilot-licentie |
 |---|---|---|
 | Antwoorden op basis van het web | Ja | Ja |
-| Eigen bedrijfsgegevens | Alleen wat je plakt, uploadt of open hebt in Outlook of Teams | Automatisch via Microsoft Graph |
+| Eigen bedrijfsgegevens | Wat je plakt, uploadt of open hebt, plus beperkte vragen over Postvak IN en agenda in Outlook | Automatisch via Microsoft Graph |
 | Copilot in Word, Excel, PowerPoint en OneNote | Nee | Ja, met voorrang bij drukte |
 | Agents met bedrijfsgegevens | Per gebruik betalen | Inbegrepen |
 | Enterprise data protection | Ja | Ja |
 | Beheer en rapportage | Basis | Uitgebreider |
 
-In de praktijk betekent dit: vraag je Copilot Chat "wat heeft de klant vorige week gemaild over de offerte?", dan weet het dat niet, tenzij je die mail open hebt in Outlook. Met de betaalde licentie zoekt Copilot het zelf op. Voor beheerders komen er met de licentie ook hulpmiddelen bij om overdelen in SharePoint aan te pakken.
+In de praktijk: in Outlook vat Copilot Chat je mails van vorige week over een klant samen. Wat er in Teams of SharePoint over die klant staat, weet het niet. De betaalde licentie combineert mail, chats en documenten zelf. Voor beheerders komen er met de licentie ook hulpmiddelen bij om overdelen in SharePoint aan te pakken.
 
 ## Agents in Copilot Chat: gratis tot ze bij je bedrijfsdata komen
 
