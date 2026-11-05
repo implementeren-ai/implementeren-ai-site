@@ -147,7 +147,7 @@ Daarnaast bestaat inference residency: dan draait ook de verwerking door het mod
 
 Bij Enterprise stelt de beheerder van de werkruimte in hoe lang gesprekken bewaard blijven. Verwijderde gesprekken zijn binnen 30 dagen uit de systemen van OpenAI, tenzij de wet langer bewaren vereist.
 
-Voor Business schrijft OpenAI dat verwijderde en niet-opgeslagen gesprekken binnen 30 dagen verdwijnen, tenzij de wet langer bewaren vereist of het nodig is om de dienst of derden te beschermen. Beheerders kunnen gesprekken van gebruikers in de werkruimte bekijken, exporteren en verwijderen. Dat is handig bij een inzageverzoek of als een medewerker vertrekt.
+Bij Business kunnen beheerders volgens de FAQ op de privacypagina van OpenAI ook bepalen hoe lang gegevens bewaard blijven. Verder schrijft OpenAI dat verwijderde en niet-opgeslagen gesprekken binnen 30 dagen verdwijnen, tenzij de wet langer bewaren vereist of het nodig is om de dienst of derden te beschermen. Beheerders kunnen gesprekken van gebruikers in de werkruimte bekijken, exporteren en verwijderen. Dat is handig bij een inzageverzoek of als een medewerker vertrekt.
 
 ## Wat je als bedrijf zelf moet regelen
 
