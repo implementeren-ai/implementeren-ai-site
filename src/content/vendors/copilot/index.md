@@ -127,7 +127,7 @@ Een licentie aanzetten duurt een minuut. Zorgen dat Copilot goede en veilige ant
 
 Het belangrijkste punt staat in de privacydocumentatie. Copilot toont alleen gegevens waar een gebruiker minimaal leesrechten op heeft. Dat klinkt veilig, maar in veel bedrijven staan SharePoint-sites en gedeelde mappen veel te ruim open. Copilot kan die bestanden dan in een antwoord gebruiken, ook als de medewerker niet wist dat ze bestonden.
 
-Microsoft raadt aan om oversharing eerst op te lossen met SharePoint Advanced Management en Microsoft Purview. SharePoint Advanced Management zit volgens Microsoft Learn bij Microsoft 365 Copilot of is los te koop. Voor een klein bedrijf begint het vaak eenvoudiger: loop de sites met HR, financiën en klantdossiers na en haal "iedereen in de organisatie" weg waar dat niet hoort.
+Microsoft raadt aan om oversharing eerst op te lossen met SharePoint Advanced Management en Microsoft Purview. SharePoint Advanced Management zit volgens Microsoft Learn bij Microsoft 365 Copilot zodra één gebruiker een Copilot-licentie heeft. De losse invoegtoepassing vraagt een abonnement met SharePoint K, Plan 1 of Plan 2, en dat zit niet in de Microsoft 365 Business-abonnementen. Voor een klein bedrijf begint het vaak eenvoudiger: loop de sites met HR, financiën en klantdossiers na en haal "iedereen in de organisatie" weg waar dat niet hoort.
 
 ## Copilot en de AVG in het kort
 
