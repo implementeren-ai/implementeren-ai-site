@@ -10,7 +10,7 @@ import { dienstNode, dienstId } from '../lib/schema';
 const dienst = await getEntry('diensten', 'retainer');
 if (!dienst) throw new Error('Diensten-entry retainer ontbreekt');
 const { Content, headings } = await render(dienst);
-const beschrijving = 'Doorlopende Claude-begeleiding op vaste prijs: een workshop per maand, twee uur beschikbaar via Slack of Teams, een groeiende promptbibliotheek en een kwartaalreview. Starten kan direct, ook zonder rollout.';
+const beschrijving = 'Claude Compagnon: een abonnement op Camiel. Onbeperkt toegang via Teams-chat en twee sessies per maand, vanaf €2.500 per maand. De vaste stap na de Readiness Scan en Claude in 30 dagen.';
 const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Claude Compagnon', url: dienst.data.pad }];
 ---
 <BasisLayout
@@ -31,7 +31,6 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Claude Compagnon', url
       feiten={[
         { term: 'Prijs', waarde: dienst.data.prijs },
         { term: 'Termijn', waarde: dienst.data.duur },
-        ...(dienst.data.actie ? [{ term: 'Aanbod', waarde: dienst.data.actie }] : []),
       ]}
     >
       <DienstBeeld slot="beeld" soort="compagnon" />
@@ -48,8 +47,8 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Claude Compagnon', url
     </div>
   </article>
   <CtaBlok
-    kop="Weten of de Compagnon bij je team past?"
-    tekst="Starten kan direct, een rollout vooraf is geen voorwaarde. Doe de gratis AI-check en je weet binnen twee minuten of het zin heeft."
+    kop="Waar begin je?"
+    tekst="De Compagnon is de derde stap, na de Readiness Scan en Claude in 30 dagen. Doe eerst de gratis AI-check, dan weet je binnen twee minuten of het zin heeft voor je team."
     link="/ai-enablement-scan"
     linkTekst="Doe de gratis AI-check"
   />
