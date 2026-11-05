@@ -74,7 +74,7 @@ faq:
   - question: Is Microsoft 365 Copilot AVG-proof?
     answer: 'Geen enkel product is op zichzelf AVG-proof, want de AVG gaat over hoe jij persoonsgegevens verwerkt. Microsoft treedt voor Copilot met een werkaccount op als verwerker onder de DPA en traint de modellen niet op je prompts en bedrijfsdata. Of jouw gebruik rechtmatig is, hangt af van je DPIA, je rechteninrichting en je afspraken met medewerkers.'
   - question: Traint Microsoft Copilot op mijn bedrijfsdata?
-    answer: 'Volgens Microsoft niet. Prompts, antwoorden en data uit Microsoft Graph worden niet gebruikt om de foundation-modellen te trainen. Dat geldt voor gebruik met een werk- of schoolaccount. Voor de consumentenversie met een persoonlijk Microsoft-account schrijft Microsoft wel dat gesprekken voor AI-training worden gebruikt, met een opt-out.'
+    answer: 'Volgens Microsoft niet. Prompts, antwoorden en data uit Microsoft Graph worden niet gebruikt om de foundation-modellen te trainen. Dat geldt voor gebruik met een werk- of schoolaccount. Voor de consumentenversie met een persoonlijk Microsoft-account schrijft Microsoft wel dat gesprekken voor AI-training worden gebruikt, met een opt-out. Copilot in de Microsoft 365-apps met een Personal- of Family-abonnement is daarvan uitgezonderd.'
   - question: Heb ik een DPIA nodig voor Copilot?
     answer: 'Als Copilot bij persoonsgegevens kan, zoals mail, klantdossiers of HR-documenten, is een DPIA in de praktijk nodig. De Rijksoverheid en de Autoriteit Persoonsgegevens behandelen Copilot als een verwerking met risico''s die je vooraf moet beoordelen. De DPIA van SLM Rijk kun je als bron gebruiken, maar die vervangt je eigen DPIA niet.'
   - question: Blijven mijn Copilot-gegevens in de EU?
@@ -95,7 +95,7 @@ Er bestaan twee soorten Copilot, en voor de AVG is dat het belangrijkste ondersc
 
 **Copilot met een werkaccount.** Log je in met je werk- of schoolaccount (Microsoft Entra ID), dan geldt wat Microsoft enterprise data protection noemt. Het gebruik valt onder de Data Protection Addendum (DPA) en de Product Terms, met Microsoft als verwerker. Dat geldt voor de betaalde Microsoft 365 Copilot-licentie en voor de gratis Copilot Chat.
 
-**Copilot met een persoonlijk account.** In de privacy-FAQ voor de consumentenversie schrijft Microsoft dat het gesprekken met Copilot gebruikt voor AI-training, met een opt-out. Gebruikers die met een organisatieaccount zijn ingelogd, zijn daarvan uitgezonderd.
+**Copilot met een persoonlijk account.** In de privacy-FAQ voor de consumentenversie schrijft Microsoft dat het gesprekken met Copilot gebruikt voor AI-training, met een opt-out. Gebruikers die met een organisatieaccount zijn ingelogd, zijn daarvan uitgezonderd, net als Copilot in de Microsoft 365-apps met een Personal- of Family-abonnement.
 
 Gebruikt een medewerker thuis de gratis app met zijn privéaccount voor klantwerk, dan zit je dus buiten je zakelijke afspraken. Dat heet schaduw-AI: medewerkers die op eigen houtje een AI-tool gebruiken. Een duidelijke afspraak over welke accounts mogen, plus het blokkeren van de consumentenversie op werkapparaten, voorkomt het meeste.
 
