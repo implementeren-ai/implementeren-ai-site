@@ -116,4 +116,4 @@ Ja. Bij klanten zien we geregeld beide: Copilot voor de kleine taken in Microsof
 3. Vergelijk op jouw criteria: kwaliteit, snelheid en hoeveel nabewerking er nodig is.
 4. Reken daarna pas aan licenties. Zet de bespaarde nabewerkingstijd af tegen het prijsverschil per maand.
 
-Wil je het bredere overzicht, inclusief Google Gemini en ChatGPT? Lees dan [welke AI past bij het MKB](/vergelijken/welke-ai-voor-mkb) of de vergelijking [Claude vs ChatGPT](/vergelijken/claude-vs-chatgpt). Twijfel je waar je bedrijf staat? Doe de [gratis AI-check](/ai-enablement-scan): 2 minuten invullen, direct een beeld of AI-coaching bij je past.
+Wil je het bredere overzicht, inclusief Google Gemini en ChatGPT? Lees dan [welke AI past bij het MKB](/vergelijken/welke-ai-voor-mkb) of de vergelijking [Claude vs ChatGPT](/vergelijken/claude-vs-chatgpt). Twijfel je waar je bedrijf staat? Doe de [gratis AI-check](/ai-enablement-scan): 2 minuten invullen, direct een beeld of Claude bij je past.
