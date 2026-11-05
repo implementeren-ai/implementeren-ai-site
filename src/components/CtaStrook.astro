@@ -7,6 +7,8 @@ interface Props {
   // Contextuele link naar de bijpassende dienstpagina, onderaan de strook.
   // Alleen de artikel-layouts (prijs, compliance, vergelijkingen, verticalen) zetten dit.
   dienst?: 'implementatie' | 'consultant';
+  // Vendor-pagina's (/chatgpt, /gemini, /copilot): zelfde aanbod voor elke AI, geen Claude-pitch.
+  vendor?: string;
 }
 const {
   primaryText = 'Vraag een intro-call aan',
@@ -14,6 +16,7 @@ const {
   secondaryText = 'Doe de gratis AI-check',
   secondaryLink = '/ai-enablement-scan',
   dienst,
+  vendor,
 } = Astro.props;
 ---
 <section class="v2-band">
@@ -31,12 +34,17 @@ const {
         {secondaryText}
       </a>
     </div>
-    {dienst === 'implementatie' && (
+    {vendor && (
+      <p class="v2-band-noot">
+        Camiel implementeert ook {vendor}, met dezelfde intake en dezelfde prijs als bij Claude.
+      </p>
+    )}
+    {!vendor && dienst === 'implementatie' && (
       <p class="v2-band-noot">
         Eerst lezen hoe een traject loopt en wat het kost? Bekijk de pagina over <a href="/claude-implementatie" class="v2-band-link">Claude-implementatie</a>.
       </p>
     )}
-    {dienst === 'consultant' && (
+    {!vendor && dienst === 'consultant' && (
       <p class="v2-band-noot">
         Eerst weten wie het werk doet en wat het kost? Lees wat onze <a href="/claude-consultant" class="v2-band-link">Claude-consultant</a> doet.
       </p>

@@ -123,7 +123,7 @@ const schema = { ...seo.schema, nodes: [...(seo.schema.nodes ?? []), ...schemaNo
   <slot name="na-artikel" />
 
   <div class="v2-artikel-na">
-    <CtaStrook dienst="consultant" />
+    <CtaStrook vendor={vendorNaam} />
     <GerelateerdeLinks links={data.internalLinks} />
   </div>
 </BasisLayout>
