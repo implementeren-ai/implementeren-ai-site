@@ -117,7 +117,7 @@ Pro is gemaakt voor mensen die dagelijks tegen de limieten van Plus aanlopen. Wi
 
 ChatGPT Business is het zakelijke plan met een vaste prijs. Een Standard-plek kost $20 per gebruiker per maand bij jaarlijkse betaling en $25 bij maandelijkse betaling. Een Premium-plek met hogere limieten kost $100 of $125. Je hebt minimaal twee plekken nodig. Business heette tot 29 augustus 2025 ChatGPT Team.
 
-Voor Enterprise staat geen bedrag online. Je neemt contact op met sales en betaalt per jaar, eventueel op factuur. Enterprise voegt onder meer SCIM, EKM, domeinverificatie en audit logs toe.
+Voor Enterprise staat geen bedrag online. Je neemt contact op met sales en betaalt per jaar, eventueel op factuur. Enterprise voegt onder meer SCIM, EKM, audit logs en data residency toe.
 
 Non-profits kunnen volgens OpenAI tot 75 procent korting krijgen op Business of Enterprise, via sales.
 
