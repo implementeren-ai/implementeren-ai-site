@@ -15,7 +15,7 @@ function typ(el: HTMLElement) {
   setTimeout(stap, 500);
 }
 
-// Optellen: "8+ jaar" → telt 0..8 en zet daarna de volledige tekst terug.
+// Optellen: "9 jaar" → telt 0..9 en zet daarna de volledige tekst terug.
 function tel(el: HTMLElement) {
   const tekst = el.textContent ?? '';
   const m = tekst.match(/\d+/);
