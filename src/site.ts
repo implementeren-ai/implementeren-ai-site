@@ -111,7 +111,7 @@ export const auteurs = {
   camiel: {
     naam: 'Camiel Wits',
     functie: 'Lead Data & AI Consultant',
-    bio: 'Camiel Wits is Lead Data & AI Consultant met meer dan 8 jaar ervaring met data en AI in uiteenlopende sectoren. Hij stuurt AI-projecten van idee naar resultaat, met focus op waarde.',
+    bio: 'Camiel Wits is Lead Data & AI Consultant met 9 jaar ervaring met data en AI in uiteenlopende sectoren. Hij stuurt AI-projecten van idee naar resultaat, met focus op waarde.',
     foto: '/team/camiel-avatar.jpg',
     linkedin: 'https://www.linkedin.com/in/camielwits/',
     overAnker: '/over#camiel',
