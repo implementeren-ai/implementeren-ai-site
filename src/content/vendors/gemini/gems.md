@@ -83,9 +83,9 @@ Google omschrijft een Gem als een aangepaste versie van Gemini die je helpt bij 
 
 - **een naam**, zodat je hem terugvindt;
 - **instructies**, die Gemini bij elk gesprek met de Gem volgt;
-- **kennis**, optioneel: bestanden van je computer, bestanden uit Google Drive of een NotebookLM-notebook.
+- **kennis**, optioneel: bestanden van je computer, bestanden uit Google Drive of een notebook uit Gemini Notebook (voorheen NotebookLM).
 
-Werk je liever rechtstreeks in je eigen documenten, met bronvermelding per antwoord, dan is NotebookLM het gereedschap daarvoor. Een Gem is bedoeld voor een taak die je vaak herhaalt, zoals een offerte opzetten of een tekst controleren.
+Werk je liever rechtstreeks in je eigen documenten, met bronvermelding per antwoord, dan is Gemini Notebook het gereedschap daarvoor. Een Gem is bedoeld voor een taak die je vaak herhaalt, zoals een offerte opzetten of een tekst controleren.
 
 ## Een Gem maken in Gemini: stap voor stap
 
@@ -132,7 +132,7 @@ Drie dingen om vooraf te regelen:
 
 - Iedereen met toegang ziet de instructies en de bestanden. Deel een Gem dus alleen met mensen die die bestanden ook mogen zien.
 - Een editor kan de instructies wijzigen, en dan veranderen de antwoorden voor iedereen. Geef bij een teamgem één of twee mensen editorrechten.
-- Een Gem met een NotebookLM-notebook of een ander bestandstype dan een upload of een Drive-bestand kun je niet delen. De knop Delen ontbreekt dan.
+- Een Gem met een notebook uit Gemini Notebook of een ander bestandstype dan een upload of een Drive-bestand kun je niet delen. De knop Delen ontbreekt dan.
 
 ## Wat de beheerder regelt voor Gems in Google Workspace
 
