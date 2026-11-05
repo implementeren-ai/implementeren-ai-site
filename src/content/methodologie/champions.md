@@ -16,7 +16,7 @@ groepen:
     items:
       - Eerste aanspreekpunt voor collega's
       - Eigenaar van de promptbibliotheek na oplevering
-      - Input voor de kwartaalreview in de retainer
+      - Input voor de sessies in het abonnement
 ---
 
 Zodra de consultant de deur uitloopt, zakt adoptie weg. Tenzij er interne mensen zijn die het dragen. Daarom trainen we twee tot vier collega's tot champion.

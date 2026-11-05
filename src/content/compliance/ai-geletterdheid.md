@@ -127,7 +127,7 @@ De Autoriteit Persoonsgegevens (AP) heeft twee handreikingen gepubliceerd: "Aan 
 
 De AP noemt als randvoorwaarden voor zo'n plan dat het bestuurlijk is vastgelegd, dat er budget is, dat iemand verantwoordelijk is en dat de voortgang periodiek wordt gevolgd.
 
-Wil je dit niet zelf opzetten? In de rollout [Claude in 30 dagen](/claude-in-30-dagen) zit een kickoff-workshop van 90 minuten voor iedereen, een champions-programma waarin twee tot vier mensen intensief worden getraind en een promptbibliotheek op maat. Wie eerst wil weten waar het team staat, begint met de [Claude Readiness Scan](/claude-readiness-scan). Na de rollout houdt de [Claude Compagnon](/claude-compagnon) het bij met een workshop per maand.
+Wil je dit niet zelf opzetten? In de rollout [Claude in 30 dagen](/claude-in-30-dagen) zit een kickoff-workshop van 90 minuten voor iedereen, een champions-programma waarin twee tot vier mensen intensief worden getraind en een promptbibliotheek op maat. Wie eerst wil weten waar het team staat, begint met de [Claude Readiness Scan](/claude-readiness-scan). Na de rollout houdt de [Claude Compagnon](/claude-compagnon) het bij met twee sessies per maand en onbeperkt toegang tot Camiel via Teams.
 
 ## Hoe leg je AI-geletterdheid vast?
 

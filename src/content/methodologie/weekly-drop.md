@@ -10,7 +10,7 @@ punten:
     tekst: Je week begint met een concreet idee in plaats van vage AI-hype. Praktisch, binnen een uur uit te proberen.
   - label: Dezelfde week
     kop: In andere vorm op LinkedIn
-    tekst: Een stuk content, twee kanalen. Retainer-klanten krijgen het eerst.
+    tekst: Een stuk content, twee kanalen. Abonnees krijgen het eerst.
 ---
 
 Een use case per week, geschreven voor het Nederlandse MKB. Maandagochtend in je inbox.
