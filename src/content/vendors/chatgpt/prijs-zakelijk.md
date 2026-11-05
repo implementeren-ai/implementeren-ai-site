@@ -25,8 +25,8 @@ schemaTypes:
   - FAQPage
   - BreadcrumbList
 author: camiel
-status: review
-publishDate: null
+status: published
+publishDate: 2026-11-05
 vendor: chatgpt
 soort: prijs
 claudeSibling: /prijs
