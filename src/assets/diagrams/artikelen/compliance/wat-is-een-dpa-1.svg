@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Beslisschema in vier stappen: gaan er geen persoonsgegevens naar de leverancier, dan heb je geen DPA nodig; gebruikt de leverancier de gegevens voor de eigen dienst, zoals een vervoerder, dan is die zelf verantwoordelijk; anders zoek je de DPA en bewaar en registreer je hem" data-bijschrift="Zo bepaal je of je een verwerkersovereenkomst nodig hebt, stand 2 november 2026." font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="wdpa1-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+<marker id="wdpa1-i" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#565A4C"/></marker>
+</defs><rect width="1200" height="600" fill="#F4F1E8"/><rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">HEB JE EEN VERWERKERSOVEREENKOMST NODIG?</text>
+<g>
+<line x1="190" y1="360" x2="1040" y2="360" stroke="#CFCDBE" stroke-width="4"/>
+<g fill="#FFFFFF" stroke="#565A4C" stroke-width="4"><circle cx="190" cy="360" r="28"/><circle cx="500" cy="360" r="28"/><circle cx="790" cy="360" r="28"/></g>
+<circle cx="1040" cy="360" r="28" fill="#3D5220"/>
+<rect x="48" y="140" width="282" height="104" rx="18" fill="#E9EBDC" stroke="#CFCDBE" stroke-width="3"/>
+<rect x="352" y="140" width="420" height="104" rx="18" fill="#E9EBDC" stroke="#CFCDBE" stroke-width="3"/>
+<path d="M190 326 L 190 262" fill="none" stroke="#565A4C" stroke-width="4" stroke-linecap="round" marker-end="url(#wdpa1-i)"/>
+<path d="M500 326 L 500 262" fill="none" stroke="#565A4C" stroke-width="4" stroke-linecap="round" marker-end="url(#wdpa1-i)"/>
+</g>
+<g font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-size="28" font-weight="600" letter-spacing="-1" text-anchor="middle"><text x="190" y="370">1</text><text x="500" y="370">2</text><text x="790" y="370">3</text><text x="1040" y="370" fill="#FFFFFF">4</text></g>
+<text x="189" y="204" text-anchor="middle" font-size="32" font-weight="600">geen DPA nodig</text>
+<text x="562" y="190" text-anchor="middle" font-size="32" font-weight="600">zelf verantwoordelijk</text>
+<text x="562" y="226" text-anchor="middle" font-size="26" fill="#565A4C">bijvoorbeeld een vervoerder</text>
+<text x="208" y="306" font-size="26" fill="#565A4C">nee</text>
+<text x="518" y="306" font-size="26" fill="#565A4C">nee</text>
+<text x="645" y="342" text-anchor="middle" font-size="26" fill="#565A4C">ja</text>
+<text x="190" y="430" text-anchor="middle" font-size="32" font-weight="600">persoonsgegevens?</text>
+<text x="500" y="430" text-anchor="middle" font-size="32" font-weight="600">alleen in</text>
+<text x="500" y="474" text-anchor="middle" font-size="32" font-weight="600">jouw opdracht?</text>
+<text x="790" y="430" text-anchor="middle" font-size="32" font-weight="600">DPA zoeken</text>
+<text x="1040" y="430" text-anchor="middle" font-size="32" font-weight="600">bewaren en</text>
+<text x="1040" y="474" text-anchor="middle" font-size="32" font-weight="600">registreren</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 2 nov 2026</text>
+<rect width="1200" height="600" filter="url(#wdpa1-g)"/></svg>
