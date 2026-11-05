@@ -4,7 +4,7 @@
 // AI implementeren (akkoord Sweder); title, beschrijving en H1 bewust gelijk ("claude zakelijk").
 import { getCollection } from 'astro:content';
 import { Picture } from 'astro:assets';
-import camielWater from '../assets/team/camiel-water.jpg';
+import camielCamera from '../assets/team/camiel-camera.jpg';
 import studioBreed from '../assets/team/studio-breed.jpg';
 import camielPresentatie from '../assets/team/camiel-presentatie.jpg';
 import BasisLayout from '../layouts/BasisLayout.astro';
@@ -95,10 +95,10 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
             </div>
             <figure class="v2-werkplek-foto">
               <Picture
-                src={camielWater}
-                alt="Camiel Wits, lachend in gesprek aan het water"
+                src={camielCamera}
+                alt="Camiel Wits, lachend in de camera op kantoor"
                 formats={['avif', 'webp']}
-                widths={[320, 480, 640, 828]}
+                widths={[320, 480, 545]}
                 sizes="(min-width: 1080px) 340px, (min-width: 768px) 40vw, calc(100vw - 64px)"
                 loading="eager"
                 fetchpriority="high"
