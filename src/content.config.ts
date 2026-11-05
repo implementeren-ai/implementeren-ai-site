@@ -197,8 +197,23 @@ const prijs = defineCollection({
   }),
 });
 
+// Vendor-secties: src/content/vendors/<vendor>/<slug>.md rendert op /<vendor>/<slug>,
+// de slug 'index' op /<vendor> (src/pages/[vendor]/). De vendor-enum loopt gelijk met
+// vendorSlugs in src/data/vendors.mjs; de [vendor]-routes controleren dat de mapnaam
+// en het vendor-veld overeenkomen.
+const vendors = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/vendors' }),
+  schema: seoSchema({
+    vendor: z.enum(['chatgpt', 'gemini', 'copilot']),
+    soort: z.enum(['landing', 'prijs', 'avg', 'vergelijking', 'howto']),
+    // Pad van de Claude-tegenhanger (bv. /vergelijken/claude-vs-chatgpt). Gezet:
+    // VendorLayout toont een "Vergelijk met Claude"-linkblok. null: geen blok.
+    claudeSibling: z.string().nullable().default(null),
+  }),
+});
+
 export const collections = {
   diensten, methodologie, cases,
   verticalen, integraties, usecases, vergelijkingen,
-  compliance, training, nieuws, prijs,
+  compliance, training, nieuws, prijs, vendors,
 };

@@ -34,6 +34,22 @@ function leesLastmod() {
       if (datum) datums.set(route + bestand.replace(/\.md$/, ''), new Date(datum).toISOString());
     }
   }
+  // De vendors-collectie is genest (staat daarom niet in collectieRoutes):
+  // src/content/vendors/<vendor>/<slug>.md -> /<vendor>/<slug>, index.md -> /<vendor>.
+  const vendorsDir = 'src/content/vendors';
+  if (existsSync(vendorsDir)) {
+    for (const vendor of readdirSync(vendorsDir, { withFileTypes: true })) {
+      if (!vendor.isDirectory()) continue;
+      for (const bestand of readdirSync(join(vendorsDir, vendor.name))) {
+        if (!bestand.endsWith('.md')) continue;
+        const tekst = readFileSync(join(vendorsDir, vendor.name, bestand), 'utf-8');
+        const datum = veld(tekst, 'updatedDate') ?? veld(tekst, 'publishDate');
+        if (!datum) continue;
+        const slug = bestand.replace(/\.md$/, '');
+        datums.set(slug === 'index' ? `/${vendor.name}` : `/${vendor.name}/${slug}`, new Date(datum).toISOString());
+      }
+    }
+  }
   // .astro-pagina's met een eigen datum: const bijgewerkt = '2026-10-02' of new Date('2026-10-02').
   // Een map of bestand dat niet (meer) bestaat wordt overgeslagen, zodat een verplaatste
   // gids de build niet breekt en de nieuwe gids vanzelf meedoet.

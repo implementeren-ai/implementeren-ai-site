@@ -27,6 +27,9 @@ PAGES_DIR = ROOT / 'src' / 'pages'
 CONTENT_DIR = ROOT / 'src' / 'content'
 
 # Route-patroon per collectie (moet matchen met de [slug]-routes in src/pages).
+# 'vendors' staat hier niet in: die collectie is genest en krijgt in
+# build_valid_routes() zijn eigen mapping (vendors/<vendor>/<slug>.md -> /<vendor>/<slug>,
+# index.md -> /<vendor>), gelijk aan src/pages/[vendor]/.
 COLLECTION_ROUTES = {
     'verticalen': '/claude-voor-{id}',
     'integraties': '/integraties/{id}',
@@ -42,7 +45,7 @@ COLLECTION_ROUTES = {
 # Collecties met een status-veld: alleen live entries bouwen mee (src/lib/content.ts).
 STATUS_COLLECTIONS = [
     'verticalen', 'integraties', 'usecases', 'vergelijkingen',
-    'compliance', 'training', 'nieuws', 'prijs',
+    'compliance', 'training', 'nieuws', 'prijs', 'vendors',
 ]
 
 
@@ -348,6 +351,18 @@ def build_valid_routes(peildatum: str) -> set[str]:
                 if not is_live(fm, peildatum):
                     continue
             routes.add(pattern.format(id=slug))
+
+    # 3. Vendors (genest): vendors/<vendor>/<slug>.md -> /<vendor>/<slug>, index.md -> /<vendor>.
+    vendors_dir = CONTENT_DIR / 'vendors'
+    if vendors_dir.is_dir():
+        for md_file in vendors_dir.rglob('*.md'):
+            if md_file.stem.startswith('_'):
+                continue
+            fm, _ = load_markdown(str(md_file))
+            if not is_live(fm, peildatum):
+                continue
+            rel = md_file.relative_to(vendors_dir).with_suffix('').as_posix()
+            routes.add(f"/{rel.rsplit('/', 1)[0]}" if rel.endswith('/index') else f'/{rel}')
 
     return routes
 

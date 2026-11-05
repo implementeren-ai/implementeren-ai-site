@@ -9,10 +9,11 @@
 // referrer) dan kan Google hem alsnog crawlen en indexeren. Daarom staat de
 // noindex-beslissing hier, naast de sitemap-beslissing, en niet los ervan.
 
-import { readdirSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 import { isLive, leesPublicatie } from '../lib/publicatie.mjs';
+import { vendorSlugs } from './vendors.mjs';
 
 // De hoofdschakelaar. Zolang deze true is krijgt de HELE site noindex, ongeacht pad.
 //
@@ -51,6 +52,8 @@ export const zakelijk = {
     '/training',
     '/use-cases',
     '/vergelijken',
+    // Vendor-secties (src/content/vendors): /chatgpt, /gemini, /copilot en alles eronder.
+    ...vendorSlugs.map((s) => '/' + s),
   ],
   // Alles wat zo begint, voor de route claude-voor-[slug].
   prefixen: ['/claude-voor-'],
@@ -97,6 +100,13 @@ function bepaalLegeHubs() {
     }
     if (published === 0) leeg.push(route);
   }
+  // Vendor-hubs: /<vendor> wordt alleen gebouwd als src/content/vendors/<vendor>/index.md
+  // live is (src/pages/[vendor]/index.astro). Zonder live index-entry is de hub er niet,
+  // dus niet in de sitemap en noindex aan de rand; de losse vendor-pagina's doen gewoon mee.
+  for (const slug of vendorSlugs) {
+    const bestand = join('src/content/vendors', slug, 'index.md');
+    if (!existsSync(bestand) || !isLive(leesPublicatie(readFileSync(bestand, 'utf-8')))) leeg.push('/' + slug);
+  }
   return leeg;
 }
 
@@ -134,6 +144,9 @@ export function moetNoindex(pad) {
 }
 
 // Collectie -> URL-voorvoegsel; loopt gelijk met de [slug]-pagina's in src/pages.
+// De vendors-collectie staat hier bewust niet in: zijn routes zijn genest
+// (/<vendor>/<slug>, index.md -> /<vendor>), dus astro.config.mjs (lastmod) en
+// scripts/indexnow.mjs behandelen die collectie apart.
 export const collectieRoutes = {
   cases: '/cases/', verticalen: '/claude-voor-', compliance: '/compliance/', usecases: '/use-cases/',
   integraties: '/integraties/', training: '/training/', nieuws: '/nieuws/', vergelijkingen: '/vergelijken/', prijs: '/prijs/',

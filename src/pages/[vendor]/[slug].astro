@@ -1,0 +1,28 @@
+---
+import { render } from 'astro:content';
+import VendorLayout from '../../layouts/VendorLayout.astro';
+import { getPublished } from '../../lib/content';
+
+export async function getStaticPaths() {
+  // Elke live vendor-entry behalve de landing: chatgpt/prijs.md -> /chatgpt/prijs.
+  // De glob-loader strips een /index-slot van het id, dus index.md heeft id '<vendor>'
+  // en wordt op /<vendor> gerenderd (./index.astro); alles mét een '/' hoort hier.
+  const pages = (await getPublished('vendors')).filter((e) => e.id.includes('/'));
+  return pages.map((page) => {
+    const delen = page.id.split('/');
+    if (delen.length !== 2 || delen[0] !== page.data.vendor) {
+      throw new Error(`vendors/${page.id}: het bestand hoort in src/content/vendors/${page.data.vendor}/<slug>.md (vendor-veld en mapnaam moeten gelijk zijn)`);
+    }
+    return {
+      params: { vendor: delen[0], slug: delen[1] },
+      props: { entry: page },
+    };
+  });
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+---
+<VendorLayout entry={entry} pagePath={`/${entry.id}`} koppen={headings}>
+  <Content />
+</VendorLayout>
