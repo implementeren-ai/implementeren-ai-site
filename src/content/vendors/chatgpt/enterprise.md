@@ -1,7 +1,7 @@
 ---
 title: 'ChatGPT Enterprise: prijs, functies en het verschil met Business'
 titleTag: 'ChatGPT Enterprise prijs en verschil met Business 2026'
-metaDescription: 'ChatGPT Enterprise heeft geen prijs online: je krijgt een offerte via sales. Wat Enterprise toevoegt aan Business: SCIM, EKM, bewaartermijn, EU-opslag, support.'
+metaDescription: 'ChatGPT Enterprise heeft geen prijs online: je krijgt een offerte via sales. Wat Enterprise toevoegt aan Business: SCIM, EKM, audit logs, EU-opslag, support.'
 h1: 'ChatGPT Enterprise: prijs, functies en het verschil met Business'
 targetKeywords:
   - chatgpt enterprise
@@ -66,7 +66,7 @@ faq:
   - question: Kun je ChatGPT Enterprise maandelijks betalen?
     answer: 'Nee. OpenAI biedt maandplannen voor Go, Plus en Business, en jaarplannen voor Business en Enterprise. Bij Enterprise kun je via sales vragen naar betaling op factuur.'
   - question: Wat is het grootste verschil tussen ChatGPT Enterprise en Business?
-    answer: 'Beheer en controle. Enterprise heeft SCIM, EKM, rollen op maat, een bewaartermijn die je zelf instelt, de Compliance API met audit logs en opslag in Europa voor nieuwe werkruimtes. Business heeft SSO, MFA en een vaste prijs die online staat, maar mist die onderdelen.'
+    answer: 'Beheer en controle. Enterprise heeft SCIM, EKM, rollen op maat, de Compliance API met audit logs en opslag in Europa voor nieuwe werkruimtes. Business heeft SSO, MFA en een vaste prijs die online staat, maar mist die onderdelen.'
   - question: Kunnen beheerders in ChatGPT Enterprise de chats van medewerkers lezen?
     answer: 'Medewerkers zien hun eigen gesprekken. Werkruimtebeheerders krijgen via de Enterprise Compliance API toegang tot een auditlog van gesprekken en GPTs. Bij Business kunnen beheerders gesprekken in de werkruimte zelf bekijken, exporteren en verwijderen. Vertel medewerkers in beide gevallen vooraf wie wat kan inzien.'
   - question: Kost opslag in Europa extra bij ChatGPT Enterprise?
@@ -110,7 +110,7 @@ Business is een selfserviceabonnement: creditcard erbij, plekken kiezen en start
 | SCIM | Accounts automatisch aanmaken en verwijderen vanuit je eigen accountbeheer |
 | EKM | Zelf de versleutelingssleutels beheren |
 | Rollen op maat (RBAC) | Per groep bepalen wie welke functies en tools mag gebruiken |
-| Bewaartermijn en opslagregio | Zelf instellen hoe lang data blijft staan en waar |
+| Opslagregio | Kiezen waar je data staat |
 | Compliance API en audit logs | Inzicht in gesprekken en agent-activiteit, voor controle en audits |
 | Analytics-dashboard en Analytics API | Zien hoe de werkruimte wordt gebruikt, ook via een API |
 
@@ -120,7 +120,7 @@ Op contractbasis kun je bij OpenAI ook zaken regelen die in de selfservice-versi
 
 ## Beheer, bewaartermijn en wie de chats ziet
 
-Bij Enterprise bepalen de werkruimtebeheerders hoe lang gegevens bewaard blijven. Verwijderde gesprekken zijn volgens OpenAI binnen 30 dagen uit de systemen, tenzij de wet langer bewaren verplicht. OpenAI waarschuwt wel dat een korte bewaartermijn functies zoals de gespreksgeschiedenis beperkt.
+Bij Enterprise bepalen de werkruimtebeheerders hoe lang gegevens bewaard blijven. Verwijderde gesprekken zijn volgens OpenAI binnen 30 dagen uit de systemen, tenzij de wet langer bewaren verplicht. OpenAI waarschuwt wel dat een korte bewaartermijn functies zoals de gespreksgeschiedenis beperkt. Volgens dezelfde privacypagina kunnen Business-beheerders de bewaartermijn ook instellen, dus dat is geen reden om alleen daarvoor naar Enterprise te gaan.
 
 Een verschil dat in de praktijk telt: wie kan de gesprekken van medewerkers zien? In Business kunnen beheerders gesprekken in de werkruimte bekijken, openen, exporteren en verwijderen. In Enterprise zien medewerkers hun eigen gesprekken, en krijgen beheerders via de Enterprise Compliance API toegang tot een auditlog van gesprekken en GPTs. Leg in beide gevallen vast wie die toegang heeft en vertel het je medewerkers.
 
