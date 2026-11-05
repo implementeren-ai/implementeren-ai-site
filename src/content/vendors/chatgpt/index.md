@@ -122,7 +122,7 @@ Waarom niet gewoon iedereen een eigen Plus-abonnement? Dat kan, maar dan heeft e
 
 ## Wat voegt ChatGPT Enterprise toe?
 
-Enterprise bouwt voort op Business. OpenAI noemt onder meer SCIM voor automatisch accountbeheer, EKM voor eigen versleutelingssleutels, gebruikersanalyse, domeinverificatie, rollen per gebruiker, audit logs via de Compliance API en instellingen voor dataretentie en data residency. Een prijs staat er niet bij.
+Enterprise bouwt voort op Business. OpenAI noemt onder meer SCIM voor automatisch accountbeheer, EKM voor eigen versleutelingssleutels, gebruikersanalyse, rollen per gebruiker, audit logs via de Compliance API en data residency. Een prijs staat er niet bij.
 
 Voor een bedrijf met vijf tot vijftig medewerkers is Business meestal genoeg. Enterprise wordt interessant als je automatisch accounts wilt aanmaken en verwijderen vanuit je eigen systeem, of als je IT-afdeling audit logs eist.
 
