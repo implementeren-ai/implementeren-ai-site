@@ -49,7 +49,7 @@ faq:
   - question: Wat kost Gemini voor bedrijven?
     answer: 'Via Google Workspace kost het Business Starter-abonnement €6,80, Standard €13,60 en Plus €21,10 per gebruiker per maand bij een jaarcontract. Met het flexibele maandplan is dat €8,10, €16,20 en €25,30. Gemini zit daar al in. Gemini Enterprise Business edition kost vanaf 21 dollar per plek per maand.'
   - question: Wat is Gemini Business?
-    answer: 'Met Gemini Business wordt meestal Gemini Enterprise Business edition bedoeld: een losse AI-werkruimte van Google voor kleine bedrijven en teams, vanaf 21 dollar per plek per maand. Vroeger heette ook een Workspace-add-on Gemini Business. Die koop je niet meer los, want Gemini zit nu in de Workspace-abonnementen zelf.'
+    answer: 'Gemini Business was de naam van een losse Gemini-add-on voor Google Workspace. Die koop je niet meer apart, want Gemini zit nu in de Business-abonnementen van Workspace zelf. Google verkoopt daarnaast Gemini Enterprise Business edition, een losse AI-werkruimte voor kleine bedrijven en teams, vanaf 21 dollar per plek per maand.'
   - question: Zit Gemini in elk Google Workspace-abonnement?
     answer: 'Ja, maar niet overal even uitgebreid. Business Starter heeft Gemini in Gmail, in Vids en de Gemini-chat. Gemini in Documenten, Spreadsheets, Presentaties, Drive, Meet en Chat begint bij Business Standard.'
   - question: Zijn de Gemini-prijzen inclusief of exclusief btw?
@@ -92,9 +92,9 @@ Wil je dat Gemini meeschrijft in documenten of in een vergadering notuleert, dan
 
 Google schrijft bij alle abonnementen dat je bedrijfsgegevens niet worden gebruikt om modellen te trainen.
 
-## Gemini Business: de losse AI-werkruimte
+## Gemini Enterprise Business edition: de losse AI-werkruimte
 
-Zoek je op Gemini Business, dan bedoel je waarschijnlijk dit product. Gemini Enterprise Business edition is een eigen omgeving waarin je team met Gemini werkt, gekoppeld aan je bedrijfsgegevens. Je hebt er geen Google Workspace voor nodig: Google noemt koppelingen met onder meer Microsoft 365, Google Workspace, HubSpot, Notion, Slack, Jira en GitHub.
+Naast Workspace verkoopt Google Gemini Enterprise Business edition. Dat is een eigen omgeving waarin je team met Gemini werkt, gekoppeld aan je bedrijfsgegevens. Je hebt er geen Google Workspace voor nodig: Google noemt koppelingen met onder meer Microsoft 365, Google Workspace, HubSpot, Notion, Slack, Jira en GitHub.
 
 De prijs: vanaf 21 dollar per plek per maand. Verder geldt volgens het Helpcentrum van Google:
 
