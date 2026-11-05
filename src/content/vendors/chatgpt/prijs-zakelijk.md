@@ -44,13 +44,16 @@ bronnen:
   - titel: 'OpenAI Help Center, ChatGPT Business overview'
     url: https://help.openai.com/en/articles/8792828-chatgpt-business-overview
     geraadpleegd: 5 november 2026
+  - titel: 'OpenAI Help Center, Facturatie en stoelen beheren in ChatGPT Business'
+    url: https://help.openai.com/nl-nl/articles/8792536-managing-billing-and-seats-in-chatgpt-business
+    geraadpleegd: 5 november 2026
 faq:
   - question: Wat kost ChatGPT Business per gebruiker?
     answer: 'Een Standard-plek kost 20 dollar per gebruiker per maand bij jaarlijkse betaling en 25 dollar bij maandelijkse betaling. Een Premium-plek kost 100 en 125 dollar. OpenAI noemt de prijzen in dollars en schrijft dat ze per land en valuta kunnen verschillen.'
   - question: Is ChatGPT Team hetzelfde als ChatGPT Business?
     answer: 'Ja. OpenAI heeft ChatGPT Team op 29 augustus 2025 hernoemd naar ChatGPT Business. Zoek je de prijs van ChatGPT Team, dan is dit dus het plan dat je zoekt.'
   - question: Hoeveel gebruikers heb je minimaal nodig voor ChatGPT Business?
-    answer: 'Twee plekken: twee Standard, twee Premium of van elk één. Een maximum noemt OpenAI niet.'
+    answer: 'Twee plekken: twee Standard, twee Premium of van elk één. Sinds 24 augustus 2026 is het maximum 200 betaalde plekken per abonnement.'
   - question: Wat kost ChatGPT Enterprise?
     answer: 'Daar staat geen bedrag voor online. Je neemt contact op met sales en krijgt een offerte. Enterprise is een jaarplan, en via sales kun je ook vragen naar betaling op factuur.'
   - question: Zijn de ChatGPT-prijzen inclusief of exclusief btw?
@@ -82,7 +85,7 @@ Let op: de API van OpenAI zit er niet bij. Wie zelf koppelingen bouwt, betaalt d
 
 ## Minimaal twee gebruikers
 
-Een Business-werkruimte heeft minimaal twee plekken nodig: twee Standard, twee Premium of van elk één. Een kantoor van twee mensen kan dus al met Business beginnen. Een zzp'er in zijn eentje kan dat niet. Voor één persoon zijn de individuele plannen bedoeld, en die laten we hier buiten beschouwing.
+Een Business-werkruimte heeft minimaal twee plekken nodig: twee Standard, twee Premium of van elk één. Een kantoor van twee mensen kan dus al met Business beginnen. Sinds 24 augustus 2026 is het maximum 200 betaalde plekken per abonnement. Een zzp'er in zijn eentje kan dat niet. Voor één persoon zijn de individuele plannen bedoeld, en die laten we hier buiten beschouwing.
 
 Een maximum aantal gebruikers noemt OpenAI niet.
 
@@ -110,9 +113,8 @@ Enterprise legt daar beveiliging en beheer op ondernemingsniveau bovenop. OpenAI
 - SCIM, zodat accounts automatisch worden aangemaakt en verwijderd;
 - EKM, voor beheer van je eigen versleutelingssleutels;
 - inzicht in hoe gebruikers het plan gebruiken;
-- domeinverificatie;
 - audit logs via de Compliance API;
-- instellingen voor dataretentie en data residency.
+- data residency, zodat je kiest waar je data staat.
 
 Dat lijstje is niet volledig. Welke modellen en limieten er per plan gelden, verandert vaak en laten we daarom op deze pagina weg.
 
