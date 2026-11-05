@@ -305,7 +305,6 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 .v2-kaart li { display: flex; gap: 10px; }
 .v2-kaart li span[aria-hidden] { color: var(--color-v2-olijf); font-weight: 700; }
 .v2-kaart-link { margin-top: auto; padding-top: 10px; font-weight: 600; }
-.v2-meest { display: inline-block; margin-left: 8px; padding: 2px 10px; border-radius: 999px; background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
 .v2-kaart-beeld { flex: 1 1 240px; min-width: 0; align-self: center; }
 .v2-kaart-donker { background: var(--color-v2-inkt); border-color: var(--color-v2-inkt); color: var(--color-v2-creme); }
 /* .v2-voorvoegsel: home-v2.css zet koppen in .v2-home op inkt en laadt later. */

@@ -20,6 +20,10 @@ const diensten = defineCollection({
     // Alleen voor <title> (titleTag) en de H1 (h1) op de dienstpagina; de homepage-kaart en de prijstabellen blijven `titel` gebruiken.
     titleTag: z.string().optional(),
     h1: z.string().optional(),
+    // Optionele aanbiedingsregel (bv. "Start je voor zes maanden, dan zit de Readiness
+    // Scan erbij"). Rendert als feit op de dienstpagina;
+    // zonder dit veld verschijnt er niets.
+    actie: z.string().optional(),
   }),
 });
 
