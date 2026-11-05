@@ -33,6 +33,11 @@ for (const [collectie, route] of Object.entries(routes)) {
   }
 }
 for (const c of await getCollection('cases')) labels.set(`/cases/${c.id}`, c.data.title);
+// Vendors: genest id (chatgpt/prijs -> /chatgpt/prijs); de landing (index.md) heeft
+// id '<vendor>' omdat de glob-loader het /index-slot stript, dus '/' + id klopt altijd.
+for (const e of await getCollection('vendors')) {
+  if (isPublished(e) && !omgeleid[`/${e.id}`]) labels.set(`/${e.id}`, zonderSuffix(e.data.titleTag));
+}
 
 const items = [...new Set(links.map((l) => l.replace(/\/$/, '') || '/'))]
   .filter((pad) => pad !== huidig && isIndexeerbaarPad(pad))

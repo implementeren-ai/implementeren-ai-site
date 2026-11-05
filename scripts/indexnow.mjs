@@ -67,6 +67,15 @@ function hubVan(prefix) {
 
 export function routesVoorBestand(bestand) {
   const routes = [];
+  // Vendors: genest, src/content/vendors/<vendor>/<slug>.md -> /<vendor>/<slug> plus de hub
+  // /<vendor>; index.md is zelf de hub. isIndexeerbaarPad filtert een niet-live hub er later uit.
+  const vmd = bestand.match(/^src\/content\/vendors\/([^/]+)\/([^/]+)\.md$/);
+  if (vmd) {
+    const hub = `/${vmd[1]}`;
+    if (vmd[2] === 'index') routes.push(hub);
+    else routes.push(`${hub}/${vmd[2]}`, hub);
+    return routes;
+  }
   const md = bestand.match(/^src\/content\/([^/]+)\/([^/]+)\.md$/);
   if (md) {
     const prefix = collectieRoutes[md[1]];
@@ -153,18 +162,31 @@ function urlsSinds(sha) {
 function urlsGepubliceerdOp(dag) {
   const redirects = leesRedirects();
   const routes = new Set();
+  const bestanden = [];
   for (const collectie of Object.keys(collectieRoutes)) {
     const dir = `src/content/${collectie}`;
     if (!existsSync(dir)) continue;
     for (const bestand of readdirSync(dir)) {
-      if (!bestand.endsWith('.md')) continue;
-      const { status, publishDate } = leesPublicatie(readFileSync(`${dir}/${bestand}`, 'utf-8'));
-      if (status !== 'published' || publishDate !== dag) continue;
-      for (const route of routesVoorBestand(`${dir}/${bestand}`)) {
-        let doel = route;
-        for (let i = 0; i < 5 && redirects.has(doel); i++) doel = redirects.get(doel);
-        routes.add(doel);
+      if (bestand.endsWith('.md')) bestanden.push(`${dir}/${bestand}`);
+    }
+  }
+  // Vendors: genest (één map per vendor), staat daarom niet in collectieRoutes.
+  const vendorsDir = 'src/content/vendors';
+  if (existsSync(vendorsDir)) {
+    for (const vendor of readdirSync(vendorsDir, { withFileTypes: true })) {
+      if (!vendor.isDirectory()) continue;
+      for (const bestand of readdirSync(`${vendorsDir}/${vendor.name}`)) {
+        if (bestand.endsWith('.md')) bestanden.push(`${vendorsDir}/${vendor.name}/${bestand}`);
       }
+    }
+  }
+  for (const pad of bestanden) {
+    const { status, publishDate } = leesPublicatie(readFileSync(pad, 'utf-8'));
+    if (status !== 'published' || publishDate !== dag) continue;
+    for (const route of routesVoorBestand(pad)) {
+      let doel = route;
+      for (let i = 0; i < 5 && redirects.has(doel); i++) doel = redirects.get(doel);
+      routes.add(doel);
     }
   }
   return [...routes].filter((r) => isIndexeerbaarPad(r)).sort().map((r) => (r === '/' ? `${ORIGIN}/` : ORIGIN + r));

@@ -25,7 +25,10 @@
     "/prijs",
     "/training",
     "/use-cases",
-    "/vergelijken"
+    "/vergelijken",
+    "/chatgpt",
+    "/gemini",
+    "/copilot"
   ],
   "prefixen": [
     "/claude-voor-"
@@ -47,6 +50,9 @@
   "legeHubs": [
     "/use-cases",
     "/integraties",
-    "/training"
+    "/training",
+    "/chatgpt",
+    "/gemini",
+    "/copilot"
   ]
 }

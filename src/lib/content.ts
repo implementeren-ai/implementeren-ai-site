@@ -14,7 +14,8 @@ export type StatusCollectie =
   | 'compliance'
   | 'training'
   | 'nieuws'
-  | 'prijs';
+  | 'prijs'
+  | 'vendors';
 
 /**
  * Alleen live entries horen in de build (en dus in de sitemap): status 'published' en een
