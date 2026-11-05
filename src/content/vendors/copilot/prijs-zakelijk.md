@@ -34,6 +34,9 @@ claudeSibling: /prijs
 disclaimer: fiscaal
 kortAntwoord: 'Microsoft 365 Copilot Bedrijven kost €18,20 per gebruiker per maand bij een jaarabonnement en €21,84 met een maandabonnement, exclusief btw. Je hebt er een Microsoft 365 Business-abonnement voor nodig en het werkt tot 300 gebruikers. Tot en met 31 december 2026 betalen bestaande klanten het eerste jaar €15,60. Grotere organisaties betalen €26,00 voor Microsoft 365 Copilot. Copilot Chat zit zonder extra kosten in je Microsoft 365-abonnement. Stand 5 november 2026.'
 bronnen:
+  - titel: 'Microsoft Ondersteuning, Hoe Copilot Chat werkt met en zonder een Microsoft Copilot-licentie'
+    url: https://support.microsoft.com/nl-nl/microsoft-365-copilot/how-copilot-chat-works-with-and-without-a-microsoft-365-copilot-license
+    geraadpleegd: 5 november 2026
   - titel: 'Microsoft, Microsoft Copilot voor kleine bedrijven (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/business?market=nl
     geraadpleegd: 5 november 2026
@@ -61,7 +64,7 @@ faq:
   - question: Wat is Copilot Business?
     answer: 'Copilot Business is de Engelse naam van Microsoft 365 Copilot Bedrijven. Het is een invoegtoepassing voor organisaties tot 300 gebruikers met een Microsoft 365 Business-abonnement. Volgens Microsoft krijg je dezelfde Copilot-functies als in de versie voor grote organisaties, met inkoopvoorwaarden voor het MKB.'
   - question: Is Copilot gratis voor zakelijke accounts?
-    answer: 'Copilot Chat wel. Microsoft schrijft dat Copilot Chat zonder extra kosten beschikbaar is voor gebruikers met een Microsoft Entra ID-account en een geschikt Microsoft 365-abonnement. In die gratis versie zit geen Copilot in Word, Excel, PowerPoint en Outlook en geen chat over je eigen werkgegevens: daarvoor betaal je de Copilot-licentie.'
+    answer: 'Copilot Chat wel. Microsoft schrijft dat Copilot Chat zonder extra kosten beschikbaar is voor gebruikers met een Microsoft Entra ID-account en een geschikt Microsoft 365-abonnement. Copilot in Outlook zit er volgens Microsoft ook in. Voor chatten over je eigen werkgegevens, en meestal ook voor Copilot in Word, Excel en PowerPoint, betaal je de Copilot-licentie.'
   - question: Zijn de Copilot-prijzen inclusief of exclusief btw?
     answer: 'Exclusief. Bij elke prijs op de Nederlandse pagina van Microsoft staat "De prijs is exclusief btw." Kijk op je factuur hoe de btw is berekend en laat je boekhouder bepalen hoe je het verwerkt.'
   - question: Kan ik Copilot zakelijk gratis proberen?
@@ -110,7 +113,7 @@ Business Basic zonder Copilot kost €6,07 per gebruiker per maand bij een jaara
 
 Veel bedrijven betalen al voor Microsoft 365 en weten niet dat er een gratis Copilot in zit. Microsoft schrijft dat Copilot Chat zonder extra kosten beschikbaar is voor alle gebruikers met een Microsoft Entra ID-account en een geschikt Microsoft 365-abonnement. Je krijgt dan een AI-chat met webinformatie, schrijfhulp en gegevensanalyse. Microsoft heeft de naam dit jaar aangepast: de app heet nu Microsoft Copilot Chat, en de betaalde licentie heet op Microsoft Learn Microsoft Copilot. Op de Nederlandse prijspagina staat nog Microsoft 365 Copilot Bedrijven.
 
-Wat je in de gewone gratis versie niet krijgt: Copilot in Word, Excel, PowerPoint en Outlook, en chatten op basis van je eigen werkgegevens. Daarvoor heb je de betaalde licentie nodig. Microsoft noemt wel een tussenvorm, het label M365 Copilot (Basic): geen betaalde licentie, maar wel standaardtoegang tot Copilot in de apps. Welk label je hebt, zie je in Copilot onder je naam.
+Wat je in de gewone gratis versie niet krijgt: Copilot in Word, Excel en PowerPoint, en chatten op basis van je eigen werkgegevens. Copilot in Outlook zit er volgens Microsoft wel in. Daarvoor heb je de betaalde licentie nodig. Microsoft noemt wel een tussenvorm, het label M365 Copilot (Basic): geen betaalde licentie, maar wel standaardtoegang tot Copilot in de apps. Welk label je hebt, zie je in Copilot onder je naam.
 
 Agents kun je in Copilot Chat wel gebruiken, maar dan betaal je per gebruik. Microsoft noemt daarvoor een Azure-abonnement als vereiste. Volgens Microsoft Learn zijn agents die alleen met instructies of openbare websites werken gratis. Agents die bij gedeelde bedrijfsgegevens komen, zoals SharePoint, worden afgerekend in Copilot Credits via Copilot Studio. Gebruikers met een betaalde Copilot-licentie betalen volgens Microsoft Learn geen extra kosten voor agents en connectors.
 
