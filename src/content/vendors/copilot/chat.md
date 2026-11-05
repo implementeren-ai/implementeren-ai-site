@@ -142,7 +142,7 @@ Alle instellingen staan in het Microsoft 365-beheercentrum onder **Copilot** en 
 
 1. **Vastmaken in de navigatiebalk.** Kies **Pin Microsoft Copilot Chat**. Standaard staat Copilot Chat vast in de Microsoft 365-apps. Met **Do not pin Copilot Chat in Microsoft 365 apps** is het niet meer standaard zichtbaar in Teams en Outlook, maar kunnen gebruikers het zelf toevoegen. Een wijziging kan tot 48 uur duren. Je hebt de rol AI-beheerder nodig.
 2. **Webzoeken beperken.** Met het beleid **Allow web search in Copilot** bepaal je of Copilot Chat het web mag gebruiken. Zonder webzoeken zijn antwoorden minder actueel.
-3. **Agents en afbeeldingen regelen.** In dezelfde Copilot-instellingen bepaal je wie agents mag maken en gebruiken, en of gebruikers afbeeldingen mogen genereren.
+3. **Agents en afbeeldingen regelen.** Wie agents mag gebruiken en delen, regel je in het beheercentrum onder **Agents** en dan **Settings**. Of gebruikers afbeeldingen mogen genereren, stel je hier in de Copilot-instellingen in.
 4. **Toegang weghalen.** Blokkeer je de Copilot-app via Integrated Apps, dan geldt dat voor de hele tenant, ook voor mensen met een betaalde licentie. Wil je het alleen voor gebruikers zonder licentie weghalen, rol de app dan uit naar een groep met alleen gelicentieerde gebruikers. In Teams doe je dat via app-machtigingsbeleid in het Teams-beheercentrum, in Edge via groepsbeleid.
 5. **Gebruik meten.** Het gebruiksrapport voor Copilot Chat toont actieve gebruikers en het aantal prompts over 7, 30, 90 of 180 dagen.
 
