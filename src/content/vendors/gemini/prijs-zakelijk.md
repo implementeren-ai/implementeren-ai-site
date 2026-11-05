@@ -53,7 +53,7 @@ faq:
   - question: Zit Gemini in elk Google Workspace-abonnement?
     answer: 'Ja, maar niet overal even uitgebreid. Business Starter heeft Gemini in Gmail, in Vids en de Gemini-chat. Gemini in Documenten, Spreadsheets, Presentaties, Drive, Meet en Chat begint bij Business Standard.'
   - question: Zijn de Gemini-prijzen inclusief of exclusief btw?
-    answer: 'Voor Gemini Enterprise Business edition schrijft Google dat de prijzen exclusief btw zijn en dat de btw op basis van je factuuradres wordt berekend. Op de Nederlandse Workspace-prijspagina staat het niet. Controleer je factuur en laat je boekhouder bepalen hoe je het verwerkt.'
+    answer: 'Exclusief. Op de Nederlandse Workspace-prijspagina staat bij elk abonnement dat de prijs exclusief belastingen is. Voor Gemini Enterprise Business edition schrijft Google dat de prijzen exclusief btw zijn en dat de btw op basis van je factuuradres wordt berekend. Controleer je factuur en laat je boekhouder bepalen hoe je het verwerkt.'
   - question: Kan ik Gemini zakelijk gratis proberen?
     answer: 'Google Workspace heeft een proefperiode van 14 dagen. Gemini Enterprise Business edition heeft een proefperiode van 30 dagen, waarin je volgens Google tot 5 plekken op een maandterm gratis gebruikt. Daarna gaat het abonnement automatisch over in een betaald abonnement.'
   - question: Kan een zzp'er Gemini zakelijk gebruiken?
@@ -128,7 +128,7 @@ Let op bij het vergelijken: bij Workspace betaal je ook voor mail, opslag en ver
 
 ## Gemini prijs in euro en btw
 
-Workspace laat in Nederland prijzen in euro zien. Over btw staat op de prijspagina niets. Gemini Enterprise Business edition noemt Google in dollars, met de vermelding dat de prijs exclusief btw is en dat de belasting wordt berekend op basis van je factuuradres. Je btw-nummer vul je in bij de betaalinstellingen.
+Workspace laat in Nederland prijzen in euro zien, per gebruiker per maand en exclusief belastingen. Gemini Enterprise Business edition noemt Google in dollars, met de vermelding dat de prijs exclusief btw is en dat de belasting wordt berekend op basis van je factuuradres. Je btw-nummer vul je in bij de betaalinstellingen.
 
 Wij rekenen dollars niet om naar euro, omdat een koers van vandaag over een maand niet meer klopt. Kijk op je factuur of er btw is berekend of verlegd, en laat je boekhouder bepalen hoe je het boekt. Hoe dat bij Claude zit, lees je op [Claude kosten zakelijk](/prijs).
 
