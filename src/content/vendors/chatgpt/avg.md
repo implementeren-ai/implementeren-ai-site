@@ -35,7 +35,7 @@ vendor: chatgpt
 soort: avg
 claudeSibling: /compliance/is-claude-veilig
 disclaimer: juridisch
-kortAntwoord: 'Of je ChatGPT onder de AVG met persoonsgegevens kunt gebruiken, hangt vooral af van het plan. Bij de persoonlijke plannen (Free, Plus, Pro) mag OpenAI je gesprekken standaard gebruiken om modellen te trainen, en is er geen verwerkersovereenkomst. Voor ChatGPT Business, ChatGPT Enterprise en de API traint OpenAI standaard niet op je data en kun je een Data Processing Addendum (DPA) afsluiten. Europese klanten contracteren dan met OpenAI Ireland Limited. Opslag in Europa kan bij nieuwe Enterprise-werkruimtes. Grondslag, DPIA en afspraken met medewerkers blijven jouw werk. Stand 5 november 2026.'
+kortAntwoord: 'Of je ChatGPT onder de AVG met persoonsgegevens kunt gebruiken, hangt vooral af van het plan. Bij de persoonlijke plannen (Free, Plus, Pro) mag OpenAI je gesprekken standaard gebruiken om modellen te trainen, en is er geen verwerkersovereenkomst. Voor ChatGPT Business, ChatGPT Enterprise en de API traint OpenAI standaard niet op je data en kun je een Data Processing Addendum (DPA) afsluiten. Europese klanten contracteren dan met OpenAI Ireland Limited. Opslag in Europa kan bij nieuwe Enterprise-werkruimtes, en bij Business wordt een regiokeuze voor opslag geleidelijk uitgerold. Grondslag, DPIA en afspraken met medewerkers blijven jouw werk. Stand 5 november 2026.'
 bronnen:
   - titel: 'OpenAI, Enterprise privacy at OpenAI (bijgewerkt 8 januari 2026)'
     url: https://openai.com/enterprise-privacy/
@@ -67,6 +67,9 @@ bronnen:
   - titel: 'Autoriteit Persoonsgegevens, Let op: gebruik AI-chatbot kan leiden tot datalekken (6 augustus 2024)'
     url: https://www.autoriteitpersoonsgegevens.nl/actueel/let-op-gebruik-ai-chatbot-kan-leiden-tot-datalekken
     geraadpleegd: 5 november 2026
+  - titel: 'OpenAI Help Center, Waar je ChatGPT Business-inhoud wordt opgeslagen'
+    url: https://help.openai.com/nl-nl/articles/20001418-where-your-chatgpt-business-content-is-stored
+    geraadpleegd: 5 november 2026
 faq:
   - question: Is ChatGPT AVG-proof?
     answer: 'Geen enkele tool is op zichzelf AVG-proof. De AVG stelt eisen aan jouw verwerking, niet aan een product. OpenAI biedt voor Business, Enterprise en de API wel de bouwstenen: geen training op je data als standaard, een verwerkersovereenkomst en voor Enterprise opslag in Europa. Grondslag, DPIA en interne afspraken regel je zelf.'
@@ -77,7 +80,7 @@ faq:
   - question: Met welk OpenAI-bedrijf sluit een Nederlands bedrijf het contract?
     answer: 'Volgens de DPA met OpenAI Ireland Limited, voor klanten in de Europese Economische Ruimte en Zwitserland. Gaan gegevens daarna naar landen buiten de EER, dan gebeurt dat op basis van de standaardcontractbepalingen van de Europese Commissie of een adequaatheidsbesluit.'
   - question: Staan mijn ChatGPT-gegevens in Europa?
-    answer: 'Alleen als je dat regelt. Opslag in Europa (EER plus Zwitserland) kan voor nieuwe ChatGPT Enterprise- en Edu-werkruimtes en voor API-klanten die in aanmerking komen. Voor ChatGPT Business noemt OpenAI deze optie niet.'
+    answer: 'Alleen als je dat regelt. Opslag in Europa (EER plus Zwitserland) kan voor nieuwe ChatGPT Enterprise- en Edu-werkruimtes en voor API-klanten die in aanmerking komen. Bij ChatGPT Business kies je bij het afrekenen een opslagregio, maar die optie wordt geleidelijk uitgerold en een kopie van elke prompt en elk antwoord blijft tijdelijk in de Verenigde Staten voor misbruikcontrole.'
   - question: Mag ik klantgegevens in ChatGPT Plus zetten?
     answer: 'Dat raden we af. Een persoonlijk plan heeft geen verwerkersovereenkomst en traint standaard op je gesprekken. De Autoriteit Persoonsgegevens kreeg in 2024 meerdere meldingen van datalekken doordat medewerkers persoonsgegevens met een AI-chatbot deelden.'
 ---
@@ -92,7 +95,7 @@ OpenAI maakt een harde knip tussen plannen voor individuen en plannen voor bedri
 |---|---|---|---|
 | Training op je data | Standaard aan, zelf uit te zetten | Standaard uit | Standaard uit |
 | Verwerkersovereenkomst (DPA) | Niet beschikbaar | Ja | Ja |
-| Opslag in Europa | Nee | Niet genoemd | Ja, bij nieuwe werkruimtes |
+| Opslag in Europa | Nee | Regiokeuze, wordt uitgerold | Ja, bij nieuwe werkruimtes |
 | Bewaartermijn | Eigen chatgeschiedenis | Verwijderde chats binnen 30 dagen weg | Beheerder stelt hem in |
 
 Go is ook een persoonlijk plan. OpenAI noemt het niet apart in zijn uitleg over training, dus controleer de instelling daar zelf.
@@ -134,7 +137,7 @@ Over beveiliging zegt OpenAI dat ChatGPT Business en Enterprise een SOC 2 Type 2
 
 ## ChatGPT AVG en data in Europa
 
-Data residency betekent dat je klantinhoud in een bepaalde regio wordt opgeslagen. Bij OpenAI kan dat in Europa (EER plus Zwitserland) en een aantal andere regio's. Volgens het helpartikel geldt het voor API-klanten die in aanmerking komen en voor nieuwe ChatGPT Enterprise- en Edu-werkruimtes. ChatGPT Business noemt OpenAI daar niet.
+Data residency betekent dat je klantinhoud in een bepaalde regio wordt opgeslagen. Bij OpenAI kan dat in Europa (EER plus Zwitserland) en een aantal andere regio's. Volgens het helpartikel geldt het voor API-klanten die in aanmerking komen en voor nieuwe ChatGPT Enterprise- en Edu-werkruimtes. Voor ChatGPT Business heeft OpenAI een apart helpartikel: je kiest de opslagregio bij het afrekenen, de optie wordt geleidelijk uitgerold, de verwerking zelf valt erbuiten, en van elke prompt en elk antwoord blijft tijdelijk een kopie in de Verenigde Staten voor misbruikcontrole.
 
 Wat er dan in Europa staat: gesprekken, geüploade bestanden, custom GPT's, geheugen, artefacten van data-analyse en gegenereerde afbeeldingen, inclusief back-ups. Wat er buiten kan vallen: data via koppelingen zoals apps, MCP en zoeken op het web, en systeemdata voor bijvoorbeeld inloggen en analytics.
 
@@ -164,6 +167,6 @@ Werk je met persoonsgegevens, dan valt een persoonlijk plan af. Er is geen verwe
 
 ChatGPT Business geeft je een DPA, geen training op je data en beheer over de werkruimte. Voor de meeste kleine teams is dat het minimum.
 
-ChatGPT Enterprise heb je nodig als je opslag in Europa wilt of audit logs via de Compliance API nodig hebt.
+ChatGPT Enterprise heb je nodig als je ook de verwerking door het model in Europa wilt (inference residency) of audit logs via de Compliance API nodig hebt.
 
 Twijfel je tussen ChatGPT en Claude? De [vergelijking tussen Claude en ChatGPT](/vergelijken/claude-vs-chatgpt) zet ze naast elkaar. Wil je weten welke processen je veilig met AI kunt versnellen, en welke afspraken daarvoor nodig zijn? In de [AI Enablement Scan](/ai-enablement-scan) loopt Camiel dat met je door.
