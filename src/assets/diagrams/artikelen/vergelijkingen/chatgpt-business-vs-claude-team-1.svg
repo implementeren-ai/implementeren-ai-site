@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Wat de opslagregio van ChatGPT Business volgens OpenAI dekt: je gesprekken worden opgeslagen in de regio die je bij het afrekenen kiest, wat nog wordt uitgerold; waar je vraag wordt verwerkt valt erbuiten; een kopie voor misbruikcontrole blijft een beperkte tijd in de VS" data-bijschrift="Wat de opslagregio van ChatGPT Business volgens OpenAI wel en niet dekt, stand 31 oktober 2026." font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="cbt1-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+<marker id="cbt1-a" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#565A4C"/></marker>
+</defs><rect width="1200" height="600" fill="#F4F1E8"/><rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">CHATGPT BUSINESS · WAT DE REGIOKEUZE DEKT</text>
+<g>
+<g fill="none" stroke="#565A4C" stroke-width="4" stroke-linecap="round"><path d="M590 186 L 680 186" marker-end="url(#cbt1-a)"/><path d="M590 306 L 680 306" marker-end="url(#cbt1-a)"/><path d="M590 426 L 680 426" marker-end="url(#cbt1-a)"/></g>
+<rect x="708" y="140" width="428" height="92" rx="18" fill="#FFFFFF" stroke="#3D5220" stroke-width="4"/>
+<rect x="708" y="260" width="428" height="92" rx="18" fill="#E9EBDC" stroke="#CFCDBE" stroke-width="3"/>
+<rect x="708" y="380" width="428" height="92" rx="18" fill="#A8433B"/>
+</g>
+<text x="64" y="197" font-size="32" font-weight="600">je gesprekken</text>
+<text x="64" y="317" font-size="32" font-weight="600">verwerking van je vraag</text>
+<text x="64" y="437" font-size="32" font-weight="600">kopie voor misbruikcontrole</text>
+<text x="736" y="182" font-size="34" font-weight="600" fill="#3D5220">gekozen regio</text>
+<text x="736" y="216" font-size="26" fill="#565A4C">nog in uitrol</text>
+<text x="736" y="302" font-size="34" font-weight="600">valt erbuiten</text>
+<text x="736" y="336" font-size="26" fill="#565A4C">regiokeuze geldt hier niet</text>
+<text x="736" y="422" font-size="34" font-weight="600" fill="#FFFFFF">VS</text>
+<text x="736" y="456" font-size="26" fill="#FFFFFF">een beperkte tijd</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 31 okt 2026</text>
+<rect width="1200" height="600" filter="url(#cbt1-g)"/></svg>
