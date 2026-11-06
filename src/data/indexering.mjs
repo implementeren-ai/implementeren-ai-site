@@ -20,6 +20,14 @@ import { vendorSlugs } from './vendors.mjs';
 // Na de launch is alleen de lijst `zakelijk` hieronder indexeerbaar.
 export const preLaunch = false;
 
+// Vendor-go-live (besluit Max, 6 november 2026): alle vendorpagina's worden eerst
+// klaargezet met status 'review', dus niet gebouwd en niet gelinkt. Op één go-live-dag
+// gaan ze tegelijk live, samen met de neutrale homepage. Tot die dag blijven
+// /chatgpt, /gemini en /copilot noindex en buiten de sitemap, ook als er per ongeluk
+// een pagina op 'published' komt. De go-live-PR zet dit op true.
+// Draaiboek: docs/vendor-go-live.md
+export const vendorsLive = false;
+
 // De zakelijke site. Alleen wat hier staat mag ooit geïndexeerd worden: alles daarbuiten
 // (losse HTML in public/, toekomstige pagina's) is noindex tenzij het hier
 // bewust wordt toegevoegd. Een nieuwe pagina vergeten is dus veilig: die blijft onzichtbaar.
@@ -53,7 +61,8 @@ export const zakelijk = {
     '/use-cases',
     '/vergelijken',
     // Vendor-secties (src/content/vendors): /chatgpt, /gemini, /copilot en alles eronder.
-    ...vendorSlugs.map((s) => '/' + s),
+    // Pas indexeerbaar op de go-live-dag, zie vendorsLive hierboven.
+    ...(vendorsLive ? vendorSlugs.map((s) => '/' + s) : []),
   ],
   // Alles wat zo begint, voor de route claude-voor-[slug].
   prefixen: ['/claude-voor-'],
