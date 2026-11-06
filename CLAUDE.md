@@ -12,8 +12,31 @@ If a merge does not go live, check the Actions run (`gh run list`) before anythi
 Nobody pushes to `main`. Every change is a branch plus a pull request, and `main` only accepts a
 merge after 2 approvals, at least one of them from a code owner who is not the author (repository
 ruleset plus `.github/CODEOWNERS`, which lists Max and Camiel). A PR from Max needs Camiel and one
-from Camiel needs Max. Camiel is the face of the site, so nothing reaches it without one of the two signing off. Open the PR, let Cloudflare build the preview,
-and post the preview link in the PR so the reviewers can look at the real page.
+from Camiel needs Max. Camiel is the face of the site, so nothing reaches it without one of the two signing off. Open the PR,
+put it on staging (below) and post the staging link in the PR.
+
+## Review means staging (Max, 6 November 2026)
+
+A review is never a GitHub diff or markdown. The reviewer sees the full rendered page, exactly as
+it would go live, and gets told what to look for. Every PR that changes what a visitor sees gets:
+
+1. **A staging deploy:** `scripts/staging.sh pr-<n> <n>` (several PRs together:
+   `scripts/staging.sh <name> <n> <n> ...`). It builds origin/main plus those PRs with
+   `STAGING=1`, so pages with `status: review` render too, and deploys to the separate Pages
+   project `implementeren-ai-staging`: `https://<name>.implementeren-ai-staging.pages.dev`.
+   Password protected (`STAGING_WACHTWOORD`, a variable on that project only; never put the
+   password in the repo, a PR or a page), always noindex, orange "Staging, niet live" bar.
+   Production is untouched: it only deploys via `.github/workflows/deploy.yml`.
+2. **A review sheet:** what to look for, per page, concretely. The specific facts and prices to
+   check, each with the source link; claims that need a human eye; what was deliberately left
+   out; links and CTA; how it looks on a phone. Not a generic checklist. The sheet is a temporary
+   page at `claudezakelijk.pages.dev/tijdelijk/<slug>/` (see the claude-cowork-practice repo) and
+   links straight to the staging URLs.
+3. **Show it:** open the review sheet for Max (`~/.claude/helpers/chrome-open.sh --prive`) and
+   put the staging link and the sheet link in the PR.
+
+Content waiting for a launch carries `status: review`: it is not built in production, only on
+staging. Staging needs `gh` and a logged-in wrangler (`npx wrangler login`).
 
 Break-glass, for a production regression only (the live site is broken or losing data) while the
 required reviewers cannot approve in time. An org admin adds a temporary bypass to ruleset
