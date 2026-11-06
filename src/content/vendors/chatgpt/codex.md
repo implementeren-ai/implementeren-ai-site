@@ -24,7 +24,7 @@ schemaTypes:
   - FAQPage
   - BreadcrumbList
 author: camiel
-status: published
+status: review
 publishDate: 2026-11-05
 vendor: chatgpt
 soort: landing
