@@ -1,0 +1,26 @@
+---
+// Zichtbare balk op elke pagina van een staging-build (STAGING=1, scripts/staging.sh).
+// In productie rendert dit component niets.
+import { isStaging } from '../lib/publicatie.mjs';
+
+const aan = isStaging();
+const label = process.env.STAGING_LABEL || '';
+---
+{aan && (
+  <div class="staging-balk" role="note">
+    Staging, niet live{label && <> · {label}</>}
+  </div>
+)}
+
+<style>
+  .staging-balk {
+    position: sticky;
+    top: 0;
+    z-index: 80;
+    padding: 6px 16px;
+    background: #b45309;
+    color: #fff;
+    font: 600 13px/1.4 system-ui, sans-serif;
+    text-align: center;
+  }
+</style>

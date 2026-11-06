@@ -31,9 +31,19 @@ export function datumTekst(d) {
   return m ? m[1] : null;
 }
 
+/**
+ * Staging-build (STAGING=1, scripts/staging.sh). Alleen voor de stagingomgeving, nooit voor
+ * productie: de deploy-workflow zet deze variabele niet. In staging telt ook 'review' als live
+ * en doet de datum niet mee, zodat een reviewer de pagina ziet zoals hij live komt te staan.
+ */
+export function isStaging() {
+  return process.env.STAGING === '1';
+}
+
 /** De regel zelf. status en publishDate zoals in de frontmatter. */
 export function isLive({ status, publishDate }, dag = vandaag()) {
   const datum = datumTekst(publishDate);
+  if (isStaging()) return (status === 'published' || status === 'review') && datum !== null;
   return status === 'published' && datum !== null && datum <= dag;
 }
 
