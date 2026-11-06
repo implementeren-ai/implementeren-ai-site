@@ -150,7 +150,10 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Gratis AI-check', url:
         ))}
 
         <div class="mt-9 pt-7 border-t border-lijn grid gap-5">
-          <p class="m-0 font-semibold text-[16px]">Waar mogen we het resultaat heen sturen?</p>
+          <div>
+            <p class="m-0 font-semibold text-[16px]">Waar kunnen we je bereiken?</p>
+            <p class="mt-1 mb-0 text-[14px] text-ink-2">Je score zie je direct op deze pagina. Past je bedrijf bij ons, dan mailen we je persoonlijk.</p>
+          </div>
           <div class="scan-vraag">
             <label for="naam" class="font-semibold block mb-2 text-[14.5px]">Je naam</label>
             <input id="naam" name="naam" type="text" required class="w-full border-[1.5px] border-lijn rounded-[14px] px-4 py-3 bg-papier" />
@@ -375,7 +378,9 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Gratis AI-check', url:
     const uitkomst = await stuurNaarWeb3Forms(payload);
     if (scanStatus) {
       scanStatus.textContent = uitkomst.ok
-        ? 'Je score is naar ons verstuurd. We nemen alleen contact op als je dat hierboven vraagt.'
+        ? past
+          ? 'Je score is naar ons verstuurd. Je bedrijf past bij ons, dus we mailen je persoonlijk.'
+          : 'Je score is naar ons verstuurd. We mailen je alleen als je hieronder om de tips vraagt.'
         : 'Je score staat hieronder. Het versturen naar ons lukte niet. Mail ons gerust rechtstreeks.';
     }
   });
