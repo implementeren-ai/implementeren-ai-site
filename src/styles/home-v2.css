@@ -56,14 +56,17 @@ html.js .v2-werkplek-rand { animation: v2-schuif 1s var(--ease-out-soft) .15s bo
 .v2-werkplek-groet .v2-bol { width: 28px; height: 28px; border-radius: 999px; background: radial-gradient(circle at 35% 30%, #E4EBA9, var(--color-v2-olijf-fel) 55%, var(--color-v2-olijf)); flex: none; }
 .v2-voorbeeld { margin-left: auto; padding: 3px 10px; border-radius: 999px; background: var(--color-v2-tint); font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0; color: var(--color-v2-inkt-2); }
 .v2-taken { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; font-size: 14px; }
-.v2-taken div { padding: 16px; border-radius: 16px; background: var(--color-v2-tint); }
+.v2-taken > * { padding: 16px; border-radius: 16px; background: var(--color-v2-tint); }
+.v2-taken button { border: 0; text-align: left; font: inherit; color: inherit; cursor: pointer; transition: background-color .2s ease, transform .2s ease; }
+.v2-taken button:hover { background: #E3E6CF; transform: translateY(-1px); }
+.v2-taken button:focus-visible { outline: 2px solid var(--color-v2-olijf); outline-offset: 2px; }
 .v2-taken strong { display: block; font-size: 15px; }
 .v2-taken span { color: var(--color-v2-inkt-2); }
-html.js .v2-taken div { animation: v2-op .7s var(--ease-out-soft) both; }
-html.js .v2-taken div:nth-child(1) { animation-delay: .45s; }
-html.js .v2-taken div:nth-child(2) { animation-delay: .55s; }
-html.js .v2-taken div:nth-child(3) { animation-delay: .65s; }
-html.js .v2-taken div:nth-child(4) { animation-delay: .75s; }
+html.js .v2-taken > * { animation: v2-op .7s var(--ease-out-soft) both; }
+html.js .v2-taken > *:nth-child(1) { animation-delay: .45s; }
+html.js .v2-taken > *:nth-child(2) { animation-delay: .55s; }
+html.js .v2-taken > *:nth-child(3) { animation-delay: .65s; }
+html.js .v2-taken > *:nth-child(4) { animation-delay: .75s; }
 .v2-invoer { display: flex; align-items: center; gap: 12px; margin-top: 14px; padding: 10px 10px 10px 18px; border-radius: 14px; border: 1px solid var(--color-v2-lijn); color: var(--color-v2-inkt-2); font-size: 15px; }
 .v2-invoer-tekst { flex: 1 1 auto; min-width: 0; }
 .v2-caret { display: inline-block; width: 2px; height: 1.1em; margin-left: 2px; vertical-align: -0.15em; background: var(--color-v2-inkt); animation: v2-knipper 1s steps(1) infinite; }
@@ -232,5 +235,23 @@ html.js .v2-taken div:nth-child(4) { animation-delay: .75s; }
 /* ---------- Verminder beweging: alles stil en meteen zichtbaar ---------- */
 @media (prefers-reduced-motion: reduce) {
   .v2-caret { animation: none; }
-  html.js .v2-werkplek-rand, html.js .v2-taken div { animation: none; }
+  html.js .v2-werkplek-rand, html.js .v2-taken > * { animation: none; }
 }
+
+/* Hero-tool (src/scripts/taaktool.ts). Zonder JS blijft het stille voorbeeld staan. */
+html:not(.js) .v2-taak-form, html:not(.js) .v2-taak-noot { display: none; }
+html.js .v2-invoer-demo { display: none; }
+.v2-taak-form { padding: 6px 6px 6px 18px; background: #fff; }
+.v2-taak-form:focus-within { border-color: var(--color-v2-olijf); box-shadow: 0 0 0 3px rgba(180, 193, 62, .3); }
+.v2-taak-form input { flex: 1 1 auto; min-width: 0; padding: 8px 0; border: 0; background: transparent; font: inherit; color: var(--color-v2-inkt); }
+.v2-taak-form input:focus { outline: none; }
+.v2-taak-form input::placeholder { color: var(--color-v2-inkt-2); }
+.v2-taak-form button { border: 0; cursor: pointer; width: 40px; height: 40px; font-size: 17px; }
+.v2-taak-noot { margin: 8px 0 0; font-size: 12.5px; color: var(--color-v2-inkt-2); }
+.v2-taak-kaart { margin-top: 14px; padding: 18px; border-radius: 16px; background: var(--color-v2-inkt); color: var(--color-v2-creme); animation: v2-op .45s var(--ease-out-soft) both; }
+.v2-taak-label { margin: 0; font-size: 13px; color: rgba(244, 241, 232, .7); }
+.v2-taak-titel { margin: 4px 0 0; font-family: var(--font-v2-kop); font-size: 18px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+.v2 .v2-taak-lees { display: inline-block; margin-top: 8px; font-size: 14px; font-weight: 500; color: var(--color-v2-olijf-fel); }
+.v2 .v2-taak-knop { display: flex; width: fit-content; margin-top: 14px; background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); }
+.v2 .v2-taak-knop:hover { background: #C6D34F; color: var(--color-v2-inkt); }
+@media (prefers-reduced-motion: reduce) { .v2-taak-kaart { animation: none; } }

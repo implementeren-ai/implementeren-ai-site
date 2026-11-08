@@ -155,6 +155,10 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Gratis AI-check', url:
             <p class="mt-1 mb-0 text-[14px] text-ink-2">Je score zie je direct op deze pagina. Past je bedrijf bij ons, dan mailen we je persoonlijk.</p>
           </div>
           <div class="scan-vraag">
+            <label for="taak" class="font-semibold block mb-2 text-[14.5px]">Welke taak wil je als eerste met AI aanpakken? <span class="font-normal text-ink-2">(optioneel)</span></label>
+            <textarea id="taak" name="taak" rows="2" maxlength="300" class="w-full border-[1.5px] border-lijn rounded-[14px] px-4 py-3 bg-papier"></textarea>
+          </div>
+          <div class="scan-vraag">
             <label for="naam" class="font-semibold block mb-2 text-[14.5px]">Je naam</label>
             <input id="naam" name="naam" type="text" required class="w-full border-[1.5px] border-lijn rounded-[14px] px-4 py-3 bg-papier" />
           </div>
@@ -252,6 +256,14 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Gratis AI-check', url:
   const voortgangLabel = document.getElementById('voortgangLabel');
   const voortgangBalk = document.getElementById('voortgangBalk') as HTMLElement | null;
   const scanStatus = document.getElementById('scanStatus');
+  // Taak uit de hero-tool op de homepage (src/scripts/taaktool.ts), via sessionStorage.
+  try {
+    const taak = sessionStorage.getItem('ia-taak');
+    const veld = document.getElementById('taak') as HTMLTextAreaElement | null;
+    if (taak && veld && !veld.value) veld.value = taak;
+    sessionStorage.removeItem('ia-taak');
+  } catch { /* sessionStorage geblokkeerd: het veld blijft leeg */ }
+
   const tipsKnop = document.getElementById('tipsKnop') as HTMLButtonElement | null;
   const tipsStatus = document.getElementById('tipsStatus');
   const TOTAAL_VRAGEN = 7;
