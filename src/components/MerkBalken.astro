@@ -1,0 +1,22 @@
+---
+// Het beeldmerk (K1) als los element, voor plekken buiten het logo: drie oplopende balken op
+// een donkere tegel, de hoogste is de i. `stap` (1-3) licht alleen de eerste balken op, voor
+// stappen; `stap` 3 is het volle merk. De balken bewegen als een equalizer bij hover op het
+// dichtstbijzijnde element met .merk-hover (of op het merk zelf); zie v2.css. Puur versiering.
+interface Props {
+  stap?: 1 | 2 | 3;
+  class?: string;
+}
+const { stap = 3, class: klasse } = Astro.props;
+const aan = (n: number) => n <= stap;
+const UIT = '#3A3F30';
+// Als stapteller (stap 1 of 2) zijn de actieve balken crème, zodat ze op kleine maat opvallen.
+const kleur = (n: number, vol: string) => (!aan(n) ? UIT : stap < 3 ? '#F4F1E8' : vol);
+---
+<svg class:list={['merk-balken', klasse]} viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+  <rect width="32" height="32" rx="8" fill="#23261D" />
+  <rect class="merk-b1" x="5" y="20" width="6" height="8" rx="1" fill={kleur(1, '#55623A')} />
+  <rect class="merk-b2" x="13" y="15" width="6" height="13" rx="1" fill={kleur(2, '#8E9A5C')} />
+  <rect class="merk-i" x="21" y="11" width="6" height="17" rx="1" fill={aan(3) ? '#F4F1E8' : UIT} />
+  <rect class="merk-punt" x="21" y="3" width="6" height="6" rx="1" fill={aan(3) ? '#B4C13E' : UIT} />
+</svg>
