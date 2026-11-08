@@ -2,7 +2,7 @@
 // Merkregel: nooit "officieel", "partner" of "specialist" in relatie tot Anthropic of Claude; zie docs/seo-improvement/specs/D-trust-legal-entity.md (D-11).
 // Redesign v2 (27 okt): vormgeving en sectievolgorde. Tekst 2 nov: accent van Claude naar
 // AI implementeren (akkoord Sweder); title, beschrijving en H1 bewust gelijk ("claude zakelijk").
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import { Picture } from 'astro:assets';
 import camielCamera from '../assets/team/camiel-camera.jpg';
 import studioBreed from '../assets/team/studio-breed.jpg';
@@ -13,6 +13,34 @@ import ZorgBeeld from '../components/home/ZorgBeeld.astro';
 import MerkBalken from '../components/MerkBalken.astro';
 import { auteurs, site } from '../site';
 import '../styles/home-v2.css';
+
+// Hero-tool (src/scripts/taaktool.ts): trefwoorden per bestaande pagina. Titels komen uit de
+// collecties zelf, zodat ze nooit uit de pas lopen. Alleen live pagina's; goedgekeurd door Sweder (8 nov).
+const caseDoelen: Array<[string, string[]]> = [
+  ['consultant-brief', ['notule', 'vergader', 'meeting', 'overleg', 'actiepunt', 'verslag']],
+  ['powerbi-reporting', ['rapport', 'power bi', 'powerbi', 'dashboard', 'kpi']],
+  ['sdr-sales-agent', ['sales', 'lead', 'prospect', 'acquisitie', 'outreach']],
+  ['knowledge-base', ['kennisbank', 'handleiding', 'documentatie', 'werkinstructie', 'instructie', 'faq']],
+  ['google-ads-skills', ['google ads', 'advertentie', 'adverteren', 'campagne']],
+  ['seo-overhaul', ['seo', 'vindbaar', 'website']],
+];
+const brancheDoelen: Array<[string, string[]]> = [
+  ['accountants', ['boekhoud', 'administratie', 'jaarrekening', 'factu', 'btw', 'aangifte']],
+  ['advocaten', ['contract', 'juridisch', 'dossier', 'nda', 'overeenkomst', 'voorwaarden']],
+  ['makelaars', ['woning', 'bezichtig', 'makelaar', 'huis']],
+  ['marketingbureaus', ['marketing', 'social', 'nieuwsbrief', 'content', 'linkedin', 'blog']],
+];
+const taakCatalogus = [
+  ...(await Promise.all(caseDoelen.map(async ([id, woorden]) => {
+    const e = await getEntry('cases', id);
+    return e && { woorden, pad: `/cases/${id}`, titel: e.data.title, soort: 'case' };
+  }))),
+  ...(await Promise.all(brancheDoelen.map(async ([id, woorden]) => {
+    const e = await getEntry('verticalen', id);
+    return e && { woorden, pad: `/claude-voor-${id}`, titel: e.data.h1, soort: 'pagina' };
+  }))),
+  { woorden: ['avg', 'privacy', 'klantgegeven', 'persoonsgegeven', 'veilig', 'gdpr'], pad: '/compliance', titel: 'Is Claude AVG-proof?', soort: 'pagina' },
+].filter(Boolean);
 
 const diensten = (await getCollection('diensten'))
   .filter((d) => d.data.opnemenOpHome)
@@ -84,15 +112,24 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
       <div class="v2-werkplek">
         <div class="v2-werkplek-rand">
           <div class="v2-werkplek-scherm">
-            <div class="v2-werkplek-taak" aria-hidden="true">
-              <p class="v2-werkplek-groet"><span class="v2-bol"></span>Goedemorgen. Waar zal ik mee helpen?<span class="v2-voorbeeld">Voorbeeld</span></p>
+            <div class="v2-werkplek-taak" data-taaktool>
+              <p class="v2-werkplek-groet"><span class="v2-bol" aria-hidden="true"></span>Goedemorgen. Waar zal ik mee helpen?<span class="v2-voorbeeld">Probeer het</span></p>
               <div class="v2-taken">
-                {taken.map(([t, s]) => <div><strong>{t}</strong><span>{s}</span></div>)}
+                {taken.map(([t, s]) => <button type="button" data-taak={t}><strong>{t}</strong><span>{s}</span></button>)}
               </div>
-              <div class="v2-invoer">
+              {/* Zonder JS: het stille voorbeeld zoals voorheen. Met JS: een echt invoerveld. */}
+              <div class="v2-invoer v2-invoer-demo" aria-hidden="true">
                 <span class="v2-invoer-tekst"><span data-typ="Zet de offerteaanvragen op een rij">Zet de offerteaanvragen op een rij</span><span class="v2-caret"></span></span>
                 <span class="v2-verstuur">↑</span>
               </div>
+              <form class="v2-invoer v2-taak-form">
+                <label for="taak-invoer" class="sr-only">Typ een taak</label>
+                <input id="taak-invoer" name="taak" type="text" maxlength="120" autocomplete="off" placeholder="Typ een taak, bijvoorbeeld &quot;offertes nakijken&quot;" />
+                <button type="submit" class="v2-verstuur" aria-label="Zoek een voorbeeld">↑</button>
+              </form>
+              <p class="v2-taak-noot">Typ geen namen of klantgegevens. We bewaren niets, tenzij je de AI-check invult.</p>
+              <div class="v2-taak-uitkomst" data-uitkomst aria-live="polite" hidden></div>
+              <script type="application/json" id="taak-catalogus" set:html={JSON.stringify(taakCatalogus)} />
             </div>
             <figure class="v2-werkplek-foto">
               <Picture
@@ -335,4 +372,6 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
 
 <script>
   import '../scripts/home-v2.ts';
+  import { startTaaktool } from '../scripts/taaktool';
+  startTaaktool();
 </script>
