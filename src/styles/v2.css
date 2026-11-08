@@ -80,8 +80,22 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 /* De tegel heeft dezelfde kleur als de voet; een dunne lichte rand houdt hem zichtbaar. */
 .v2-voet .v2-logo-merk { box-shadow: 0 0 0 1px rgba(244, 241, 232, .22); }
 .v2-kop ul { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
-.v2 .v2-kop ul a:not(.v2-knop) { color: var(--color-v2-inkt-2); text-decoration: none; }
-.v2 .v2-kop ul a:not(.v2-knop):hover, .v2 .v2-kop ul a[aria-current="page"] { color: var(--color-v2-inkt); }
+/* Menu-items: bij hover of focus schuift een zachte olijf-pil achter het woord en groeit er een dunne olijflijn
+   vanuit het midden. De negatieve marge houdt de afstanden gelijk aan die zonder pil. */
+.v2 .v2-kop ul a:not(.v2-knop) {
+  position: relative; display: inline-block; margin: -8px -12px; padding: 8px 12px; border-radius: 999px;
+  color: var(--color-v2-inkt-2); text-decoration: none;
+  transition: color .2s ease, background-color .25s ease;
+}
+.v2 .v2-kop ul a:not(.v2-knop)::after {
+  content: ''; position: absolute; left: 14px; right: 14px; bottom: 5px; height: 1.5px; border-radius: 2px;
+  background: var(--color-v2-olijf); transform: scaleX(0); transition: transform .3s cubic-bezier(.2, .8, .2, 1);
+}
+.v2 .v2-kop ul a:not(.v2-knop):hover, .v2 .v2-kop ul a:not(.v2-knop):focus-visible { color: var(--color-v2-inkt); background: var(--color-v2-tint); }
+.v2 .v2-kop ul a:not(.v2-knop):hover::after, .v2 .v2-kop ul a:not(.v2-knop):focus-visible::after { transform: scaleX(1); }
+.v2 .v2-kop ul a[aria-current="page"] { color: var(--color-v2-inkt); }
+.v2 .v2-kop ul a[aria-current="page"]::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) { .v2 .v2-kop ul a:not(.v2-knop), .v2 .v2-kop ul a:not(.v2-knop)::after { transition: none; } }
 .v2-kop .hamburger-btn { margin-right: 8px; }
 
 .v2 .v2-knop-wit { background: #fff; color: var(--color-v2-olijf-h); }
