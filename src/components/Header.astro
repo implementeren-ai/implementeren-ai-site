@@ -40,6 +40,15 @@ const [logoMerk, logoStaart] = punt > 0 ? [site.naam.slice(0, punt), site.naam.s
 </div>
 
 <script>
+  // Kop: compacter na de eerste scroll (data-gescrold, zie v2.css).
+  const kop = document.querySelector<HTMLElement>('.v2-kop');
+  if (kop) {
+    let gepland = false;
+    const zet = () => { gepland = false; kop.toggleAttribute('data-gescrold', window.scrollY > 24); };
+    window.addEventListener('scroll', () => { if (!gepland) { gepland = true; requestAnimationFrame(zet); } }, { passive: true });
+    zet();
+  }
+
   const hamburger = document.getElementById('hamburgerBtn');
   const overlay = document.getElementById('mobileOverlay');
   const panel = document.getElementById('mobileNav');
