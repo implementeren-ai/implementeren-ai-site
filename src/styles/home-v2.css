@@ -234,3 +234,7 @@ html.js .v2-taken div:nth-child(4) { animation-delay: .75s; }
   .v2-caret { animation: none; }
   html.js .v2-werkplek-rand, html.js .v2-taken div { animation: none; }
 }
+
+/* Beeldmerk als stapteller in de dienstkaarten en groot boven de slotband (MerkBalken.astro). */
+.v2-stap-merk { display: inline-block; width: 20px; height: 20px; margin-right: 8px; vertical-align: -4px; }
+.v2-slot-merk { width: 64px; height: 64px; margin: 0 auto 24px; }
