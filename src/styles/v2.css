@@ -53,7 +53,10 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   border: 1px solid var(--color-v2-lijn);
+  transition: padding .25s ease, background-color .25s ease, box-shadow .25s ease;
 }
+/* Na de eerste scroll wordt de balk compacter en steviger (data-gescrold, gezet in Header.astro). */
+.v2-kop[data-gescrold] .v2-kop-balk { padding: 5px 5px 5px 18px; background: rgba(255,255,255,.88); box-shadow: 0 10px 28px -14px rgba(35, 38, 29, .28); }
 .v2 .v2-logo { font-family: var(--font-v2-kop); font-weight: 700; font-size: 19px; letter-spacing: -0.02em; color: var(--color-v2-inkt); text-decoration: none; }
 .v2 .v2-logo span { color: var(--color-v2-olijf); }
 /* Beeldmerk (src/assets/logo/logo-mark.svg) voor het woordmerk, op de maat van de letters. */
