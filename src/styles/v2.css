@@ -53,7 +53,10 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   border: 1px solid var(--color-v2-lijn);
+  transition: padding .25s ease, background-color .25s ease, box-shadow .25s ease;
 }
+/* Na de eerste scroll wordt de balk compacter en steviger (data-gescrold, gezet in Header.astro). */
+.v2-kop[data-gescrold] .v2-kop-balk { padding: 5px 5px 5px 18px; background: rgba(255,255,255,.88); box-shadow: 0 10px 28px -14px rgba(35, 38, 29, .28); }
 .v2 .v2-logo { font-family: var(--font-v2-kop); font-weight: 700; font-size: 19px; letter-spacing: -0.02em; color: var(--color-v2-inkt); text-decoration: none; }
 .v2 .v2-logo span { color: var(--color-v2-olijf); }
 /* Beeldmerk (src/assets/logo/logo-mark.svg) voor het woordmerk, op de maat van de letters. */
@@ -66,6 +69,14 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 @keyframes v2-merk-eq { 0%, 100% { transform: scaleY(1); } 30% { transform: scaleY(.45); } 60% { transform: scaleY(1.15); } }
 @keyframes v2-merk-hop { 0%, 100% { transform: none; } 40% { transform: translateY(-2px); } }
 @media (prefers-reduced-motion: reduce) { .v2-logo .v2-logo-merk * { animation: none !important; } }
+/* Losse merken (MerkBalken.astro) bewegen bij hover op hun blok (.merk-hover) of op zichzelf. */
+.merk-balken { display: block; }
+.merk-balken :is(.merk-b1, .merk-b2) { transform-box: fill-box; transform-origin: 50% 100%; }
+:is(.merk-hover, .merk-balken):hover .merk-balken :is(.merk-b1, .merk-b2),
+.merk-balken:hover :is(.merk-b1, .merk-b2) { animation: v2-merk-eq 1.8s ease-in-out infinite; }
+:is(.merk-hover, .merk-balken):hover .merk-balken .merk-b2, .merk-balken:hover .merk-b2 { animation-delay: .25s; }
+:is(.merk-hover, .merk-balken):hover .merk-balken .merk-punt, .merk-balken:hover .merk-punt { animation: v2-merk-hop 1.8s ease-in-out .5s infinite; }
+@media (prefers-reduced-motion: reduce) { .merk-balken * { animation: none !important; } }
 /* De tegel heeft dezelfde kleur als de voet; een dunne lichte rand houdt hem zichtbaar. */
 .v2-voet .v2-logo-merk { box-shadow: 0 0 0 1px rgba(244, 241, 232, .22); }
 .v2-kop ul { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
@@ -102,10 +113,12 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 .v2-voet-merk {
   position: relative; margin: 8px 0 -0.22em; text-align: center; white-space: nowrap; pointer-events: none; user-select: none;
   font-family: var(--font-v2-kop); font-weight: 700; letter-spacing: -0.06em; line-height: 1;
-  font-size: clamp(40px, 11.6vw, 176px);
+  font-size: clamp(36px, 10.4vw, 160px);
   background: linear-gradient(180deg, rgba(180, 193, 62, .28), rgba(180, 193, 62, 0) 85%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
+/* Het beeldmerk voor het grote woordmerk, in dezelfde vervaagde olijf. */
+.v2-voet-merk::before { content: ''; display: inline-block; width: .82em; height: .82em; margin-right: .06em; vertical-align: -0.04em; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='v' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23B4C13E' stop-opacity='.45'/%3E%3Cstop offset='1' stop-color='%23B4C13E' stop-opacity='.04'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='5' y='20' width='6' height='8' rx='1' fill='url(%23v)'/%3E%3Crect x='13' y='15' width='6' height='13' rx='1' fill='url(%23v)'/%3E%3Crect x='21' y='11' width='6' height='17' rx='1' fill='url(%23v)'/%3E%3Crect x='21' y='3' width='6' height='6' rx='1' fill='%23B4C13E' fill-opacity='.5'/%3E%3C/svg%3E") center / contain no-repeat; }
 
 /* ---------- Olijfband (CtaStrook, CtaBlok) ---------- */
 .v2-band {
@@ -117,6 +130,9 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
   background: radial-gradient(closest-side, rgba(180, 193, 62, .55), rgba(180, 193, 62, 0));
 }
 .v2-band-binnen { position: relative; max-width: 40rem; }
+/* Groot, vaag beeldmerk rechtsonder in elke olijfband (CtaBlok e.a.). */
+.v2-band::after { content: ''; position: absolute; right: clamp(-40px, -2vw, 0px); bottom: -36px; width: clamp(160px, 22vw, 280px); aspect-ratio: 1; pointer-events: none; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='5' y='20' width='6' height='8' rx='1' fill='%23F4F1E8' fill-opacity='.08'/%3E%3Crect x='13' y='15' width='6' height='13' rx='1' fill='%23F4F1E8' fill-opacity='.13'/%3E%3Crect x='21' y='11' width='6' height='17' rx='1' fill='%23F4F1E8' fill-opacity='.2'/%3E%3Crect x='21' y='3' width='6' height='6' rx='1' fill='%23B4C13E' fill-opacity='.7'/%3E%3C/svg%3E") center / contain no-repeat; }
+.v2-band-foto::after { display: none; }
 .v2-band-kop, .v2 .v2-band-h2 { margin: 0; font-family: var(--font-v2-kop); font-size: clamp(1.6rem, 2vw + 1rem, 2.25rem); font-weight: 600; line-height: 1.08; letter-spacing: -0.03em; color: #fff; }
 .v2-band .flex { margin-top: 24px; }
 .v2 .v2-band-link { color: #fff; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, .5); text-underline-offset: 4px; }
@@ -148,7 +164,8 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
   background: #fff; border: 1px solid var(--color-v2-lijn);
   font-size: 13px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--color-v2-olijf);
 }
-.v2-chip::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: var(--color-v2-olijf-fel); box-shadow: 0 0 0 3px rgba(180, 193, 62, .25); }
+/* Het beeldmerk als label-teken (zelfde vorm als src/components/MerkBalken.astro). */
+.v2-chip::before { content: ''; flex: none; width: 15px; height: 15px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2323261D'/%3E%3Crect x='5' y='20' width='6' height='8' rx='1' fill='%2355623A'/%3E%3Crect x='13' y='15' width='6' height='13' rx='1' fill='%238E9A5C'/%3E%3Crect x='21' y='11' width='6' height='17' rx='1' fill='%23F4F1E8'/%3E%3Crect x='21' y='3' width='6' height='6' rx='1' fill='%23B4C13E'/%3E%3C/svg%3E") center / contain no-repeat; }
 .v2-chip-zacht { background: var(--color-v2-tint); text-transform: none; letter-spacing: 0; font-weight: 500; }
 .v2-chip-zacht::before { display: none; }
 .v2 .v2-chip-link { font-size: 14px; font-weight: 500; color: var(--color-v2-inkt-2); }

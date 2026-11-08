@@ -10,6 +10,7 @@ import camielPresentatie from '../assets/team/camiel-presentatie.jpg';
 import BasisLayout from '../layouts/BasisLayout.astro';
 import LogoMarquee from '../components/LogoMarquee.astro';
 import ZorgBeeld from '../components/home/ZorgBeeld.astro';
+import MerkBalken from '../components/MerkBalken.astro';
 import { auteurs, site } from '../site';
 import '../styles/home-v2.css';
 
@@ -175,10 +176,11 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
             'readiness-scan': 'Stap één · scan',
             rollout: 'Stap twee · op kantoor',
           };
+          const stap = ({ 'readiness-scan': 1, rollout: 2, retainer: 3 } as const)[d.id as 'readiness-scan' | 'rollout' | 'retainer'] ?? 3;
           return (
-            <article class:list={['v2-kaart', d.id === 'retainer' && 'v2-kaart-donker']}>
+            <article class:list={['v2-kaart', 'merk-hover', d.id === 'retainer' && 'v2-kaart-donker']}>
               <div class="v2-kaart-tekst">
-                <p class="v2-kaart-stap">{labels[d.id]}</p>
+                <p class="v2-kaart-stap"><MerkBalken stap={stap} class="v2-stap-merk" />{labels[d.id]}</p>
                 <h3>{d.data.titel}</h3>
                 <p class="v2-kaart-prijs"><strong>{bedrag}</strong> {perMaand ? 'per maand, vanaf' : 'eenmalig, vanaf'}</p>
                 {d.id === 'retainer' && (
@@ -355,7 +357,8 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
 
     <!-- 9. Slot-band -->
     <section class="v2-slot">
-      <div class="v2-slot-band">
+      <div class="v2-slot-band merk-hover">
+        <MerkBalken class="v2-slot-merk" />
         <h2>Nieuwsgierig of AI bij je bedrijf <span class="v2-accent">past</span>?</h2>
         <p>Doe de gratis AI-check. Je spreekt direct met de mensen die het werk doen, geen salesteam ertussen.</p>
         <div class="v2-slot-invoer">

@@ -255,3 +255,6 @@ html.js .v2-invoer-demo { display: none; }
 .v2 .v2-taak-knop { display: flex; width: fit-content; margin-top: 14px; background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); }
 .v2 .v2-taak-knop:hover { background: #C6D34F; color: var(--color-v2-inkt); }
 @media (prefers-reduced-motion: reduce) { .v2-taak-kaart { animation: none; } }
+/* Beeldmerk als stapteller in de dienstkaarten en groot boven de slotband (MerkBalken.astro). */
+.v2-stap-merk { display: inline-block; width: 20px; height: 20px; margin-right: 8px; vertical-align: -4px; }
+.v2-slot-merk { width: 64px; height: 64px; margin: 0 auto 24px; }
