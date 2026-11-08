@@ -69,11 +69,6 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 @keyframes v2-merk-eq { 0%, 100% { transform: scaleY(1); } 30% { transform: scaleY(.45); } 60% { transform: scaleY(1.15); } }
 @keyframes v2-merk-hop { 0%, 100% { transform: none; } 40% { transform: translateY(-2px); } }
 @media (prefers-reduced-motion: reduce) { .v2-logo .v2-logo-merk * { animation: none !important; } }
-/* Leesvoortgang in het merk: de twee lage balken groeien mee terwijl je de pagina leest
-   (--voortgang 0..1 op .v2-kop, gezet in Header.astro). Eerst de eerste balk, dan de tweede;
-   de i staat altijd. Zonder JS of bij prefers-reduced-motion blijft --voortgang 1: het volle merk. */
-.v2-kop .v2-logo-merk .merk-b1 { transform: scaleY(calc(.25 + .75 * clamp(0, var(--voortgang, 1) * 2, 1))); transition: transform .15s linear; }
-.v2-kop .v2-logo-merk .merk-b2 { transform: scaleY(calc(.25 + .75 * clamp(0, var(--voortgang, 1) * 2 - 1, 1))); transition: transform .15s linear; }
 /* De tegel heeft dezelfde kleur als de voet; een dunne lichte rand houdt hem zichtbaar. */
 .v2-voet .v2-logo-merk { box-shadow: 0 0 0 1px rgba(244, 241, 232, .22); }
 .v2-kop ul { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
