@@ -57,8 +57,9 @@ html.js .v2-werkplek-rand { animation: v2-schuif 1s var(--ease-out-soft) .15s bo
 .v2-voorbeeld { margin-left: auto; padding: 3px 10px; border-radius: 999px; background: var(--color-v2-tint); font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0; color: var(--color-v2-inkt-2); }
 .v2-taken { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; font-size: 14px; }
 .v2-taken > * { padding: 16px; border-radius: 16px; background: var(--color-v2-tint); }
-.v2-taken button { border: 0; text-align: left; font: inherit; color: inherit; cursor: pointer; transition: background-color .2s ease, transform .2s ease; }
-.v2-taken button:hover { background: #E3E6CF; transform: translateY(-1px); }
+.v2-taken button { border: 0; text-align: left; font: inherit; color: inherit; cursor: pointer; transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease; }
+/* Rand bij hover (wens Max, 8 nov): inset, zodat de kaart niet verspringt. */
+.v2-taken button:hover { background: #E3E6CF; transform: translateY(-1px); box-shadow: inset 0 0 0 1.5px var(--color-v2-olijf); }
 .v2-taken button:focus-visible { outline: 2px solid var(--color-v2-olijf); outline-offset: 2px; }
 .v2-taken strong { display: block; font-size: 15px; }
 .v2-taken span { color: var(--color-v2-inkt-2); }
