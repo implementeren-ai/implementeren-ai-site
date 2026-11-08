@@ -9,11 +9,13 @@ If a merge does not go live, check the Actions run (`gh run list`) before anythi
 
 ## How changes go live
 
-Nobody pushes to `main`. Every change is a branch plus a pull request, and `main` only accepts a
-merge after 2 approvals, at least one of them from a code owner who is not the author (repository
-ruleset plus `.github/CODEOWNERS`, which lists Max and Camiel). A PR from Max needs Camiel and one
-from Camiel needs Max. Camiel is the face of the site, so nothing reaches it without one of the two signing off. Open the PR, let Cloudflare build the preview,
-and post the preview link in the PR so the reviewers can look at the real page.
+Nobody pushes to `main`. Every change is a branch plus a pull request. Max is the only code owner
+(`.github/CODEOWNERS`): a PR from someone else (Sweder, Camiel) goes in after 1 approval from Max,
+and Max, as repo admin, merges his own PRs himself through the ruleset bypass
+(`gh pr merge <nr> --squash --admin`). Camiel's approval is not needed (Max, 8 Nov 2026). Open the
+PR, let Cloudflare build the preview, and post the preview link in the PR so the reviewer can look
+at the real page. When several open PRs touch the same files, merge them one by one and bring the
+next one up to date with `main` before approving it: a push after an approval dismisses it.
 
 Break-glass, for a production regression only (the live site is broken or losing data) while the
 required reviewers cannot approve in time. An org admin adds a temporary bypass to ruleset
