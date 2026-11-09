@@ -28,14 +28,19 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  transition: background-color .2s var(--ease-out-soft), transform .2s var(--ease-out-soft), box-shadow .2s var(--ease-out-soft);
+  transition: background-color .2s var(--ease-out-soft), color .2s var(--ease-out-soft), border-color .2s var(--ease-out-soft), transform .2s var(--ease-out-soft), box-shadow .2s var(--ease-out-soft);
 }
 .v2 .v2-knop-olijf { background: var(--color-v2-olijf); color: #fff; box-shadow: 0 10px 24px -12px rgba(61,82,32,.7); }
 .v2 .v2-knop-olijf:hover { background: var(--color-v2-olijf-h); color: #fff; transform: translateY(-1px); }
 .v2 .v2-knop-donker { background: var(--color-v2-inkt); color: var(--color-v2-creme); }
 .v2 .v2-knop-donker:hover { background: #000; color: var(--color-v2-creme); }
 .v2 .v2-knop-licht { background: #fff; color: var(--color-v2-inkt); border: 1px solid var(--color-v2-lijn); font-weight: 500; }
-.v2 .v2-knop-licht:hover { border-color: var(--color-v2-inkt-2); color: var(--color-v2-inkt); }
+/* Lichte knop: bij hover of focus kleurt hij olijf, net als de menu-items (tint-pil, olijf-rand, donkere olijftekst).
+   De extra inset-rand maakt de rand optisch 2px zonder dat de knop van maat verandert. */
+.v2 .v2-knop-licht:is(:hover, :focus-visible) {
+  background: var(--color-v2-tint); border-color: var(--color-v2-olijf); color: var(--color-v2-olijf-h);
+  box-shadow: inset 0 0 0 1px var(--color-v2-olijf); transform: translateY(-1px);
+}
 .v2-knop-sm { min-height: 44px; padding: 0 18px; font-size: 15px; }
 
 /* ---------- Kop (zwevende balk) ---------- */
@@ -80,13 +85,38 @@ body.v2 { background: var(--color-v2-creme); color: var(--color-v2-inkt); }
 /* De tegel heeft dezelfde kleur als de voet; een dunne lichte rand houdt hem zichtbaar. */
 .v2-voet .v2-logo-merk { box-shadow: 0 0 0 1px rgba(244, 241, 232, .22); }
 .v2-kop ul { display: flex; align-items: center; gap: 26px; list-style: none; margin: 0; padding: 0; font-size: 15px; }
-.v2 .v2-kop ul a:not(.v2-knop) { color: var(--color-v2-inkt-2); text-decoration: none; }
-.v2 .v2-kop ul a:not(.v2-knop):hover, .v2 .v2-kop ul a[aria-current="page"] { color: var(--color-v2-inkt); }
+/* Menu-items: bij hover of focus schuift een zachte olijf-pil achter het woord en groeit er een dunne olijflijn
+   vanuit het midden. De negatieve marge houdt de afstanden gelijk aan die zonder pil. */
+.v2 .v2-kop ul a:not(.v2-knop) {
+  position: relative; display: inline-block; margin: -8px -12px; padding: 8px 12px; border-radius: 999px;
+  color: var(--color-v2-inkt-2); text-decoration: none;
+  transition: color .2s ease, background-color .25s ease;
+}
+.v2 .v2-kop ul a:not(.v2-knop)::after {
+  content: ''; position: absolute; left: 14px; right: 14px; bottom: 5px; height: 1.5px; border-radius: 2px;
+  background: var(--color-v2-olijf); transform: scaleX(0); transition: transform .3s cubic-bezier(.2, .8, .2, 1);
+}
+.v2 .v2-kop ul a:not(.v2-knop):hover, .v2 .v2-kop ul a:not(.v2-knop):focus-visible { color: var(--color-v2-inkt); background: var(--color-v2-tint); }
+.v2 .v2-kop ul a:not(.v2-knop):hover::after, .v2 .v2-kop ul a:not(.v2-knop):focus-visible::after { transform: scaleX(1); }
+.v2 .v2-kop ul a[aria-current="page"] { color: var(--color-v2-inkt); }
+.v2 .v2-kop ul a[aria-current="page"]::after { transform: scaleX(1); }
+@media (prefers-reduced-motion: reduce) { .v2 .v2-kop ul a:not(.v2-knop), .v2 .v2-kop ul a:not(.v2-knop)::after { transition: none; } }
 .v2-kop .hamburger-btn { margin-right: 8px; }
 
 .v2 .v2-knop-wit { background: #fff; color: var(--color-v2-olijf-h); }
-.v2 .v2-knop-wit:hover { background: var(--color-v2-creme); color: var(--color-v2-olijf-h); transform: translateY(-1px); }
+/* Witte knop (op de olijfband): bij hover of focus wordt hij olijf-tint met inkt-tekst en krijgt hij een felle olijfring.
+   De ring is een box-shadow, dus de knop verschuift niets om zich heen. */
+.v2 .v2-knop-wit:is(:hover, :focus-visible) {
+  background: var(--color-v2-tint); color: var(--color-v2-inkt);
+  box-shadow: 0 0 0 3px var(--color-v2-olijf-fel); transform: translateY(-1px);
+}
 .v2-knop:focus-visible { outline: 2px solid var(--color-v2-inkt); outline-offset: 3px; }
+/* De witte knop heeft al een ring van 3px; de focus-outline komt daar net buiten. */
+.v2 .v2-knop-wit:focus-visible { outline-color: #fff; outline-offset: 5px; }
+@media (prefers-reduced-motion: reduce) {
+  .v2 .v2-knop-licht, .v2 .v2-knop-wit { transition: none; }
+  .v2 .v2-knop-licht:is(:hover, :focus-visible), .v2 .v2-knop-wit:is(:hover, :focus-visible) { transform: none; }
+}
 
 /* ---------- Mobiel menu ---------- */
 .v2 .mobile-nav-panel { background: var(--color-v2-creme); border-radius: 28px 0 0 28px; padding: 1.5rem 1.75rem; }
@@ -557,11 +587,13 @@ html.js .v2-resultaat { animation: v2-op .9s var(--ease-out-soft) .1s both; }
 .v2-hub-noot { max-width: 44em; margin: 14px 0 0; font-size: 16px; color: var(--color-v2-inkt-2); }
 .v2-filter { position: sticky; top: 92px; z-index: 5; display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; padding: 6px; width: fit-content; max-width: 100%; border-radius: 999px; background: rgba(255, 255, 255, .8); border: 1px solid var(--color-v2-lijn); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
 .v2-filter[hidden] { display: none; }
-.v2-filter button { min-height: 40px; padding: 0 16px; border: 0; border-radius: 999px; background: transparent; font: inherit; font-size: 15px; font-weight: 500; color: var(--color-v2-inkt-2); cursor: pointer; transition: background-color .2s, color .2s; }
+.v2-filter button { min-height: 40px; padding: 0 16px; border: 0; border-radius: 999px; background: transparent; font: inherit; font-size: 15px; font-weight: 500; color: var(--color-v2-inkt-2); cursor: pointer; transition: background-color .2s var(--ease-out-soft), color .2s var(--ease-out-soft), box-shadow .2s var(--ease-out-soft); }
 .v2-filter button span { margin-left: 4px; font-size: 13px; }
-.v2-filter button:hover { color: var(--color-v2-inkt); }
+/* Filterknoppen: bij hover of focus een olijf-tint met een dunne olijfrand (inset, dus niets verspringt), zoals de menu-pil. */
+.v2-filter button:not([aria-pressed="true"]):is(:hover, :focus-visible) { background: var(--color-v2-tint); color: var(--color-v2-olijf-h); box-shadow: inset 0 0 0 1px var(--color-v2-olijf); }
 .v2-filter button[aria-pressed="true"] { background: var(--color-v2-inkt); color: var(--color-v2-creme); }
 .v2-filter button:focus-visible { outline: 2px solid var(--color-v2-olijf); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .v2-filter button { transition: none; } }
 .v2-hub-groep + .v2-hub-groep { margin-top: 64px; }
 .v2-hub-groep[hidden] { display: none; }
 .v2-hub-groep h2 { margin: 0 0 20px; font-size: clamp(1.6rem, 1.4vw + 1rem, 2.2rem); letter-spacing: -0.035em; }
