@@ -19,8 +19,8 @@ for the org admin (only `maxkwaaste`) in `pull_request` mode (Max, 9 Nov 2026):
 gh pr merge <nr> --squash --admin --delete-branch
 ```
 
-The bypass covers merging PRs only; direct pushes to `main` stay blocked, for Max too. There is no
-break-glass procedure any more: do not touch the ruleset's bypass list. Open the PR, let Cloudflare
+The bypass covers merging PRs only; direct pushes to `main` stay blocked, for Max too. Leave the
+ruleset's bypass list as it is. Open the PR, let Cloudflare
 build the preview, and post the preview link in the PR so the reviewer can look at the real page.
 When several open PRs touch the same files, merge them one by one and bring the next one up to date
 with `main` before approving it: a push after an approval dismisses it.
