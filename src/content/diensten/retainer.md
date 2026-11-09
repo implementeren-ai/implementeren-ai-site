@@ -15,13 +15,13 @@ h1: "Claude Compagnon: een vaste AI-expert voor je team, als abonnement"
 ---
 
 De Claude Compagnon is een abonnement op Camiel.
-Je team kan hem onbeperkt vragen stellen via Teams-chat, en twee keer per maand zit hij met jullie om tafel.
+Je team kan hem onbeperkt vragen stellen via Teams-chat, en twee keer per maand hebben jullie een Teams-call met hem.
 Het is de derde stap: eerst de Readiness Scan, dan komen we op kantoor en staat Claude er binnen 30 dagen, daarna houdt de Compagnon het gaande.
 
 **Elke maand**
 
 - Onbeperkt toegang tot Camiel via Teams-chat. Loopt een prompt vast of zie je een nieuwe toepassing, dan vraag je het hem gewoon.
-- Twee sessies met Camiel. Wat er op tafel komt bepaal je zelf: een nieuwe use case, een team dat achterblijft of een workflow die beter kan.
+- Twee Teams-calls met Camiel. Wat er op tafel komt bepaal je zelf: een nieuwe use case, een team dat achterblijft of een workflow die beter kan.
 
 **Wat het kost**
 
