@@ -10,29 +10,20 @@ If a merge does not go live, check the Actions run (`gh run list`) before anythi
 ## How changes go live
 
 Nobody pushes to `main`. Every change is a branch plus a pull request. Max is the only code owner
-(`.github/CODEOWNERS`): a PR from someone else (Sweder, Camiel) goes in after 1 approval from Max,
-and Max, as repo admin, merges his own PRs himself through the ruleset bypass
-(`gh pr merge <nr> --squash --admin`). Camiel's approval is not needed (Max, 8 Nov 2026). Open the
-PR, let Cloudflare build the preview, and post the preview link in the PR so the reviewer can look
-at the real page. When several open PRs touch the same files, merge them one by one and bring the
-next one up to date with `main` before approving it: a push after an approval dismisses it.
-
-Break-glass, for a production regression only (the live site is broken or losing data) while the
-required reviewers cannot approve in time. An org admin adds a temporary bypass to ruleset
-`25944613` ("main: reviewed PRs only"), merges, and removes the bypass straight away:
+(`.github/CODEOWNERS`) and the only authority on this repo: nothing ever needs Camiel's approval.
+A PR from someone else (Sweder, Camiel) goes in after 1 approval from Max. Max merges his own PRs
+himself, without any review: ruleset `25944613` ("main: reviewed PRs only") has a permanent bypass
+for the org admin (only `maxkwaaste`) in `pull_request` mode (Max, 9 Nov 2026):
 
 ```bash
-R=implementeren-ai/implementeren-ai-site
-gh api -X PUT repos/$R/rulesets/25944613 --input <(echo '{"bypass_actors":[{"actor_id":1,"actor_type":"OrganizationAdmin","bypass_mode":"always"}]}')
-gh pr merge <nr> -R $R --squash --admin --delete-branch
-gh api -X PUT repos/$R/rulesets/25944613 --input <(echo '{"bypass_actors":[]}')
-gh api repos/$R/rulesets/25944613 --jq .bypass_actors   # must print []
+gh pr merge <nr> --squash --admin --delete-branch
 ```
 
-The PR still goes through the normal flow (branch, build, preview link), and gets a comment saying
-why it skipped review. Never use this for ordinary content or design changes. First use: PR #5 on
-2026-10-28, restoring the Cloudflare Web Analytics beacon while Camiel and Sweder had not yet
-joined the org.
+The bypass covers merging PRs only; direct pushes to `main` stay blocked, for Max too. There is no
+break-glass procedure any more: do not touch the ruleset's bypass list. Open the PR, let Cloudflare
+build the preview, and post the preview link in the PR so the reviewer can look at the real page.
+When several open PRs touch the same files, merge them one by one and bring the next one up to date
+with `main` before approving it: a push after an approval dismisses it.
 
 ## Adding a page
 
