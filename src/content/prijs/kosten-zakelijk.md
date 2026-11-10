@@ -35,7 +35,7 @@ updatedDate: 2026-11-10
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-29
-kortAntwoord: "Claude Pro kost 20 dollar per maand (17 dollar bij jaarbetaling) Claude Max 100 dollar en Claude Ultra 200 dollar. Een Claude Team-seat kost 25 dollar per gebruiker per maand (20 dollar bij jaarbetaling), vanaf 2 gebruikers. Enterprise kost 20 dollar per seat, vanaf 20 seats, plus verbruik tegen API-tarieven. De API kost vanaf 0,10 dollar per miljoen input-tokens. Prijzen exclusief btw. Abonnementen gecheckt op 10 november 2026, API-tarieven op 22 oktober 2026."
+kortAntwoord: "Claude Pro kost 20 dollar per maand (17 dollar bij jaarbetaling), Claude Max 100 dollar en Claude Ultra 200 dollar. Een Claude Team-seat kost 25 dollar per gebruiker per maand (20 dollar bij jaarbetaling), vanaf 2 gebruikers. Enterprise kost 20 dollar per seat, vanaf 20 seats, plus verbruik tegen API-tarieven. De API kost vanaf 0,10 dollar per miljoen input-tokens. Prijzen exclusief btw. Abonnementen gecheckt op 10 november 2026, API-tarieven op 22 oktober 2026."
 bronnen:
   - titel: "Anthropic supportartikel: API credits for Max and Team plans"
     url: "https://support.claude.com/en/articles/17154008-api-credits-for-max-and-team-plans"
