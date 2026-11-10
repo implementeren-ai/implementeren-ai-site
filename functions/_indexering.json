@@ -25,10 +25,7 @@
     "/prijs",
     "/training",
     "/use-cases",
-    "/vergelijken",
-    "/chatgpt",
-    "/gemini",
-    "/copilot"
+    "/vergelijken"
   ],
   "prefixen": [
     "/claude-voor-"
