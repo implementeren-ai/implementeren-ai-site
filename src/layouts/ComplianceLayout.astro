@@ -11,6 +11,7 @@ import FaqSectie from '../components/FaqSectie.astro';
 import BronnenBlok from '../components/BronnenBlok.astro';
 import CtaStrook from '../components/CtaStrook.astro';
 import GerelateerdeLinks from '../components/GerelateerdeLinks.astro';
+import { claudeHub } from '../data/indexering.mjs';
 import ArtikelInhoud from '../components/ArtikelInhoud.astro';
 import type { MarkdownHeading } from 'astro';
 import DeadlineBanner from '../components/DeadlineBanner.astro';
@@ -106,6 +107,6 @@ const seo = seoVoorEntry({ pad: pagePath, sectie: 'Compliance', breadcrumbs, dat
 
   <div class="v2-artikel-na">
     <CtaStrook dienst="implementatie" />
-    <GerelateerdeLinks links={data.internalLinks} />
+    <GerelateerdeLinks links={[...data.internalLinks, claudeHub]} />
   </div>
 </BasisLayout>

@@ -11,6 +11,7 @@ import FaqSectie from '../components/FaqSectie.astro';
 import BronnenBlok from '../components/BronnenBlok.astro';
 import CtaStrook from '../components/CtaStrook.astro';
 import GerelateerdeLinks from '../components/GerelateerdeLinks.astro';
+import { claudeHub } from '../data/indexering.mjs';
 import ArtikelInhoud from '../components/ArtikelInhoud.astro';
 import type { MarkdownHeading } from 'astro';
 
@@ -95,6 +96,6 @@ const seo = seoVoorEntry({ pad: pagePath, sectie: 'Branches', breadcrumbs, data,
 
   <div class="v2-artikel-na">
     <CtaStrook dienst="consultant" />
-    <GerelateerdeLinks links={data.internalLinks} />
+    <GerelateerdeLinks links={[...data.internalLinks, claudeHub]} />
   </div>
 </BasisLayout>

@@ -28,6 +28,10 @@ export const preLaunch = false;
 // Draaiboek: docs/vendor-go-live.md
 export const vendorsLive = false;
 
+// De Claude-hub. Layouts en pagina's die ernaar linken gebruiken deze constante, samen met
+// isIndexeerbaarPad(claudeHub): de link verschijnt vanzelf op de dag dat de hub indexeerbaar wordt.
+export const claudeHub = '/claude';
+
 // De zakelijke site. Alleen wat hier staat mag ooit geïndexeerd worden: alles daarbuiten
 // (losse HTML in public/, toekomstige pagina's) is noindex tenzij het hier
 // bewust wordt toegevoegd. Een nieuwe pagina vergeten is dus veilig: die blijft onzichtbaar.
@@ -48,6 +52,10 @@ export const zakelijk = {
     '/over',
     '/privacy',
     '/verticalen',
+    // De Claude-hub (/claude) neemt op de go-live-dag "claude zakelijk" over van de homepage.
+    // Tot dan is hij wel gebouwd, maar noindex en buiten de sitemap: twee pagina's op hetzelfde
+    // zoekwoord zou kannibalisatie zijn. Zelfde schakelaar als de vendor-secties hieronder.
+    ...(vendorsLive ? [claudeHub] : []),
   ],
   // Het pad zelf en alles eronder, zoals /cases en /cases/crm-weekend.
   secties: [

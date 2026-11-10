@@ -1,0 +1,310 @@
+---
+import BasisLayout from '../layouts/BasisLayout.astro';
+import Broodkruimel from '../components/Broodkruimel.astro';
+import KortAntwoord from '../components/KortAntwoord.astro';
+import FaqSectie from '../components/FaqSectie.astro';
+import BronnenBlok from '../components/BronnenBlok.astro';
+import CtaStrook from '../components/CtaStrook.astro';
+import ArtikelInhoud from '../components/ArtikelInhoud.astro';
+import { claudePrijzen } from '../data/claude-prijzen';
+import { faqNode, itemListNode, lijstId } from '../lib/schema';
+import { isIndexeerbaarPad } from '../data/indexering.mjs';
+
+// De Claude-hub (docs/vendor-go-live.md, voorwaarde 2). Deze pagina neemt op de go-live-dag
+// "claude zakelijk" over van de homepage. Tot vendorsLive true is (src/data/indexering.mjs)
+// blijft hij noindex en buiten de sitemap, en tonen de Claude-pagina's hun link hierheen nog niet.
+const pad = '/claude';
+const titleTag = 'Claude zakelijk: Pro, Team en Enterprise uitgelegd';
+const h1 = 'Claude zakelijk: wat het is, welk plan past en waar je begint';
+const beschrijving =
+  'Claude zakelijk gebruiken: wat Claude voor je bedrijf is, wat Pro, Team en Enterprise kosten en welke gidsen je verder helpen. Stand 10 november 2026.';
+const gecontroleerd = '10 november 2026';
+
+// Prijzen komen uit src/data/claude-prijzen.ts, zodat ze gelijk blijven aan /prijs.
+const dollars = (tekst: string): string => {
+  const m = tekst.match(/\$(\d+)/);
+  if (!m) throw new Error(`Geen dollarbedrag in claudePrijzen: ${tekst}`);
+  return m[1];
+};
+const plan = (naam: string) => {
+  const p = claudePrijzen.plannen.find((x) => x.naam === naam);
+  if (!p) throw new Error(`Plan ${naam} ontbreekt in claudePrijzen`);
+  return p;
+};
+const pro = plan('Pro');
+const team = plan('Team');
+const enterprise = plan('Enterprise');
+const proMaand = dollars(pro.prijs);
+const proJaar = dollars(pro.features[0]);
+const teamMaand = dollars(team.prijs);
+const teamJaar = dollars(team.features[0]);
+const enterpriseSeat = dollars(enterprise.prijs);
+
+const kortAntwoord =
+  `Claude zakelijk gebruiken betekent dat je team werkt met een Team- of Enterprise-abonnement van Anthropic, en niet met losse privéaccounts. ` +
+  `Team kost ${teamMaand} dollar per gebruiker per maand, of ${teamJaar} dollar bij jaarbetaling, voor 2 tot 150 gebruikers. ` +
+  `Enterprise kost ${enterpriseSeat} dollar per seat per maand plus verbruik, vanaf 20 seats. Pro is bedoeld voor één persoon.`;
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Claude zakelijk', url: pad },
+];
+
+// Eén lijst voor de zichtbare links onder "Waar lees je meer?" en voor de ItemList in het schema.
+const alleLeeswijzer = [
+  {
+    kop: 'Kiezen en kosten',
+    items: [
+      { href: '/gids/claude-voor-mkb', naam: 'Zakelijk Claude-account en abonnement voor het mkb', uitleg: 'de gids over kiezen, accounts aanmaken en afspraken over data' },
+      { href: '/prijs', naam: 'Claude kosten zakelijk', uitleg: 'alle prijzen, ook in euro en met btw' },
+      { href: '/prijs/pro-vs-team-vs-enterprise', naam: 'Claude Pro, Team of Enterprise', uitleg: 'de plannen uitgebreid naast elkaar' },
+      { href: '/prijs/credits-en-limieten', naam: 'Claude gebruikslimieten en usage credits', uitleg: 'wat er gebeurt als je team tegen een limiet aanloopt' },
+      { href: '/tools', naam: 'Claude rekentools', uitleg: 'zelf rekenen aan API-kosten en opbrengst' },
+    ],
+  },
+  {
+    kop: 'Begrijpen en vergelijken',
+    items: [
+      { href: '/hoe-claude-werkt', naam: 'Hoe Claude werkt', uitleg: 'de modellen, de apps en wanneer je wat kiest' },
+      { href: '/vergelijken', naam: 'Claude vergelijken met ChatGPT, Copilot en Cursor', uitleg: 'de verschillen per soort werk' },
+      { href: '/gids/overstappen-van-chatgpt-naar-claude', naam: 'Overstappen van ChatGPT naar Claude', uitleg: 'wanneer overstappen loont en hoe je het test' },
+      { href: '/gids/claude-code-voor-bedrijven', naam: 'Claude Code voor bedrijven', uitleg: 'wat Claude Code is en wat het kost' },
+      { href: '/nieuws', naam: 'Nieuws en analyses', uitleg: 'wat er verandert bij Anthropic en wat dat voor je bedrijf betekent' },
+    ],
+  },
+  {
+    kop: 'Veilig en volgens de regels',
+    items: [
+      { href: '/compliance', naam: 'Claude en de AVG', uitleg: 'wat je als bedrijf regelt' },
+      { href: '/compliance/anthropic-dpa', naam: 'De verwerkersovereenkomst van Anthropic', uitleg: 'wat erin staat en voor welke plannen hij geldt' },
+      { href: '/compliance/is-claude-veilig', naam: 'Is Claude veilig voor bedrijfsdata?', uitleg: 'de risico\'s in het dagelijks gebruik' },
+      { href: '/compliance/eu-hosting', naam: 'Claude en verwerking in de EU', uitleg: 'waar je data staat en welke routes er zijn' },
+    ],
+  },
+  {
+    kop: 'Toepassen in je bedrijf',
+    items: [
+      { href: '/use-cases', naam: 'Wat je met Claude doet', uitleg: 'toepassingen per soort werk' },
+      { href: '/verticalen', naam: 'Claude per branche', uitleg: 'van accountants tot zorginstellingen' },
+      { href: '/integraties', naam: 'Claude gekoppeld aan je tools', uitleg: 'koppelingen met de software die je al gebruikt' },
+      { href: '/training', naam: 'Training', uitleg: 'je team leren werken met Claude' },
+      { href: '/gids', naam: 'Alle Claude gidsen', uitleg: 'het overzicht van de gidsen' },
+    ],
+  },
+];
+
+// Een hub zonder live artikelen is noindex (legeHubs in indexering.mjs); die tonen we pas als hij gevuld is.
+const leeswijzer = alleLeeswijzer
+  .map((g) => ({ ...g, items: g.items.filter((i) => isIndexeerbaarPad(i.href)) }))
+  .filter((g) => g.items.length > 0);
+
+const faq = [
+  {
+    question: 'Wat is Claude zakelijk?',
+    answer:
+      'Claude zakelijk is het gebruik van Claude, de AI-assistent van Anthropic, binnen een bedrijf op een Team- of Enterprise-abonnement. Je beheert de accounts centraal en de zakelijke voorwaarden van Anthropic gelden. Daarin staat dat Anthropic geen modellen traint op de content van klanten.',
+  },
+  {
+    question: 'Wat kost Claude zakelijk?',
+    answer:
+      `Een standaard seat op Claude Team kost ${teamMaand} dollar per gebruiker per maand, of ${teamJaar} dollar bij jaarbetaling. Enterprise kost ${enterpriseSeat} dollar per seat per maand bij jaarbetaling, plus verbruik tegen API-tarieven. De prijzen zijn exclusief btw. Stand ${gecontroleerd}.`,
+  },
+  {
+    question: 'Wat is het verschil tussen Claude Team en Enterprise?',
+    answer:
+      'Team is er voor 2 tot 150 gebruikers, met een vaste prijs per seat, centraal beheer en SSO. Enterprise begint bij 20 seats en rekent het verbruik apart af. Enterprise voegt onder meer SCIM, audit logs, rolgebaseerde toegang en eigen bewaartermijnen toe.',
+  },
+  {
+    question: 'Kan ik Claude Pro zakelijk gebruiken?',
+    answer:
+      'Pro is een abonnement voor één persoon, zonder centraal beheer en zonder SSO. Bij Pro kiest de gebruiker zelf of chats gebruikt mogen worden om Claude te verbeteren. Werkt je team met klant- of personeelsgegevens, dan past Team of Enterprise beter.',
+  },
+  {
+    question: 'Is Implementeren.ai onderdeel van Anthropic?',
+    answer:
+      'Nee. Implementeren.ai is een onafhankelijk Nederlands adviesbureau. Claude is een product en handelsmerk van Anthropic. Een abonnement sluit je rechtstreeks af bij Anthropic.',
+  },
+];
+
+const bronnen = [
+  { titel: 'Anthropic, prijspagina Claude (claude.com/pricing)', url: 'https://claude.com/pricing', geraadpleegd: gecontroleerd },
+  { titel: 'Claude Help Center, What is the Team plan?', url: 'https://support.claude.com/en/articles/9266767-what-is-the-team-plan', geraadpleegd: gecontroleerd },
+  { titel: 'Claude Help Center, What is the Enterprise plan?', url: 'https://support.claude.com/en/articles/9797531-what-is-the-enterprise-plan', geraadpleegd: gecontroleerd },
+  { titel: 'Anthropic, Commercial Terms of Service (ingangsdatum 17 juni 2025)', url: 'https://www.anthropic.com/legal/commercial-terms', geraadpleegd: gecontroleerd },
+  { titel: 'Anthropic Privacy Center, Is my data used for model training?', url: 'https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training', geraadpleegd: gecontroleerd },
+];
+
+const koppen = [
+  { depth: 2, slug: 'wat-is-claude-zakelijk', text: 'Wat is Claude zakelijk?' },
+  { depth: 2, slug: 'welke-plannen-zijn-er', text: 'Welke plannen zijn er voor Claude zakelijk?' },
+  { depth: 2, slug: 'welk-plan-past-bij-je-bedrijf', text: 'Welk plan past bij je bedrijf?' },
+  { depth: 2, slug: 'wat-gebeurt-er-met-je-bedrijfsdata', text: 'Wat gebeurt er met je bedrijfsdata?' },
+  { depth: 2, slug: 'waar-lees-je-meer', text: 'Waar lees je meer?' },
+  { depth: 2, slug: 'hulp-bij-de-invoering', text: 'Hulp bij de invoering' },
+];
+
+const schema = {
+  paginaType: 'CollectionPage' as const,
+  hoofdonderwerp: lijstId(pad),
+  breadcrumbs,
+  nodes: [
+    itemListNode(pad, leeswijzer.flatMap((g) => g.items).map((i) => ({ url: i.href, naam: i.naam }))),
+    faqNode(pad, faq),
+  ],
+};
+---
+<BasisLayout titel={titleTag} beschrijving={beschrijving} pad={pad} schema={schema}>
+  <article class="v2-artikel">
+    <div class="v2-voortgang" aria-hidden="true"></div>
+    <header class="v2-artikel-kop">
+      <div class="v2-artikel-kop-binnen">
+        <Broodkruimel items={breadcrumbs} />
+        <span class="v2-chip">Claude</span>
+        <h1 class="v2-artikel-h1">{h1}</h1>
+      </div>
+    </header>
+
+    <div class="v2-artikel-raster">
+      <ArtikelInhoud soort="zijkant" koppen={koppen} faq />
+      <div class="v2-artikel-tekst">
+        <KortAntwoord tekst={kortAntwoord} stand={gecontroleerd} />
+
+        <ArtikelInhoud soort="mobiel" koppen={koppen} faq />
+
+        <div class="prose prose-lg max-w-none v2-prose">
+          <p>
+            Op deze pagina staat in het kort wat Claude zakelijk inhoudt, welke plannen Anthropic aanbiedt en
+            wat ze kosten. Bij elk onderwerp staat een link naar de gids die het helemaal uitlegt. De prijzen
+            en plannen hebben we op {gecontroleerd} gecontroleerd op de site van Anthropic.
+          </p>
+
+          <h2 id="wat-is-claude-zakelijk">Wat is Claude zakelijk?</h2>
+          <p>
+            Claude is de AI-assistent van het Amerikaanse bedrijf Anthropic. Je gebruikt Claude in de browser,
+            in de desktop-app en op je telefoon. Zakelijk gebruik betekent dat je bedrijf een eigen
+            organisatie heeft bij Anthropic, op het Team- of het Enterprise-plan. Collega's krijgen daarin een
+            seat, jij beheert de toegang en de betaling op één plek, en inloggen kan met SSO.
+          </p>
+          <p>
+            Team en Enterprise bevatten naast de chat ook Claude Code en Claude Cowork, en koppelingen
+            (connectors) met andere systemen. Wil je eerst weten hoe Claude in elkaar zit? Lees dan
+            <a href="/hoe-claude-werkt">hoe Claude werkt</a>.
+          </p>
+
+          <h2 id="welke-plannen-zijn-er">Welke plannen zijn er voor Claude zakelijk?</h2>
+          <p>
+            Voor bedrijven zijn drie plannen van belang: Pro voor één persoon, en Team en Enterprise voor een
+            organisatie. Anthropic rekent in Amerikaanse dollars en de bedragen zijn exclusief btw.
+          </p>
+          <div class="not-prose overflow-x-auto my-8">
+            <table class="w-full text-left text-[15px] border-collapse">
+              <caption class="caption-top text-left text-sm text-inkt-zacht pb-2">Claude Pro, Team en Enterprise, stand {gecontroleerd}</caption>
+              <thead>
+                <tr class="border-b border-lijn">
+                  <th scope="col" class="py-2 pr-4 font-semibold">Plan</th>
+                  <th scope="col" class="py-2 pr-4 font-semibold">Prijs (excl. btw)</th>
+                  <th scope="col" class="py-2 pr-4 font-semibold">Voor wie</th>
+                  <th scope="col" class="py-2 font-semibold">Beheer</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-lijn">
+                <tr>
+                  <th scope="row" class="py-3 pr-4 align-top font-semibold">Pro</th>
+                  <td class="py-3 pr-4 align-top">${proMaand} per maand, of ${proJaar} per maand bij jaarbetaling</td>
+                  <td class="py-3 pr-4 align-top">Eén persoon</td>
+                  <td class="py-3 align-top">Geen centraal beheer, geen SSO</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="py-3 pr-4 align-top font-semibold">Team</th>
+                  <td class="py-3 pr-4 align-top">Standaard seat ${teamMaand} per gebruiker per maand, of ${teamJaar} bij jaarbetaling. Premium seat $125, of $100 bij jaarbetaling.</td>
+                  <td class="py-3 pr-4 align-top">Teams van 2 tot 150 gebruikers</td>
+                  <td class="py-3 align-top">Centraal beheer van toegang en betaling, SSO</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="py-3 pr-4 align-top font-semibold">Enterprise</th>
+                  <td class="py-3 pr-4 align-top">${enterpriseSeat} per seat per maand bij jaarbetaling, plus verbruik tegen API-tarieven</td>
+                  <td class="py-3 pr-4 align-top">Organisaties vanaf 20 seats</td>
+                  <td class="py-3 align-top">Alles van Team, plus SCIM, audit logs, rolgebaseerde toegang en eigen bewaartermijnen</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            Een premium seat op Team geeft vijf keer de gebruiksruimte van een standaard seat. Je kunt beide
+            soorten seats in één organisatie combineren. Bij Enterprise dekt de seatprijs alleen de toegang.
+            Het verbruik betaal je apart, en een beheerder kan daar limieten op zetten.
+          </p>
+          <p>
+            Anthropic heeft ook een gratis plan en zwaardere abonnementen voor individuele gebruikers. Die
+            staan met alle bedragen in <a href="/prijs">Claude kosten zakelijk</a>.
+          </p>
+
+          <h2 id="welk-plan-past-bij-je-bedrijf">Welk plan past bij je bedrijf?</h2>
+          <p>
+            De keuze volgt voor een groot deel uit de grenzen die Anthropic zelf stelt. Team heeft een minimum
+            van twee gebruikers en een maximum van 150 seats. Enterprise heeft een minimum van 20 seats als je
+            het zelf online afsluit, en van 50 seats als je via de salesafdeling van Anthropic koopt.
+          </p>
+          <ul>
+            <li><strong>Pro</strong> past als één persoon Claude wil gebruiken en er geen centraal beheer nodig is.</li>
+            <li><strong>Team</strong> past als meerdere collega's met Claude werken en je accounts, betaling en inloggen centraal wilt regelen tegen een vaste prijs per seat.</li>
+            <li><strong>Enterprise</strong> past als je audit logs, SCIM, rolgebaseerde toegang of eigen bewaartermijnen nodig hebt, of meer dan 150 gebruikers hebt.</li>
+          </ul>
+          <p>
+            De uitgebreide afweging staat in
+            <a href="/prijs/pro-vs-team-vs-enterprise">Claude Pro, Team of Enterprise</a>. Hoe je een zakelijk
+            account opzet en bestaande privéaccounts verhuist, lees je in de gids
+            <a href="/gids/claude-voor-mkb">Zakelijk Claude-account en abonnement voor het mkb</a>.
+          </p>
+
+          <h2 id="wat-gebeurt-er-met-je-bedrijfsdata">Wat gebeurt er met je bedrijfsdata?</h2>
+          <p>
+            Voor Team en Enterprise gelden de Commercial Terms van Anthropic. Daarin staat dat Anthropic geen
+            modellen mag trainen op de content van klanten. Gegevens worden verwerkt volgens de
+            verwerkersovereenkomst (Data Processing Addendum), die onderdeel is van die voorwaarden.
+          </p>
+          <p>
+            Voor de abonnementen voor individuele gebruikers, zoals Free, Pro en Max, ligt dat anders. Daar kiest de gebruiker zelf of chats gebruikt mogen worden
+            om Claude te verbeteren. Als werkgever stel je dat niet centraal in. Dat is een belangrijke reden
+            om met een team niet op losse privéaccounts te werken.
+          </p>
+          <p>
+            Wat je voor de AVG regelt, staat in <a href="/compliance">Claude en de AVG</a>. Daar vind je ook
+            de uitleg over de <a href="/compliance/anthropic-dpa">verwerkersovereenkomst van Anthropic</a> en
+            over <a href="/compliance/eu-hosting">verwerking in de EU</a>.
+          </p>
+
+          <h2 id="waar-lees-je-meer">Waar lees je meer?</h2>
+          <p>
+            Alles wat we over Claude voor bedrijven hebben geschreven, staat hieronder per onderwerp.
+          </p>
+          {leeswijzer.map((groep) => (
+            <>
+              <h3>{groep.kop}</h3>
+              <ul>
+                {groep.items.map((i) => (<li><a href={i.href}>{i.naam}</a>: {i.uitleg}.</li>))}
+              </ul>
+            </>
+          ))}
+
+          <h2 id="hulp-bij-de-invoering">Hulp bij de invoering</h2>
+          <p>
+            Een abonnement sluit je rechtstreeks af bij Anthropic. Implementeren.ai is een onafhankelijk
+            adviesbureau en helpt bij het inrichten, het maken van afspraken over data en het trainen van je
+            team. Hoe zo'n traject loopt en wat het kost, staat op de pagina over
+            <a href="/claude-implementatie">Claude-implementatie</a>. Zoek je vooral iemand om mee te denken,
+            kijk dan bij de <a href="/claude-consultant">Claude consultant</a>. Wil je eerst weten waar je
+            bedrijf staat? Doe dan de <a href="/ai-enablement-scan">gratis AI-check</a>.
+          </p>
+        </div>
+
+        <BronnenBlok bronnen={bronnen} peildatum={gecontroleerd} />
+
+        <FaqSectie titel="Veelgestelde vragen over Claude zakelijk" items={faq} />
+      </div>
+    </div>
+  </article>
+  <div class="v2-artikel-na">
+    <CtaStrook />
+  </div>
+</BasisLayout>
