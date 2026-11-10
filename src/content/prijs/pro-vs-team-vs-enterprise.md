@@ -8,7 +8,7 @@ targetKeywords:
   - claude team abonnement kosten
   - claude pro vs team
   - claude pro, team of enterprise
-wordCountTarget: 1437
+wordCountTarget: 1550
 priority: 1
 tier: 1
 cases:
@@ -29,7 +29,7 @@ author: camiel
 competitors: []
 status: published
 publishDate: 2026-10-02
-updatedDate: 2026-10-29
+updatedDate: 2026-11-10
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-29
@@ -37,16 +37,19 @@ kortAntwoord: "Claude Pro (20 dollar per maand) volstaat voor wie alleen werkt. 
 bronnen:
   - titel: "Anthropic supportartikel: API credits for Max and Team plans"
     url: "https://support.claude.com/en/articles/17154008-api-credits-for-max-and-team-plans"
-    geraadpleegd: "22 oktober 2026"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic prijspagina (claude.com/pricing)"
     url: "https://claude.com/pricing"
-    geraadpleegd: "22 oktober 2026"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic supportartikel: What is the Team plan?"
     url: "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
     geraadpleegd: "2 oktober 2026"
   - titel: "Anthropic supportartikel: What is the Max plan?"
     url: "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "10 november 2026"
+  - titel: "Anthropic supportartikel: What is the Ultra plan?"
+    url: "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic supportartikel: Claude Fable models on your plan"
     url: "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan"
     geraadpleegd: "2 oktober 2026"
@@ -94,12 +97,15 @@ faq:
   - https://support.claude.com/en/articles/9266767-what-is-the-team-plan: minimaal twee
     leden, maximaal 150 seats; standaard seat 1,25x en premium seat 6,25x de
     sessieruimte van Pro; limieten gelden per lid.
-  - https://support.claude.com/en/articles/11049741-what-is-the-max-plan: Max 5x $100,
-    Max 20x $200, alleen per maand.
+  - https://support.claude.com/en/articles/11049741-what-is-the-max-plan: Max $100,
+    5x Pro per 5 uur en per week, alleen per maand (gecheckt 10 november 2026).
+  - https://claude.com/pricing: Ultra $200, 10x Pro per week, geen 5-uurslimiet voor
+    geverifieerde accounts, alleen per maand (gecheckt 10 november 2026).
+  - Ultra is de nieuwe naam van Max 20x (gecheckt 10 november 2026): https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan
   - Fable-modellen: bij Pro en Team standaard seat alleen via usage credits; bij Max en
     Team premium seat tot 50% van de weeklimiet
     (https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan).
-  - API-credits bij Max en Team (gecheckt 22 oktober 2026): Max 5x $100/mnd, Max 20x
+  - API-credits bij Max, Ultra en Team (gecheckt 10 november 2026): Max $100/mnd, Ultra
     $200/mnd; Team $20 per standaard seat en $100 per premium seat, gepoold, plafond
     $500/mnd; niet voor Free, Pro en Enterprise; geldig voor Messages- en Batches-API,
     Console Playground, Managed Agents en Agent SDK, niet voor interactieve Claude Code
@@ -137,7 +143,7 @@ Twee dingen vallen op voor wie oudere vergelijkingen kent. SSO zit tegenwoordig 
 
 ## Claude Pro: prima start, geen fundament
 
-Voor een individuele professional is Pro uitstekend: Projects, Research en Claude Code erbij, voor ongeveer €17,70 per maand exclusief btw. De zwaarste modellen, Claude Fable 5 en 5.1, vallen buiten het Pro-budget. Die gebruik je op Pro alleen met usage credits. Of je die zwaarste modellen nodig hebt, lees je in [welk Claude-model kies je als MKB](/nieuws/welk-claude-model-mkb). Wie zeer intensief werkt kan doorgroeien naar Claude Max, met vijf of twintig keer de gebruiksruimte voor $100 of $200 per maand. Daar zit evenveel aan API-credits bij.
+Voor een individuele professional is Pro uitstekend: Projects, Research en Claude Code erbij, voor ongeveer €17,70 per maand exclusief btw. De zwaarste modellen, Claude Fable 5 en 5.1, vallen buiten het Pro-budget. Die gebruik je op Pro alleen met usage credits. Of je die zwaarste modellen nodig hebt, lees je in [welk Claude-model kies je als MKB](/nieuws/welk-claude-model-mkb). Wie zeer intensief werkt kan doorgroeien naar Claude Max of Claude Ultra. Max kost $100 per maand en geeft vijf keer de gebruiksruimte van Pro. Ultra kost $200 per maand en geeft per week tien keer de gebruiksruimte van Pro, zonder 5-uurslimiet voor geverifieerde accounts. Ultra is de nieuwe naam van Max 20x, zie [het helpartikel van Anthropic over Ultra](https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan). Bij Max zit $100 en bij Ultra $200 aan API-credits per maand.
 
 Als bedrijfsfundament heeft Pro twee problemen. Het eerste is praktisch: elk account is een eiland. De promptbibliotheek die je beste gebruiker opbouwt, blijft in diens persoonlijke Projects zitten. Het tweede is principieel: Pro is een consumentenproduct. Elke gebruiker beheert zelf de privacy-instelling die bepaalt of gesprekken voor modeltraining gebruikt mogen worden. De verwerkersovereenkomst van Anthropic geldt alleen voor de zakelijke producten. Zodra er klantdata in de chats staat, en dat gebeurt sneller dan elk AI-beleid voorziet, wil je dat niet op een consumentenaccount hebben. Hoe je dit netjes regelt voor de AVG (GDPR), staat in ons [compliance-overzicht](/compliance).
 
@@ -180,7 +186,7 @@ Begin dus gerust klein op Pro. De enige valkuil is te lang blijven hangen. Hoe l
 1. **Gaat er klant- of persoonsdata in?** Ja: Team, minimaal. De zakelijke voorwaarden en de verwerkersovereenkomst zijn je AVG-basis.
 2. **Hoeveel mensen?** Werk je alleen en zonder gevoelige data: Pro volstaat. Vanaf 2 mensen kan Team al, en bij jaarbetaling scheelt het $3 per persoon.
 3. **Moet kennis gedeeld worden?** Gedeelde Projects zijn in de praktijk het verschil tussen "Claude werkt goed bij Sanne" en "Claude werkt goed bij ons".
-4. **Zijn er zware gebruikers?** Premium seats binnen Team, of Max voor een individuele power user.
+4. **Zijn er zware gebruikers?** Premium seats binnen Team, of Max of Ultra voor een individuele power user.
 5. **Vraagt IT om SCIM, audit logs of retentie-eisen?** Dan pas Enterprise.
 
 Of Claude iets oplevert, wordt bepaald door wat je ermee inricht: welke workflows, welke prompts, wie het voortouw neemt. Hoe we dat aanpakken, inclusief vaste prijzen, lees je op onze [implementatiepagina](/claude-implementatie). Alle tarieven staan op het [prijzenoverzicht](/prijs).

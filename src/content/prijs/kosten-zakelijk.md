@@ -31,24 +31,27 @@ competitors: []
 disclaimer: fiscaal
 status: published
 publishDate: 2026-10-02
-updatedDate: 2026-10-29
+updatedDate: 2026-11-10
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-29
-kortAntwoord: "Claude Pro kost 20 dollar per maand (17 dollar bij jaarbetaling) en Claude Max 100 of 200 dollar. Een Claude Team-seat kost 25 dollar per gebruiker per maand (20 dollar bij jaarbetaling), vanaf 2 gebruikers. Enterprise kost 20 dollar per seat, vanaf 20 seats, plus verbruik tegen API-tarieven. De API kost vanaf 0,10 dollar per miljoen input-tokens. Prijzen exclusief btw, per 22 oktober 2026."
+kortAntwoord: "Claude Pro kost 20 dollar per maand (17 dollar bij jaarbetaling), Claude Max 100 dollar en Claude Ultra 200 dollar. Een Claude Team-seat kost 25 dollar per gebruiker per maand (20 dollar bij jaarbetaling), vanaf 2 gebruikers. Enterprise kost 20 dollar per seat, vanaf 20 seats, plus verbruik tegen API-tarieven. De API kost vanaf 0,10 dollar per miljoen input-tokens. Prijzen exclusief btw. Abonnementen gecheckt op 10 november 2026, API-tarieven op 22 oktober 2026."
 bronnen:
   - titel: "Anthropic supportartikel: API credits for Max and Team plans"
     url: "https://support.claude.com/en/articles/17154008-api-credits-for-max-and-team-plans"
-    geraadpleegd: "22 oktober 2026"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic prijspagina (claude.com/pricing)"
     url: "https://claude.com/pricing"
-    geraadpleegd: "22 oktober 2026"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic API-prijsdocumentatie"
     url: "https://platform.claude.com/docs/en/about-claude/pricing"
     geraadpleegd: "22 oktober 2026"
   - titel: "Anthropic supportartikel: What is the Max plan?"
     url: "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "10 november 2026"
+  - titel: "Anthropic supportartikel: What is the Ultra plan?"
+    url: "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic supportartikel: What is the Team plan?"
     url: "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
     geraadpleegd: "2 oktober 2026"
@@ -81,13 +84,16 @@ faq:
 <!--
   Bronnen voor "claude kosten zakelijk" (alle prijzen opnieuw gecheckt op 22 oktober 2026):
   - Abonnementsprijzen: https://claude.com/pricing (Free $0; Pro $20/mnd of $17/mnd bij
-    jaarbetaling, $200 vooraf; Max "From $100"; Team standaard seat $25/mnd of $20/mnd
+    jaarbetaling, $200 vooraf; Max $100/mnd; Ultra $200/mnd; Team standaard seat $25/mnd of $20/mnd
     bij jaarbetaling, "For teams of 2 to 150"; Team premium seat $125/mnd of $100/mnd,
     5x meer usage dan standaard; Enterprise "US$20/seat/month, billed annually, 20 seat
     minimum", plus verbruik tegen API-tarieven, self-serve of via sales)
-  - Max 5x $100/mnd en Max 20x $200/mnd, alleen per maand:
-    https://support.claude.com/en/articles/11049741-what-is-the-max-plan
-  - API-credits bij Max en Team (gecheckt 22 oktober 2026): Max 5x $100/mnd, Max 20x
+  - Max $100/mnd, 5x Pro per 5 uur en per week, alleen per maand (gecheckt 10 november
+    2026): https://support.claude.com/en/articles/11049741-what-is-the-max-plan
+  - Ultra $200/mnd, 10x Pro per week, geen 5-uurslimiet voor geverifieerde accounts,
+    alleen per maand (gecheckt 10 november 2026): https://claude.com/pricing
+  - Ultra is de nieuwe naam van Max 20x (gecheckt 10 november 2026): https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan
+  - API-credits bij Max, Ultra en Team (gecheckt 10 november 2026): Max $100/mnd, Ultra
     $200/mnd; Team $20 per standaard seat en $100 per premium seat, gepoold, plafond
     $500/mnd; niet voor Free, Pro en Enterprise; geldig voor Messages- en Batches-API,
     Console Playground, Managed Agents en Agent SDK, niet voor interactieve Claude Code
@@ -110,7 +116,7 @@ faq:
   (bij de gebruikslimieten), /prijs/btw-factuur-zakelijk (bij de btw-sectie)
 -->
 
-Wat kost Claude? Het is bijna altijd de tweede vraag in een kennismakingsgesprek, direct na "wat kunnen we ermee". Het eerlijke antwoord bestaat uit twee delen: de prijs die Anthropic rekent, en de kosten om het in je organisatie werkend te krijgen. Op deze pagina zetten we allebei op een rij, in euro's en met de Nederlandse context erbij: btw, wisselkoers en wat een implementatie kost. Alle prijzen zijn gecheckt op 22 oktober 2026 op claude.com/pricing. Anthropic past ze geregeld aan, dus controleer de actuele prijspagina voordat je tekent.
+Wat kost Claude? Het is bijna altijd de tweede vraag in een kennismakingsgesprek, direct na "wat kunnen we ermee". Het eerlijke antwoord bestaat uit twee delen: de prijs die Anthropic rekent, en de kosten om het in je organisatie werkend te krijgen. Op deze pagina zetten we allebei op een rij, in euro's en met de Nederlandse context erbij: btw, wisselkoers en wat een implementatie kost. De abonnementsprijzen zijn gecheckt op 10 november 2026 op claude.com/pricing. Anthropic past ze geregeld aan, dus controleer de actuele prijspagina voordat je tekent.
 
 ## Claude kosten per maand: de abonnementen op een rij
 
@@ -120,8 +126,8 @@ De bedragen hieronder zijn de lijstprijzen in dollars, exclusief belasting. Anth
 |---|---|---|---|
 | Free | $0 | n.v.t. | gratis |
 | Pro | $20 | $17/maand | ± €17,70 / €15 |
-| Max 5x | $100 | n.v.t. | ± €89 |
-| Max 20x | $200 | n.v.t. | ± €177 |
+| Max | $100 | n.v.t. | ± €89 |
+| Ultra | $200 | n.v.t. | ± €177 |
 | Team, standaard seat | $25 per gebruiker | $20 per gebruiker | ± €22 / €17,70 |
 | Team, premium seat | $125 per gebruiker | $100 per gebruiker | ± €111 / €89 |
 | Enterprise | n.v.t. | $20 per seat (vanaf 20 seats), plus verbruik | ± €17,70 plus verbruik |
@@ -130,7 +136,7 @@ De bedragen hieronder zijn de lijstprijzen in dollars, exclusief belasting. Anth
 
 **Claude Pro** is het instapabonnement voor een individuele professional. Je krijgt per sessie minstens vijf keer de gebruiksruimte van Free, plus Projects, Research en Claude Code. Voor een zzp'er of een eerste verkenner in het bedrijf is dit de logische start.
 
-**Claude Max** bestaat in twee smaken, met vijf en twintig keer de gebruiksruimte van Pro. Het is een individueel abonnement voor mensen die er de hele dag in werken, denk aan een developer die Claude Code intensief gebruikt. Max betaal je alleen per maand. Er zit $100 (5x) of $200 (20x) per maand aan API-credits bij, voor wie ook op de Claude API bouwt. Hoe die gebruiksruimte werkt, met het venster van 5 uur en de weeklimiet, lees je in [Claude gebruikslimieten en usage credits](/prijs/credits-en-limieten).
+**Claude Max en Claude Ultra** zijn individuele abonnementen voor mensen die er de hele dag in werken, denk aan een developer die Claude Code intensief gebruikt. Max kost $100 per maand en geeft vijf keer de gebruiksruimte van Pro, per venster van 5 uur en per week. Ultra kost $200 per maand en geeft per week tien keer de gebruiksruimte van Pro. Geverifieerde accounts hebben op Ultra geen 5-uurslimiet. Ultra is de nieuwe naam van Max 20x, zo staat het in [het helpartikel van Anthropic over Ultra](https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan). Wie Max 20x had, is automatisch overgezet en betaalt hetzelfde. Beide betaal je alleen per maand. Er zit $100 (Max) of $200 (Ultra) per maand aan API-credits bij, voor wie ook op de Claude API bouwt. Hoe die gebruiksruimte werkt, met het venster van 5 uur en de weeklimiet, lees je in [Claude gebruikslimieten en usage credits](/prijs/credits-en-limieten).
 
 **Claude Team** is waar de meeste Nederlandse MKB-bedrijven uitkomen. Het plan loopt van 2 tot 150 gebruikers, met centraal beheer, gedeelde Projects en SSO. Anthropic gebruikt jullie data standaard niet voor modeltraining. De premium seat heeft vijf keer de gebruiksruimte van een standaard seat en is bedoeld voor de zwaarste gebruikers in het team. Je mag standaard- en premium-seats mixen. Elke seat brengt ook API-credits in een gedeelde pot: $20 per standaard seat en $100 per premium seat, tot maximaal $500 per maand. Wat die credits wel en niet dekken lees je bij de [gebruikslimieten](/prijs/credits-en-limieten).
 
@@ -183,4 +189,4 @@ Wij zijn daar transparant in. Onze [Claude Readiness Scan](/claude-readiness-sca
 
 **Automatisering en maatwerk:** de API, naast je abonnement. Je betaalt per gebruik en de kosten schalen van tientjes tot duizenden euro's per maand. Met een eigen spend limit in de Claude Console houd je zelf de rem erop.
 
-De prijzen hierboven zijn een momentopname van 22 oktober 2026. De rekensom die blijft staan: een standaard Team-seat kost ongeveer 22 euro per gebruiker per maand. Reken uit wat een uur van een medewerker jou kost. Bespaart Claude per persoon meer dan dat ene uur per maand, dan is de licentie terugverdiend. Het echte werk zit in de implementatie.
+De prijzen hierboven zijn een momentopname. De abonnementen zijn gecheckt op 10 november 2026, de API-tarieven op 22 oktober 2026. De rekensom die blijft staan: een standaard Team-seat kost ongeveer 22 euro per gebruiker per maand. Reken uit wat een uur van een medewerker jou kost. Bespaart Claude per persoon meer dan dat ene uur per maand, dan is de licentie terugverdiend. Het echte werk zit in de implementatie.
