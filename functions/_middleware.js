@@ -79,7 +79,36 @@ function is404Pad(pathname) {
   return false;
 }
 
+// Staging (scripts/staging.sh) draait als apart Pages-project met de variabele
+// STAGING_WACHTWOORD. Is die gezet, dan vraagt elke URL om dat wachtwoord (Basic Auth, de
+// gebruikersnaam doet niet mee). Het productieproject heeft die variabele niet, dus daar
+// verandert niets.
+function stagingSlot(request, wachtwoord) {
+  const kop = request.headers.get('Authorization') || '';
+  if (kop.startsWith('Basic ')) {
+    try {
+      const [, ww = ''] = atob(kop.slice(6)).split(/:(.*)/s);
+      if (ww === wachtwoord) return null;
+    } catch {
+      // Kapotte header: behandelen als geen wachtwoord.
+    }
+  }
+  return new Response('Staging van implementeren.ai: wachtwoord nodig.', {
+    status: 401,
+    headers: {
+      'WWW-Authenticate': 'Basic realm="implementeren.ai staging", charset="UTF-8"',
+      'X-Robots-Tag': 'noindex, nofollow',
+      'Cache-Control': 'no-store',
+    },
+  });
+}
+
 export async function onRequest(context) {
+  const ww = context.env && context.env.STAGING_WACHTWOORD;
+  if (ww) {
+    const slot = stagingSlot(context.request, ww);
+    if (slot) return slot;
+  }
   const url = new URL(context.request.url);
   const p = normalize(url.pathname);
   const r = Object.hasOwn(REDIRECTS, p) ? REDIRECTS[p] : null;

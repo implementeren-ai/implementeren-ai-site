@@ -20,10 +20,35 @@ gh pr merge <nr> --squash --admin --delete-branch
 ```
 
 The bypass covers merging PRs only; direct pushes to `main` stay blocked, for Max too. Leave the
-ruleset's bypass list as it is. Open the PR, let Cloudflare
-build the preview, and post the preview link in the PR so the reviewer can look at the real page.
+ruleset's bypass list as it is. Open the PR, put it on staging (below) and post the staging link in the PR.
 When several open PRs touch the same files, merge them one by one and bring the next one up to date
 with `main` before approving it: a push after an approval dismisses it.
+
+## Review means staging (Max, 6 November 2026)
+
+A review is never a GitHub diff or markdown. The reviewer sees the full rendered page, exactly as
+it would go live, and gets told what to look for. Every PR that changes what a visitor sees gets:
+
+1. **A staging deploy:** `scripts/staging.sh pr-<n> <n>` (several PRs together:
+   `scripts/staging.sh <name> <n> <n> ...`). It builds origin/main plus those PRs with
+   `STAGING=1`, so pages with `status: review` render too, and deploys to the separate Pages
+   project `implementeren-ai-staging`: `https://<name>.implementeren-ai-staging.pages.dev`.
+   Password protected (`STAGING_WACHTWOORD`, a variable on that project only; never put the
+   password in the repo, a PR or a page), always noindex, orange "Staging, niet live" bar.
+   Production is untouched: it only deploys via `.github/workflows/deploy.yml`.
+2. **A review sheet:** what to look for, per page, concretely. The specific facts and prices to
+   check, each with the source link; claims that need a human eye; what was deliberately left
+   out; links and CTA; how it looks on a phone. Not a generic checklist. The sheet is a temporary
+   page at `claudezakelijk.pages.dev/tijdelijk/<slug>/` (see the claude-cowork-practice repo) and
+   links straight to the staging URLs.
+3. **Show it:** open the review sheet for Max (`~/.claude/helpers/chrome-open.sh --prive`) and
+   put the staging link and the sheet link in the PR.
+
+Content waiting for a launch carries `status: review`: it is not built in production, only on
+staging. Staging needs `gh` and the Pages-only API token in
+`~/.config/cloudflare/implementeren-staging-token` on the M1 Pro (no expiry; `scripts/staging.sh`
+reads it itself). Never print it. Without it, wrangler falls back to `npx wrangler login`, whose
+OAuth expires.
 
 ## Adding a page
 
