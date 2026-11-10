@@ -20,6 +20,10 @@ klaargezet en gaan daarna op één dag tegelijk live, samen met de neutrale home
    de week-4-check van 24 november. Change of Address is ook voor de www-property bevestigd.
 2. **Er is een Claude-hub** (bijvoorbeeld `/claude`) die "claude zakelijk" overneemt van de
    homepage: eigen title, H1 en FAQ, en de Claude-pagina's linken ernaar.
+   Gebouwd op `/claude` (`src/pages/claude.astro`). De hub hangt aan dezelfde schakelaar:
+   zolang `vendorsLive` false is, is hij noindex en buiten de sitemap en tonen de
+   Claude-artikelen en gidsen hun link ernaartoe nog niet. Met `vendorsLive = true` gaat dat
+   allemaal vanzelf aan.
 3. **Alle vendor-PR's zijn gemerged** met `status: review`, en Camiel heeft elke pagina met naam
    goedgekeurd.
 4. **De hele batch is samen gecontroleerd**:

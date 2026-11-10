@@ -6,6 +6,7 @@
 export const paginaLabels: Record<string, string> = {
   '/': 'Claude zakelijk inzetten voor het MKB',
   '/ai-enablement-scan': 'Gratis AI-check: is je bedrijf klaar voor Claude?',
+  '/claude': 'Claude zakelijk: Pro, Team en Enterprise uitgelegd',
   '/cases': 'Wat we met Claude gebouwd hebben',
   '/claude-compagnon': 'Claude Compagnon: AI-abonnement voor je team',
   '/claude-consultant': 'Claude consultant voor het Nederlandse MKB',
