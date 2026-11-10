@@ -36,6 +36,7 @@ export const zakelijk = {
   exact: [
     '/',
     '/ai-enablement-scan',
+    '/ai-implementatie',
     '/claude-compagnon',
     '/claude-consultant',
     '/claude-implementatie',
