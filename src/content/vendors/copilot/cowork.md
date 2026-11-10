@@ -21,6 +21,9 @@ internalLinks:
 - /compliance/ai-geletterdheid
 - /ai-enablement-scan
 - /integraties/microsoft-365
+- /compliance/eu-hosting
+- /compliance/anthropic-dpa
+- /methodologie
 schemaTypes:
 - Article
 - FAQPage
@@ -75,15 +78,15 @@ Je beschrijft in gewone taal wat je nodig hebt, en Cowork stuurt e-mails, plant 
 
 Volgens de [toepassingskaart van Microsoft](https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card) voert Cowork meerstaps-taken uit: e-mails versturen, vergaderingen plannen, documenten maken, in Teams posten, onderzoek doen en bestanden beheren. Elke actie is zichtbaar in het gesprek. Gevoelige acties gaan pas door nadat jij expliciet akkoord geeft.
 
-Cowork is op [16 juni 2026](https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/) algemeen beschikbaar geworden, wereldwijd, voor klanten van Microsoft 365 Copilot. Bij de start draait het op modellen van [Anthropic, de maker van Claude](/integraties/microsoft-365), waaronder Opus 4.8 en Sonnet 4.6. Daarom staat Anthropic ook in de lijst met vereisten verderop.
+Cowork is op [16 juni 2026](https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/) algemeen beschikbaar geworden, wereldwijd, voor klanten van Microsoft 365 Copilot. [Bij de start draait het op modellen van Anthropic](https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/). Daarom staat Anthropic ook in de lijst met vereisten verderop. Wil je Claude zelf aan Microsoft 365 koppelen, lees dan [Claude koppelen aan Microsoft 365](/integraties/microsoft-365). Niet te verwarren met Cowork in de Claude-app van Anthropic zelf: Copilot Cowork is het Microsoft-product binnen Microsoft 365 en wordt via je Microsoft-licentie en Copilot Credits afgerekend.
 
 ## Microsoft Copilot Cowork: wat het kan en waar het stopt
 
 Cowork werkt binnen de bestaande Microsoft 365-rechten van de gebruiker. Wat een medewerker niet mag openen, valt ook buiten bereik van de taak. Daarom is het verstandig je rechten in SharePoint en OneDrive na te lopen voordat je het uitrolt.
 
-Microsoft geeft op het gebied van gegevens twee toezeggingen. Prompts, antwoorden en data die via Microsoft Graph worden benaderd, gebruikt Microsoft niet om foundation-LLM's te trainen. En organisatiedata blijft binnen Microsoft 365. Een beheerder kan toegang uitzetten per gebruiker of per beveiligingsgroep via het Microsoft 365 admin center.
+Microsoft geeft op het gebied van gegevens [twee toezeggingen](https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card). Prompts, antwoorden en data die via Microsoft Graph worden benaderd, gebruikt Microsoft niet om foundation-LLM's te trainen. Organisatiedata blijft binnen Microsoft 365, met als kanttekening de verwerking door Anthropic die hieronder bij de vereisten staat. Een beheerder kan toegang uitzetten per gebruiker of per beveiligingsgroep via het Microsoft 365 admin center.
 
-Dit zijn de beperkingen die Microsoft zelf noemt:
+Dit zijn de beperkingen die [Microsoft zelf noemt](https://learn.microsoft.com/en-us/microsoft-365/copilot/responsible-ai/copilot-cowork-application-card):
 
 - Cowork heeft geen toegang tot lokale bestanden op een laptop.
 - Cowork kan geen bestanden of mappen verwijderen in OneDrive of SharePoint.
@@ -102,6 +105,8 @@ De [licentiegids van Microsoft](https://www.microsoft.com/licensing/guidance/Cop
 2. Cowork ingeschakeld in de Copilot-omgeving.
 3. Usage-based billing voor Copilot Credits ingeschakeld.
 4. Anthropic ingeschakeld in de tenant.
+
+Die vierde vereiste past bij het feit dat Cowork op modellen van Anthropic draait. Of en hoe dat onder de EU Data Boundary valt, noemen de bronnen op deze pagina niet. Voor een Nederlands MKB is dat de privacyvraag om eerst te stellen. Lees daarvoor onze uitleg over [EU-hosting](/compliance/eu-hosting) en over de [verwerkersovereenkomst van Anthropic](/compliance/anthropic-dpa).
 
 Voor het MKB is Copilot Business (in het Nederlands Microsoft 365 Copilot Bedrijven) de gangbare route. Op de Nederlandse pagina staat Cowork bij de plan-highlights. De [prijzen](https://www.microsoft.com/nl-nl/microsoft-365-copilot/business), exclusief btw:
 
@@ -131,7 +136,7 @@ Een rekenvoorbeeld: een medewerker die 20 lichte taken per maand laat uitvoeren,
 
 ### Prepaid of pay-as-you-go
 
-Microsoft noemt prepaid-credits met een jaarlijkse looptijd de laagste kosten per credit. Het Copilot Credit Pre-Purchase Plan (P3) is een jaarlijkse vooruitbetaling met kortingen van 5% bij 300.000 credits tot 20% bij 300.000.000 credits. Ongebruikte credits vervallen aan het einde van de jaarlijkse looptijd. Alle prijzen zijn in USD en kunnen wijzigen. Voor een klein team is PayGo meestal het veiligste begin, omdat je niets vooruitbetaalt dat kan vervallen.
+Microsoft noemt prepaid-credits met een jaarlijkse looptijd de laagste kosten per credit. Het [Copilot Credit Pre-Purchase Plan (P3)](https://www.microsoft.com/licensing/guidance/CopilotCreditsGuide) is een jaarlijkse vooruitbetaling met kortingen van 5% bij 300.000 credits tot 20% bij 300.000.000 credits. Ongebruikte credits vervallen aan het einde van de jaarlijkse looptijd. Alle prijzen zijn in USD en kunnen wijzigen. Voor een klein team is PayGo meestal het veiligste begin, omdat je niets vooruitbetaalt dat kan vervallen.
 
 ## Zo zet je gebruiksgebaseerde facturering aan
 
@@ -141,7 +146,7 @@ Credits worden gefactureerd aan een gekozen Azure-abonnement. Heb je er geen, da
 
 ## Wat wij zelf met vergelijkbare taken zagen
 
-In mei 2026 bouwden we een workflow die vergadernotities omzette in actiepunten, waardoor 45 minuten uitwerken per gesprek terugliep naar 5 minuten. Dat deden we met Claude. De details staan in de case [consultant-brief](/cases/consultant-brief). Cowork hebben wij niet zelf getest. Alle cijfers over Cowork op deze pagina komen uit de bronnen van Microsoft.
+In mei 2026 bouwden we een workflow die vergadernotities omzette in actiepunten, waardoor 45 minuten uitwerken per gesprek terugliep naar 5 minuten. Dat deden we met Claude. De details staan in de case [consultant-brief](/cases/consultant-brief). Cowork hebben wij niet zelf getest. Alle cijfers over Cowork op deze pagina komen uit de bronnen van Microsoft. Hoe wij bronnen kiezen en controleren, staat in onze [werkwijze](/methodologie).
 
 ## Past Copilot Cowork bij jouw bedrijf?
 
