@@ -7,7 +7,7 @@ targetKeywords:
   - claude gebruikslimiet
   - claude usage limits
   - claude limiet
-wordCountTarget: 1450
+wordCountTarget: 1600
 priority: 2
 tier: 2
 cases:
@@ -27,15 +27,15 @@ author: camiel
 competitors: []
 status: published
 publishDate: 2026-10-02
-updatedDate: 2026-10-22
+updatedDate: 2026-11-10
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-22
-kortAntwoord: "Claude werkt met twee gebruikslimieten tegelijk: een budget binnen een rollend venster van 5 uur en, op betaalde plannen, een weeklimiet. Alle apps en Claude Code delen dat budget. Er is geen vast aantal berichten. Bereik je de limiet, dan kun je wachten, een ruimer plan nemen of usage credits aanzetten tegen API-tarieven. Stand: 22 oktober 2026."
+kortAntwoord: "Claude werkt met twee gebruikslimieten tegelijk: een budget binnen een rollend venster van 5 uur en, op betaalde plannen, een weeklimiet. Alle apps en Claude Code delen dat budget. Er is geen vast aantal berichten. Bereik je de limiet, dan kun je wachten, een ruimer plan nemen of usage credits aanzetten tegen API-tarieven. Claude Ultra heeft voor geverifieerde accounts geen 5-uurslimiet. Stand: 10 november 2026 voor Max en Ultra, 22 oktober 2026 voor de rest."
 bronnen:
   - titel: "Anthropic prijspagina, met de uitleg over gebruikslimieten per plan (claude.com/pricing)"
     url: "https://claude.com/pricing"
-    geraadpleegd: "22 oktober 2026"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic supportartikel over gebruiks- en lengtelimieten"
     url: "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work"
     geraadpleegd: "2 oktober 2026"
@@ -50,7 +50,10 @@ bronnen:
     geraadpleegd: "2 oktober 2026"
   - titel: "Anthropic supportartikel: What is the Max plan?"
     url: "https://support.claude.com/en/articles/11049741-what-is-the-max-plan"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "10 november 2026"
+  - titel: "Anthropic supportartikel: What is the Ultra plan?"
+    url: "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan"
+    geraadpleegd: "10 november 2026"
   - titel: "Anthropic supportartikel: Claude Fable models on your plan"
     url: "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan"
     geraadpleegd: "2 oktober 2026"
@@ -65,7 +68,7 @@ bronnen:
     geraadpleegd: "2 oktober 2026"
   - titel: "Anthropic supportartikel: API credits for Max and Team plans"
     url: "https://support.claude.com/en/articles/17154008-api-credits-for-max-and-team-plans"
-    geraadpleegd: "22 oktober 2026"
+    geraadpleegd: "10 november 2026"
 hasCalculator: false
 faq:
   - question: "Hoeveel berichten kan ik versturen met Claude Pro?"
@@ -73,11 +76,11 @@ faq:
   - question: "Wat gebeurt er als ik mijn Claude limiet bereik?"
     answer: "Je krijgt een melding dat je limiet bereikt is. Volgens Anthropic kun je dan wachten tot de limiet zich herstelt, een ruimer plan nemen of usage credits kopen. Met usage credits werk je na je limiet door en betaal je dat extra gebruik tegen standaard API-tarieven."
   - question: "Heeft Claude Team hogere limieten dan Claude Pro?"
-    answer: "Ja. Een standaard Team-seat heeft per sessie 1,25 keer de gebruiksruimte van Pro. Een premium Team-seat heeft vijf keer de ruimte van een standaard seat, dus 6,25 keer Pro. Voor individuele veelgebruikers bestaan daarnaast Claude Max 5x en 20x, met vijf en twintig keer de ruimte van Pro."
+    answer: "Ja. Een standaard Team-seat heeft per sessie 1,25 keer de gebruiksruimte van Pro. Een premium Team-seat heeft vijf keer de ruimte van een standaard seat, dus 6,25 keer Pro. Voor individuele veelgebruikers bestaan daarnaast Claude Max en Claude Ultra. Max geeft vijf keer de ruimte van Pro, per venster van 5 uur en per week. Ultra geeft per week tien keer de ruimte van Pro en heeft voor geverifieerde accounts geen 5-uurslimiet. De Team-getallen gaan per sessie en het Ultra-getal gaat per week, dus die kun je niet één op één vergelijken."
   - question: "Kan ik extra Claude-credits kopen als ik tegen de limiet aanloop?"
     answer: "Ja. Op betaalde plannen kun je usage credits kopen. Je zet vooraf tegoed klaar en na je limiet wordt je gebruik afgerekend tegen standaard API-tarieven. Op Pro en Max zet je dit aan via Settings en dan Usage. Bij Team en Enterprise met seats regelt een Owner dit onder Organization settings."
-  - question: "Zitten er API-credits bij Claude Max of Team?"
-    answer: "Ja. Max 5x krijgt 100 dollar en Max 20x 200 dollar aan API-credits per maand. Bij Team is het 20 dollar per standaard seat en 100 dollar per premium seat, samen in één pot van maximaal 500 dollar per maand. De credits gelden voor de Claude API, niet voor je gebruikslimiet in de apps of Claude Code. Ongebruikte credits vervallen aan het eind van elke factuurperiode."
+  - question: "Zitten er API-credits bij Claude Max, Ultra of Team?"
+    answer: "Ja. Max krijgt 100 dollar en Ultra 200 dollar aan API-credits per maand. Bij Team is het 20 dollar per standaard seat en 100 dollar per premium seat, samen in één pot van maximaal 500 dollar per maand. De credits gelden voor de Claude API, niet voor je gebruikslimiet in de apps of Claude Code. Ongebruikte credits vervallen aan het eind van elke factuurperiode."
 ---
 
 <!--
@@ -100,13 +103,18 @@ faq:
     Enterprise, per 6 mei 2026): https://www.anthropic.com/news/higher-limits-spacex
   - Fable-modellen verbruiken de limiet sneller dan andere modellen:
     https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan
-  - API-credits bij Max en Team (gecheckt 22 oktober 2026): Max 5x $100/mnd, Max 20x
+  - API-credits bij Max, Ultra en Team (gecheckt 10 november 2026): Max $100/mnd, Ultra
     $200/mnd; Team $20 per standaard seat en $100 per premium seat, gepoold, plafond
     $500/mnd; niet voor Free, Pro en Enterprise; geldig voor Messages- en Batches-API,
     Console Playground, Managed Agents en Agent SDK, niet voor interactieve Claude Code
     of extra usage in de apps; vervallen aan het eind van elke factuurperiode; claimen
     na 7 dagen op het plan door één Console-organisatie te koppelen:
     https://support.claude.com/en/articles/17154008-api-credits-for-max-and-team-plans
+  - Max: vijf keer Pro per 5 uur en per week, $100/mnd (gecheckt 10 november 2026):
+    https://support.claude.com/en/articles/11049741-what-is-the-max-plan
+  - Ultra 10x Pro per week, geen 5-uurslimiet voor geverifieerde accounts, $200/mnd
+    (gecheckt 10 november 2026): https://claude.com/pricing
+  - Ultra is de nieuwe naam van Max 20x (gecheckt 10 november 2026): https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan
   - Niet te bevestigen en daarom geschrapt: de datum waarop de weeklimiet is ingevoerd.
   - Praktijkcijfers uitsluitend uit src/content/cases/powerbi-reporting.md
   Interne links om toe te voegen zodra de andere prijs-artikelen published zijn:
@@ -117,7 +125,7 @@ De Claude gebruikslimiet is het onderdeel van de prijsstructuur waar zakelijke g
 
 ## Twee limieten tegelijk: het 5-uursvenster en de weeklimiet
 
-Elk Claude-abonnement heeft een limiet die zich herstelt in een rollend venster van 5 uur. Betaalde plannen hebben daarbovenop een weeklimiet. Die herstelt zich elke week op een vast moment dat bij je account hoort. Belangrijk om te weten: alles wat je met je account doet, komt uit hetzelfde budget. Claude op het web, de desktop-app, de mobiele app en Claude Code tellen bij elkaar op.
+Bijna elk Claude-abonnement heeft een limiet die zich herstelt in een rollend venster van 5 uur. Betaalde plannen hebben daarbovenop een weeklimiet. De uitzondering is Claude Ultra: geverifieerde accounts hebben daar geen 5-uurslimiet, alleen de weeklimiet. Die herstelt zich elke week op een vast moment dat bij je account hoort. Belangrijk om te weten: alles wat je met je account doet, komt uit hetzelfde budget. Claude op het web, de desktop-app, de mobiele app en Claude Code tellen bij elkaar op.
 
 Anthropic drukt het budget niet uit in een aantal berichten. Volgens Anthropic bepalen vier dingen hoe snel het opgaat: het model dat je kiest, de lengte en complexiteit van je gesprek, de functies die je gebruikt en het ingestelde effort-niveau. Een consultant die de hele ochtend korte vragen aan Claude Sonnet stelt, merkt de limiet zelden. Een developer die met een zwaar model door een grote codebase ploegt, kan hem voor de lunch al zien. De Fable-modellen verbruiken je limiet volgens Anthropic sneller dan de andere modellen.
 
@@ -127,10 +135,13 @@ Absolute aantallen publiceert Anthropic niet. De verhoudingen tussen de plannen 
 
 - **Claude Free:** het kleinste budget, voor alledaagse vragen.
 - **Claude Pro:** per sessie minstens vijf keer de ruimte van Free.
-- **Claude Max 5x en 20x:** vijf en twintig keer de ruimte van Pro, voor individuele veelgebruikers.
+- **Claude Max:** vijf keer de ruimte van Pro, per venster van 5 uur en per week, voor individuele veelgebruikers.
+- **Claude Ultra:** per week tien keer de ruimte van Pro, zonder 5-uurslimiet voor geverifieerde accounts. Ultra is de nieuwe naam van Max 20x, zie [het helpartikel van Anthropic over Ultra](https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan). Ongeverifieerde accounts hebben tijdelijk nog wel een 5-uurslimiet.
 - **Claude Team, standaard seat:** 1,25 keer de ruimte van Pro per sessie, plus de teamfuncties.
 - **Claude Team, premium seat:** vijf keer de ruimte van een standaard seat, voor de zwaarste gebruikers in het team.
 - **Claude Enterprise:** $20 per seat, vanaf 20 seats, en al het verbruik betaal je tegen API-tarieven.
+
+Let op de eenheden. De getallen van Team gaan per sessie, het getal van Ultra gaat per week. Leg ze dus niet één op één naast elkaar. Per sessie is een premium Team-seat met 6,25 keer Pro het grootste getal in dit rijtje. Ultra heeft geen 5-uurslimiet en dus geen getal per sessie.
 
 Bij Team gelden de limieten per persoon. Raakt één collega zijn limiet, dan werken de anderen gewoon door.
 
@@ -150,12 +161,12 @@ Loop je vast, dan heb je vier routes, van gratis naar structureel:
 
 **4. Terugkerend werk naar de API verhuizen.** De API heeft geen 5-uursvenster en geen weeklimiet. Je betaalt per verwerkte token. Er gelden wel rate limits en een maandelijks bestedingsplafond per tier, en je kunt in de Claude Console zelf een lagere spend limit instellen. Reken je scenario door met de [API-kostencalculator](/tools/claude-api-kosten-calculator).
 
-## API-credits bij Max en Team
+## API-credits bij Max, Ultra en Team
 
-Voor die vierde route krijg je op twee plannen tegoed mee. Max en Team bevatten sinds kort een maandelijks budget aan API-credits:
+Voor die vierde route krijg je op drie plannen tegoed mee. Max, Ultra en Team bevatten sinds kort een maandelijks budget aan API-credits:
 
-- **Claude Max 5x:** $100 per maand.
-- **Claude Max 20x:** $200 per maand.
+- **Claude Max:** $100 per maand.
+- **Claude Ultra:** $200 per maand.
 - **Claude Team:** $20 per standaard seat en $100 per premium seat, samen in één gedeelde pot van maximaal $500 per maand.
 
 Free, Pro en Enterprise krijgen geen API-credits. Een team met tien standaard seats heeft dus $200 per maand, en vijf premium seats halen het plafond van $500 al.
