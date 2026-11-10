@@ -26,6 +26,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude een bouwofferte opstellen?"
     answer: "Claude genereert conceptoffertes op basis van je standaardteksten, eerdere offertes en de projectspecificaties. Je levert de hoeveelheden en eenheidsprijzen, Claude combineert dat tot een leesbare offerte met dekkende voorwaarden. De calculator of projectleider controleert en past aan. Lees meer op onze pagina over offerte maken met Claude."

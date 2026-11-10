@@ -21,6 +21,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Mag ik patientgegevens invoeren in Claude?"
     answer: "Nee, niet zonder strikte maatregelen. Patientgegevens zijn persoonsgegevens en vallen onder de AVG en de Wgbo. Claude draait in de cloud. Medische data is altijd rode data in ons classificatiemodel: die gaat niet naar een cloudservice. Gebruik Claude alleen voor generieke teksten, templates en processen. Patientspecifieke data blijft in je praktijksoftware."

@@ -28,6 +28,8 @@ schemaTypes:
 author: camiel
 status: review
 publishDate: 2026-11-05
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-05
 vendor: copilot
 soort: landing
 claudeSibling: /prijs/pro-vs-team-vs-enterprise

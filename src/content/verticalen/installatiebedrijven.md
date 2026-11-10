@@ -34,8 +34,8 @@ status: published
 publishDate: 2026-11-23
 updatedDate: 2026-10-27
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-27
 kortAntwoord: "Claude voor installatiebedrijven helpt bij het schrijfwerk na de klus: een werkbon uit de korte notitie van de monteur, de tekst rond een calculatie in de offerte en conceptmails aan klanten. Calculeren en aftekenen blijven mensenwerk. Een Claude Team-seat kost 25 dollar per gebruiker per maand, ongeveer 22 euro exclusief btw (ECB-koers 27 oktober 2026)."
 bronnen:
   - titel: "Claude, plans en prijzen (claude.com)"

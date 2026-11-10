@@ -33,6 +33,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Claude ondersteunt advocaten bij het leeswerk: contracten en NDA's clausule voor clausule vergelijken met het eigen model, dossiers indexeren, gespreksverslagen maken en jurisprudentie samenvatten in een vast format. Het pleit of adviseert niet; de advocaat blijft eindverantwoordelijk en verifieert elke verwijzing. De geheimhoudingsplicht (artikel 11a Advocatenwet) vraagt een zakelijk abonnement met verwerkersovereenkomst en pseudonimisering van cliëntgegevens."
 bronnen:
   - titel: "Advocatenwet, artikel 10a (kernwaarden) en artikel 11a (geheimhoudingsplicht) (wetten.overheid.nl)"

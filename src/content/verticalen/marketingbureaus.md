@@ -33,6 +33,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Claude ondersteunt marketingbureaus bij Google Ads-audits via de API, SEO-analyses op complete Search Console-data, klantrapportages met automatische duiding en eerste contentversies per merktemplate. Specialisten beoordelen de analyses en houden het klantcontact. Omdat een bureau vaak verwerker is onder artikel 28 AVG, hoort daar een zakelijk abonnement met verwerkersovereenkomst en gepseudonimiseerde klantdata bij."
 bronnen:
   - titel: "Autoriteit Persoonsgegevens: de verwerkersovereenkomst, artikel 28 AVG (autoriteitpersoonsgegevens.nl)"

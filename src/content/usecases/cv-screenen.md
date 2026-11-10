@@ -25,6 +25,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Mag ik CV's door Claude laten screenen onder de AVG?"
     answer: "Alleen als je de persoonsgegevens pseudonimiseert. CV's bevatten namen, adressen, geboortedata en werkgeschiedenis. Dat is rode data. Vervang identificerende gegevens voor je ze aan Claude voorlegt. Laat Claude screenen op vaardigheden en ervaring, niet op identiteit. Wij bouwen die anonimiseringslaag in de workflow."

@@ -36,8 +36,8 @@ status: published
 publishDate: 2026-12-07
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 disclaimer: null
 kortAntwoord: "Claude koppelen aan Google Workspace doe je met de connectors van Anthropic voor Gmail, Google Agenda en Google Drive. Ze werken in Claude op het web en in Claude Desktop, op elk abonnement. Bij Team en Enterprise zet een eigenaar ze eerst aan. Mail versturen en bestanden delen keur je standaard per actie goed (stand 29 oktober 2026)."
 bronnen:

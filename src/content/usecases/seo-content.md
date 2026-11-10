@@ -23,6 +23,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Wordt mijn website gestraft als ik Claude gebruik voor SEO content?"
     answer: "Niet als je het goed doet. Google straft scaled content abuse, niet AI-gebruik. Het verschil is waarde. Een pagina die een vraag beter beantwoordt dan bestaande resultaten wint, ongeacht hoe die is geschreven. Een pagina die bestaat om te ranken zonder waarde toe te voegen wordt gestraft. De methode die wij toepassen voegt echte ervaring, concrete cijfers en unieke cases toe. Dat is wat Google beloont."

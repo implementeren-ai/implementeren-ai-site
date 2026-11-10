@@ -28,6 +28,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Hoeveel champions heb ik nodig per team?"
     answer: "Twee tot vier, afhankelijk van de teamgrootte. Bij teams tot 15 medewerkers volstaan 2 champions. Bij 15 tot 30 medewerkers adviseren we 3 tot 4. De vuistregel is 1 champion per 7 tot 8 collega's. Meer is niet beter: te veel champions verdunt de verantwoordelijkheid en niemand voelt zich echt eigenaar."

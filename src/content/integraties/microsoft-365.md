@@ -41,8 +41,8 @@ status: published
 publishDate: 2026-11-09
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-09
 disclaimer: null
 kortAntwoord: "Claude heeft een officiële Microsoft 365 connector van Anthropic. Die leest Outlook-mail, agenda, SharePoint, OneDrive en Teams, altijd met de rechten van de ingelogde gebruiker. Je hebt een werkaccount in een Microsoft Entra-tenant nodig en een Global Administrator geeft eenmalig toestemming. Schrijven, zoals mail versturen, zet de beheerder apart aan."
 bronnen:

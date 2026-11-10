@@ -25,6 +25,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Mag ik patientgegevens invoeren in Claude?"
     answer: "Nee, niet zonder maatregelen. Patientgegevens zijn persoonsgegevens en vallen onder de AVG en de WGBO. Pseudonimiseer alle identificerende gegevens voordat je ze aan Claude voorlegt: vervang namen, BSN-nummers en geboortedatums door codes. Of gebruik een lokaal model via Ollama dat geen data naar de cloud stuurt. Wij helpen praktijken die scheiding in te richten."

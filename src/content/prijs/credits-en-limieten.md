@@ -29,6 +29,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: 2026-10-22
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-22
 kortAntwoord: "Claude werkt met twee gebruikslimieten tegelijk: een budget binnen een rollend venster van 5 uur en, op betaalde plannen, een weeklimiet. Alle apps en Claude Code delen dat budget. Er is geen vast aantal berichten. Bereik je de limiet, dan kun je wachten, een ruimer plan nemen of usage credits aanzetten tegen API-tarieven. Stand: 22 oktober 2026."
 bronnen:
   - titel: "Anthropic prijspagina, met de uitleg over gebruikslimieten per plan (claude.com/pricing)"

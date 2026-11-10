@@ -24,6 +24,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Moet ik kunnen programmeren om Claude Code te gebruiken?"
     answer: "Nee. Claude Code voor niet-developers werkt doordat jij beschrijft wat je wilt bouwen en Claude de code schrijft. Je hoeft geen programmeerkennis te hebben. Wel moet je in staat zijn om duidelijk te formuleren wat het systeem moet doen. Dat is een andere vaardigheid dan coderen, maar het is wel een vaardigheid."

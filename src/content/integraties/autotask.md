@@ -27,6 +27,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Heeft Claude een kant-en-klare Autotask connector?"
     answer: "Nee. Claude heeft geen ingebouwde connector voor Autotask of andere PSA-platformen. De koppeling werkt via een MCP server die de Autotask REST API aanspreekt. Die MCP server draait lokaal op jouw machine en geeft Claude Code directe toegang tot tickets, klantdata en SLA-informatie. Wij hebben die koppeling gebouwd en draaien hem in productie."

@@ -25,6 +25,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 hasCalculator: true
 faq:
   - question: "Wat kost een Claude API call gemiddeld?"

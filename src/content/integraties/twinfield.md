@@ -23,6 +23,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude direct inloggen op Twinfield?"
     answer: "Nee. Claude heeft geen eigen Twinfield-login. De koppeling loopt via de Twinfield API van Wolters Kluwer. Je bouwt een MCP server die de API aanroept, en Claude leest de resultaten. De credentials blijven op jouw server. Claude ziet alleen de data die je doorgeeft."

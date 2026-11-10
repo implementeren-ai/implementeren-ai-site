@@ -35,6 +35,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "De AI Act geldt voor elk MKB-bedrijf dat AI gebruikt. Artikel 4 over AI-geletterdheid geldt sinds 2 februari 2025 en is in juli 2026 versoepeld: je moet maatregelen nemen, een bepaald niveau garanderen hoeft niet. De transparantieregels van artikel 50 gelden sinds 2 augustus 2026. De regels voor hoog-risicosystemen zijn uitgesteld naar 2 december 2027 en 2 augustus 2028."
 bronnen:
   - titel: "Europese Commissie, AI Act: regelgevend kader en tijdlijn (bijgewerkt 3 augustus 2026)"
@@ -174,6 +176,6 @@ Wat je positie sterk maakt, is aantoonbare inspanning: een inventaris, een belei
 
 ## Wat betekent dit als je Claude gebruikt?
 
-Voor Claude-gebruikers is de huiswerklijst relatief kort. De zware aanbiedersverplichtingen liggen bij Anthropic. Wat jij regelt: de inventaris, het beleid, de AI-geletterdheid en transparantie waar AI klantcontact of publicaties raakt. De zakelijke Claude-producten helpen bij de AVG-kant: de [verwerkersovereenkomst](/compliance/anthropic-dpa) zit in de zakelijke voorwaarden en Anthropic traint standaard niet op je data. Meer daarover in het [compliance-overzicht](/compliance) en in [Is Claude veilig voor bedrijfsdata?](/compliance/is-claude-veilig)
+Voor Claude-gebruikers is de huiswerklijst relatief kort. De zware aanbiedersverplichtingen liggen bij Anthropic. Wat jij regelt: de inventaris, het beleid, [de AI-geletterdheid van je team](/compliance/ai-geletterdheid) en transparantie waar AI klantcontact of publicaties raakt. De zakelijke Claude-producten helpen bij de AVG-kant: de [verwerkersovereenkomst](/compliance/anthropic-dpa) zit in de zakelijke voorwaarden en Anthropic traint standaard niet op je data. Meer daarover in het [compliance-overzicht](/compliance) en in [Is Claude veilig voor bedrijfsdata?](/compliance/is-claude-veilig)
 
 Wie dit liever in één keer goed neerzet: bij elke [Claude-implementatie](/claude-implementatie) richten we de AI-inventaris, het beleid en de teamtraining in als onderdeel van het traject.

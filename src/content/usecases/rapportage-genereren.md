@@ -35,8 +35,8 @@ status: published
 publishDate: 2026-12-17
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 disclaimer: null
 kortAntwoord: "Claude rapportage genereren uit Power BI gaat via een MCP-server van Microsoft. Daarmee leest Claude je semantisch model en voert het DAX-query's uit, zodat elk cijfer uit je eigen model komt. De lokale Power BI Authoring MCP server is algemeen beschikbaar, de gehoste versie is in preview. Claude Code zit in elk betaald Claude-plan, vanaf 20 dollar per maand."
 bronnen:

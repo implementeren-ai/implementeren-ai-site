@@ -28,6 +28,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude direct klantgesprekken voeren?"
     answer: "Ja, via een chatbot-integratie. Claude beantwoordt klantvragen op basis van je kennisbank. Maar wij raden een hybride aanpak aan: Claude handelt routine-vragen af en escaleert complexe of gevoelige vragen naar een medewerker. Volledige autonomie zonder menselijk toezicht is riskant bij klantcontact."

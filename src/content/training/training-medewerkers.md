@@ -30,6 +30,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Wat kost een in-company Claude training?"
     answer: "De prijs hangt af van de groepsgrootte en de gewenste diepte. Een basistraining van een halve dag voor een team van 5 tot 10 medewerkers kost tussen de 1.500 en 2.500 euro exclusief BTW. Een volledige dagtraining inclusief champion-programma voor 10 tot 20 medewerkers kost tussen de 3.000 en 5.000 euro exclusief BTW. Reiskosten binnen Nederland zijn inbegrepen."

@@ -32,6 +32,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Standaard blijft Claude-data niet in de EU. Op het eigen platform van Anthropic (de API, Team en Enterprise) wordt data opgeslagen in de Verenigde Staten. De verwerking is wereldwijd of alleen in de VS. Wil je EU-dataresidentie, gebruik dan AWS Bedrock of Google Vertex AI met een EU-endpoint. Microsoft Foundry heeft in oktober 2026 nog geen EU-datazone voor Claude."
 bronnen:
   - titel: "Anthropic Privacy Center, waar staan de servers en host Anthropic in de EU?"

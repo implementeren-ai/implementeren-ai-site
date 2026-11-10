@@ -32,8 +32,8 @@ status: published
 publishDate: 2026-11-26
 updatedDate: 2026-10-27
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-27
 kortAntwoord: "Claude voor recruitment helpt bij vacatureteksten, gesprekssamenvattingen en persoonlijke outreach. CV screenen kan ook, maar AI voor het selecteren en beoordelen van kandidaten valt onder bijlage III van de AI Act: hoog risico, met regels vanaf 2 december 2027. De AVG geldt nu al. Laat de recruiter daarom elk besluit nemen en pseudonimiseer CV's."
 bronnen:
   - titel: "AI Act Service Desk, bijlage III: hoog-risicosystemen, punt 4 werkgelegenheid (Europese Commissie)"

@@ -26,6 +26,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 hasCalculator: false
 faq:
   - question: "Wat moet er in een Claude business case staan?"

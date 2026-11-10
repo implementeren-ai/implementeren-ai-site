@@ -27,6 +27,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude direct Excel-bestanden lezen?"
     answer: "Claude kan CSV-bestanden en tab-separated data direct verwerken. Voor .xlsx-bestanden gebruik je Claude Code, dat het bestand parseert via Python-libraries en de data aan Claude voorlegt. Bij grote bestanden (meer dan 10.000 rijen) verwerk je de data in chunks of gebruik je samenvattende queries."

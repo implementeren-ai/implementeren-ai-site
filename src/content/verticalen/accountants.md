@@ -35,6 +35,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Claude helpt accountantskantoren met het produceerwerk rond het oordeel: proefbalansen omzetten in leesbare rapportages, samensteldossiers indexeren en ontbrekende stukken signaleren voor de vragenbrief, en cijfers uitleggen in klanttaal. De accountant beoordeelt en tekent zelf. Vertrouwelijkheid, een fundamenteel beginsel uit de VGBA, vraagt om een zakelijk Claude-abonnement met verwerkersovereenkomst en gepseudonimiseerde klantdata."
 bronnen:
   - titel: "Verordening gedrags- en beroepsregels accountants (VGBA), HRA 2026 (nba.nl)"

@@ -29,6 +29,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Hoe herken je een Claude-hallucinatie?"
     answer: "Een hallucinatie is output die er geloofwaardig uitziet maar feitelijk onjuist is. Kenmerken: specifieke getallen of datums die je niet kunt terugvinden in je brondata, referenties naar documenten of artikelen die niet bestaan, en technische details die net iets anders zijn dan de werkelijkheid. De vuistregel: hoe specifieker en gedetailleerder het antwoord, hoe belangrijker het is om te verifieren."

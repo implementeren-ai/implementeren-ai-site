@@ -35,8 +35,8 @@ disclaimer: juridisch
 status: published
 publishDate: 2026-11-12
 updatedDate: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 changelogLine: null
 hasTemplate: true
 deadline: null

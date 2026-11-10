@@ -34,6 +34,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: 2026-10-30
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-30
 kortAntwoord: "Je vindt de Anthropic DPA (Data Processing Addendum) op anthropic.com/legal/data-processing-addendum, in de versie die geldt sinds 24 februari 2025. Hij hoort automatisch bij de zakelijke voorwaarden en dekt de API, Claude Team en Claude Enterprise. Claude Free, Pro en Max vallen erbuiten. Doorgifte buiten de EU is afgedekt met Standard Contractual Clauses. De zakelijke voorwaarden verbieden training op klantdata."
 bronnen:
   - titel: "Anthropic Data Processing Addendum (DPA)"

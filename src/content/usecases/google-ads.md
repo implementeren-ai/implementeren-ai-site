@@ -26,6 +26,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude direct wijzigingen maken in mijn Google Ads account?"
     answer: "Ja, via de Google Ads API en een MCP server kan Claude campagnes pauzeren, budgetten aanpassen, negatieve zoekwoorden toevoegen en biedingen wijzigen. Wij raden aan om wijzigingen eerst als voorstel te genereren en pas na goedkeuring door te voeren. Lees-acties (rapportages, analyses) draaien zonder menselijke tussenkomst."

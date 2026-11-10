@@ -34,8 +34,8 @@ status: published
 publishDate: 2026-11-02
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-02
 kortAntwoord: "Een DPIA voor Claude is verplicht als je verwerking op de lijst van 17 soorten verwerkingen van de Autoriteit Persoonsgegevens staat, of aan twee of meer van de negen Europese criteria voldoet. Zet je Claude in op werknemers, gevoelige gegevens of grote klantbestanden, dan is dat snel het geval. Artikel 35 AVG schrijft de inhoud voor."
 bronnen:
   - titel: "AVG (Verordening (EU) 2016/679), artikel 35 en 36, EUR-Lex"

@@ -36,8 +36,8 @@ status: published
 publishDate: 2026-12-14
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 kortAntwoord: "Claude voor architecten helpt bij het schrijfwerk rond een ontwerp: een concept-Programma van Eisen uit gespreksnotities, omschrijvingen op basis van eerdere bestekteksten en verslagen van bouwteamoverleg. Ontwerpen, rekenen en aftekenen blijven bij de architect. Een Claude Team-seat kost 25 dollar per gebruiker per maand, ongeveer 22 euro exclusief btw (ECB-koers 28 oktober 2026)."
 bronnen:
   - titel: "Claude, plannen en prijzen (claude.com)"

@@ -31,6 +31,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Mag ik patientgegevens in Claude invoeren?"
     answer: "In principe niet via de standaard cloud-API. Patientgegevens zijn bijzondere persoonsgegevens onder artikel 9 AVG en vallen onder NEN 7510. Ze mogen niet naar cloud-AI-diensten buiten je beveiligde zorgnetwerk worden gestuurd. Alternatieven: gebruik Claude met volledig gepseudonimiseerde data, of draai een lokaal model via Ollama op eigen infrastructuur. De data mag het zorgnetwerk niet verlaten."

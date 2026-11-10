@@ -28,6 +28,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Claude neemt makelaars schrijf- en communicatiewerk uit handen: woningteksten in de eigen kantoorstijl, persoonlijke koperscommunicatie die pas na akkoord de deur uitgaat, en marktrapportages op basis van eigen transactiedata. Taxeren en onderhandelen blijven mensenwerk. Voor persoonsgegevens en biedingen geldt de AVG. Dat vraagt een zakelijk abonnement met verwerkersovereenkomst en gepseudonimiseerde invoer."
 bronnen:
   - titel: "NVM over het biedlogboek (nvm.nl)"

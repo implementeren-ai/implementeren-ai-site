@@ -38,8 +38,8 @@ status: published
 publishDate: 2026-12-24
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 kortAntwoord: "Claude meeting notulen maak je van het transcript van een vergadering. Teams levert dat als .docx of .vtt, Claude zet het om in een verslag met besluiten en actiepunten. Audio of video kun je in de Claude-chat niet uploaden. Neem je op, dan meld je dat bij de start en zeg je waarvoor (Autoriteit Persoonsgegevens, stand 29 oktober 2026)."
 bronnen:
   - titel: "Claude Help Center: bestanden uploaden naar Claude (23 juli 2026)"

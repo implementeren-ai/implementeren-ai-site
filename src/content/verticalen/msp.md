@@ -29,6 +29,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Werkt Claude met Autotask en ConnectWise?"
     answer: "Claude heeft geen kant-en-klare connector voor Autotask of ConnectWise. Maar via MCP servers en de REST API's van beide platformen bouw je een directe koppeling. Claude Code leest ticketdata, categoriseert, en schrijft terug. Wij hebben die integraties gebouwd en in productie draaien. Het werkt op elke PSA die een API aanbiedt."
