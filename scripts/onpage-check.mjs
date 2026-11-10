@@ -17,7 +17,12 @@
  *      pages inside <main>, breadcrumb excluded
  *   8. labels in the "Gerelateerd" block (section[data-gerelateerd]) equal the target page's h1,
  *      its title without " | Implementeren.ai", or the last item of its breadcrumb
- *   9. the homepage h1 contains "Claude zakelijk"
+ *   9. the keyword "claude zakelijk" sits in the h1 of the page that owns it, depending on
+ *      `vendorsLive` in src/data/indexering.mjs (docs/vendor-go-live.md):
+ *        - false: the homepage h1 contains "Claude zakelijk"
+ *        - true:  the Claude hub h1 contains "Claude zakelijk" (/claude; falls back to
+ *                 /gids/claude-voor-mkb when /claude is not built), and the homepage h1 is
+ *                 about AI implementeren ("Claude zakelijk" is no longer required there)
  *
  * Usage: node scripts/onpage-check.mjs [--min-inbound=3] [--verbose]
  * Exit 0 = no failures, exit 1 = at least one failure.
@@ -28,7 +33,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(ROOT);
-const { isZakelijkPad } = await import('../src/data/indexering.mjs');
+const { isZakelijkPad, vendorsLive } = await import('../src/data/indexering.mjs');
 const DIST = join(ROOT, 'dist');
 const SITE = 'https://implementeren.ai';
 const SUFFIX = ' | Implementeren.ai';
@@ -168,15 +173,39 @@ for (const [url, p] of pages) {
   }
 }
 
+// Check 9: wie draagt "claude zakelijk"? Tot de vendor-go-live de homepage, daarna de
+// Claude-hub; de homepage is dan neutraal (docs/vendor-go-live.md). De stand komt uit
+// vendorsLive in src/data/indexering.mjs, zodat de go-live-PR deze check vanzelf omzet.
+const CLAUDE_ZAKELIJK = /claude zakelijk/i;
+const AI_IMPLEMENTEREN = /\bAI[\s-]*implement/i;
+const CLAUDE_HUB = '/claude';
+const CLAUDE_HUB_TERUGVAL = '/gids/claude-voor-mkb';
+const h1Van = (url) => (pages.get(url)?.h1s[0] || '');
 const home = pages.get('/');
-if (home && !/claude zakelijk/i.test(home.h1s[0] || '')) fail('/', `h1 bevat geen "Claude zakelijk": "${home.h1s[0] || ''}"`);
+if (!vendorsLive) {
+  if (home && !CLAUDE_ZAKELIJK.test(h1Van('/'))) fail('/', `h1 bevat geen "Claude zakelijk": "${h1Van('/')}"`);
+} else {
+  if (home && !AI_IMPLEMENTEREN.test(h1Van('/'))) {
+    fail('/', `vendorsLive staat aan: h1 hoort over AI implementeren te gaan (bijvoorbeeld "AI implementeren in jouw MKB"): "${h1Van('/')}"`);
+  }
+  // /claude gebouwd: dan is dat de hub, ook als hij (nog) buiten de sitemap valt. Alleen als
+  // hij helemaal niet gebouwd is, valt de eis terug op de gids.
+  const hub = fileFor(CLAUDE_HUB) ? CLAUDE_HUB : CLAUDE_HUB_TERUGVAL;
+  if (!pages.has(hub)) {
+    fail(hub, fileFor(hub)
+      ? 'vendorsLive staat aan: de Claude-hub is gebouwd maar staat niet in de sitemap, dus kan hij "claude zakelijk" niet overnemen'
+      : `vendorsLive staat aan: geen Claude-hub in dist (${CLAUDE_HUB} en ${CLAUDE_HUB_TERUGVAL} ontbreken)`);
+  } else if (!CLAUDE_ZAKELIJK.test(h1Van(hub))) {
+    fail(hub, `vendorsLive staat aan: h1 van de Claude-hub bevat geen "Claude zakelijk": "${h1Van(hub)}"`);
+  }
+}
 
 if (VERBOSE) {
   for (const url of urls) console.log(`${String(inbound.get(url).size).padStart(3)} inkomend  ${url}`);
 }
 if (failures.length) {
   console.error(failures.join('\n'));
-  console.error(`\nonpage-check: ${failures.length} fout(en) op ${urls.length} sitemap-URL's`);
+  console.error(`\nonpage-check: ${failures.length} fout(en) op ${urls.length} sitemap-URL's (vendorsLive=${vendorsLive})`);
   process.exit(1);
 }
-console.log(`onpage-check: ${urls.length} sitemap-URL's, 0 fouten`);
+console.log(`onpage-check: ${urls.length} sitemap-URL's, 0 fouten (vendorsLive=${vendorsLive})`);
