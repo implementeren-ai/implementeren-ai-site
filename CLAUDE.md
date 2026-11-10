@@ -45,7 +45,10 @@ it would go live, and gets told what to look for. Every PR that changes what a v
    put the staging link and the sheet link in the PR.
 
 Content waiting for a launch carries `status: review`: it is not built in production, only on
-staging. Staging needs `gh` and a logged-in wrangler (`npx wrangler login`).
+staging. Staging needs `gh` and the Pages-only API token in
+`~/.config/cloudflare/implementeren-staging-token` on the M1 Pro (no expiry; `scripts/staging.sh`
+reads it itself). Never print it. Without it, wrangler falls back to `npx wrangler login`, whose
+OAuth expires.
 
 ## Adding a page
 

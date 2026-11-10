@@ -11,11 +11,19 @@
 # wachtwoord (STAGING_WACHTWOORD, zie functions/_middleware.js) en is altijd noindex.
 # Resultaat: https://<naam>.implementeren-ai-staging.pages.dev
 #
-# Nodig: gh (ingelogd) en wrangler (ingelogd met `npx wrangler login`). Productie raakt dit
-# nooit: productie gaat alleen via .github/workflows/deploy.yml.
+# Nodig: gh (ingelogd) en een Cloudflare API-token met alleen Pages:Edit, in
+# ~/.config/cloudflare/implementeren-staging-token (chmod 600, token "implementeren-staging-pages",
+# verloopt niet). Zonder dat bestand valt wrangler terug op `npx wrangler login`, en die OAuth
+# verloopt. Productie raakt dit nooit: productie gaat alleen via .github/workflows/deploy.yml.
 set -euo pipefail
 
 PROJECT="${STAGING_PROJECT:-implementeren-ai-staging}"
+TOKEN_BESTAND="${STAGING_TOKEN_FILE:-$HOME/.config/cloudflare/implementeren-staging-token}"
+if [[ -z "${CLOUDFLARE_API_TOKEN:-}" && -r "$TOKEN_BESTAND" ]]; then
+  CLOUDFLARE_API_TOKEN="$(<"$TOKEN_BESTAND")"
+  export CLOUDFLARE_API_TOKEN
+  export CLOUDFLARE_ACCOUNT_ID="${CLOUDFLARE_ACCOUNT_ID:-1634d39356c029283d63b0f7bbd5d103}"
+fi
 naam="${1:-}"
 [[ "$naam" =~ ^[a-z0-9][a-z0-9-]{0,27}$ ]] || { echo "naam: kleine letters, cijfers en '-', max 28 tekens" >&2; exit 2; }
 shift
