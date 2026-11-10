@@ -39,8 +39,8 @@ status: published
 publishDate: 2026-11-16
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 kortAntwoord: "Claude voor notarissen helpt bij het werk rond de akte: concepten op basis van eigen modellen, dossiers ordenen, cliëntbrieven en de Wwft-procedure voorbereiden. De KNB kende in oktober 2025 nog geen AI-systeem dat veilig genoeg is voor vertrouwelijk werk binnen een zaak. Begin daarom met taken buiten een zaak, op Claude Team met verwerkersovereenkomst, en pseudonimiseer cliëntgegevens."
 bronnen:
   - titel: "KNB, AI (afwegings)kader deel 1: de verantwoorde inzet van AI in het notariaat (2025)"

@@ -30,6 +30,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Welke AI past, hangt af van je werk. ChatGPT is de breedste allrounder. Implementeren.ai kiest Claude voor schrijven, analyse en code. Copilot past bij Microsoft-organisaties en Gemini zit in Google Workspace. Alle vier trainen in de zakelijke variant standaard niet op je data (stand oktober 2026). Kies één tool en test twee weken op echte taken."
 bronnen:
   - titel: "Anthropic, prijzen en abonnementen van Claude"
@@ -105,7 +107,7 @@ Daarom is onze aanpak: kies één tool, kies de juiste use-cases en maak twee to
 
 ## De vragen die je aan elke aanbieder moet stellen
 
-Welke tool je ook overweegt, stel dezelfde vier vragen. Eén: is er een zakelijke variant waarin onze data niet voor modeltraining wordt gebruikt, met een verwerkersovereenkomst? Twee: hoe zet ik accounts centraal op, zodat toegang beheerd en ingetrokken kan worden? Drie: wat gebeurt er met bestanden die medewerkers uploaden, en hoe lang worden die bewaard? Vier: hoe werkt de koppeling met de systemen waar ons werk echt in zit, van SharePoint tot Salesforce? Een leverancier die deze vragen niet helder beantwoordt, valt af. En intern: wijs één eigenaar aan voor het AI-beleid, al is het maar één A4 met wat wel en niet mag.
+Welke tool je ook overweegt, stel dezelfde vier vragen. Eén: is er een zakelijke variant waarin onze data niet voor modeltraining wordt gebruikt, met een verwerkersovereenkomst? Twee: hoe zet ik accounts centraal op, zodat toegang beheerd en ingetrokken kan worden? Drie: wat gebeurt er met bestanden die medewerkers uploaden, en hoe lang worden die bewaard? Vier: hoe werkt de koppeling met de systemen waar ons werk echt in zit, van SharePoint tot Salesforce? Voor Claude staat dat per pakket in [ons overzicht van koppelingen](/integraties). Een leverancier die deze vragen niet helder beantwoordt, valt af. En intern: wijs één eigenaar aan voor het AI-beleid, al is het maar één A4 met wat wel en niet mag.
 
 ## Zo start je deze maand nog
 

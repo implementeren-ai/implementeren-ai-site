@@ -40,8 +40,8 @@ status: published
 publishDate: 2026-12-21
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 kortAntwoord: "Claude voor financieel adviseurs helpt hypotheek- en verzekeringsadviseurs bij het schrijfwerk rond het advies: gespreksverslagen, de toelichting in het adviesrapport, polisvergelijkingen en klantbrieven. Het advies zelf blijft bij de adviseur, zoals de Wft vraagt. Een Claude Team-seat kost 25 dollar per gebruiker per maand, ongeveer 22,46 euro exclusief btw (ECB-koers 28 oktober 2026)."
 bronnen:
   - titel: "Wet op het financieel toezicht, artikel 4:23 en artikel 4:24a (wetten.overheid.nl)"

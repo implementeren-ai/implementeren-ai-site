@@ -33,8 +33,8 @@ status: published
 publishDate: 2026-10-26
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-26
 kortAntwoord: "Zero Data Retention (ZDR) is een afspraak met Anthropic waarbij prompts en antwoorden na het genereren van de respons niet worden opgeslagen. ZDR geldt alleen voor de API, voor Claude Code met een zakelijke API-sleutel en voor Claude Code op Enterprise. Je vraagt het aan via sales, per organisatie, na beoordeling door Anthropic. Stand: 22 oktober 2026."
 bronnen:
   - titel: "Claude Platform Docs, API and data retention (ZDR, dekking per feature, Covered Models)"

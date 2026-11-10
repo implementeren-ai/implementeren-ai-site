@@ -37,8 +37,8 @@ status: published
 publishDate: 2026-11-05
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-05
 kortAntwoord: "AI-geletterdheid is sinds 2 februari 2025 verplicht onder artikel 4 van de AI Act, voor elk bedrijf dat AI zoals Claude gebruikt. Sinds de AI Omnibus van juli 2026 moet je maatregelen nemen, maar hoef je geen bepaald niveau per medewerker te garanderen. Een certificaat is niet nodig: een intern overzicht van trainingen volstaat volgens de Europese Commissie."
 bronnen:
   - titel: "Europese Commissie, AI literacy: questions and answers (bijgewerkt 20 oktober 2026)"

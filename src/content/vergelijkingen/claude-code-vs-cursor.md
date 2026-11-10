@@ -31,6 +31,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Cursor is een code-editor met AI-hulp en eigen agents. Claude Code is een AI-agent die werk zelfstandig uitvoert. Cursor past bij ontwikkelaars die zelf coderen en tussen modellen willen wisselen. Claude Code past bij het automatiseren van terugkerend werk, ook zonder ontwikkelteam. Cursor Teams kost 40 dollar per gebruiker per maand (stand 2 oktober 2026)."
 bronnen:
   - titel: "Anthropic, overzicht van Claude Code (documentatie)"

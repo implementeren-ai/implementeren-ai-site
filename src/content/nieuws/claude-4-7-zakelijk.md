@@ -27,6 +27,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 isRecurring: false
 faq:
   - question: "Wat is het verschil tussen Claude Opus 4.6 en 4.7?"

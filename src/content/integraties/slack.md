@@ -22,6 +22,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Heeft Slack een officieel Claude-integratie?"
     answer: "Anthropic biedt een Claude app voor Slack aan. Je installeert die vanuit de Slack App Directory. Na installatie kun je Claude mentionen in channels of direct messages sturen. Voor zakelijke workflows met eigen data heb je daarnaast een custom Slack bot nodig die via de Anthropic API draait. Die combinatie geeft je het beste van twee werelden: snelle ad-hoc vragen via de standaard app, en geautomatiseerde workflows via je eigen bot."

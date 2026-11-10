@@ -36,8 +36,8 @@ status: published
 publishDate: 2026-11-19
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 isRecurring: false
 kortAntwoord: "Claude Managed Agents is een dienst van Anthropic waarmee Claude zelfstandig taken uitvoert in een beheerde omgeving, met eigen tools, bestanden en sessies. Je betaalt de gewone API-tokenprijs plus 0,08 dollar per sessie-uur dat de agent actief werkt. De dienst is sinds 8 april 2026 in publieke bèta. Stand: 27 oktober 2026."
 bronnen:

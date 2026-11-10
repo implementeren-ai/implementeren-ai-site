@@ -23,6 +23,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude productbeschrijvingen schrijven voor mijn webshop?"
     answer: "Ja. Claude genereert unieke productbeschrijvingen op basis van je productdata: specificaties, materialen, doelgroep en tone of voice. Bij 500 producten bespaart dat 100 tot 200 uur schrijfwerk. Claude schrijft per product, niet met een mal. Elke beschrijving is uniek, wat duplicate content voorkomt en Google waardeert."

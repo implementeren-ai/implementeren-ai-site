@@ -35,8 +35,8 @@ disclaimer: juridisch
 status: published
 publishDate: 2026-12-03
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 kortAntwoord: "Claude voor IT-consultancy helpt bij het schrijfwerk rond je advies: een verslag uit het transcript van een klantgesprek, de tekst van een voorstel, documentatie en statusupdates uit Jira. Het advies zelf en de prijs blijven bij de consultant. Een Claude Team-seat kost 25 dollar per gebruiker per maand, ongeveer 22 euro exclusief btw (ECB-koers 28 oktober 2026)."
 bronnen:
   - titel: "Claude, plans en prijzen (claude.com)"

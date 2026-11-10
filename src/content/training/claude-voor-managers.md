@@ -28,6 +28,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Heb ik promptvaardigheden nodig als manager?"
     answer: "Nee. Claude werkt met gewone taal. Je hoeft geen speciale syntax of commando's te kennen. Typ wat je nodig hebt zoals je het aan een assistent zou vragen. Geef context, wees specifiek over wat je verwacht, en beoordeel het resultaat. Dat is alles. De meeste managers zijn binnen een uur productief."

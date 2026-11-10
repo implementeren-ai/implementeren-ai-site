@@ -25,6 +25,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Is Claude geschikt voor productie-code?"
     answer: "Claude Code schrijft productie-waardige code als je het juist aanstuurt. De sleutel is context: geef het je bestaande codebase, coding standards en architectuurpatronen mee. We draaien Claude-gegenereerde code in productie. Maar elke output wordt gereviewd, getest en gevalideerd. Claude is de developer, niet de reviewer."

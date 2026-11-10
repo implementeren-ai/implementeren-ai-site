@@ -31,6 +31,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: 2026-10-29
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-29
 kortAntwoord: "Claude Pro (20 dollar per maand) volstaat voor wie alleen werkt. Claude Team (25 dollar per gebruiker per maand, minimaal 2 seats) is de keuze zodra er klantdata in Claude gaat of collega's meedoen. Je krijgt Projects, SSO, centraal beheer en standaard geen training op je data. Enterprise (minimaal 20 seats) past bij grote of gereguleerde organisaties. Stand: 22 oktober 2026."
 bronnen:
   - titel: "Anthropic supportartikel: API credits for Max and Team plans"

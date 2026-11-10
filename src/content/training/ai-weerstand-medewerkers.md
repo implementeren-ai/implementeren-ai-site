@@ -29,6 +29,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Wat zijn de meest voorkomende redenen voor AI weerstand bij medewerkers?"
     answer: "De zes patronen die wij het vaakst zien: baanangst, gebrek aan vaardigheden, wantrouwen in AI-output, slechte eerdere ervaringen met technologieprojecten, onduidelijk management-mandaat, en culturele weerstand tegen verandering. Elk patroon vraagt een andere aanpak. Baanangst los je op met transparantie over wat er verandert. Gebrek aan vaardigheden met gerichte training. Wantrouwen door medewerkers zelf te laten controleren."

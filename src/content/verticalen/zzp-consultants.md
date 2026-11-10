@@ -24,6 +24,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Wat kost Claude voor een ZZP'er?"
     answer: "Claude Pro kost 20 dollar per maand. Claude Code via de API kost op basis van verbruik, doorgaans 30 tot 80 dollar per maand voor een actieve gebruiker. Voor een ZZP'er die 5 tot 10 uur per week bespaart op administratie en acquisitie, is dat een investering die zich binnen een week terugverdient."

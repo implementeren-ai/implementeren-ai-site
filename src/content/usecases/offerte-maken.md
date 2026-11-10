@@ -36,8 +36,8 @@ status: published
 publishDate: 2026-12-28
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 disclaimer: null
 kortAntwoord: "Een offerte maken met Claude doe je in een project met twee of drie eerdere offertes en je algemene voorwaarden. Je geeft de aanvraag van de klant en je eigen notities mee, Claude schrijft de tekst en maakt er een Word- of pdf-bestand van. De bedragen neem je zelf over uit je calculatie. Claude Pro kost 20 dollar per maand."
 bronnen:

@@ -35,6 +35,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Ja, met een zakelijk abonnement (Claude Team, Enterprise of de API) is Claude veilig voor de meeste bedrijfsdata in een MKB. Anthropic traint dan standaard niet op je data, er geldt een verwerkersovereenkomst en de beveiliging is extern gecertificeerd (SOC 2 Type II, ISO 27001, ISO 42001). Bij consumentenaccounts (Free, Pro, Max) geldt die bescherming niet. Stand: oktober 2026."
 bronnen:
   - titel: "Anthropic Privacy Center, wordt zakelijke data gebruikt voor modeltraining?"
@@ -155,6 +157,6 @@ Dat gunnen we bedrijven: dat ze aan elke klant kunnen uitleggen hoe ze het hebbe
 5. Validatie op output die naar buiten gaat.
 6. EU-route (Bedrock of Vertex AI) alleen als klanten of sector dat echt eisen.
 
-Naast de AVG geldt de AI Act. Wat die nu van een MKB-bedrijf vraagt, staat in [Claude en de EU AI Act voor het MKB](/compliance/ai-act-mkb).
+Naast de AVG geldt de AI Act. Wat die nu van een MKB-bedrijf vraagt, staat in [Claude en de EU AI Act voor het MKB](/compliance/ai-act-mkb). De plicht die elk team raakt, staat apart uitgelegd in [AI-geletterdheid voor je team](/compliance/ai-geletterdheid).
 
 Wil je dit laten inrichten in plaats van uitzoeken? Dit is het standaardwerk van onze [Claude-consultant](/claude-consultant) in de eerste week van elk traject.

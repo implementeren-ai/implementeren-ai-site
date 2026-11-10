@@ -25,6 +25,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Verstuurt Claude de e-mails automatisch?"
     answer: "Dat kan, maar wij raden een goedkeuringsstap aan. Claude genereert de concept-e-mail. Jij controleert, past aan indien nodig en klikt op verzenden. Volledig onbeheerde e-mail is riskant: een verkeerde toon of foutieve informatie wil je afvangen voordat het bij de ontvanger ligt. Na voldoende vertrouwen kun je de goedkeuringsstap versoepelen voor routine-mails."

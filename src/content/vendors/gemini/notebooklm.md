@@ -27,6 +27,8 @@ schemaTypes:
 author: camiel
 status: review
 publishDate: 2026-11-05
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-05
 vendor: gemini
 soort: howto
 claudeSibling: /gids/claude-voor-mkb

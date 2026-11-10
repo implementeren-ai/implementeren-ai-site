@@ -22,6 +22,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Heeft Claude een directe koppeling met Yuki?"
     answer: "Nee. Claude heeft geen ingebouwde Yuki-integratie. De koppeling loopt via de Yuki API (SOAP/REST) of via exports in CSV/MT940-formaat. Claude verwerkt die data nadat je het ophaalt. Met een MCP server automatiseer je het ophalen, zodat Claude direct met actuele boekingsdata werkt zonder handmatige export."

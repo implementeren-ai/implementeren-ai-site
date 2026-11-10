@@ -28,6 +28,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Moet ik ervaring hebben met AI om aan de Claude Code workshop deel te nemen?"
     answer: "Nee, maar je moet wel kunnen programmeren. De workshop is bedoeld voor developers, DevOps engineers en tech-leads die dagelijks code schrijven. Je hoeft geen ervaring te hebben met Claude of andere AI-tools. Wel moet je comfortabel zijn met een terminal, Git, en minimaal een programmeertaal."

@@ -29,6 +29,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Hoe lang duurt de prompting cursus?"
     answer: "Een halve dag voor de basistraining, een hele dag als je de gevorderde module erbij neemt. De basistraining behandelt de fundamenten van prompting, hands-on oefeningen en functiespecifieke templates. De gevorderde module voegt Projects, multi-step workflows en promptoptimalisatie toe. De meeste teams kiezen voor de hele dag."

@@ -26,6 +26,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Mag ik patientgegevens invoeren in Claude?"
     answer: "Nee. Medische persoonsgegevens zijn rode data: die gaan nooit naar een cloudservice. Claude draait bij Anthropic in de cloud. De AVG, de Wgbo en NEN-7510 zijn glashelder. Gebruik Claude alleen voor generieke teksten, protocollen en onderzoekssamenvattingen zonder patientgegevens. Patientdata blijft in het EPD/HIS."

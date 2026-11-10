@@ -26,6 +26,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude een volledig contract schrijven?"
     answer: "Claude kan conceptcontracten genereren op basis van templates en parameters die je invoert. Maar een contract is juridisch bindend. Laat altijd een jurist de output controleren voor je tekent. Claude levert het concept, de mens tekent af."

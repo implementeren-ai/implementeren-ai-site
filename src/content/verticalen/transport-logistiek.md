@@ -23,6 +23,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude douanedocumenten genereren?"
     answer: "Claude genereert conceptversies van CMR-vrachtbrieven, douaneaangiftes en T1/T2-documenten op basis van de zendinggegevens die je invoert. De expediteur of planner controleert en dient in. Claude versnelt het invulwerk, maar de verantwoordelijkheid blijft bij de indiener. Koppel het aan je TMS voor automatische data-ophaal."

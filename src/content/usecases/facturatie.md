@@ -25,6 +25,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude facturen direct inboeken in mijn boekhoudsoftware?"
     answer: "Via MCP servers en de API's van Moneybird, Exact Online, Twinfield of Yuki kan Claude facturatiedata lezen en terugschrijven. Het aanmaken van boekingen is technisch mogelijk. Wij raden een goedkeuringsstap aan: Claude categoriseert en bereidt de boeking voor, jij accordeert."

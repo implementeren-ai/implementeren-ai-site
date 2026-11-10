@@ -29,6 +29,8 @@ status: published
 publishDate: 2026-10-02
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-02
 kortAntwoord: "Copilot past bij kleine versnellingen binnen Word, Excel, Outlook en Teams. Implementeren.ai kiest Claude voor het zware denk- en schrijfwerk, zoals offertes, rapporten en lange documenten. Copilot voor bedrijven kost 18,20 euro per gebruiker per maand bovenop Microsoft 365. Claude Team kost 20 dollar bij jaarbetaling (stand 2 oktober 2026). Test beide op drie echte taken."
 bronnen:
   - titel: "Microsoft, prijzen van Microsoft 365 Copilot voor bedrijven"
@@ -97,7 +99,7 @@ Prijzen gecontroleerd op 2 oktober 2026 en exclusief btw of belasting. Microsoft
 
 ## Hoe het samenspeelt met je bestaande systemen
 
-Kijk verder dan de chatfunctie. De winst zit vaak in de koppeling met systemen waar je administratie al in leeft. Denk aan boekhouding in Exact Online of Moneybird, klantdata in HubSpot of Salesforce, en rapportages in Power BI. Copilot blijft dicht bij de Microsoft-wereld. Claude koppel je ook aan systemen buiten Microsoft. Sinds juli 2026 kan de Microsoft 365-koppeling van Claude ook schrijven: mail opstellen, agenda beheren en bestanden bijwerken in OneDrive en SharePoint. Vraag bij elke leverancier hoe de koppeling met jouw pakketten werkt voordat je kiest.
+Kijk verder dan de chatfunctie. De winst zit vaak in de koppeling met systemen waar je administratie al in leeft. Denk aan boekhouding in Exact Online of Moneybird, klantdata in HubSpot of Salesforce, en rapportages in Power BI. Copilot blijft dicht bij de Microsoft-wereld. Claude koppel je ook aan systemen buiten Microsoft, zie [welke tools je aan Claude koppelt](/integraties). Sinds juli 2026 kan [de Microsoft 365-koppeling van Claude](/integraties/microsoft-365) ook schrijven: mail opstellen, agenda beheren en bestanden bijwerken in OneDrive en SharePoint. Vraag bij elke leverancier hoe de koppeling met jouw pakketten werkt voordat je kiest.
 
 ## Waar staat je data bij Claude en Copilot?
 

@@ -26,6 +26,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Stuurt Claude automatisch e-mails naar prospects?"
     answer: "Nee. Claude genereert drafts, maar niets gaat de deur uit zonder goedkeuring. Het sales team reviewt elke email via een Vue dashboard: goedkeuren, afwijzen, bewerken of uitstellen. Bij afwijzing geeft de reviewer een reden op. Die feedback verbetert toekomstige drafts. Human-in-the-loop is geen optie maar een vereiste."

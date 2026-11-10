@@ -25,6 +25,8 @@ status: draft
 publishDate: null
 updatedDate: null
 changelogLine: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude mijn menukaart schrijven?"
     answer: "Claude genereert menuomschrijvingen op basis van je gerechten, ingrediënten en stijl. Je levert de gerechtnamen en ingrediëntenlijsten, Claude schrijft beschrijvingen die passen bij je concept. Van bistro tot fine dining, de toon past zich aan. De kok of eigenaar controleert en past aan. Bij een kaart met 40 gerechten bespaar je 3 tot 5 uur schrijfwerk."

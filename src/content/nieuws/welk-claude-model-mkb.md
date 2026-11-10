@@ -32,8 +32,8 @@ status: published
 publishDate: 2026-10-29
 updatedDate: 2026-10-29
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-10-29
 isRecurring: false
 kortAntwoord: "Voor de meeste zakelijke taken is Claude Opus 5.5 het beste startpunt: 4 dollar per miljoen input-tokens en 20 dollar per miljoen output-tokens. Sonnet 5.5 kost de helft en is sneller, Haiku 5.5 is het goedkoopst voor bulkwerk, en Fable 5.1 is het model voor zwaar werk: complexe analyses en lang lopende agent-taken. Stand: 22 oktober 2026."
 bronnen:

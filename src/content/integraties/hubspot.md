@@ -39,8 +39,8 @@ status: published
 publishDate: 2026-12-10
 updatedDate: null
 changelogLine: null
-reviewedBy: null
-reviewedDate: null
+reviewedBy: "Camiel Wits"
+reviewedDate: 2026-11-10
 disclaimer: null
 kortAntwoord: "HubSpot levert sinds 29 juli 2025 zelf een officiële connector voor Claude. Die is gratis en werkt met alle HubSpot-plannen, ook het gratis plan. Aan de kant van Claude heb je Pro, Max, Team of Enterprise nodig. Claude leest contacten, deals, tickets en marketingdata, en maakt of wijzigt records na jouw bevestiging. Verwijderen kan niet."
 bronnen:
