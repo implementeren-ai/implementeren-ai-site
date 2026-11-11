@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Twee manieren om Claude Code te betalen: links een sleutel voor een vaste seat per ontwikkelaar, rechts een meter die per token telt wat er verbruikt wordt" font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<filter id="cck-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
+</defs><rect width="1200" height="600" fill="#F4F1E8"/>
+<rect x="64" y="48" width="64" height="4" rx="2" fill="#B4C13E"/><text x="64" y="92" fill="#565A4C" font-size="22" font-weight="600" letter-spacing="3">CLAUDE CODE BETALEN</text>
+<g>
+<rect x="290" y="252" width="230" height="36" rx="8" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<path d="M440 288 L440 330 L466 330 L466 288 M478 288 L478 346 L504 346 L504 288" fill="#FFFFFF" stroke="#23261D" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="210" cy="270" r="84" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<circle cx="210" cy="270" r="56" fill="#B4C13E"/>
+<circle cx="210" cy="270" r="24" fill="#F4F1E8" stroke="#23261D" stroke-width="4"/>
+</g>
+<line x1="600" y1="140" x2="600" y2="520" stroke="#CFCDBE" stroke-width="4" stroke-dasharray="4 14" stroke-linecap="round"/>
+<g>
+<rect x="720" y="150" width="340" height="260" rx="18" fill="#FFFFFF" stroke="#23261D" stroke-width="4"/>
+<path d="M770 360 A120 120 0 0 1 1010 360" fill="none" stroke="#E1DED2" stroke-width="24" stroke-linecap="round"/>
+<path d="M770 360 A120 120 0 0 1 950 256.1" fill="none" stroke="#B4C13E" stroke-width="24" stroke-linecap="round"/>
+<g stroke="#565A4C" stroke-width="4" stroke-linecap="round"><line x1="802" y1="360" x2="816" y2="360"/><line x1="827.8" y1="297.8" x2="837.7" y2="307.7"/><line x1="890" y1="272" x2="890" y2="286"/><line x1="952.2" y1="297.8" x2="942.3" y2="307.7"/><line x1="978" y1="360" x2="964" y2="360"/></g>
+<line x1="890" y1="360" x2="937" y2="279" stroke="#23261D" stroke-width="6" stroke-linecap="round"/>
+<circle cx="890" cy="360" r="14" fill="#23261D"/>
+</g>
+<text x="323" y="448" text-anchor="middle" font-size="22" font-weight="600" letter-spacing="3" fill="#565A4C">ABONNEMENT</text>
+<text font-style="italic" x="323" y="538" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="76" font-weight="500">per seat</text>
+<text x="890" y="448" text-anchor="middle" font-size="22" font-weight="600" letter-spacing="3" fill="#565A4C">API</text>
+<text font-style="italic" x="890" y="538" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="76" font-weight="500">per token</text>
+<rect width="1200" height="600" filter="url(#cck-g)"/></svg>
