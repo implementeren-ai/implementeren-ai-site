@@ -32,7 +32,7 @@ schemaTypes:
 author: camiel
 competitors: []
 disclaimer: juridisch
-status: published
+status: review
 publishDate: 2026-12-03
 changelogLine: null
 reviewedBy: "Camiel Wits"

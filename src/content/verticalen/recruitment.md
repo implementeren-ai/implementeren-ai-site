@@ -28,7 +28,7 @@ schemaTypes:
 author: camiel
 competitors: []
 disclaimer: juridisch
-status: published
+status: review
 publishDate: 2026-11-26
 updatedDate: 2026-10-27
 changelogLine: null
