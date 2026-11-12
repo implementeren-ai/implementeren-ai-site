@@ -35,7 +35,7 @@ competitors:
   - knowledge.hubspot.com
   - hubspot.com
   - claude.com
-status: published
+status: review
 publishDate: 2026-12-10
 updatedDate: null
 changelogLine: null

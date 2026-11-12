@@ -34,7 +34,7 @@ competitors:
   - managementsite.nl
   - kvk.nl
 disclaimer: juridisch
-status: published
+status: review
 publishDate: 2026-11-30
 updatedDate: null
 changelogLine: null
