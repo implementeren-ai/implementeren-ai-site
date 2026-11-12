@@ -162,7 +162,7 @@ Dit is de volgorde die wij aanhouden als we dit bij klanten inrichten.
 
 **Week 2: classificeer.** Ga per toepassing langs de risicoklassen. Het overgrote deel zal minimaal risico zijn. Je aandacht gaat naar de uitzonderingen, vooral alles waar AI iets over personen beslist of direct met klanten praat.
 
-**Week 3: leg beleid vast.** Schrijf een kort document: welke tools zijn goedgekeurd, welke data mag erin, wie is verantwoordelijk, waar meld je problemen.
+**Week 3: leg beleid vast.** Schrijf een kort document: welke tools zijn goedgekeurd, welke data mag erin, wie is verantwoordelijk, waar meld je problemen. Dit onderwerp komt aan bod in de [Claude AI-beleid template voor MKB](/compliance/ai-beleid-template).
 
 **Week 4: train en documenteer.** Eén teamsessie van een uur dekt voor de meeste MKB-bedrijven de basis. Leg vast wie erbij was en wat er is behandeld. Bij een [output-archief](/cases/output-archive) dat ons team eerder bij een Nederlands softwarebedrijf bouwde, groeide de vastlegging in vier maanden naar 122 gestructureerde documenten. Dat kostte geen extra werk, omdat archiveren een bijproduct van het werk zelf was.
 
