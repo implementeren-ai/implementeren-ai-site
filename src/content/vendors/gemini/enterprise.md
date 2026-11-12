@@ -34,7 +34,9 @@ schemaAbout:
   publisher:
     '@type': Organization
     name: Google LLC
-  sameAs: https://cloud.google.com/gemini-enterprise/business
+  sameAs:
+  - https://cloud.google.com/gemini-enterprise/business
+  - https://docs.cloud.google.com/gemini/enterprise/docs/editions
 author: camiel
 status: review
 publishDate: null
@@ -75,18 +77,18 @@ faq:
 - question: Gebruikt Google mijn bedrijfsdata om modellen te trainen?
   answer: Volgens de beveiligingsdocumentatie van Google niet. Gemini Enterprise gebruikt je prompts, gegenereerde antwoorden en gekoppelde bedrijfsdata niet om de foundation models van Google te trainen. Of dat voor jouw situatie voldoende is, hangt af van je eigen risicoafweging.
 reviewedBy: "Camiel Wits"
-reviewedDate: 2026-11-11
+reviewedDate: 2026-11-12
 ---
 
 Gemini Enterprise is de zakelijke AI-omgeving van Google voor medewerkers. De Business edition wordt per seat gefactureerd, exclusief btw, is bedoeld voor 1 tot 500 gebruikers en kun je 30 dagen gratis proberen. Het bedrag per seat konden we niet bevestigen. Standard en Plus zijn voor grote organisaties, Frontline is een add-on voor frontlinemedewerkers. Stand 10 november 2026.
 
-Wie zoekt naar gemini enterprise wil meestal drie dingen weten: wat het kost, welke editie past en wat er met de bedrijfsgegevens gebeurt. Alle gegevens komen uit de documentatie van Google, nagekeken op 10 november 2026 volgens [onze werkwijze](/methodologie). Wat we niet konden vinden, zeggen we erbij.
+Bij Gemini Enterprise spelen meestal drie vragen: wat het kost, welke editie past en wat er met je bedrijfsgegevens gebeurt. Alle gegevens komen uit de documentatie van Google, nagekeken op 10 november 2026 volgens [onze werkwijze](/methodologie). Wat we niet konden vinden, zeggen we erbij.
 
 ## Wat is Google Gemini Enterprise?
 
 Google Gemini Enterprise is er in vier edities: Business, Standard, Plus en Frontline. Daarnaast bestaat er een Pay-as-you-go-editie zonder vast abonnement. Je werkt in een webapp waar medewerkers met de assistent van Google chatten, documenten gebruiken en bedrijfsdata koppelen. Beheerders bepalen welke functies aan staan.
 
-Gemini Enterprise is een product van Google Cloud dat per seat wordt afgerekend ([bron: Google Cloud](https://cloud.google.com/gemini-enterprise/business)). Het is daarmee iets anders dan de gratis consumentenapp Gemini en dan de Gemini-functies in Google Workspace-abonnementen.
+Gemini Enterprise is een product van Google Cloud. De Business-, Standard- en Plus-edities worden per seat afgerekend, de Pay-as-you-go-editie op basis van opslag en indexering ([bron: Google Cloud](https://cloud.google.com/gemini-enterprise/business)). Het is daarmee iets anders dan de gratis consumentenapp Gemini en dan de Gemini-functies in Google Workspace-abonnementen.
 
 De edities verschillen in doelgroep, aantal gebruikers, opslag en limieten. Dat maakt de keuze belangrijker dan bij een consumentenabonnement. Een bedrijf met twintig medewerkers zit in een andere categorie dan een organisatie met duizenden mensen en een complexe IT-omgeving.
 
@@ -108,7 +110,7 @@ Voor Standard, Plus en Frontline vonden we in de gebruikte bronnen geen prijs. V
 
 ### Pay-as-you-go-editie
 
-De Pay-as-you-go-editie heeft geen abonnements- of licentiekosten en geen quotumlimieten voor functies. Je betaalt wel voor opslag en data-indexering: [5 dollar per GiB per maand](https://docs.cloud.google.com/gemini/enterprise/docs/editions). Om te starten maak je minimaal 1 gebruiker (seat) aan; licentiekosten betaal je daarvoor niet, alleen opslag en indexering. Voor een team dat veel documenten indexeert, kan dat tarief hoger uitkomen dan een vast bedrag per seat. Reken het dus door met je eigen datavolume.
+De Pay-as-you-go-editie heeft geen abonnements- of licentiekosten en geen quotumlimieten voor functies. Je betaalt wel voor opslag en data-indexering: [5 dollar per GiB per maand](https://docs.cloud.google.com/gemini/enterprise/docs/quotas-and-overages). Om te starten maak je minimaal 1 gebruiker (seat) aan; licentiekosten betaal je daarvoor niet, alleen opslag en indexering. Voor een team dat veel documenten indexeert, kan dat tarief hoger uitkomen dan een vast bedrag per seat. Reken het dus door met je eigen datavolume.
 
 ## Gemini Enterprise vs Gemini Business: Business is een editie, geen apart product
 
@@ -119,7 +121,7 @@ De vraag "gemini enterprise vs gemini business" heeft een kleine kanttekening: B
 | Business | MKB en kleine teams zonder complexe IT-inrichting | 1 tot 500 | 25 GiB |
 | Standard | Medewerkers in grote organisaties met complexe omgevingen | 1 of meer | 30 GiB |
 | Plus | Medewerkers die de meest uitgebreide AI- en agentmogelijkheden nodig hebben | 1 of meer | 75 GiB |
-| Frontline | Frontlinemedewerkers die een voordelige optie nodig hebben, als add-on vanaf 150 gebruikers van Standard of Plus | Zie voorwaarde | 2 GiB |
+| Frontline | Frontlinemedewerkers die een voordelige optie nodig hebben, als add-on vanaf 150 gebruikers van Standard of Plus | Add-on bij minimaal 150 Standard- of Plus-gebruikers | 2 GiB |
 
 Bron: [Google Cloud Docs, Gemini Enterprise editions](https://docs.cloud.google.com/gemini/enterprise/docs/editions) (geraadpleegd 10 november 2026)
 
@@ -150,9 +152,9 @@ Twee beperkingen om te weten:
 
 Gaat iemand uit je team klagen dat Projects ontbreekt, dan is dit dus het eerste wat je controleert.
 
-Claude heeft met Projects een vergelijkbare functie. In mei 2026 bouwden we daarmee een workflow die vergadernotities in 5 minuten omzet naar actiepunten, waar eerst 45 minuten per gesprek voor nodig was ([case](/cases/consultant-brief)). Hetzelfde patroon, één project per klant of dossier, werkt in Gemini Projects tot 50 bestanden.
+Claude heeft met Projects een vergelijkbare functie. In mei 2026 bouwden we daarmee een workflow die vergadernotities in 5 minuten omzet naar actiepunten, waar eerst 45 minuten per gesprek voor nodig was ([case](/cases/consultant-brief)). Hetzelfde patroon, één project per klant of dossier, kun je in Gemini Projects op dezelfde manier opzetten, binnen de grens van 50 bestanden. In Gemini zelf hebben we deze workflow niet getest.
 
-## Data en beveiliging: geen training op je bedrijfsdata, datalocatie eu te kiezen
+## Data en beveiliging: geen training op je bedrijfsdata, datalocatie in de EU te kiezen
 
 Voor een Nederlands bedrijf is dit vaak de doorslag. Dit zegt de documentatie van Google:
 
@@ -169,4 +171,4 @@ Het past als je organisatie al in Google Workspace werkt en je medewerkers een a
 
 Het past minder als je maar een paar mensen hebt die af en toe een prompt typen. Elke gebruiker, ook de beheerder, heeft een betaalde seat nodig. Voor zeer lage volumes kan de Pay-as-you-go-editie goedkoper zijn, maar alleen als je opslag beperkt blijft.
 
-Twijfel je tussen aanbieders of wil je weten welke processen in je bedrijf het eerst baat hebben bij AI? Begin dan met de [AI Enablement Scan](/ai-enablement-scan). Camiel loopt daarin met je langs wat je nu doet en wat een assistent zou kunnen overnemen, los van welke leverancier je daarna kiest.
+Twijfel je tussen aanbieders of wil je weten welke processen in je bedrijf het eerst baat hebben bij AI? implementeren.ai adviseert vooral over Claude en heeft geen commerciële relatie met Google; we ontvangen niets voor dit artikel. Begin dan met de [AI Enablement Scan](/ai-enablement-scan). Camiel loopt daarin met je langs wat je nu doet en wat een assistent zou kunnen overnemen, los van welke leverancier je daarna kiest.
