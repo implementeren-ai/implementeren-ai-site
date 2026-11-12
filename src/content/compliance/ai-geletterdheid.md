@@ -153,7 +153,7 @@ In Nederland is de taakverdeling nog niet wettelijk vastgelegd. Het kabinet brac
 
 Artikel 4 heeft in de AI Act geen eigen boetebedrag. De Commissie schrijft dat nationale toezichthouders sancties en andere maatregelen kunnen opleggen, en dat een sanctie moet passen bij het geval. Ze noemt ook een praktisch punt: als er een incident is en je personeel geen passende training of uitleg kreeg, wordt handhaving waarschijnlijker. Voor de boetes in de rest van de AI Act verwijzen we naar [ons overzicht van de AI Act](/compliance/ai-act-mkb).
 
-Voor een MKB met Claude komt het neer op aantoonbare inspanning. Een overzicht van wie welke uitleg kreeg, een kort beleid en een plan om dat bij te houden, laten zien dat je maatregelen hebt genomen. Meer over de AVG-kant van Claude vind je in het [compliance-overzicht](/compliance).
+Voor een MKB met Claude komt het neer op aantoonbare inspanning. Een overzicht van wie welke uitleg kreeg, een kort beleid en een plan om dat bij te houden, laten zien dat je maatregelen hebt genomen. Meer over de AVG-kant van Claude vind je in het [compliance-overzicht](/compliance). Voor het beleid zelf behandelt de pagina [Claude AI-beleid template voor MKB](/compliance/ai-beleid-template) dit onderwerp.
 
 <!--
   Bronnen (geopend op 22 oktober 2026):
