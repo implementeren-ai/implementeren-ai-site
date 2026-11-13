@@ -8,7 +8,7 @@ import Broodkruimel from '../components/Broodkruimel.astro';
 
 const allCases = await getCollection('cases');
 
-const sectorVolgorde = ['SaaS', 'MSP', 'IT-consultancy', 'IT-dienstverlener'];
+const sectorVolgorde = ['SaaS', 'MSP', 'IT-consultancy', 'IT-dienstverlener', 'Telecom', 'Zorg'];
 
 const perSector = sectorVolgorde
   .map((sector) => ({

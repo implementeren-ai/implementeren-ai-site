@@ -25,7 +25,7 @@ const breadcrumbs = [
 ];
 // Drie volgende cases in dezelfde volgorde als /cases (sector, dan titel), rondlopend:
 // elke case krijgt zo precies drie inkomende links van andere cases.
-const sectorVolgorde = ['SaaS', 'MSP', 'IT-consultancy', 'IT-dienstverlener'];
+const sectorVolgorde = ['SaaS', 'MSP', 'IT-consultancy', 'IT-dienstverlener', 'Telecom', 'Zorg'];
 const gesorteerd = (await getCollection('cases')).sort(
   (a, b) =>
     sectorVolgorde.indexOf(a.data.sector) - sectorVolgorde.indexOf(b.data.sector) ||
