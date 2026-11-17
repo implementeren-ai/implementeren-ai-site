@@ -32,7 +32,7 @@ schemaTypes:
   - BreadcrumbList
 author: camiel
 competitors: []
-status: published
+status: review
 publishDate: 2026-12-28
 updatedDate: null
 changelogLine: null

@@ -32,7 +32,7 @@ author: camiel
 competitors:
   - support.claude.com
   - knowledge.workspace.google.com
-status: published
+status: review
 publishDate: 2026-12-07
 updatedDate: null
 changelogLine: null

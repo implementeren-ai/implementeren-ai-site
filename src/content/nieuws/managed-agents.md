@@ -32,7 +32,7 @@ competitors:
   - openai.com
   - microsoft.com
 disclaimer: juridisch
-status: published
+status: review
 publishDate: 2026-11-19
 updatedDate: null
 changelogLine: null

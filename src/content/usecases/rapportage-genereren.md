@@ -31,7 +31,7 @@ author: camiel
 competitors:
   - learn.microsoft.com
   - community.fabric.microsoft.com
-status: published
+status: review
 publishDate: 2026-12-17
 updatedDate: null
 changelogLine: null
