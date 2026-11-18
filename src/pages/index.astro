@@ -332,19 +332,19 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
     <section class="v2-wrap v2-lezen">
       <h2>Eerst zelf lezen?</h2>
       <ul class="v2-bento">
-        <li class="v2-groot reveal-target">
+        <li class="v2-groot reveal-target" data-pijler="prijs">
           <span class="v2-chips" aria-hidden="true"><span>Pro</span><span>Team</span><span class="v2-chip-olijf">Enterprise</span></span>
           <span><a href="/gids/claude-voor-mkb">Zakelijk Claude-account en abonnement</a>: Team of Enterprise, wat het kost en hoe je begint.</span>
         </li>
-        <li class="reveal-target">
+        <li class="reveal-target" data-pijler="prijs">
           <span class="v2-teken-groot" aria-hidden="true">€</span>
           <span><a href="/prijs">Wat kost Claude zakelijk?</a> De prijzen van Pro, Team, Enterprise en de API.</span>
         </li>
-        <li class="v2-donker reveal-target">
+        <li class="v2-donker reveal-target" data-pijler="avg">
           <span class="v2-eu" aria-hidden="true">EU</span>
           <span><a href="/compliance">Is Claude AVG-proof?</a> Wat Anthropic regelt en wat jij zelf vastlegt.</span>
         </li>
-        <li class="reveal-target">
+        <li class="reveal-target" data-pijler="branche">
           <span class="v2-chips" aria-hidden="true"><span>accountants</span><span>advocaten</span><span>makelaars</span></span>
           <span><a href="/verticalen">Claude per branche</a>: voor accountants, advocaten, makelaars en marketingbureaus.</span>
         </li>
@@ -353,14 +353,30 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
           <span><a href="/vergelijken">Claude vergelijken</a> met ChatGPT, Microsoft Copilot en Cursor.</span>
         </li>
       </ul>
-      <ul class="v2-lezen-lijst">
-        <li><a href="/compliance/anthropic-dpa">Anthropic DPA: wat hij dekt</a></li>
-        <li><a href="/compliance/is-claude-veilig">Is Claude veilig voor bedrijfsdata?</a></li>
-        <li><a href="/prijs/credits-en-limieten">Claude limieten per abonnement</a></li>
-        <li><a href="/claude-voor-accountants">Claude voor accountants en administratiekantoren</a></li>
-        <li><a href="/compliance/eu-hosting">Claude-data in de EU houden</a></li>
-        <li><a href="/prijs/pro-vs-team-vs-enterprise">Claude Pro, Team of Enterprise</a></li>
-      </ul>
+      <!-- Verdieping per pijler. Kolommen staan onder de bijbehorende kaart (AVG onder EU, branche onder branche, prijs onder €). -->
+      <div class="v2-lezen-groepen">
+        <div class="v2-lezen-groep" data-pijler="avg">
+          <p class="v2-lezen-kop" id="lezen-avg"><span class="v2-lezen-teken" aria-hidden="true">EU</span>AVG en data<span class="v2-lezen-aantal" aria-hidden="true">3</span></p>
+          <ul class="v2-lezen-lijst" aria-labelledby="lezen-avg">
+            <li><a href="/compliance/anthropic-dpa">Anthropic DPA: wat hij dekt</a></li>
+            <li><a href="/compliance/is-claude-veilig">Is Claude veilig voor bedrijfsdata?</a></li>
+            <li><a href="/compliance/eu-hosting">Claude-data in de EU houden</a></li>
+          </ul>
+        </div>
+        <div class="v2-lezen-groep" data-pijler="branche">
+          <p class="v2-lezen-kop" id="lezen-branche"><span class="v2-lezen-teken" aria-hidden="true">§</span>Per branche<span class="v2-lezen-aantal" aria-hidden="true">1</span></p>
+          <ul class="v2-lezen-lijst" aria-labelledby="lezen-branche">
+            <li><a href="/claude-voor-accountants">Claude voor accountants en administratiekantoren</a></li>
+          </ul>
+        </div>
+        <div class="v2-lezen-groep" data-pijler="prijs">
+          <p class="v2-lezen-kop" id="lezen-prijs"><span class="v2-lezen-teken" aria-hidden="true">€</span>Prijs en abonnement<span class="v2-lezen-aantal" aria-hidden="true">2</span></p>
+          <ul class="v2-lezen-lijst" aria-labelledby="lezen-prijs">
+            <li><a href="/prijs/credits-en-limieten">Claude limieten per abonnement</a></li>
+            <li><a href="/prijs/pro-vs-team-vs-enterprise">Claude Pro, Team of Enterprise</a></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <!-- 9. Slot-band -->
