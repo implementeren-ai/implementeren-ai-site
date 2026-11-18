@@ -177,26 +177,25 @@ html.js .v2-taken > *:nth-child(4) { animation-delay: .75s; }
 .v2-verschil-citaat { max-width: 720px; margin: 48px auto 0; text-align: center; font-family: var(--font-newsreader); font-style: italic; font-size: clamp(19px, 1vw + 15px, 23px); line-height: 1.55; color: var(--color-v2-inkt-2); }
 @media (min-width: 760px) { .v2-kolommen { grid-template-columns: 1fr 1fr; } }
 
-/* ---------- 8. Eerst zelf lezen (bento) ---------- */
+/* ---------- 8. Eerst zelf lezen (bento + leesregister) ---------- */
 .v2-lezen { padding-bottom: 120px; }
 .v2-lezen h2 { margin: 0 0 32px; }
-.v2-lezen-lijst { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 24px; font-size: 16px; }
-.v2 .v2-lezen-lijst a { color: var(--color-v2-inkt); text-decoration: underline; text-underline-offset: 3px; }
 .v2-bento { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-.v2-bento li { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 230px; padding: 28px; border-radius: 26px; background: #fff; border: 1px solid var(--color-v2-lijn); font-size: 16px; color: var(--color-v2-inkt-2); transition: translate .3s var(--ease-out-soft), box-shadow .3s var(--ease-out-soft), opacity .6s var(--ease-out-soft), transform .6s var(--ease-out-soft); }
-.v2-bento li:hover { translate: 0 -3px; box-shadow: 0 18px 36px -24px rgba(35,38,29,.35); }
-.v2-bento li { position: relative; }
-.v2 .v2-bento a { font-family: var(--font-v2-kop); font-size: 21px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; color: var(--color-v2-inkt); text-decoration: none; }
-/* Hele kaart klikbaar; de link-tekst loopt gewoon door in de zin. */
+.v2-bento li { position: relative; display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 230px; padding: 28px; border-radius: 26px; background: #fff; border: 1px solid var(--color-v2-lijn); font-size: 16px; color: var(--color-v2-inkt-2); }
+/* Hele kaart klikbaar via de hoofdlink; de link-tekst loopt gewoon door in de zin.
+   Geen pijl en geen lift: de kaart reageert met een onderstreping op de link zelf. */
+.v2 .v2-bento a { font-family: var(--font-v2-kop); font-size: 21px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; color: var(--color-v2-inkt); text-decoration: underline 2px transparent; text-underline-offset: 5px; transition: color .16s ease, text-decoration-color .16s ease; }
 .v2 .v2-bento a::before { content: ""; position: absolute; inset: 0; border-radius: inherit; }
-.v2 .v2-bento a:focus-visible { outline: none; }
+.v2 .v2-bento a:focus-visible { outline: none; text-decoration-color: currentColor; }
 .v2 .v2-bento a:focus-visible::before { outline: 3px solid var(--color-v2-olijf); outline-offset: 3px; }
-.v2-bento li::after { content: "→"; position: absolute; top: 24px; right: 26px; font-size: 22px; color: var(--color-v2-olijf); transition: transform .3s var(--ease-out-soft); }
-.v2-bento li:hover::after { transform: translateX(4px); }
-.v2-bento .v2-donker::after { color: var(--color-v2-olijf-fel); }
+@media (hover: hover) and (pointer: fine) {
+  .v2 .v2-bento li:hover a { color: var(--color-v2-olijf); text-decoration-color: currentColor; }
+  .v2 .v2-bento .v2-donker:hover a { color: #fff; text-decoration-color: var(--color-v2-olijf-fel); }
+}
 .v2-bento .v2-groot { background: var(--color-v2-tint); border-color: transparent; }
 .v2-bento .v2-donker { background: var(--color-v2-inkt); border-color: var(--color-v2-inkt); color: #D9DCCB; }
 .v2 .v2-bento .v2-donker a { color: #fff; }
+.v2 .v2-bento .v2-donker a:focus-visible::before { outline-color: var(--color-v2-olijf-fel); }
 .v2-chips { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; }
 .v2-chips span { padding: 5px 12px; border-radius: 999px; background: #fff; color: var(--color-v2-inkt); }
 .v2-chips .v2-chip-olijf { background: var(--color-v2-olijf); color: #fff; }
@@ -205,9 +204,73 @@ html.js .v2-taken > *:nth-child(4) { animation-delay: .75s; }
 .v2-eu { width: 48px; height: 48px; border-radius: 14px; background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
 .v2-vs { font-family: var(--font-v2-kop); font-size: 24px; font-weight: 600; color: #8C8F80; letter-spacing: -0.02em; }
 .v2-vs b { color: var(--color-v2-olijf); }
+
+/* Leesregister: de zes verdiepende links, gegroepeerd per onderwerp en op het
+   raster van de bento, zodat elke groep onder zijn eigen kaart staat. Altijd
+   zichtbaar; alleen de lijnen bewegen (transform), de tekst nooit. */
+.v2-register { position: relative; display: grid; grid-template-columns: 1fr; gap: 36px 16px; margin-top: 56px; padding-top: 28px; }
+.v2-register::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: var(--color-v2-inkt); transform-origin: left center; }
+.v2-register-kop { display: flex; align-items: center; gap: 12px; min-height: 30px; margin: 0 0 12px; font-family: var(--font-v2-kop); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; color: var(--color-v2-inkt); }
+.v2-register-eu { width: 30px; height: 30px; border-radius: 10px; background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
+.v2-register-euro { width: 30px; text-align: center; font-size: 28px; font-weight: 600; line-height: 1; letter-spacing: -0.03em; color: var(--color-v2-olijf); }
+.v2-register-chip { padding: 4px 10px; border-radius: 999px; background: var(--color-v2-tint); font-size: 12px; font-weight: 500; }
+.v2-register ul { list-style: none; margin: 0; padding: 0; }
+.v2-register li { position: relative; }
+.v2-register li::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: var(--color-v2-lijn); transform-origin: left center; }
+.v2 .v2-register a { display: block; padding: 12px 0 13px; font-family: var(--font-v2-kop); font-size: 19px; font-weight: 500; letter-spacing: -0.015em; line-height: 1.3; text-wrap: pretty; color: var(--color-v2-inkt); text-decoration: underline 1px var(--color-v2-inkt-2); text-underline-offset: 5px; transition: color .16s ease, text-decoration-color .16s ease, text-decoration-thickness .16s ease; }
+.v2 .v2-register a:focus-visible { outline: 3px solid var(--color-v2-olijf); outline-offset: 2px; border-radius: 6px; color: var(--color-v2-olijf); text-decoration-color: currentColor; text-decoration-thickness: 2px; }
+@media (hover: hover) and (pointer: fine) {
+  .v2 .v2-register a:hover { color: var(--color-v2-olijf); text-decoration-color: currentColor; text-decoration-thickness: 2px; }
+}
+@media (min-width: 640px) {
+  .v2-register { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+}
 @media (min-width: 900px) {
   .v2-bento { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .v2-bento .v2-groot { grid-column: span 2; }
+  .v2-register { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .v2-register-groep { padding-right: 12px; }
+}
+
+/* Beweging (alleen als de browser view() kent en niemand minder beweging vraagt).
+   Kaarten: korte verschuiving, ongelijke start (AVG als hoofdonderwerp als tweede).
+   Register: de bovenlijn trekt eerst, daarna de rijlijnen per groep van links naar
+   rechts, met krimpende tussenstappen (in px scroll, zodat een rij al getekend is
+   kort nadat hij in beeld komt). Geen opacity: niets is ooit verborgen. */
+@supports ((animation-timeline: view()) and (animation-range: entry)) {
+  @media (prefers-reduced-motion: no-preference) {
+    .v2-bento > li:nth-child(2) { --k: 7%; }
+    .v2-bento > li:nth-child(3) { --k: 4%; }
+    .v2-bento > li:nth-child(4) { --k: 9%; }
+    .v2-bento > li:nth-child(5) { --k: 10%; }
+    .v2-bento > li {
+      animation: v2-lezen-kaart both var(--ease-out-soft);
+      animation-timeline: view();
+      animation-range: entry var(--k, 0%) entry calc(var(--k, 0%) + 60%);
+    }
+    .v2-register { view-timeline-name: --v2-register; }
+    .v2-register::before {
+      animation: v2-lezen-lijn both var(--ease-out-soft);
+      animation-timeline: --v2-register;
+      animation-range: cover 0px cover 120px;
+    }
+    .v2-register-groep:nth-child(1) li:nth-child(2) { --o: 24px; }
+    .v2-register-groep:nth-child(1) li:nth-child(3) { --o: 40px; }
+    .v2-register-groep:nth-child(2) li:nth-child(1) { --o: 52px; }
+    .v2-register-groep:nth-child(3) li:nth-child(1) { --o: 60px; }
+    .v2-register-groep:nth-child(3) li:nth-child(2) { --o: 66px; }
+    .v2-register li { view-timeline-name: --v2-rij; }
+    .v2-register li::before {
+      animation: v2-lezen-lijn both var(--ease-out-soft);
+      animation-timeline: --v2-rij;
+      animation-range: cover var(--o, 0px) cover calc(var(--o, 0px) + 100px);
+    }
+    @keyframes v2-lezen-kaart { from { translate: 0 16px; } to { translate: 0 0; } }
+    @keyframes v2-lezen-lijn { from { scale: 0 1; } to { scale: 1 1; } }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .v2-bento > li, .v2-register::before, .v2-register li::before { animation: none; translate: none; scale: none; }
 }
 
 /* ---------- 9. Slot-band ---------- */
