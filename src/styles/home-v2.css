@@ -180,27 +180,51 @@ html.js .v2-taken > *:nth-child(4) { animation-delay: .75s; }
 /* ---------- 8. Eerst zelf lezen (bento) ---------- */
 .v2-lezen { padding-bottom: 120px; }
 .v2-lezen h2 { margin: 0 0 32px; }
-.v2-lezen-lijst { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 24px; font-size: 16px; }
-.v2 .v2-lezen-lijst a { color: var(--color-v2-inkt); text-decoration: underline; text-underline-offset: 3px; }
 .v2-bento { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-.v2-bento li { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 230px; padding: 28px; border-radius: 26px; background: #fff; border: 1px solid var(--color-v2-lijn); font-size: 16px; color: var(--color-v2-inkt-2); transition: translate .3s var(--ease-out-soft), box-shadow .3s var(--ease-out-soft), opacity .6s var(--ease-out-soft), transform .6s var(--ease-out-soft); }
-.v2-bento li:hover { translate: 0 -3px; box-shadow: 0 18px 36px -24px rgba(35,38,29,.35); }
-.v2-bento li { position: relative; }
-.v2 .v2-bento a { font-family: var(--font-v2-kop); font-size: 21px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; color: var(--color-v2-inkt); text-decoration: none; }
+.v2-bento > li { position: relative; display: flex; flex-direction: column; gap: 28px; min-height: 230px; padding: 28px; border-radius: 26px; background: #fff; border: 1px solid var(--color-v2-lijn); font-size: 16px; color: var(--color-v2-inkt-2); transition: translate .3s var(--ease-out-soft), box-shadow .3s var(--ease-out-soft), opacity .6s var(--ease-out-soft), transform .6s var(--ease-out-soft); }
+.v2-bento > li:hover { translate: 0 -3px; box-shadow: 0 18px 36px -24px rgba(35,38,29,.35); }
+/* Beeldteken boven, zin onderaan; heeft de kaart een voet, dan staat die eronder. */
+.v2-bento-zin { margin-top: auto; padding-right: 8px; }
+.v2 .v2-bento-zin a { font-family: var(--font-v2-kop); font-size: 21px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.3; color: var(--color-v2-inkt); text-decoration: none; }
 /* Hele kaart klikbaar; de link-tekst loopt gewoon door in de zin. */
-.v2 .v2-bento a::before { content: ""; position: absolute; inset: 0; border-radius: inherit; }
-.v2 .v2-bento a:focus-visible { outline: none; }
-.v2 .v2-bento a:focus-visible::before { outline: 3px solid var(--color-v2-olijf); outline-offset: 3px; }
-.v2-bento li::after { content: "→"; position: absolute; top: 24px; right: 26px; font-size: 22px; color: var(--color-v2-olijf); transition: transform .3s var(--ease-out-soft); }
-.v2-bento li:hover::after { transform: translateX(4px); }
+.v2 .v2-bento-zin a::before { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.v2 .v2-bento-zin a:focus-visible { outline: none; }
+.v2 .v2-bento-zin a:focus-visible::before { outline: 3px solid var(--color-v2-olijf); outline-offset: 3px; }
+.v2-bento > li::after { content: "→"; position: absolute; top: 24px; right: 26px; font-size: 22px; color: var(--color-v2-olijf); transition: transform .3s var(--ease-out-soft); }
+.v2-bento > li:hover::after { transform: translateX(4px); }
 .v2-bento .v2-donker::after { color: var(--color-v2-olijf-fel); }
 .v2-bento .v2-groot { background: var(--color-v2-tint); border-color: transparent; }
 .v2-bento .v2-donker { background: var(--color-v2-inkt); border-color: var(--color-v2-inkt); color: #D9DCCB; }
-.v2 .v2-bento .v2-donker a { color: #fff; }
+.v2 .v2-bento .v2-donker .v2-bento-zin a { color: #fff; }
+
+/* Kaartvoet: verdieping per pijler. Ligt boven de klikbare kaartlaag. */
+.v2-kaart-voet { --voet-lijn: var(--color-v2-lijn); position: relative; z-index: 1; list-style: none; margin: -6px 0 0; padding: 16px 0 0; display: grid; gap: 4px; }
+.v2-kaart-voet::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, var(--voet-lijn), var(--voet-lijn) 70%, transparent); transform-origin: left center; transition: transform .8s var(--ease-out-soft) .15s; }
+.v2-donker .v2-kaart-voet { --voet-lijn: rgba(244, 241, 232, .16); }
+.v2-kaart-voet li { transition: opacity .5s var(--ease-out-soft), translate .5s var(--ease-out-soft); transition-delay: calc(.3s + var(--i, 0) * 110ms); }
+.v2-kaart-voet li:nth-child(2) { --i: 1; }
+.v2-kaart-voet li:nth-child(3) { --i: 2; }
+.v2 .v2-kaart-voet a { position: relative; display: block; padding: 5px 0 5px 16px; font-size: 15px; font-weight: 500; line-height: 1.4; color: var(--color-v2-inkt); text-decoration: none; transition: color .2s; }
+.v2 .v2-donker .v2-kaart-voet a { color: #F4F1E8; }
+.v2-kaart-voet a::before { content: ""; position: absolute; left: 0; top: calc(5px + .7em - 4px); width: 6px; height: 6px; border-top: 1.5px solid var(--color-v2-olijf); border-right: 1.5px solid var(--color-v2-olijf); rotate: 45deg; transition: translate .25s var(--ease-out-soft); }
+.v2-donker .v2-kaart-voet a::before { border-color: var(--color-v2-olijf-fel); }
+.v2-kaart-voet a span { background-image: linear-gradient(currentColor, currentColor); background-repeat: no-repeat; background-size: 0 1px; background-position: 0 100%; -webkit-box-decoration-break: clone; box-decoration-break: clone; transition: background-size .35s var(--ease-out-soft); }
+.v2-kaart-voet a:hover span, .v2-kaart-voet a:focus-visible span { background-size: 100% 1px; }
+.v2 .v2-kaart-voet a:hover { color: var(--color-v2-olijf); }
+.v2 .v2-donker .v2-kaart-voet a:hover { color: var(--color-v2-olijf-fel); }
+.v2-kaart-voet a:hover::before { translate: 3px 0; }
+.v2 .v2-kaart-voet a:focus-visible { outline: 2px solid var(--color-v2-olijf); outline-offset: 3px; border-radius: 4px; }
+.v2 .v2-donker .v2-kaart-voet a:focus-visible { outline-color: var(--color-v2-olijf-fel); }
+@media (prefers-reduced-motion: no-preference) {
+  /* Na het onthullen van de kaart trekt de lijn zich en komen de links een voor een op. */
+  html.js .v2-bento > li.reveal-target:not(.revealed) .v2-kaart-voet::before { transform: scaleX(0); }
+  html.js .v2-bento > li.reveal-target:not(.revealed) .v2-kaart-voet li { opacity: 0; translate: 0 8px; }
+}
+
 .v2-chips { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; }
 .v2-chips span { padding: 5px 12px; border-radius: 999px; background: #fff; color: var(--color-v2-inkt); }
 .v2-chips .v2-chip-olijf { background: var(--color-v2-olijf); color: #fff; }
-.v2-bento li:not(.v2-groot) .v2-chips span { background: var(--color-v2-tint); }
+.v2-bento > li:not(.v2-groot) .v2-chips span { background: var(--color-v2-tint); }
 .v2-teken-groot { font-family: var(--font-v2-kop); font-size: 46px; font-weight: 600; line-height: 1; letter-spacing: -0.03em; color: var(--color-v2-olijf); }
 .v2-eu { width: 48px; height: 48px; border-radius: 14px; background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
 .v2-vs { font-family: var(--font-v2-kop); font-size: 24px; font-weight: 600; color: #8C8F80; letter-spacing: -0.02em; }
