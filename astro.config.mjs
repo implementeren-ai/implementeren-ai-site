@@ -16,7 +16,7 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 // lastmod voor URL's met een datum in de frontmatter: artikelen krijgen updatedDate
-// (anders publishDate), cases hun publishDate. Pagina's zonder datum blijven zonder
+// (anders publishDate), cases geen. Pagina's zonder datum blijven zonder
 // lastmod: een verzonnen datum is erger dan geen. De routes hieronder lopen gelijk
 // met de [slug]-pagina's in src/pages.
 const DATUM_ROUTES = collectieRoutes;
@@ -26,6 +26,9 @@ function leesLastmod() {
   const veld = (tekst, naam) =>
     tekst.match(new RegExp(`^${naam}:\\s*["']?(\\d{4}-\\d{2}-\\d{2})`, 'm'))?.[1];
   for (const [collectie, route] of Object.entries(DATUM_ROUTES)) {
+    // Cases krijgen geen lastmod: hun publishDate (18 mei 2026) is niet de datum waarop ze
+    // op de site kwamen, en een onjuiste lastmod is erger dan geen (SEO-herstelplan T03).
+    if (collectie === 'cases') continue;
     const dir = join('src/content', collectie);
     for (const bestand of readdirSync(dir)) {
       if (!bestand.endsWith('.md')) continue;
