@@ -180,8 +180,33 @@ html.js .v2-taken > *:nth-child(4) { animation-delay: .75s; }
 /* ---------- 8. Eerst zelf lezen (bento) ---------- */
 .v2-lezen { padding-bottom: 120px; }
 .v2-lezen h2 { margin: 0 0 32px; }
-.v2-lezen-lijst { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px 24px; font-size: 16px; }
-.v2 .v2-lezen-lijst a { color: var(--color-v2-inkt); text-decoration: underline; text-underline-offset: 3px; }
+/* Deep links als tweede rij mini-tegels: zelfde taal als de bento, kleiner en compacter. */
+.v2-lezen-kop { display: flex; align-items: center; gap: 14px; margin: 44px 0 16px; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--color-v2-inkt-2); }
+.v2-lezen-kop::after { content: ""; flex: 1; height: 1px; background: var(--color-v2-lijn); }
+.v2-lezen-lijst { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 12px; }
+.v2-lezen-lijst li { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 14px; min-height: 124px; padding: 20px 52px 20px 22px; border-radius: 20px; background: #fff; border: 1px solid var(--color-v2-lijn); transition: translate .3s var(--ease-out-soft), box-shadow .3s var(--ease-out-soft), background-color .3s var(--ease-out-soft), border-color .3s var(--ease-out-soft), opacity .6s var(--ease-out-soft) .3s, transform .6s var(--ease-out-soft) .3s; }
+.v2-lezen-lijst li:hover { translate: 0 -3px; background: #FBFBF6; border-color: #D3D6BF; box-shadow: 0 16px 30px -22px rgba(35,38,29,.35); }
+.v2-lezen-lijst li::after { content: "→"; pointer-events: none; position: absolute; right: 20px; bottom: 18px; font-size: 18px; line-height: 1; color: var(--color-v2-olijf); transition: transform .3s var(--ease-out-soft); }
+.v2-lezen-lijst li:hover::after { transform: translateX(4px); }
+.v2 .v2-lezen-lijst a { font-family: var(--font-v2-kop); font-size: 17px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.35; color: var(--color-v2-inkt); text-decoration: none; }
+.v2 .v2-lezen-lijst a:hover { color: var(--color-v2-olijf-h); }
+.v2 .v2-lezen-lijst a::before { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.v2 .v2-lezen-lijst a:focus-visible { outline: none; }
+.v2 .v2-lezen-lijst a:focus-visible::before { outline: 3px solid var(--color-v2-olijf); outline-offset: 3px; }
+.v2-pijler { padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: .02em; line-height: 1.3; }
+.v2-tegel-avg .v2-pijler { background: var(--color-v2-inkt); color: var(--color-v2-olijf-fel); }
+.v2-tegel-prijs .v2-pijler { background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); }
+.v2-tegel-branche .v2-pijler { background: var(--color-v2-tint); color: var(--color-v2-olijf); }
+@media (max-width: 599px) {
+  .v2-lezen-kop { margin-top: 36px; }
+  .v2-lezen-lijst { gap: 10px; }
+  .v2-lezen-lijst li { flex-direction: row; align-items: center; gap: 14px; min-height: 0; padding: 16px 44px 16px 16px; border-radius: 18px; }
+  .v2-lezen-lijst li::after { bottom: auto; top: 50%; right: 16px; margin-top: -9px; }
+  .v2-pijler { flex: none; width: 74px; text-align: center; }
+  .v2 .v2-lezen-lijst a { font-size: 16px; }
+}
+@media (min-width: 600px) { .v2-lezen-lijst { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 900px) { .v2-lezen-lijst { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .v2-bento { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
 .v2-bento li { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-height: 230px; padding: 28px; border-radius: 26px; background: #fff; border: 1px solid var(--color-v2-lijn); font-size: 16px; color: var(--color-v2-inkt-2); transition: translate .3s var(--ease-out-soft), box-shadow .3s var(--ease-out-soft), opacity .6s var(--ease-out-soft), transform .6s var(--ease-out-soft); }
 .v2-bento li:hover { translate: 0 -3px; box-shadow: 0 18px 36px -24px rgba(35,38,29,.35); }
