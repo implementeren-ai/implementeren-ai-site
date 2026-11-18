@@ -328,38 +328,42 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
       <p class="v2-verschil-citaat reveal-target">"Dit werkt omdat het uit de praktijk komt, niet uit een whitepaper. Ons team draait zelf dagelijks op Claude, en dezelfde werkwijze zetten we bij jou neer."</p>
     </section>
 
-    <!-- 8. Eerst zelf lezen: kennispijlers als bento (Spec C, C-09) -->
+    <!-- 8. Eerst zelf lezen: kennispijlers als bento, verdieping als paragrafen in de kaart (Spec C, C-09; SEO T03) -->
     <section class="v2-wrap v2-lezen">
       <h2>Eerst zelf lezen?</h2>
       <ul class="v2-bento">
-        <li class="v2-groot reveal-target">
+        <li class="v2-groot">
           <span class="v2-chips" aria-hidden="true"><span>Pro</span><span>Team</span><span class="v2-chip-olijf">Enterprise</span></span>
-          <span><a href="/gids/claude-voor-mkb">Zakelijk Claude-account en abonnement</a>: Team of Enterprise, wat het kost en hoe je begint.</span>
+          <span class="v2-bento-zin"><a class="v2-bento-hoofd" href="/gids/claude-voor-mkb">Zakelijk Claude-account en abonnement</a>: Team of Enterprise, wat het kost en hoe je begint.</span>
         </li>
-        <li class="reveal-target">
-          <span class="v2-teken-groot" aria-hidden="true">€</span>
-          <span><a href="/prijs">Wat kost Claude zakelijk?</a> De prijzen van Pro, Team, Enterprise en de API.</span>
-        </li>
-        <li class="v2-donker reveal-target">
+        <li class="v2-donker">
           <span class="v2-eu" aria-hidden="true">EU</span>
-          <span><a href="/compliance">Is Claude AVG-proof?</a> Wat Anthropic regelt en wat jij zelf vastlegt.</span>
+          <span class="v2-bento-zin"><a class="v2-bento-hoofd" id="s8-compliance" href="/compliance">Is Claude AVG-proof?</a> Wat Anthropic regelt en wat jij zelf vastlegt.</span>
+          <ul class="v2-bento-sub" aria-labelledby="s8-compliance">
+            <li><a href="/compliance/anthropic-dpa">Anthropic DPA: wat hij dekt</a></li>
+            <li><a href="/compliance/is-claude-veilig">Is Claude veilig voor bedrijfsdata?</a></li>
+            <li><a href="/compliance/eu-hosting">Claude-data in de EU houden</a></li>
+          </ul>
         </li>
-        <li class="reveal-target">
+        <li class="v2-kaart-prijs">
+          <span class="v2-teken-groot" aria-hidden="true">€</span>
+          <span class="v2-bento-zin"><a class="v2-bento-hoofd" id="s8-prijs" href="/prijs">Wat kost Claude zakelijk?</a> De prijzen van Pro, Team, Enterprise en de API.</span>
+          <ul class="v2-bento-sub" aria-labelledby="s8-prijs">
+            <li><a href="/prijs/credits-en-limieten">Claude limieten per abonnement</a></li>
+            <li><a href="/prijs/pro-vs-team-vs-enterprise">Claude Pro, Team of Enterprise</a></li>
+          </ul>
+        </li>
+        <li class="v2-kaart-branche">
           <span class="v2-chips" aria-hidden="true"><span>accountants</span><span>advocaten</span><span>makelaars</span></span>
-          <span><a href="/verticalen">Claude per branche</a>: voor accountants, advocaten, makelaars en marketingbureaus.</span>
+          <span class="v2-bento-zin"><a class="v2-bento-hoofd" id="s8-branche" href="/verticalen">Claude per branche</a>: voor accountants, advocaten, makelaars en marketingbureaus.</span>
+          <ul class="v2-bento-sub" aria-labelledby="s8-branche">
+            <li><a href="/claude-voor-accountants">Claude voor accountants en administratiekantoren</a></li>
+          </ul>
         </li>
-        <li class="reveal-target">
+        <li class="v2-kaart-vs">
           <span class="v2-vs" aria-hidden="true">Claude <b>vs</b> ChatGPT</span>
-          <span><a href="/vergelijken">Claude vergelijken</a> met ChatGPT, Microsoft Copilot en Cursor.</span>
+          <span class="v2-bento-zin"><a class="v2-bento-hoofd" href="/vergelijken">Claude vergelijken</a> met ChatGPT, Microsoft Copilot en Cursor.</span>
         </li>
-      </ul>
-      <ul class="v2-lezen-lijst">
-        <li><a href="/compliance/anthropic-dpa">Anthropic DPA: wat hij dekt</a></li>
-        <li><a href="/compliance/is-claude-veilig">Is Claude veilig voor bedrijfsdata?</a></li>
-        <li><a href="/prijs/credits-en-limieten">Claude limieten per abonnement</a></li>
-        <li><a href="/claude-voor-accountants">Claude voor accountants en administratiekantoren</a></li>
-        <li><a href="/compliance/eu-hosting">Claude-data in de EU houden</a></li>
-        <li><a href="/prijs/pro-vs-team-vs-enterprise">Claude Pro, Team of Enterprise</a></li>
       </ul>
     </section>
 
