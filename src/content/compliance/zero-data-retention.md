@@ -62,8 +62,8 @@ faq:
     answer: "Ja. Ook met ZDR verwerkt Anthropic je data op het moment dat Claude een antwoord genereert, en dat is een verwerking onder de AVG. De DPA van Anthropic is automatisch onderdeel van de Commercial Terms en blijft het juridische fundament. ZDR verkort alleen de bewaartermijn, het vervangt de verwerkersovereenkomst niet."
   - question: "Werkt ZDR ook voor Claude Team of de webinterface van Enterprise?"
     answer: "Nee. De chatinterfaces van Claude Team en Claude Enterprise vallen niet onder ZDR, net als Claude Free, Pro en Max. De ene uitzondering is Claude Code op Claude Enterprise: daarvoor bestaat een eigen ZDR-regeling die Anthropic per organisatie aanzet voor accounts die daarvoor in aanmerking komen."
-  - question: "Kan ik Claude Fable 5.1 gebruiken onder ZDR?"
-    answer: "Standaard niet. Anthropic heeft Fable 5 en Fable 5.1 aangewezen als Covered Models. Die vereisen minimaal 30 dagen dataretentie voor veiligheidscontroles, op elk platform. Een organisatie met ZDR kan deze modellen wel gebruiken in een aparte workspace waarvoor 30 dagen retentie is aangezet. De overige workspaces houden dan zero data retention."
+  - question: "Kan ik Claude Fable 5.2 gebruiken onder ZDR?"
+    answer: "Standaard niet. Anthropic heeft Fable 5, Fable 5.1 en Fable 5.2 aangewezen als Covered Models. Die vereisen minimaal 30 dagen dataretentie voor veiligheidscontroles, op elk platform. Een organisatie met ZDR kan deze modellen wel gebruiken in een aparte workspace waarvoor 30 dagen retentie is aangezet. De overige workspaces houden dan zero data retention."
   - question: "Hoe controleer ik of mijn organisatie ZDR heeft?"
     answer: "In de Claude Console zie je het onder Settings, Privacy Controls, bij Data retention period. Staat daar zero data retention, dan is de regeling actief voor die organisatie. Twijfel je, of heb je meerdere organisaties, check dan je contract of vraag het na bij je Anthropic-accountteam. ZDR geldt per organisatie, nooit automatisch voor allemaal."
 deadline: null
@@ -107,7 +107,7 @@ Let op bij metrics logging in Claude Code: productiviteitsdata zoals gebruikssta
 
 ## Fable-modellen vereisen 30 dagen bewaartermijn
 
-Anthropic heeft Claude Fable 5, Fable 5.1 en de Mythos-varianten aangewezen als Covered Models: modellen waarvan de capaciteiten extra waarborgen vragen. Voor die modellen geldt een minimale dataretentie van 30 dagen, op elk platform, juist omdat sommige vormen van misbruik alleen zichtbaar worden over meerdere verzoeken heen. Prompts en antwoorden worden na die 30 dagen automatisch verwijderd, tenzij er een veiligheidsonderzoek loopt.
+Anthropic heeft Claude Fable 5, Fable 5.1, Fable 5.2 en de Mythos-varianten aangewezen als Covered Models: modellen waarvan de capaciteiten extra waarborgen vragen. Voor die modellen geldt een minimale dataretentie van 30 dagen, op elk platform, juist omdat sommige vormen van misbruik alleen zichtbaar worden over meerdere verzoeken heen. Prompts en antwoorden worden na die 30 dagen automatisch verwijderd, tenzij er een veiligheidsonderzoek loopt.
 
 Voor een organisatie met ZDR betekent dit dat Fable-modellen standaard niet beschikbaar zijn. Er is een tussenweg: je kunt voor één aparte workspace 30 dagen retentie aanzetten en Fable daar gebruiken, terwijl de rest van de organisatie zero data retention houdt. Anthropic werkt daarnaast vanaf najaar 2026 aan Enterprise Frontier Safeguards, een regeling waarbij de bewaarde monitoringdata in de cloudomgeving van de klant zelf kan staan.
 

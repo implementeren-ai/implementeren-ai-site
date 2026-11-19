@@ -31,7 +31,7 @@ competitors: []
 disclaimer: fiscaal
 status: published
 publishDate: 2026-10-02
-updatedDate: 2026-11-10
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-29
@@ -76,7 +76,7 @@ faq:
   - question: "Is er een gratis versie van Claude voor bedrijven?"
     answer: "Ja, Claude Free bestaat en is prima om te proeven. Voor zakelijk gebruik schiet het tekort: weinig gebruiksruimte, geen beheeromgeving en geen zakelijke voorwaarden. Bij Claude Team, Enterprise en de API gebruikt Anthropic je data standaard niet voor modeltraining en hoort er een verwerkersovereenkomst bij."
   - question: "Wat kost de Claude API?"
-    answer: "Je betaalt per verwerkte token, zonder abonnement. In oktober 2026 kost Claude Haiku 5.5 0,10 dollar per miljoen input-tokens en 0,50 dollar per miljoen output-tokens, bij prompts tot 100.000 tokens. Claude Sonnet 5.5 kost 2 en 10 dollar, Claude Opus 5.5 kost 4 en 20 dollar en Claude Fable 5.1 kost 10 en 50 dollar. Batchverwerking halveert die prijzen. Een cache-hit kost een tiende van het input-tarief of minder."
+    answer: "Je betaalt per verwerkte token, zonder abonnement. In november 2026 kost Claude Haiku 5.5 0,10 dollar per miljoen input-tokens en 0,50 dollar per miljoen output-tokens, bij prompts tot 100.000 tokens. Claude Sonnet 5.5 kost 2 en 10 dollar, Claude Opus 5.5 kost 4 en 20 dollar en Claude Fable 5.2 kost 8 en 40 dollar. Batchverwerking halveert die prijzen. Een cache-hit kost een tiende van het input-tarief of minder."
   - question: "Zijn Claude-kosten aftrekbaar als bedrijfskosten?"
     answer: "Ja. Abonnementen en API-verbruik zijn gewone softwarekosten die je inboekt op basis van de factuur van Anthropic. Kijk op die factuur of er btw is berekend. Is de btw naar jou verlegd, dan geef je haar zelf aan en trek je haar als voorbelasting weer af. Heb je recht op aftrek, dan betaal je volgens de Belastingdienst per saldo geen btw."
 ---
@@ -103,9 +103,9 @@ faq:
   - Team minimaal 2 leden, maximaal 150 seats:
     https://support.claude.com/en/articles/9266767-what-is-the-team-plan
   - API-prijzen: https://platform.claude.com/docs/en/about-claude/pricing
-    (Fable 5.1 $10/$50 per MTok; Opus 5.5 $4/$20; Sonnet 5.5 $2/$10; Haiku 5.5
+    (Fable 5.2 $8/$40 per MTok, gecheckt 19 november 2026; Opus 5.5 $4/$20; Sonnet 5.5 $2/$10; Haiku 5.5
     $0,10/$0,50 bij prompts tot 100.000 tokens en $0,50/$2,50 daarboven; batch -50%;
-    cache-hit 0,1x input, 0,05x bij Sonnet 5.5 en Opus 5.5, 0,025x bij Fable 5.1)
+    cache-hit 0,1x input, 0,05x bij Sonnet 5.5 en Opus 5.5, 0,025x bij Fable 5.2)
   - Wisselkoers: 1 EUR = 1,1298 USD per 1 oktober 2026 (ECB-referentiekoers),
     dus USD x ~0,885 = EUR
   - Btw: Anthropic publiceert niet welke entiteit Nederlandse klanten factureert en
@@ -151,11 +151,11 @@ Naast de abonnementen is er de API, waarmee je Claude in eigen processen en soft
 | Claude Haiku 5.5 | $0,10 | $0,50 |
 | Claude Sonnet 5.5 | $2 | $10 |
 | Claude Opus 5.5 | $4 | $20 |
-| Claude Fable 5.1 | $10 | $50 |
+| Claude Fable 5.2 | $8 | $40 |
 
 Eén kanttekening bij Claude Haiku 5.5: deze tarieven gelden voor prompts tot 100.000 tokens. Stuur je in één verzoek een langere prompt mee, dan betaal je $0,50 per miljoen input-tokens en $2,50 per miljoen output-tokens. Welk model bij welke taak past, lees je in [welk Claude-model kies je als MKB](/nieuws/welk-claude-model-mkb).
 
-Twee hefbomen drukken die kosten flink. Batchverwerking, voor taken die geen haast hebben, halveert de prijs. Met prompt caching kost herhaalde context een tiende van het input-tarief, en bij Claude Sonnet 5.5, Claude Opus 5.5 en Claude Fable 5.1 nog minder. Met de [API-kostencalculator](/tools/claude-api-kosten-calculator) reken je je eigen scenario door.
+Twee hefbomen drukken die kosten flink. Batchverwerking, voor taken die geen haast hebben, halveert de prijs. Met prompt caching kost herhaalde context een tiende van het input-tarief, en bij Claude Sonnet 5.5, Claude Opus 5.5 en Claude Fable 5.2 nog minder. Met de [API-kostencalculator](/tools/claude-api-kosten-calculator) reken je je eigen scenario door.
 
 Hoe dat in de praktijk uitpakt: ons team bouwde eerder bij een Nederlands softwarebedrijf met ruim 50 klanten een rapportagestraat die [872 Power BI-rapporten in drie maanden](/cases/powerbi-reporting) genereerde, tweetalig en met gevalideerde cijfers. Een rapport kostte eerst anderhalf uur handwerk. Het team besteedt nu minder dan een uur per week aan rapportage in plaats van twintig. Bij dat soort volumes is de plankeuze simpel: interactief werk op een abonnement, bulkwerk via de API.
 

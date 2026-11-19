@@ -99,7 +99,7 @@ De dienst rust op vier begrippen:
 3. **Sessie.** Eén lopende opdracht van een agent in een omgeving. Een sessie houdt bestanden en geschiedenis vast, ook als je hem later hervat.
 4. **Events.** De berichten tussen jouw applicatie en de agent: jouw opdracht, de resultaten van tools en statusmeldingen.
 
-Ingebouwd zijn een bash-shell, bestandsbewerking, zoeken en ophalen van webpagina's en koppelingen met MCP-servers. Alle modellen vanaf Claude 4.5 worden ondersteund, dus ook Fable 5.1, Opus 5.5, Sonnet 5.5 en Haiku 5.5. Toegang staat standaard aan voor elk API-account. Elk verzoek heeft wel de bèta-header `managed-agents-2026-04-01` nodig; de SDK zet die er zelf bij.
+Ingebouwd zijn een bash-shell, bestandsbewerking, zoeken en ophalen van webpagina's en koppelingen met MCP-servers. Alle modellen vanaf Claude 4.5 worden ondersteund, dus ook Fable 5.2, Opus 5.5, Sonnet 5.5 en Haiku 5.5. Toegang staat standaard aan voor elk API-account. Elk verzoek heeft wel de bèta-header `managed-agents-2026-04-01` nodig; de SDK zet die er zelf bij.
 
 ## Managed agents of zelf bouwen: wat is het verschil?
 
@@ -134,7 +134,7 @@ Tabel: rekenvoorbeeld voor één dagelijkse agent-taak, prijzen van Anthropic en
 | Haiku 5.5 | 0,10 / 0,50 dollar | 0,055 dollar (0,05 euro) | 1,21 dollar (1,09 euro) |
 | Sonnet 5.5 | 2 / 10 dollar | 0,34 dollar (0,30 euro) | 7,48 dollar (6,71 euro) |
 | Opus 5.5 | 4 / 20 dollar | 0,64 dollar (0,57 euro) | 14,08 dollar (12,63 euro) |
-| Fable 5.1 | 10 / 50 dollar | 1,54 dollar (1,38 euro) | 33,88 dollar (30,39 euro) |
+| Fable 5.2 | 8 / 40 dollar | 1,24 dollar (1,11 euro) | 27,28 dollar (24,47 euro) |
 
 Twee kanttekeningen. Een agent leest bij elke stap zijn eerdere context opnieuw in, dus het aantal inputtokens loopt bij lange taken snel op. Prompt caching drukt dat: op Opus 5.5 en Sonnet 5.5 kost een cache-hit 5 procent van de normale inputprijs. Pin je de agent op verwerking in de VS, dan betaal je 1,1 keer het normale tarief. Reken je eigen situatie door met de [Claude API-kostencalculator](/tools/claude-api-kosten-calculator).
 

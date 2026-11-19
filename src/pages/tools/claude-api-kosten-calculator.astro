@@ -13,18 +13,19 @@ import { webAppNode, faqNode, toolId } from '../../lib/schema';
 // https://claude.com/pricing, beide gecheckt op PRIJZEN_GECHECKT.
 //   input        basisprijs input
 //   cacheSchrijf 5-minuten cache write (1,25x input)
-//   cacheLees    cache hit (0,1x input; 0,05x Opus 5.5 en Sonnet 5.5; 0,025x Fable 5.1)
+//   cacheLees    cache hit (0,1x input; 0,05x Opus 5.5 en Sonnet 5.5; 0,025x Fable 5.2 en 5.1)
 //   lang         optioneel: hogere prijzen als de prompt boven LANG_DREMPEL
 //                tokens komt (alleen Haiku 5.5; telt alle input, ook cache)
 //   output       output
 // Batch API: 50% korting op alle tokens, stapelt met caching (BATCH_FACTOR).
-// Weggelaten: Mythos 5.1 en Mythos 5 (alleen op uitnodiging) en de modellen
+// Weggelaten: Mythos 5.2, 5.1 en 5 (alleen op uitnodiging) en de modellen
 // die Anthropic als retired markeert (Opus 4.1, Opus 4, Sonnet 4, Haiku 3.5).
 // ============================================================================
-const PRIJZEN_GECHECKT = '2026-10-22';
+const PRIJZEN_GECHECKT = '2026-11-19';
 const BATCH_FACTOR = 0.5;
 const LANG_DREMPEL = 100000;
 const PRIJZEN = [
+  { id: 'fable-5-2', naam: 'Claude Fable 5.2', input: 8, cacheSchrijf: 10, cacheLees: 0.2, output: 40 },
   { id: 'fable-5-1', naam: 'Claude Fable 5.1', input: 10, cacheSchrijf: 12.5, cacheLees: 0.25, output: 50 },
   { id: 'fable-5', naam: 'Claude Fable 5', input: 10, cacheSchrijf: 12.5, cacheLees: 1, output: 50 },
   { id: 'opus-5-5', naam: 'Claude Opus 5.5', input: 4, cacheSchrijf: 5, cacheLees: 0.2, output: 20 },
@@ -376,7 +377,7 @@ const fout = 'mt-1 block text-xs font-semibold text-rood';
   };
 
   // Ruwe tokens per woord; nieuwere tokenizer (Claude 4.7 en later) circa 1,3x.
-  const NIEUWE_TOKENIZER = ['fable-5-1', 'fable-5', 'opus-5-5', 'opus-5', 'opus-4-8', 'opus-4-7', 'sonnet-5-5', 'sonnet-5', 'haiku-5-5'];
+  const NIEUWE_TOKENIZER = ['fable-5-2', 'fable-5-1', 'fable-5', 'opus-5-5', 'opus-5', 'opus-4-8', 'opus-4-7', 'sonnet-5-5', 'sonnet-5', 'haiku-5-5'];
   const TOKENS_PER_WOORD = 1.75;
 
   const $ = (id) => document.getElementById(id);
