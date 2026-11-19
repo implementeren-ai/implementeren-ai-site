@@ -19,7 +19,7 @@ const h1 = 'Van ChatGPT naar Claude overstappen: kosten en stappenplan';
 const beschrijving =
   'Overstappen van ChatGPT naar Claude? Wanneer het loont en wanneer niet, wat het echt kost en hoe je Claude in twee weken test met één team.';
 const gepubliceerd = '2026-10-02';
-const bijgewerkt = '2026-10-02';
+const bijgewerkt = '2026-11-19';
 const geraadpleegd = '2 oktober 2026';
 
 const datumNl = (iso: string) =>
@@ -59,7 +59,8 @@ const faq = [
 const bronnen = [
   { titel: 'Anthropic: Claude pricing (claude.com/pricing)', url: 'https://claude.com/pricing', geraadpleegd },
   { titel: 'Anthropic Help Center: What is the Team plan?', url: 'https://support.claude.com/en/articles/9266767-what-is-the-team-plan', geraadpleegd },
-  { titel: 'Anthropic Help Center: Import and export your memory from Claude', url: 'https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude', geraadpleegd },
+  { titel: 'Anthropic Help Center: Import and export your memory from Claude', url: 'https://support.claude.com/en/articles/12123587-import-and-export-your-memory-from-claude', geraadpleegd: '19 november 2026' },
+  { titel: 'Anthropic Help Center: How large is the context window on paid Claude plans?', url: 'https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans', geraadpleegd: '19 november 2026' },
   { titel: 'Anthropic Help Center: Can Claude produce images?', url: 'https://support.claude.com/en/articles/9002504-can-claude-produce-images', geraadpleegd },
   { titel: "Anthropic Help Center: Export your organization's data", url: 'https://support.claude.com/en/articles/13346720-export-your-organization-s-data', geraadpleegd },
   { titel: 'OpenAI: ChatGPT Business pricing', url: 'https://openai.com/business/chatgpt-pricing/', geraadpleegd },
@@ -202,8 +203,8 @@ const koppen = [
       <p>Claude wordt interessant als je team veel schrijft, lange stukken leest of werk wil automatiseren.</p>
       <ul>
         <li>
-          <strong>Lange documenten en dossiers.</strong> Op het Team-abonnement heeft Claude een contextvenster van
-          200.000 tokens. Dat is de hoeveelheid tekst die Claude in één gesprek kan meenemen. Er past een flink
+          <strong>Lange documenten en dossiers.</strong> Op de betaalde abonnementen, ook Team, hebben de actuele modellen
+          (Opus 5.5, Sonnet 5.5 en Haiku 5.5) een contextvenster van 1 miljoen tokens. Dat is de hoeveelheid tekst die Claude in één gesprek kan meenemen. Er past een flink
           contract, rapport of dossier in.
         </li>
         <li>
@@ -278,7 +279,7 @@ const koppen = [
       <p>
         Een export brengt je gesprekken nog niet naar Claude. De import van Anthropic is alleen voor geheugen. Je
         laat ChatGPT met een vaste prompt opschrijven wat het over je werk heeft onthouden. Dat
-        plak je in Claude bij Instellingen, Geheugen. Die import werkt op Free, Pro, Max en Team. Anthropic noemt
+        plak je in Claude bij Instellingen, Geheugen. Die import werkt op Free, Pro, Max, Ultra, Team en Enterprise. Anthropic noemt
         hem nog experimenteel, dus controleer na afloop wat er is overgekomen.
       </p>
       <p>

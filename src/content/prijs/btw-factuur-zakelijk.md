@@ -33,9 +33,9 @@ faq:
   - question: "Hoe voeg ik mijn BTW-nummer toe aan mijn Claude account?"
     answer: "Ga naar console.anthropic.com, klik op Settings, dan Billing. Onder je bedrijfsgegevens staat het veld Tax ID. Vul daar je BTW-nummer in inclusief landcode, dus NL gevolgd door je nummer. Sla op. Vanaf de volgende factuur staat je BTW-nummer vermeld."
   - question: "Krijg ik een factuur per gebruiker bij Claude Team?"
-    answer: "Nee. Bij Claude Team ontvang je een verzamelfactuur per maand. Het totaalbedrag is het aantal actieve gebruikers maal 25 dollar. Je kunt per gebruiker een interne kostentoewijzing maken, maar Anthropic stuurt een enkele factuur per workspace."
+    answer: "Nee. Bij Claude Team ontvang je een verzamelfactuur per maand. Het totaalbedrag is het aantal seats maal de seatprijs, bijvoorbeeld 25 dollar per standaard-seat bij maandelijkse betaling. Je kunt per gebruiker een interne kostentoewijzing maken, maar Anthropic stuurt een enkele factuur per workspace."
   - question: "Kan ik betalen via SEPA of iDEAL?"
-    answer: "Anthropic accepteert creditcard en debitcard via Stripe. SEPA-incasso is beschikbaar voor Enterprise-contracten. iDEAL wordt niet direct ondersteund. De meeste Nederlandse bedrijven gebruiken een zakelijke creditcard of een Adyen virtual card."
+    answer: "Anthropic accepteert creditcard en debitcard via Stripe. SEPA-incasso staat niet op de prijspagina van Anthropic. Enterprise ondersteunt daarnaast ACH, en betalen op factuur kan alleen bij een Enterprise-contract via sales. iDEAL wordt niet direct ondersteund. De meeste Nederlandse bedrijven gebruiken een zakelijke creditcard of een Adyen virtual card."
 ---
 
 Claude BTW factuur zakelijk ophalen is een van de eerste stappen als je Claude als bedrijfstool inzet. Anthropic stuurt geen facturen per post en de factuur staat niet op een voor de hand liggende plek. In deze handleiding doorloop je het volledige proces: van BTW-nummer toevoegen tot factuur downloaden en boeken.
@@ -72,15 +72,15 @@ De boeking verloopt als volgt. Dit is de standaard voor diensten van buiten de E
 - Boek de BTW via de verleggingsregeling: 21% BTW verschuldigd en 21% BTW als voorbelasting
 - Het netto-effect op je BTW-aangifte is nul als je volledig aftrekgerechtigd bent
 
-Bij Claude Team met 5 gebruikers betaal je $125 per maand (~EUR 115 exclusief BTW). Per kwartaal is dat EUR 345 aan softwarekosten. Bij een automation-audit werden 38 scripts geanalyseerd in 2 dagen. De Claude Team-kosten voor die maand: EUR 115. De besparing aan consultancy-uren: EUR 4.800. Dat soort verhoudingen maken de boekhouding relevant: je wilt die kosten netjes in je administratie hebben.
+Bij Claude Team met 5 standaard-seats en maandelijkse betaling betaal je $125 per maand (~EUR 115 exclusief BTW). Per kwartaal is dat EUR 345 aan softwarekosten. Bij een automation-audit werden 38 scripts geanalyseerd in 2 dagen. De Claude Team-kosten voor die maand: EUR 115. De besparing aan consultancy-uren: EUR 4.800. Dat soort verhoudingen maken de boekhouding relevant: je wilt die kosten netjes in je administratie hebben.
 
 ## Claude btw factuur zakelijk: Pro vs Team
 
 Bij Claude Pro betaal je $20 per maand (~EUR 18,50 exclusief BTW) via je persoonlijke Anthropic-account. De factuur staat op naam van de accounthouder. Voor een eenmanszaak of zzp'er is dat voldoende.
 
-Bij Claude Team betaal je $25 per gebruiker per maand (~EUR 23 exclusief BTW), met een minimum van 5 gebruikers. Je ontvangt een verzamelfactuur voor de hele workspace. De workspace-admin beheert de billing. Als je intern wilt verdelen per afdeling, maak je een eigen verdeling op basis van het aantal gebruikers per team.
+Bij Claude Team betaal je voor een standaard-seat $25 per gebruiker per maand bij maandelijkse betaling (~EUR 23 exclusief BTW), of $20 bij jaarbetaling. Team is er voor 2 tot 150 gebruikers. Een premium-seat met 5 keer zoveel gebruik kost $125 per maand, of $100 bij jaarbetaling. Je ontvangt een verzamelfactuur voor de hele workspace. De workspace-admin beheert de billing. Als je intern wilt verdelen per afdeling, maak je een eigen verdeling op basis van het aantal gebruikers per team.
 
-Bij Claude Enterprise sluit je een contract af met Anthropic. De facturatie is maatwerk: jaarlijkse betaling, SEPA-incasso, en facturen op maat met je inkoopordernummer en kostenplaats. Enterprise-contracten zijn geschikt voor organisaties met 50+ gebruikers of specifieke compliance-eisen rond AVG (GDPR) en dataverwerking.
+Claude Enterprise kost $20 per seat per maand bij jaarbetaling, met een minimum van 20 seats, plus het gebruik tegen API-tarieven. Je kunt het zelf afsluiten (self-serve) of via een contract met sales. Self-serve Enterprise betaal je met creditcard of ACH. Betalen op factuur, met je inkoopordernummer en kostenplaats, kan alleen bij de variant via sales. Enterprise is geschikt voor organisaties vanaf 20 gebruikers of met specifieke compliance-eisen rond AVG (GDPR) en dataverwerking.
 
 ## API-facturatie apart
 
@@ -108,8 +108,8 @@ Ga naar console.anthropic.com, klik op Settings, dan Billing. Onder je bedrijfsg
 
 ### Krijg ik een factuur per gebruiker bij Claude Team?
 
-Nee. Bij Claude Team ontvang je een verzamelfactuur per maand. Het totaalbedrag is het aantal actieve gebruikers maal $25. Je kunt per gebruiker een interne kostentoewijzing maken, maar Anthropic stuurt een enkele factuur per workspace.
+Nee. Bij Claude Team ontvang je een verzamelfactuur per maand. Het totaalbedrag is het aantal seats maal de seatprijs, bijvoorbeeld $25 per standaard-seat bij maandelijkse betaling. Je kunt per gebruiker een interne kostentoewijzing maken, maar Anthropic stuurt een enkele factuur per workspace.
 
 ### Kan ik betalen via SEPA of iDEAL?
 
-Anthropic accepteert creditcard en debitcard via Stripe. SEPA-incasso is beschikbaar voor Enterprise-contracten. iDEAL wordt niet direct ondersteund. De meeste Nederlandse bedrijven gebruiken een zakelijke creditcard of een Adyen virtual card.
+Anthropic accepteert creditcard en debitcard via Stripe. SEPA-incasso staat niet op de prijspagina van Anthropic. Enterprise ondersteunt daarnaast ACH, en betalen op factuur kan alleen bij een Enterprise-contract via sales. iDEAL wordt niet direct ondersteund. De meeste Nederlandse bedrijven gebruiken een zakelijke creditcard of een Adyen virtual card.

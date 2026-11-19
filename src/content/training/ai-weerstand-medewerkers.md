@@ -62,7 +62,7 @@ Laat de directie expliciet uitspreken dat AI-adoptie niet leidt tot ontslagen. A
 
 De oplossing is niet een PowerPoint over hoe AI werkt. De oplossing is hands-on oefenen in een veilige omgeving. Bij onze [in-company trainingen](/training/training-medewerkers) beginnen we met de eenvoudigste toepassing die direct resultaat oplevert. Een email herformuleren. Een vergaderverslag samenvatten. Een klantvraag beantwoorden. Taken die elke medewerker dagelijks doet.
 
-De EU AI Act verplicht dat organisaties hun medewerkers AI-geletterd maken. Dat klinkt als een last, maar het is een kans om vaardigheidsonzekerheid structureel aan te pakken. Lees meer over de [vereisten voor AI-geletterdheid](/compliance/ai-geletterdheid).
+De EU AI Act vraagt organisaties maatregelen te nemen die de AI-geletterdheid van hun medewerkers ondersteunen. Dat klinkt als een last, maar het is een kans om vaardigheidsonzekerheid structureel aan te pakken. Lees meer over de [vereisten voor AI-geletterdheid](/compliance/ai-geletterdheid).
 
 ## Patroon 3: wantrouwen in output
 
@@ -134,7 +134,7 @@ Hoe weet je of je ai change management nederland-aanpak werkt? Niet door te tell
 
 **Te veel tools tegelijk.** Claude, ChatGPT van OpenAI, Copilot van Microsoft, Gemini van Google Workspace, en dan ook nog Cursor voor developers. Kies een tool, word er goed in, en breid pas uit als de basis staat. Bij Implementeren.ai adviseren we om te starten met Claude Team als primaire AI-tool voor het hele bedrijf, en Claude Code toe te voegen voor technische teams.
 
-**Training overslaan.** "Het is zo intuitief, medewerkers komen er zelf wel uit." Dat is dezelfde drogreden als bij elke andere software-implementatie. Sommige mensen komen er inderdaad zelf uit. Het merendeel niet. De AVG (GDPR) en EU AI Act versterken dit: medewerkers moeten aantoonbaar getraind zijn in het gebruik van AI-systemen. Anthropic biedt via Claude Enterprise uitgebreide onboarding, maar de interne adoptie blijft jouw verantwoordelijkheid.
+**Training overslaan.** "Het is zo intuitief, medewerkers komen er zelf wel uit." Dat is dezelfde drogreden als bij elke andere software-implementatie. Sommige mensen komen er inderdaad zelf uit. Het merendeel niet. De AVG (GDPR) en EU AI Act versterken dit: de AI Act vraagt dat je maatregelen neemt om de AI-geletterdheid van medewerkers te ondersteunen, en training is daar de meest voor de hand liggende. Anthropic biedt via Claude Enterprise uitgebreide onboarding, maar de interne adoptie blijft jouw verantwoordelijkheid.
 
 **Geen terugkoppelingsloop.** Je rolt AI uit, stuurt een tevredenheidsenquête na een maand, en legt het dossier dicht. Adoptie vereist doorlopende aandacht. Wat werkt? Wat niet? Welke processen zijn geschikt voor AI maar nog niet aangepakt? De kwartaalreview in onze retainer is bedoeld voor exact dit doel.
 

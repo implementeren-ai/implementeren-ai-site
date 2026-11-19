@@ -87,7 +87,7 @@ Na week 8 is de formele begeleiding afgebouwd. De champions hebben dan een doorl
 
 **Signaleren van kansen.** Champions zien als eerste welke processen nog niet geautomatiseerd zijn maar wel geschikt zijn voor Claude. Ze brengen die kansen in bij de kwartaalreview.
 
-**AVG en AI Act compliance.** Champions weten welke data wel en niet door Claude mag, gebaseerd op het drielagenmodel (groen, oranje, rood). Ze zijn het eerste vangnet tegen onbedoeld gebruik van persoonsgegevens in AI-tools. Dit is relevant voor de GDPR-verplichtingen en de EU AI Act die organisaties verplicht tot AI-geletterdheid. Ze kennen het verschil met ChatGPT van OpenAI, Copilot van Microsoft en Cursor, en weten wanneer Claude Team of Claude Enterprise de juiste keuze is.
+**AVG en AI Act compliance.** Champions weten welke data wel en niet door Claude mag, gebaseerd op het drielagenmodel (groen, oranje, rood). Ze zijn het eerste vangnet tegen onbedoeld gebruik van persoonsgegevens in AI-tools. Dit is relevant voor de GDPR-verplichtingen en de EU AI Act, die organisaties vraagt maatregelen te nemen voor de AI-geletterdheid van hun medewerkers. Ze kennen het verschil met ChatGPT van OpenAI, Copilot van Microsoft en Cursor, en weten wanneer Claude Team of Claude Enterprise de juiste keuze is.
 
 ## Selectie: de meest gemaakte fout
 

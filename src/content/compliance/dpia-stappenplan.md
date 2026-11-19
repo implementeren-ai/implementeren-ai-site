@@ -80,7 +80,7 @@ faq:
   - question: "Mag ik een DPIA zelf uitvoeren?"
     answer: "Ja. De AVG legt de DPIA bij de verwerkingsverantwoordelijke en eist geen externe auditor. Je kiest zelf de methode, zolang de vier onderdelen uit artikel 35 lid 7 erin staan. Heb je een functionaris gegevensbescherming, dan vraag je diens advies (lid 2). Anthropic moet redelijke hulp bieden volgens de DPA."
   - question: "Moet ik mijn DPIA herzien als Anthropic een nieuw model uitbrengt?"
-    answer: "Artikel 35 lid 11 AVG vraagt een toetsing als het risico verandert. Een nieuw model kan dat doen. Een voorbeeld: voor Claude Fable 5 en Fable 5.1 geldt standaard minimaal 30 dagen bewaren, en zero data retention alleen bij uitzondering. Check bij elke modelwissel of je beschrijving van bewaartermijnen nog klopt."
+    answer: "Artikel 35 lid 11 AVG vraagt een toetsing als het risico verandert. Een nieuw model kan dat doen. Een voorbeeld: voor Claude Fable 5, 5.1 en 5.2 geldt standaard minimaal 30 dagen bewaren, en zero data retention alleen bij uitzondering. Check bij elke modelwissel of je beschrijving van bewaartermijnen nog klopt."
   - question: "Wanneer moet ik naar de Autoriteit Persoonsgegevens?"
     answer: "Alleen als je DPIA laat zien dat er een hoog risico overblijft dat je met maatregelen niet genoeg verkleint. Dan raadpleeg je de AP vóór je begint (artikel 36 AVG). De AP geeft binnen acht weken schriftelijk advies. Bij een ingewikkelde verwerking kan dat zes weken langer duren."
   - question: "Geldt de Anthropic DPA ook voor Claude Pro?"
@@ -165,7 +165,7 @@ Tabel: input uit de documenten van Anthropic voor een DPIA, stand 22 oktober 202
 | Bewaren Team en Enterprise | Chats blijven bewaard zolang jij ze bewaart. Verwijderd: binnen 30 dagen van de backend | Privacy Center |
 | Gemarkeerde content | Prompts en antwoorden tot 2 jaar, classificatiescores tot 7 jaar | Privacy Center |
 | Zero data retention | Alleen voor de API, Claude Code met een zakelijke API-sleutel en Claude Code op Enterprise, na aanvraag | Privacy Center |
-| Covered Models | Fable 5 en Fable 5.1: standaard minimaal 30 dagen bewaren | Help Center |
+| Covered Models | Fable 5, 5.1 en 5.2: standaard minimaal 30 dagen bewaren | Help Center |
 | Opslag en doorgifte | Data opgeslagen in de VS. Standard Contractual Clauses, module 2 en 3 | Privacy Center, DPA I.1 |
 | Sub-verwerkers | Vooraf bericht, 15 dagen om bezwaar te maken | DPA, C.3 |
 | Datalek | Melding binnen 48 uur nadat Anthropic ervan weet | DPA, G.1 |

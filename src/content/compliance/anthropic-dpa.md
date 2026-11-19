@@ -32,7 +32,7 @@ competitors:
 disclaimer: juridisch
 status: published
 publishDate: 2026-10-02
-updatedDate: 2026-10-30
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-30
@@ -130,7 +130,7 @@ Dit artikel legt uit wat de Anthropic DPA is, voor welke abonnementen hij geldt,
 1. **Open de DPA** op [anthropic.com/legal/data-processing-addendum](https://www.anthropic.com/legal/data-processing-addendum). Daar staat de geldende versie, met bovenaan de datum waarop hij van kracht werd.
 2. **Je hoeft niets te tekenen.** Volgens het [Privacy Center van Anthropic](https://privacy.claude.com/en/articles/7996862-how-do-i-view-and-sign-your-data-processing-addendum-dpa) is de DPA automatisch onderdeel van de Commercial Terms of Service. Wie die voorwaarden accepteert, accepteert ook de DPA.
 3. **Bewaar zelf een kopie.** Het Privacy Center noemt geen aparte PDF of ondertekend exemplaar. Sla de pagina op als PDF via de printfunctie van je browser, zet de datum erbij en leg hem bij je AVG-documentatie.
-4. **Werk je via een ander platform, zoals AWS Bedrock of Google Vertex AI?** Dan gelden volgens Anthropic de voorwaarden van dat platform, en zoek je de verwerkersovereenkomst daar.
+4. **Werk je via een ander platform, zoals AWS Bedrock of Google Cloud Agent Platform (voorheen Vertex AI)?** Dan gelden volgens Anthropic de voorwaarden van dat platform, en zoek je de verwerkersovereenkomst daar.
 
 ## Waarom heb je een verwerkersovereenkomst nodig?
 

@@ -39,7 +39,7 @@ faq:
   - question: "Kan ik hallucinaties volledig uitsluiten?"
     answer: "Nee. Hallucinaties zijn een inherente eigenschap van large language models, niet een bug die je kunt fixen. Wat je wel kunt is het risico tot een acceptabel niveau terugbrengen. Door je prompts te structureren, brondata mee te geven, output te valideren tegen bekende feiten, en menselijke review in te bouwen bij kritieke beslissingen. Zero hallucinaties is een utopie. Detecteerbare en controleerbare output is haalbaar."
   - question: "Moet ik hallucinatie-risico opnemen in mijn DPIA?"
-    answer: "Ja. Als je een Data Protection Impact Assessment uitvoert voor Claude-gebruik, hoort hallucinatie-risico daarin thuis. Specifiek als AI-output wordt gebruikt voor besluitvorming of als AI-gegenereerde content wordt gepubliceerd. De EU AI Act vereist vanaf 2 augustus 2026 dat je transparant bent over AI-beperkingen. Documenteer welke validatiestappen je neemt en welke restrisico's je accepteert."
+    answer: "Ja. Als je een Data Protection Impact Assessment uitvoert voor Claude-gebruik, hoort hallucinatie-risico daarin thuis. Specifiek als AI-output wordt gebruikt voor besluitvorming of als AI-gegenereerde content wordt gepubliceerd. Sinds 2 augustus 2026 gelden bovendien de transparantieregels van de EU AI Act (artikel 50): mensen moeten weten dat ze met AI praten, en AI-tekst die je publiceert om het publiek over zaken van algemeen belang te informeren, meld je als AI-gegenereerd, tenzij een mens hem heeft gecontroleerd en iemand redactionele verantwoordelijkheid draagt. Documenteer welke validatiestappen je neemt en welke restrisico's je accepteert."
 deadline: null
 hasTemplate: false
 ---
@@ -114,7 +114,7 @@ Voor het MKB is het risico proportioneel aan de impact van de output. Een intern
 
 ## Claude hallucinatie voorkomen in de context van compliance
 
-De EU AI Act stelt vanaf 2 augustus 2026 eisen aan transparantie over AI-beperkingen. Als je Claude inzet voor content die gebruikers te zien krijgen, moet je duidelijk maken dat het AI-gegenereerd is en dat het fouten kan bevatten. Hallucinatierisico is een factor in je DPIA als je die uitvoert. Zie ons [DPIA-stappenplan](/compliance/dpia-stappenplan).
+De EU AI Act stelt sinds 2 augustus 2026 transparantie-eisen in artikel 50. Bouw je met Claude een chatbot voor klanten, dan moeten mensen weten dat ze met AI praten. Publiceer je AI-tekst om het publiek te informeren over zaken van algemeen belang, dan meld je dat die AI-gegenereerd is, tenzij een mens hem heeft gecontroleerd en iemand redactionele verantwoordelijkheid draagt. Een plicht om te melden dat output fouten kan bevatten, staat er niet in. Hallucinatierisico is een factor in je DPIA als je die uitvoert. Zie ons [DPIA-stappenplan](/compliance/dpia-stappenplan).
 
 De AVG voegt daaraan toe dat geautomatiseerde besluitvorming op basis van persoonsgegevens extra waarborgen vereist (artikel 22). Als je Claude laat beslissen over personen op basis van hun data, en die beslissing bevat een hallucinatie, is dat niet alleen een kwaliteitsprobleem. Het is een AVG-overtreding.
 
@@ -136,4 +136,4 @@ Nee. Hallucinaties zijn een inherente eigenschap van large language models, niet
 
 ### Moet ik hallucinatie-risico opnemen in mijn DPIA?
 
-Ja. Als je een Data Protection Impact Assessment uitvoert voor Claude-gebruik, hoort hallucinatie-risico daarin thuis. Specifiek als AI-output wordt gebruikt voor besluitvorming of als AI-gegenereerde content wordt gepubliceerd. De EU AI Act vereist vanaf 2 augustus 2026 dat je transparant bent over AI-beperkingen. Documenteer welke validatiestappen je neemt en welke restrisico's je accepteert.
+Ja. Als je een Data Protection Impact Assessment uitvoert voor Claude-gebruik, hoort hallucinatie-risico daarin thuis. Specifiek als AI-output wordt gebruikt voor besluitvorming of als AI-gegenereerde content wordt gepubliceerd. Sinds 2 augustus 2026 gelden bovendien de transparantieregels van de EU AI Act (artikel 50): mensen moeten weten dat ze met AI praten, en AI-tekst die je publiceert om het publiek over zaken van algemeen belang te informeren, meld je als AI-gegenereerd, tenzij een mens hem heeft gecontroleerd en iemand redactionele verantwoordelijkheid draagt. Documenteer welke validatiestappen je neemt en welke restrisico's je accepteert.

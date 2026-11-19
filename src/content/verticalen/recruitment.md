@@ -57,9 +57,9 @@ bronnen:
   - titel: "Autoriteit Persoonsgegevens, tekst van de AVG (overweging 71, artikel 22 en artikel 35)"
     url: "https://www.autoriteitpersoonsgegevens.nl/algemene-verordening-gegevensbescherming-avg"
     geraadpleegd: "27 oktober 2026"
-  - titel: "Anthropic, Usage Policy (versie die ingaat op 12 november 2026), High-risk AI Recommendations"
+  - titel: "Anthropic, Usage Policy (versie die geldt sinds 12 november 2026), High-risk AI Recommendations"
     url: "https://www.anthropic.com/legal/aup"
-    geraadpleegd: "27 oktober 2026"
+    geraadpleegd: "19 november 2026"
   - titel: "Anthropic, update van de Usage Policy (8 oktober 2026)"
     url: "https://anthropic.com/news/2026-usage-policy-update"
     geraadpleegd: "27 oktober 2026"
@@ -145,7 +145,7 @@ De AVG geldt nu al, los van de AI Act. Artikel 22 geeft een kandidaat het recht 
 
 Artikel 35 vraagt een gegevensbeschermingseffectbeoordeling (DPIA) als een verwerking waarschijnlijk een hoog risico geeft, in het bijzonder bij nieuwe technologie en bij een systematische beoordeling van persoonlijke aspecten. Doe die DPIA voordat je CV's door AI laat lezen. De Autoriteit Persoonsgegevens houdt toezicht.
 
-Anthropic stelt zelf ook eisen. In de Usage Policy die op 12 november 2026 ingaat, staat het screenen, rangschikken en afwijzen van kandidaten bij de "High-risk AI Recommendations". Een bevoegde persoon moet het advies van Claude inhoudelijk beoordelen voordat het wordt gebruikt, en de kandidaat moet horen dat AI is gebruikt. Volgens Anthropic zijn die eisen niet veranderd ten opzichte van de huidige versie.
+Anthropic stelt zelf ook eisen. In de Usage Policy die sinds 12 november 2026 geldt, staat het screenen, rangschikken en afwijzen van kandidaten bij de "High-risk AI Recommendations". Een bevoegde persoon moet het advies van Claude inhoudelijk beoordelen voordat het wordt gebruikt, en de kandidaat moet horen dat AI is gebruikt.
 
 Tabel: wat geldt per recruitmenttaak met Claude, stand 27 oktober 2026.
 

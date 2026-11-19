@@ -33,27 +33,27 @@ competitors:
 disclaimer: juridisch
 status: published
 publishDate: 2026-10-02
-updatedDate: null
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
 kortAntwoord: "De AI Act geldt voor elk MKB-bedrijf dat AI gebruikt. Artikel 4 over AI-geletterdheid geldt sinds 2 februari 2025 en is in juli 2026 versoepeld: je moet maatregelen nemen, een bepaald niveau garanderen hoeft niet. De transparantieregels van artikel 50 gelden sinds 2 augustus 2026. De regels voor hoog-risicosystemen zijn uitgesteld naar 2 december 2027 en 2 augustus 2028."
 bronnen:
-  - titel: "Europese Commissie, AI Act: regelgevend kader en tijdlijn (bijgewerkt 3 augustus 2026)"
+  - titel: "Europese Commissie, AI Act: regelgevend kader en tijdlijn (bijgewerkt 19 oktober 2026)"
     url: "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "19 november 2026"
   - titel: "Europese Commissie, AI Omnibus treedt in werking (27 juli 2026)"
     url: "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "19 november 2026"
   - titel: "Europese Commissie, AI Act Service Desk: tijdlijn invoering AI Act"
     url: "https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act"
     geraadpleegd: "2 oktober 2026"
   - titel: "Europese Commissie, AI Act Service Desk: artikel 4 (AI-geletterdheid)"
     url: "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-4"
     geraadpleegd: "2 oktober 2026"
-  - titel: "Europese Commissie, vragen en antwoorden over AI-geletterdheid (bijgewerkt 27 juli 2026)"
+  - titel: "Europese Commissie, vragen en antwoorden over AI-geletterdheid (bijgewerkt 20 oktober 2026)"
     url: "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "19 november 2026"
   - titel: "Europese Commissie, AI Act Service Desk: artikel 50 (transparantie)"
     url: "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50"
     geraadpleegd: "2 oktober 2026"
@@ -74,7 +74,7 @@ bronnen:
     geraadpleegd: "2 oktober 2026"
 faq:
   - question: "Geldt de AI Act ook voor kleine bedrijven?"
-    answer: "Ja. De AI Act maakt geen uitzondering op bedrijfsomvang. Elk bedrijf dat AI-systemen inzet, ook alleen als gebruiker, valt onder de verordening. De meeste MKB-toepassingen vallen in de laagste risicoklasse, waardoor de verplichtingen overzichtelijk blijven. Artikel 4 over AI-geletterdheid geldt voor iedereen. Voor MKB-bedrijven geldt bij boetes het laagste van de twee maxima."
+    answer: "Ja. De AI Act maakt geen uitzondering op bedrijfsomvang. Elk bedrijf dat AI-systemen inzet, ook alleen als gebruiker, valt onder de verordening. De meeste MKB-toepassingen vallen in de laagste risicoklasse, waardoor de verplichtingen overzichtelijk blijven. Artikel 4 over AI-geletterdheid geldt voor iedereen. Voor MKB-bedrijven geldt bij boetes het laagste van de twee maxima. Sinds de AI Omnibus gelden een deel van de vereenvoudigingen voor het MKB ook voor small mid-caps, bedrijven die net boven de MKB-grens zitten."
   - question: "Is Claude een hoog-risico AI-systeem?"
     answer: "Voor de meeste MKB-toepassingen niet. De risicoklasse hangt af van waarvoor je AI gebruikt. Teksten schrijven, data analyseren en rapporten genereren is minimaal risico. Gebruik je AI voor beslissingen over personen, zoals sollicitantenselectie of kredietbeoordeling, dan kom je in de hoog-risicocategorie terecht. Die regels gelden vanaf 2 december 2027."
   - question: "Is de AI Act uitgesteld?"

@@ -46,7 +46,7 @@ deadline: null
 hasTemplate: false
 ---
 
-Claude voor zorgsector AVG: de combinatie van AI en medische data raakt de strengste privacywetgeving die Nederland kent. Patientgegevens zijn bijzondere persoonsgegevens onder artikel 9 AVG (GDPR). NEN 7510 stelt aanvullende eisen aan informatiebeveiliging in de zorg. En de EU AI Act voegt daar vanaf 2 augustus 2026 een laag aan toe voor AI-gebruik in medische contexten. Toch is Claude ook in de zorg bruikbaar, mits je de architectuur goed opzet. Bij Implementeren.ai hebben wij de kaders uitgewerkt. Dit artikel legt uit wat kan, wat niet kan, en hoe je het veilig doet.
+Claude voor zorgsector AVG: de combinatie van AI en medische data raakt de strengste privacywetgeving die Nederland kent. Patientgegevens zijn bijzondere persoonsgegevens onder artikel 9 AVG (GDPR). NEN 7510 stelt aanvullende eisen aan informatiebeveiliging in de zorg. En de EU AI Act voegt daar een laag aan toe voor AI-gebruik in medische contexten, al gelden de zwaarste eisen door de AI Omnibus pas vanaf december 2027 en augustus 2028. Toch is Claude ook in de zorg bruikbaar, mits je de architectuur goed opzet. Bij Implementeren.ai hebben wij de kaders uitgewerkt. Dit artikel legt uit wat kan, wat niet kan, en hoe je het veilig doet.
 
 ## Waarom de zorgsector extra regels heeft
 
@@ -110,7 +110,7 @@ Voor internationale zorgorganisaties die zowel in de VS als in Nederland operere
 
 ## EU AI Act en de zorgsector
 
-De EU AI Act classificeert AI-toepassingen in de gezondheidszorg vaak als hoog-risico. Artikel 6 en bijlage III noemen expliciet AI-systemen die bedoeld zijn als medisch hulpmiddel. Vanaf 2 augustus 2026 gelden voor die systemen de zwaarste compliance-eisen: conformiteitsbeoordeling, risicomanagementsysteem, technische documentatie, logging en menselijk toezicht.
+De EU AI Act classificeert AI-toepassingen in de gezondheidszorg vaak als hoog-risico. AI die zelf een medisch hulpmiddel is, of daar een veiligheidscomponent van is, valt via artikel 6 onder bijlage I, die onder meer de verordening medische hulpmiddelen (EU) 2017/745 noemt. Door de AI Omnibus gelden voor die systemen de zwaarste compliance-eisen vanaf 2 augustus 2028: conformiteitsbeoordeling, risicomanagementsysteem, technische documentatie, logging en menselijk toezicht. Voor de hoog-risico-toepassingen uit bijlage III is dat vanaf 2 december 2027.
 
 Gebruik je Claude als hulpmiddel bij administratieve taken in de zorg, dan valt dat onder minimaal risico. Gebruik je Claude als component in een systeem dat bijdraagt aan diagnose of behandelbeslissingen, dan verschuift de classificatie naar hoog-risico. De toepassing bepaalt de classificatie, net als bij [de AI Act voor MKB](/compliance/ai-act-mkb) in het algemeen.
 

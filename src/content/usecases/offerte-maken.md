@@ -65,6 +65,9 @@ bronnen:
   - titel: "Anthropic Privacy Center, wordt mijn data gebruikt voor modeltraining? Free, Pro en Max (16 maart 2026)"
     url: "https://privacy.claude.com/en/articles/10023580-is-my-data-used-for-model-training"
     geraadpleegd: "2026-10-29"
+  - titel: "Claude Code docs, data usage (consumentenplannen Free, Pro, Max en Ultra)"
+    url: "https://code.claude.com/docs/en/data-usage"
+    geraadpleegd: "19 november 2026"
 faq:
   - question: "Kan Claude een offerte maken als Word- of pdf-bestand?"
     answer: "Ja. Claude kan Word-, pdf-, Excel- en PowerPoint-bestanden maken, op elk plan, ook het gratis plan. Je vraagt in het gesprek om een .docx of een pdf en downloadt het bestand. Een bestand mag maximaal 30 MB zijn. Controleer logo, lettertype en opmaak zelf voordat je de offerte verstuurt."
@@ -152,7 +155,7 @@ Wil je offertes met collega's maken uit hetzelfde project, dan heb je Team nodig
 
 ## Mag je klantgegevens in Claude zetten voor een offerte?
 
-Een offerte bevat namen, adressen en prijsafspraken van je klant. Op de zakelijke plannen (Team, Enterprise en de API) gebruikt Anthropic je invoer en uitvoer standaard niet voor training. Op Free, Pro en Max hangt dat af van een instelling van de gebruiker.
+Een offerte bevat namen, adressen en prijsafspraken van je klant. Op de zakelijke plannen (Team, Enterprise en de API) gebruikt Anthropic je invoer en uitvoer standaard niet voor training. Op Free, Pro, Max en Ultra hangt dat af van een instelling van de gebruiker.
 
 Claude heeft voor de tekst van een offerte de naam en het adres van je contactpersoon niet nodig. Schrijf "de klant" en vul de gegevens in je eigen sjabloon in. Een advieskantoor werkt op dezelfde manier met codes in plaats van namen, zie [Claude voor financieel adviseurs](/claude-voor-financieel-adviseurs). Wat de verwerkersovereenkomst van Anthropic regelt, lees je in [de Anthropic verwerkersovereenkomst](/compliance/anthropic-dpa).
 

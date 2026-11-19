@@ -31,7 +31,7 @@ reviewedBy: "Camiel Wits"
 reviewedDate: 2026-11-10
 faq:
   - question: "Kan Claude direct Excel-bestanden lezen?"
-    answer: "Claude kan CSV-bestanden en tab-separated data direct verwerken. Voor .xlsx-bestanden gebruik je Claude Code, dat het bestand parseert via Python-libraries en de data aan Claude voorlegt. Bij grote bestanden (meer dan 10.000 rijen) verwerk je de data in chunks of gebruik je samenvattende queries."
+    answer: "Ja. In de Claude-app upload je CSV- en .xlsx-bestanden, als code-uitvoering en het maken van bestanden aan staan in je account. Werk je liever in Excel zelf, dan is er de add-in Claude for Excel, beschikbaar op Pro, Max, Team en Enterprise. Voor terugkerende analyses kun je ook Claude Code gebruiken, dat het bestand parseert via Python-libraries en de data aan Claude voorlegt. Bij grote bestanden (meer dan 10.000 rijen) verwerk je de data in chunks of gebruik je samenvattende queries."
   - question: "Hoe nauwkeurig is Claude bij data-analyse?"
     answer: "Claude voert berekeningen uit via code-executie, niet via schatting. Dat maakt rekenwerk betrouwbaar. Bij statistische analyses en complexe formules is de output correct zolang de input klopt. Controleer altijd de brondata. Claude kan geen fouten in je spreadsheet detecteren als de data er plausibel uitziet."
   - question: "Is Claude beter dan Excel-formules?"
@@ -54,7 +54,7 @@ Claude Code combineert taalvaardigheid met code-executie. Dat betekent: Claude l
 
 ### Excel en CSV-bestanden analyseren
 
-Voor claude excel analyse upload je het bestand naar Claude Code. Claude parseert de data, herkent de kolomstructuur en stelt verduidelijkingsvragen als de data ambigu is. Het werkt met alle gangbare formaten: CSV, TSV, .xlsx en zelfs gekopieerde data uit Google Sheets.
+Voor claude excel analyse heb je drie routes. Je uploadt het bestand in de Claude-app (met code-uitvoering aan), je werkt in Excel zelf met de add-in Claude for Excel (op Pro, Max, Team en Enterprise), of je geeft het bestand aan Claude Code. Claude parseert de data, herkent de kolomstructuur en stelt verduidelijkingsvragen als de data ambigu is. Het werkt met alle gangbare formaten: CSV, TSV, .xlsx en zelfs gekopieerde data uit Google Sheets.
 
 ```
 Analyseer dit verkoopbestand (Q1-Q4 2025).

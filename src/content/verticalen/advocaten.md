@@ -31,7 +31,7 @@ competitors:
 disclaimer: juridisch
 status: published
 publishDate: 2026-10-02
-updatedDate: null
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
@@ -64,6 +64,9 @@ bronnen:
   - titel: "Claude-documentatie: context windows per model (platform.claude.com)"
     url: "https://platform.claude.com/docs/en/build-with-claude/context-windows"
     geraadpleegd: "2 oktober 2026"
+  - titel: "Claude Code docs, data usage (consumentenplannen Free, Pro, Max en Ultra)"
+    url: "https://code.claude.com/docs/en/data-usage"
+    geraadpleegd: "19 november 2026"
 faq:
   - question: "Mag ik vertrouwelijke cliëntgegevens in Claude verwerken?"
     answer: "Niet zomaar. Op consumentenaccounts kan Anthropic gesprekken gebruiken voor modeltraining, tenzij de gebruiker dat uitzet; daar horen cliëntgegevens dus nooit thuis. Op de zakelijke producten (Claude Team, Enterprise of de API) traint Anthropic niet op je data en geldt een verwerkersovereenkomst. Voor verschoningsrecht-gevoelig materiaal adviseren we daarbovenop te pseudonimiseren: namen, partijen en dossiernummers vervang je door placeholders voordat de tekst het kantoor verlaat."
@@ -118,7 +121,7 @@ De advocatuur heeft een streng vertrouwelijkheidskader. Vertrouwelijkheid is een
 
 En dat kader staat niet op zichzelf: de AVG (GDPR) geldt er gewoon naast, met de Autoriteit Persoonsgegevens als toezichthouder, want een dossier zit vol persoonsgegevens van cliënten én wederpartijen.
 
-Concreet betekent dat drie dingen. Eén: nooit cliëntgegevens op een consumentenaccount (Claude Free, Claude Pro of Claude Max), want daar kan Anthropic gesprekken voor modeltraining gebruiken, tenzij de gebruiker dat uitzet. Op Claude Team, Claude Enterprise en de API traint Anthropic standaard niet op je data. De verwerkersovereenkomst is daar automatisch onderdeel van de zakelijke voorwaarden. Controleer die scheiding tussen consument en zakelijk ook bij andere AI-tools op kantoor. Twee: pseudonimiseren als standaard voor verschoningsrecht-gevoelig materiaal. Namen, partijen en dossiernummers worden placeholders; de analyse blijft even bruikbaar en de namen zet je er achteraf weer in. Drie: een kantoorbreed AI-beleid, zodat niet elke advocaat zijn eigen afweging maakt. Voor organisaties met de strengste eisen bestaat een zero data retention-afspraak. Die geldt voor de API en voor Claude Code op een Enterprise-abonnement, en Anthropic moet hem goedkeuren. Anthropic slaat prompts en antwoorden dan niet op, behalve waar de wet of misbruikbestrijding dat vraagt.
+Concreet betekent dat drie dingen. Eén: nooit cliëntgegevens op een consumentenaccount (Claude Free, Claude Pro, Claude Max of Claude Ultra), want daar kan Anthropic gesprekken voor modeltraining gebruiken, tenzij de gebruiker dat uitzet. Op Claude Team, Claude Enterprise en de API traint Anthropic standaard niet op je data. De verwerkersovereenkomst is daar automatisch onderdeel van de zakelijke voorwaarden. Controleer die scheiding tussen consument en zakelijk ook bij andere AI-tools op kantoor. Twee: pseudonimiseren als standaard voor verschoningsrecht-gevoelig materiaal. Namen, partijen en dossiernummers worden placeholders; de analyse blijft even bruikbaar en de namen zet je er achteraf weer in. Drie: een kantoorbreed AI-beleid, zodat niet elke advocaat zijn eigen afweging maakt. Voor organisaties met de strengste eisen bestaat een zero data retention-afspraak. Die geldt voor de API en voor Claude Code op een Enterprise-abonnement, en Anthropic moet hem goedkeuren. Anthropic slaat prompts en antwoorden dan niet op, behalve waar de wet of misbruikbestrijding dat vraagt.
 
 Hoe je dat inricht, van verwerkersovereenkomst tot beleid, staat in [Claude en de AVG: wat regel je als bedrijf?](/compliance). Voor advocatenkantoren voegen we de beroepsspecifieke laag toe: het beleid langs de kernwaarden, en een pseudonimiseringsafspraak die het hele kantoor kent.
 

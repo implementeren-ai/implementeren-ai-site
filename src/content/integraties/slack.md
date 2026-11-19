@@ -32,7 +32,7 @@ faq:
   - question: "Werkt Claude in Slack ook met Microsoft Teams?"
     answer: "Claude werkt met beide platformen, maar apart. De Slack-integratie gebruikt de Slack API en Events API. Voor Microsoft Teams bouw je een vergelijkbare bot via de Bot Framework SDK en de Anthropic API. De onderliggende logica is grotendeels herbruikbaar. De interface-laag verschilt. Als je organisatie beide platformen gebruikt, kun je dezelfde Claude-backend laten bedienen door twee aparte bots."
   - question: "Wat kost een Claude Slack-integratie?"
-    answer: "De Slack-kant is gratis: de Slack API heeft geen kosten voor het ontvangen en versturen van berichten. Je betaalt voor het Anthropic API-gebruik. Bij Claude Sonnet ligt dat rond $3 per miljoen input tokens en $15 per miljoen output tokens. Voor een team van 20 mensen dat gemiddeld 50 vragen per dag stelt, kom je uit op $30 tot $80 per maand. De initieel bouwtijd voor een custom bot is twee tot vijf dagen."
+    answer: "De Slack-kant is gratis: de Slack API heeft geen kosten voor het ontvangen en versturen van berichten. Je betaalt voor het Anthropic API-gebruik. Bij Claude Sonnet 5.5 ligt dat rond $2 per miljoen input tokens en $10 per miljoen output tokens. Voor een team van 20 mensen dat gemiddeld 50 vragen per dag stelt, kom je uit op $20 tot $55 per maand. De initieel bouwtijd voor een custom bot is twee tot vijf dagen."
 softwareName: "Slack"
 softwareUrl: "https://slack.com"
 ---
@@ -107,7 +107,7 @@ Voordat je live gaat: classificeer welke data door de Slack-Claude pipeline mag.
 
 Een goed ingerichte Claude Slack-integratie bespaart een team van 20 mensen gemiddeld 30 tot 60 minuten per dag aan informatiezoeken. Dat is 10 tot 20 uur per week. De exacte besparing hangt af van hoeveel herhaalde vragen je team heeft en hoe verspreid je kennis nu zit.
 
-De kosten zijn overzichtelijk. Slack API: gratis. Anthropic API: $30 tot $80 per maand voor een gemiddeld team. Bouwtijd: twee tot vijf dagen voor een werkende integratie. De terugverdientijd is meestal binnen de eerste maand.
+De kosten zijn overzichtelijk. Slack API: gratis. Anthropic API: $20 tot $55 per maand voor een gemiddeld team. Bouwtijd: twee tot vijf dagen voor een werkende integratie. De terugverdientijd is meestal binnen de eerste maand.
 
 ## Veelgestelde vragen
 
@@ -125,4 +125,4 @@ Claude werkt met beide platformen, maar apart. De Slack-integratie gebruikt de S
 
 ### Wat kost een Claude Slack-integratie?
 
-De Slack-kant is gratis: de Slack API heeft geen kosten voor het ontvangen en versturen van berichten. Je betaalt voor het Anthropic API-gebruik. Bij Claude Sonnet ligt dat rond $3 per miljoen input tokens en $15 per miljoen output tokens. Voor een team van 20 mensen dat gemiddeld 50 vragen per dag stelt, kom je uit op $30 tot $80 per maand. De initieel bouwtijd voor een custom bot is twee tot vijf dagen.
+De Slack-kant is gratis: de Slack API heeft geen kosten voor het ontvangen en versturen van berichten. Je betaalt voor het Anthropic API-gebruik. Bij Claude Sonnet 5.5 ligt dat rond $2 per miljoen input tokens en $10 per miljoen output tokens. Voor een team van 20 mensen dat gemiddeld 50 vragen per dag stelt, kom je uit op $20 tot $55 per maand. De initieel bouwtijd voor een custom bot is twee tot vijf dagen.

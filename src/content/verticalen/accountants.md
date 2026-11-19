@@ -33,7 +33,7 @@ competitors:
 disclaimer: juridisch
 status: published
 publishDate: 2026-10-02
-updatedDate: null
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
@@ -57,6 +57,9 @@ bronnen:
   - titel: "Claude-documentatie: context windows per model (platform.claude.com)"
     url: "https://platform.claude.com/docs/en/build-with-claude/context-windows"
     geraadpleegd: "2 oktober 2026"
+  - titel: "Claude Code docs, data usage (consumentenplannen Free, Pro, Max en Ultra)"
+    url: "https://code.claude.com/docs/en/data-usage"
+    geraadpleegd: "19 november 2026"
 faq:
   - question: "Mag ik klantdata van mijn accountantskantoor in Claude invoeren?"
     answer: "Alleen op een zakelijk abonnement (Claude Team, Enterprise of de API): daar traint Anthropic niet op je data en geldt een verwerkersovereenkomst. Persoonsgegevens pseudonimiseer je waar het kan, en BSN's en andere bijzondere gegevens houd je er helemaal buiten. Vertrouwelijkheid is bovendien een fundamenteel beginsel uit de VGBA, dus leg vast welke data het kantoor wel en niet aan een AI-tool voorlegt."
@@ -108,7 +111,7 @@ Het derde tijdvreters-cluster is communicatie. De ondernemer die belt over zijn 
 
 Accountants werken met de gevoeligste data die er is: resultaten, salarissen, BSN's, privesituaties van DGA's. Vertrouwelijkheid is een van de vijf fundamentele beginselen uit de VGBA, de gedrags- en beroepsregels van de NBA. De andere vier zijn professionaliteit, integriteit, objectiviteit, en vakbekwaamheid en zorgvuldigheid. Elke AI-inzet moet daarbinnen passen, naast de AVG (GDPR) die er toch al ligt.
 
-Het eerste dat we op orde brengen is het abonnement. Op consumentenaccounts (Free, Pro, Max) kan Anthropic gesprekken gebruiken voor modeltraining, tenzij de gebruiker dat zelf uitzet. Op de zakelijke producten (Claude Team, Claude Enterprise, de API) traint Anthropic standaard niet op je data. De verwerkersovereenkomst is daar automatisch onderdeel van de zakelijke voorwaarden. Een medewerker die klantcijfers in een privé-account plakt, is dus een reëel risico. Controleer dat onderscheid tussen consument en zakelijk ook bij andere AI-tools die het kantoor gebruikt.
+Het eerste dat we op orde brengen is het abonnement. Op consumentenaccounts (Free, Pro, Max, Ultra) kan Anthropic gesprekken gebruiken voor modeltraining, tenzij de gebruiker dat zelf uitzet. Op de zakelijke producten (Claude Team, Claude Enterprise, de API) traint Anthropic standaard niet op je data. De verwerkersovereenkomst is daar automatisch onderdeel van de zakelijke voorwaarden. Een medewerker die klantcijfers in een privé-account plakt, is dus een reëel risico. Controleer dat onderscheid tussen consument en zakelijk ook bij andere AI-tools die het kantoor gebruikt.
 
 Daarbovenop leggen we per datasoort vast wat mag. Werkprocessen, sjablonen en geanonimiseerde cijfers: gewoon gebruiken. Herleidbare klantdata: pseudonimiseren, "klant A" rekent net zo goed als de echte naam. BSN's en andere bijzondere persoonsgegevens: die gaan er niet in. Leg dat vast in een kort AI-beleid, neem het gebruik op in het verwerkingsregister, en je hebt een verhaal dat je aan een klant en aan de Autoriteit Persoonsgegevens kunt uitleggen. Hoe je dat aanpakt, staat in [Claude en de AVG: wat regel je als bedrijf?](/compliance).
 

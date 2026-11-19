@@ -30,18 +30,18 @@ competitors:
 disclaimer: juridisch
 status: published
 publishDate: 2026-10-02
-updatedDate: null
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
-kortAntwoord: "Standaard blijft Claude-data niet in de EU. Op het eigen platform van Anthropic (de API, Team en Enterprise) wordt data opgeslagen in de Verenigde Staten. De verwerking is wereldwijd of alleen in de VS. Wil je EU-dataresidentie, gebruik dan AWS Bedrock of Google Vertex AI met een EU-endpoint. Microsoft Foundry heeft in oktober 2026 nog geen EU-datazone voor Claude."
+kortAntwoord: "Standaard blijft Claude-data niet in de EU. Op het eigen platform van Anthropic (de API, Team en Enterprise) wordt data opgeslagen in de Verenigde Staten. De verwerking is wereldwijd of alleen in de VS. Wil je EU-dataresidentie, gebruik dan AWS Bedrock of Google Agent Platform (Vertex AI) met een EU-endpoint. Microsoft Foundry heeft in oktober 2026 nog geen EU-datazone voor Claude."
 bronnen:
   - titel: "Anthropic Privacy Center, waar staan de servers en host Anthropic in de EU?"
     url: "https://privacy.claude.com/en/articles/7996890-where-are-your-servers-located-do-you-host-your-models-on-eu-servers"
     geraadpleegd: "2 oktober 2026"
   - titel: "Anthropic-documentatie, data residency (inference geo en workspace geo)"
     url: "https://platform.claude.com/docs/en/manage-claude/data-residency"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "19 november 2026"
   - titel: "Anthropic Help Center, US-only inference voor Enterprise-organisaties"
     url: "https://support.claude.com/en/articles/15422948-enable-us-only-inference-for-your-organization"
     geraadpleegd: "2 oktober 2026"
@@ -67,8 +67,14 @@ bronnen:
     url: "https://aws.amazon.com/compliance/gdpr-center/"
     geraadpleegd: "2 oktober 2026"
   - titel: "Anthropic-documentatie, Claude op Google Cloud (globale, multi-regio- en regionale endpoints)"
-    url: "https://platform.claude.com/docs/en/build-with-claude/claude-on-vertex-ai"
-    geraadpleegd: "2 oktober 2026"
+    url: "https://platform.claude.com/docs/en/build-with-claude/claude-models-on-google-cloud/google-managed"
+    geraadpleegd: "19 november 2026"
+  - titel: "Google Cloud-documentatie, naamswijzigingen Gemini Enterprise Agent Platform (voorheen Vertex AI)"
+    url: "https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes"
+    geraadpleegd: "19 november 2026"
+  - titel: "Anthropic-documentatie, API en dataretentie (Covered Models)"
+    url: "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention"
+    geraadpleegd: "19 november 2026"
   - titel: "Anthropic-documentatie, Claude in Microsoft Foundry"
     url: "https://platform.claude.com/docs/en/build-with-claude/claude-in-microsoft-foundry"
     geraadpleegd: "2 oktober 2026"
@@ -77,11 +83,11 @@ bronnen:
     geraadpleegd: "2 oktober 2026"
 faq:
   - question: "Blijft Claude-data automatisch binnen de EU?"
-    answer: "Nee. Op het eigen platform van Anthropic (de API en Claude Team en Enterprise) wordt data opgeslagen in de Verenigde Staten. Verzoeken kunnen standaard worden verwerkt in de VS, Europa, Azië en Australië. Je kunt de verwerking beperken tot de VS, maar een EU-optie is er niet. Wil je dat data in de EU blijft, dan gebruik je Claude via AWS Bedrock of Google Vertex AI met een EU-endpoint."
+    answer: "Nee. Op het eigen platform van Anthropic (de API en Claude Team en Enterprise) wordt data opgeslagen in de Verenigde Staten. Verzoeken kunnen standaard worden verwerkt in de VS, Europa, Azië en Australië. Je kunt de verwerking beperken tot de VS, maar een EU-optie is er niet. Wil je dat data in de EU blijft, dan gebruik je Claude via AWS Bedrock of Google Agent Platform (Vertex AI) met een EU-endpoint."
   - question: "Is verwerking in de VS dan verboden onder de AVG?"
     answer: "Nee. De AVG staat doorgifte naar de VS toe als die juridisch is afgedekt, bijvoorbeeld met de Standard Contractual Clauses die in de Anthropic DPA zitten. Voor veel MKB-bedrijven is dat voldoende. Dataresidentie in de EU wordt pas een harde eis als je klanten, sector of eigen risicoafweging dat vragen."
   - question: "Kan ik Claude via Microsoft Azure in de EU draaien?"
-    answer: "Nog niet met EU-datagarantie. Claude is beschikbaar in Microsoft Foundry met de deploymenttypes Global Standard en US Data Zone Standard. Microsoft vermeldt Data Zone Standard voor Europa als niet beschikbaar en Anthropic noemt Foundry in Europa 'coming soon' (stand 2 oktober 2026). Wie nu EU-dataresidentie nodig heeft, kiest AWS Bedrock of Google Vertex AI."
+    answer: "Nog niet met EU-datagarantie. Claude is beschikbaar in Microsoft Foundry met de deploymenttypes Global Standard en US Data Zone Standard. Microsoft vermeldt Data Zone Standard voor Europa als niet beschikbaar en Anthropic noemt Foundry in Europa 'coming soon' (stand 2 oktober 2026). Wie nu EU-dataresidentie nodig heeft, kiest AWS Bedrock of Google Agent Platform (Vertex AI)."
   - question: "Heb ik een verwerkersovereenkomst nodig als ik Claude via Bedrock gebruik?"
     answer: "Ja. Bij Bedrock verwerkt AWS je data. Volgens AWS hebben modelaanbieders zoals Anthropic geen toegang tot je prompts en antwoorden. AWS heeft een eigen GDPR Data Processing Addendum, en de Standard Contractual Clauses zitten in de AWS Service Terms. Jij blijft verwerkingsverantwoordelijke en vermeldt AWS als verwerker in je verwerkingsregister en klantcontracten."
   - question: "Kan Claude volledig on-premise draaien?"
@@ -128,13 +134,13 @@ De DPA met SCC's dekt de doorgifte juridisch af. Wie een EU-garantie nodig heeft
 |-------|----------|-----------------------|-----------------------|
 | Anthropic API / Claude Team en Enterprise | Geen. Opslag in de VS, verwerking wereldwijd of alleen VS | Anthropic, met DPA en SCC's | Juridisch afgedekt, geen EU-residentie |
 | AWS Bedrock | EU-regio's en EU cross-region inference | AWS. Anthropic heeft geen toegang | Beschikbaar |
-| Google Vertex AI | Multi-regio-endpoint "eu" en regionale endpoints zoals europe-west1 | Google Cloud | Beschikbaar |
+| Google Agent Platform (Vertex AI) | Multi-regio-endpoint "eu" en regionale endpoints zoals europe-west1 | Google Cloud | Beschikbaar |
 | Microsoft Foundry | Geen EU-datazone voor Claude | Anthropic, op Azure of op eigen infrastructuur | Europa "coming soon" |
 | Lokaal open-source model | Je eigen server | Jijzelf (geen Claude) | Beschikbaar |
 
-**AWS Bedrock.** Claude-modellen zijn beschikbaar in meerdere Europese AWS-regio's. Welke modellen in welke regio draaien, verschilt per model en staat in de AWS-documentatie. Nieuwere modellen gebruik je meestal via geografische cross-region inference met een EU-profiel. Volgens AWS blijven verzoeken dan binnen de AWS-regio's van die geografie. AWS schrijft ook dat modelaanbieders geen toegang hebben tot prompts en antwoorden. Eén kanttekening: bij Claude Fable 5 en 5.1 bewaart AWS al het verkeer tot 30 dagen voor misbruikdetectie. Die data blijft bij AWS. Voor regionale endpoints geldt volgens Anthropic een toeslag van 10% ten opzichte van globale endpoints.
+**AWS Bedrock.** Claude-modellen zijn beschikbaar in meerdere Europese AWS-regio's. Nieuwere modellen gebruik je meestal via geografische cross-region inference met een EU-profiel. Volgens AWS blijven verzoeken dan binnen de AWS-regio's van die geografie. AWS schrijft ook dat modelaanbieders geen toegang hebben tot prompts en antwoorden. Eén kanttekening: bij Claude Fable 5, 5.1 en 5.2 bewaart AWS het verkeer 30 dagen voor veiligheidsmonitoring. Die data blijft bij AWS. Voor regionale endpoints geldt volgens Anthropic een toeslag van 10% ten opzichte van globale endpoints.
 
-**Google Vertex AI.** Google Cloud biedt drie soorten endpoints: globaal, multi-regio en regionaal. Het multi-regio-endpoint "eu" verdeelt verkeer over regio's binnen de Europese Unie. Regionale endpoints zoals europe-west1 zijn er volgens de documentatie van Anthropic voor Claude Sonnet 4.6 en ouder; nieuwere modellen gebruiken het globale of het multi-regio-endpoint. Ook hier geldt 10% toeslag op regionale en multi-regio-endpoints. De omgang met data valt onder de voorwaarden van Google Cloud.
+**Google Agent Platform (voorheen Vertex AI).** Google Cloud biedt drie soorten endpoints: globaal, multi-regio en regionaal. Regionale endpoints zoals europe-west1 zijn er volgens de documentatie van Anthropic voor Claude Sonnet 4.6 en ouder; nieuwere modellen gebruiken het globale of het multi-regio-endpoint. Ook hier geldt 10% toeslag op regionale en multi-regio-endpoints. De omgang met data valt onder de voorwaarden van Google Cloud. Let op: alleen de variant die Google beheert heeft een EU-optie, de variant die Anthropic beheert niet.
 
 **Microsoft Foundry.** Claude is er beschikbaar in twee deploymenttypes: Global Standard en US Data Zone Standard. Microsoft vermeldt Data Zone Standard voor Europa als niet beschikbaar. Je kunt wel een Global Standard-deployment aanmaken in de Azure-regio Sweden Central, maar bij Global Standard kan de verwerking in elke regio plaatsvinden waar het model draait. Anthropic noemt Foundry voor Europa "coming soon". Let ook op de hostingoptie. Bij "Hosted on Anthropic" draait het model op infrastructuur van Anthropic. Bij "Hosted on Azure" blijven prompts en antwoorden binnen Azure, met uitzondering van gebruiksgegevens en content die de veiligheidssystemen markeren.
 
@@ -154,8 +160,8 @@ Waar je data staat is één vraag, wie erbij kan is de andere. Bij een [rapporta
 
 Deze vragen beslissen het in de praktijk:
 
-1. **Wat eisen je klanten contractueel?** Accepteren ze een DPA met SCC's, dan volstaat het Anthropic-platform. Eisen ze EU-verwerking, kies dan Bedrock of Vertex AI en vraag dit vooraf na.
-2. **Welke cloud gebruik je al?** Zit je op AWS, kies dan Bedrock, en op Google Cloud Vertex AI. Gebruik je geen van beide, begin dan bij de Anthropic API met DPA en stap over zodra het nodig is.
+1. **Wat eisen je klanten contractueel?** Accepteren ze een DPA met SCC's, dan volstaat het Anthropic-platform. Eisen ze EU-verwerking, kies dan Bedrock of Google Agent Platform en vraag dit vooraf na.
+2. **Welke cloud gebruik je al?** Zit je op AWS, kies dan Bedrock, en op Google Cloud het Agent Platform. Gebruik je geen van beide, begin dan bij de Anthropic API met DPA en stap over zodra het nodig is.
 3. **Welke data gaat er doorheen?** Interne documenten en code: het Anthropic-platform volstaat. Persoonsgegevens van klanten: overweeg een EU-endpoint. Data die je netwerk niet uit mag: houd die lokaal.
 
 Dit vraagstuk speelt ook bij andere AI-aanbieders, zoals ChatGPT van OpenAI en Microsoft Copilot.
