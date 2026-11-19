@@ -8,7 +8,7 @@ targetKeywords:
   - "claude code"
   - "cursor"
   - "ai programmeren"
-wordCountTarget: 800
+wordCountTarget: 850
 priority: 4
 tier: 2
 cases:
@@ -29,11 +29,11 @@ author: camiel
 competitors: []
 status: published
 publishDate: 2026-10-02
-updatedDate: null
-changelogLine: null
+updatedDate: 2026-11-19
+changelogLine: "19 november 2026: Cursor-prijzen en -modellen bijgewerkt na de overname door SpaceX en de overstap op The X Subscription."
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
-kortAntwoord: "Cursor is een code-editor met AI-hulp en eigen agents. Claude Code is een AI-agent die werk zelfstandig uitvoert. Cursor past bij ontwikkelaars die zelf coderen en tussen modellen willen wisselen. Claude Code past bij het automatiseren van terugkerend werk, ook zonder ontwikkelteam. Cursor Teams kost 40 dollar per gebruiker per maand (stand 2 oktober 2026)."
+kortAntwoord: "Cursor is een code-editor met AI-hulp en eigen agents, sinds augustus 2026 van SpaceX. Claude Code is een AI-agent die werk zelfstandig uitvoert. Cursor past bij ontwikkelaars die zelf coderen. Claude Code past bij het automatiseren van terugkerend werk, ook zonder ontwikkelteam. Cursor Teams begint bij 30 dollar per gebruiker per maand; Claude-modellen betaal je daar apart, per gebruik (stand 19 november 2026)."
 bronnen:
   - titel: "Anthropic, overzicht van Claude Code (documentatie)"
     url: "https://code.claude.com/docs/en/overview"
@@ -43,23 +43,26 @@ bronnen:
     geraadpleegd: "2 oktober 2026"
   - titel: "Anthropic, prijzen en abonnementen van Claude"
     url: "https://claude.com/pricing"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "19 november 2026"
   - titel: "Cursor, prijzen en abonnementen"
     url: "https://cursor.com/pricing"
-    geraadpleegd: "2 oktober 2026"
-  - titel: "Cursor, beschikbare modellen (documentatie)"
+    geraadpleegd: "19 november 2026"
+  - titel: "Cursor, modellen en prijzen (documentatie)"
     url: "https://cursor.com/docs/models"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "19 november 2026"
+  - titel: "Cursor, Cursor is now a part of SpaceX (14 augustus 2026)"
+    url: "https://cursor.com/blog/joining-spacex"
+    geraadpleegd: "19 november 2026"
   - titel: "Cursor, datagebruik en Privacy Mode"
     url: "https://cursor.com/data-use"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "19 november 2026"
 faq:
   - question: "Is Claude Code alleen voor programmeurs?"
     answer: "Nee, en dat is voor het MKB juist interessant. Claude Code kan ook terugkerende bedrijfsprocessen automatiseren: bestanden verwerken, rapportages genereren, data opschonen. Je hebt geen ontwikkelteam nodig, wel iemand die comfortabel is met een terminal, of een partner die het inricht."
   - question: "Gebruikt Cursor niet gewoon dezelfde Claude-modellen?"
-    answer: "Dat kan. Cursor is een editor waarin je uit meerdere AI-modellen kiest, waaronder die van Anthropic, OpenAI en Google. Het verschil zit dus vooral in de werkvorm: een editor waarin jij codeert met AI-hulp, tegenover een agent die zelfstandig taken uitvoert."
+    answer: "Dat kan, maar niet in elk abonnement. In de bundel van Cursor zitten standaard de eigen modellen: de Grok-modellen en Composer 2.5. Claude, GPT en Gemini gebruik je vanaf het Premium-abonnement, tegen de API-prijs van het model en betaald uit vooruitbetaald tegoed. Plus (8 dollar) heeft alleen de Grok-modellen. Het grootste verschil blijft de werkvorm: een editor waarin jij codeert met AI-hulp, tegenover een agent die zelfstandig taken uitvoert."
   - question: "Wat kost dit voor een klein team?"
-    answer: "Cursor Teams kost 40 dollar per gebruiker per maand; het individuele abonnement 20 dollar. Claude Code zit in Claude Team: 20 dollar per gebruiker per maand bij jaarbetaling, 25 dollar per maand. Wie meer verbruikt dan het abonnement toelaat, kan bij Claude extra tegoed bijkopen. Prijzen gecontroleerd op 2 oktober 2026. Begin met één of twee licenties."
+    answer: "Cursor Teams kost 30, 100 of 200 dollar per gebruiker per maand, afhankelijk van het seattype. Individueel is er Plus voor 8 dollar (alleen Grok-modellen) en Premium voor 30 dollar. Claude-modellen in Cursor betaal je daarbovenop per gebruik: tegen API-tarief, bij Teams plus een Cursor-toeslag op een deel van de modellen. Claude Code zit in Claude Team: 20 dollar per gebruiker per maand bij jaarbetaling, 25 dollar bij maandbetaling. Wie meer verbruikt dan het abonnement toelaat, kan bij Claude extra tegoed bijkopen. Prijzen gecontroleerd op 19 november 2026. Begin met één of twee licenties."
 ---
 
 Claude Code vs Cursor is de vergelijking die opduikt zodra een bedrijf AI serieus wil inzetten voor ontwikkeling of automatisering. Ze worden vaak in één adem genoemd. Toch werken ze anders.
@@ -70,6 +73,10 @@ Cursor is een code-editor met AI erin: jij schrijft en stuurt, de AI helpt in je
 
 Claude Code begon in de terminal. Het draait nu ook in Visual Studio Code en JetBrains, in een desktop-app en in de browser. Cursor heeft op zijn beurt eigen agents, ook in de cloud. De twee groeien dus naar elkaar toe. Cursor maakt vooral een ontwikkelaar sneller, Claude Code voert werk uit dat je delegeert.
 
+## Wat er bij Cursor veranderde
+
+Cursor is sinds 14 augustus 2026 van SpaceX. Sindsdien verkoopt Cursor zich als onderdeel van The X Subscription: één abonnement voor Grok, Cursor en X, met één gedeelde verbruikspool die wekelijks ververst. De eigen modellen in Cursor zijn de Grok-modellen (de nieuwste is Grok 4.7) en Composer 2.5. Modellen van Anthropic, OpenAI en Google zitten niet in die pool. Je gebruikt ze vanaf Premium tegen de API-prijs van het model; bij Teams en Enterprise rekent Cursor op een deel van die modellen nog een eigen toeslag. Wie een ouder Cursor-abonnement heeft (Pro, Pro+, Ultra of Teams), houdt dat voorlopig zoals het was. Wat er in dezelfde periode bij Claude veranderde, staat in [Claude 5.5 en Fable 5.2 zakelijk](/nieuws/claude-5-5-zakelijk).
+
 ## De vergelijking
 
 | | Claude Code | Cursor |
@@ -78,16 +85,16 @@ Claude Code begon in de terminal. Het draait nu ook in Visual Studio Code en Jet
 | Jij doet | Opdrachten geven, resultaat beoordelen | Zelf coderen met AI-hulp |
 | Sterk in (onze ervaring) | Zelfstandig meerstaps-werk, automatisering, grote opschoonklussen | Snel itereren en overzicht in code |
 | Bruikbaar zonder dev-achtergrond | Ja, voor automatisering met begeleiding | Beperkt, het blijft een code-editor |
-| Modellen | Claude van Anthropic | Onder meer Anthropic, OpenAI en Google |
-| Prijs voor teams | In Claude Team: 20 dollar per gebruiker per maand bij jaarbetaling | Teams: 40 dollar per gebruiker per maand |
+| Modellen | Claude van Anthropic | Eigen Grok- en Composer-modellen; Claude, GPT en Gemini vanaf Premium tegen API-tarief |
+| Prijs voor teams | In Claude Team: 20 dollar per gebruiker per maand bij jaarbetaling | Teams: 30, 100 of 200 dollar per gebruiker per maand, externe modellen apart |
 | Training op je data | Standaard niet in Team en Enterprise | Niet met Privacy Mode aan |
 
-Prijzen in dollars, gecontroleerd op 2 oktober 2026.
+Prijzen in dollars, exclusief btw, gecontroleerd op 19 november 2026.
 
 ## Wanneer Cursor logisch is
 
 - Je hebt ontwikkelaars in dienst die dagelijks in de code leven en vooral sneller willen werken.
-- Je team wil per taak kunnen wisselen tussen AI-modellen van OpenAI, Anthropic, Google en anderen.
+- Je team wil per taak kunnen wisselen tussen de eigen Grok-modellen en die van OpenAI, Anthropic en Google, en betaalt die externe modellen per gebruik.
 - De controlebehoefte is hoog: elke wijziging gaat door mensenhanden in de editor.
 
 ## Wanneer Claude Code logisch is
@@ -104,7 +111,7 @@ Bij softwareteams zien we de combinatie geregeld: Cursor voor het dagelijkse han
 
 ## Beheer, veiligheid en de AVG
 
-Voor allebei geldt: regel het zakelijke fundament voordat je het team loslaat. Zet accounts centraal op bij Anthropic of Cursor, zodat toegang intrekbaar is als iemand vertrekt. Zet bij Cursor Privacy Mode aan voor het hele team: zonder die instelling mag Cursor je code gebruiken om zijn modellen te trainen. Anthropic traint in Team en Enterprise standaard niet op je data, en verwerkt die op het eigen platform in de Verenigde Staten. EU-dataresidentie voor Claude kan alleen via AWS Bedrock of Google Vertex AI. Spreek af welke data een agent of editor mag zien; klantgegevens uit HubSpot of financiële exports vallen onder de AVG, dus daar horen een verwerkersovereenkomst en duidelijke werkafspraken bij. Geef een agent zoals Claude Code bewust beperkte rechten: laat hem werken in een aparte map of testomgeving, niet met schrijftoegang tot je productiesystemen. En leg vast wie resultaat controleert voordat iets naar een klant of de boekhouding gaat. Bij onze klanten is dit meestal een middag werk.
+Voor allebei geldt: regel het zakelijke fundament voordat je het team loslaat. Zet accounts centraal op bij Anthropic of Cursor, zodat toegang intrekbaar is als iemand vertrekt. Zet bij Cursor Privacy Mode aan voor het hele team: zonder die instelling mag Cursor je code gebruiken om zijn modellen te trainen. Anthropic traint in Team en Enterprise standaard niet op je data, en verwerkt die op het eigen platform in de Verenigde Staten. EU-dataresidentie voor Claude kan alleen via AWS Bedrock of Google Agent Platform (Vertex AI). Spreek af welke data een agent of editor mag zien; klantgegevens uit HubSpot of financiële exports vallen onder de AVG, dus daar horen een verwerkersovereenkomst en duidelijke werkafspraken bij. Geef een agent zoals Claude Code bewust beperkte rechten: laat hem werken in een aparte map of testomgeving, niet met schrijftoegang tot je productiesystemen. En leg vast wie resultaat controleert voordat iets naar een klant of de boekhouding gaat. Bij onze klanten is dit meestal een middag werk.
 
 ## Zo begin je veilig
 
