@@ -208,6 +208,87 @@ html.js .v2-taken > *:nth-child(4) { animation-delay: .75s; }
   .v2-bento .v2-groot { grid-column: span 2; }
 }
 
+/* Verdieping per pijler: drie groepen onder de kaarten. Een groep licht op
+   (--aan: 1) als je zijn kaart aanwijst of zelf in de groep zit; de kaart
+   licht op als je de groep aanwijst. Zonder :has() of JS staat alles er
+   gewoon, alleen de koppeling ontbreekt. */
+.v2-lezen-groepen { display: grid; gap: 8px; margin-top: 28px; }
+.v2-lezen-groep {
+  --aan: 0;
+  position: relative; padding: 20px 28px 16px; border-radius: 22px;
+  background: rgb(233 235 220 / calc(var(--aan) * 100%));
+  transition: background-color .3s var(--ease-out-soft), opacity .3s var(--ease-out-soft);
+}
+.v2-lezen-groep::before, .v2-lezen-groep::after {
+  content: ""; position: absolute; top: 0; left: 28px; right: 28px; height: 1px;
+  background: var(--color-v2-lijn); transform-origin: left center;
+}
+.v2-lezen-groep::after {
+  height: 2px; top: -0.5px; background: var(--color-v2-olijf);
+  transform: scaleX(var(--aan)); transition: transform .35s var(--ease-out-soft);
+}
+.v2-lezen-kop { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; font-family: var(--font-v2-kop); font-size: 15px; font-weight: 600; letter-spacing: -0.01em; color: var(--color-v2-inkt); }
+.v2-lezen-teken {
+  flex: none; width: 28px; height: 28px; border-radius: 9px; display: inline-flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700; letter-spacing: 0; background: var(--color-v2-tint); color: var(--color-v2-olijf);
+  transition: background-color .3s var(--ease-out-soft), color .3s var(--ease-out-soft), transform .3s var(--ease-out-soft);
+}
+.v2-lezen-aantal { margin-left: auto; min-width: 24px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--color-v2-lijn); font-family: Inter, sans-serif; font-size: 12px; font-weight: 500; text-align: center; color: var(--color-v2-inkt-2); }
+.v2-lezen-lijst { list-style: none; margin: 0; padding: 0; font-size: 16px; }
+.v2 .v2-lezen-lijst a {
+  position: relative; display: block; padding: 7px 28px 7px 0;
+  color: var(--color-v2-inkt); text-decoration: underline; text-decoration-color: rgb(61 82 32 / .3); text-underline-offset: 4px;
+  translate: calc(var(--aan) * 4px) 0;
+  transition: translate .3s var(--ease-out-soft), color .2s ease, text-decoration-color .2s ease;
+}
+.v2 .v2-lezen-lijst li:nth-child(2) a { transition-delay: 40ms, 0s, 0s; }
+.v2 .v2-lezen-lijst li:nth-child(3) a { transition-delay: 80ms, 0s, 0s; }
+.v2 .v2-lezen-lijst a::after { content: "→"; position: absolute; right: 0; top: 7px; color: var(--color-v2-olijf); opacity: calc(.45 + var(--aan) * .55); transition: opacity .3s var(--ease-out-soft), translate .3s var(--ease-out-soft); }
+.v2 .v2-lezen-lijst a:hover, .v2 .v2-lezen-lijst a:focus-visible { color: var(--color-v2-olijf); text-decoration-color: currentColor; }
+.v2 .v2-lezen-lijst a:hover::after, .v2 .v2-lezen-lijst a:focus-visible::after { translate: 3px 0; }
+.v2 .v2-lezen-lijst a:focus-visible { outline: 3px solid var(--color-v2-olijf); outline-offset: 2px; border-radius: 6px; }
+
+/* Groep aan: zelf aangewezen, of via de bijbehorende kaart. */
+.v2-lezen-groep:is(:hover, :focus-within),
+.v2-lezen:has(.v2-bento [data-pijler="avg"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="avg"],
+.v2-lezen:has(.v2-bento [data-pijler="prijs"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="prijs"],
+.v2-lezen:has(.v2-bento [data-pijler="branche"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="branche"] { --aan: 1; }
+.v2-lezen-groep:is(:hover, :focus-within) .v2-lezen-teken,
+.v2-lezen:has(.v2-bento [data-pijler="avg"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="avg"] .v2-lezen-teken,
+.v2-lezen:has(.v2-bento [data-pijler="prijs"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="prijs"] .v2-lezen-teken,
+.v2-lezen:has(.v2-bento [data-pijler="branche"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="branche"] .v2-lezen-teken {
+  background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); transform: rotate(-6deg) scale(1.06);
+}
+/* Wijs je een gekoppelde kaart aan, dan treden de andere groepen iets terug. */
+.v2-lezen:has(.v2-bento [data-pijler]:is(:hover, :focus-within)) .v2-lezen-groep:not(:hover, :focus-within) { opacity: .5; }
+.v2-lezen:has(.v2-bento [data-pijler="avg"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="avg"],
+.v2-lezen:has(.v2-bento [data-pijler="prijs"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="prijs"],
+.v2-lezen:has(.v2-bento [data-pijler="branche"]:is(:hover, :focus-within)) .v2-lezen-groep[data-pijler="branche"] { opacity: 1; }
+
+/* Kaart aan: de groep eronder wordt aangewezen. */
+.v2-lezen:has(.v2-lezen-groep[data-pijler="avg"]:is(:hover, :focus-within)) .v2-bento [data-pijler="avg"],
+.v2-lezen:has(.v2-lezen-groep[data-pijler="prijs"]:is(:hover, :focus-within)) .v2-bento [data-pijler="prijs"],
+.v2-lezen:has(.v2-lezen-groep[data-pijler="branche"]:is(:hover, :focus-within)) .v2-bento [data-pijler="branche"] {
+  translate: 0 -3px; box-shadow: 0 0 0 2px var(--color-v2-olijf-fel), 0 18px 36px -24px rgba(35,38,29,.35);
+}
+.v2-lezen:has(.v2-lezen-groep[data-pijler="avg"]:is(:hover, :focus-within)) .v2-bento [data-pijler="avg"]::after,
+.v2-lezen:has(.v2-lezen-groep[data-pijler="prijs"]:is(:hover, :focus-within)) .v2-bento [data-pijler="prijs"]::after,
+.v2-lezen:has(.v2-lezen-groep[data-pijler="branche"]:is(:hover, :focus-within)) .v2-bento [data-pijler="branche"]::after { transform: translateX(4px); }
+
+/* De lijn boven elke groep tekent zich in bij het in beeld scrollen. Zonder
+   scroll-timeline-ondersteuning staat hij er gewoon. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .v2-lezen-groep::before { animation: v2-lijn linear both; animation-timeline: view(); animation-range: entry 10% cover 30%; }
+    .v2-lezen-groep:nth-child(2)::before { animation-range: entry 20% cover 35%; }
+    .v2-lezen-groep:nth-child(3)::before { animation-range: entry 30% cover 40%; }
+    @keyframes v2-lijn { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  }
+}
+@media (min-width: 900px) {
+  .v2-lezen-groepen { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+}
+
 /* ---------- 9. Slot-band ---------- */
 .v2-slot { padding: 0 24px 96px; }
 .v2-slot-band { max-width: 1240px; margin: 0 auto; padding: clamp(56px, 8vw, 96px) clamp(24px, 5vw, 64px); border-radius: 32px; background: var(--color-v2-olijf-fel); text-align: center; }
