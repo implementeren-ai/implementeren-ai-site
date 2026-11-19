@@ -37,7 +37,7 @@ faq:
   - question: "Vervangt Claude Design Figma of Canva?"
     answer: "Nee. Claude Design is complementair. Figma blijft het standaardtool voor gedetailleerd UI-design en samenwerking tussen designers. Canva blijft de keuze voor snelle marketing-materialen. Claude Design vult de ruimte waar je geen designer hebt maar wel snel een professioneel concept nodig hebt: een landingspagina, een dashboard layout of een presentatie."
   - question: "Is Claude Design inbegrepen bij Claude Pro?"
-    answer: "Claude Design is beschikbaar via claude.ai voor Pro, Team en Enterprise gebruikers. Er zijn geen extra kosten bovenop je bestaande abonnement. Het deelt de usage limieten met je reguliere Claude-gebruik. Controleer de Anthropic pricing pagina voor de meest actuele voorwaarden."
+    answer: "Claude Design is beschikbaar via claude.ai in alle plannen: Free, Pro, Max, Ultra, Team en Enterprise. Er zijn geen extra kosten bovenop je bestaande abonnement. Het deelt de usage limieten met je reguliere Claude-gebruik. Controleer de Anthropic pricing pagina voor de meest actuele voorwaarden."
   - question: "Kan ik Claude Design gebruiken voor klantwerk?"
     answer: "Ja, met een kanttekening. De output is van jou en je mag het commercieel gebruiken. Maar Claude Design genereert concepten, geen productiebestanden. Je hebt een designer of developer nodig om het concept om te zetten naar een werkend product. Voor snelle prototypes, interne presentaties en concept-validatie is het direct inzetbaar."
 ---
@@ -107,7 +107,7 @@ Deze workflow vervangt de traditionele cyclus van briefing schrijven, op een des
 
 ## Kosten en beschikbaarheid
 
-Claude Design is beschikbaar voor alle betaalde Claude-gebruikers: Pro, Team en Enterprise. Er zijn geen extra kosten. Het deelt de usage limieten met je reguliere Claude-gebruik, dus als je intensief designt, hou je minder tokens over voor andere taken.
+Claude Design is beschikbaar in alle Claude-plannen, ook in het gratis Free-plan, en dus ook in Pro, Max, Ultra, Team en Enterprise. Er zijn geen extra kosten. Het deelt de usage limieten met je reguliere Claude-gebruik, dus als je intensief designt, hou je minder tokens over voor andere taken.
 
 De [kosten voor Claude zakelijk](/prijs) veranderen niet door Claude Design. Het is een uitbreiding van het bestaande product, geen apart abonnement. Vergelijk dat met [Copilot](/vergelijken/claude-vs-copilot): Microsoft rekent voor design-features apart via Designer (voorheen Bing Image Creator).
 

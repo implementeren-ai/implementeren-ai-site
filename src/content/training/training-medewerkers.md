@@ -59,7 +59,7 @@ Het resultaat: medewerkers verlaten de training met een gereedschapskist die ze 
 
 ### Ochtend: fundamenten en eerste successen (3 uur)
 
-**Uur 1: Claude begrijpen.** Niet technisch, maar praktisch. Wat kan Claude wel en wat niet. Waar hallucineert het model en hoe herken je dat. Hoe de EU AI Act en AVG van toepassing zijn op jullie gebruik. Wat betekent het dat Anthropic je data niet gebruikt voor training bij Claude Team. Dit is de [AI-geletterdheid](/compliance/ai-geletterdheid) die de EU AI Act vereist.
+**Uur 1: Claude begrijpen.** Niet technisch, maar praktisch. Wat kan Claude wel en wat niet. Waar hallucineert het model en hoe herken je dat. Hoe de EU AI Act en AVG van toepassing zijn op jullie gebruik. Wat betekent het dat Anthropic je data niet gebruikt voor training bij Claude Team. Zo neem je een maatregel voor de [AI-geletterdheid](/compliance/ai-geletterdheid) waar de EU AI Act om vraagt.
 
 **Uur 2: de eerste prompt.** Elke deelnemer schrijft een prompt voor een taak die ze deze week nog moeten doen. Niet een oefening, echt werk. Een email, een samenvatting, een analyse, een voorstel. We lopen langs, verbeteren de prompts, en laten het verschil zien tussen een vage en een specifieke instructie.
 
@@ -83,7 +83,7 @@ Bij een IT-dienstverlener bouwde het support team in deze module de basis van wa
 - Een geconfigureerd Claude Project met bedrijfscontext
 - Minimaal 8 geteste prompts voor eigen taken
 - Een referentiekaart met de vier elementen van effectief prompten
-- Kennis van AI-geletterdheid conform EU AI Act en GDPR-vereisten
+- Basiskennis voor AI-geletterdheid (EU AI Act) en de AVG (GDPR)
 
 **Per team:**
 - Een gedeelde promptbibliotheek per functiegroep

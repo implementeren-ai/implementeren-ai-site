@@ -65,6 +65,9 @@ bronnen:
   - titel: "Techniek Nederland, cijfers over de installatiebranche (technieknederland.nl)"
     url: "https://www.technieknederland.nl/"
     geraadpleegd: "27 oktober 2026"
+  - titel: "Claude Code docs, data usage (consumentenplannen Free, Pro, Max en Ultra)"
+    url: "https://code.claude.com/docs/en/data-usage"
+    geraadpleegd: "19 november 2026"
 faq:
   - question: "Kan Claude werkbonnen maken voor mijn installatiebedrijf?"
     answer: "Ja, als concept. De monteur geeft de kernpunten door: wat er is gedaan, welke materialen, hoeveel tijd en wat er nog moet gebeuren. Claude zet dat in de vaste opbouw van jullie werkbon. De monteur of planner controleert de bon voordat hij naar de klant of de administratie gaat. Claude rekent geen uren of prijzen uit."
@@ -157,7 +160,7 @@ Niet elke monteur heeft een eigen seat nodig. Vaak is het genoeg dat de planners
 
 Een installatiebedrijf verwerkt adressen, telefoonnummers en soms sleutelafspraken of alarmcodes. Dat zijn persoonsgegevens onder de AVG. Drie dingen helpen.
 
-Ten eerste het plan. Op Free, Pro en Max traint Anthropic op je gesprekken als de gebruiker die instelling aan heeft staan. Op de zakelijke plannen (Claude Team, Claude Enterprise en de API) gebruikt Anthropic je invoer standaard niet voor training. De verwerkersovereenkomst is daar automatisch onderdeel van de Commercial Terms.
+Ten eerste het plan. Op Free, Pro, Max en Ultra traint Anthropic op je gesprekken als de gebruiker die instelling aan heeft staan. Op de zakelijke plannen (Claude Team, Claude Enterprise en de API) gebruikt Anthropic je invoer standaard niet voor training. De verwerkersovereenkomst is daar automatisch onderdeel van de Commercial Terms.
 
 Ten tweede de invoer. Claude heeft voor een werkbontekst of offerte geen naam en adres nodig. Schrijf "klant A" en vul de echte gegevens in je eigen systeem in. Toegangscodes horen er nooit in. Hoe je dit vastlegt in een AI-beleid en je verwerkingsregister, lees je op onze [compliance-pagina](/compliance).
 

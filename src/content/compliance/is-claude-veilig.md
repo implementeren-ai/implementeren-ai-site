@@ -33,7 +33,7 @@ competitors:
 disclaimer: juridisch
 status: published
 publishDate: 2026-10-02
-updatedDate: null
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
@@ -78,7 +78,7 @@ faq:
   - question: "Traint Claude op onze data?"
     answer: "Bij de zakelijke producten standaard niet. De zakelijke voorwaarden zeggen dat Anthropic geen modellen mag trainen op klantcontent. Uitzonderingen zijn feedback die je zelf instuurt en data die je zelf kiest te delen. Bij consumentenaccounts (Free, Pro en Max) kiest de gebruiker of gesprekken voor training worden gebruikt. Staat dat aan, dan bewaart Anthropic de data tot vijf jaar."
   - question: "Waar wordt Claude-data opgeslagen?"
-    answer: "Op het eigen platform van Anthropic wordt data opgeslagen in de Verenigde Staten. De verwerking kan standaard ook in Europa, Azië en Australië plaatsvinden, of je beperkt die tot de VS. Een EU-optie is er daar niet. De doorgifte is afgedekt met de verwerkersovereenkomst en Standard Contractual Clauses. Moet data in de EU blijven, dan gebruik je Claude via AWS Bedrock of Google Vertex AI."
+    answer: "Op het eigen platform van Anthropic wordt data opgeslagen in de Verenigde Staten. De verwerking kan standaard ook in Europa, Azië en Australië plaatsvinden, of je beperkt die tot de VS. Een EU-optie is er daar niet. De doorgifte is afgedekt met de verwerkersovereenkomst en Standard Contractual Clauses. Moet data in de EU blijven, dan gebruik je Claude via AWS Bedrock of Google Cloud Agent Platform (voorheen Vertex AI)."
   - question: "Kan Anthropic-personeel onze gesprekken lezen?"
     answer: "De verwerkersovereenkomst beschrijft dat medewerkers alleen toegang krijgen die voor hun functie nodig is, met meerfactorauthenticatie, en dat toegang wordt gelogd. Anthropic kan gesprekken wel bewaren en beoordelen als die door de veiligheidssystemen worden gemarkeerd als overtreding van het gebruiksbeleid, of als de wet het eist."
   - question: "Wat mogen medewerkers wel en niet in Claude invoeren?"
@@ -122,7 +122,7 @@ Voor de zakelijke producten is de beveiliging extern getoetst. Anthropic meldt S
 
 Over bewaartermijnen: op de API verwijdert Anthropic invoer en uitvoer standaard binnen 30 dagen. In Claude Team en Enterprise blijven gesprekken staan tot je ze zelf verwijdert. Voor de API en voor Claude Code op Enterprise-abonnementen bestaat [zero data retention](/compliance/zero-data-retention). Bij die afspraak slaat Anthropic prompts en antwoorden niet op, behalve waar de wet of misbruikbestrijding dat vereist. Anthropic beoordeelt aanvragen per organisatie.
 
-Waar je bewust mee moet omgaan: op het eigen platform van Anthropic wordt data opgeslagen in de Verenigde Staten. De verwerking kan standaard ook in Europa, Azië en Australië plaatsvinden, of je beperkt die tot de VS. Een EU-optie is er niet. De DPA met SCC's dekt de doorgifte juridisch af onder de AVG (GDPR). Wie een EU-garantie nodig heeft, gebruikt [Claude via AWS Bedrock of Google Vertex AI met een EU-endpoint](/compliance/eu-hosting). Die afweging werken we uit in [Claude en de AVG: wat regel je als bedrijf?](/compliance).
+Waar je bewust mee moet omgaan: op het eigen platform van Anthropic wordt data opgeslagen in de Verenigde Staten. De verwerking kan standaard ook in Europa, Azië en Australië plaatsvinden, of je beperkt die tot de VS. Een EU-optie is er niet. De DPA met SCC's dekt de doorgifte juridisch af onder de AVG (GDPR). Wie een EU-garantie nodig heeft, gebruikt [Claude via AWS Bedrock of Google Cloud Agent Platform (voorheen Vertex AI) met een EU-endpoint](/compliance/eu-hosting). Die afweging werken we uit in [Claude en de AVG: wat regel je als bedrijf?](/compliance).
 
 ## Wanneer is Claude veilig genoeg voor bedrijfsdata?
 
@@ -155,7 +155,7 @@ Dat gunnen we bedrijven: dat ze aan elke klant kunnen uitleggen hoe ze het hebbe
 3. Afspraken over welke bedrijfsdata wel, gepseudonimiseerd of niet in prompts gaat, vastgelegd in een kort AI-beleid dat iedereen kent.
 4. SSO aan, accounts centraal beheerd.
 5. Validatie op output die naar buiten gaat.
-6. EU-route (Bedrock of Vertex AI) alleen als klanten of sector dat echt eisen.
+6. EU-route (Bedrock of Agent Platform, voorheen Vertex AI) alleen als klanten of sector dat echt eisen.
 
 Naast de AVG geldt de AI Act. Wat die nu van een MKB-bedrijf vraagt, staat in [Claude en de EU AI Act voor het MKB](/compliance/ai-act-mkb). De plicht die elk team raakt, staat apart uitgelegd in [AI-geletterdheid voor je team](/compliance/ai-geletterdheid).
 

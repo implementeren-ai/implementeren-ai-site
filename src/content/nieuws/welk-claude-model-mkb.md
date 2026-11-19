@@ -49,6 +49,9 @@ bronnen:
   - titel: "Claude Help Center, Covered Models"
     url: "https://support.claude.com/en/articles/15425695-covered-models"
     geraadpleegd: "22 oktober 2026"
+  - titel: "Claude Help Center, Claude Fable models on your plan"
+    url: "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan"
+    geraadpleegd: "19 november 2026"
   - titel: "ECB-referentiekoers euro/dollar (21 oktober 2026)"
     url: "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html"
     geraadpleegd: "29 oktober 2026"
@@ -58,7 +61,7 @@ faq:
   - question: "Welk Claude model is het goedkoopst?"
     answer: "Claude Haiku 5.5: 0,10 dollar per miljoen input-tokens en 0,50 dollar per miljoen output-tokens bij prompts tot 100.000 tokens. Boven die promptlengte stijgt de prijs naar 0,50 en 2,50 dollar. Haiku is bedoeld voor classificatie, extractie en routering in hoog volume, waar snelheid en prijs belangrijker zijn dan redeneerdiepte."
   - question: "Zit Claude Fable 5.2 in mijn abonnement?"
-    answer: "Niet standaard. Free heeft geen Fable. Op Pro gebruik je Fable alleen via usage credits tegen API-tarief. Max, Ultra en de premium-seats van Team geven Fable tot 50 procent van je weeklimiet. Enterprise heeft volledige toegang. Via de API betaal je 8 dollar per miljoen input-tokens en 40 dollar per miljoen output-tokens."
+    answer: "Niet standaard. Free heeft geen Fable. Op Pro en op de standaard-seats van Team gebruik je Fable alleen via usage credits tegen API-tarief. Max, Ultra en de premium-seats van Team geven Fable tot 50 procent van je weeklimiet. Enterprise heeft volledige toegang. Via de API betaal je 8 dollar per miljoen input-tokens en 40 dollar per miljoen output-tokens."
   - question: "Hebben alle Claude modellen hetzelfde contextwindow?"
     answer: "Ja, de vier actuele modellen (Fable 5.2, Opus 5.5, Sonnet 5.5 en Haiku 5.5) hebben allemaal een contextwindow van 1 miljoen tokens en een maximale output van 128.000 tokens. Alleen de prijs verschilt: Haiku 5.5 rekent hogere tarieven voor requests met een prompt boven de 100.000 tokens, de andere drie niet."
   - question: "Kan ik per taak wisselen van model?"
@@ -121,7 +124,7 @@ Tabel: modelbeschikbaarheid en prijs per Claude-abonnement, stand 19 november 20
 | Pro | $17 p/m bij jaarbetaling, anders $20 (ca. 15 tot 18 euro) | Ja | Ja | Ja | Alleen via usage credits |
 | Max | $100 p/m (ca. 89 euro) | Ja | Ja | Ja | Tot 50% van de weeklimiet |
 | Ultra | $200 p/m (ca. 178 euro) | Ja | Ja | Ja | Tot 50% van de weeklimiet |
-| Team standaard-seat | $20 p/m per seat bij jaarbetaling, anders $25 (ca. 18 tot 22 euro) | Ja | Ja | Ja | Nee |
+| Team standaard-seat | $20 p/m per seat bij jaarbetaling, anders $25 (ca. 18 tot 22 euro) | Ja | Ja | Ja | Alleen via usage credits |
 | Team premium-seat | $100 p/m per seat bij jaarbetaling, anders $125 (ca. 89 tot 111 euro) | Ja | Ja | Ja | Tot 50% van de weeklimiet |
 | Enterprise | $20 per seat p/m plus verbruik tegen API-tarief, jaarbetaling, minimaal 20 seats | Ja | Ja | Ja | Ja |
 

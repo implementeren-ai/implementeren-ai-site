@@ -31,7 +31,7 @@ competitors:
 disclaimer: juridisch
 status: published
 publishDate: 2026-10-26
-updatedDate: null
+updatedDate: 2026-11-19
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-26
@@ -48,7 +48,7 @@ bronnen:
     geraadpleegd: "22 oktober 2026"
   - titel: "Claude Help Center, Covered Models (1 september 2026)"
     url: "https://support.claude.com/en/articles/15425695-covered-models"
-    geraadpleegd: "22 oktober 2026"
+    geraadpleegd: "19 november 2026"
   - titel: "Claude Code Docs, Zero data retention op Claude for Enterprise"
     url: "https://code.claude.com/docs/en/zero-data-retention"
     geraadpleegd: "22 oktober 2026"
@@ -63,7 +63,7 @@ faq:
   - question: "Werkt ZDR ook voor Claude Team of de webinterface van Enterprise?"
     answer: "Nee. De chatinterfaces van Claude Team en Claude Enterprise vallen niet onder ZDR, net als Claude Free, Pro en Max. De ene uitzondering is Claude Code op Claude Enterprise: daarvoor bestaat een eigen ZDR-regeling die Anthropic per organisatie aanzet voor accounts die daarvoor in aanmerking komen."
   - question: "Kan ik Claude Fable 5.2 gebruiken onder ZDR?"
-    answer: "Standaard niet. Anthropic heeft Fable 5, Fable 5.1 en Fable 5.2 aangewezen als Covered Models. Die vereisen minimaal 30 dagen dataretentie voor veiligheidscontroles, op elk platform. Een organisatie met ZDR kan deze modellen wel gebruiken in een aparte workspace waarvoor 30 dagen retentie is aangezet. De overige workspaces houden dan zero data retention."
+    answer: "Standaard niet. Anthropic heeft Fable 5, Fable 5.1 en Fable 5.2 aangewezen als Covered Models. Die vereisen minimaal 30 dagen dataretentie voor veiligheidscontroles, op elk platform. Een organisatie met ZDR kan deze modellen wel gebruiken in een aparte workspace waarvoor 30 dagen retentie is aangezet. De overige workspaces houden dan zero data retention. Daarnaast biedt Anthropic tijdelijk een overgangsregeling: organisaties die in aanmerking komen, kunnen Fable met ZDR gebruiken voor interne bedrijfstoepassingen."
   - question: "Hoe controleer ik of mijn organisatie ZDR heeft?"
     answer: "In de Claude Console zie je het onder Settings, Privacy Controls, bij Data retention period. Staat daar zero data retention, dan is de regeling actief voor die organisatie. Twijfel je, of heb je meerdere organisaties, check dan je contract of vraag het na bij je Anthropic-accountteam. ZDR geldt per organisatie, nooit automatisch voor allemaal."
 deadline: null
@@ -109,7 +109,7 @@ Let op bij metrics logging in Claude Code: productiviteitsdata zoals gebruikssta
 
 Anthropic heeft Claude Fable 5, Fable 5.1, Fable 5.2 en de Mythos-varianten aangewezen als Covered Models: modellen waarvan de capaciteiten extra waarborgen vragen. Voor die modellen geldt een minimale dataretentie van 30 dagen, op elk platform, juist omdat sommige vormen van misbruik alleen zichtbaar worden over meerdere verzoeken heen. Prompts en antwoorden worden na die 30 dagen automatisch verwijderd, tenzij er een veiligheidsonderzoek loopt.
 
-Voor een organisatie met ZDR betekent dit dat Fable-modellen standaard niet beschikbaar zijn. Er is een tussenweg: je kunt voor één aparte workspace 30 dagen retentie aanzetten en Fable daar gebruiken, terwijl de rest van de organisatie zero data retention houdt. Anthropic werkt daarnaast vanaf najaar 2026 aan Enterprise Frontier Safeguards, een regeling waarbij de bewaarde monitoringdata in de cloudomgeving van de klant zelf kan staan.
+Voor een organisatie met ZDR betekent dit dat Fable-modellen standaard niet beschikbaar zijn. Er is een tussenweg: je kunt voor één aparte workspace 30 dagen retentie aanzetten en Fable daar gebruiken, terwijl de rest van de organisatie zero data retention houdt. Anthropic werkt daarnaast vanaf najaar 2026 aan Enterprise Frontier Safeguards, een regeling waarbij de bewaarde monitoringdata in de cloudomgeving van de klant zelf kan staan. Als tijdelijke overgang naar die regeling kunnen organisaties die in aanmerking komen de optie krijgen om Fable 5, 5.1 en 5.2 toch met ZDR te gebruiken, voor hun eigen interne bedrijfstoepassingen. Anthropic of je cloudprovider benadert die organisaties zelf; je kunt ook via een formulier van Anthropic om beoordeling vragen.
 
 ## Wat bewaart Anthropic standaard, zonder ZDR?
 

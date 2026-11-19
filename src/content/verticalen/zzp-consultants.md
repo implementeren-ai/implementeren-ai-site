@@ -28,7 +28,7 @@ reviewedBy: "Camiel Wits"
 reviewedDate: 2026-11-10
 faq:
   - question: "Wat kost Claude voor een ZZP'er?"
-    answer: "Claude Pro kost 20 dollar per maand. Claude Code via de API kost op basis van verbruik, doorgaans 30 tot 80 dollar per maand voor een actieve gebruiker. Voor een ZZP'er die 5 tot 10 uur per week bespaart op administratie en acquisitie, is dat een investering die zich binnen een week terugverdient."
+    answer: "Claude Pro kost 17 dollar per maand bij jaarbetaling, of 20 dollar per maand, en daar zit Claude Code al in. Een aparte API-rekening is niet nodig. Werk je veel met Claude Code, dan geeft Max voor 100 dollar per maand 5 keer zoveel gebruik als Pro. Voor een ZZP'er die 5 tot 10 uur per week bespaart op administratie en acquisitie, is dat een investering die zich binnen een week terugverdient."
   - question: "Kan Claude mijn administratie doen?"
     answer: "Claude vervangt geen boekhoudsoftware. Maar het helpt bij het structureren van bonnen, het categoriseren van uitgaven, het voorbereiden van btw-aangiftes en het genereren van facturen op basis van je urenregistratie. De administratie wordt minder werk, niet nul werk. De accountant controleert het eindresultaat."
   - question: "Is Claude veilig voor vertrouwelijke klantdata?"
@@ -107,7 +107,7 @@ ZZP'ers halen het snelst resultaat omdat ze geen organisatorische drempels hebbe
 
 ### Wat kost Claude voor een ZZP'er?
 
-Claude Pro kost 20 dollar per maand. Claude Code via de API kost op basis van verbruik, doorgaans 30 tot 80 dollar per maand voor een actieve gebruiker. Voor een ZZP'er die 5 tot 10 uur per week bespaart op administratie en acquisitie, is dat een investering die zich binnen een week terugverdient.
+Claude Pro kost 17 dollar per maand bij jaarbetaling, of 20 dollar per maand, en daar zit Claude Code al in. Een aparte API-rekening is niet nodig. Werk je veel met Claude Code, dan geeft Max voor 100 dollar per maand 5 keer zoveel gebruik als Pro. Voor een ZZP'er die 5 tot 10 uur per week bespaart op administratie en acquisitie, is dat een investering die zich binnen een week terugverdient.
 
 ### Kan Claude mijn administratie doen?
 

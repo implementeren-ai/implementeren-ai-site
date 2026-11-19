@@ -23,7 +23,7 @@ const beschrijving =
   'Claude Code zakelijk inzetten zonder eigen developers: wat het is, wat je ermee bouwt, wat het kost en hoe je de risico\'s beperkt. Met echte cases.';
 
 const gepubliceerd = '2026-10-02';
-const bijgewerkt = '2026-10-22';
+const bijgewerkt = '2026-11-19';
 const datumTekst = (iso: string) =>
   new Date(iso).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
 
@@ -39,7 +39,7 @@ const faq = [
   {
     question: 'Zit Claude Code in het gratis abonnement?',
     answer:
-      'Nee. Op de prijspagina van Anthropic (gecontroleerd op 22 oktober 2026) zit Claude Code in Pro, Max, Team en Enterprise. Het gratis abonnement heeft geen Claude Code. Pro begint bij 17 dollar per maand bij jaarbetaling, zonder btw.',
+      'Nee. Op de prijspagina van Anthropic (gecontroleerd op 19 november 2026) zit Claude Code in Pro, Max, Ultra, Team en Enterprise. Het gratis abonnement heeft geen Claude Code. Pro begint bij 17 dollar per maand bij jaarbetaling, zonder btw.',
   },
   {
     question: 'Welk abonnement past bij een mkb-bedrijf?',
@@ -49,7 +49,7 @@ const faq = [
   {
     question: 'Gebruikt Anthropic mijn bedrijfsdata om modellen te trainen?',
     answer:
-      'Bij Team en Enterprise niet, tenzij je daar zelf voor kiest. Bij Pro en Max (consumentenvoorwaarden) bepaal je dat zelf met een instelling. Staat die aan, dan bewaart Anthropic de gegevens vijf jaar. Staat die uit, dan is dat 30 dagen. Bij Team en Enterprise is de standaard bewaartermijn 30 dagen.',
+      'Bij Team en Enterprise niet, tenzij je daar zelf voor kiest. Bij Pro, Max en Ultra (consumentenvoorwaarden) bepaal je dat zelf met een instelling. Staat die aan, dan bewaart Anthropic de gegevens vijf jaar. Staat die uit, dan is dat 30 dagen. Bij Team en Enterprise is de standaard bewaartermijn 30 dagen.',
   },
   {
     question: 'Kan Claude Code zomaar dingen op mijn computer veranderen?',
@@ -59,10 +59,11 @@ const faq = [
 ];
 
 const bronnen = [
-  { titel: 'Anthropic: Claude plans & pricing', url: 'https://claude.com/pricing', geraadpleegd: '2 oktober 2026' },
+  { titel: 'Anthropic: Claude plans & pricing', url: 'https://claude.com/pricing', geraadpleegd: '19 november 2026' },
+  { titel: 'Anthropic Help Center: What is the Ultra plan?', url: 'https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan', geraadpleegd: '19 november 2026' },
   { titel: 'Claude Code docs: Overview', url: 'https://code.claude.com/docs/en/overview', geraadpleegd: '2 oktober 2026' },
   { titel: 'Claude Code docs: Security', url: 'https://code.claude.com/docs/en/security', geraadpleegd: '2 oktober 2026' },
-  { titel: 'Claude Code docs: Data usage', url: 'https://code.claude.com/docs/en/data-usage', geraadpleegd: '2 oktober 2026' },
+  { titel: 'Claude Code docs: Data usage', url: 'https://code.claude.com/docs/en/data-usage', geraadpleegd: '19 november 2026' },
 ];
 
 
@@ -212,7 +213,7 @@ const koppen = [
 
       <h2 id="wat-kost-claude-code-zakelijk">Wat kost Claude Code zakelijk?</h2>
       <p>
-        Je betaalt niet apart voor Claude Code. Het zit in de abonnementen van Claude. Dit zijn de prijzen zoals Anthropic ze op 2 oktober 2026 op de prijspagina toonde, in dollars en zonder btw:
+        Je betaalt niet apart voor Claude Code. Het zit in de abonnementen van Claude. Dit zijn de prijzen zoals Anthropic ze op 19 november 2026 op de prijspagina toonde, in dollars en zonder btw:
       </p>
       <table>
         <thead>
@@ -221,14 +222,15 @@ const koppen = [
         <tbody>
           <tr><td>Free</td><td>$0</td><td>Nee</td></tr>
           <tr><td>Pro</td><td>$17 bij jaarbetaling, $20 per maand</td><td>Ja</td></tr>
-          <tr><td>Max</td><td>Vanaf $100, met 5 of 20 keer zoveel gebruik als Pro</td><td>Ja</td></tr>
+          <tr><td>Max</td><td>$100, met 5 keer zoveel gebruik als Pro</td><td>Ja</td></tr>
+          <tr><td>Ultra</td><td>$200, met 10 keer zoveel gebruik per week als Pro en geen limiet per vijf uur (voor geverifieerde accounts)</td><td>Ja</td></tr>
           <tr><td>Team, standaardplek</td><td>$20 per gebruiker bij jaarbetaling, $25 per maand</td><td>Ja</td></tr>
           <tr><td>Team, premiumplek</td><td>$100 per gebruiker bij jaarbetaling, $125 per maand, 5 keer zoveel gebruik als standaard</td><td>Ja</td></tr>
           <tr><td>Enterprise</td><td>$20 per gebruiker bij jaarbetaling, minimaal 20 gebruikers, plus gebruik tegen API-tarieven</td><td>Ja</td></tr>
         </tbody>
       </table>
       <p>
-        Voor een bedrijf ligt Team het meest voor de hand. Pro en Max vallen onder de consumentenvoorwaarden van Anthropic. Team en Enterprise vallen onder de zakelijke voorwaarden, en dat maakt verschil voor wat er met je data gebeurt (zie hieronder). Team heeft daarnaast centrale facturering, single sign-on en beheerinstellingen. Voor wie veel met Claude Code werkt, is er de premiumplek met vijf keer zoveel gebruik.
+        Voor een bedrijf ligt Team het meest voor de hand. Pro, Max en Ultra vallen onder de consumentenvoorwaarden van Anthropic. Team en Enterprise vallen onder de zakelijke voorwaarden, en dat maakt verschil voor wat er met je data gebeurt (zie hieronder). Team heeft daarnaast centrale facturering, single sign-on en beheerinstellingen. Voor wie veel met Claude Code werkt, is er de premiumplek met vijf keer zoveel gebruik.
       </p>
       <p>
         Reken ook de tijd mee. Iemand moet opdrachten omschrijven, resultaten controleren en de gebouwde tools bijhouden.
@@ -264,7 +266,7 @@ const koppen = [
         Wat Claude Code leest om een taak uit te voeren, gaat als onderdeel van de opdracht naar Anthropic. Wat daarna gebeurt, hangt af van je abonnement:
       </p>
       <ul>
-        <li><strong>Pro en Max:</strong> je kiest zelf of je data gebruikt mag worden om nieuwe modellen te trainen. Staat dat aan, dan bewaart Anthropic de gegevens vijf jaar. Staat het uit, dan 30 dagen.</li>
+        <li><strong>Pro, Max en Ultra:</strong> je kiest zelf of je data gebruikt mag worden om nieuwe modellen te trainen. Staat dat aan, dan bewaart Anthropic de gegevens vijf jaar. Staat het uit, dan 30 dagen.</li>
         <li><strong>Team en Enterprise:</strong> Anthropic traint geen modellen op code of opdrachten onder de zakelijke voorwaarden, tenzij je daar zelf voor kiest. De standaard bewaartermijn is 30 dagen.</li>
       </ul>
       <p>

@@ -33,7 +33,7 @@ faq:
   - question: "Hoe bescherm ik mijn intellectueel eigendom?"
     answer: "Code die je aan Claude voorlegt wordt niet gebruikt om het model te trainen. Anthropic heeft dat contractueel vastgelegd in hun Terms of Service. Voor extra zekerheid werk je met Claude Code lokaal: de code verlaat je machine niet, alleen de prompts gaan naar de API. Gevoelige bedrijfslogica kun je apart houden."
   - question: "Wat kost Claude voor een development-team?"
-    answer: "Claude Pro kost 20 dollar per gebruiker per maand. Claude Code via de API kost op basis van tokens. Een gemiddelde developer gebruikt 50 tot 150 dollar aan tokens per maand. Bij een team van 5 developers is dat 250 tot 750 dollar per maand. De productiviteitswinst is een veelvoud daarvan."
+    answer: "Claude Pro kost 17 dollar per gebruiker per maand bij jaarbetaling, of 20 dollar per maand, en daar zit Claude Code al in. Voor een team ligt Claude Team meer voor de hand: een standaard-seat kost 20 dollar per maand bij jaarbetaling, een premium-seat met 5 keer zoveel gebruik 100 dollar. Bij een team van 5 developers is dat 100 tot 500 dollar per maand. Betalen per token via de API kan ook, maar is voor Claude Code niet nodig. De productiviteitswinst is een veelvoud daarvan."
 areaServed: NL
 brancheOrganisatie: null
 ---
@@ -94,7 +94,7 @@ Productanalytics is een ander toepassingsgebied. Claude analyseert gebruiksdata 
 
 ## AVG en compliance voor SaaS-bedrijven
 
-SaaS-bedrijven die klantdata verwerken vallen onder de AVG (GDPR) als verwerker. De EU AI Act stelt per 2 augustus 2026 aanvullende eisen aan AI-gebruik. Als je Claude inzet om klantdata te analyseren, wordt Anthropic een sub-verwerker. Dat moet je vastleggen in je verwerkersovereenkomst. Alternatieven als OpenAI of Google Workspace AI hebben vergelijkbare verplichtingen.
+SaaS-bedrijven die klantdata verwerken vallen onder de AVG (GDPR) als verwerker. Sinds 2 augustus 2026 gelden de transparantieregels van de EU AI Act; de eisen voor hoog-risico-AI gelden door de AI Omnibus pas vanaf 2 december 2027 (bijlage III) en 2 augustus 2028 (bijlage I). Als je Claude inzet om klantdata te analyseren, wordt Anthropic een sub-verwerker. Dat moet je vastleggen in je verwerkersovereenkomst. Alternatieven als OpenAI of Google Workspace AI hebben vergelijkbare verplichtingen.
 
 De oplossing is dezelfde dataclassificatie die we voor elke sector toepassen. Groene data: eigen code, productdocumentatie, marketingteksten. Oranje data: geanonimiseerde gebruiksstatistieken. Rode data: persoonsgegevens van eindgebruikers, betaalgegevens, authenticatietokens. Die gaan nooit naar de cloud.
 
@@ -126,4 +126,4 @@ Code die je aan Claude voorlegt wordt niet gebruikt om het model te trainen. Ant
 
 ### Wat kost Claude voor een development-team?
 
-Claude Pro kost 20 dollar per gebruiker per maand. Claude Code via de API kost op basis van tokens. Een gemiddelde developer gebruikt 50 tot 150 dollar aan tokens per maand. Bij een team van 5 developers is dat 250 tot 750 dollar per maand. De productiviteitswinst is een veelvoud daarvan.
+Claude Pro kost 17 dollar per gebruiker per maand bij jaarbetaling, of 20 dollar per maand, en daar zit Claude Code al in. Voor een team ligt Claude Team meer voor de hand: een standaard-seat kost 20 dollar per maand bij jaarbetaling, een premium-seat met 5 keer zoveel gebruik 100 dollar. Bij een team van 5 developers is dat 100 tot 500 dollar per maand. Betalen per token via de API kan ook, maar is voor Claude Code niet nodig. De productiviteitswinst is een veelvoud daarvan.

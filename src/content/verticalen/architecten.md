@@ -82,6 +82,9 @@ bronnen:
   - titel: "Bureau Architectenregister: de Wet op de architectentitel en het register"
     url: "https://www.architectenregister.nl/"
     geraadpleegd: "29 oktober 2026"
+  - titel: "Claude Code docs, data usage (consumentenplannen Free, Pro, Max en Ultra)"
+    url: "https://code.claude.com/docs/en/data-usage"
+    geraadpleegd: "19 november 2026"
 faq:
   - question: "Kan Claude een bestek schrijven voor mijn bureau?"
     answer: "Claude kan conceptteksten maken voor omschrijvingen, op basis van bestekteksten uit eerdere projecten en de keuzes voor het nieuwe project. Hoeveelheden, normen en de codering van jullie bestek controleert de bestekschrijver zelf. Behandel de uitkomst als een eerste versie die een vakman naleest en aftekent, nooit als een bestek dat zo de deur uit kan."
@@ -178,7 +181,7 @@ Niet iedereen op het bureau heeft een seat nodig. Begin met de mensen die de mee
 
 Een bureau werkt met adressen, budgetten en namen van opdrachtgevers die nog niet openbaar zijn. Gaat het om personen, dan geldt de AVG. Drie punten helpen.
 
-Kies eerst het juiste plan. Op Free, Pro en Max traint Anthropic op je gesprekken als de gebruiker die instelling aan heeft staan. Op Claude Team, Claude Enterprise en de API gebruikt Anthropic je invoer standaard niet voor training. De verwerkersovereenkomst is daar automatisch onderdeel van de Commercial Terms. Hoe die overeenkomst werkt, lees je in [de verwerkersovereenkomst van Anthropic](/compliance/anthropic-dpa). Werken collega's nu al met een privéaccount, dan lees je in [shadow AI in het MKB](/compliance/shadow-ai-policy) hoe je dat in kaart brengt.
+Kies eerst het juiste plan. Op Free, Pro, Max en Ultra traint Anthropic op je gesprekken als de gebruiker die instelling aan heeft staan. Op Claude Team, Claude Enterprise en de API gebruikt Anthropic je invoer standaard niet voor training. De verwerkersovereenkomst is daar automatisch onderdeel van de Commercial Terms. Hoe die overeenkomst werkt, lees je in [de verwerkersovereenkomst van Anthropic](/compliance/anthropic-dpa). Werken collega's nu al met een privéaccount, dan lees je in [shadow AI in het MKB](/compliance/shadow-ai-policy) hoe je dat in kaart brengt.
 
 Beperk daarna de invoer. Voor een PvE of verslag heeft Claude de naam van de opdrachtgever meestal niet nodig. Schrijf "opdrachtgever A" en vul de echte gegevens later in. Bij de API verwijdert Anthropic invoer en uitvoer standaard binnen 30 dagen. Staat er in je opdracht een geheimhoudingsafspraak, dan gaat die voor. Hoe een beroep met een strenge geheimhoudingsplicht hiermee omgaat, lees je in [Claude voor notarissen](/claude-voor-notarissen).
 

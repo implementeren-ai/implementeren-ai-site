@@ -69,7 +69,7 @@ We zien patronen in wat ondernemers bouwen. De toepassingen vallen uiteen in vie
 
 ## Hoe je begint met vibe coding
 
-Je hebt drie dingen nodig: Claude Code (geinstalleerd via npm), een terminal, en een beschrijving van wat je wilt bouwen. Dat is alles. Geen IDE, geen cursus, geen development environment opzetten.
+Je hebt twee dingen nodig: Claude Code en een beschrijving van wat je wilt bouwen. Claude Code zit in de desktop-app van Claude (het tabblad Code) en draait ook in de browser op claude.ai/code, met een betaald abonnement. Een terminal is dus niet nodig. Werk je liever wel in een terminal, dan installeer je Claude Code met het installatiescript dat Anthropic aanraadt. Dat is alles. Geen IDE, geen cursus, geen development environment opzetten.
 
 **Begin klein.** Bouw niet meteen een compleet CRM. Begin met een enkele functie: een formulier dat data opslaat, een script dat een CSV omzet naar een tabel, een pagina die gegevens uit een API toont. Als dat werkt, bouw je de volgende functie erbij.
 
