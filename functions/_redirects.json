@@ -18,5 +18,9 @@
   "/prijs/kosten-zakelijk": {
     "naar": "/prijs",
     "status": 301
+  },
+  "/nieuws/claude-4-7-zakelijk": {
+    "naar": "/nieuws/claude-5-5-zakelijk",
+    "status": 301
   }
 }
