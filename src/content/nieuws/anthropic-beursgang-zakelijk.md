@@ -32,8 +32,8 @@ competitors:
   - dutchitchannel.nl
   - eupersonalfinance.eu
   - dejongebelegger.nl
-status: review
-publishDate: null
+status: published
+publishDate: 2026-11-20
 updatedDate: null
 changelogLine: null
 reviewedBy: null
