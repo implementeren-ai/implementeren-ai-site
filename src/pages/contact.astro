@@ -36,6 +36,9 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/conta
         Stuur een mailtje naar <EmailOff><a href={`mailto:${site.email}`}>{site.email}</a></EmailOff>. Je hoort binnen een werkdag terug.
         Wat we met je gegevens doen, staat in onze <a href="/privacy">privacyverklaring</a>.
       </p>
+      {site.juridisch.adres && (
+        <p>Postadres: {site.juridisch.handelsnaamVan}, {site.juridisch.adres} (KvK {site.juridisch.kvk}).</p>
+      )}
     </div>
 
     <div class="v2-contact-gebied">
