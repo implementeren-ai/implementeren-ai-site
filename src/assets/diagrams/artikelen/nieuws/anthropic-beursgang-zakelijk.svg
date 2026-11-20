@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Links een beursbord met de ticker ANT en een leeg prijsvak, want de prijs van de aandelen staat nog open. Rechts een map met je zakelijke contract: een nieuw tarief gaat uiterlijk 30 dagen na publicatie in" font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Links een beursbord met de ticker ANT en de introductieprijs van $83: Anthropic staat sinds 19 november 2026 op de beurs. Rechts een map met je zakelijke contract: een nieuw tarief gaat uiterlijk 30 dagen na publicatie in" font-family="Inter, system-ui, sans-serif" fill="#23261D"><defs>
 <filter id="ipo-g" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .14  0 0 0 0 .15  0 0 0 0 .11  .16 0 0 0 -.03"/></filter>
 </defs><rect width="1200" height="600" fill="#F4F1E8"/>
 <g>
@@ -8,8 +8,8 @@
 <rect x="110" y="90" width="420" height="290" rx="14" fill="none" stroke="#23261D" stroke-width="4"/>
 <circle cx="150" cy="125" r="9" fill="#B4C13E"/><circle cx="182" cy="125" r="9" fill="#CFCDBE"/>
 <text x="150" y="250" font-size="36" font-weight="700" letter-spacing="2">ANT</text>
-<rect x="270" y="200" width="220" height="72" rx="8" fill="#F4F1E8" stroke="#CFCDBE" stroke-width="4" stroke-dasharray="12 10"/>
-<text x="292" y="250" font-size="36" font-weight="600" fill="#565A4C">$</text>
+<rect x="270" y="200" width="220" height="72" rx="8" fill="#F4F1E8" stroke="#23261D" stroke-width="4"/>
+<text x="380" y="250" text-anchor="middle" font-size="36" font-weight="600">$83</text>
 <g stroke-width="9" stroke-linecap="round"><line x1="150" y1="320" x2="250" y2="320" stroke="#E1DED2"/><line x1="290" y1="320" x2="490" y2="320" stroke="#E1DED2"/></g>
 </g>
 <g>
@@ -19,8 +19,8 @@
 <path d="M690 236 h398 v130 a14 14 0 0 1 -14 14 h-370 a14 14 0 0 1 -14 -14 Z" fill="#E9EBDC" stroke="#23261D" stroke-width="4" stroke-linejoin="round"/>
 </g>
 <text x="320" y="434" text-anchor="middle" font-size="22" font-weight="600" letter-spacing="3" fill="#565A4C">BEURSBORD</text>
-<text font-style="italic" x="320" y="516" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="76" font-weight="500">prijs open</text>
+<text font-style="italic" x="320" y="516" text-anchor="middle" font-family="'Newsreader Variable', Newsreader, Georgia, serif" font-size="76" font-weight="500">op de beurs</text>
 <text x="889" y="434" text-anchor="middle" font-size="22" font-weight="600" letter-spacing="3" fill="#565A4C">JE CONTRACT</text>
 <text x="889" y="516" text-anchor="middle" font-family="'Instrument Sans Variable', Inter, system-ui, sans-serif" font-size="76" font-weight="600" letter-spacing="-1" fill="#3D5220">30 dagen</text>
-<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 31 okt 2026</text>
+<text x="1136" y="566" text-anchor="end" font-size="26" fill="#64685A">stand 20 nov 2026</text>
 <rect width="1200" height="600" filter="url(#ipo-g)"/></svg>
