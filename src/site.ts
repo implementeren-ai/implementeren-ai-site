@@ -20,7 +20,8 @@ export const site = {
     handelsnaamVan: 'Wits SustAInable Solutions B.V.',
     kvk: '99455390',
     btw: 'NL868999386B01',
-    adres: null as string | null,
+    // KvK-adres hoofdvestiging, gelezen op kvk.nl 13 nov 2026; publicatie akkoord Max 13 nov.
+    adres: 'Adriaan Menninckkwartier 73, 3554 CS Utrecht' as string | null,
   },
   linkedin: 'https://www.linkedin.com/in/camielwits/',
 } as const;
@@ -39,9 +40,10 @@ export const entiteit = {
   onafhankelijk: false,
   // B-D1: alleen invullen na besluit van de eigenaar.
   moederOrganisatie: null as null | { naam: string; url: string },
-  adres: null as null | { straat: string; postcode: string; plaats: string },
+  adres: { straat: 'Adriaan Menninckkwartier 73', postcode: '3554 CS', plaats: 'Utrecht' } as null | { straat: string; postcode: string; plaats: string },
   // B-D2: alleen sleutels uit `auteurs` met zichtbaar: true.
-  oprichters: [] as Array<'camiel'>,
+  // Besluit Max 20 nov 2026: Camiel is oprichter; /over toont dat zichtbaar.
+  oprichters: ['camiel'] as Array<'camiel'>,
   // B-D6: alleen profielen die bestaan en die de organisatie zelf beheert.
   sameAs: [] as string[],
   // B-14: gevuld zodra Spec A het logo levert. Nooit /icons/ (dat is de Naam-app).

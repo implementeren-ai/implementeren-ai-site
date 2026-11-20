@@ -3,6 +3,7 @@ import { getCollection, render } from 'astro:content';
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import BasisLayout from '../../layouts/BasisLayout.astro';
+import { auteurs } from '../../site';
 import CtaWarm from '../../components/CtaWarm.astro';
 import Broodkruimel from '../../components/Broodkruimel.astro';
 import ArtikelInhoud from '../../components/ArtikelInhoud.astro';
@@ -46,13 +47,13 @@ const heeftResultaatBlok = entry.data.kernwinst || entry.data.klantprofiel || en
 // Datum + schema (review Max 23 juli, B5/B9): zichtbare publicatiedatum, Article-node
 // en BreadcrumbList via de schema/artikel-props van BasisLayout (src/lib/schema.ts),
 // zodat de pagina precies één JSON-LD-blok heeft met de sitebrede entiteiten erin.
-// Een case heeft geen zichtbare byline, dus het schema noemt de organisatie als auteur.
+// Camiel ondertekent de cases (besluit Max 20 nov 2026): zichtbare byline en Person als auteur.
 const datumNl = entry.data.publishDate.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
 const artikel = {
   headline: entry.data.title,
   gepubliceerd: entry.data.publishDate,
   bijgewerkt: null,
-  auteur: 'organisatie',
+  auteur: 'camiel',
   sectie: 'Cases',
 } as const;
 ---
@@ -79,7 +80,7 @@ const artikel = {
           )}
           <h1 class="v2-artikel-h1">{entry.data.title}</h1>
           <p>{entry.data.description}</p>
-          <p class="v2-case-datum">Gepubliceerd op <time datetime={entry.data.publishDate.toISOString().slice(0, 10)}>{datumNl}</time></p>
+          <p class="v2-case-datum">Gepubliceerd op <time datetime={entry.data.publishDate.toISOString().slice(0, 10)}>{datumNl}</time> · Geschreven door <a href={auteurs.camiel.overAnker}>{auteurs.camiel.naam}</a></p>
         </div>
 
         <!-- 4 · In één oogopslag: meta-strip + kernwinst + resultaten -->

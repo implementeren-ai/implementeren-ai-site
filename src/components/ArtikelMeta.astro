@@ -22,6 +22,8 @@ const iso = (d: Date) => d.toISOString().slice(0, 10);
 const info = auteurs[author];
 const naam = info?.zichtbaar ? info.naam : 'Implementeren.ai';
 const href = info?.overAnker ?? '/over';
+// Nalezen telt alleen door een ander dan de auteur (T12 c): zelf nalezen toont geen regel.
+const nalezer = reviewedBy && reviewedBy !== info?.naam ? reviewedBy : null;
 ---
 <div class="text-sm text-inkt-zacht mt-3 space-y-1">
   {(publishDate || updatedDate) && (
@@ -31,5 +33,5 @@ const href = info?.overAnker ?? '/over';
       {updatedDate && <>Bijgewerkt op <time datetime={iso(updatedDate)}>{nl(updatedDate)}</time></>}
     </p>
   )}
-  <p class="m-0">Geschreven door <a href={href} class="text-accent-diep">{naam}</a>{reviewedBy && <>, nagelezen door {reviewedBy}{reviewedDate && <> op {nl(reviewedDate)}</>}</>}.</p>
+  <p class="m-0">Geschreven door <a href={href} class="text-accent-diep">{naam}</a>{nalezer && <>, nagelezen door {nalezer}{reviewedDate && <> op {nl(reviewedDate)}</>}</>}.</p>
 </div>
