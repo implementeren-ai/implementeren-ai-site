@@ -31,7 +31,16 @@ changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-11-10
 isRecurring: false
+bronnen:
+  - titel: "Claude, Plans & Pricing (abonnementen)"
+    url: "https://claude.com/pricing"
+    geraadpleegd: "10 november 2026"
+  - titel: "Claude Platform Docs, Pricing (API-prijzen per model)"
+    url: "https://platform.claude.com/docs/en/about-claude/pricing"
+    geraadpleegd: "19 november 2026"
 faq:
+  - question: "Is Claude in 2026 duurder geworden?"
+    answer: "Niet in onze meetreeks. Op drie peildata (2 oktober, 22 oktober en 10 november 2026) bleven Pro ($20 per maand), Team ($25 per gebruiker per maand) en Enterprise ($20 per seat plus verbruik) gelijk. Er kwam wel iets bij: sinds de controle van 22 oktober zitten er API-credits in Team en Max. Via de API werd elke nieuwe modelgeneratie goedkoper, van 20% bij Opus en Fable tot 90% bij Haiku."
   - question: "Hoeveel procent van het Nederlandse MKB gebruikt AI in 2026?"
     answer: "Volgens CBS en Eurostat-schattingen zet circa 42% van de Nederlandse MKB-bedrijven met meer dan 10 medewerkers een vorm van AI in. Dat varieert van eenvoudige chatbots tot geautomatiseerde rapportagesystemen. Bij micro-ondernemingen (1 tot 9 medewerkers) ligt het percentage rond de 18%. Nederland scoort daarmee boven het EU-gemiddelde van 34%."
   - question: "Wat is de gemiddelde ROI van AI-implementaties in het MKB?"
@@ -43,6 +52,53 @@ faq:
 ---
 
 AI statistieken Nederland 2026 laten een duidelijke verschuiving zien: het MKB experimenteert niet meer, het implementeert. De AI outlook 2026 bedrijven in Nederland is concreter dan ooit. Waar 2024 het jaar was van ChatGPT uitproberen en 2025 het jaar van eerste pilots, is 2026 het jaar waarin bedrijven daadwerkelijk processen vervangen. Niet met science fiction, maar met tools als Claude, Copilot en Gemini die dagelijks werk overnemen. Deze pagina bundelt de relevante cijfers: CBS-data, Eurostat-metingen en sectoronderzoeken. Gefilterd op wat relevant is voor een Nederlands MKB dat beslissingen moet nemen.
+
+<!--
+  Bronnen voor "Eigen meetreeks: Claude-prijzen per peildatum" (opgesteld 20 november 2026):
+  - Abonnementen: src/data/claude-prijzen.ts, drie versies in git. 2 oktober (claude-cowork-practice
+    4744ed8), 22 oktober (1ab23a1 en 4ccd119, overgenomen in 225fcc0), 10 november (9fc73f3). Elke versie
+    is op die dag tegen claude.com/pricing gecontroleerd.
+  - API: PRIJZEN in src/pages/tools/claude-api-kosten-calculator.astro, gecontroleerd 19 november 2026
+    tegen platform.claude.com/docs/en/about-claude/pricing. Haiku 5.5: prijs voor prompts tot 100.000
+    tokens (daarboven $0,50 / $2,50).
+  - "Minimaal 20 seats" en de API-credits staan voor het eerst in de versie van 22 oktober. Of Anthropic
+    ze die maand invoerde of wij ze toen pas zagen, weten we niet; de tekst zegt daarom "in onze controle".
+  OPEN PUNT VOOR PUBLICATIE: de cijfers in de overige secties (42% adoptie, EU 34%, sectorpercentages,
+  investeringsbedragen, marktaandelen, prognose 2027) hebben geen controleerbare bron. "Anthropic Market
+  Report" bestaat niet als publicatie. CBS meldde voor 2024 22,7% AI-gebruik bij bedrijven met 10+
+  werkzame personen; Eurostat 13,5% voor de EU-27 (cbs.nl/nl-nl/nieuws/2025/09/gebruik-kunstmatige-intelligentie--ai---door-bedrijven-neemt-toe). Alles wat niet herleidbaar is, gaat eruit of wordt
+  vervangen door een gelinkt CBS- of Eurostat-cijfer met jaartal.
+-->
+
+## Eigen meetreeks: Claude-prijzen per peildatum
+
+Wij controleren de Claude-prijzen elke maand bij Anthropic en leggen elke versie met datum vast. Dat levert een reeks op die je nergens anders vindt. De korte uitkomst: de abonnementsprijzen stonden van oktober tot half november stil, maar er kwam steeds meer bij voor hetzelfde geld. En elke nieuwe modelgeneratie in de API was goedkoper dan de vorige.
+
+**Hoe we meten.** Op elke peildatum lezen we claude.com/pricing en de prijspagina in de Claude Platform Docs. Wat we zien, gaat met de datum erbij in onze broncode, die in versiebeheer staat. Een wijziging die we niet hebben gezien, staat hier dus ook niet in. Prijzen zijn in dollars, exclusief btw.
+
+Tabel: Claude-abonnementen per peildatum, stand 10 november 2026.
+
+| Abonnement | 2 oktober 2026 | 22 oktober 2026 | 10 november 2026 |
+|------------|----------------|-----------------|------------------|
+| Pro | $20/maand ($17 bij jaarbetaling) | gelijk | gelijk |
+| Team | $25/gebruiker/maand ($20 bij jaarbetaling) | gelijk, nu met API-credits: $20 per seat | gelijk |
+| Team premium seat | $125/maand | gelijk, nu met $100 aan API-credits | gelijk |
+| Enterprise | $20/seat/maand + verbruik | gelijk, minimaal 20 seats in onze controle | gelijk |
+| Max 5x | $100/maand | gelijk, nu met $100 aan API-credits | heet nu Max (5x Pro) |
+| Max 20x | $200/maand | gelijk, nu met $200 aan API-credits | heet nu Ultra (10x Pro per week, geen 5-uurslimiet) |
+
+De API-credits bij Team zijn samen begrensd op $500 per maand. Het zakelijke Team-abonnement kostte op alle drie de peildata hetzelfde; welk abonnement bij je past, staat in [Pro, Team of Enterprise](/prijs/pro-vs-team-vs-enterprise).
+
+Tabel: Claude API-prijzen per modelgeneratie in dollars per miljoen tokens (input / output), stand 19 november 2026.
+
+| Modellijn | Vorige generatie | Nieuwste generatie | Verschil |
+|-----------|------------------|--------------------|----------|
+| Haiku | Haiku 4.5: $1 / $5 | Haiku 5.5: $0,10 / $0,50 | -90% |
+| Sonnet | Sonnet 4.5 en 4.6: $3 / $15 | Sonnet 5 en 5.5: $2 / $10 | -33% |
+| Opus | Opus 4.5 tot en met 5: $5 / $25 | Opus 5.5: $4 / $20 | -20% |
+| Fable | Fable 5 en 5.1: $10 / $50 | Fable 5.2: $8 / $40 | -20% |
+
+Voor een mkb-bedrijf betekent dit twee dingen. Een abonnement wordt niet goedkoper, maar je krijgt er meer voor. Wie via de API bouwt, zoals in onze [case over 872 Power BI-rapporten](/cases/powerbi-reporting), betaalt per taak minder zodra hij overstapt op de nieuwste generatie. Wat dat voor jouw situatie scheelt, reken je uit met de [API-kostencalculator](/tools/claude-api-kosten-calculator). We werken deze reeks elke maand bij.
 
 ## AI statistieken Nederland 2026: adoptiecijfers
 
