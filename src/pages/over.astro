@@ -83,7 +83,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Over ons', url: '/over
       />
       <div>
         <h3 class="v2-over-naam">{camiel.naam}</h3>
-        <p class="v2-over-functie">{camiel.functie}</p>
+        <p class="v2-over-functie">Oprichter van {site.naam} · {camiel.functie}</p>
         <p>{camiel.bio}</p>
         {camiel.linkedin && (
           <a href={camiel.linkedin} target="_blank" rel="noopener" class="v2-knop v2-knop-olijf mt-6">
