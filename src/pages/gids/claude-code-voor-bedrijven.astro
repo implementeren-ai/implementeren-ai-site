@@ -1,4 +1,5 @@
 ---
+import { gidsDatums } from '../../data/gidsen';
 import BasisLayout from '../../layouts/BasisLayout.astro';
 import Broodkruimel from '../../components/Broodkruimel.astro';
 import KortAntwoord from '../../components/KortAntwoord.astro';
@@ -22,8 +23,7 @@ const headline = 'Claude Code voor bedrijven: wat het is, wat het kost en hoe je
 const beschrijving =
   'Claude Code zakelijk inzetten zonder eigen developers: wat het is, wat je ermee bouwt, wat het kost en hoe je de risico\'s beperkt. Met echte cases.';
 
-const gepubliceerd = '2026-10-02';
-const bijgewerkt = '2026-11-19';
+const { gepubliceerd, bijgewerkt } = gidsDatums['claude-code-voor-bedrijven'];
 const datumTekst = (iso: string) =>
   new Date(iso).toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
 

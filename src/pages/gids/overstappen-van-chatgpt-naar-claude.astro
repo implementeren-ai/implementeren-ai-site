@@ -1,4 +1,5 @@
 ---
+import { gidsDatums } from '../../data/gidsen';
 import BasisLayout from '../../layouts/BasisLayout.astro';
 import Broodkruimel from '../../components/Broodkruimel.astro';
 import KortAntwoord from '../../components/KortAntwoord.astro';
@@ -18,8 +19,7 @@ const titel = 'Overstappen van ChatGPT naar Claude: zakelijk stappenplan';
 const h1 = 'Van ChatGPT naar Claude overstappen: kosten en stappenplan';
 const beschrijving =
   'Overstappen van ChatGPT naar Claude? Wanneer het loont en wanneer niet, wat het echt kost en hoe je Claude in twee weken test met één team.';
-const gepubliceerd = '2026-10-02';
-const bijgewerkt = '2026-11-19';
+const { gepubliceerd, bijgewerkt } = gidsDatums['overstappen-van-chatgpt-naar-claude'];
 const geraadpleegd = '2 oktober 2026';
 
 const datumNl = (iso: string) =>

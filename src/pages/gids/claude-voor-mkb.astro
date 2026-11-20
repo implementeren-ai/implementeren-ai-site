@@ -1,4 +1,5 @@
 ---
+import { gidsDatums } from '../../data/gidsen';
 import BasisLayout from '../../layouts/BasisLayout.astro';
 import Broodkruimel from '../../components/Broodkruimel.astro';
 import KortAntwoord from '../../components/KortAntwoord.astro';
@@ -19,8 +20,8 @@ const beschrijving =
   'Een zakelijk Claude-account voor je mkb: kies tussen Team en Enterprise, haal je team van privéaccounts af en leg vast wat er met bedrijfsdata mag.';
 const pad = '/gids/claude-voor-mkb';
 
-const gepubliceerd = new Date('2026-10-02');
-const bijgewerkt = new Date('2026-11-19');
+const gepubliceerd = new Date(gidsDatums['claude-voor-mkb'].gepubliceerd);
+const bijgewerkt = new Date(gidsDatums['claude-voor-mkb'].bijgewerkt);
 const datumNl = (d: Date) => d.toLocaleDateString('nl-NL', { day: 'numeric', month: 'long', year: 'numeric' });
 const datumIso = (d: Date) => d.toISOString().slice(0, 10);
 

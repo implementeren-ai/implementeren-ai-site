@@ -2,6 +2,7 @@
 import { site, navigatie as alleNavigatie, dienstenNavigatie, kennisNavigatie as alleKennis } from '../site';
 import { legeHubs } from '../data/indexering.mjs';
 import LogoMerk from '../assets/logo/logo-mark.svg';
+import EmailOff from './EmailOff.astro';
 
 // Lege hubs ("Binnenkort meer", noindex) krijgen geen link. Zodra een collectie een
 // gepubliceerd artikel heeft valt de hub uit legeHubs en komt de link vanzelf terug.
@@ -38,7 +39,7 @@ const linkClass = 'v2-voet-link';
       <div class="flex flex-col gap-2">
         <strong>Contact</strong>
         <a href="/contact" class={linkClass}>Neem contact op</a>
-        <a href={`mailto:${site.email}`} class={linkClass}>{site.email}</a>
+        <EmailOff><a href={`mailto:${site.email}`} class={linkClass}>{site.email}</a></EmailOff>
         <a href={site.linkedin} target="_blank" rel="noopener" class={linkClass}>LinkedIn<span class="sr-only"> (opent in nieuw venster)</span></a>
       </div>
     </div>

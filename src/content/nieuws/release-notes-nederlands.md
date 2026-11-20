@@ -48,7 +48,7 @@ faq: []
 
 Claude release notes Nederlands: dit is een gedateerd overzicht van de Claude-updates die voor bedrijven het meest uitmaken, van juni tot en met 18 november 2026. Anthropic publiceert zijn eigen release notes in het Engels, verdeeld over het Help Center (de Claude-apps) en de documentatie van het Claude Platform (de API). Wij hebben daaruit gehaald wat telt voor een Nederlands MKB-bedrijf, en cosmetische wijzigingen weggelaten. Deze pagina is een momentopname van 19 november 2026, geen doorlopend logboek. Wil je weten wat er daarna veranderde, kijk dan in de bronnen onderaan; die werkt Anthropic zelf bij.
 
-## Claude updates 2026: november
+## November 2026
 
 - **9 november, Claude Fable 5.2.** Het nieuwe topmodel voor zwaar redeneerwerk en lang lopende agents. Via de API kost het 8 dollar per miljoen input-tokens en 40 dollar per miljoen output-tokens, een vijfde minder dan Fable 5.1. Wat dat voor je abonnement betekent, staat in [Claude 5.5 en Fable 5.2 zakelijk](/nieuws/claude-5-5-zakelijk).
 - **12 november, Claude Meetings (bèta).** Op Team en Enterprise voeg je Claude toe aan een Google Meet-gesprek. Claude doet zichtbaar mee, maakt notities, beantwoordt vragen en bouwt tijdens het gesprek documenten, whiteboards en slides.
@@ -56,7 +56,7 @@ Claude release notes Nederlands: dit is een gedateerd overzicht van de Claude-up
 - **6 november, projecttags (bèta).** Enterprise-organisaties kunnen projecten taggen met hun eigen kostenplaatsen of klantcodes en de uitgaven per tag zien.
 - **12 november, Managed Agents op eigen infrastructuur.** Self-hosted Claude Managed Agents draait de hele agentdienst op je eigen servers. Toegang vraag je aan via je accountteam bij Anthropic.
 
-## Claude updates 2026: oktober
+## Oktober 2026
 
 - **7 oktober, Claude Haiku 5.5.** Het snelste en goedkoopste actuele model, voor werk in hoog volume zoals classificatie en extractie.
 - **7 oktober, maandelijks API-tegoed voor Max en Team.** Max- en Team-abonnementen krijgen elke maand API-tegoed voor eigen apps en agents op het Claude Platform. Je claimt het door een Claude Console-organisatie te koppelen in de instellingen voor facturering. Hoe tegoeden en limieten samenhangen, lees je bij [credits en limieten](/prijs/credits-en-limieten).
@@ -64,7 +64,7 @@ Claude release notes Nederlands: dit is een gedateerd overzicht van de Claude-up
 - **22 oktober, Claude via Google Cloud (door Anthropic beheerd).** Een nieuwe route naar de Claude API via je eigen Google Cloud-project, met facturering via Google Cloud Marketplace.
 - **30 oktober, fast mode voor Opus 4.8 stopt.** Fast mode voor Claude Opus 4.8 verdwijnt op 30 november 2026. Wie het gebruikt, stapt over op Opus 5.5.
 
-## Claude updates 2026: september
+## September 2026
 
 - **1 september, Claude Fable 5.1.** Inmiddels opgevolgd door Fable 5.2.
 - **16 september, Cowork in elk gesprek.** Alles wat Claude Cowork kan, werkt nu vanuit elk gesprek, eerst voor Pro en Max: een snelle vraag of een groter stuk werk zoals een rapport, spreadsheet of presentatie. Tegelijk kwamen Claude Design, Claude Slides en Claude Docs in elk gesprek beschikbaar, op alle abonnementen; op Enterprise nog in bèta.

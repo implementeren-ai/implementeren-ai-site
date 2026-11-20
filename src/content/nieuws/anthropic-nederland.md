@@ -10,8 +10,7 @@ targetKeywords:
 wordCountTarget: 750
 priority: 2
 tier: 2
-cases:
-  - powerbi-reporting
+cases: []
 internalLinks:
   - /compliance/eu-hosting
   - /compliance/anthropic-dpa

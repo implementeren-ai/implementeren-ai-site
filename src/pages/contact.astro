@@ -3,6 +3,7 @@ import BasisLayout from '../layouts/BasisLayout.astro';
 import { site } from '../site';
 import { ID } from '../lib/schema';
 import Broodkruimel from '../components/Broodkruimel.astro';
+import EmailOff from '../components/EmailOff.astro';
 import { Picture } from 'astro:assets';
 import camielWater from '../assets/team/camiel-water.jpg';
 const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact' }];
@@ -32,7 +33,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/conta
     <div class="v2-contact-mail">
       <p class="v2-contact-mail-kop">Liever eerst mailen?</p>
       <p>
-        Stuur een mailtje naar <a href={`mailto:${site.email}`}>{site.email}</a>. Je hoort binnen een werkdag terug.
+        Stuur een mailtje naar <EmailOff><a href={`mailto:${site.email}`}>{site.email}</a></EmailOff>. Je hoort binnen een werkdag terug.
         Wat we met je gegevens doen, staat in onze <a href="/privacy">privacyverklaring</a>.
       </p>
     </div>
@@ -64,9 +65,9 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/conta
           <li><span class="v2-vink" aria-hidden="true">&#10003;</span> Binnen één werkdag antwoord</li>
           <li><span class="v2-vink" aria-hidden="true">&#10003;</span> Een eerlijk advies, ook als het antwoord 'nog niet' is</li>
         </ul>
-        <a href={`mailto:${site.email}`} class="v2-knop v2-knop-olijf mt-6">
+        <EmailOff><a href={`mailto:${site.email}`} class="v2-knop v2-knop-olijf mt-6">
           Neem contact op<span class="cta-arrow">&rarr;</span>
-        </a>
+        </a></EmailOff>
       </div>
     </div>
   </section>

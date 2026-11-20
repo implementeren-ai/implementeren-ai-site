@@ -37,7 +37,7 @@ const EXPECT_ICONS = false;                  // true once A-20 is live (favicon.
 const EXPECT_LLMS_TXT = false;               // true once A-21 is live
 const EXPECT_404_STATUS = true;              // A-13 live (c879849)
 const EXPECT_INDEXNOW_KEY = true;            // A-22 live (128a0f8)
-const EXPECT_EMAIL_PLAIN = false;            // true once A-24 is done
+const EXPECT_EMAIL_PLAIN = true;             // A-24: <EmailOff> wraps every address in email_off markers
 const SKIP_UA = process.argv.includes('--no-ua-matrix');
 const PLACEHOLDER = /wordt gevuld tijdens|batch gebouwd|Binnenkort meer/;
 

@@ -1,4 +1,5 @@
 ---
+import { gidsDatums, datumNl } from '../../data/gidsen';
 import { itemListNode, lijstId, faqNode } from '../../lib/schema';
 import BasisLayout from '../../layouts/BasisLayout.astro';
 import Container from '../../components/Container.astro';
@@ -14,21 +15,21 @@ const gidsen = [
     titel: 'Zakelijk Claude-account en abonnement voor het mkb',
     beschrijving: 'Welk abonnement past, wat het kost, wat je team ermee doet, hoe het zit met de AVG en hoe je de invoering aanpakt.',
     vraag: 'Welk abonnement past, wat kost het en hoe begin je?',
-    bijgewerkt: '2 oktober 2026',
+    bijgewerkt: datumNl(gidsDatums['claude-voor-mkb'].bijgewerkt),
   },
   {
     href: '/gids/overstappen-van-chatgpt-naar-claude',
     titel: 'Overstappen van ChatGPT naar Claude',
     beschrijving: 'Wanneer overstappen loont en wanneer niet, wat het echt kost en hoe je Claude in twee weken test met één team.',
     vraag: 'Wanneer loont overstappen van ChatGPT naar Claude en hoe test je dat?',
-    bijgewerkt: '2 oktober 2026',
+    bijgewerkt: datumNl(gidsDatums['overstappen-van-chatgpt-naar-claude'].bijgewerkt),
   },
   {
     href: '/gids/claude-code-voor-bedrijven',
     titel: 'Claude Code voor bedrijven',
     beschrijving: 'Claude Code inzetten zonder eigen developers: wat het is, wat je ermee bouwt, wat het kost en hoe je de risico\'s beperkt.',
     vraag: 'Wat kan Claude Code zonder eigen developers, en wat kost het?',
-    bijgewerkt: '2 oktober 2026',
+    bijgewerkt: datumNl(gidsDatums['claude-code-voor-bedrijven'].bijgewerkt),
   },
 ];
 
