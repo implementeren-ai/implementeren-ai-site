@@ -7,6 +7,10 @@ import CollectieHub from '../../components/CollectieHub.astro';
 import Broodkruimel from '../../components/Broodkruimel.astro';
 import FaqSectie from '../../components/FaqSectie.astro';
 
+// Caption-stand volgt de laatst bijgewerkte gids, net als de tabel eronder.
+const laatsteBijgewerkt = Object.values(gidsDatums).map((d) => d.bijgewerkt).sort().at(-1)!;
+const standMaand = new Date(laatsteBijgewerkt).toLocaleDateString('nl-NL', { month: 'long', year: 'numeric', timeZone: 'Europe/Amsterdam' });
+
 // Gidsen zijn statische .astro-pagina's (geen content-collectie); de hub
 // bestaat omdat de breadcrumbs op elke gidspagina naar /gids verwijzen.
 const gidsen = [
@@ -69,7 +73,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Gidsen', url: '/gids' 
 
     <div class="my-12 v2-tabelkaart v2-hubtabel">
       <table class="w-full text-sm border-collapse">
-        <caption class="caption-top text-left text-sm text-inkt-zacht pb-2">Alle gidsen, stand oktober 2026</caption>
+        <caption class="caption-top text-left text-sm text-inkt-zacht pb-2">Alle gidsen, stand {standMaand}</caption>
         <thead>
           <tr class="border-b-2 border-lijn">
             <th scope="col" class="text-left p-3 font-semibold">Gids</th>
