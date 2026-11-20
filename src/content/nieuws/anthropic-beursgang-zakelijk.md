@@ -66,10 +66,10 @@ bronnen:
   - titel: "SEC EDGAR, filings van Anthropic, PBC (CIK 0002130357)"
     url: "https://www.sec.gov/edgar/browse/?CIK=0002130357"
     geraadpleegd: "20 november 2026"
-  - titel: "Ed Zitron, Where's Your Ed At, Exit Liquidity (28 oktober 2026)"
+  - titel: "Where's Your Ed At (nieuwsbrief), Exit Liquidity (28 oktober 2026)"
     url: "https://www.wheresyoured.at/exit-liquidity/"
     geraadpleegd: "20 november 2026"
-  - titel: "All-In with Chamath, Jason, Sacks & Friedberg, Anthropic S-1 Shocker, Greatest Business Ever? (30 oktober 2026)"
+  - titel: "All-In (podcast), Anthropic S-1 Shocker, Greatest Business Ever? (30 oktober 2026)"
     url: "https://allinchamathjason.libsyn.com/anthropic-s-1-shocker-greatest-business-ever-googles-500b-wipeout-midterm-predictions"
     geraadpleegd: "20 november 2026"
   - titel: "Anthropic, Commercial Terms of Service (ingang 17 juni 2025)"
@@ -175,7 +175,7 @@ Over dezelfde cijfers lopen de meningen ver uiteen. Hieronder twee bekende stemm
 
 Ed Zitron, een Amerikaanse techcriticus met de nieuwsbrief Where's Your Ed At, schreef op 28 oktober 2026 [het stuk "Exit Liquidity"](https://www.wheresyoured.at/exit-liquidity/). Volgens hem leunde de winst in het tweede kwartaal op goedkope rekenkracht, omdat grote contracten toen pas op gang kwamen. Een van zijn tussenkopjes luidt: "Anthropic's Compute Costs Are Now Growing Faster Than Its Revenues". Hij wijst ook op de grote rekencontracten met Amazon, Google, Microsoft en SpaceX.
 
-Het definitieve prospectus geeft hem op het eerste punt gelijk. In het derde kwartaal steeg de omzet met 47%, van $11,6 naar $17,0 miljard. De kosten voor rekenkracht en infrastructuur stegen in dezelfde tijd met 77%, van $5,6 naar $9,9 miljard. Daarnaast heeft Anthropic voor ongeveer $900,9 miljard aan uitgaven vastgelegd, bijna allemaal voor rekenkracht en infrastructuur. Daarvan valt ongeveer $451,6 miljard voor eind 2030, en ongeveer $70,7 miljard in de twaalf maanden na 30 september 2026. Anthropic schrijft dat het die middelen moet betalen "regardless of actual utilization". Er is wel een rem: ongeveer $186,2 miljard kan vervallen, bijvoorbeeld als een leverancier geen financiering of vergunning rond krijgt.
+Het definitieve prospectus geeft de criticus op het eerste punt gelijk. In het derde kwartaal steeg de omzet met 47%, van $11,6 naar $17,0 miljard. De kosten voor rekenkracht en infrastructuur stegen in dezelfde tijd met 77%, van $5,6 naar $9,9 miljard. Daarnaast heeft Anthropic voor ongeveer $900,9 miljard aan uitgaven vastgelegd, bijna allemaal voor rekenkracht en infrastructuur. Daarvan valt ongeveer $451,6 miljard voor eind 2030, en ongeveer $70,7 miljard in de twaalf maanden na 30 september 2026. Anthropic schrijft dat het die middelen moet betalen "regardless of actual utilization". Er is wel een rem: ongeveer $186,2 miljard kan vervallen, bijvoorbeeld als een leverancier geen financiering of vergunning rond krijgt.
 
 ### Het argument voor
 
