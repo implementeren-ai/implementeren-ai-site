@@ -125,12 +125,22 @@ def check_keyword_presence(fm: dict, body: str) -> tuple[bool, str]:
     first_100_found = any(kw.lower() in first_100 for kw in keywords)
     if not first_100_found:
         issues.append('No keyword in first 100 words')
-    h2s = ' '.join(re.findall(r'^## (.+)$', body, re.MULTILINE)).lower()
-    h2_count = sum(1 for kw in keywords if kw.lower() in h2s)
-    if h2_count < 2:
-        issues.append(f'Only {h2_count} keywords in H2 headings (need 2+)')
+    # H2's: geen minimum meer. Een regel die keywords in koppen afdwingt duwt
+    # richting keyword stuffing, en dat kost zichtbaarheid in AI-antwoorden
+    # (GEO-studie Aggarwal e.a. 2024: -8 tot -10%). Wel een plafond: staat een
+    # target keyword in meer dan de helft van de H2's (en in minstens 3), dan
+    # is dat stuffing. Koppen schrijf je voor de lezer.
+    h2_list = [h.lower() for h in re.findall(r'^## (.+)$', body, re.MULTILINE)]
+    if len(h2_list) >= 3:
+        stuffed = []
+        for kw in keywords:
+            n = sum(1 for h in h2_list if kw.lower() in h)
+            if n >= 3 and n > len(h2_list) / 2:
+                stuffed.append(f'"{kw}" in {n}/{len(h2_list)} H2s')
+        if stuffed:
+            issues.append('Keyword stuffing in H2 headings: ' + ', '.join(stuffed))
     ok = len(issues) == 0
-    return ok, '; '.join(issues) if issues else 'All keyword placements OK'
+    return ok, '; '.join(issues) if issues else 'Keyword in H1 and opening, no H2 stuffing'
 
 
 ANTI_PATTERNS = [
@@ -231,14 +241,22 @@ def check_anti_patterns(body: str) -> tuple[bool, str]:
     return ok, '; '.join(found) if found else 'No anti-patterns found'
 
 
-def check_experience_injection(fm: dict, body: str) -> tuple[bool, str]:
-    cases = fm.get('cases', [])
+def check_case_links(fm: dict, body: str, filepath: str) -> tuple[bool, str]:
+    """Elke case in de frontmatter moet in de tekst gelinkt zijn naar /cases/<slug>.
+    Een case noemen in de frontmatter zonder hem in de tekst te gebruiken is
+    herkomst claimen die de lezer niet kan controleren. Vervangt de oude
+    'experience injection', die slaagde op elk getal met een eenheid en op de
+    zin "In <maand> <jaar> bouwden we" (een datum die niet hoefde te kloppen).
+    Nieuws mag zonder case; alle andere collecties hebben er minstens één."""
+    cases = fm.get('cases', []) or []
     if not cases:
+        if '/content/nieuws/' in Path(filepath).as_posix():
+            return True, 'News article, no case required'
         return False, 'No cases listed in frontmatter'
-    has_case_ref = bool(re.search(r'In \w+ \d{4} bouwden we', body))
-    has_number = bool(re.search(r'\d+[\.,]?\d*\s*(euro|procent|%|uur|weken|dagen|scripts|rapporten|reports|pagina)', body, re.IGNORECASE))
-    ok = has_case_ref or has_number
-    return ok, 'Case reference with number found' if ok else 'No case reference with specific number found'
+    body_links = {l.split('#')[0].rstrip('/') for l in re.findall(r'\]\((/cases/[^)\s]+)\)', body)}
+    missing = [c for c in cases if f'/cases/{c}' not in body_links]
+    ok = not missing
+    return ok, f'Cases in frontmatter but not linked in body: {missing}' if missing else f'All {len(cases)} cases linked in body'
 
 
 def check_entity_density(body: str) -> tuple[bool, str]:
@@ -289,9 +307,13 @@ def check_author(fm: dict) -> tuple[bool, str]:
     return ok, f'Author: {author}' if ok else f'Invalid author: {author}'
 
 
-def check_no_fabricated_data(fm: dict, body: str) -> tuple[bool, str]:
-    cases_dir = Path('src/content/cases')
-    cases = fm.get('cases', [])
+def check_cases_live(fm: dict, peildatum: str) -> tuple[bool, str]:
+    """Elke genoemde case bestaat als bestand en staat live op de peildatum
+    (publishDate op of voor die dag). Heette eerder 'No fabricated data', maar
+    controleerde alleen of het bestand bestond; cijfers controleert de
+    factcheck-stap, niet deze gate."""
+    cases_dir = CONTENT_DIR / 'cases'
+    cases = fm.get('cases', []) or []
     if not cases:
         return True, 'No cases to cross-reference'
     issues = []
@@ -299,8 +321,15 @@ def check_no_fabricated_data(fm: dict, body: str) -> tuple[bool, str]:
         case_file = cases_dir / f'{case_slug}.md'
         if not case_file.exists():
             issues.append(f'Case file not found: {case_slug}.md')
+            continue
+        cfm, _ = load_markdown(str(case_file))
+        pub = datum_tekst(cfm.get('publishDate'))
+        if not pub:
+            issues.append(f'Case {case_slug} has no publishDate')
+        elif pub > peildatum:
+            issues.append(f'Case {case_slug} not live until {pub}')
     ok = len(issues) == 0
-    return ok, '; '.join(issues) if issues else f'All {len(cases)} case files exist'
+    return ok, '; '.join(issues) if issues else f'All {len(cases)} cases exist and are live'
 
 
 def check_frontmatter_complete(fm: dict) -> tuple[bool, str]:
@@ -400,13 +429,13 @@ def run_checks(filepath: str, fm: dict, body: str, valid_routes: set[str]) -> li
         ('1. Word count', check_word_count(fm, body)),
         ('2. Keyword presence', check_keyword_presence(fm, body)),
         ('3. Anti-pattern scan', check_anti_patterns(body)),
-        ('4. Experience injection', check_experience_injection(fm, body)),
+        ('4. Cases linked in body', check_case_links(fm, body, filepath)),
         ('5. Entity density', check_entity_density(body)),
         ('6. Internal links', check_internal_links(fm, body)),
         ('7. FAQ section', check_faq_section(fm, body)),
         ('8. Structural uniqueness', check_structural_uniqueness(fm, body)),
         ('9. Author valid', check_author(fm)),
-        ('10. No fabricated data', check_no_fabricated_data(fm, body)),
+        ('10. Cases exist and live', check_cases_live(fm, peildatum_voor(fm))),
         ('11. Frontmatter complete', check_frontmatter_complete(fm)),
         ('12. Slug matches', check_slug_matches(fm, filepath)),
         ('13. Link targets exist', check_link_targets(fm, body, valid_routes)),

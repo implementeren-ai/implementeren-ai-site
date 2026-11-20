@@ -1,0 +1,8 @@
+---
+// Cloudflare Email Obfuscation herschrijft elk e-mailadres naar
+// "[email protected]" + een script. AI-fetchers en crawlers zonder JS zien
+// dan geen adres. Alles tussen email_off en /email_off laat Cloudflare staan.
+// Bron: developers.cloudflare.com/waf/tools/scrape-shield/email-address-obfuscation/
+const inhoud = await Astro.slots.render('default');
+---
+<Fragment set:html={`<!--email_off-->${inhoud}<!--/email_off-->`} />

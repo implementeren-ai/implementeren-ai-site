@@ -11,7 +11,6 @@ wordCountTarget: 1450
 priority: 1
 tier: 7
 cases:
-  - automation-audit
   - output-archive
 internalLinks:
   - /compliance

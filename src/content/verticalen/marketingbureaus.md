@@ -92,7 +92,7 @@ Voor een bureau met meerdere SEO-klanten wordt een kwartaalaudit per klant zo ha
 
 ## Klantrapportages zonder rapportagemiddag
 
-Rapportages zijn het meest geautomatiseerde werk in onze eigen cases. Bij een Nederlands softwarebedrijf bouwde ons team eerder [173 dashboards die zichzelf elke ochtend om 07:00 verversen](/cases/dashboard-automation), zonder viewer-licenties: medewerkers openen een bookmark en de cijfers van gisteren staan klaar. Daar combineerden we ook vier databronnen (HubSpot, Google Search Console, Power BI en LinkedIn) tot één klantprofiel per prospect, zodat sales elk gesprek voorbereid inging.
+Rapportages zijn het meest geautomatiseerde werk in onze eigen cases. Bij een Nederlands softwarebedrijf bouwde ons team eerder [173 dashboards die zichzelf elke ochtend om 07:00 verversen](/cases/dashboard-automation), zonder viewer-licenties: medewerkers openen een bookmark en de cijfers van gisteren staan klaar. In een ander project [combineerden we vier databronnen](/cases/customer-intelligence) (HubSpot, Google Search Console, Power BI en LinkedIn) tot één klantprofiel per prospect, zodat sales elk gesprek voorbereid inging.
 
 Vertaal dat naar bureauwerk: verkeer, conversies en campagnedata komen via API's binnen, Claude schrijft de duiding ("wat gebeurde er en waarom") en het rapport staat klaar in het format van jouw studio. De accountmanager leest het na en voegt toe wat alleen een mens weet: de context van de klant. De vrijdagmiddag gaat weer naar werk waar de klant voor betaalt.
 
