@@ -25,7 +25,7 @@ import { isGeschrapt, vendorSleutel, vendorSlugs } from './vendors.mjs';
 export const livegang = {
   // /claude indexeerbaar en in de sitemap. Uit: de hub wordt wel gebouwd, maar is noindex en
   // staat buiten de sitemap (anders twee pagina's op "claude zakelijk" naast de homepage).
-  claudeHub: false,
+  claudeHub: true,
 
   // De automatische link naar /claude onderaan de Claude-artikelen (het "Gerelateerd"-blok in de
   // layouts, de twee gidsen en de "Claude zakelijk"-link in /gids/claude-voor-mkb). Los van
@@ -39,7 +39,7 @@ export const livegang = {
   // Pilot (fase 1, voorstel): copilot: { aan: true, paginas: ['index', 'prijs-zakelijk', 'avg', 'chat', 'vs-chatgpt'] }
   chatgpt: { aan: false, paginas: null },
   gemini: { aan: false, paginas: null },
-  copilot: { aan: false, paginas: null },
+  copilot: { aan: true, paginas: ['index', 'prijs-zakelijk', 'avg', 'chat', 'vs-chatgpt'] },
 
   // Fase 5: de homepage gaat over AI implementeren in plaats van "Claude zakelijk". Stuurt
   // alleen check 9 van scripts/onpage-check.mjs: uit = de homepage-H1 moet "Claude zakelijk"
