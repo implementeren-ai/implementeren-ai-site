@@ -151,7 +151,10 @@ export function organisatieNode(): Node {
         addressCountry: 'NL',
       },
     }),
-    ...(e.oprichters.length > 0 && { founder: e.oprichters.map((k) => ref(zichtbarePersoonId(k))) }),
+    // Inline Person (naam + url), zodat de @id ook op pagina's zonder volledige Person-node is gedefinieerd.
+    ...(e.oprichters.length > 0 && {
+      founder: e.oprichters.map((k) => ({ '@type': 'Person', '@id': zichtbarePersoonId(k), name: auteurs[k].naam, url: persoonId(k) })),
+    }),
   };
 }
 
