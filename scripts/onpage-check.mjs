@@ -188,6 +188,10 @@ if (!livegang.homepageNeutraal) {
 } else if (home && !AI_IMPLEMENTEREN.test(h1Van('/'))) {
   fail('/', `homepageNeutraal staat aan: h1 hoort over AI implementeren te gaan (bijvoorbeeld "AI implementeren in jouw MKB"): "${h1Van('/')}"`);
 }
+// Homepage neutraal zonder open hub: dan draagt geen enkele pagina "claude zakelijk" meer.
+if (livegang.homepageNeutraal && !livegang.claudeHub) {
+  fail('/', 'homepageNeutraal staat aan maar claudeHub niet: dan draagt geen pagina "claude zakelijk" meer');
+}
 if (livegang.claudeHub) {
   if (!pages.has(CLAUDE_HUB)) {
     fail(CLAUDE_HUB, fileFor(CLAUDE_HUB)

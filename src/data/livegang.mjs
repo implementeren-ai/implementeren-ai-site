@@ -18,6 +18,8 @@
 // /<vendor> alleen als zijn 'index' aan staat en gebouwd wordt). Zie src/data/indexering.mjs.
 
 import { isLive, isStaging } from '../lib/publicatie.mjs';
+import { existsSync } from 'node:fs';
+
 import { isGeschrapt, vendorSleutel, vendorSlugs } from './vendors.mjs';
 
 export const livegang = {
@@ -50,6 +52,16 @@ for (const vendor of vendorSlugs) {
   const s = livegang[vendor];
   if (!s || typeof s.aan !== 'boolean' || !(s.paginas === null || (Array.isArray(s.paginas) && s.paginas.every((p) => SLUG.test(p))))) {
     throw new Error(`src/data/livegang.mjs: ${vendor} moet { aan: boolean, paginas: null | string[] } zijn`);
+  }
+  // Een pagina die niet bestaat of op de schraplijst staat, zou stil genegeerd worden: dat is
+  // bijna altijd een tikfout of een vergeten besluit. En zonder 'index' hangen de pagina's van
+  // een groep zonder hub in de sitemap (wezen zonder inkomende links).
+  if (Array.isArray(s.paginas)) {
+    for (const p of s.paginas) {
+      if (!existsSync(`src/content/vendors/${vendor}/${p}.md`)) throw new Error(`src/data/livegang.mjs: ${vendor}.paginas noemt '${p}', maar src/content/vendors/${vendor}/${p}.md bestaat niet`);
+      if (isGeschrapt(`${vendor}/${p}`)) throw new Error(`src/data/livegang.mjs: ${vendor}.paginas noemt '${p}', maar die staat in geschrapt (src/data/vendors.mjs)`);
+    }
+    if (s.paginas.length > 0 && !s.paginas.includes('index')) throw new Error(`src/data/livegang.mjs: ${vendor}.paginas mist 'index'; zonder hub hebben de andere pagina's geen ingang`);
   }
 }
 
