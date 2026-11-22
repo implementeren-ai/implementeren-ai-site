@@ -174,7 +174,44 @@ html.js .v2-taken > *:nth-child(4) { animation-delay: .75s; }
 .v2-teken { flex: none; width: 24px; height: 24px; border-radius: 999px; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 800; }
 .v2-kolom-oud .v2-teken { background: #E9D3CF; color: #8E3A33; }
 .v2-kolom-nieuw .v2-teken { background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); }
-.v2-verschil-citaat { max-width: 720px; margin: 48px auto 0; text-align: center; font-family: var(--font-newsreader); font-style: italic; font-size: clamp(19px, 1vw + 15px, 23px); line-height: 1.55; color: var(--color-v2-inkt-2); }
+.v2-verschil-kop .v2-kop-accent { position: relative; white-space: nowrap; font-family: var(--font-newsreader); font-style: italic; font-weight: 500; letter-spacing: -0.02em; }
+.v2-kop-accent-lijn { position: absolute; left: -2%; right: -2%; bottom: -.08em; width: 104%; height: .22em; color: var(--color-v2-olijf-fel); }
+.v2-kolom-oud .v2-teken, .v2-kolom-nieuw .v2-teken { transition: transform .3s var(--ease-out-soft); }
+.v2-kolom li { transition: transform .3s var(--ease-out-soft), background-color .3s var(--ease-out-soft); }
+@media (hover: hover) {
+  .v2-kolom li:hover { transform: translateX(4px); }
+  .v2-kolom-oud li:hover { background: #EFEAE0; }
+  .v2-kolom-oud li:hover .v2-teken { transform: rotate(90deg); }
+  .v2-kolom-nieuw li:hover { background: rgba(255,255,255,.17); }
+  .v2-kolom-nieuw li:hover .v2-teken { transform: scale(1.18); }
+}
+/* Getrapt binnenkomen: eerst de oude punten, dan de groene (totaal ~0,95 s) */
+@keyframes v2-in-oud { from { opacity: 0; transform: translateX(-10px); } to { opacity: 1; transform: none; } }
+@keyframes v2-in-nieuw { from { opacity: 0; transform: translateX(14px); } to { opacity: 1; transform: none; } }
+html.js .v2-kolom-oud.revealed li { animation: v2-in-oud .4s var(--ease-out-soft) backwards; }
+html.js .v2-kolom-nieuw.revealed li { animation: v2-in-nieuw .45s var(--ease-out-soft) backwards; }
+html.js .v2-kolom-oud.revealed li:nth-child(2) { animation-delay: .05s; }
+html.js .v2-kolom-oud.revealed li:nth-child(3) { animation-delay: .1s; }
+html.js .v2-kolom-oud.revealed li:nth-child(4) { animation-delay: .15s; }
+html.js .v2-kolom-oud.revealed li:nth-child(5) { animation-delay: .2s; }
+html.js .v2-kolom-nieuw.revealed li:nth-child(1) { animation-delay: .3s; }
+html.js .v2-kolom-nieuw.revealed li:nth-child(2) { animation-delay: .36s; }
+html.js .v2-kolom-nieuw.revealed li:nth-child(3) { animation-delay: .42s; }
+html.js .v2-kolom-nieuw.revealed li:nth-child(4) { animation-delay: .48s; }
+html.js .v2-kolom-nieuw.revealed li:nth-child(5) { animation-delay: .5s; }
+@media (prefers-reduced-motion: reduce) { html.js .v2-kolom.revealed li { animation: none; } }
+.v2 .v2-kolom-knop { margin-top: 24px; background: var(--color-v2-olijf-fel); color: var(--color-v2-inkt); }
+.v2-kolom-knop .v2-pijl { display: inline-block; transition: transform .25s var(--ease-out-soft); }
+@media (hover: hover) {
+  .v2 .v2-kolom-knop:hover { transform: translateY(-2px); background: #C3CF52; color: var(--color-v2-inkt); box-shadow: 0 10px 24px -8px rgba(180,193,62,.6); }
+  .v2-kolom-knop:hover .v2-pijl { transform: translateX(4px); }
+}
+.v2-verschil-citaat { max-width: 720px; margin: 64px auto 0; text-align: center; }
+.v2-verschil-citaat blockquote { margin: 0; }
+.v2-verschil-citaat blockquote p { margin: 0; font-family: var(--font-newsreader); font-style: italic; font-size: clamp(21px, 1vw + 17px, 27px); line-height: 1.55; color: var(--color-v2-inkt); }
+.v2-verschil-citaat figcaption { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 20px; font-size: 14px; line-height: 1.3; text-align: left; color: var(--color-v2-inkt-2); }
+.v2-verschil-citaat figcaption img { width: 44px; height: 44px; border-radius: 999px; object-fit: cover; }
+.v2-verschil-citaat figcaption b { display: block; color: var(--color-v2-inkt); font-weight: 600; }
 @media (min-width: 760px) { .v2-kolommen { grid-template-columns: 1fr 1fr; } }
 
 /* ---------- 8. Eerst zelf lezen (bento) ---------- */

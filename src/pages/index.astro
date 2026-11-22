@@ -312,7 +312,7 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
     <!-- 7. Waarom niet gewoon een AI-consultant? -->
     <section class="v2-wrap v2-verschil">
       <div class="v2-verschil-kop reveal-target">
-        <h2>Waarom niet gewoon een AI-consultant?</h2>
+        <h2>Waarom niet gewoon een <span class="v2-kop-accent">AI-consultant?<svg class="v2-kop-accent-lijn" viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M2 8 C 50 2, 110 2, 198 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" /></svg></span></h2>
         <p class="v2-zacht">Er zijn genoeg consultants die iets over AI roepen. Dit is wat hier anders is. Wat een <a href="/ai-implementatie">AI-implementatie voor het MKB</a> inhoudt en kost, lees je op een aparte pagina.</p>
       </div>
       <div class="v2-kolommen">
@@ -323,9 +323,13 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
         <div class="v2-kolom v2-kolom-nieuw reveal-target">
           <h3>Hoe wij het doen</h3>
           <ul>{vergelijking.map(([, nieuw]) => <li><span class="v2-teken" aria-hidden="true">&#10003;</span>{nieuw}</li>)}</ul>
+          <a href="/ai-enablement-scan" class="v2-knop v2-kolom-knop">Doe de gratis AI-check <span class="v2-pijl" aria-hidden="true">&rarr;</span></a>
         </div>
       </div>
-      <p class="v2-verschil-citaat reveal-target">"Dit werkt omdat het uit de praktijk komt, niet uit een whitepaper. Ons team draait zelf dagelijks op Claude, en dezelfde werkwijze zetten we bij jou neer."</p>
+      <figure class="v2-verschil-citaat reveal-target">
+        <blockquote><p>"Dit werkt omdat het uit de praktijk komt, niet uit een whitepaper. Ons team draait zelf dagelijks op Claude, en dezelfde werkwijze zetten we bij jou neer."</p></blockquote>
+        <figcaption><img src={auteurs.camiel.foto} alt="" width="44" height="44" loading="lazy" decoding="async" /><span><b>{auteurs.camiel.naam}</b>{auteurs.camiel.functie}</span></figcaption>
+      </figure>
     </section>
 
     <!-- 8. Eerst zelf lezen: kennispijlers als bento (Spec C, C-09) -->
