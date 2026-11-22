@@ -201,7 +201,7 @@ De verwerkersovereenkomst is het juridische fundament. De architectuur bepaalt h
 ## Checklist: zo zet je de Anthropic DPA goed in
 
 1. **Inventariseer alle Claude-accounts**, ook persoonlijke. Free, Pro en Max vallen buiten de DPA.
-2. **Bewaar een kopie van de geldende DPA-versie** in je AVG-documentatie en houd wijzigingen bij.
+2. **Bewaar een kopie van de geldende DPA-versie** in je AVG-documentatie en houd wijzigingen bij. Het prospectus van [de Anthropic IPO](/nieuws/anthropic-beursgang-zakelijk#verandert-je-contract-met-anthropic-door-de-beursgang) noemt geen wijziging van de DPA.
 3. **Controleer de sub-verwerkerslijst** van Anthropic en beoordeel of locatie en type verwerking acceptabel zijn.
 4. **Leg de keten vast in je verwerkingsregister** (artikel 30 AVG): jij, Anthropic, en de sub-verwerkers. Ben je dienstverlener, voeg dan de schakel naar je eigen klanten toe.
 5. **Bepaal je datagrenzen**: welke informatie mag in prompts, wat wordt gepseudonimiseerd, wat blijft eruit. Beoordeel ook of een DPIA nodig is.
