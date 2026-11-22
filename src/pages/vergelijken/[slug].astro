@@ -1,19 +1,39 @@
 ---
 import { render } from 'astro:content';
 import VergelijkingLayout from '../../layouts/VergelijkingLayout.astro';
-import { getPublished } from '../../lib/content';
+import VendorLayout from '../../layouts/VendorLayout.astro';
+import { getPublished, getVendorPaginas } from '../../lib/content';
+import { vendorPad } from '../../data/vendors.mjs';
 
 export async function getStaticPaths() {
   const pages = await getPublished('vergelijkingen');
-  return pages.map(page => ({
-    params: { slug: page.id },
-    props: { entry: page },
-  }));
+  // Vendor-tegen-vendor-vergelijkingen (vendorVergelijkingen in src/data/vendors.mjs): het
+  // bronbestand staat in src/content/vendors/, de URL onder /vergelijken. Alleen als de pagina
+  // gebouwd wordt (live, niet geschrapt, vendorschakelaar aan: src/data/livegang.mjs).
+  const vendorPages = (await getVendorPaginas()).filter((e) => vendorPad(e.id).startsWith('/vergelijken/'));
+  const vendorSlugs = vendorPages.map((e) => vendorPad(e.id).slice('/vergelijken/'.length));
+  for (const slug of vendorSlugs) {
+    if (pages.some((p) => p.id === slug)) throw new Error(`/vergelijken/${slug} bestaat al in src/content/vergelijkingen; kies een ander pad in vendorVergelijkingen`);
+  }
+  return [
+    ...pages.map(page => ({
+      params: { slug: page.id },
+      props: { entry: page, vendor: false },
+    })),
+    ...vendorPages.map((page, i) => ({
+      params: { slug: vendorSlugs[i] },
+      props: { entry: page, vendor: true },
+    })),
+  ];
 }
 
-const { entry } = Astro.props;
+const { entry, vendor } = Astro.props;
 const { Content, headings } = await render(entry);
+// Zelfde props voor beide layouts; de vendor-vergelijking draagt de VendorLayout (kruimel,
+// schema-about en CTA van de vendorpagina's).
+const Layout = vendor ? VendorLayout : VergelijkingLayout;
+const pagePath = vendor ? vendorPad(entry.id) : `/vergelijken/${entry.id}`;
 ---
-<VergelijkingLayout entry={entry} pagePath={`/vergelijken/${entry.id}`} koppen={headings}>
+<Layout entry={entry} pagePath={pagePath} koppen={headings}>
   <Content />
-</VergelijkingLayout>
+</Layout>

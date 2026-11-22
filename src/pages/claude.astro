@@ -11,8 +11,8 @@ import { faqNode, itemListNode, lijstId } from '../lib/schema';
 import { isIndexeerbaarPad } from '../data/indexering.mjs';
 
 // De Claude-hub (docs/vendor-go-live.md, voorwaarde 2). Deze pagina neemt op de go-live-dag
-// "claude zakelijk" over van de homepage. Tot vendorsLive true is (src/data/indexering.mjs)
-// blijft hij noindex en buiten de sitemap, en tonen de Claude-pagina's hun link hierheen nog niet.
+// "claude zakelijk" over van de homepage. Tot livegang.claudeHub aan staat (src/data/livegang.mjs)
+// blijft hij noindex en buiten de sitemap. De Claude-pagina's linken hierheen zodra ook livegang.claudeHubLinks aan staat.
 const pad = '/claude';
 const titleTag = 'Claude zakelijk: Pro, Team en Enterprise uitgelegd';
 const h1 = 'Claude zakelijk: wat het is, welk plan past en waar je begint';

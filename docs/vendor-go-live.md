@@ -1,5 +1,45 @@
 # Vendor-go-live: draaiboek
 
+## Gefaseerd, besluit nog bij Max
+
+Dit is een voorstel (fase 0, november 2026), nog geen besluit. Het draaiboek hieronder (alles op
+één dag) blijft staan tot Max kiest; pas als hij voor de fasen kiest, geldt het als vervangen.
+
+De code ondersteunt beide routes. De ene schakelaar `vendorsLive` is vervangen door losse
+schakelaars in `src/data/livegang.mjs`, die allemaal standaard uit staan:
+
+| Schakelaar | Wat hij doet |
+|---|---|
+| `claudeHub` | /claude indexeerbaar en in de sitemap |
+| `claudeHubLinks` | de automatische link naar /claude op Claude-artikelen en gidsen (alleen samen met `claudeHub`) |
+| `chatgpt`, `gemini`, `copilot`: `{ aan, paginas }` | een vendor live; `paginas` is de lijst slugs (`'index'` = de hub, `null` = alles) |
+| `homepageNeutraal` | alleen check 9 van `scripts/onpage-check.mjs`: welke H1 "Claude zakelijk" moet dragen |
+
+Een vendorpagina wordt gebouwd als hij niet op de schraplijst staat (`geschrapt` in
+`src/data/vendors.mjs`), live is (status en datum) en zijn schakelaar aan staat. Voor een preview
+van alle 27 pagina's: `STAGING=1 STAGING_VENDORS=alle npm run build` (alleen met `STAGING=1`).
+De vergelijkingen copilot/vs-chatgpt en gemini/vs-chatgpt staan op
+`/vergelijken/copilot-vs-chatgpt` en `/vergelijken/gemini-vs-chatgpt` en hangen aan hun vendor.
+
+Fasen (uit het onderzoek, `implementeren-ai-seo-all-ai/research/D-migration.md` sectie 4b):
+
+- **Fase 0, voorbereiding:** schraplijst (38 naar 27 pagina's), vergelijkingen naar /vergelijken,
+  schema-`about` per vendorpagina, schakelaars. Niets gaat live behalve het `about` van /over
+  (de organisatie in plaats van Claude).
+- **Fase 1, pilot met 6 URL's:** `claudeHub` aan, `copilot: { aan: true, paginas: ['index',
+  'prijs-zakelijk', 'avg', 'chat', 'vs-chatgpt'] }`, en die vijf bestanden op `published`. De
+  homepage krijgt dan vanzelf één linkblok naar /claude en /copilot, en /over vervangt "één tool"
+  door een zin die Copilot noemt. Title, H1 en hero van de homepage blijven gelijk.
+- **Fase 2:** ChatGPT en Gemini, hub plus 4 pagina's elk, in groepen van 5 (`paginas`-lijsten).
+- **Fase 3:** de rest, maximaal 5 per week.
+- **Fase 4:** sitebrede teksten (footer, entiteit, menu).
+- **Fase 5:** homepage neutraal, met `homepageNeutraal` aan in dezelfde PR.
+
+Tussen de fasen zitten meetpunten (G1 tot G5 in het onderzoek). In het draaiboek hieronder
+betekent "`vendorsLive = true`" in de gefaseerde opzet: alle schakelaars aan.
+
+## Alles op één dag (besluit Max, 6 november 2026)
+
 Besluit Max, 6 november 2026. Alle vendorpagina's (ChatGPT, Gemini, Copilot) worden eerst
 klaargezet en gaan daarna op één dag tegelijk live, samen met de neutrale homepage.
 
@@ -7,7 +47,7 @@ klaargezet en gaan daarna op één dag tegelijk live, samen met de neutrale home
 
 - Vendorpagina's hebben `status: review`. Ze worden niet gebouwd, staan niet in de sitemap
   en niets linkt ernaar. Een PR mergen zet dus niets live.
-- `vendorsLive = false` in `src/data/indexering.mjs`. Komt er toch een pagina op
+- Alle schakelaars in `src/data/livegang.mjs` staan uit (vroeger `vendorsLive = false`). Komt er toch een pagina op
   `published`, dan blijft hij noindex en buiten de sitemap.
 - Nieuwe vendor-PR's volgen hetzelfde: `status: review`, nooit `published`.
 - Let op: de CI-gate (`quality-gate.py --all`) slaat `review`-bestanden over. Draai de gate per
@@ -37,7 +77,7 @@ klaargezet en gaan daarna op één dag tegelijk live, samen met de neutrale home
 ## De go-live-PR (één PR, één deploy)
 
 1. Elke vendorpagina: `status: published`, `publishDate` = go-live-datum.
-2. `vendorsLive = true` in `src/data/indexering.mjs`.
+2. Alle schakelaars in `src/data/livegang.mjs` aan (vroeger `vendorsLive = true`), plus `homepageNeutraal`.
 3. Homepage neutraal: title, description, H1 en hero over AI implementeren, met een Claude-blok
    dat naar de Claude-hub linkt. Haal ook de Claude-only-delen weg in `src/site.ts` (tagline,
    `onafhankelijkheid`, `entiteit.beschrijving`), het hoofdmenu en de footer, en de default

@@ -4,10 +4,10 @@
 // schemaNodes zoals PrijsLayout. Bij claudeSibling komt er een "Vergelijk met Claude"-
 // linkblok onder het kort antwoord.
 import BasisLayout from './BasisLayout.astro';
-import { seoVoorEntry, type Node } from '../lib/schema';
+import { seoVoorEntry, vendorOnderwerpId, vendorOnderwerpNode, type Node } from '../lib/schema';
 import { getEntry } from 'astro:content';
-import { isPublished } from '../lib/content';
-import { vendorNamen, soortLabels } from '../data/vendors.mjs';
+import { isVendorGebouwd } from '../lib/content';
+import { vendorNamen, soortLabels, vendorSleutel, vendorVergelijkingen } from '../data/vendors.mjs';
 import KortAntwoord from '../components/KortAntwoord.astro';
 import ArtikelBeeld from '../components/ArtikelBeeld.astro';
 import ArtikelMeta from '../components/ArtikelMeta.astro';
@@ -65,15 +65,27 @@ const hubPad = `/${data.vendor}`;
 // (index-entry live, zie src/pages/[vendor]/index.astro); anders zou de broodkruimel
 // naar een 404 wijzen.
 // De landing heeft id '<vendor>' (de glob-loader strips het /index-slot).
-const indexEntry = hub ? undefined : await getEntry('vendors', data.vendor);
-const hubLive = hub || (indexEntry !== undefined && isPublished(indexEntry));
+// Een verhuisde vendor-tegen-vendor-vergelijking (src/data/vendors.mjs) staat onder /vergelijken:
+// kruimel naar /vergelijken, sectie Vergelijkingen, en beide producten als onderwerp.
+const vergelijking = vendorVergelijkingen[vendorSleutel(entry.id)];
+const indexEntry = hub || vergelijking ? undefined : await getEntry('vendors', data.vendor);
+const hubLive = hub || (indexEntry !== undefined && isVendorGebouwd(indexEntry));
 const breadcrumbs = hub
   ? [{ name: 'Home', url: '/' }, { name: vendorNaam, url: hubPad }]
-  : hubLive
-    ? [{ name: 'Home', url: '/' }, { name: vendorNaam, url: hubPad }, { name: data.title, url: pagePath }]
-    : [{ name: 'Home', url: '/' }, { name: data.title, url: pagePath }];
-const seo = seoVoorEntry({ pad: pagePath, sectie: vendorNaam, breadcrumbs, data });
-const schema = { ...seo.schema, nodes: [...(seo.schema.nodes ?? []), ...schemaNodes] };
+  : vergelijking
+    ? [{ name: 'Home', url: '/' }, { name: 'Vergelijkingen', url: '/vergelijken' }, { name: data.title, url: pagePath }]
+    : hubLive
+      ? [{ name: 'Home', url: '/' }, { name: vendorNaam, url: hubPad }, { name: data.title, url: pagePath }]
+      : [{ name: 'Home', url: '/' }, { name: data.title, url: pagePath }];
+// Schema (fase 0): een vendorpagina gaat over zijn eigen product, niet over Claude, en een
+// eventuele Service is geen Claude-implementatie.
+const producten = vergelijking ? [data.vendor, vergelijking.tegen] : [data.vendor];
+const seo = seoVoorEntry({ pad: pagePath, sectie: vergelijking ? 'Vergelijkingen' : vendorNaam, breadcrumbs, serviceType: 'AI-implementatie', data });
+const schema = {
+  ...seo.schema,
+  over: producten.map(vendorOnderwerpId),
+  nodes: [...producten.map(vendorOnderwerpNode), ...(seo.schema.nodes ?? []), ...schemaNodes],
+};
 ---
 <BasisLayout titel={data.titleTag} beschrijving={data.metaDescription} pad={pagePath} schema={schema} artikel={seo.artikel}>
   <article class="v2-artikel">

@@ -1,15 +1,15 @@
 ---
 import { render } from 'astro:content';
 import VendorLayout from '../../layouts/VendorLayout.astro';
-import { getPublished } from '../../lib/content';
+import { getVendorPaginas } from '../../lib/content';
 import { itemListNode } from '../../lib/schema';
-import { soortLabels, vendorNamen } from '../../data/vendors.mjs';
+import { soortLabels, vendorNamen, vendorPad } from '../../data/vendors.mjs';
 
 export async function getStaticPaths() {
-  // De vendor-landing bestaat alleen als de index-entry live is: geen live
-  // src/content/vendors/<vendor>/index.md, geen /<vendor> (geen lege hub).
+  // De vendor-landing bestaat alleen als de index-entry gebouwd wordt (live, niet geschrapt en
+  // de schakelaar aan, src/data/livegang.mjs): anders geen /<vendor> (geen lege hub).
   // De glob-loader strips het /index-slot, dus de landing heeft id '<vendor>'.
-  const landings = (await getPublished('vendors')).filter((e) => !e.id.includes('/'));
+  const landings = (await getVendorPaginas()).filter((e) => !e.id.includes('/'));
   return landings.map((page) => {
     if (page.id !== page.data.vendor) {
       throw new Error(`vendors/${page.id}: het bestand hoort in src/content/vendors/${page.data.vendor}/index.md (vendor-veld en mapnaam moeten gelijk zijn)`);
@@ -26,13 +26,14 @@ const vendor = entry.data.vendor;
 const pagePath = `/${vendor}`;
 const { Content, headings } = await render(entry);
 
-// De andere live pagina's van deze vendor, als kaarten onder het artikel plus
-// dezelfde lijst als ItemList in het schema (zelfde patroon als /prijs).
-const andere = (await getPublished('vendors'))
+// De andere gebouwde pagina's van deze vendor, als kaarten onder het artikel plus
+// dezelfde lijst als ItemList in het schema (zelfde patroon als /prijs). vendorPad: een
+// verhuisde vergelijking linkt naar /vergelijken/<vendor>-vs-chatgpt.
+const andere = (await getVendorPaginas())
   .filter((e) => e.data.vendor === vendor && e.id !== entry.id)
   .sort((a, b) => b.data.priority - a.data.priority || a.data.title.localeCompare(b.data.title));
 const schemaNodes = andere.length > 0
-  ? [itemListNode(pagePath, andere.map((a) => ({ url: `/${a.id}`, naam: a.data.title })))]
+  ? [itemListNode(pagePath, andere.map((a) => ({ url: vendorPad(a.id), naam: a.data.title })))]
   : [];
 ---
 <VendorLayout entry={entry} pagePath={pagePath} hub koppen={headings} schemaNodes={schemaNodes}>
@@ -42,7 +43,7 @@ const schemaNodes = andere.length > 0
       <h2 class="text-[length:var(--text-h2)]">Meer over {vendorNamen[vendor]}</h2>
       <div class="mt-6 grid gap-6 md:grid-cols-2">
         {andere.map((a) => (
-          <a href={`/${a.id}`} class="no-underline block rounded-lg border border-lijn bg-papier p-6 card-shadow">
+          <a href={vendorPad(a.id)} class="no-underline block rounded-lg border border-lijn bg-papier p-6 card-shadow">
             <span class="v2-casekaart-meta">{soortLabels[a.data.soort]}</span>
             <h3 class="font-serif text-xl font-bold text-inkt">{a.data.title}</h3>
             <p class="mt-2 text-sm text-inkt-zacht">{a.data.metaDescription}</p>

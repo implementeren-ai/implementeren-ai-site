@@ -36,6 +36,8 @@ if (publishedOn !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(publishedOn)) {
 // site zoals die op die dag is, zodat een hub die die dag opengaat ook gepingd wordt.
 if (publishedOn !== undefined && !process.env.BOUWDATUM) process.env.BOUWDATUM = publishedOn;
 const { collectieRoutes, isIndexeerbaarPad } = await import('../src/data/indexering.mjs');
+const { isGeschrapt, vendorPad } = await import('../src/data/vendors.mjs');
+const { vendorPaginaAan } = await import('../src/data/livegang.mjs');
 
 function vindSleutel() {
   const kandidaten = readdirSync('public').filter((f) => /^[0-9a-f]{32}\.txt$/.test(f) && f !== 'robots.txt');
@@ -68,12 +70,19 @@ function hubVan(prefix) {
 export function routesVoorBestand(bestand) {
   const routes = [];
   // Vendors: genest, src/content/vendors/<vendor>/<slug>.md -> /<vendor>/<slug> plus de hub
-  // /<vendor>; index.md is zelf de hub. isIndexeerbaarPad filtert een niet-live hub er later uit.
+  // /<vendor>; index.md is zelf de hub. Een verhuisde vergelijking staat op
+  // /vergelijken/<vendor>-vs-chatgpt met /vergelijken als hub (vendorPad). Geschrapte pagina's en
+  // pagina's waarvan de schakelaar uit staat (src/data/livegang.mjs) leveren geen route op:
+  // /vergelijken is altijd indexeerbaar, dus isIndexeerbaarPad houdt die niet tegen.
+  // isIndexeerbaarPad filtert een niet-live hub er later uit.
   const vmd = bestand.match(/^src\/content\/vendors\/([^/]+)\/([^/]+)\.md$/);
   if (vmd) {
-    const hub = `/${vmd[1]}`;
-    if (vmd[2] === 'index') routes.push(hub);
-    else routes.push(`${hub}/${vmd[2]}`, hub);
+    const id = `${vmd[1]}/${vmd[2]}`;
+    if (isGeschrapt(id) || !vendorPaginaAan(id)) return routes;
+    const pad = vendorPad(id);
+    const hub = pad.startsWith('/vergelijken/') ? '/vergelijken' : `/${vmd[1]}`;
+    if (pad === hub) routes.push(hub);
+    else routes.push(pad, hub);
     return routes;
   }
   const md = bestand.match(/^src\/content\/([^/]+)\/([^/]+)\.md$/);

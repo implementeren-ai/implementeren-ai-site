@@ -12,6 +12,7 @@ import LogoMarquee from '../components/LogoMarquee.astro';
 import ZorgBeeld from '../components/home/ZorgBeeld.astro';
 import MerkBalken from '../components/MerkBalken.astro';
 import { auteurs, site } from '../site';
+import { claudeHub, gebouwdeVendorPaden, isIndexeerbaarPad, livegang } from '../data/indexering.mjs';
 import '../styles/home-v2.css';
 
 // Hero-tool (src/scripts/taaktool.ts): trefwoorden per bestaande pagina. Titels komen uit de
@@ -88,6 +89,13 @@ const taken = [
   ['Contract nalopen', 'Afwijkingen gemarkeerd'],
 ];
 const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3', 'Promptbibliotheek'], ['Week 4', 'Verdieping']];
+
+// Fase 1 (src/data/livegang.mjs): één klein linkblok onder de vouw naar de Claude-hub en
+// /copilot. Alleen als livegang.claudeHub en livegang.copilot.aan allebei aan staan, en dan nog
+// alleen als /claude indexeerbaar is en /copilot echt gebouwd wordt (anders een dode link).
+// Title, H1, beschrijving, hero en de andere secties blijven zoals ze zijn.
+const toonAndereTools =
+  livegang.claudeHub && livegang.copilot.aan && isIndexeerbaarPad(claudeHub) && gebouwdeVendorPaden.copilot.includes('/copilot');
 ---
 <BasisLayout
   titel="Claude zakelijk inzetten voor het MKB | Implementeren.ai"
@@ -383,7 +391,16 @@ const weken = [['Week 1', 'Kickoff-workshop'], ['Week 2', 'Champions'], ['Week 3
       </div>
     </section>
 
-    <!-- 9. Slot-band -->
+    {toonAndereTools && (
+      <section class="v2-wrap v2-lezen" data-andere-tools>
+        <h2>Werk je met een andere AI-tool?</h2>
+        <p class="v2-sectie-intro">We schrijven ook over Microsoft Copilot. Zoek je alles over Claude op één plek, dan begin je bij de Claude-pagina.</p>
+        <ul class="v2-lezen-lijst">
+          <li><a href={claudeHub}>Alles over Claude</a></li>
+          <li><a href="/copilot">Microsoft Copilot zakelijk</a></li>
+        </ul>
+      </section>
+    )}<!-- 9. Slot-band -->
     <section class="v2-slot">
       <div class="v2-slot-band merk-hover">
         <MerkBalken class="v2-slot-merk" />

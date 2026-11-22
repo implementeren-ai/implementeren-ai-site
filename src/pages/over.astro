@@ -6,17 +6,31 @@ import { Picture } from 'astro:assets';
 import studioBreed from '../assets/team/studio-breed.jpg';
 import { site, auteurs } from '../site';
 import { ID } from '../lib/schema';
+import { gebouwdeVendors } from '../data/indexering.mjs';
+import { vendorNamen } from '../data/vendors.mjs';
 
 // Camiel is het zichtbare gezicht/aanspreekpunt; het bredere team blijft
 // bewust naamloos. Anker #camiel matcht auteurs.camiel.overAnker (Person-schema).
 const camiel = auteurs.camiel;
 const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Over ons', url: '/over' }];
+
+// Zodra er een vendorpagina live staat (src/data/livegang.mjs), klopt "één tool" niet meer.
+// Dan noemt de lead de tools waarvoor we pagina's hebben, in de volgorde Copilot, ChatGPT, Gemini.
+// Geen vendor live: de zin blijft precies zoals hij was.
+const andereTools = ['copilot', 'chatgpt', 'gemini'].filter((v) => gebouwdeVendors.includes(v)).map((v) => vendorNamen[v]);
+const andereToolsTekst = andereTools.length > 1 ? `${andereTools.slice(0, -1).join(', ')} of ${andereTools.at(-1)}` : andereTools[0];
+const leadBegin = 'We zagen Nederlandse MKB-bedrijven worstelen met generiek AI-advies dat drie tools tegelijk aanprees en nergens concreet werd.';
+// De regeleinden horen bij de tekst (compressHTML laat ze in statische tekst staan): zo blijft de HTML met alles uit
+// byte-gelijk aan de versie van voor deze schakelaar.
+const leadEenTool = andereTools.length === 0
+  ? `\n${leadBegin} Wij werken met één tool, Claude, en leggen die uit in het Nederlands.\n`
+  : `\n${leadBegin} Claude is ons hoofdgereedschap en dat leggen we uit in het Nederlands. Werkt je team al met ${andereToolsTekst}, dan helpen we je ook daarmee op weg.\n`;
 ---
 <BasisLayout
   titel="Over Implementeren.ai: wie we zijn en hoe we werken"
   beschrijving="Claude-implementatie voor het Nederlandse MKB. Gebouwd vanuit dagelijks eigen gebruik, niet vanuit theorie."
   pad="/over"
-  schema={{ paginaType: 'AboutPage', hoofdonderwerp: ID.organisatie, breadcrumbs, personen: ['camiel'] }}
+  schema={{ paginaType: 'AboutPage', hoofdonderwerp: ID.organisatie, over: [ID.organisatie], breadcrumbs, personen: ['camiel'] }}
 >
   <header class="v2-artikel-kop">
     <div class="v2-artikel-kop-binnen">
@@ -30,9 +44,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Over ons', url: '/over
         <p>
           Ons team draait zelf dagelijks op Claude: klantrapporten, offertes, content, code, analyses, support. Geen experiment, gewoon hoe we werken.
         </p>
-        <p>
-          We zagen Nederlandse MKB-bedrijven worstelen met generiek AI-advies dat drie tools tegelijk aanprees en nergens concreet werd. Wij werken met één tool, Claude, en leggen die uit in het Nederlands.
-        </p>
+        <p>{leadEenTool}</p>
       </div>
     </div>
   </header>
