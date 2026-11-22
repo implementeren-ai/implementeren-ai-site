@@ -142,4 +142,4 @@ Twee van onze eigen trajecten laten zien waarom de taak het model bepaalt. Bij e
 
 Eigen benchmarkcijfers per 5.5-model publiceren we niet, die hebben we niet gemeten. Wil je weten welke verdeling bij jouw werk past, dan maken we die afweging samen in een [Claude-implementatie](/claude-implementatie).
 
-Dit artikel hoort bij ons [nieuwsoverzicht](/nieuws); bij een nieuwe modelgeneratie van Anthropic werken we de tabellen bij.
+Dit artikel hoort bij ons [nieuwsoverzicht](/nieuws); bij een nieuwe modelgeneratie van Anthropic werken we de tabellen bij. Hoe lang je vooraf bericht krijgt als een model stopt, staat in [ons artikel over de Anthropic IPO](/nieuws/anthropic-beursgang-zakelijk#wat-gebeurt-er-als-een-claude-model-verdwijnt).

@@ -159,7 +159,7 @@ Team heeft een minimum van 2 seats. De bedragen hieronder gelden per maand, bij 
 | 10 | $200 | $250 | ± €221 | Team |
 | 25 | $500 | $625 | ± €553 | Team, met premium seats voor de zwaarste gebruikers |
 
-Bij jaarbetaling zakt de standaard seat naar $20 per gebruiker en Pro naar $17. Het verschil is dan $3 per persoon per maand. Daarvoor krijg je beheer, gedeelde kennis, SSO en de zakelijke voorwaarden. Vanaf een handvol gebruikers is de discussie daarmee eigenlijk klaar.
+Bij jaarbetaling zakt de standaard seat naar $20 per gebruiker en Pro naar $17. Het verschil is dan $3 per persoon per maand. Daarvoor krijg je beheer, gedeelde kennis, SSO en de zakelijke voorwaarden. Vanaf een handvol gebruikers is de discussie daarmee eigenlijk klaar. Hoe een prijswijziging bij Anthropic werkt, en wat het prospectus van de beursgang over prijzen zegt, lees je in [Wordt Claude duurder na de Anthropic IPO?](/nieuws/anthropic-beursgang-zakelijk#wordt-claude-duurder-na-de-anthropic-ipo)
 
 De interessantere knop is de seat-mix. De meeste medewerkers kunnen prima uit de voeten met een standaard seat. Wie er de hele dag in werkt, bijvoorbeeld met Claude Code, zet je op een premium seat met vijf keer de gebruiksruimte. Zo betaal je alleen voor zwaar gebruik waar het echt zit. De limieten gelden per persoon: als één collega zijn limiet raakt, werken de anderen gewoon door.
 
