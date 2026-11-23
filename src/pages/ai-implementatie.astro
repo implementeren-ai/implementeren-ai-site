@@ -9,6 +9,7 @@ import DienstBeeld from '../components/DienstBeeld.astro';
 import { dienstNode, dienstId, faqNode } from '../lib/schema';
 import { auteurs, site } from '../site';
 import kostenSchema from '../assets/diagrams/ai-implementatie-kosten.svg?raw';
+import { livegang } from '../data/livegang.mjs';
 
 // Prijzen en duur komen rechtstreeks uit de diensten-content, net als op /claude-implementatie.
 const scan = await getEntry('diensten', 'readiness-scan');
@@ -202,7 +203,12 @@ const bronnen = [
           Werkt je bedrijf al met Microsoft 365 Copilot of een andere tool? Lees dan eerst
           <a href="/vergelijken/claude-vs-copilot">Claude of Copilot</a> of
           <a href="/vergelijken/welke-ai-voor-mkb">welke AI past bij het MKB</a>.
-        </p>
+        </p>{livegang.claudeHub && (
+          <p>
+            Wil je eerst weten wat Claude voor een bedrijf kan, wat het kost en hoe het met je data
+            omgaat? Dat staat op één pagina: <a href="/claude">Claude zakelijk</a>.
+          </p>
+        )}
       </div>
     </section>
 

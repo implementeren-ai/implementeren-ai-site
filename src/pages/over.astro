@@ -8,6 +8,7 @@ import { site, auteurs } from '../site';
 import { ID } from '../lib/schema';
 import { gebouwdeVendors } from '../data/indexering.mjs';
 import { vendorNamen } from '../data/vendors.mjs';
+import { livegang } from '../data/livegang.mjs';
 
 // Camiel is het zichtbare gezicht/aanspreekpunt; het bredere team blijft
 // bewust naamloos. Anker #camiel matcht auteurs.camiel.overAnker (Person-schema).
@@ -69,7 +70,11 @@ const leadEenTool = andereTools.length === 0
       </p>
       <p>
         Hoe een traject stap voor stap loopt en wat het kost, staat op de pagina over <a href="/claude-implementatie">Claude-implementatie</a>. Wat een <a href="/ai-implementatie">AI-implementatie</a> in het algemeen inhoudt, lees je op een aparte pagina. Wat je van ons als <a href="/claude-consultant">Claude-consultant</a> kunt verwachten, lees je daar apart. Ben je nog aan het oriënteren? Lees dan eerst de gids <a href="/gids/claude-voor-mkb">Zakelijk Claude-account en abonnement voor het mkb</a>.
-      </p>
+      </p>{livegang.claudeHub && (
+        <p>
+          Alles over Claude voor bedrijven, van abonnementen tot AVG, staat bij elkaar op <a href="/claude">Claude zakelijk</a>.
+        </p>
+      )}
     </div>
     <div class="v2-over-donker">
       <h2>Contact</h2>
