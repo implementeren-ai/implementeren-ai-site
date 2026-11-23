@@ -140,11 +140,11 @@ In onze trajecten zien we steeds dezelfde zwakke plekken, en ze zitten in het ei
 
 **Prompts als datalek.** Wie een compleet klantdossier plakt om één alinea te laten herschrijven, verwerkt meer persoonsgegevens dan nodig. Dataminimalisatie geldt ook in een chatvenster.
 
-**Ongecontroleerde output.** Veiligheid gaat ook over verzonnen cijfers in een klantrapport. Bij een [rapportage-agent](/cases/copilot-studio-agent) die ons team eerder bouwde voor een klant van een Nederlands IT-consultancybureau, lieten we elke gegenereerde rapportage valideren tegen het echte datamodel. Bestaat een metric niet, dan wordt die weggelaten. De agent authenticeert via Azure AD, zodat elke klant uitsluitend de eigen data ziet.
+**Ongecontroleerde output.** Veiligheid gaat ook over verzonnen cijfers in een klantrapport. Bij een [rapportage-agent](/cases/copilot-studio-agent) die we eerder bouwden voor een klant van een Nederlands IT-consultancybureau, lieten we elke gegenereerde rapportage valideren tegen het echte datamodel. Bestaat een metric niet, dan wordt die weggelaten. De agent authenticeert via Azure AD, zodat elke klant uitsluitend de eigen data ziet.
 
 ## Veilig ontwerp als verkoopargument
 
-Goed ingericht wordt veiligheid een argument in het verkoopgesprek. Bij een [rapportage-engine](/cases/report-engine) die ons team eerder bij een Nederlands softwarebedrijf bouwde, kozen we een architectuur waarbij de data (148 tabellen, 1,55 miljoen rijen) de eigen server nooit verlaat. Dat ontwerp haalde twee prospects over de streep die eerder waren afgehaakt omdat hun data via de cloud zou gaan.
+Goed ingericht wordt veiligheid een argument in het verkoopgesprek. Bij een [rapportage-engine](/cases/report-engine) die we eerder bij een Nederlands softwarebedrijf bouwden, kozen we een architectuur waarbij de data (148 tabellen, 1,55 miljoen rijen) de eigen server nooit verlaat. Dat ontwerp haalde twee prospects over de streep die eerder waren afgehaakt omdat hun data via de cloud zou gaan.
 
 Dat gunnen we bedrijven: dat ze aan elke klant kunnen uitleggen hoe ze het hebben geregeld.
 

@@ -148,13 +148,13 @@ De DPA met SCC's dekt de doorgifte juridisch af. Wie een EU-garantie nodig heeft
 
 Soms is de eis strenger: de data mag het eigen netwerk niet uit. Denk aan advocatenkantoren met dossiers onder verschoningsrecht, zorgdata, of klanten die het contractueel vastleggen.
 
-Het model zelf draait altijd bij Anthropic of bij een cloudprovider. De architectuur kan wel zo worden ingericht dat de gevoelige data lokaal blijft. Ons team bouwde dat eerder bij een Nederlands softwarebedrijf, in een [rapportage-engine](/cases/report-engine): de data (148 tabellen, 1,55 miljoen rijen) staat in een lokale DuckDB-database en verlaat de eigen server niet. Dat privacy-ontwerp trok twee prospects over de streep die eerder waren afgehaakt op het cloudvraagstuk, en bespaarde als bijvangst 1.200 euro per jaar aan BI-licenties.
+Het model zelf draait altijd bij Anthropic of bij een cloudprovider. De architectuur kan wel zo worden ingericht dat de gevoelige data lokaal blijft. We bouwden dat eerder bij een Nederlands softwarebedrijf, in een [rapportage-engine](/cases/report-engine): de data (148 tabellen, 1,55 miljoen rijen) staat in een lokale DuckDB-database en verlaat de eigen server niet. Dat privacy-ontwerp trok twee prospects over de streep die eerder waren afgehaakt op het cloudvraagstuk, en bespaarde als bijvangst 1.200 euro per jaar aan BI-licenties.
 
 Voor taken waar je een taalmodel op gevoelige data nodig hebt, kun je naast Claude een lokaal open-source model draaien. In de praktijk is de verdeling meestal: Claude voor het denkwerk op niet-gevoelige data, lokale verwerking voor de rest.
 
 ## Toegang inrichten weegt net zo zwaar als locatie
 
-Waar je data staat is één vraag, wie erbij kan is de andere. Bij een [rapportage-agent](/cases/copilot-studio-agent) die ons team eerder bouwde voor een klant van een Nederlands IT-consultancybureau, richtten we de toegang in via Azure AD met de OAuth on-behalf-of flow. Klanten loggen in met hun bestaande bedrijfsaccount en de agent toont uitsluitend de data van de ingelogde klant. Een goede verwerkingslocatie met slordige toegangsrechten levert alsnog een datalekrisico op.
+Waar je data staat is één vraag, wie erbij kan is de andere. Bij een [rapportage-agent](/cases/copilot-studio-agent) die we eerder bouwden voor een klant van een Nederlands IT-consultancybureau, richtten we de toegang in via Azure AD met de OAuth on-behalf-of flow. Klanten loggen in met hun bestaande bedrijfsaccount en de agent toont uitsluitend de data van de ingelogde klant. Een goede verwerkingslocatie met slordige toegangsrechten levert alsnog een datalekrisico op.
 
 ## Hoe kies je?
 

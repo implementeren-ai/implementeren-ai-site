@@ -155,7 +155,7 @@ Lokale taken draaien op het apparaat zelf, cloudtaken in omgevingen die OpenAI b
 
 **Je hebt geen ontwikkelaar.** Dan is Codex meestal niet de plek om te beginnen. Iemand moet elke wijziging kunnen beoordelen voordat die live gaat.
 
-Een voorbeeld van wat een programmeeragent oplevert als het werk eromheen klopt: bij een Nederlandse IT-dienstverlener bouwde ons team met Claude Code in 5 dagen een kennisbank van 13 artikelen met 27 screenshots, inclusief publicatie via de API. Je leest het in de case [kennisbank in een week](/cases/knowledge-base). De winst zat in de afspraken over wat de agent mocht doen en wie het resultaat controleerde.
+Een voorbeeld van wat een programmeeragent oplevert als het werk eromheen klopt: bij een Nederlandse IT-dienstverlener bouwden we met Claude Code in 5 dagen een kennisbank van 13 artikelen met 27 screenshots, inclusief publicatie via de API. Je leest het in de case [kennisbank in een week](/cases/knowledge-base). De winst zat in de afspraken over wat de agent mocht doen en wie het resultaat controleerde.
 
 ## Codex of Claude Code?
 

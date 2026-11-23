@@ -103,7 +103,7 @@ Anthropic slaat data van het eigen platform op in de Verenigde Staten. Wil je da
 
 - Kwaliteit van tekst is geld waard: offertes, adviesrapporten, beleidsstukken en klantcommunicatie. Minder nabewerken is de grootste tijdwinst.
 - Je werkt met omvangrijke documenten of dossiers die je in één keer wilt kunnen voeden.
-- Er wordt geautomatiseerd of gebouwd. Een voorbeeld: ons team bouwde eerder bij een Nederlandse IT-dienstverlener met Claude Code in 5 dagen een [complete kennisbank van dertien artikelen met schermafbeeldingen](/cases/knowledge-base), inclusief directe publicatie.
+- Er wordt geautomatiseerd of gebouwd. Een voorbeeld: we bouwden eerder bij een Nederlandse IT-dienstverlener met Claude Code in 5 dagen een [complete kennisbank van dertien artikelen met schermafbeeldingen](/cases/knowledge-base), inclusief directe publicatie.
 - Je wilt één tool grondig leren in plaats van drie tools half. Dat werkt ook prettiger naast je bestaande omgeving, of dat nu Microsoft 365 of Google Workspace is.
 
 ## Onze keuze, en waarom die eerlijk is

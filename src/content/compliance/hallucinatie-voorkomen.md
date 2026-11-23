@@ -80,7 +80,7 @@ RAG elimineert hallucinaties niet, maar het verschuift de basis van het antwoord
 
 Dit is de laag waar de meeste organisaties stoppen, en dat is een probleem. Validatie is niet "een collega laat het even lezen". Validatie is een gestructureerd proces dat AI-output vergelijkt met bekende feiten.
 
-Bij een Power BI-rapportageservice die ons team eerder bij een Nederlands softwarebedrijf bouwde, hebben we dit uitgebouwd tot wat we de Visual Truthifier noemen. Het systeem valideert 872 rapporten op drie niveaus. Elke DAX-formule wordt gecontroleerd tegen het werkelijke Power BI-schema. Elke metric wordt vergeleken met de brondata. Elke visuele claim wordt geverifieerd. Het resultaat: nul gefabriceerde measures in productie. Niet omdat Claude nooit hallucineert, maar omdat elke hallucinatie wordt gedetecteerd voordat die de klant bereikt.
+Bij een Power BI-rapportageservice die we eerder bij een Nederlands softwarebedrijf bouwden, hebben we dit uitgebouwd tot wat we de Visual Truthifier noemen. Het systeem valideert 872 rapporten op drie niveaus. Elke DAX-formule wordt gecontroleerd tegen het werkelijke Power BI-schema. Elke metric wordt vergeleken met de brondata. Elke visuele claim wordt geverifieerd. Het resultaat: nul gefabriceerde measures in productie. Niet omdat Claude nooit hallucineert, maar omdat elke hallucinatie wordt gedetecteerd voordat die de klant bereikt.
 
 Concreet: als Claude een DAX-measure genereert die verwijst naar een kolom die niet bestaat in het datamodel, wordt dat automatisch gedetecteerd. Het systeem weigert de measure en genereert een foutmelding. Dat is het verschil tussen "Claude gebruiken" en "Claude in productie draaien".
 

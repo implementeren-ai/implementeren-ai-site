@@ -17,7 +17,7 @@ voorJou: "Betaal je elke maand voor losse tools die niet met elkaar praten? Vaak
 
 ## Drie tools, nul overzicht
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. Het bedrijf betaalde 180 euro per maand voor drie losse systemen. Contacten stonden in het ene, campagnes liepen via het andere. En wie welke lead moest opvolgen, hield een collega bij in een eigen spreadsheet. Niets was gekoppeld.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. Het bedrijf betaalde 180 euro per maand voor drie losse systemen. Contacten stonden in het ene, campagnes liepen via het andere. En wie welke lead moest opvolgen, hield een collega bij in een eigen spreadsheet. Niets was gekoppeld.
 
 <!-- MENS: 1-2 zinnen over het moment waarop het echt knelde — een gemiste lead, een dubbele mail, iets concreets uit de praktijk -->
 

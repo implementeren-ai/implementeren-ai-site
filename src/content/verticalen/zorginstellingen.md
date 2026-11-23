@@ -59,7 +59,7 @@ De workflow: arts dicteert of typt de kerngegevens (klacht, relevante voorgeschi
 
 Lees ook onze pagina's over [Claude voor fysio](/claude-voor-fysio) en [Claude voor tandarts](/claude-voor-tandartsen) voor vergelijkbare toepassingen in andere zorgdisciplines.
 
-> *In maart 2026 bouwde ons team bij een Nederlandse IT-dienstverlener een kennisbank van 13 artikelen met 27 screenshots in 5 dagen. Besparing: 6+ uur per week aan herhaalde vragen. Dezelfde structuur werkt voor zorginstellingen: bouw een set standaardbrieven voor de 15 meest voorkomende verwijzingen.*
+> *In maart 2026 bouwden we bij een Nederlandse IT-dienstverlener een kennisbank van 13 artikelen met 27 screenshots in 5 dagen. Besparing: 6+ uur per week aan herhaalde vragen. Dezelfde structuur werkt voor zorginstellingen: bouw een set standaardbrieven voor de 15 meest voorkomende verwijzingen.*
 
 ## Protocollen en richtlijnen samenvatten
 
@@ -77,7 +77,7 @@ Artsen moeten bijblijven. Nieuwe studies, meta-analyses, Cochrane reviews, richt
 
 Bij een arts die wekelijks 5 artikelen wil lezen, bespaar je 2 tot 3 uur per week. Claude markeert de sterkte van het bewijs (RCT versus observationeel), de sample size, en de klinische relevantie. De arts beoordeelt of de bevindingen de praktijk beïnvloeden en beslist over aanpassing van het beleid. Dit is puur groene data: gepubliceerde wetenschappelijke artikelen zonder patientgegevens.
 
-Ons team bouwde eerder bij een Nederlands softwarebedrijf een report-engine die 281 rapporttypes genereert en de data op de eigen server houdt. Dezelfde privacy-first architectuur past op zorginstellingen: groene data naar Claude, medische data lokaal.
+We bouwden eerder bij een Nederlands softwarebedrijf een report-engine die 281 rapporttypes genereert en de data op de eigen server houdt. Dezelfde privacy-first architectuur past op zorginstellingen: groene data naar Claude, medische data lokaal.
 
 ## Patientinformatie en website-content
 

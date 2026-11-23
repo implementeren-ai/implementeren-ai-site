@@ -112,7 +112,7 @@ De investering: 5 werkdagen voor 13 artikelen. De return: 6+ uur per week, struc
 
 ## Case: copilot-studio-agent (45 naar 2 minuten)
 
-Het copilot-studio-agent project is de volgende stap na een kennisbank: een conversational agent die actie onderneemt op basis van een vraag. In dit project bouwde ons team eerder, voor een klant van een Nederlands IT-consultancybureau, een agent die klantrapportages genereert. Voorheen duurde het genereren van een klantrapportage 45 minuten: data ophalen uit Autotask, samenvoegen in Excel, formatteren, exporteren als PDF, mailen naar de klant.
+Het copilot-studio-agent project is de volgende stap na een kennisbank: een conversational agent die actie onderneemt op basis van een vraag. In dit project bouwden we eerder, voor een klant van een Nederlands IT-consultancybureau, een agent die klantrapportages genereert. Voorheen duurde het genereren van een klantrapportage 45 minuten: data ophalen uit Autotask, samenvoegen in Excel, formatteren, exporteren als PDF, mailen naar de klant.
 
 Na de implementatie: 2 minuten. De klant of accountmanager stelt een vraag in natuurlijke taal ("Geef me de SLA-rapportage voor klant X over Q1"), de agent haalt de data op via Azure AD OAuth, genereert het rapport en levert het als interactieve pagina.
 

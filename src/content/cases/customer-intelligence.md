@@ -17,7 +17,7 @@ voorJou: "Staat jouw klantdata ook verspreid over systemen waar niemand tegelijk
 
 ## Vier systemen, één incompleet beeld
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. De klantdata van dit SaaS-bedrijf zat in vier systemen. In het CRM stonden de contactgegevens en de dealhistorie. Google Search Console toonde met welke zoektermen prospects op de website kwamen. Het BI-platform bevatte de servicedata per klant. En op LinkedIn stond de context over de persoon en het bedrijf.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. De klantdata van dit SaaS-bedrijf zat in vier systemen. In het CRM stonden de contactgegevens en de dealhistorie. Google Search Console toonde met welke zoektermen prospects op de website kwamen. Het BI-platform bevatte de servicedata per klant. En op LinkedIn stond de context over de persoon en het bedrijf.
 
 Niemand keek naar alle vier tegelijk, daar was geen tijd voor. De salesmedewerker checkte het CRM, sloeg de rest over en ging het gesprek in met een kwart van het beeld.
 

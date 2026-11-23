@@ -137,7 +137,7 @@ Bij een planningswijziging werkt het net zo. Je geeft de reden, de nieuwe datum 
 
 Op deze site staat nog geen case van een installatiebedrijf. Wel twee projecten met hetzelfde patroon: rommelige input omzetten in een vast document.
 
-Bij een Nederlands IT-consultancybureau bouwde ons team een [gespreksverwerker](/cases/consultant-brief). Een opgenomen klantgesprek van een uur wordt daar een gestructureerde brief met actiepunten. Het uitwerken ging van 45 minuten naar 5 minuten per gesprek. Een monteur die na de klus zijn bevindingen doorgeeft, is een kleinere versie van datzelfde probleem.
+Bij een Nederlands IT-consultancybureau bouwden we een [gespreksverwerker](/cases/consultant-brief). Een opgenomen klantgesprek van een uur wordt daar een gestructureerde brief met actiepunten. Het uitwerken ging van 45 minuten naar 5 minuten per gesprek. Een monteur die na de klus zijn bevindingen doorgeeft, is een kleinere versie van datzelfde probleem.
 
 Bij hetzelfde type bureau maakten we in 2 weken een [procesportaal](/cases/process-portal). Procesdiagrammen komen daar automatisch op een vaste link voor de klant, in plaats van in een PDF die snel veroudert. Het opmaakwerk per diagram ging van anderhalf uur naar tien minuten. Voor een installatiebedrijf ligt de vergelijking bij het opleverdossier en de onderhoudsinstructie: één bron, en de klant ziet altijd de actuele versie.
 

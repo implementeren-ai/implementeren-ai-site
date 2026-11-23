@@ -143,7 +143,7 @@ Bij stap 5 werkt een korte, vaste opdracht het best. Bijvoorbeeld: "Maak de notu
 
 ## Wat leverde dit op bij een IT-consultancybureau?
 
-Ons team bouwde eerder een [gespreksverwerker](/cases/consultant-brief) voor een Nederlands IT-consultancybureau. Dat bureau voert elke week een assessment-gesprek van een uur met een klant en neemt dat op in Teams. Vroeger keek een collega de opname terug en schreef een samenvatting voor de consultant van het vervolgtraject. Dat kostte 45 minuten per gesprek, en in de praktijk keek niemand het hele uur echt terug.
+We bouwden eerder een [gespreksverwerker](/cases/consultant-brief) voor een Nederlands IT-consultancybureau. Dat bureau voert elke week een assessment-gesprek van een uur met een klant en neemt dat op in Teams. Vroeger keek een collega de opname terug en schreef een samenvatting voor de consultant van het vervolgtraject. Dat kostte 45 minuten per gesprek, en in de praktijk keek niemand het hele uur echt terug.
 
 We bouwden met Claude Code een skill die de MP4 en het VTT-bestand van Teams omzet in een brief. De skill deelt het transcript op in blokken, zoals de probleembeschrijving, de huidige situatie, de gewenste situatie, randvoorwaarden en afspraken. Bij elk blok knipt FFmpeg een videofragment van 30 tot 90 seconden uit de opname, op basis van de tijdcodes in het VTT-bestand. De brief eindigt met de vervolgacties (wie, wat en wanneer) en de open vragen.
 

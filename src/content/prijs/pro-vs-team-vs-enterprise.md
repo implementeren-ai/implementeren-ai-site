@@ -29,18 +29,18 @@ author: camiel
 competitors: []
 status: published
 publishDate: 2026-10-02
-updatedDate: 2026-11-10
+updatedDate: 2026-11-23
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-29
-kortAntwoord: "Claude Pro (20 dollar per maand) volstaat voor wie alleen werkt. Claude Team (25 dollar per gebruiker per maand, minimaal 2 seats) is de keuze zodra er klantdata in Claude gaat of collega's meedoen. Je krijgt Projects, SSO, centraal beheer en standaard geen training op je data. Enterprise (minimaal 20 seats) past bij grote of gereguleerde organisaties. Stand: 22 oktober 2026."
+kortAntwoord: "Claude Pro (20 dollar per maand) volstaat voor wie alleen werkt. Claude Team (25 dollar per gebruiker per maand, minimaal 2 seats) is de keuze zodra er klantdata in Claude gaat of collega's meedoen. Je krijgt Projects, SSO, centraal beheer en standaard geen training op je data. Enterprise (minimaal 20 seats) past bij grote of gereguleerde organisaties. Stand: 23 november 2026."
 bronnen:
   - titel: "Anthropic supportartikel: API credits for Max and Team plans"
     url: "https://support.claude.com/en/articles/17154008-api-credits-for-max-and-team-plans"
     geraadpleegd: "10 november 2026"
   - titel: "Anthropic prijspagina (claude.com/pricing)"
     url: "https://claude.com/pricing"
-    geraadpleegd: "10 november 2026"
+    geraadpleegd: "23 november 2026"
   - titel: "Anthropic supportartikel: What is the Team plan?"
     url: "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
     geraadpleegd: "2 oktober 2026"
@@ -83,7 +83,7 @@ faq:
 ---
 
 <!--
-  Bronnen voor "claude pro of team" (prijzen en plan-features opnieuw gecheckt op 22 oktober 2026):
+  Bronnen voor "claude pro of team" (prijzen en plan-features opnieuw gecheckt op 22 oktober 2026; prijzen nogmaals gecheckt op claude.com/pricing op 23 november 2026, ongewijzigd):
   - https://claude.com/pricing: Pro $20/mnd ($17/mnd bij jaarbetaling); Team "For teams
     of 2 to 150", standaard seat $25/mnd ($20 bij jaarbetaling), incl. Claude Code, SSO,
     central billing and administration, "No model training on your content by default";
@@ -120,7 +120,7 @@ faq:
   (bij de gebruiksruimte-sectie)
 -->
 
-Claude Pro of Team: zodra Claude ergens in een bedrijf is aangeslagen, komt deze vraag vanzelf. De eerste gebruiker zit op Pro, collega's willen erbij, en iemand moet beslissen of dat losse abonnementen worden of één Team-organisatie. Die keuze gaat maar beperkt over geld. Het echte verschil zit in wat er met je data gebeurt, wie er meekijkt op het gebruik, en of kennis gedeeld wordt of in persoonlijke accounts blijft hangen. Prijzen gecheckt op 22 oktober 2026 op claude.com/pricing.
+Claude Pro of Team: zodra Claude ergens in een bedrijf is aangeslagen, komt deze vraag vanzelf. De eerste gebruiker zit op Pro, collega's willen erbij, en iemand moet beslissen of dat losse abonnementen worden of één Team-organisatie. Die keuze gaat maar beperkt over geld. Het echte verschil zit in wat er met je data gebeurt, wie er meekijkt op het gebruik, en of kennis gedeeld wordt of in persoonlijke accounts blijft hangen. Prijzen gecheckt op 23 november 2026 op claude.com/pricing.
 
 ## Claude Pro vs Team vs Enterprise: de verschillen in één tabel
 
@@ -171,7 +171,7 @@ Let op het prijsmodel. Bij Enterprise betaal je $20 per seat, met een minimum va
 
 ## De grens die er echt toe doet: abonnement of API
 
-De keuzevraag Pro of Team overschaduwt vaak een belangrijkere grens: wat hoort in een chatabonnement en wat hoort in een geautomatiseerd proces. Een voorbeeld dat ons team eerder bouwde voor een klant van een Nederlands IT-consultancybureau. Daar kostte elke rapportage-aanvraag uit Power BI 30 tot 45 minuten handwerk. Bij twintig klanten per kwartaal waren dat twee volle werkdagen, ruim 60 uur op jaarbasis. We bouwden er met Claude Code een [chat-agent](/cases/copilot-studio-agent) die via de bestaande bedrijfslogin (Azure AD) precies de juiste klantdata ophaalt en het rapport in twee minuten genereert, met dezelfde validatie tegen het datamodel als het handwerk had. Klanten vragen hun rapportages nu zelf op, ook tussentijds.
+De keuzevraag Pro of Team overschaduwt vaak een belangrijkere grens: wat hoort in een chatabonnement en wat hoort in een geautomatiseerd proces. Een voorbeeld dat we eerder bouwden voor een klant van een Nederlands IT-consultancybureau. Daar kostte elke rapportage-aanvraag uit Power BI 30 tot 45 minuten handwerk. Bij twintig klanten per kwartaal waren dat twee volle werkdagen, ruim 60 uur op jaarbasis. We bouwden er met Claude Code een [chat-agent](/cases/copilot-studio-agent) die via de bestaande bedrijfslogin (Azure AD) precies de juiste klantdata ophaalt en het rapport in twee minuten genereert, met dezelfde validatie tegen het datamodel als het handwerk had. Klanten vragen hun rapportages nu zelf op, ook tussentijds.
 
 Dat soort werk hoort op de API en niet op iemands Team-seat. Je betaalt per gebruik, je hebt geen [5-uursvenster of weeklimiet](/prijs/credits-en-limieten), en de kosten schalen met het volume in plaats van met het aantal medewerkers. De API heeft wel eigen rate limits en een maandelijks bestedingsplafond per tier. Het patroon dat wij vrijwel altijd adviseren: Team voor het interactieve werk van mensen, de API voor alles wat herhaalbaar en geautomatiseerd is. Wat dat kost voor jouw situatie reken je door met de [ROI-calculator](/tools/claude-roi-mkb-calculator).
 

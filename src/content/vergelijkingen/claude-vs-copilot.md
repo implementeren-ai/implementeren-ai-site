@@ -27,21 +27,21 @@ author: camiel
 competitors: []
 status: published
 publishDate: 2026-10-02
-updatedDate: null
+updatedDate: 2026-11-23
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
-kortAntwoord: "Copilot past bij kleine versnellingen binnen Word, Excel, Outlook en Teams. Implementeren.ai kiest Claude voor het zware denk- en schrijfwerk, zoals offertes, rapporten en lange documenten. Copilot voor bedrijven kost 18,20 euro per gebruiker per maand bovenop Microsoft 365. Claude Team kost 20 dollar bij jaarbetaling (stand 2 oktober 2026). Test beide op drie echte taken."
+kortAntwoord: "Copilot past bij kleine versnellingen binnen Word, Excel, Outlook en Teams. Implementeren.ai kiest Claude voor het zware denk- en schrijfwerk, zoals offertes, rapporten en lange documenten. Copilot voor bedrijven kost 18,20 euro per gebruiker per maand bovenop Microsoft 365. Claude Team kost 20 dollar bij jaarbetaling (stand 23 november 2026). Test beide op drie echte taken."
 bronnen:
   - titel: "Microsoft, prijzen van Microsoft 365 Copilot voor bedrijven"
     url: "https://www.microsoft.com/nl-nl/microsoft-365-copilot/pricing"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "23 november 2026"
   - titel: "Microsoft Learn, data, privacy en beveiliging van Microsoft Copilot"
     url: "https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-privacy"
     geraadpleegd: "2 oktober 2026"
   - titel: "Anthropic, prijzen en abonnementen van Claude"
     url: "https://claude.com/pricing"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "23 november 2026"
   - titel: "Anthropic, release notes van Claude (Microsoft 365-connector en add-ins)"
     url: "https://support.claude.com/en/articles/12138966-release-notes"
     geraadpleegd: "2 oktober 2026"
@@ -82,7 +82,7 @@ Claude is een assistent waar je je werk naartoe brengt. Je deelt documenten, dat
 | Training op je data | Standaard niet in Team en Enterprise | Niet |
 | Locatie van de data | Opslag in de Verenigde Staten op het eigen platform | EU Data Boundary, behalve bij Anthropic-modellen |
 
-Prijzen gecontroleerd op 2 oktober 2026 en exclusief btw of belasting. Microsoft rekent tot en met 31 december 2026 een actieprijs van 15,60 euro voor het eerste jaar. Claude Team is er voor 2 tot 150 gebruikers.
+Prijzen gecontroleerd op 23 november 2026 en exclusief btw of belasting. Microsoft rekent tot en met 31 december 2026 een actieprijs van 15,60 euro voor het eerste jaar. Claude Team is er voor 2 tot 150 gebruikers.
 
 ## Wanneer Microsoft Copilot de logische keuze is
 
@@ -94,7 +94,7 @@ Prijzen gecontroleerd op 2 oktober 2026 en exclusief btw of belasting. Microsoft
 
 - De waarde zit in het zware werk: offertes, rapporten, analyses, beleidsstukken en klantcommunicatie waar kwaliteit telt.
 - Je werkt met documenten van tientallen pagina's tegelijk, zoals contracten of dossiers.
-- Er wordt geautomatiseerd. Met Claude Code bouw je werkstromen die verder gaan dan chatten. Een voorbeeld: ons team bouwde eerder voor een klant van een Nederlands IT-consultancybureau een [AI-assistent die kwartaalrapportages op aanvraag genereert](/cases/copilot-studio-agent), gemaakt met Claude Code en gekoppeld aan Copilot Studio. De twee werelden kunnen dus ook samenwerken.
+- Er wordt geautomatiseerd. Met Claude Code bouw je werkstromen die verder gaan dan chatten. Een voorbeeld: we bouwden eerder voor een klant van een Nederlands IT-consultancybureau een [AI-assistent die kwartaalrapportages op aanvraag genereert](/cases/copilot-studio-agent), gemaakt met Claude Code en gekoppeld aan Copilot Studio. De twee werelden kunnen dus ook samenwerken.
 - Je wilt processen echt anders inrichten.
 
 ## Hoe het samenspeelt met je bestaande systemen

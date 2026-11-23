@@ -103,7 +103,7 @@ Prijzen in dollars, exclusief btw, gecontroleerd op 19 november 2026.
 - Er is geen groot ontwikkelteam, maar wel terugkerend digitaal werk dat om automatisering vraagt. Precies daar wordt het voor het MKB interessant; op [hoe Claude werkt](/hoe-claude-werkt) staat de bredere uitleg.
 - Je bouwt werkstromen die buiten een editor leven: scripts, rapportages en koppelingen tussen systemen.
 
-Twee voorbeelden die ons team eerder bij een Nederlands softwarebedrijf uitvoerde, laten zien wat delegeren betekent. Claude Code lichtte daar in 2 dagen alle achtergrondprocessen door: [38 scripts geïnventariseerd, 9 stilgevallen scripts gerepareerd](/cases/automation-audit), inclusief documentatie van wat er draait en waarom. Hetzelfde patroon werkte bij een opschoonklus van formaat: [36 losse repositories gestandaardiseerd naar één gestructureerde workspace](/cases/devops-monorepo).
+Twee voorbeelden die we eerder bij een Nederlands softwarebedrijf uitvoerden, laten zien wat delegeren betekent. Claude Code lichtte daar in 2 dagen alle achtergrondprocessen door: [38 scripts geïnventariseerd, 9 stilgevallen scripts gerepareerd](/cases/automation-audit), inclusief documentatie van wat er draait en waarom. Hetzelfde patroon werkte bij een opschoonklus van formaat: [36 losse repositories gestandaardiseerd naar één gestructureerde workspace](/cases/devops-monorepo).
 
 ## En allebei?
 

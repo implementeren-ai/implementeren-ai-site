@@ -1,7 +1,7 @@
 ---
 title: "872 Power BI reports in 3 maanden"
 titleTag: "872 Power BI-rapporten in 3 maanden met Claude"
-description: "Anderhalf uur handwerk per report, keer 50 klanten, keer twee talen: dat is een fulltime baan. Zo maakte ons team er 872, met gevalideerde data."
+description: "Anderhalf uur handwerk per report, keer 50 klanten, keer twee talen: dat is een fulltime baan. Zo maakten we er 872, met gevalideerde data."
 sector: "MSP"
 duration: "12 weken"
 tools: ["Claude Code", "Power BI MCP", "Python", "LaunchAgent"]
@@ -17,7 +17,7 @@ voorJou: "Zit je vast aan uren handwerk per klantrapport, misschien nog in meerd
 
 ## Een fulltime baan aan rapportages
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. De data stond al keurig in Power BI. Maar dit MSP-softwarebedrijf met 50+ klanten had geen goede manier om er per klant een report van te maken. Eén report kostte anderhalf uur handwerk: DAX-queries schrijven, data controleren, layout opmaken en vertalen naar het Engels. Reken dat door voor 50 klanten en je hebt een fulltime baan. We wilden nette reports in twee talen, met correcte cijfers, zonder er zelf uren aan kwijt te zijn.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. De data stond al keurig in Power BI. Maar dit MSP-softwarebedrijf met 50+ klanten had geen goede manier om er per klant een report van te maken. Eén report kostte anderhalf uur handwerk: DAX-queries schrijven, data controleren, layout opmaken en vertalen naar het Engels. Reken dat door voor 50 klanten en je hebt een fulltime baan. We wilden nette reports in twee talen, met correcte cijfers, zonder er zelf uren aan kwijt te zijn.
 
 ## Een commando in plaats van anderhalf uur
 

@@ -39,6 +39,7 @@ reviewedBy: "Camiel Wits"
 reviewedDate: 2026-11-10
 changelogLine: null
 hasTemplate: true
+templateBestand: "/downloads/ai-gebruiksbeleid-template.docx"
 deadline: null
 kortAntwoord: "Een AI-beleid voor Claude legt vast welke tools je team mag gebruiken, welke data erin mag en wie verantwoordelijk is. Voor gewoon Claude-gebruik schrijft de AI Act geen apart beleidsdocument voor. Artikel 4 vraagt sinds 2 februari 2025 wel maatregelen voor AI-geletterdheid. Een kort beleid is daar een praktische basis voor. Hieronder staat een invulbaar voorbeeld."
 bronnen:
@@ -204,7 +205,7 @@ Een beleid dat niemand kent, helpt je niet. Deze volgorde is een voorstel:
 4. **Week 4 en 5: proefperiode.** Verzamel vragen en twijfelgevallen. Pas het beleid aan waar het onduidelijk bleek.
 5. **Daarna: steekproef.** De AI-coördinator vraagt af en toe na welke datazone een taak had.
 
-Vastleggen hoeft weinig tijd te kosten als het onderdeel van het werk is. Bij een [output-archief](/cases/output-archive) dat ons team bij een Nederlands softwarebedrijf bouwde, groeide de vastlegging in vier maanden naar 122 gestructureerde documenten, als bijproduct van het dagelijkse werk.
+Vastleggen hoeft weinig tijd te kosten als het onderdeel van het werk is. Bij een [output-archief](/cases/output-archive) dat we bij een Nederlands softwarebedrijf bouwden, groeide de vastlegging in vier maanden naar 122 gestructureerde documenten, als bijproduct van het dagelijkse werk.
 
 ## Hoe sluit het beleid aan op een DPIA?
 

@@ -17,7 +17,7 @@ voorJou: "Presenteer je cijfers aan investeerders of andere stakeholders? Een pa
 
 ## "We komen erop terug"
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. Het bedrijf bereidde een investeringsronde voor. De standaardaanpak stond klaar: een PowerPoint van dertig slides met financiële projecties, marktanalyse en groeiscenario's.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. Het bedrijf bereidde een investeringsronde voor. De standaardaanpak stond klaar: een PowerPoint van dertig slides met financiële projecties, marktanalyse en groeiscenario's.
 
 Maar investeerders stellen vragen die de slides niet beantwoorden. "Wat als jullie groei 20% lager uitvalt?" "Hoe ziet de cashflow eruit als de churn verdubbelt?" Elke keer was het antwoord "we komen erop terug", gevolgd door een avond rekenen in Excel. We wilden die vragen tijdens het gesprek zelf kunnen beantwoorden.
 

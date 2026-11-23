@@ -48,6 +48,7 @@ const linkClass = 'v2-voet-link';
     <div class="v2-wrap">
       <p class="m-0">
         {site.naam} is een handelsnaam van {site.juridisch.handelsnaamVan}
+        {site.juridisch.adres && <><span aria-hidden="true"> · </span>{site.juridisch.adres}</>}
         <span aria-hidden="true"> · </span>KvK {site.juridisch.kvk}
         <span aria-hidden="true"> · </span>BTW {site.juridisch.btw}
         <span aria-hidden="true"> · </span><a href="/privacy" class={linkClass}>Privacyverklaring</a>

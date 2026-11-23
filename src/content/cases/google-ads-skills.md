@@ -18,7 +18,7 @@ voorJou: "Betaal je een bureau voor werk dat je liever zelf zou snappen? Met ski
 
 ## Een vak zonder vakman
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. Dit SaaS-bedrijf wilde adverteren op Google, Meta en LinkedIn. Maar er zat geen advertising specialist in het team. Een extern bureau kostte 2.000 tot 4.000 euro per maand. Bij het vorige bureau wogen de resultaten niet op tegen die kosten.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. Dit SaaS-bedrijf wilde adverteren op Google, Meta en LinkedIn. Maar er zat geen advertising specialist in het team. Een extern bureau kostte 2.000 tot 4.000 euro per maand. Bij het vorige bureau wogen de resultaten niet op tegen die kosten.
 
 Dus kozen we ervoor het zelf te doen. Alleen: advertentiebeheer is een vak met tientallen terugkerende taken. Denk aan keyword research, advertentieteksten schrijven, budgetten herverdelen en kwaliteitsscores analyseren. Elke taak heeft eigen best practices en eigen valkuilen.
 

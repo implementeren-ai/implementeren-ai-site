@@ -18,7 +18,7 @@ voorJou: "Wil je persoonlijke sales-e-mails sturen, maar heeft je team daar de t
 
 ## Twee mensen, drieduizend prospects
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. Het salesteam van dit B2B SaaS-bedrijf bestond uit twee mensen. De prospectlijst telde er drieduizend. Persoonlijke e-mails schrijven voor zoveel mensen lukte niet, dus stuurden we standaardteksten. Daarvan werd 8% geopend. We wilden persoonlijkere e-mails sturen, maar hadden er de uren niet voor.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. Het salesteam van dit B2B SaaS-bedrijf bestond uit twee mensen. De prospectlijst telde er drieduizend. Persoonlijke e-mails schrijven voor zoveel mensen lukte niet, dus stuurden we standaardteksten. Daarvan werd 8% geopend. We wilden persoonlijkere e-mails sturen, maar hadden er de uren niet voor.
 
 ## Elke ochtend 25 drafts
 

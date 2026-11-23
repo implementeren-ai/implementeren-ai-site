@@ -62,7 +62,7 @@ Die Haiku-prijs geldt voor prompts tot 100.000 tokens. Is je prompt langer, dan 
 
 ## Voorbeeldberekening: 872 Power BI reports
 
-Neem de 872 Power BI-rapportages die ons team eerder in 12 weken bij een Nederlands softwarebedrijf via de API genereerde. Elk rapport bevat gemiddeld 2.000 input tokens (prompt, template, DAX context) en 4.000 output tokens (het volledige rapport). Op Sonnet:
+Neem de 872 Power BI-rapportages die we eerder in 12 weken bij een Nederlands softwarebedrijf via de API genereerden. Elk rapport bevat gemiddeld 2.000 input tokens (prompt, template, DAX context) en 4.000 output tokens (het volledige rapport). Op Sonnet:
 
 - Input: 872 x 2.000 = 1.744.000 tokens. Kosten: 1,744 x EUR 1,84 = EUR 3,21
 - Output: 872 x 4.000 = 3.488.000 tokens. Kosten: 3,488 x EUR 9,20 = EUR 32,09

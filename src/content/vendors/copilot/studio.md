@@ -166,6 +166,6 @@ Hoe het zit met gegevensopslag en de EU, lees je in [EU-hosting en AI](/complian
 
 ## Wat de tool niet voor je beslist
 
-Een agent bouwen is snel. Bepalen wat hij moet doen, welke gegevens hij mag gebruiken en wie het eigenaarschap heeft, kost de meeste tijd. Een voorbeeld uit onze praktijk: voor een klant van een IT-consultancybureau bouwde ons team een chat-agent die klanten zelf rapportages laat opvragen achter hun bedrijfslogin. Een rapport kostte 45 minuten handwerk en is nu in 2 minuten klaar. Die agent bouwden we met Claude Code, niet met Copilot Studio. Je leest het in de case [rapportages op aanvraag](/cases/copilot-studio-agent).
+Een agent bouwen is snel. Bepalen wat hij moet doen, welke gegevens hij mag gebruiken en wie het eigenaarschap heeft, kost de meeste tijd. Een voorbeeld uit onze praktijk: voor een klant van een IT-consultancybureau bouwden we een chat-agent die klanten zelf rapportages laat opvragen achter hun bedrijfslogin. Een rapport kostte 45 minuten handwerk en is nu in 2 minuten klaar. Die agent bouwden we met Claude Code, niet met Copilot Studio. Je leest het in de case [rapportages op aanvraag](/cases/copilot-studio-agent).
 
 Twijfel je tussen Copilot en een andere aanpak? In [Claude vs Copilot](/vergelijken/claude-vs-copilot) zetten we de twee naast elkaar. Met de [AI Enablement Scan](/ai-enablement-scan) kijkt Camiel samen met je welke processen een agent waard zijn en of je daar Copilot Studio voor nodig hebt.

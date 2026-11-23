@@ -38,7 +38,7 @@ faq:
     answer: "Claude Pro kost 20 dollar per gebruiker per maand. De implementatie van een e-mail workflow duurt 1 tot 3 weken, afhankelijk van de complexiteit. De API-kosten hangen af van het volume: bij 25 e-mails per dag komt dat neer op circa 5 tot 15 dollar per maand aan API-gebruik."
 ---
 
-Claude e-mail automatiseren is een van de snelst renderende Claude-implementaties voor MKB-bedrijven. Inbox triage, gepersonaliseerde antwoorden, follow-ups en outreach op schaal. Ons team heeft het eerder bij een Nederlands softwarebedrijf gebouwd, getest en geoptimaliseerd. Het resultaat: 25 gepersonaliseerde e-mails per dag, een open rate die steeg van 8% naar 34%, en een set schrijfregels die zichzelf verfijnt.
+Claude e-mail automatiseren is een van de snelst renderende Claude-implementaties voor MKB-bedrijven. Inbox triage, gepersonaliseerde antwoorden, follow-ups en outreach op schaal. We hebben het eerder bij een Nederlands softwarebedrijf gebouwd, getest en geoptimaliseerd. Het resultaat: 25 gepersonaliseerde e-mails per dag, een open rate die steeg van 8% naar 34%, en een set schrijfregels die zichzelf verfijnt.
 
 ## Het probleem: waarom claude e-mail automatiseren nodig is
 

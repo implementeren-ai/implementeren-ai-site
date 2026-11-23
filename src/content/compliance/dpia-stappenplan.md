@@ -187,7 +187,7 @@ Deze maatregelen zie je vaak terug in stap 7:
 
 ## Hoe ziet gegevensbeperking eruit in een echt project?
 
-Op deze site staat nog geen eigen case van een DPIA voor Claude. Wel een project waarin de grootste DPIA-maatregel in de architectuur zat. Bij een [rapportage-engine](/cases/report-engine) voor een Nederlands MSP-softwarebedrijf bouwde ons team in 6 weken een systeem waarbij de data de eigen server niet verlaat. Het gaat om een lokale database met 148 tabellen en 1,55 miljoen rijen. Voor demo's vervangt een anonimisatielaag klantnamen en bedragen door fictieve data. Het bedrijf bespaarde daarnaast 1.200 euro per jaar aan licenties.
+Op deze site staat nog geen eigen case van een DPIA voor Claude. Wel een project waarin de grootste DPIA-maatregel in de architectuur zat. Bij een [rapportage-engine](/cases/report-engine) voor een Nederlands MSP-softwarebedrijf bouwden we in 6 weken een systeem waarbij de data de eigen server niet verlaat. Het gaat om een lokale database met 148 tabellen en 1,55 miljoen rijen. Voor demo's vervangt een anonimisatielaag klantnamen en bedragen door fictieve data. Het bedrijf bespaarde daarnaast 1.200 euro per jaar aan licenties.
 
 Voor een DPIA betekent zo'n opzet dat stap 5 en 6 kort worden: wat niet naar een AI-dienst gaat, levert daar ook geen risico op. Datagrenzen vastleggen doen we in de eerste week van een [Claude-implementatie](/claude-implementatie), samen met de verwerkersovereenkomst.
 

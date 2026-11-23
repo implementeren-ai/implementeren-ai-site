@@ -18,7 +18,7 @@ voorJou: "Betaal je per persoon om dashboards te mogen bekijken, of blijven de c
 
 ## "Heeft iemand de cijfers?"
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. Dit MSP-softwarebedrijf had rapportages genoeg, maar geen dashboards. Een rapportage geeft een momentopname. We wilden juist de beweging zien: hoe de responstijd zich over de maanden ontwikkelt, welke klanten de meeste tickets opleveren en waar SLA-risico's ontstaan.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. Dit MSP-softwarebedrijf had rapportages genoeg, maar geen dashboards. Een rapportage geeft een momentopname. We wilden juist de beweging zien: hoe de responstijd zich over de maanden ontwikkelt, welke klanten de meeste tickets opleveren en waar SLA-risico's ontstaan.
 
 Dashboards bouwen in het BI-platform lag voor de hand, maar elke viewer had daar een licentie voor nodig. Bij twintig interne gebruikers liep dat op. Bovendien moesten de dashboards dagelijks ververst worden, anders kijkt iedereen naar de cijfers van vorige week.
 

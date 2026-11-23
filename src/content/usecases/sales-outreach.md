@@ -49,7 +49,7 @@ Claude sdr automatisering lost dit op door de personalisatie te automatiseren zo
 
 ## De sdr-sales-agent case: 25 e-mails per dag
 
-Het systeem dat ons team eerder bij een Nederlands softwarebedrijf bouwde, draait op een Laravel backend met een Vue.js frontend en de MS Graph API voor emailverzending. 5 database modellen: kandidaten, drafts, feedback, sequenties en schrijfregels. 5 API controllers die de logica verwerken.
+Het systeem dat we eerder bij een Nederlands softwarebedrijf bouwden, draait op een Laravel backend met een Vue.js frontend en de MS Graph API voor emailverzending. 5 database modellen: kandidaten, drafts, feedback, sequenties en schrijfregels. 5 API controllers die de logica verwerken.
 
 Elke ochtend selecteert een batch process 25 kandidaten uit het CRM op basis van scoring criteria. Bedrijfsgrootte, branche, laatste contactmoment, eerdere interacties, en een fit-score op basis van het ideale klantprofiel. Voor elke kandidaat genereert Claude een gepersonaliseerde email. De personalisatie is concreet: het noemt het product dat de prospect gebruikt, de sector waarin ze werken, en een relevante haak uit recente bedrijfsontwikkelingen.
 

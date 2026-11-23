@@ -144,8 +144,8 @@ Vergelijkbare patronen zien we bij bedrijven die [de keuze tussen AI-modellen](/
 De meest betrouwbare ROI-cijfers komen niet uit enquetes maar uit daadwerkelijke implementaties. De patronen:
 
 **Hoge ROI (5x tot 10x binnen 6 maanden):**
-- Rapportage automatiseren. Bij een Nederlands softwarebedrijf dat handmatig kwartaalrapportages maakte, bouwde ons team met Claude Code een systeem dat 872 reports genereerde in 12 weken. De besparing: 1.300 uur handmatig werk. De investering: circa EUR 4.000 aan tooling en EUR 12.000 aan implementatietijd. ROI: 8x in het eerste halfjaar.
-- E-mail automatisering. Bij een Nederlands B2B-softwarebedrijf bouwde ons team eerder een sales agent die 25 gepersonaliseerde e-mails per dag genereert. Open rate steeg van 8% naar 34%. De implementatie kostte 4 weken.
+- Rapportage automatiseren. Bij een Nederlands softwarebedrijf dat handmatig kwartaalrapportages maakte, bouwden we met Claude Code een systeem dat 872 reports genereerde in 12 weken. De besparing: 1.300 uur handmatig werk. De investering: circa EUR 4.000 aan tooling en EUR 12.000 aan implementatietijd. ROI: 8x in het eerste halfjaar.
+- E-mail automatisering. Bij een Nederlands B2B-softwarebedrijf bouwden we eerder een sales agent die 25 gepersonaliseerde e-mails per dag genereert. Open rate steeg van 8% naar 34%. De implementatie kostte 4 weken.
 - Facturatie en administratie. Bedrijven die hun [facturatieproces](/use-cases/facturatie) automatiseren zien gemiddeld 60% minder tijd per factuur.
 
 **Gemiddelde ROI (2x tot 4x binnen 12 maanden):**

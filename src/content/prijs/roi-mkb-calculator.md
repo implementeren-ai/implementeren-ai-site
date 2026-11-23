@@ -52,7 +52,7 @@ We rekenen standaard met het interne uurtarief van de medewerker, niet het exter
 
 ## Claude tijdsbesparing kantoor: Power BI rapportage
 
-Ons team genereerde eerder bij een Nederlands softwarebedrijf 872 rapporten in 12 weken met Claude via de API. Concrete cijfers:
+We genereerden eerder bij een Nederlands softwarebedrijf 872 rapporten in 12 weken met Claude via de API. Concrete cijfers:
 
 - **Voor Claude:** 45 minuten per rapport, handmatig
 - **Na Claude:** 2 minuten per rapport (generatie + review)

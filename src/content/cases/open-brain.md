@@ -17,7 +17,7 @@ voorJou: "Voer jij discussies soms opnieuw omdat niemand meer weet waarom iets i
 
 ## "Weet jij nog waarom we dat zo hadden besloten?"
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. De ondernemer daar neemt dagelijks tientallen beslissingen. Over features, over leveranciers, over de conclusie van een gesprek vorige maand. De antwoorden stonden verspreid over notitieapps, chats en e-mails. En veel zat alleen in hoofden.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. De ondernemer daar neemt dagelijks tientallen beslissingen. Over features, over leveranciers, over de conclusie van een gesprek vorige maand. De antwoorden stonden verspreid over notitieapps, chats en e-mails. En veel zat alleen in hoofden.
 
 Twee maanden later was die context weg. Omdat niemand meer wist waarom een beslissing zo was genomen, werden dezelfde discussies opnieuw gevoerd en dezelfde fouten herhaald.
 

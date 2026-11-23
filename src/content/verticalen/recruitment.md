@@ -170,7 +170,7 @@ Het werk dat overblijft, is Claude laten samenvatten hoe een CV zich verhoudt to
 
 ## Kandidaat-outreach: wat leert een sales-agent?
 
-Een benaderingsbericht aan een kandidaat lijkt op een persoonlijke sales-mail. Ons team bouwde eerder bij een Nederlands softwarebedrijf een [sales-agent die elke ochtend 25 gepersonaliseerde e-mails](/cases/sdr-sales-agent) klaarzet. Dat ging om prospects, niet om kandidaten. Niets gaat de deur uit zonder goedkeuring: het salesteam keurt elke draft goed, past hem aan of wijst hem af met een reden. De schrijfregels groeiden in vier weken van 10 naar 23, op basis van die feedback. De open rate steeg van 8% naar 34%.
+Een benaderingsbericht aan een kandidaat lijkt op een persoonlijke sales-mail. We bouwden eerder bij een Nederlands softwarebedrijf een [sales-agent die elke ochtend 25 gepersonaliseerde e-mails](/cases/sdr-sales-agent) klaarzet. Dat ging om prospects, niet om kandidaten. Niets gaat de deur uit zonder goedkeuring: het salesteam keurt elke draft goed, past hem aan of wijst hem af met een reden. De schrijfregels groeiden in vier weken van 10 naar 23, op basis van die feedback. De open rate steeg van 8% naar 34%.
 
 Voor recruitment betekent dat: Claude schrijft het concept op basis van het profiel en de vacature, de recruiter keurt het goed en verstuurt het vanuit het eigen mailaccount. Werk je met profielen van kandidaten, dan zijn dat persoonsgegevens en gelden dezelfde AVG-regels als bij CV's.
 

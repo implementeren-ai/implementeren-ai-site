@@ -99,7 +99,7 @@ Handmatig zou dat profiel 30 tot 45 minuten kosten per klant: data ophalen uit v
 
 ## Case: powerbi-reporting (872 reports in 12 weken)
 
-Het powerbi-reporting project is het grootste data-analyse project dat ons team met Claude Code heeft uitgevoerd, eerder bij een Nederlands softwarebedrijf. 872 Power BI reports in twee talen (Engels en Nederlands), gegenereerd in 12 weken. Elke DAX-query gevalideerd tegen het werkelijke Power BI semantic model via een MCP server. Geen verzonnen measures, geen gefabriceerde data.
+Het powerbi-reporting project is het grootste data-analyse project dat we met Claude Code hebben uitgevoerd, eerder bij een Nederlands softwarebedrijf. 872 Power BI reports in twee talen (Engels en Nederlands), gegenereerd in 12 weken. Elke DAX-query gevalideerd tegen het werkelijke Power BI semantic model via een MCP server. Geen verzonnen measures, geen gefabriceerde data.
 
 Claude Code draait de DAX-query tegen het semantic model, controleert of de measures bestaan, en genereert het rapport met correcte visualisaties. Een geautomatiseerde structural sweep ving 30 fouten in de eerste 200 reports. Reports die handmatig zijn aangepast krijgen een "frozen" status zodat ze niet worden overschreven door de automatisering.
 

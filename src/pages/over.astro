@@ -28,7 +28,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Over ons', url: '/over
           Implementeren.ai heette tot oktober 2026 ClaudeZakelijk.
         </p>
         <p>
-          Ons team draait zelf dagelijks op Claude: klantrapporten, offertes, content, code, analyses, support. Geen experiment, gewoon hoe we werken.
+          We draaien zelf dagelijks op Claude: klantrapporten, offertes, content, code, analyses, support. Geen experiment, gewoon hoe we werken.
         </p>
         <p>
           We zagen Nederlandse MKB-bedrijven worstelen met generiek AI-advies dat drie tools tegelijk aanprees en nergens concreet werd. Wij werken met één tool, Claude, en leggen die uit in het Nederlands.
@@ -71,9 +71,9 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Over ons', url: '/over
   </section>
 
   <section class="v2-sectie">
-    <h2>Het team</h2>
+    <h2>Wie je spreekt</h2>
     <p class="v2-sectie-intro">
-      Achter Implementeren.ai werkt een team van consultants en engineers dat dagelijks met Claude bouwt. Je vaste aanspreekpunt is Camiel; je werkt direct met het team dat het werk doet, niet met een salesteam.
+      Implementeren.ai is een klein bureau. Camiel is je vaste aanspreekpunt en doet het werk met je team zelf. Er zit geen salesteam tussen.
     </p>
     <article id="camiel" class="v2-persoon mt-8">
       <img
@@ -83,7 +83,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Over ons', url: '/over
       />
       <div>
         <h3 class="v2-over-naam">{camiel.naam}</h3>
-        <p class="v2-over-functie">{camiel.functie}</p>
+        <p class="v2-over-functie">Oprichter van {site.naam} · {camiel.functie}</p>
         <p>{camiel.bio}</p>
         {camiel.linkedin && (
           <a href={camiel.linkedin} target="_blank" rel="noopener" class="v2-knop v2-knop-olijf mt-6">

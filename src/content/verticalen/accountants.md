@@ -93,7 +93,7 @@ Vraag een samenstelpraktijk waar de uren zitten en je krijgt zelden "het oordeel
 
 Het sterkste wat Claude kan: gestructureerde cijfers in, een geformatteerd document uit. Je exporteert de proefbalans of kolommenbalans uit Exact Online, Twinfield of Yuki, geeft je rapportagesjabloon en de grondslagen mee als context, en Claude levert een concept: toelichting, vergelijkende cijfers, signalering van opvallende posten. De accountant leest, corrigeert en beslist. Het context window van de nieuwste Claude-modellen is 1 miljoen tokens. Dat is groot genoeg voor een volledige proefbalans plus de jaarrekening van vorig jaar in een enkele sessie.
 
-Dat dit geen theorie is, weten we uit eigen werk. Bij een Nederlands softwarebedrijf met ruim 50 klanten bouwde ons team eerder met Claude Code een rapportagestraat die [872 Power BI-rapporten in drie maanden](/cases/powerbi-reporting) opleverde, tweetalig, waar een rapport eerst anderhalf uur handwerk kostte. Het team besteedt er nu minder dan een uur per week aan in plaats van twintig. Geen accountantskantoor, maar wel exact hetzelfde probleem: dezelfde cijfers, per klant een eigen rapport, elke periode opnieuw.
+Dat dit geen theorie is, weten we uit eigen werk. Bij een Nederlands softwarebedrijf met ruim 50 klanten bouwden we eerder met Claude Code een rapportagestraat die [872 Power BI-rapporten in drie maanden](/cases/powerbi-reporting) opleverde, tweetalig, waar een rapport eerst anderhalf uur handwerk kostte. Het team besteedt er nu minder dan een uur per week aan in plaats van twintig. Geen accountantskantoor, maar wel exact hetzelfde probleem: dezelfde cijfers, per klant een eigen rapport, elke periode opnieuw.
 
 De belangrijkste les uit dat project geldt voor accountants dubbel: elke gegenereerde rapportage wordt gevalideerd tegen het echte datamodel. Bestaat een cijfer niet in de bron, dan komt het niet in het rapport. Een accountantskantoor kan zich geen verzonnen cijfer veroorloven. Daarom bouwen we die validatie er standaard in.
 
@@ -105,7 +105,7 @@ Zo vallen ontbrekende stukken vroeg op. Dat helpt een tweede en derde vragenrond
 
 ## Cijfers uitleggen in klanttaal
 
-Het derde tijdvreters-cluster is communicatie. De ondernemer die belt over zijn liquiditeit, het adviesgesprek dat voorbereid moet worden, het verslag na afloop. Claude schrijft op basis van de cijfers en je gespreksnotities een concept-mail of bespreekverslag dat de klant begrijpt: geen jargon, wel de juiste nuance. Bij een Nederlands IT-consultancybureau bouwde ons team eerder een [gespreksverwerker](/cases/consultant-brief) die van een uur opname in vijf minuten een gestructureerde brief maakt, waar dat eerst 45 minuten handwerk was. Hetzelfde patroon past op klantgesprekken in de accountancy: opname of aantekeningen erin, gestructureerd verslag met actiepunten eruit, accountant controleert.
+Het derde tijdvreters-cluster is communicatie. De ondernemer die belt over zijn liquiditeit, het adviesgesprek dat voorbereid moet worden, het verslag na afloop. Claude schrijft op basis van de cijfers en je gespreksnotities een concept-mail of bespreekverslag dat de klant begrijpt: geen jargon, wel de juiste nuance. Bij een Nederlands IT-consultancybureau bouwden we eerder een [gespreksverwerker](/cases/consultant-brief) die van een uur opname in vijf minuten een gestructureerde brief maakt, waar dat eerst 45 minuten handwerk was. Hetzelfde patroon past op klantgesprekken in de accountancy: opname of aantekeningen erin, gestructureerd verslag met actiepunten eruit, accountant controleert.
 
 ## Vertrouwelijkheid: wat er van een accountantskantoor naar Claude mag
 
@@ -115,7 +115,7 @@ Het eerste dat we op orde brengen is het abonnement. Op consumentenaccounts (Fre
 
 Daarbovenop leggen we per datasoort vast wat mag. Werkprocessen, sjablonen en geanonimiseerde cijfers: gewoon gebruiken. Herleidbare klantdata: pseudonimiseren, "klant A" rekent net zo goed als de echte naam. BSN's en andere bijzondere persoonsgegevens: die gaan er niet in. Leg dat vast in een kort AI-beleid, neem het gebruik op in het verwerkingsregister, en je hebt een verhaal dat je aan een klant en aan de Autoriteit Persoonsgegevens kunt uitleggen. Hoe je dat aanpakt, staat in [Claude en de AVG: wat regel je als bedrijf?](/compliance).
 
-Kan of mag de data het pand echt niet uit, dan is er nog een route. Bij een Nederlands softwarebedrijf bouwde ons team eerder een [rapportage-engine waarbij de data de eigen server nooit verlaat](/cases/report-engine): 148 tabellen en 1,55 miljoen rijen, lokaal verwerkt, met als bijvangst 1.200 euro per jaar minder licentiekosten. Die keuze werd daar een verkoopargument: twee prospects die eerder afhaakten op de cloud, stapten alsnog in.
+Kan of mag de data het pand echt niet uit, dan is er nog een route. Bij een Nederlands softwarebedrijf bouwden we eerder een [rapportage-engine waarbij de data de eigen server nooit verlaat](/cases/report-engine): 148 tabellen en 1,55 miljoen rijen, lokaal verwerkt, met als bijvangst 1.200 euro per jaar minder licentiekosten. Die keuze werd daar een verkoopargument: twee prospects die eerder afhaakten op de cloud, stapten alsnog in.
 
 ## AI voor accountants: wat het niet is
 

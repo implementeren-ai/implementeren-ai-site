@@ -76,9 +76,9 @@ Strenge regels betekenen niet dat Claude onbruikbaar is in de zorgsector. Er zij
 
 **Gepseudonimiseerde data-analyse.** Als je patientdata volledig pseudonimiseert zodat geen enkele combinatie van gegevens terug te leiden is naar een individu, kun je die data door Claude laten analyseren. Pseudonimisering moet voldoen aan de eisen van de AVG: het moet onomkeerbaar zijn voor degene die de data verwerkt. In de praktijk betekent dit: de sleutel mag niet mee naar Claude.
 
-**Kennisbankopbouw.** Voor de [knowledge base](/cases/knowledge-base) die ons team eerder bij een Nederlandse IT-dienstverlener bouwde, maakten we 13 artikelen met 27 screenshots in 5 dagen. Dat bespaart structureel 6+ uur per week. Diezelfde aanpak werkt voor zorgorganisaties: protocollen, behandelrichtlijnen, FAQ's voor patienten, voorlichtingsmateriaal. Allemaal op basis van publieke medische informatie, niet op basis van patientdossiers.
+**Kennisbankopbouw.** Voor de [knowledge base](/cases/knowledge-base) die we eerder bij een Nederlandse IT-dienstverlener bouwden, maakten we 13 artikelen met 27 screenshots in 5 dagen. Dat bespaart structureel 6+ uur per week. Diezelfde aanpak werkt voor zorgorganisaties: protocollen, behandelrichtlijnen, FAQ's voor patienten, voorlichtingsmateriaal. Allemaal op basis van publieke medische informatie, niet op basis van patientdossiers.
 
-**Rapportage op geaggregeerd niveau.** Bij de [report engine](/cases/report-engine) die ons team eerder bij een Nederlands softwarebedrijf bouwde, verwerken we 281 rapporttypes met 1,55 miljoen rijen. Alle data blijft op de server. De Claude-integratie werkt alleen met geaggregeerde, niet-herleidbare cijfers. Die architectuur is direct toepasbaar in de zorg: rapportages over bezettingsgraden, wachtlijsten (geaggregeerd), financiële overzichten (zonder patientdata).
+**Rapportage op geaggregeerd niveau.** Bij de [report engine](/cases/report-engine) die we eerder bij een Nederlands softwarebedrijf bouwden, verwerken we 281 rapporttypes met 1,55 miljoen rijen. Alle data blijft op de server. De Claude-integratie werkt alleen met geaggregeerde, niet-herleidbare cijfers. Die architectuur is direct toepasbaar in de zorg: rapportages over bezettingsgraden, wachtlijsten (geaggregeerd), financiële overzichten (zonder patientdata).
 
 ## NEN 7510 en AI: de aanvullende eisen
 

@@ -143,7 +143,7 @@ Een bruikbaar overzicht bevat per activiteit:
 
 Bewaar dit op een vaste plek, bijvoorbeeld in je HR-systeem of een gedeelde map. Gaat het om AI-gebruik met persoonsgegevens met een hoog risico, dan heb je onder de AVG mogelijk ook een DPIA nodig. Het [DPIA-stappenplan](/compliance/dpia-stappenplan) helpt je bepalen of dat zo is.
 
-Een gepubliceerde case over een AI-geletterdheidstraject hebben we nog niet. Over vastleggen wel. Bij een Nederlands softwarebedrijf bouwde ons team een [output-archief](/cases/output-archive) waarin elke AI-sessie eindigt met een document. Na vier maanden stonden er 122 documenten in. Archiveren kostte geen extra werk, omdat het onderdeel van het werk zelf was. Dezelfde gedachte werkt voor je trainingsoverzicht: noteer het direct na elke sessie, dan hoef je het later niet terug te zoeken.
+Een gepubliceerde case over een AI-geletterdheidstraject hebben we nog niet. Over vastleggen wel. Bij een Nederlands softwarebedrijf bouwden we een [output-archief](/cases/output-archive) waarin elke AI-sessie eindigt met een document. Na vier maanden stonden er 122 documenten in. Archiveren kostte geen extra werk, omdat het onderdeel van het werk zelf was. Dezelfde gedachte werkt voor je trainingsoverzicht: noteer het direct na elke sessie, dan hoef je het later niet terug te zoeken.
 
 ## Hoe ziet de handhaving van AI-geletterdheid er nu uit?
 

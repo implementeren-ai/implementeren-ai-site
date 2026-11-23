@@ -196,7 +196,7 @@ Voor de meeste advieskantoren is Claude Team het startpunt. Het verschil tussen 
 
 Op deze site staat nog geen case van een hypotheek- of verzekeringsadviseur. Wel twee projecten met een patroon dat je in een advieskantoor terugziet.
 
-Bij een Nederlands IT-consultancybureau bouwde ons team een [gespreksverwerker](/cases/consultant-brief). Een opgenomen klantgesprek van een uur wordt daar een gestructureerde brief met vervolgacties. Het uitwerken ging van 45 minuten naar 5 minuten per gesprek. Een adviesgesprek dat een gespreksverslag moet worden, is hetzelfde soort werk.
+Bij een Nederlands IT-consultancybureau bouwden we een [gespreksverwerker](/cases/consultant-brief). Een opgenomen klantgesprek van een uur wordt daar een gestructureerde brief met vervolgacties. Het uitwerken ging van 45 minuten naar 5 minuten per gesprek. Een adviesgesprek dat een gespreksverslag moet worden, is hetzelfde soort werk.
 
 Bij een IT-dienstverlener schreven we in vijf werkdagen 13 kennisbankartikelen met 27 screenshots ([kennisbank-case](/cases/knowledge-base)). Het supportteam bespaart daarmee ruim zes uur per week aan herhaalde vragen. Een advieskantoor krijgt ook steeds dezelfde vragen, bijvoorbeeld over de stappen na een getekende offerte of wat te doen bij schade.
 
