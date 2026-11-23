@@ -120,7 +120,7 @@ Je herkent de zakelijke versie aan het label "Work" onder je profiel, een groen 
 
 Werk je met persoonsgegevens, doe dan vooraf een risicobeoordeling. Het [DPIA-stappenplan](/compliance/dpia-stappenplan) helpt daarbij.
 
-## Wat Copilot Chat niet doet en de betaalde licentie wel
+## Wat de betaalde licentie toevoegt
 
 Copilot Chat zoekt niet zelf in al je bedrijfsgegevens. Volgens Microsoft Learn heeft de gratis versie geen toegang tot Microsoft Graph, de laag die je mail, agenda, vergaderingen, chats en bestanden ontsluit.
 
@@ -135,13 +135,13 @@ Copilot Chat zoekt niet zelf in al je bedrijfsgegevens. Volgens Microsoft Learn 
 
 In de praktijk: in Outlook vat Copilot Chat je mails van vorige week over een klant samen. Wat er in Teams of SharePoint over die klant staat, weet het niet. De betaalde licentie combineert mail, chats en documenten zelf. Voor beheerders komen er met de licentie ook hulpmiddelen bij om overdelen in SharePoint aan te pakken.
 
-## Agents in Copilot Chat: gratis tot ze bij je bedrijfsdata komen
+## Agents: gratis tot ze bij je bedrijfsdata komen
 
 Agents zijn afgebakende assistenten voor één taak. Volgens Microsoft Learn zijn agents die alleen met instructies of openbare websites werken inbegrepen bij Copilot Chat. Agents die bij gedeelde bedrijfsgegevens komen, zoals SharePoint of Copilot-connectors, worden afgerekend in Copilot Credits via Copilot Studio.
 
 Die betaling per gebruik staat standaard uit. Om het aan te zetten maakt een beheerder in het Microsoft 365-beheercentrum een factureringsbeleid aan, gekoppeld aan een Azure-abonnement, en verbindt dat met Copilot Chat. Je kunt een budget instellen met e-mailmeldingen bij bepaalde percentages, en de kosten volgen op de pagina Cost Management. Een tarief per credit staat niet op de pagina's die we bekeken.
 
-## Copilot Chat instellen: vastmaken, beperken of uitzetten
+## Instellen: vastmaken, beperken of uitzetten
 
 Alle instellingen staan in het Microsoft 365-beheercentrum onder **Copilot** en dan **Settings**. Microsoft Learn is alleen in het Engels beschikbaar, dus de namen van instellingen hieronder zijn de Engelse.
 
