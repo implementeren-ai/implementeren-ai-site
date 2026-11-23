@@ -40,10 +40,10 @@ kortAntwoord: 'Microsoft Copilot zakelijk bestaat uit twee lagen. Copilot Chat z
 bronnen:
   - titel: 'Microsoft, Microsoft Copilot voor kleine bedrijven (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/business?market=nl
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'Microsoft, Microsoft Copilot voor ondernemingen (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/enterprise?market=nl
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'Microsoft Learn, License options for Microsoft Copilot'
     url: https://learn.microsoft.com/en-us/copilot/plan/copilot-license-options
     geraadpleegd: 5 november 2026

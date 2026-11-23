@@ -1,7 +1,7 @@
 ---
 title: 'Copilot vs ChatGPT: welke past bij jouw MKB-bedrijf?'
 titleTag: 'Copilot vs ChatGPT zakelijk: prijs, AVG en keuzehulp'
-metaDescription: 'Microsoft 365 Copilot of ChatGPT Business? Prijzen voor Nederland, wat elk goed doet, AVG en beheer, en wanneer je welke kiest. Stand 23 nov 2026.'
+metaDescription: 'Microsoft 365 Copilot of ChatGPT Business? Prijzen voor Nederland, wat elk goed doet, AVG en beheer, en wanneer je welke kiest.'
 h1: 'Copilot vs ChatGPT: wanneer kies je welke?'
 targetKeywords:
   - copilot vs chatgpt
@@ -39,7 +39,7 @@ kortAntwoord: 'Kies Microsoft 365 Copilot als je team de hele dag in Outlook, Wo
 bronnen:
   - titel: 'Microsoft, Microsoft Copilot voor kleine bedrijven (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/business?market=nl
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'Microsoft Learn, License options for Microsoft Copilot'
     url: https://learn.microsoft.com/en-us/copilot/plan/copilot-license-options
     geraadpleegd: 5 november 2026
@@ -57,10 +57,10 @@ bronnen:
     geraadpleegd: 5 november 2026
   - titel: 'OpenAI Help Center, ChatGPT Business overview'
     url: https://help.openai.com/en/articles/8792828-chatgpt-business-overview
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'OpenAI Help Center, Facturering in meerdere valuta'
     url: https://help.openai.com/nl-nl/articles/10421635-multicurrency-billing
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'OpenAI, Enterprise privacy at OpenAI (bijgewerkt 8 januari 2026)'
     url: https://openai.com/enterprise-privacy/
     geraadpleegd: 5 november 2026
@@ -101,11 +101,11 @@ Het korte antwoord: ze doen verschillend werk. Microsoft 365 Copilot werkt in de
 
 Microsoft toont op de Nederlandse pagina prijzen in euro. Tot en met 31 december 2026 betalen bestaande Microsoft 365-klanten met een jaarcontract het eerste jaar €15,60. Die actie geldt niet voor proefabonnementen. Voor sommige geavanceerde functies en agents rekent Microsoft daarnaast per gebruik, bovenop de licentie.
 
-OpenAI noemt de Business-prijs in dollars. Volgens het Helpcentrum hanteert OpenAI lokale prijzen en rekent het in de EER af in euro. Het precieze eurobedrag zie je bij het afrekenen. Over het minimum is OpenAI niet eenduidig: het Helpcentrum noemt 1 plek om een Business-werkruimte te starten, de prijspagina nog 2 gebruikers. Wij rekenen het niet zelf om. Naast Standard is er een Premium-plek met hogere gebruikslimieten voor 100 dollar per maand bij jaarbetaling. ChatGPT Enterprise heeft geen online prijs; daarvoor ga je naar sales.
+OpenAI noemt de Business-prijs in dollars. Volgens het Helpcentrum hanteert OpenAI lokale prijzen en rekent het in de EER af in euro. Het precieze eurobedrag zie je bij het afrekenen. Wij rekenen het niet zelf om. Over het minimum is OpenAI niet eenduidig: het Helpcentrum noemt 1 plek om een Business-werkruimte te starten, de prijspagina nog 2 gebruikers. Naast Standard is er een Premium-plek met hogere gebruikslimieten voor 100 dollar per maand bij jaarbetaling. ChatGPT Enterprise heeft geen online prijs; daarvoor ga je naar sales.
 
 Belangrijk voor de vergelijking: Copilot Chat zit zonder extra kosten in geschikte Microsoft 365-abonnementen. Je betaalt de Copilot-licentie dus pas als je Copilot in de apps en op je werkgegevens wilt.
 
-Proberen kan bij Microsoft een maand. Je hebt daarvoor een creditcard nodig en na die maand gaat het proefabonnement automatisch over in een betaald abonnement. Zet dus een herinnering als je alleen wilt testen. Let ook op de ondergrens bij OpenAI: een Business-werkruimte vraagt minimaal twee plekken. Een zzp'er in zijn eentje komt bij de individuele plannen uit, terwijl OpenAI zijn verwerkersovereenkomst alleen noemt voor Business, Enterprise en de API.
+Proberen kan bij Microsoft een maand. Je hebt daarvoor een creditcard nodig en na die maand gaat het proefabonnement automatisch over in een betaald abonnement. Zet dus een herinnering als je alleen wilt testen. Let ook op de ondergrens bij OpenAI: volgens de prijspagina is Business er vanaf 2 gebruikers, volgens het Helpcentrum kun je met 1 plek beginnen. Ben je zzp'er, controleer dat dan bij het afrekenen, want OpenAI noemt zijn verwerkersovereenkomst alleen voor Business, Enterprise en de API.
 
 ## Wat Microsoft 365 Copilot goed doet
 

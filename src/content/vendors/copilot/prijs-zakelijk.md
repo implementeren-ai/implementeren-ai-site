@@ -41,10 +41,10 @@ bronnen:
     geraadpleegd: 5 november 2026
   - titel: 'Microsoft, Microsoft Copilot voor kleine bedrijven (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/business?market=nl
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'Microsoft, Microsoft Copilot voor ondernemingen (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/enterprise?market=nl
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'Microsoft, Microsoft 365 prijzen voor bedrijven: plannen en functies'
     url: https://www.microsoft.com/nl-nl/microsoft-365/business/microsoft-365-plans-and-pricing?market=nl
     geraadpleegd: 5 november 2026
