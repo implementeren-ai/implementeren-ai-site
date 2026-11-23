@@ -29,18 +29,18 @@ author: camiel
 competitors: []
 status: published
 publishDate: 2026-10-02
-updatedDate: 2026-11-10
+updatedDate: 2026-11-23
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-29
-kortAntwoord: "Claude Pro (20 dollar per maand) volstaat voor wie alleen werkt. Claude Team (25 dollar per gebruiker per maand, minimaal 2 seats) is de keuze zodra er klantdata in Claude gaat of collega's meedoen. Je krijgt Projects, SSO, centraal beheer en standaard geen training op je data. Enterprise (minimaal 20 seats) past bij grote of gereguleerde organisaties. Stand: 22 oktober 2026."
+kortAntwoord: "Claude Pro (20 dollar per maand) volstaat voor wie alleen werkt. Claude Team (25 dollar per gebruiker per maand, minimaal 2 seats) is de keuze zodra er klantdata in Claude gaat of collega's meedoen. Je krijgt Projects, SSO, centraal beheer en standaard geen training op je data. Enterprise (minimaal 20 seats) past bij grote of gereguleerde organisaties. Stand: 23 november 2026."
 bronnen:
   - titel: "Anthropic supportartikel: API credits for Max and Team plans"
     url: "https://support.claude.com/en/articles/17154008-api-credits-for-max-and-team-plans"
     geraadpleegd: "10 november 2026"
   - titel: "Anthropic prijspagina (claude.com/pricing)"
     url: "https://claude.com/pricing"
-    geraadpleegd: "10 november 2026"
+    geraadpleegd: "23 november 2026"
   - titel: "Anthropic supportartikel: What is the Team plan?"
     url: "https://support.claude.com/en/articles/9266767-what-is-the-team-plan"
     geraadpleegd: "2 oktober 2026"
@@ -83,7 +83,7 @@ faq:
 ---
 
 <!--
-  Bronnen voor "claude pro of team" (prijzen en plan-features opnieuw gecheckt op 22 oktober 2026):
+  Bronnen voor "claude pro of team" (prijzen en plan-features opnieuw gecheckt op 22 oktober 2026; prijzen nogmaals gecheckt op claude.com/pricing op 23 november 2026, ongewijzigd):
   - https://claude.com/pricing: Pro $20/mnd ($17/mnd bij jaarbetaling); Team "For teams
     of 2 to 150", standaard seat $25/mnd ($20 bij jaarbetaling), incl. Claude Code, SSO,
     central billing and administration, "No model training on your content by default";
@@ -120,7 +120,7 @@ faq:
   (bij de gebruiksruimte-sectie)
 -->
 
-Claude Pro of Team: zodra Claude ergens in een bedrijf is aangeslagen, komt deze vraag vanzelf. De eerste gebruiker zit op Pro, collega's willen erbij, en iemand moet beslissen of dat losse abonnementen worden of één Team-organisatie. Die keuze gaat maar beperkt over geld. Het echte verschil zit in wat er met je data gebeurt, wie er meekijkt op het gebruik, en of kennis gedeeld wordt of in persoonlijke accounts blijft hangen. Prijzen gecheckt op 22 oktober 2026 op claude.com/pricing.
+Claude Pro of Team: zodra Claude ergens in een bedrijf is aangeslagen, komt deze vraag vanzelf. De eerste gebruiker zit op Pro, collega's willen erbij, en iemand moet beslissen of dat losse abonnementen worden of één Team-organisatie. Die keuze gaat maar beperkt over geld. Het echte verschil zit in wat er met je data gebeurt, wie er meekijkt op het gebruik, en of kennis gedeeld wordt of in persoonlijke accounts blijft hangen. Prijzen gecheckt op 23 november 2026 op claude.com/pricing.
 
 ## Claude Pro vs Team vs Enterprise: de verschillen in één tabel
 
