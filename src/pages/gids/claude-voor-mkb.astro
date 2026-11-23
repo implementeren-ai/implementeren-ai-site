@@ -9,10 +9,11 @@ import AuthorBio from '../../components/AuthorBio.astro';
 import CtaStrook from '../../components/CtaStrook.astro';
 import ArtikelInhoud from '../../components/ArtikelInhoud.astro';
 import { faqNode } from '../../lib/schema';
-import { claudeHub, isIndexeerbaarPad } from '../../data/indexering.mjs';
+import { claudeHub, claudeHubLinkAan, isIndexeerbaarPad } from '../../data/indexering.mjs';
 
-// "Claude zakelijk" wijst naar de Claude-hub zodra die indexeerbaar is (vendor-go-live), tot dan naar de homepage.
-const zakelijkPad = isIndexeerbaarPad(claudeHub) ? claudeHub : '/';
+// "Claude zakelijk" wijst naar de Claude-hub zodra die open is en zijn links aan staan (livegang.claudeHub en
+// livegang.claudeHubLinks, src/data/livegang.mjs), tot dan naar de homepage.
+const zakelijkPad = claudeHubLinkAan && isIndexeerbaarPad(claudeHub) ? claudeHub : '/';
 
 const titel = 'Zakelijk Claude-account en abonnement voor het mkb';
 const titleTag = 'Zakelijk Claude-account en abonnement: Team of Enterprise';

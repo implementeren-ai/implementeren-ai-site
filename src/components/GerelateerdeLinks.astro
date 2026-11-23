@@ -2,7 +2,8 @@
 import { getCollection } from 'astro:content';
 import { isIndexeerbaarPad } from '../data/indexering.mjs';
 import { paginaLabels, omgeleid } from '../data/paginalabels';
-import { isPublished } from '../lib/content';
+import { isPublished, isVendorGebouwd } from '../lib/content';
+import { vendorPad } from '../data/vendors.mjs';
 
 interface Props {
   links: string[];
@@ -33,10 +34,11 @@ for (const [collectie, route] of Object.entries(routes)) {
   }
 }
 for (const c of await getCollection('cases')) labels.set(`/cases/${c.id}`, c.data.title);
-// Vendors: genest id (chatgpt/prijs -> /chatgpt/prijs); de landing (index.md) heeft
-// id '<vendor>' omdat de glob-loader het /index-slot stript, dus '/' + id klopt altijd.
+// Vendors: genest id (chatgpt/prijs -> /chatgpt/prijs, de landing '<vendor>' -> /<vendor>);
+// vendorPad zet ook een verhuisde vergelijking op /vergelijken/<vendor>-vs-chatgpt. Alleen
+// gebouwde pagina's (live, niet geschrapt, schakelaar aan: src/data/livegang.mjs).
 for (const e of await getCollection('vendors')) {
-  if (isPublished(e) && !omgeleid[`/${e.id}`]) labels.set(`/${e.id}`, zonderSuffix(e.data.titleTag));
+  if (isVendorGebouwd(e) && !omgeleid[vendorPad(e.id)]) labels.set(vendorPad(e.id), zonderSuffix(e.data.titleTag));
 }
 
 const items = [...new Set(links.map((l) => l.replace(/\/$/, '') || '/'))]

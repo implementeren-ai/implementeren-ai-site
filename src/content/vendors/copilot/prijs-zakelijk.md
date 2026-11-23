@@ -1,7 +1,7 @@
 ---
 title: 'Copilot prijs zakelijk: wat Microsoft 365 Copilot kost in 2026'
 titleTag: 'Copilot kosten zakelijk: Microsoft 365 Copilot prijs 2026'
-metaDescription: 'Copilot kosten zakelijk: Microsoft 365 Copilot Bedrijven €18,20 per gebruiker per maand bij jaarbetaling, excl. btw, tot 300 gebruikers. Stand 5 nov 2026.'
+metaDescription: 'Copilot kosten zakelijk: Microsoft 365 Copilot Bedrijven €18,20 per gebruiker per maand bij jaarbetaling, excl. btw, tot 300 gebruikers.'
 h1: 'Copilot prijs zakelijk: wat Microsoft 365 Copilot kost'
 targetKeywords:
   - copilot kosten
@@ -34,17 +34,17 @@ vendor: copilot
 soort: prijs
 claudeSibling: /prijs
 disclaimer: fiscaal
-kortAntwoord: 'Microsoft 365 Copilot Bedrijven kost €18,20 per gebruiker per maand bij een jaarabonnement en €21,84 met een maandabonnement, exclusief btw. Je hebt er een Microsoft 365 Business-abonnement voor nodig en het werkt tot 300 gebruikers. Tot en met 31 december 2026 betalen bestaande klanten het eerste jaar €15,60. Grotere organisaties betalen €26,00 voor Microsoft 365 Copilot. Copilot Chat zit zonder extra kosten in je Microsoft 365-abonnement. Stand 5 november 2026.'
+kortAntwoord: 'Microsoft 365 Copilot Bedrijven kost €18,20 per gebruiker per maand bij een jaarabonnement en €21,84 met een maandabonnement, exclusief btw. Je hebt er een Microsoft 365 Business-abonnement voor nodig en het werkt tot 300 gebruikers. Tot en met 31 december 2026 betalen bestaande klanten het eerste jaar €15,60. Grotere organisaties betalen €26,00 voor Microsoft 365 Copilot. Copilot Chat zit zonder extra kosten in je Microsoft 365-abonnement. Stand 23 november 2026.'
 bronnen:
   - titel: 'Microsoft Ondersteuning, Hoe Copilot Chat werkt met en zonder een Microsoft Copilot-licentie'
     url: https://support.microsoft.com/nl-nl/microsoft-365-copilot/how-copilot-chat-works-with-and-without-a-microsoft-365-copilot-license
     geraadpleegd: 5 november 2026
   - titel: 'Microsoft, Microsoft Copilot voor kleine bedrijven (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/business?market=nl
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'Microsoft, Microsoft Copilot voor ondernemingen (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/enterprise?market=nl
-    geraadpleegd: 5 november 2026
+    geraadpleegd: 23 november 2026
   - titel: 'Microsoft, Microsoft 365 prijzen voor bedrijven: plannen en functies'
     url: https://www.microsoft.com/nl-nl/microsoft-365/business/microsoft-365-plans-and-pricing?market=nl
     geraadpleegd: 5 november 2026
@@ -77,7 +77,7 @@ faq:
 
 Wat kost Copilot zakelijk? Bij Microsoft hangt het antwoord af van wat je al hebt. Copilot Chat krijg je gratis bij je Microsoft 365-account. Wil je Copilot in Word, Excel, Outlook en Teams, dan betaal je een licentie per gebruiker bovenop je Microsoft 365-abonnement. En voor sommige geavanceerde functies en agents komt er een rekening op basis van gebruik bij.
 
-Hieronder staan de bedragen in euro, de voorwaarden en een paar rekenvoorbeelden. Alles komt van de Nederlandse pagina's van Microsoft en van Microsoft Learn, bekeken op 5 november 2026. Microsoft past prijzen en acties regelmatig aan, dus kijk vlak voor je bestelling nog even op de actuele pagina.
+Hieronder staan de bedragen in euro, de voorwaarden en een paar rekenvoorbeelden. Alles komt van de Nederlandse pagina's van Microsoft en van Microsoft Learn, bekeken op 5 november 2026. De prijzen zijn op 23 november 2026 opnieuw gecontroleerd en ongewijzigd. Microsoft past prijzen en acties regelmatig aan, dus kijk vlak voor je bestelling nog even op de actuele pagina.
 
 ## Microsoft 365 Copilot prijs per gebruiker
 

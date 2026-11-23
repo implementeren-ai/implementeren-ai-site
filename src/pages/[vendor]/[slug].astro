@@ -1,13 +1,17 @@
 ---
 import { render } from 'astro:content';
 import VendorLayout from '../../layouts/VendorLayout.astro';
-import { getPublished } from '../../lib/content';
+import { getVendorPaginas } from '../../lib/content';
+import { vendorPad } from '../../data/vendors.mjs';
 
 export async function getStaticPaths() {
-  // Elke live vendor-entry behalve de landing: chatgpt/prijs.md -> /chatgpt/prijs.
+  // Elke gebouwde vendor-entry behalve de landing: chatgpt/prijs.md -> /chatgpt/prijs.
+  // Gebouwd = live, niet geschrapt en de schakelaar aan (src/data/livegang.mjs).
   // De glob-loader strips een /index-slot van het id, dus index.md heeft id '<vendor>'
   // en wordt op /<vendor> gerenderd (./index.astro); alles mét een '/' hoort hier.
-  const pages = (await getPublished('vendors')).filter((e) => e.id.includes('/'));
+  // Verhuisde vergelijkingen (vendorVergelijkingen in src/data/vendors.mjs) renderen op
+  // /vergelijken/<vendor>-vs-chatgpt (src/pages/vergelijken/[slug].astro), nooit hier.
+  const pages = (await getVendorPaginas()).filter((e) => e.id.includes('/') && vendorPad(e.id) === `/${e.id}`);
   return pages.map((page) => {
     const delen = page.id.split('/');
     if (delen.length !== 2 || delen[0] !== page.data.vendor) {
@@ -23,6 +27,6 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
 ---
-<VendorLayout entry={entry} pagePath={`/${entry.id}`} koppen={headings}>
+<VendorLayout entry={entry} pagePath={vendorPad(entry.id)} koppen={headings}>
   <Content />
 </VendorLayout>

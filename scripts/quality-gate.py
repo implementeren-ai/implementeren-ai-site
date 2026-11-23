@@ -17,7 +17,10 @@ import sys
 import re
 import yaml
 import argparse
+import functools
+import json
 import os
+import subprocess
 from datetime import date, datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -381,19 +384,48 @@ def build_valid_routes(peildatum: str) -> set[str]:
                     continue
             routes.add(pattern.format(id=slug))
 
-    # 3. Vendors (genest): vendors/<vendor>/<slug>.md -> /<vendor>/<slug>, index.md -> /<vendor>.
+    # 3. Vendors (genest): vendors/<vendor>/<slug>.md -> /<vendor>/<slug>, index.md -> /<vendor>,
+    #    een verhuisde vergelijking -> /vergelijken/<vendor>-vs-chatgpt. Alleen wat de build
+    #    bouwt: niet geschrapt, live en de schakelaar aan (src/data/livegang.mjs, productie).
     vendors_dir = CONTENT_DIR / 'vendors'
     if vendors_dir.is_dir():
+        regels = vendor_regels()
         for md_file in vendors_dir.rglob('*.md'):
             if md_file.stem.startswith('_'):
+                continue
+            sleutel = md_file.relative_to(vendors_dir).with_suffix('').as_posix()
+            if sleutel in regels['geschrapt']:
                 continue
             fm, _ = load_markdown(str(md_file))
             if not is_live(fm, peildatum):
                 continue
-            rel = md_file.relative_to(vendors_dir).with_suffix('').as_posix()
-            routes.add(f"/{rel.rsplit('/', 1)[0]}" if rel.endswith('/index') else f'/{rel}')
+            vendor, slug = sleutel.split('/', 1)
+            schakelaar = regels['livegang'].get(vendor) or {}
+            if not schakelaar.get('aan'):
+                continue
+            if schakelaar.get('paginas') is not None and slug not in schakelaar['paginas']:
+                continue
+            if sleutel in regels['vergelijkingen']:
+                routes.add(regels['vergelijkingen'][sleutel]['pad'])
+            else:
+                routes.add(f'/{vendor}' if slug == 'index' else f'/{sleutel}')
 
     return routes
+
+
+@functools.cache
+def vendor_regels() -> dict:
+    """Schraplijst, verhuisde vergelijkingen en schakelaars uit src/data/vendors.mjs en
+    src/data/livegang.mjs. Via node, zodat er één bron is en deze gate niet uit de pas loopt."""
+    code = (
+        "const v = await import('./src/data/vendors.mjs');"
+        "const l = await import('./src/data/livegang.mjs');"
+        "console.log(JSON.stringify({ geschrapt: Object.keys(v.geschrapt),"
+        " vergelijkingen: v.vendorVergelijkingen, livegang: l.livegang }));"
+    )
+    uit = subprocess.run(['node', '--input-type=module', '-e', code], cwd=ROOT,
+                         capture_output=True, text=True, check=True)
+    return json.loads(uit.stdout)
 
 
 def extract_internal_links(fm: dict, body: str) -> list[str]:

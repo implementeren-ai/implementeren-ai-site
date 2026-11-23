@@ -3,6 +3,7 @@
 // Regel: niets in de markup dat de pagina niet zichtbaar toont (datum, auteur,
 // broodkruimel, prijs, persoon). Gecontroleerd door scripts/schema-check.mjs.
 import { site, auteurs, entiteit, onderwerpen } from '../site';
+import { vendorMakers, vendorNamen } from '../data/vendors.mjs';
 
 export type AuteurKey = keyof typeof auteurs;
 export type Crumb = { name: string; url: string };
@@ -21,6 +22,12 @@ export type SchemaInvoer = {
   hoofdonderwerp?: string;
   /** false = geen about: Claude op de WebPage (bv. contact). */
   overClaude?: boolean;
+  /**
+   * @id's van het onderwerp (about) van de pagina, in plaats van de standaard Claude.
+   * Geldt voor de WebPage én de Article-node. Een @id onder site.url moet ook als node in de
+   * graaf staan (via nodes), bv. vendorOnderwerpNode('copilot'). Wint van overClaude.
+   */
+  over?: string[];
 };
 
 export type ArtikelInvoer = {
@@ -167,6 +174,18 @@ export function websiteNode(): Node {
   };
 }
 
+/** @id van het product van een vendorpagina (ChatGPT, Gemini, Microsoft Copilot). */
+export const vendorOnderwerpId = (vendor: keyof typeof vendorNamen) => `${site.url}/#${vendor}`;
+
+/**
+ * Het product van een vendorpagina als about-onderwerp. Een Thing, net als Claude: een
+ * SoftwareApplication zou Google laten zoeken naar offers en ratings die de pagina niet toont.
+ * Geen sameAs: alleen invullen met een via de Wikidata-API gecontroleerde QID (zoals bij Claude).
+ */
+export function vendorOnderwerpNode(vendor: keyof typeof vendorNamen): Node {
+  return { '@type': 'Thing', '@id': vendorOnderwerpId(vendor), name: vendorNamen[vendor], description: `AI-assistent van ${vendorMakers[vendor]}` };
+}
+
 export function onderwerpNodes(): Node[] {
   return [
     { '@type': 'Thing', '@id': ID.claude, name: onderwerpen.claude.naam, description: onderwerpen.claude.beschrijving, sameAs: [...onderwerpen.claude.sameAs] },
@@ -220,7 +239,7 @@ export function breadcrumbNode(pad: string, crumbs: Crumb[]): Node {
   };
 }
 
-export function artikelNode(pad: string, a: ArtikelInvoer, beschrijving: string): Node {
+export function artikelNode(pad: string, a: ArtikelInvoer, beschrijving: string, over?: string[]): Node {
   const url = canonicalUrl(pad);
   return {
     '@type': 'Article',
@@ -237,8 +256,13 @@ export function artikelNode(pad: string, a: ArtikelInvoer, beschrijving: string)
     publisher: ref(ID.organisatie),
     image: artikelAfbeeldingen(pad),
     articleSection: a.sectie,
-    about: ref(ID.claude),
+    about: over ? aboutWaarde(over) : ref(ID.claude),
   };
+}
+
+/** Eén onderwerp als ref, meer als lijst van refs. */
+function aboutWaarde(over: string[]): Node | Node[] {
+  return over.length === 1 ? ref(over[0]) : over.map(ref);
 }
 
 export function faqNode(pad: string, items: Array<{ question: string; answer: string }>): Node {
@@ -407,7 +431,7 @@ export function bouwGraph(o: { pad: string; naam: string; beschrijving: string; 
     inLanguage: site.taal,
     isPartOf: ref(ID.website),
     publisher: ref(ID.organisatie),
-    ...(s.overClaude !== false && { about: ref(ID.claude) }),
+    ...(s.over ? { about: aboutWaarde(s.over) } : s.overClaude !== false && { about: ref(ID.claude) }),
     ...(heeftKruimel && { breadcrumb: ref(`${url}#broodkruimel`) }),
     ...(hoofd && { mainEntity: ref(hoofd) }),
     ...(o.artikel && {
@@ -423,7 +447,7 @@ export function bouwGraph(o: { pad: string; naam: string; beschrijving: string; 
       ...onderwerpNodes(),
       pagina,
       ...(heeftKruimel ? [breadcrumbNode(o.pad, s.breadcrumbs!)] : []),
-      ...(o.artikel ? [artikelNode(o.pad, o.artikel, o.beschrijving)] : []),
+      ...(o.artikel ? [artikelNode(o.pad, o.artikel, o.beschrijving, s.over)] : []),
       ...(s.nodes ?? []),
       ...[...personen].map(persoonNode),
     ],

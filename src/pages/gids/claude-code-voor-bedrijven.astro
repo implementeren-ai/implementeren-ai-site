@@ -10,7 +10,7 @@ import CtaStrook from '../../components/CtaStrook.astro';
 import ArtikelInhoud from '../../components/ArtikelInhoud.astro';
 import GerelateerdeLinks from '../../components/GerelateerdeLinks.astro';
 import { faqNode } from '../../lib/schema';
-import { claudeHub } from '../../data/indexering.mjs';
+import { claudeHubGerelateerd } from '../../data/indexering.mjs';
 
 const breadcrumbs = [
   { name: 'Home', url: '/' },
@@ -302,6 +302,6 @@ const koppen = [
   </article>
   <div class="v2-artikel-na">
     <CtaStrook />
-    <GerelateerdeLinks links={[claudeHub]} />
+    <GerelateerdeLinks links={claudeHubGerelateerd} />
   </div>
 </BasisLayout>

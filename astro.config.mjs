@@ -8,6 +8,7 @@ import sitemap from '@astrojs/sitemap';
 // die BasisLayout gebruikt en de edge-header uit functions/_middleware.js. Bewust één
 // bron: sitemap, robots-metatag en header mogen niet uit elkaar lopen.
 import { inSitemap, collectieRoutes, isIndexeerbaarPad } from './src/data/indexering.mjs';
+import { vendorPad } from './src/data/vendors.mjs';
 import rehypeTabelCaption from './src/lib/rehype-tabel-caption.mjs';
 import remarkFiguren from './src/lib/remark-figuren.mjs';
 
@@ -49,7 +50,8 @@ function leesLastmod() {
         const datum = veld(tekst, 'updatedDate') ?? veld(tekst, 'publishDate');
         if (!datum) continue;
         const slug = bestand.replace(/\.md$/, '');
-        datums.set(slug === 'index' ? `/${vendor.name}` : `/${vendor.name}/${slug}`, new Date(datum).toISOString());
+        // vendorPad: index -> /<vendor>, een verhuisde vergelijking -> /vergelijken/<vendor>-vs-chatgpt.
+        datums.set(vendorPad(`${vendor.name}/${slug}`), new Date(datum).toISOString());
       }
     }
   }

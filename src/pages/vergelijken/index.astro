@@ -2,7 +2,9 @@
 import { itemListNode, lijstId, faqNode } from '../../lib/schema';
 import BasisLayout from '../../layouts/BasisLayout.astro';
 import Container from '../../components/Container.astro';
-import { getPublished } from '../../lib/content';
+import { getPublished, getVendorPaginas } from '../../lib/content';
+import { vendorPad } from '../../data/vendors.mjs';
+import { livegang } from '../../data/livegang.mjs';
 import Broodkruimel from '../../components/Broodkruimel.astro';
 import FaqSectie from '../../components/FaqSectie.astro';
 
@@ -10,6 +12,14 @@ import FaqSectie from '../../components/FaqSectie.astro';
 // gepubliceerde vergelijkingen in src/content/vergelijkingen.
 const artikelen = (await getPublished('vergelijkingen'))
   .sort((a, b) => b.data.priority - a.data.priority || a.data.title.localeCompare(b.data.title));
+
+// Vergelijkingen tussen twee andere tools (Copilot vs ChatGPT, Gemini vs ChatGPT). Staan alleen
+// hier als de schakelaar van hun vendor aan staat (src/data/livegang.mjs): alles uit = leeg en
+// deze hub is gelijk aan die van voor de schakelaars.
+const anderen = (await getVendorPaginas())
+  .filter((e) => vendorPad(e.id).startsWith('/vergelijken/'))
+  .map((e) => ({ pad: vendorPad(e.id), titel: e.data.title, beschrijving: e.data.metaDescription }))
+  .sort((a, b) => a.titel.localeCompare(b.titel));
 
 const samenvatting = [
   { pad: '/vergelijken/claude-vs-chatgpt', naam: 'Claude vs ChatGPT', claude: 'je veel lange documenten, schrijfwerk of code hebt', ander: 'je beeldgeneratie en spraak nodig hebt' },
@@ -37,7 +47,7 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Vergelijkingen', url: 
   titel="Claude vergelijken: ChatGPT, Copilot en Cursor"
   beschrijving="Claude vergelijken met ChatGPT, Microsoft Copilot en Cursor? Per vergelijking de verschillen in werk, prijs en AVG, en wanneer je voor de ander kiest."
   pad="/vergelijken"
-  schema={{ paginaType: 'CollectionPage', hoofdonderwerp: lijstId('/vergelijken'), breadcrumbs, nodes: [itemListNode('/vergelijken', artikelen.map((a) => ({ url: `/vergelijken/${a.id}`, naam: a.data.title }))), faqNode('/vergelijken', faq)] }}
+  schema={{ paginaType: 'CollectionPage', hoofdonderwerp: lijstId('/vergelijken'), breadcrumbs, nodes: [itemListNode('/vergelijken', [...artikelen.map((a) => ({ url: `/vergelijken/${a.id}`, naam: a.data.title })), ...anderen.map((a) => ({ url: a.pad, naam: a.titel }))]), faqNode('/vergelijken', faq)] }}
 >
   <Container class="pt-12 pb-20" width="max-w-[1288px]">
     <Broodkruimel items={breadcrumbs} />
@@ -68,7 +78,12 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Vergelijkingen', url: 
       <p class="mt-4 text-inkt-zacht">
         Ons advies is in elke vergelijking hetzelfde: test de tools op je eigen taken
         voordat je licenties afneemt.
-      </p>
+      </p>{livegang.claudeHub && (
+        <p class="mt-4 text-inkt-zacht">
+          Wat Claude zelf biedt voor bedrijven, met abonnementen, prijzen en AVG, lees je op
+          <a href="/claude">Claude zakelijk</a>.
+        </p>
+      )}
     </div>
 
     {artikelen.length > 0 && (
@@ -83,6 +98,20 @@ const breadcrumbs = [{ name: 'Home', url: '/' }, { name: 'Vergelijkingen', url: 
               <span class="v2-casekaart-meta">Vergelijking</span>
               <h3>{a.data.title}</h3>
               <p>{a.data.metaDescription}</p>
+              <span class="v2-hubkaart-lees">Lees de vergelijking<span class="cta-arrow">&rarr;</span></span>
+            </a>
+          ))}
+        </div>
+      </>
+    )}{anderen.length > 0 && (
+      <>
+        <h2 class="v2-hub-h2">Andere tools naast elkaar</h2>
+        <div class="v2-hub-kaarten">
+          {anderen.map((a) => (
+            <a href={a.pad} class="v2-hubkaart reveal-target">
+              <span class="v2-casekaart-meta">Vergelijking</span>
+              <h3>{a.titel}</h3>
+              <p>{a.beschrijving}</p>
               <span class="v2-hubkaart-lees">Lees de vergelijking<span class="cta-arrow">&rarr;</span></span>
             </a>
           ))}
