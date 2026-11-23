@@ -39,6 +39,7 @@ reviewedBy: "Camiel Wits"
 reviewedDate: 2026-11-10
 changelogLine: null
 hasTemplate: true
+templateBestand: "/downloads/ai-gebruiksbeleid-template.docx"
 deadline: null
 kortAntwoord: "Een AI-beleid voor Claude legt vast welke tools je team mag gebruiken, welke data erin mag en wie verantwoordelijk is. Voor gewoon Claude-gebruik schrijft de AI Act geen apart beleidsdocument voor. Artikel 4 vraagt sinds 2 februari 2025 wel maatregelen voor AI-geletterdheid. Een kort beleid is daar een praktische basis voor. Hieronder staat een invulbaar voorbeeld."
 bronnen:

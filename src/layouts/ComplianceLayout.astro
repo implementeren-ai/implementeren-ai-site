@@ -86,12 +86,12 @@ const seo = seoVoorEntry({ pad: pagePath, sectie: 'Compliance', breadcrumbs, dat
           <slot />
         </div>
 
-        {data.hasTemplate && (
+        {data.hasTemplate && data.templateBestand && (
           <div class="v2-tip">
             <p class="font-semibold text-teal-diep">Download template</p>
-          <p class="mt-2 text-sm text-inkt-zacht">Gebruik onze template om direct te starten met je {data.title.toLowerCase()}.</p>
-          <a href="/contact" class="mt-3 inline-flex items-center text-sm text-teal-diep font-semibold no-underline hover:underline">
-            Vraag de template aan &rarr;
+          <p class="mt-2 text-sm text-inkt-zacht">Dezelfde tekst als hierboven, als Word-bestand. Opent ook in Google Docs.</p>
+          <a href={data.templateBestand} download class="mt-3 inline-flex items-center text-sm text-teal-diep font-semibold no-underline hover:underline">
+            Download de template (.docx) &rarr;
           </a>
           </div>
         )}

@@ -174,6 +174,8 @@ const compliance = defineCollection({
   schema: seoSchema({
     deadline: z.date().nullable().default(null),
     hasTemplate: z.boolean().default(false),
+    // Pad naar het downloadbare bestand (bv. /downloads/x.docx). Zonder pad geen downloadblok.
+    templateBestand: z.string().nullable().default(null),
   }),
 });
 
