@@ -101,7 +101,9 @@ function runs(regel: string): string {
     .join('');
 }
 
-const alinea = (regel: string) => `<w:p>${runs(regel)}</w:p>`;
+// Een regel die vet begint is een kopje ("Artikel 1. Doel"): wat ruimte erboven.
+const alinea = (regel: string) =>
+  `<w:p>${regel.startsWith('**') ? '<w:pPr><w:spacing w:before="240"/></w:pPr>' : ''}${runs(regel)}</w:p>`;
 
 function tabel(regels: string[]): string {
   const rijen = regels
@@ -116,7 +118,10 @@ function tabel(regels: string[]): string {
           .join('')}</w:tr>`,
     )
     .join('');
-  return `<w:tbl><w:tblPr><w:tblW w:w="5000" w:type="pct"/><w:tblBorders>${rand}</w:tblBorders></w:tblPr>${body}</w:tbl><w:p/>`;
+  // Het Word-schema vraagt een tblGrid; kolommen gelijk verdeeld over de tekstbreedte (A4 min marges).
+  const kolommen = Math.max(...rijen.map((r) => r.length));
+  const grid = `<w:tblGrid>${`<w:gridCol w:w="${Math.floor(9026 / kolommen)}"/>`.repeat(kolommen)}</w:tblGrid>`;
+  return `<w:tbl><w:tblPr><w:tblW w:w="5000" w:type="pct"/><w:tblBorders>${rand}</w:tblBorders></w:tblPr>${grid}${body}</w:tbl><w:p/>`;
 }
 
 /** Zet de Markdown-subset om in een .docx (bytes). */
