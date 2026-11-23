@@ -47,7 +47,7 @@ Een offerte schrijven kost een aannemer 2 tot 5 uur per stuk. Het meeste tijd ga
 
 Concreet: Claude neemt je offerte-template, vult de projectomschrijving in op basis van je input, voegt de relevante voorwaarden toe (UAV 2012, garantietermijnen, meer- en minderwerk), en genereert de begeleidende brief. De calculator of projectleider controleert en past aan. Een offerte die normaal 3 uur kost, is in 45 minuten klaar. Lees meer over [offerte maken met Claude](/use-cases/offerte-maken).
 
-> *In april 2026 bouwde ons team bij een Nederlands IT-consultancybureau een white-label portaal in 4 weken. Custom applicatie in PHP en Vue.js. Diezelfde aanpak, gestructureerde templates plus geautomatiseerde output, werkt voor offertestraten in de bouw.*
+> *In april 2026 bouwden we bij een Nederlands IT-consultancybureau een white-label portaal in 4 weken. Custom applicatie in PHP en Vue.js. Diezelfde aanpak, gestructureerde templates plus geautomatiseerde output, werkt voor offertestraten in de bouw.*
 
 Bij een aannemer die 100 offertes per jaar schrijft, bespaar je 100 tot 300 uur. Tegen een uurtarief van 60 tot 80 euro is dat 6.000 tot 24.000 euro per jaar aan vrijgemaakte capaciteit. De projectleider besteedt die tijd aan acquisitie en projectbegeleiding in plaats van aan schrijfwerk.
 

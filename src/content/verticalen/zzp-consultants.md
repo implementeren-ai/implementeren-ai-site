@@ -37,7 +37,7 @@ areaServed: NL
 brancheOrganisatie: null
 ---
 
-Claude voor ZZP en freelance consultant is de snelste manier om meer te doen met minder uren. Offertes schrijven, klantmails beantwoorden, acquisitie doen, administratie bijhouden: als ZZP'er doe je alles zelf. Claude neemt het patroonmatige werk over. Ons team heeft het zelf ervaren, eerder bij een Nederlands softwarebedrijf. We bouwden een CRM in een weekend zonder developer-achtergrond en draaien Claude als kernonderdeel van onze dagelijkse workflow.
+Claude voor ZZP en freelance consultant is de snelste manier om meer te doen met minder uren. Offertes schrijven, klantmails beantwoorden, acquisitie doen, administratie bijhouden: als ZZP'er doe je alles zelf. Claude neemt het patroonmatige werk over. We hebben het zelf ervaren, eerder bij een Nederlands softwarebedrijf. We bouwden een CRM in een weekend zonder developer-achtergrond en draaien Claude als kernonderdeel van onze dagelijkse workflow.
 
 ## Claude voor zzp consultant: offertes en propositieteksten
 
@@ -47,7 +47,7 @@ Je voert de klantbriefing in, je uurtarief, de geschatte scope en je eerdere ref
 
 Bij een ZZP ICT-consultant met een uurtarief van 100 euro en 3 offertes per maand bespaar je 6 tot 9 uur per maand. Dat is 600 tot 900 euro aan bespaarde tijd. Claude Pro kost 20 dollar per maand. De rekensom is helder.
 
-> *In maart 2026 bouwde ons team bij een Nederlands softwarebedrijf een compleet CRM-systeem in een weekend. Geen developer-achtergrond nodig. Claude Code genereerde de backend, frontend en database. Na twee dagen: een werkend systeem met contactbeheer, pipeline-tracking en rapportages. Dat is de kracht van Claude voor ZZP'ers die hun eigen tooling willen bouwen.*
+> *In maart 2026 bouwden we bij een Nederlands softwarebedrijf een compleet CRM-systeem in een weekend. Geen developer-achtergrond nodig. Claude Code genereerde de backend, frontend en database. Na twee dagen: een werkend systeem met contactbeheer, pipeline-tracking en rapportages. Dat is de kracht van Claude voor ZZP'ers die hun eigen tooling willen bouwen.*
 
 ## Klantmails en communicatie
 
@@ -69,7 +69,7 @@ Bij een ZZP ICT-consultant die wekelijks 2 LinkedIn-posts wil plaatsen en 5 pros
 
 Als ZZP'er is je kennis je product. Maar die kennis zit verspreid over notitieboeken, e-mails, Notion-pagina's, en je hoofd. Claude helpt je die kennis te structureren en doorzoekbaar te maken.
 
-> *Ons team bouwde eerder bij een Nederlands softwarebedrijf Open Brain: een cross-sessie kennismanagementsysteem. Elke beslissing, elk inzicht, elke klantinteractie wordt vastgelegd en is doorzoekbaar. De volgende Claude-sessie begint niet bij nul, maar pikt op waar de vorige stopte.*
+> *We bouwden eerder bij een Nederlands softwarebedrijf Open Brain: een cross-sessie kennismanagementsysteem. Elke beslissing, elk inzicht, elke klantinteractie wordt vastgelegd en is doorzoekbaar. De volgende Claude-sessie begint niet bij nul, maar pikt op waar de vorige stopte.*
 
 Voor een ZZP consultant betekent dat: je legt je projectervaringen vast, je klantspecifieke kennis, je technische oplossingen. Bij een nieuw project met een vergelijkbare uitdaging zoekt Claude in je kennisbank en vindt de aanpak die eerder werkte. Geen heruitvinden van het wiel. Bij Implementeren.ai is Open Brain de ruggengraat van onze workflow. ChatGPT heeft geen vergelijkbaar cross-sessie geheugen.
 

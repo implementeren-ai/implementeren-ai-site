@@ -38,7 +38,7 @@ faq:
     answer: "Bij rapportage-automatisering zagen we break-even na 3 weken. Bij sales outreach na 6 weken. Het hangt af van het aantal uren dat je bespaart en het tarief van die uren. Een medewerker die 10 uur per week bespaart tegen 50 EUR per uur levert 500 EUR per week op. Tegen Team-kosten van 115 EUR per maand is de terugverdientijd minder dan een week."
 ---
 
-Een Claude business case template helpt je om de investering in AI intern te onderbouwen. Geen vage beloften over productiviteit, maar concrete cijfers: wat kost het, wat levert het op, wanneer is het terugverdiend. Dit template is gebaseerd op twee cases die ons team eerder bij een Nederlands softwarebedrijf bouwde. Pas de getallen aan voor jouw situatie.
+Een Claude business case template helpt je om de investering in AI intern te onderbouwen. Geen vage beloften over productiviteit, maar concrete cijfers: wat kost het, wat levert het op, wanneer is het terugverdiend. Dit template is gebaseerd op twee cases die we eerder bij een Nederlands softwarebedrijf bouwden. Pas de getallen aan voor jouw situatie.
 
 ## Waarom een business case voor Claude
 

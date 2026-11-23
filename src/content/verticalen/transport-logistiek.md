@@ -76,7 +76,7 @@ Voor expediteurs met internationale ritten voegt Claude vertaalde instructies to
 
 Transportbedrijven rapporteren over leverbetrouwbaarheid, ritefficiency, brandstofverbruik, schadevrijrijden en omzet per route. Die rapportages genereren uit TMS-data is handmatig werk dat Claude automatiseert.
 
-Je exporteert de operationele data, Claude analyseert en genereert een managementrapport met trends, afwijkingen en aanbevelingen. Maandelijkse rapportages die 4 uur kosten, levert Claude in 30 minuten. Ons team bouwde eerder bij een Nederlands softwarebedrijf rapportagesystemen die 173 dashboards dagelijks automatisch verversen. Dezelfde architectuur past op transport-KPI's: definieer het template, koppel de data, laat Claude het rapport schrijven. Per klant een maandrapport met leverbetrouwbaarheid, doorlooptijden en schadestatistieken. De account manager bespreekt het rapport, niet een Excel-dump.
+Je exporteert de operationele data, Claude analyseert en genereert een managementrapport met trends, afwijkingen en aanbevelingen. Maandelijkse rapportages die 4 uur kosten, levert Claude in 30 minuten. We bouwden eerder bij een Nederlands softwarebedrijf rapportagesystemen die 173 dashboards dagelijks automatisch verversen. Dezelfde architectuur past op transport-KPI's: definieer het template, koppel de data, laat Claude het rapport schrijven. Per klant een maandrapport met leverbetrouwbaarheid, doorlooptijden en schadestatistieken. De account manager bespreekt het rapport, niet een Excel-dump.
 
 Bij een expediteur met 20 opdrachtgevers en maandelijkse rapportages bespaar je 40 uur per maand. Die uren gaan naar acquisitie en klantrelaties, niet naar het handmatig bij elkaar zoeken van cijfers uit drie verschillende systemen.
 

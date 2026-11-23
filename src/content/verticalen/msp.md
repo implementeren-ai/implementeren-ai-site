@@ -37,12 +37,12 @@ faq:
   - question: "Kan ik klantdata veilig door Claude laten verwerken?"
     answer: "Dat hangt af van het type data. Ticketmetadata en SLA-cijfers zijn doorgaans groen: vrij te gebruiken. Persoonsgegevens van eindgebruikers zijn rood: die gaan niet naar de cloud. Wij werken met een drielagenmodel (groen, oranje, rood) en bouwen een anonimiseringslaag in de pipeline. Bij ons report-engine project verlaat de data de eigen server niet."
   - question: "Hoe schaal ik Claude-workflows naar meerdere klanten?"
-    answer: "Door te werken met templates en variabelen. Het rapportagesysteem dat ons team eerder bij een Nederlands softwarebedrijf bouwde, genereert 872 reports voor tientallen klanten uit dezelfde set slash commands. Je definieert het sjabloon, koppelt de klantdata, en Claude levert de output per klant. Opschalen is parameters toevoegen, niet opnieuw bouwen."
+    answer: "Door te werken met templates en variabelen. Het rapportagesysteem dat we eerder bij een Nederlands softwarebedrijf bouwden, genereert 872 reports voor tientallen klanten uit dezelfde set slash commands. Je definieert het sjabloon, koppelt de klantdata, en Claude levert de output per klant. Opschalen is parameters toevoegen, niet opnieuw bouwen."
 areaServed: NL
 brancheOrganisatie: null
 ---
 
-Claude voor MSP's is geen theorie bij ons. Ons team draaide het eerder in productie bij een Nederlands softwarebedrijf. 872 Power BI reports gegenereerd in 12 weken. 173 dashboards die dagelijks automatisch verversen om 07:00. Een rapportage-agent die klanten in 2 minuten bedient in plaats van 45. En een report-engine die Power BI-licenties overbodig maakt en 1.200 euro per jaar bespaart. Dit is wat wij voor jouw MSP kunnen inrichten.
+Claude voor MSP's is geen theorie bij ons. We draaiden het eerder in productie bij een Nederlands softwarebedrijf. 872 Power BI reports gegenereerd in 12 weken. 173 dashboards die dagelijks automatisch verversen om 07:00. Een rapportage-agent die klanten in 2 minuten bedient in plaats van 45. En een report-engine die Power BI-licenties overbodig maakt en 1.200 euro per jaar bespaart. Dit is wat wij voor jouw MSP kunnen inrichten.
 
 ## Claude voor MSP's: klantrapportages genereren
 
@@ -72,7 +72,7 @@ Dit is geen "AI die tickets oplost". Dit is triage-automatisering: het juiste ti
 
 Stel je voor: je klant typt "Laat mijn SLA-prestaties van Q1 zien" in een chatvenster en krijgt 2 minuten later een geformateerd rapport. Geen mail naar de servicedesk, geen wachttijd, geen handmatige export.
 
-Dat is precies wat ons team eerder bouwde voor een klant van een Nederlands IT-consultancybureau: de Copilot Studio-agent. Een conversational interface die rapportages genereert op aanvraag. De klant vraagt, de agent levert. Authenticatie via bedrijfs-SSO met Azure AD OAuth (on-behalf-of flow). DAX-queries gevalideerd tegen het echte datamodel. Geen gefabriceerde cijfers.
+Dat is precies wat we eerder bouwden voor een klant van een Nederlands IT-consultancybureau: de Copilot Studio-agent. Een conversational interface die rapportages genereert op aanvraag. De klant vraagt, de agent levert. Authenticatie via bedrijfs-SSO met Azure AD OAuth (on-behalf-of flow). DAX-queries gevalideerd tegen het echte datamodel. Geen gefabriceerde cijfers.
 
 Het resultaat: rapportage-aanvragen teruggebracht van 45 minuten naar 2 minuten. Doorlooptijd van het project: 3 weken. De klant is zelfredzaam. Jouw servicedesk wordt niet meer gebeld voor "kun je even die SLA-cijfers sturen". En je levert een premium service die weinig MSP's kunnen bieden. Denk aan de positionering: jij biedt je klanten een chatinterface waarmee ze zelf rapportages opvragen. Dat is een verkoopargument in elke aanbesteding en elk QBR-gesprek.
 
@@ -80,7 +80,7 @@ Het resultaat: rapportage-aanvragen teruggebracht van 45 minuten naar 2 minuten.
 
 Power BI Pro kost 11,70 euro per gebruiker per maand. Bij 10 klanten met elk 5 viewers is dat 7.020 euro per jaar. En de data gaat naar Microsoft's cloud. Voor MSP's die klanten bedienen met strenge privacy-eisen is dat een probleem.
 
-Ons team bouwde eerder bij een Nederlands softwarebedrijf een report-engine die dat probleem oplost. PHP met DuckDB als database: 148 tabellen, 254 measures, 1,55 miljoen rijen. HTML-output, geen viewer-licenties nodig. De data verlaat je eigen server niet. Een ingebouwde anonimiseringslaag maakt demo's mogelijk zonder klantdata te tonen.
+We bouwden eerder bij een Nederlands softwarebedrijf een report-engine die dat probleem oplost. PHP met DuckDB als database: 148 tabellen, 254 measures, 1,55 miljoen rijen. HTML-output, geen viewer-licenties nodig. De data verlaat je eigen server niet. Een ingebouwde anonimiseringslaag maakt demo's mogelijk zonder klantdata te tonen.
 
 Besparing: 1.200 euro per jaar aan licenties. Twee prospects converteerden specifiek vanwege het privacy-argument. 281 rapporttypes zijn gepland. Doorlooptijd: 6 weken.
 
@@ -124,4 +124,4 @@ Dat hangt af van het type data. Ticketmetadata en SLA-cijfers zijn doorgaans gro
 
 ### Hoe schaal ik Claude-workflows naar meerdere klanten?
 
-Door te werken met templates en variabelen. Het rapportagesysteem dat ons team eerder bij een Nederlands softwarebedrijf bouwde, genereert 872 reports voor tientallen klanten uit dezelfde set slash commands. Je definieert het sjabloon, koppelt de klantdata, en Claude levert de output per klant. Opschalen is parameters toevoegen, niet opnieuw bouwen. De 173 dashboards werken op dezelfde manier: een template per categorie, data per klant, output per pagina. Nieuwe klant toevoegen kost minuten, niet dagen.
+Door te werken met templates en variabelen. Het rapportagesysteem dat we eerder bij een Nederlands softwarebedrijf bouwden, genereert 872 reports voor tientallen klanten uit dezelfde set slash commands. Je definieert het sjabloon, koppelt de klantdata, en Claude levert de output per klant. Opschalen is parameters toevoegen, niet opnieuw bouwen. De 173 dashboards werken op dezelfde manier: een template per categorie, data per klant, output per pagina. Nieuwe klant toevoegen kost minuten, niet dagen.

@@ -17,7 +17,7 @@ voorJou: "Stel je terugkerende rapportages nog met de hand samen voor je klanten
 
 ## Steeds hetzelfde rondje
 
-Ons team bouwde dit eerder voor een klant van een Nederlands IT-consultancybureau. Bij dit MSP-softwarebedrijf kende iedereen het rondje. Een klant vraagt een kwartaalrapport aan. Een medewerker logt in op het BI-platform, kiest de juiste dataset, maakt het rapport, exporteert het als PDF en stuurt het op. Dat kost 30 tot 45 minuten per rapport. Met twintig klanten per kwartaal is dat twee volle werkdagen.
+We bouwden dit eerder voor een klant van een Nederlands IT-consultancybureau. Bij dit MSP-softwarebedrijf kende iedereen het rondje. Een klant vraagt een kwartaalrapport aan. Een medewerker logt in op het BI-platform, kiest de juiste dataset, maakt het rapport, exporteert het als PDF en stuurt het op. Dat kost 30 tot 45 minuten per rapport. Met twintig klanten per kwartaal is dat twee volle werkdagen.
 
 Het bedrijf wilde dat klanten zelf hun rapportages konden opvragen. Gewoon door te vragen wat ze willen zien, zonder portaal met tien dropdowns.
 

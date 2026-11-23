@@ -17,7 +17,7 @@ voorJou: "Draaien er bij jou ook scripts en syncs waarvan niemand meer zeker wee
 
 ## De sync die twee weken stil stond
 
-Ons team deed dit eerder bij een Nederlands softwarebedrijf. Een dagelijkse data-sync bleek al twee weken niet meer te draaien. Er was geen foutmelding en geen alarm, dus niemand had het gemerkt.
+We deden dit eerder bij een Nederlands softwarebedrijf. Een dagelijkse data-sync bleek al twee weken niet meer te draaien. Er was geen foutmelding en geen alarm, dus niemand had het gemerkt.
 
 <!-- MENS: 1-2 zinnen over hoe die stilgevallen sync aan het licht kwam — wie ontdekte het, en wat was het directe gevolg? -->
 

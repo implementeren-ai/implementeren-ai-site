@@ -17,7 +17,7 @@ voorJou: "Krijgt jouw site veel vertoningen in Google, maar weinig kliks? De ver
 
 ## Veel bekeken, nooit geklikt
 
-Ons team deed dit eerder bij een Nederlands softwarebedrijf. Dit SaaS-bedrijf kreeg 311.000 impressies per maand in Google. Toch klikte er bijna niemand: op niet-merkgerelateerde zoekopdrachten was de click-through rate 0,09%. Bijna al het verkeer kwam binnen op de bedrijfsnaam. De groei op inhoudelijke zoektermen stond stil.
+We deden dit eerder bij een Nederlands softwarebedrijf. Dit SaaS-bedrijf kreeg 311.000 impressies per maand in Google. Toch klikte er bijna niemand: op niet-merkgerelateerde zoekopdrachten was de click-through rate 0,09%. Bijna al het verkeer kwam binnen op de bedrijfsnaam. De groei op inhoudelijke zoektermen stond stil.
 
 Het bedrijf wist dat er iets mis was, maar kwam er niet aan toe om de Search Console-data goed te analyseren. Daarvoor was het te veel data en te weinig tijd.
 

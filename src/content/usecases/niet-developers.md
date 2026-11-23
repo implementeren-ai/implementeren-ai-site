@@ -61,7 +61,7 @@ We zien patronen in wat ondernemers bouwen. De toepassingen vallen uiteen in vie
 
 **Interne tools.** Het CRM dat hierboven beschreven staat. Maar ook: een urenstaat die automatisch facturen genereert. Een klantportaal waar klanten hun projectstatus zien. Een planning tool voor een installatiebedrijf. Allemaal specifiek voor jouw proces, niet een generiek platform dat je moet buigen naar jouw workflow.
 
-**Data en rapportage.** Een ondernemer die elke maand een Excel-rapport maakt voor zijn accountant kan dat automatiseren. CSV-bestanden inlezen, berekeningen toepassen, PDF-output genereren. Ons team bouwde eerder bij een Nederlands softwarebedrijf met Claude Code [872 Power BI reports](/cases/powerbi-reporting) in 12 weken. Dat is een schaal die handmatig onmogelijk is, maar het begint bij dezelfde wens: "ik wil niet elke maand hetzelfde rapport met de hand maken."
+**Data en rapportage.** Een ondernemer die elke maand een Excel-rapport maakt voor zijn accountant kan dat automatiseren. CSV-bestanden inlezen, berekeningen toepassen, PDF-output genereren. We bouwden eerder bij een Nederlands softwarebedrijf met Claude Code [872 Power BI reports](/cases/powerbi-reporting) in 12 weken. Dat is een schaal die handmatig onmogelijk is, maar het begint bij dezelfde wens: "ik wil niet elke maand hetzelfde rapport met de hand maken."
 
 **Klantcommunicatie.** [Offertes genereren](/use-cases/offerte-maken) op basis van templates en klantdata. Follow-up e-mails personaliseren. Proposals schrijven die consistent zijn in kwaliteit en format. Een salesmens die 10 offertes per week schrijft, bespaart uren door de structuur te automatiseren en alleen de strategische inhoud handmatig te schrijven.
 

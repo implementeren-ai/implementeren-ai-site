@@ -54,7 +54,7 @@ Huisartsen, medisch specialisten en bedrijfsartsen verwachten terugkoppeling. Ee
 
 Claude genereert conceptbrieven op basis van het behandeldossier. Je selecteert de relevante SOAP-notities, Claude vat ze samen in een brief aan de verwijzer. De structuur volgt de KNGF-standaard: reden van verwijzing, bevindingen, behandeling, resultaat, en aanbeveling. De therapeut controleert de inhoud, past de klinische conclusie aan, en verstuurt. Vergelijkbare aanpak als bij [zorginstellingen](/claude-voor-zorginstellingen) en [tandartspraktijken](/claude-voor-tandartsen).
 
-> *In april 2026 bouwde ons team bij een Nederlandse IT-dienstverlener een kennisbank met 13 artikelen en 27 screenshots in 5 dagen. Het team bespaart 6+ uur per week op herhalende vragen. Dezelfde kennisbankstructuur werkt voor fysiotherapiepraktijken: standaardbrieven per verwijzertype, gekoppeld aan behandeldata.*
+> *In april 2026 bouwden we bij een Nederlandse IT-dienstverlener een kennisbank met 13 artikelen en 27 screenshots in 5 dagen. Het team bespaart 6+ uur per week op herhalende vragen. Dezelfde kennisbankstructuur werkt voor fysiotherapiepraktijken: standaardbrieven per verwijzertype, gekoppeld aan behandeldata.*
 
 ## Claude voor fysiotherapie praktijk: patientcommunicatie
 
@@ -70,7 +70,7 @@ Bij de start van een behandeltraject stel je een behandelplan op. Doelen, meetba
 
 Je voert de intakegegevens in: diagnose, beperkingen, doelen van de patient, relevante voorgeschiedenis. Claude genereert een behandelplan met SMART-doelen, geplande interventies per fase, en evaluatiemomenten na elke 5 sessies. De therapeut controleert en past aan op basis van klinisch oordeel. Het concept bespaart 15 tot 20 minuten per nieuw behandeltraject.
 
-> *In maart 2026 bouwde ons team bij een Nederlands softwarebedrijf een rapportage-engine die 281 rapporttypes genereert uit 148 tabellen en 1,55 miljoen rijen data. Doorlooptijd: 6 weken. Diezelfde engine-gedachte, gestructureerde data vertalen naar geformatteerde documenten, werkt voor behandelplannen: patientdata in, gestructureerd plan uit.*
+> *In maart 2026 bouwden we bij een Nederlands softwarebedrijf een rapportage-engine die 281 rapporttypes genereert uit 148 tabellen en 1,55 miljoen rijen data. Doorlooptijd: 6 weken. Diezelfde engine-gedachte, gestructureerde data vertalen naar geformatteerde documenten, werkt voor behandelplannen: patientdata in, gestructureerd plan uit.*
 
 ## Intervisie en casusbesprekingen voorbereiden
 

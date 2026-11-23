@@ -52,7 +52,7 @@ De meeste medewerkers starten met Claude zoals ze een zoekmachine gebruiken: kor
 
 Het verschil tussen een nutteloze en een productieve Claude-interactie zit bijna altijd in de prompt. Niet in het model, niet in het abonnement, niet in de technologie. In de instructie die je geeft.
 
-Bij een Nederlands B2B-softwarebedrijf met een sales team van twee mensen bouwde ons team eerder een prompt-gestuurd systeem dat 25 gepersonaliseerde e-mails per dag genereert. De open rate ging van 8 naar 34 procent. Het systeem begon met 10 schrijfregels en groeide naar 23 door zelflerend feedback te verwerken. Dat resultaat kwam niet door een duurder AI-model. Het kwam door betere prompts.
+Bij een Nederlands B2B-softwarebedrijf met een sales team van twee mensen bouwden we eerder een prompt-gestuurd systeem dat 25 gepersonaliseerde e-mails per dag genereert. De open rate ging van 8 naar 34 procent. Het systeem begon met 10 schrijfregels en groeide naar 23 door zelflerend feedback te verwerken. Dat resultaat kwam niet door een duurder AI-model. Het kwam door betere prompts.
 
 Dat is wat deze claude prompting cursus levert: de vaardigheid om prompts te schrijven die consistente, bruikbare output opleveren. Niet door regels te memoriseren, maar door te oefenen op je eigen werk.
 

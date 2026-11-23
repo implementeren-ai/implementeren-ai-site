@@ -18,7 +18,7 @@ voorJou: "Werk je met meerdere repositories die elk hun eigen regels hebben? Met
 
 ## 36 repos, 36 gewoontes
 
-Ons team bouwde dit eerder bij een groeiend Nederlands softwarebedrijf. Dat bedrijf had 36+ Git-repositories, en in elke repo golden andere regels of helemaal geen. De ene repo gebruikte conventional commits, de andere vrije tekst. Ook teststandaarden en PR-templates verschilden per project. Niemand had dat zo bedoeld, het was gewoon zo gegroeid.
+We bouwden dit eerder bij een groeiend Nederlands softwarebedrijf. Dat bedrijf had 36+ Git-repositories, en in elke repo golden andere regels of helemaal geen. De ene repo gebruikte conventional commits, de andere vrije tekst. Ook teststandaarden en PR-templates verschilden per project. Niemand had dat zo bedoeld, het was gewoon zo gegroeid.
 
 Met AI-tooling werd dat probleem goed voelbaar. Elke nieuwe Claude Code-sessie startte blanco, zonder de conventies en teamafspraken van het project. De output was daardoor inconsistent. De ontwikkelaars moesten die handmatig bijwerken, terwijl AI dat werk juist had moeten schelen.
 

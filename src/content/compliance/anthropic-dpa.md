@@ -194,7 +194,7 @@ Hulp nodig bij deze drie punten? In een [Claude-implementatie](/claude-implement
 
 ## Eén verwerkersovereenkomst is niet genoeg: de praktijk
 
-Hoe dit samenkomt, zie je in een [rapportage-engine](/cases/report-engine) die ons team eerder bij een Nederlands softwarebedrijf bouwde. Daar was de architectuur de eigenlijke privacymaatregel: de data (148 tabellen, 1,55 miljoen rijen) blijft in een lokale DuckDB-database op de eigen server en verlaat die server niet. Voor demo's vervangt een anonimisatielaag klantnamen en bedragen automatisch door fictieve data. Het privacy-verhaal bleek daar een verkoopargument: twee prospects die eerder afhaakten op het cloudvraagstuk, gingen alsnog overstag.
+Hoe dit samenkomt, zie je in een [rapportage-engine](/cases/report-engine) die we eerder bij een Nederlands softwarebedrijf bouwden. Daar was de architectuur de eigenlijke privacymaatregel: de data (148 tabellen, 1,55 miljoen rijen) blijft in een lokale DuckDB-database op de eigen server en verlaat die server niet. Voor demo's vervangt een anonimisatielaag klantnamen en bedragen automatisch door fictieve data. Het privacy-verhaal bleek daar een verkoopargument: twee prospects die eerder afhaakten op het cloudvraagstuk, gingen alsnog overstag.
 
 De verwerkersovereenkomst is het juridische fundament. De architectuur bepaalt hoeveel er onder die overeenkomst valt. Hoe minder persoonsgegevens richting een AI-dienst gaan, hoe kleiner je risico en hoe eenvoudiger je compliance-verhaal.
 

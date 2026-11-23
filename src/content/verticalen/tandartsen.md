@@ -60,7 +60,7 @@ No-shows kosten praktijken omzet. Een gemiste afspraak van 30 minuten is direct 
 
 Na een no-show genereert Claude een vriendelijke maar zakelijke mail: we hebben je gemist, plan een nieuwe afspraak via [link], bij herhaalde no-shows rekenen we een tarief. De toon is professioneel, niet verwijtend. De assistente hoeft alleen op verzenden te klikken. Bij 3 tot 5 no-shows per week bespaar je 30 minuten en verminder je de drempel om opnieuw contact op te nemen.
 
-> *In maart 2026 bouwde ons team een kennisbank van 13 artikelen met 27 screenshots in 5 dagen bij een Nederlandse IT-dienstverlener. Besparing: 6+ uur per week aan herhaalde vragen. Dezelfde aanpak past op tandartspraktijken: bouw een set standaardmails voor de 10 meest voorkomende situaties, en Claude levert de rest.*
+> *In maart 2026 bouwden we een kennisbank van 13 artikelen met 27 screenshots in 5 dagen bij een Nederlandse IT-dienstverlener. Besparing: 6+ uur per week aan herhaalde vragen. Dezelfde aanpak past op tandartspraktijken: bouw een set standaardmails voor de 10 meest voorkomende situaties, en Claude levert de rest.*
 
 ## Claude voor tandartspraktijk: website-FAQ en patientinformatie
 

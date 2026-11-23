@@ -98,7 +98,7 @@ Een van de snelste besparingen: negatieve zoekwoorden toevoegen. Claude analysee
 
 ## Case: google-ads-recovery (budget waste gevonden)
 
-Bij het google-ads-recovery project, eerder bij een Nederlands softwarebedrijf, voerde ons team een volledige audit uit op een Google Ads account dat 18 maanden zonder structureel beheer had gedraaid. De eigenaar besteedde 3.000 euro per maand en had "het gevoel dat het wel liep."
+Bij het google-ads-recovery project, eerder bij een Nederlands softwarebedrijf, voerden we een volledige audit uit op een Google Ads account dat 18 maanden zonder structureel beheer had gedraaid. De eigenaar besteedde 3.000 euro per maand en had "het gevoel dat het wel liep."
 
 De audit onthulde:
 - 23% van het budget ging naar zoektermen die niet relevant waren voor het product

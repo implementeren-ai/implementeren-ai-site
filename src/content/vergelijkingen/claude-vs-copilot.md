@@ -94,7 +94,7 @@ Prijzen gecontroleerd op 2 oktober 2026 en exclusief btw of belasting. Microsoft
 
 - De waarde zit in het zware werk: offertes, rapporten, analyses, beleidsstukken en klantcommunicatie waar kwaliteit telt.
 - Je werkt met documenten van tientallen pagina's tegelijk, zoals contracten of dossiers.
-- Er wordt geautomatiseerd. Met Claude Code bouw je werkstromen die verder gaan dan chatten. Een voorbeeld: ons team bouwde eerder voor een klant van een Nederlands IT-consultancybureau een [AI-assistent die kwartaalrapportages op aanvraag genereert](/cases/copilot-studio-agent), gemaakt met Claude Code en gekoppeld aan Copilot Studio. De twee werelden kunnen dus ook samenwerken.
+- Er wordt geautomatiseerd. Met Claude Code bouw je werkstromen die verder gaan dan chatten. Een voorbeeld: we bouwden eerder voor een klant van een Nederlands IT-consultancybureau een [AI-assistent die kwartaalrapportages op aanvraag genereert](/cases/copilot-studio-agent), gemaakt met Claude Code en gekoppeld aan Copilot Studio. De twee werelden kunnen dus ook samenwerken.
 - Je wilt processen echt anders inrichten.
 
 ## Hoe het samenspeelt met je bestaande systemen

@@ -87,7 +87,7 @@ faq:
   licentiebesparing, XMLA-claim voor de oude server, drielagenmodel en de aantallen-claim over implementaties.
 -->
 
-Een maandrapportage maken kost vaak meer tijd dan het lezen ervan. De data staat al klaar in Power BI, maar iemand moet nog de cijfers ophalen, controleren, uitleggen en in de vaste opmaak zetten. Dat werk kun je met Claude grotendeels laten voorbereiden. Op deze pagina lees je hoe je Claude aan Power BI koppelt, hoe je voorkomt dat er verzonnen cijfers in een rapport komen en wat ons team leerde van 872 rapporten en 173 dashboards. De bronnen onderaan zijn geraadpleegd op 29 oktober 2026. Meer toepassingen per taak vind je bij de [use cases](/use-cases).
+Een maandrapportage maken kost vaak meer tijd dan het lezen ervan. De data staat al klaar in Power BI, maar iemand moet nog de cijfers ophalen, controleren, uitleggen en in de vaste opmaak zetten. Dat werk kun je met Claude grotendeels laten voorbereiden. Op deze pagina lees je hoe je Claude aan Power BI koppelt, hoe je voorkomt dat er verzonnen cijfers in een rapport komen en wat we leerden van 872 rapporten en 173 dashboards. De bronnen onderaan zijn geraadpleegd op 29 oktober 2026. Meer toepassingen per taak vind je bij de [use cases](/use-cases).
 
 ## Welk deel van een rapportage kan Claude overnemen?
 
@@ -139,7 +139,7 @@ Begin met één rapport dat elke maand terugkomt, met steeds dezelfde opbouw en 
 5. Leg twee of drie cijfers naast het rapport in Power BI zelf. Kloppen ze, dan keur je het rapport goed.
 6. Maak er een vast commando van, met de klantnaam en het rapporttype als invoer. Daarna draai je het voor de volgende klant.
 
-Een zelf gemaakt slash command in Claude Code is daar een praktische vorm voor. Zo werkte ons team in de case hieronder.
+Een zelf gemaakt slash command in Claude Code is daar een praktische vorm voor. Zo werkten we in de case hieronder.
 
 ## Hoe voorkom je verzonnen cijfers in een rapport?
 
@@ -153,9 +153,9 @@ Let ook op wat er met je data gebeurt. Microsoft schrijft dat metadata, schema's
 
 ## Wat leerden 872 rapporten en 173 dashboards ons?
 
-Ons team bouwde dit eerder bij een Nederlands MSP-softwarebedrijf. Daar kostte één klantrapport anderhalf uur handwerk, voor meer dan 50 klanten en in twee talen. Na 12 weken stonden er 872 rapporten live: 449 in het Engels en 423 in het Nederlands. Na de eerste 200 rapporten vond een controle op de structuur van alle bestanden 30 problemen, zoals ontbrekende secties en een verkeerde kolomvolgorde. Die zijn in één ronde hersteld. Nieuwe klanten kregen hun eerste set rapporten op dag twee van de onboarding.
+We bouwden dit eerder bij een Nederlands MSP-softwarebedrijf. Daar kostte één klantrapport anderhalf uur handwerk, voor meer dan 50 klanten en in twee talen. Na 12 weken stonden er 872 rapporten live: 449 in het Engels en 423 in het Nederlands. Na de eerste 200 rapporten vond een controle op de structuur van alle bestanden 30 problemen, zoals ontbrekende secties en een verkeerde kolomvolgorde. Die zijn in één ronde hersteld. Nieuwe klanten kregen hun eerste set rapporten op dag twee van de onboarding.
 
-Bij hetzelfde type bedrijf bouwde ons team in 5 weken [173 dashboards](/cases/dashboard-automation) in tien categorieën, zoals ticketvolume, responstijden en SLA-compliance. Het waren gegenereerde webpagina's met Chart.js, die elke ochtend om 07:00 automatisch ververst werden. Wie ze bekeek, had daar geen BI-licentie voor nodig.
+Bij hetzelfde type bedrijf bouwden we in 5 weken [173 dashboards](/cases/dashboard-automation) in tien categorieën, zoals ticketvolume, responstijden en SLA-compliance. Het waren gegenereerde webpagina's met Chart.js, die elke ochtend om 07:00 automatisch ververst werden. Wie ze bekeek, had daar geen BI-licentie voor nodig.
 
 Hoe hard zijn die cijfers? Niet elk getal uit de cases is op dezelfde manier vastgesteld.
 

@@ -17,7 +17,7 @@ voorJou: "Stuur jij klanten documenten die verouderen zodra een proces verandert
 
 ## De PDF die altijd achterliep
 
-Ons team bouwde dit eerder bij een Nederlands IT-consultancybureau. Het documenteren van bedrijfsprocessen ging bij dit IT-consultancybureau al jaren op dezelfde manier. De consultant tekende het proces in Lucidchart en exporteerde het als afbeelding. Die plakte hij in een Word-document, met per stap een beschrijving. Het geheel ging als PDF naar de klant. Anderhalf uur opmaakwerk per diagram.
+We bouwden dit eerder bij een Nederlands IT-consultancybureau. Het documenteren van bedrijfsprocessen ging bij dit IT-consultancybureau al jaren op dezelfde manier. De consultant tekende het proces in Lucidchart en exporteerde het als afbeelding. Die plakte hij in een Word-document, met per stap een beschrijving. Het geheel ging als PDF naar de klant. Anderhalf uur opmaakwerk per diagram.
 
 En dan veranderde het proces. De consultant moest het diagram aanpassen, opnieuw exporteren, het document bijwerken en de PDF opnieuw versturen. In de praktijk gebeurde dat lang niet altijd. Klanten werkten daardoor met verouderde versies zonder het te weten.
 

@@ -97,7 +97,7 @@ Dit verschilt per aanbieder en weegt mee in je keuze. Anthropic slaat Claude-dat
 
 **"Onze waarde zit in kenniswerk: adviezen, offertes, rapporten, content."** Dit is het profiel waar Claude het sterkst scoort. Lees [Claude vs ChatGPT](/vergelijken/claude-vs-chatgpt) voor de details.
 
-**"We willen vooral automatiseren."** Kijk dan verder dan de chatbox. Een voorbeeld: ons team liet eerder bij een Nederlands softwarebedrijf met Claude Code in 2 dagen alle achtergrondprocessen doorlichten, waarbij [38 scripts werden geïnventariseerd en 9 stilgevallen scripts gerepareerd](/cases/automation-audit). Voor ontwikkelteams vergelijken we [Claude Code vs Cursor](/vergelijken/claude-code-vs-cursor).
+**"We willen vooral automatiseren."** Kijk dan verder dan de chatbox. Een voorbeeld: we lieten eerder bij een Nederlands softwarebedrijf met Claude Code in 2 dagen alle achtergrondprocessen doorlichten, waarbij [38 scripts werden geïnventariseerd en 9 stilgevallen scripts gerepareerd](/cases/automation-audit). Voor ontwikkelteams vergelijken we [Claude Code vs Cursor](/vergelijken/claude-code-vs-cursor).
 
 ## Wat is de beste AI voor het MKB?
 

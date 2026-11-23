@@ -159,7 +159,7 @@ Eerst wil je weten wat er gebeurt. Doe dat zonder dat het als een controle voelt
 4. Zet alles in één overzicht: tool, account, toepassing, soort data.
 5. Markeer de regels waar persoonsgegevens in een privéaccount terechtkomen. Die pak je als eerste aan.
 
-Dat het overzicht vaak groter is dan je denkt, kennen we uit ander werk. Bij een [doorlichting van achtergrondprocessen](/cases/automation-audit) bij een Nederlands softwarebedrijf vond ons team 38 geautomatiseerde processen op twee machines. Niemand had daar een volledig overzicht van, en 9 ervan werkten niet meer. In 2 dagen stond alles gedocumenteerd en gerepareerd. Die case ging over scripts. Bij AI-tools zie je hetzelfde patroon: er komt er steeds één bij, en pas een volledige inventarisatie laat zien wat er draait. Een doorlichting van AI-gebruik bij medewerkers hebben we nog niet als aparte case beschreven.
+Dat het overzicht vaak groter is dan je denkt, kennen we uit ander werk. Bij een [doorlichting van achtergrondprocessen](/cases/automation-audit) bij een Nederlands softwarebedrijf vonden we 38 geautomatiseerde processen op twee machines. Niemand had daar een volledig overzicht van, en 9 ervan werkten niet meer. In 2 dagen stond alles gedocumenteerd en gerepareerd. Die case ging over scripts. Bij AI-tools zie je hetzelfde patroon: er komt er steeds één bij, en pas een volledige inventarisatie laat zien wat er draait. Een doorlichting van AI-gebruik bij medewerkers hebben we nog niet als aparte case beschreven.
 
 ## Hoe maak je van shadow AI een AI-beleid voor medewerkers?
 

@@ -54,7 +54,7 @@ Reserveringsbevestigingen, herinneringsmails, bedankmails na een bezoek, nieuwsb
 
 Je definieert templates per type bericht: reserveringsbevestiging, herinnering 24 uur voor het bezoek, bedankmail de dag erna, en nieuwsbrief. Claude vult de templates in met de relevante details. De toon past bij je merk: warm en persoonlijk voor een familierestaurant, strak en zakelijk voor een businesshotel. De manager controleert en verstuurt.
 
-> *In mei 2026 bouwde ons team bij een Nederlands softwarebedrijf een sales-e-mailsysteem dat 25 e-mails per dag verstuurt, met open rates van 8% naar 34%. Human-in-the-loop, zelf-lerende regels. Dezelfde aanpak werkt voor horeca-e-mailflows: geautomatiseerde concepten, menselijke controle, verbeterende kwaliteit over tijd.*
+> *In mei 2026 bouwden we bij een Nederlands softwarebedrijf een sales-e-mailsysteem dat 25 e-mails per dag verstuurt, met open rates van 8% naar 34%. Human-in-the-loop, zelf-lerende regels. Dezelfde aanpak werkt voor horeca-e-mailflows: geautomatiseerde concepten, menselijke controle, verbeterende kwaliteit over tijd.*
 
 Bij een hotel met 50 reserveringen per dag en bijbehorende communicatie bespaar je 2 tot 3 uur per dag. Die tijd gaat naar de gasten op de vloer.
 

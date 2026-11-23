@@ -105,7 +105,7 @@ Voor terugkerende documenttypes leggen we die werkwijze vast in een herbruikbare
 
 ## Gespreksverslagen en cliëntcorrespondentie
 
-Na elke bespreking of intake moet er een verslag komen en vaak een bevestigingsbrief. Dat werk heeft ons team al eens gebouwd, alleen niet voor een advocatenkantoor: bij een Nederlands IT-consultancybureau maakten we eerder een [gespreksverwerker](/cases/consultant-brief) die van een uur Microsoft Teams-opname in vijf minuten een gestructureerde brief maakt, waar dat eerst 45 minuten per gesprek kostte, met per onderwerp een samenvatting en de afspraken op een rij. Het patroon is een-op-een overdraagbaar: opname of dictaat erin, verslag met vervolgacties eruit, en de advocaat of secretaresse controleert.
+Na elke bespreking of intake moet er een verslag komen en vaak een bevestigingsbrief. Dat werk hebben we al eens gebouwd, alleen niet voor een advocatenkantoor: bij een Nederlands IT-consultancybureau maakten we eerder een [gespreksverwerker](/cases/consultant-brief) die van een uur Microsoft Teams-opname in vijf minuten een gestructureerde brief maakt, waar dat eerst 45 minuten per gesprek kostte, met per onderwerp een samenvatting en de afspraken op een rij. Het patroon is een-op-een overdraagbaar: opname of dictaat erin, verslag met vervolgacties eruit, en de advocaat of secretaresse controleert.
 
 Conceptbrieven aan cliënten werken hetzelfde. Claude schrijft op basis van het dossier en eerdere correspondentie een concept in de toon die bij de cliënt past. Definitieve correspondentie blijft van de advocaat; het concept haalt alleen het lege vel weg.
 

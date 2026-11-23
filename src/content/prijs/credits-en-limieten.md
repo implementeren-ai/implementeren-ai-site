@@ -177,7 +177,7 @@ Je claimt de credits door één Console-organisatie aan je abonnement te koppele
 
 ## Bulk hoort niet in je abonnement
 
-Die vierde route verdient een eigen alinea, want daar zit de structurele oplossing. Een abonnement is gemaakt voor interactief gebruik. Wie er bulkwerk doorheen duwt, loopt steeds tegen de limiet aan. Ons team bouwde eerder bij een Nederlands softwarebedrijf met ruim 50 klanten een rapportagestraat die [872 Power BI-rapporten in drie maanden](/cases/powerbi-reporting) genereerde, tweetalig en gevalideerd tegen het echte datamodel. Zoiets draait niet op iemands persoonlijke gebruiksbudget. Het is een geautomatiseerd proces en hoort dus op de API, waar het volume de kosten bepaalt en geen venster van 5 uur. Het team houdt zijn seats voor het werk waar een mens aan de knoppen zit. Rapportage kost nog minder dan een uur per week in plaats van twintig.
+Die vierde route verdient een eigen alinea, want daar zit de structurele oplossing. Een abonnement is gemaakt voor interactief gebruik. Wie er bulkwerk doorheen duwt, loopt steeds tegen de limiet aan. We bouwden eerder bij een Nederlands softwarebedrijf met ruim 50 klanten een rapportagestraat die [872 Power BI-rapporten in drie maanden](/cases/powerbi-reporting) genereerde, tweetalig en gevalideerd tegen het echte datamodel. Zoiets draait niet op iemands persoonlijke gebruiksbudget. Het is een geautomatiseerd proces en hoort dus op de API, waar het volume de kosten bepaalt en geen venster van 5 uur. Het team houdt zijn seats voor het werk waar een mens aan de knoppen zit. Rapportage kost nog minder dan een uur per week in plaats van twintig.
 
 ## Wat dit betekent voor je plankeuze
 

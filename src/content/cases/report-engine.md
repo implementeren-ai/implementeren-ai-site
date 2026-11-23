@@ -1,8 +1,8 @@
 ---
 title: "GDPR-first rapportage zonder dure BI-licenties"
 titleTag: "Rapportage zonder BI-licenties met Claude Code"
-description: "Sommige prospects haakten af zodra ze hoorden dat hun data via de cloud ging. Dus bouwde ons team een rapportage-engine waarbij de data de eigen server nooit verlaat."
-metaDescription: "Prospects haakten af zodra hun data via de cloud ging. Dus bouwde ons team een rapportage-engine waarbij de data de eigen server niet verlaat."
+description: "Sommige prospects haakten af zodra ze hoorden dat hun data via de cloud ging. Dus bouwden we een rapportage-engine waarbij de data de eigen server nooit verlaat."
+metaDescription: "Prospects haakten af zodra hun data via de cloud ging. Dus bouwden we een rapportage-engine waarbij de data de eigen server niet verlaat."
 sector: "MSP"
 duration: "6 weken"
 tools: ["Claude Code", "PHP", "DuckDB", "HTML/CSS"]
@@ -18,7 +18,7 @@ voorJou: "Haken jouw prospects ook af op het idee dat hun data via de cloud gaat
 
 ## De prospect die afhaakte
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. De rapportages van dit MSP-softwarebedrijf draaiden prima op Power BI. Toch zaten er twee problemen aan. De kosten: elke gebruiker die rapporten wilde bekijken, had een Pro-licentie nodig, en bij een groeiend klantenbestand stegen die kosten mee. En de privacy woog zwaarder: klantdata ging via de Power BI-cloud. De meeste klanten vonden dat prima, maar sommige prospects haakten af omdat hun operationele data dan bij een derde partij stond.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. De rapportages van dit MSP-softwarebedrijf draaiden prima op Power BI. Toch zaten er twee problemen aan. De kosten: elke gebruiker die rapporten wilde bekijken, had een Pro-licentie nodig, en bij een groeiend klantenbestand stegen die kosten mee. En de privacy woog zwaarder: klantdata ging via de Power BI-cloud. De meeste klanten vonden dat prima, maar sommige prospects haakten af omdat hun operationele data dan bij een derde partij stond.
 
 <!-- MENS: wat zei zo'n prospect precies? Eén zin uit dat gesprek maakt dit punt tastbaar -->
 

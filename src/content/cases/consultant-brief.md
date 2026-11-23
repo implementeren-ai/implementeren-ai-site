@@ -18,7 +18,7 @@ voorJou: "Neem je klantgesprekken op die daarna niemand terugkijkt? Zo'n opname 
 
 ## Het uur dat niemand terugkeek
 
-Ons team bouwde dit eerder bij een Nederlands IT-consultancybureau. Dit IT-consultancybureau voert elke week een assessment-gesprek met een klant. Zo'n gesprek duurt een uur en wordt opgenomen via Teams. Daarna keek een collega de opname terug, noteerde de kernpunten en schreef een samenvatting voor de consultant van het vervolgtraject.
+We bouwden dit eerder bij een Nederlands IT-consultancybureau. Dit IT-consultancybureau voert elke week een assessment-gesprek met een klant. Zo'n gesprek duurt een uur en wordt opgenomen via Teams. Daarna keek een collega de opname terug, noteerde de kernpunten en schreef een samenvatting voor de consultant van het vervolgtraject.
 
 Dat kostte 45 minuten per gesprek. In de praktijk keek niemand de hele opname echt terug. Wie de samenvatting schreef, sloeg stukken over en miste nuances.
 

@@ -157,7 +157,7 @@ Eén kanttekening bij Claude Haiku 5.5: deze tarieven gelden voor prompts tot 10
 
 Twee hefbomen drukken die kosten flink. Batchverwerking, voor taken die geen haast hebben, halveert de prijs. Met prompt caching kost herhaalde context een tiende van het input-tarief, en bij Claude Sonnet 5.5, Claude Opus 5.5 en Claude Fable 5.2 nog minder. Met de [API-kostencalculator](/tools/claude-api-kosten-calculator) reken je je eigen scenario door.
 
-Hoe dat in de praktijk uitpakt: ons team bouwde eerder bij een Nederlands softwarebedrijf met ruim 50 klanten een rapportagestraat die [872 Power BI-rapporten in drie maanden](/cases/powerbi-reporting) genereerde, tweetalig en met gevalideerde cijfers. Een rapport kostte eerst anderhalf uur handwerk. Het team besteedt nu minder dan een uur per week aan rapportage in plaats van twintig. Bij dat soort volumes is de plankeuze simpel: interactief werk op een abonnement, bulkwerk via de API.
+Hoe dat in de praktijk uitpakt: we bouwden eerder bij een Nederlands softwarebedrijf met ruim 50 klanten een rapportagestraat die [872 Power BI-rapporten in drie maanden](/cases/powerbi-reporting) genereerde, tweetalig en met gevalideerde cijfers. Een rapport kostte eerst anderhalf uur handwerk. Het team besteedt nu minder dan een uur per week aan rapportage in plaats van twintig. Bij dat soort volumes is de plankeuze simpel: interactief werk op een abonnement, bulkwerk via de API.
 
 ## Wat kost Claude vergeleken met ChatGPT en Copilot?
 

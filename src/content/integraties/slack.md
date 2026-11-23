@@ -59,7 +59,7 @@ Dit is de use case waar we de meeste tractie zien. Teams hebben kennis verspreid
 
 Met Claude in Slack creeer je een vraag-baken. Een medewerker typt een vraag in het #hulp channel. Claude doorzoekt je interne documentatie en geeft een antwoord met bronvermelding.
 
-Ons team bouwde eerder iets vergelijkbaars: een [kennisbank bij een Nederlandse IT-dienstverlener](/cases/knowledge-base). 13 artikelen in vijf werkdagen, gepubliceerd via REST API, 6 uur per week bespaard op herhaalde vragen. Dezelfde aanpak werkt in Slack: in plaats van artikelen publiceren, beantwoord je vragen direct in het channel waar ze gesteld worden.
+We bouwden eerder iets vergelijkbaars: een [kennisbank bij een Nederlandse IT-dienstverlener](/cases/knowledge-base). 13 artikelen in vijf werkdagen, gepubliceerd via REST API, 6 uur per week bespaard op herhaalde vragen. Dezelfde aanpak werkt in Slack: in plaats van artikelen publiceren, beantwoord je vragen direct in het channel waar ze gesteld worden.
 
 ### Channel-samenvattingen
 

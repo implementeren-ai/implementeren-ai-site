@@ -18,7 +18,7 @@ voorJou: "Typt jouw support team dezelfde antwoorden steeds opnieuw? Een kennisb
 
 ## Dezelfde vraag, elke week opnieuw
 
-Ons team bouwde dit eerder bij een Nederlandse IT-dienstverlener. "Hoe reset ik mijn wachtwoord?" "Waar vind ik mijn facturen?" Het support team van deze IT-dienstverlener met 200+ klanten beantwoordde zulke vragen steeds opnieuw. Een centrale kennisbank was er niet.
+We bouwden dit eerder bij een Nederlandse IT-dienstverlener. "Hoe reset ik mijn wachtwoord?" "Waar vind ik mijn facturen?" Het support team van deze IT-dienstverlener met 200+ klanten beantwoordde zulke vragen steeds opnieuw. Een centrale kennisbank was er niet.
 
 Elke FAQ documenteren kostte namelijk 15 tot 20 minuten handwerk: screenshots maken, tekst schrijven, opmaken in het CMS en publiceren. Voor een lijst van dertig veelgestelde vragen is dat samen een volle werkweek. Daarom bleef het liggen en typte iedereen de antwoorden steeds opnieuw uit.
 

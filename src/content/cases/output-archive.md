@@ -1,8 +1,8 @@
 ---
 title: "Gestructureerde kennisoverdracht tussen AI-sessies"
-description: "Een goed AI-gesprek vol analyses en beslissingen verdween zodra de sessie sloot. Ons team bouwde een archief dat elke sessie laat verdergaan waar de vorige stopte."
+description: "Een goed AI-gesprek vol analyses en beslissingen verdween zodra de sessie sloot. We bouwden een archief dat elke sessie laat verdergaan waar de vorige stopte."
 titleTag: "Kennisoverdracht tussen AI-sessies met Claude"
-metaDescription: "Een AI-gesprek vol analyses verdween zodra de sessie sloot. Ons team bouwde een archief waarmee elke nieuwe sessie verdergaat waar de vorige stopte."
+metaDescription: "Een AI-gesprek vol analyses verdween zodra de sessie sloot. We bouwden een archief waarmee elke nieuwe sessie verdergaat waar de vorige stopte."
 sector: "SaaS"
 duration: "3 weken"
 tools: ["Claude Code", "HTML", "Git", "LaunchAgent"]
@@ -18,7 +18,7 @@ voorJou: "Werk jij ook met AI-assistenten en begint elk gesprek weer bij nul? Me
 
 ## Het gesprek dat verdween
 
-Ons team bouwde dit eerder bij een Nederlands softwarebedrijf. Dit tech-bedrijf werkte intensief met AI-assistenten. Elke sessie leverde iets waardevols op: een analyse, een plan, een beslissing, een specificatie. Maar bij de volgende sessie was alles weg. Medewerkers moesten opnieuw uitleggen wat er eerder was besloten, en kopieerden daarom stukken tekst uit oude chats. Dat werd al snel onwerkbaar.
+We bouwden dit eerder bij een Nederlands softwarebedrijf. Dit tech-bedrijf werkte intensief met AI-assistenten. Elke sessie leverde iets waardevols op: een analyse, een plan, een beslissing, een specificatie. Maar bij de volgende sessie was alles weg. Medewerkers moesten opnieuw uitleggen wat er eerder was besloten, en kopieerden daarom stukken tekst uit oude chats. Dat werd al snel onwerkbaar.
 
 ## Elke sessie eindigt met een document
 

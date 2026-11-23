@@ -35,7 +35,7 @@ faq:
   - question: "Kan ik ticketdata uit Autotask veilig door Claude laten verwerken?"
     answer: "Ticketmetadata, SLA-cijfers en categoriegegevens zijn doorgaans groen: vrij te gebruiken. Persoonsgegevens van eindgebruikers, denk aan namen, e-mailadressen en telefoonnummers in ticketnotities, zijn rood en gaan niet naar de cloud. Wij werken met een drielagenmodel voor dataclassificatie en bouwen bij gevoelige data een pseudonimiseringslaag in de pipeline."
   - question: "Hoe lang duurt het om een Autotask-integratie met Claude op te zetten?"
-    answer: "De basiskoppeling, een MCP server die tickets kan lezen en metadata kan terugschrijven, staat er in een dag of twee. Een volledig rapportageplatform zoals het systeem met 872 reports en 173 dashboards dat ons team eerder bij een Nederlands softwarebedrijf bouwde, is een project van weken. De complexiteit zit niet in de API-koppeling maar in wat je ermee bouwt: rapportagelogica, validatie, automatische verversing."
+    answer: "De basiskoppeling, een MCP server die tickets kan lezen en metadata kan terugschrijven, staat er in een dag of twee. Een volledig rapportageplatform zoals het systeem met 872 reports en 173 dashboards dat we eerder bij een Nederlands softwarebedrijf bouwden, is een project van weken. De complexiteit zit niet in de API-koppeling maar in wat je ermee bouwt: rapportagelogica, validatie, automatische verversing."
 softwareName: "Autotask"
 softwareUrl: "https://www.datto.com/products/autotask-psa"
 ---
@@ -101,7 +101,7 @@ Bij een MSP met 500 tickets per week en een gemiddelde triage-tijd van 3 minuten
 
 ## Stap 3: rapportages en dashboards genereren
 
-Dit is waar de Autotask-integratie het meeste oplevert. Ons team bouwde eerder bij een Nederlands softwarebedrijf drie rapportagesystemen bovenop de Autotask-data:
+Dit is waar de Autotask-integratie het meeste oplevert. We bouwden eerder bij een Nederlands softwarebedrijf drie rapportagesystemen bovenop de Autotask-data:
 
 **872 Power BI reports in 12 weken.** Tweetalig (449 Engels, 423 Nederlands), met DAX-queries die gevalideerd worden tegen het werkelijke datamodel. Geen verzonnen measures. Een geautomatiseerde structural sweep ving 30 fouten in de eerste 200 reports. Het volledige project staat beschreven in onze [Power BI reporting case](/integraties/power-bi).
 
@@ -151,7 +151,7 @@ Ticketmetadata, SLA-cijfers en categoriegegevens zijn doorgaans groen: vrij te g
 
 ### Hoe lang duurt het om een Autotask-integratie met Claude op te zetten?
 
-De basiskoppeling staat er in een dag of twee. Een MCP server die tickets leest en metadata terugschrijft is geen groot project. De complexiteit zit in wat je erop bouwt. Het rapportageplatform met 872 reports en 173 dashboards dat ons team eerder bouwde, was een project van 12 weken. De conversational agent voor klant-rapportages duurde 3 weken. De investering hangt af van de scope, niet van de API-koppeling.
+De basiskoppeling staat er in een dag of twee. Een MCP server die tickets leest en metadata terugschrijft is geen groot project. De complexiteit zit in wat je erop bouwt. Het rapportageplatform met 872 reports en 173 dashboards dat we eerder bouwden, was een project van 12 weken. De conversational agent voor klant-rapportages duurde 3 weken. De investering hangt af van de scope, niet van de API-koppeling.
 
 ### Werkt dit ook met Autotask Datto Commerce of alleen PSA?
 

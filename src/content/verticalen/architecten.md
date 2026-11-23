@@ -158,7 +158,7 @@ Teams meldt aan iedereen dat de opname loopt, maar vraag de deelnemers vooraf oo
 
 Op deze site staat nog geen case van een architecten- of ingenieursbureau. Wel twee projecten met hetzelfde patroon: rommelige input omzetten in een vast document.
 
-Bij een Nederlands IT-consultancybureau bouwde ons team een [gespreksverwerker](/cases/consultant-brief). Een opgenomen klantgesprek van een uur wordt daar een gestructureerde brief met vervolgacties. Het uitwerken ging van 45 minuten naar 5 minuten per gesprek. Een verslag van een bouwteamoverleg is hetzelfde soort werk.
+Bij een Nederlands IT-consultancybureau bouwden we een [gespreksverwerker](/cases/consultant-brief). Een opgenomen klantgesprek van een uur wordt daar een gestructureerde brief met vervolgacties. Het uitwerken ging van 45 minuten naar 5 minuten per gesprek. Een verslag van een bouwteamoverleg is hetzelfde soort werk.
 
 Bij hetzelfde type bureau maakten we in 2 weken een [procesportaal](/cases/process-portal). Procesdiagrammen komen daar automatisch op een vaste link voor de klant, in plaats van in een PDF die snel veroudert. Het opmaakwerk per diagram ging van anderhalf uur naar tien minuten. Voor een architect ligt de vergelijking bij de projectmap voor de opdrachtgever: één bron, en de opdrachtgever ziet altijd de laatste versie.
 

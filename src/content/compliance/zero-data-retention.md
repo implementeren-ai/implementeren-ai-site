@@ -137,7 +137,7 @@ In je verwerkingsregister en DPIA is ZDR een maatregel die het restrisico verlaa
 
 ## Heb je ZDR eigenlijk nodig?
 
-Eerlijk is eerlijk: wij hebben nog geen klant door een ZDR-aanvraag heen begeleid. Wat we wel uit eigen werk kennen is de route die er vaak aan voorafgaat: minder data naar de API sturen. Bij een [rapportage-engine](/cases/report-engine) die ons team eerder bij een Nederlands softwarebedrijf bouwde, bleef de data (148 tabellen, 1,55 miljoen rijen) op de eigen server en verliet die server niet. Dat bespaarde 1.200 euro per jaar aan licenties, en het maakte het privacygesprek met prospects ineens kort: er ging simpelweg weinig naar buiten.
+Eerlijk is eerlijk: wij hebben nog geen klant door een ZDR-aanvraag heen begeleid. Wat we wel uit eigen werk kennen is de route die er vaak aan voorafgaat: minder data naar de API sturen. Bij een [rapportage-engine](/cases/report-engine) die we eerder bij een Nederlands softwarebedrijf bouwden, bleef de data (148 tabellen, 1,55 miljoen rijen) op de eigen server en verliet die server niet. Dat bespaarde 1.200 euro per jaar aan licenties, en het maakte het privacygesprek met prospects ineens kort: er ging simpelweg weinig naar buiten.
 
 Die volgorde raden we aan. Bepaal eerst welke data Claude echt nodig heeft en wat je kunt pseudonimiseren of lokaal kunt houden. Wat er dan nog naar de API gaat, dek je af met de DPA, de standaard 30 dagen, en pas als dat niet genoeg is met ZDR. Dit soort datagrenzen stellen we in de eerste week van een [Claude-implementatie](/claude-implementatie) vast.
 

@@ -147,7 +147,7 @@ Met die koppeling vraag je Claude om de issues van deze sprint samen te vatten t
 
 Twee projecten op deze site zijn gebouwd bij een Nederlandse IT-consultancy. Ze laten zien wat er met dit soort schrijfwerk kan.
 
-De eerste is de [gespreksbrief](/cases/consultant-brief). Het bureau voert elke week een gesprek voor een assessment met een klant en neemt dat op in Teams. Ons team bouwde met Claude Code een skill die de opname en het bestand met ondertitels omzet in een brief, met per onderwerp een korte samenvatting en het passende videofragment. Het uitwerken van een gesprek van een uur ging van 45 minuten naar 5 minuten.
+De eerste is de [gespreksbrief](/cases/consultant-brief). Het bureau voert elke week een gesprek voor een assessment met een klant en neemt dat op in Teams. We bouwden met Claude Code een skill die de opname en het bestand met ondertitels omzet in een brief, met per onderwerp een korte samenvatting en het passende videofragment. Het uitwerken van een gesprek van een uur ging van 45 minuten naar 5 minuten.
 
 De tweede is het [procesportaal](/cases/process-portal), gebouwd in 2 weken. De consultants tekenen de processen van hun klanten in Lucidchart. Vroeger ging elk diagram met uitleg per stap in een PDF naar de klant. Nu staat het automatisch op een eigen pagina per klant, die altijd de actuele versie toont. Het opmaakwerk per diagram ging van anderhalf uur (90 minuten) naar 10 minuten.
 
