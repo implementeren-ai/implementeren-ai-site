@@ -1,7 +1,7 @@
 ---
 title: 'Microsoft 365 Copilot Chat: wat je gratis krijgt bij Microsoft 365'
 titleTag: 'Microsoft 365 Copilot Chat gratis: wat het wel en niet doet'
-metaDescription: 'Copilot Chat zit gratis in Microsoft 365. Wat het doet, hoe je data beschermd is, wat de betaalde licentie toevoegt en hoe je het beheert. Stand 5 nov 2026.'
+metaDescription: 'Copilot Chat zit gratis in Microsoft 365. Wat het doet, hoe je data beschermd is, wat de betaalde licentie toevoegt en hoe je het beheert.'
 h1: 'Microsoft 365 Copilot Chat: wat je zonder extra licentie krijgt'
 targetKeywords:
   - copilot chat

@@ -1,7 +1,7 @@
 ---
 title: 'Microsoft Copilot zakelijk: wat het is, wat het kost en wat je nodig hebt'
 titleTag: 'Microsoft Copilot zakelijk: uitleg, prijzen en AVG (2026)'
-metaDescription: 'Microsoft Copilot zakelijk voor het MKB: Copilot Chat zit in Microsoft 365, Copilot Bedrijven kost €18,20 per gebruiker per maand, excl. btw. Stand 5 nov 2026.'
+metaDescription: 'Microsoft Copilot zakelijk voor het MKB: Copilot Chat zit in Microsoft 365, Copilot Bedrijven kost €18,20 per gebruiker per maand, excl. btw.'
 h1: 'Microsoft Copilot zakelijk: wat het is, wat het kost en wat je nodig hebt'
 targetKeywords:
   - microsoft copilot zakelijk
@@ -36,7 +36,7 @@ vendor: copilot
 soort: landing
 claudeSibling: /vergelijken/claude-vs-copilot
 disclaimer: juridisch-fiscaal
-kortAntwoord: 'Microsoft Copilot zakelijk bestaat uit twee lagen. Copilot Chat zit zonder extra licentie in een geschikt Microsoft 365-abonnement en werkt vooral met webinformatie en wat je zelf aanlevert. De betaalde licentie brengt Copilot in Word, Excel, PowerPoint, Outlook en Teams en laat het zoeken in je eigen werkgegevens. Voor het MKB heet die licentie Microsoft 365 Copilot Bedrijven: €18,20 per gebruiker per maand bij een jaarabonnement, exclusief btw, tot 300 gebruikers. Stand 5 november 2026.'
+kortAntwoord: 'Microsoft Copilot zakelijk bestaat uit twee lagen. Copilot Chat zit zonder extra licentie in een geschikt Microsoft 365-abonnement en werkt vooral met webinformatie en wat je zelf aanlevert. De betaalde licentie brengt Copilot in Word, Excel, PowerPoint, Outlook en Teams en laat het zoeken in je eigen werkgegevens. Voor het MKB heet die licentie Microsoft 365 Copilot Bedrijven: €18,20 per gebruiker per maand bij een jaarabonnement, exclusief btw, tot 300 gebruikers. Prijzen gecontroleerd op 23 november 2026.'
 bronnen:
   - titel: 'Microsoft, Microsoft Copilot voor kleine bedrijven (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/business?market=nl
@@ -76,7 +76,7 @@ faq:
 
 Wie zoekt op Microsoft Copilot zakelijk, komt een handvol namen tegen die op elkaar lijken: Microsoft 365 Copilot, Copilot Chat, Copilot Business en de Copilot-app die je thuis gebruikt. Het zijn verschillende producten met andere voorwaarden, en het verschil bepaalt wat je betaalt en wat er met je gegevens gebeurt.
 
-Deze pagina zet ze op een rij voor het MKB: wat er al in je Microsoft 365-abonnement zit, wat de betaalde licentie kost, wat je moet regelen voordat je begint en wanneer een ander hulpmiddel beter past. Alles komt van de Nederlandse pagina's van Microsoft en van Microsoft Learn, bekeken op 5 november 2026.
+Deze pagina zet ze op een rij voor het MKB: wat er al in je Microsoft 365-abonnement zit, wat de betaalde licentie kost, wat je moet regelen voordat je begint en wanneer een ander hulpmiddel beter past. Alles komt van de Nederlandse pagina's van Microsoft en van Microsoft Learn, bekeken op 5 november 2026. De prijzen zijn op 23 november 2026 opnieuw gecontroleerd en ongewijzigd.
 
 ## Microsoft Copilot zakelijk: welke Copilot is welke?
 

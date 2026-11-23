@@ -1,7 +1,7 @@
 ---
 title: 'Copilot vs ChatGPT: welke past bij jouw MKB-bedrijf?'
 titleTag: 'Copilot vs ChatGPT zakelijk: prijs, AVG en keuzehulp'
-metaDescription: 'Microsoft 365 Copilot of ChatGPT Business? Prijzen voor Nederland, wat elk goed doet, AVG en beheer, en wanneer je welke kiest. Stand 5 nov 2026.'
+metaDescription: 'Microsoft 365 Copilot of ChatGPT Business? Prijzen voor Nederland, wat elk goed doet, AVG en beheer, en wanneer je welke kiest. Stand 23 nov 2026.'
 h1: 'Copilot vs ChatGPT: wanneer kies je welke?'
 targetKeywords:
   - copilot vs chatgpt
@@ -35,7 +35,7 @@ vendor: copilot
 soort: vergelijking
 claudeSibling: /vergelijken/claude-vs-copilot
 disclaimer: juridisch-fiscaal
-kortAntwoord: 'Kies Microsoft 365 Copilot als je team de hele dag in Outlook, Word, Excel en Teams werkt en AI wil die je mail, agenda en documenten kan gebruiken. Dat kost €18,20 per gebruiker per maand bij een jaarabonnement, exclusief btw, bovenop je Microsoft 365 Business-abonnement. Kies ChatGPT Business als je een losse assistent wilt met eigen GPT''s en koppelingen naar ook niet-Microsoft-software. Een Standard-plek kost 20 dollar per gebruiker per maand bij jaarbetaling, minimaal 2 plekken. Copilot Chat zit al gratis in Microsoft 365. Stand 5 november 2026.'
+kortAntwoord: 'Kies Microsoft 365 Copilot als je team de hele dag in Outlook, Word, Excel en Teams werkt en AI wil die je mail, agenda en documenten kan gebruiken. Dat kost €18,20 per gebruiker per maand bij een jaarabonnement, exclusief btw, bovenop je Microsoft 365 Business-abonnement. Kies ChatGPT Business als je een losse assistent wilt met eigen GPT''s en koppelingen naar ook niet-Microsoft-software. Een Standard-plek kost 20 dollar per gebruiker per maand bij jaarbetaling. Copilot Chat zit al gratis in Microsoft 365. Prijzen gecontroleerd op 23 november 2026.'
 bronnen:
   - titel: 'Microsoft, Microsoft Copilot voor kleine bedrijven (prijzen, regio Nederland)'
     url: https://www.microsoft.com/nl-nl/copilot/solutions/business?market=nl
@@ -87,7 +87,7 @@ faq:
 
 Copilot vs ChatGPT is voor veel MKB-bedrijven de eerste AI-keuze. Je hebt Microsoft 365 al, dus Copilot ligt voor de hand. Tegelijk gebruiken medewerkers vaak al ChatGPT op een eigen account. Welke van de twee zet je zakelijk neer?
 
-Het korte antwoord: ze doen verschillend werk. Microsoft 365 Copilot werkt in de programma's die je al gebruikt. ChatGPT Business is een losse werkruimte waar je werk naartoe brengt. Hieronder staan de prijzen, wat elk goed doet, hoe het zit met de AVG en wat de uitrol kost aan beheer. Alles komt van de pagina's van Microsoft en OpenAI, bekeken op 5 november 2026.
+Het korte antwoord: ze doen verschillend werk. Microsoft 365 Copilot werkt in de programma's die je al gebruikt. ChatGPT Business is een losse werkruimte waar je werk naartoe brengt. Hieronder staan de prijzen, wat elk goed doet, hoe het zit met de AVG en wat de uitrol kost aan beheer. Alles komt van de pagina's van Microsoft en OpenAI, bekeken op 5 november 2026. De prijzen zijn op 23 november 2026 opnieuw gecontroleerd en ongewijzigd.
 
 ## Copilot vs ChatGPT: prijs voor Nederland
 
@@ -96,12 +96,12 @@ Het korte antwoord: ze doen verschillend werk. Microsoft 365 Copilot werkt in de
 | Jaarbetaling, per gebruiker per maand | €18,20 | $20 |
 | Maandelijks, per gebruiker per maand | €21,84 | $25 |
 | Extra nodig | Microsoft 365 Business-abonnement | Niets |
-| Aantal gebruikers | Tot 300 | 2 tot 200 |
+| Aantal gebruikers | Tot 300 | Tot 200 |
 | Btw | Exclusief btw | Niet vermeld |
 
 Microsoft toont op de Nederlandse pagina prijzen in euro. Tot en met 31 december 2026 betalen bestaande Microsoft 365-klanten met een jaarcontract het eerste jaar €15,60. Die actie geldt niet voor proefabonnementen. Voor sommige geavanceerde functies en agents rekent Microsoft daarnaast per gebruik, bovenop de licentie.
 
-OpenAI noemt de Business-prijs in dollars. Volgens het Helpcentrum hanteert OpenAI lokale prijzen en rekent het in de EER af in euro. Het precieze eurobedrag zie je bij het afrekenen. Wij rekenen het niet zelf om. Naast Standard is er een Premium-plek met hogere gebruikslimieten voor 100 dollar per maand bij jaarbetaling. ChatGPT Enterprise heeft geen online prijs; daarvoor ga je naar sales.
+OpenAI noemt de Business-prijs in dollars. Volgens het Helpcentrum hanteert OpenAI lokale prijzen en rekent het in de EER af in euro. Het precieze eurobedrag zie je bij het afrekenen. Over het minimum is OpenAI niet eenduidig: het Helpcentrum noemt 1 plek om een Business-werkruimte te starten, de prijspagina nog 2 gebruikers. Wij rekenen het niet zelf om. Naast Standard is er een Premium-plek met hogere gebruikslimieten voor 100 dollar per maand bij jaarbetaling. ChatGPT Enterprise heeft geen online prijs; daarvoor ga je naar sales.
 
 Belangrijk voor de vergelijking: Copilot Chat zit zonder extra kosten in geschikte Microsoft 365-abonnementen. Je betaalt de Copilot-licentie dus pas als je Copilot in de apps en op je werkgegevens wilt.
 
