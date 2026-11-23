@@ -28,7 +28,7 @@ author: camiel
 competitors: []
 status: published
 publishDate: 2026-10-02
-updatedDate: null
+updatedDate: 2026-11-23
 changelogLine: null
 reviewedBy: "Camiel Wits"
 reviewedDate: 2026-10-02
@@ -36,13 +36,13 @@ kortAntwoord: "Welke AI past, hangt af van je werk. ChatGPT is de breedste allro
 bronnen:
   - titel: "Anthropic, prijzen en abonnementen van Claude"
     url: "https://claude.com/pricing"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "23 november 2026"
   - titel: "OpenAI, prijzen en abonnementen van ChatGPT"
     url: "https://chatgpt.com/pricing"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "23 november 2026"
   - titel: "Microsoft, prijzen van Microsoft 365 Copilot voor bedrijven"
     url: "https://www.microsoft.com/nl-nl/microsoft-365-copilot/pricing"
-    geraadpleegd: "2 oktober 2026"
+    geraadpleegd: "23 november 2026"
   - titel: "Google Workspace, abonnementen en prijzen"
     url: "https://workspace.google.com/intl/nl/pricing"
     geraadpleegd: "2 oktober 2026"
@@ -83,7 +83,7 @@ Welke AI moeten we nemen? Voor de meeste MKB-bedrijven is dat de eerste vraag, e
 | Training op je data, zakelijk | Standaard niet | Standaard niet | Niet | Niet zonder toestemming |
 | Prijs per gebruiker per maand | Team: 20 dollar bij jaarbetaling, 25 dollar per maand | Business: verschilt per land | 18,20 euro, jaarabonnement, bovenop Microsoft 365 | Inbegrepen in het Workspace-abonnement |
 
-Prijzen gecontroleerd op 2 oktober 2026, exclusief btw of belasting. Microsoft rekent tot en met 31 december 2026 een actieprijs van 15,60 euro voor het eerste jaar. Google toont de Workspace-prijs in lokale valuta. De vergelijkingen per tweetal, zoals Claude tegen ChatGPT, staan uitgewerkt in het [overzicht van vergelijkingen](/vergelijken).
+Prijzen gecontroleerd op 23 november 2026, exclusief btw of belasting. Microsoft rekent tot en met 31 december 2026 een actieprijs van 15,60 euro voor het eerste jaar. Google toont de Workspace-prijs in lokale valuta. De vergelijkingen per tweetal, zoals Claude tegen ChatGPT, staan uitgewerkt in het [overzicht van vergelijkingen](/vergelijken).
 
 ## Waar wordt je data verwerkt?
 
